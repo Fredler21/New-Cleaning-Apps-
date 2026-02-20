@@ -43,11 +43,13 @@ export default function ContactPage() {
   return (
     <Container>
       <section className="py-12">
-        <h1 className="text-3xl font-semibold text-white sm:text-4xl">Contact</h1>
-        <p className="mt-3 text-slate-300">Ask for brand collaborations, custom hack roundups, or content licensing.</p>
+        <div className="mb-10">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text)" }}>Get in Touch</h1>
+          <p className="mt-3" style={{ color: "var(--text-secondary)" }}>Ask about brand collaborations, custom hack roundups, or content licensing.</p>
+        </div>
 
-        <div className="mt-8 grid gap-5 lg:grid-cols-[1fr_1.05fr]">
-          <form onSubmit={onSubmit} className="grid gap-4 rounded-premium border border-white/10 bg-white/5 p-6">
+        <div className="grid gap-6 lg:grid-cols-[1fr_1.05fr]">
+          <form onSubmit={onSubmit} className="grid gap-4 rounded-xl p-6" style={{ background: "var(--card-bg)", border: "1px solid var(--border)" }}>
             <Input name="name" type="text" placeholder="Name" required aria-label="Name" />
             <Input name="email" type="email" placeholder="Email" required aria-label="Email" />
             <textarea
@@ -56,15 +58,18 @@ export default function ContactPage() {
               rows={5}
               placeholder="Message"
               aria-label="Message"
-              className="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-slate-300 focus:border-premium-teal focus:outline-none focus:ring-2 focus:ring-premium-teal/50"
+              className="w-full rounded-xl px-4 py-3 text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500/20"
+              style={{ background: "var(--input-bg)", border: "1px solid var(--input-border)", color: "var(--text)" }}
             />
             <Button type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Send message"}
+              {loading ? "Sending..." : "Send Message"}
             </Button>
-            {status ? <p className="text-sm text-slate-200" role="status">{status}</p> : null}
+            {status ? (
+              <p className="rounded-lg bg-teal-50 px-3 py-2 text-sm text-teal-700 dark:bg-teal-500/10 dark:text-teal-400" role="status">{status}</p>
+            ) : null}
           </form>
 
-          <aside className="overflow-hidden rounded-premium border border-white/10 bg-white/5 shadow-glass">
+          <aside className="overflow-hidden rounded-xl" style={{ border: "1px solid var(--border)" }}>
             <Image
               src="/graphics/hero-premium-bathroom.jpg"
               alt="Premium bathroom visual"

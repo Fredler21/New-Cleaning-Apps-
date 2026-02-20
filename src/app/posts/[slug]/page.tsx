@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { PostTOC } from "@/components/posts/PostTOC";
 import { SafetyNote } from "@/components/posts/SafetyNote";
 import { ShareBar } from "@/components/posts/ShareBar";
 import { PostGrid } from "@/components/posts/PostGrid";
+import { Badge } from "@/components/ui/Badge";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildMeta } from "@/components/seo/Meta";
 import { posts, getPostBySlug } from "@/data/posts";
@@ -39,80 +41,144 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
   const related = posts.filter((item) => item.category === post.category && item.slug !== post.slug).slice(0, 3);
 
   return (
-    <Container>
-      <article className="py-12">
-        <JsonLd
-          data={{
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: post.title,
-            description: post.excerpt,
-            image: post.coverImage,
-            author: { "@type": "Organization", name: "CleaningHax Premium" }
-          }}
+    <>
+      {/* Hero banner */}
+      <section className="relative h-[320px] overflow-hidden sm:h-[400px] lg:h-[440px]">
+        <Image
+          src={post.coverImage}
+          alt={post.title}
+          fill
+          priority
+          className="object-cover"
         />
-
-        <div className="grid gap-8 lg:grid-cols-[1fr_320px]">
-          <div>
-            <p className="text-sm uppercase tracking-wide text-premium-gold">{post.category.replace("-", " ")}</p>
-            <h1 className="mt-2 text-3xl font-semibold text-white sm:text-4xl">{post.title}</h1>
-            <p className="mt-4 text-base leading-relaxed text-slate-300">{post.excerpt}</p>
-
-            <div className="mt-6 overflow-hidden rounded-premium border border-white/10 bg-white/5 shadow-glass">
-              <Image
-                src={post.coverImage}
-                alt={post.title}
-                width={1400}
-                height={900}
-                priority
-                className="h-[260px] w-full object-cover sm:h-[340px]"
-              />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/20" />
+        <Container>
+          <div className="relative flex h-[320px] flex-col justify-end pb-8 sm:h-[400px] lg:h-[440px]">
+            <div className="flex items-center gap-2">
+              <Badge variant="teal">{post.category.replace("-", " ")}</Badge>
+              <Badge>⏱ {post.readTime}</Badge>
             </div>
+            <h1 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              {post.title}
+            </h1>
+            <p className="mt-3 max-w-2xl text-base text-slate-300">{post.excerpt}</p>
+          </div>
+        </Container>
+      </section>
 
-            <div className="mt-8 space-y-8">
-              <section id="supplies" className="rounded-premium border border-white/10 bg-white/5 p-5">
-                <h2 className="text-xl font-semibold text-white">What you&apos;ll need</h2>
-                <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-300">
+      <Container>
+        <article className="py-10">
+          <JsonLd
+            data={{
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: post.title,
+              description: post.excerpt,
+              image: post.coverImage,
+              author: { "@type": "Organization", name: "CleaningHacks" }
+            }}
+          />
+
+          {/* Action bar */}
+          <div className="mb-10 flex flex-wrap items-center gap-3 rounded-xl px-5 py-3" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+            <button className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:shadow-md active:scale-[0.97]">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+              </svg>
+              Save Hack
+            </button>
+            <ShareBar title={post.title} slug={post.slug} />
+          </div>
+
+          <div className="grid gap-10 lg:grid-cols-[1fr_300px]">
+            <div className="space-y-8">
+              {/* Supplies / Ingredients */}
+              <section id="supplies" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
+                  <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                  What You&apos;ll Need
+                </h2>
+                <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
                   {post.supplies.map((supply) => (
-                    <li key={supply}>{supply}</li>
+                    <div key={supply} className="flex items-center gap-2.5 rounded-lg px-3 py-2.5" style={{ background: "var(--surface-hover)", border: "1px solid var(--border)" }}>
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-teal-50 text-xs text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">✓</span>
+                      <span className="text-sm" style={{ color: "var(--text-secondary)" }}>{supply}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </section>
 
+              {/* Steps */}
               <section id="steps" className="space-y-5">
-                <h2 className="text-xl font-semibold text-white">Steps</h2>
+                <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
+                  <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Step-by-Step Instructions
+                </h2>
                 {post.steps.map((step, index) => (
-                  <section key={step.title} id={titleToId(step.title)} className="rounded-premium border border-white/10 bg-white/5 p-5">
-                    <h3 className="text-lg font-semibold text-white">{index + 1}. {step.title}</h3>
-                    <p className="mt-3 text-[15px] leading-7 text-slate-300">{step.body}</p>
+                  <section key={step.title} id={titleToId(step.title)} className="rounded-xl p-6 transition-all duration-200" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                    <div className="flex items-start gap-4">
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-sm font-bold text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">{index + 1}</span>
+                      <div>
+                        <h3 className="text-lg font-semibold" style={{ color: "var(--text)" }}>{step.title}</h3>
+                        <p className="mt-3 text-[15px] leading-7" style={{ color: "var(--text-secondary)" }}>{step.body}</p>
+                      </div>
+                    </div>
                   </section>
                 ))}
               </section>
 
-              <section id="pro-tips" className="rounded-premium border border-white/10 bg-white/5 p-5">
-                <h2 className="text-xl font-semibold text-white">Pro tips</h2>
-                <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-slate-300">
+              {/* Pro tips */}
+              <section id="pro-tips" className="rounded-xl border border-teal-200 bg-teal-50 p-6 dark:border-teal-400/20 dark:bg-teal-500/5">
+                <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
+                  <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                  Pro Tips
+                </h2>
+                <ul className="mt-4 space-y-3">
                   {post.proTips.map((tip) => (
-                    <li key={tip}>{tip}</li>
+                    <li key={tip} className="flex items-start gap-3 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-teal-100 text-xs text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">✓</span>
+                      {tip}
+                    </li>
                   ))}
                 </ul>
               </section>
 
               <SafetyNote notes={post.safetyNotes} />
-              <ShareBar title={post.title} slug={post.slug} />
+            </div>
+
+            {/* Sidebar */}
+            <div className="space-y-5 lg:sticky lg:top-[88px] lg:self-start">
+              <PostTOC steps={post.steps} />
+
+              {/* Back nav */}
+              <Link
+                href="/posts"
+                className="flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition-all duration-200"
+                style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text-secondary)" }}
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+                </svg>
+                Browse All Hacks
+              </Link>
             </div>
           </div>
 
-          <div className="space-y-4 lg:sticky lg:top-24 lg:self-start">
-            <PostTOC steps={post.steps} />
-          </div>
-        </div>
-
-        <section className="mt-12">
-          <h2 className="mb-4 text-2xl font-semibold text-white">Related posts</h2>
-          <PostGrid posts={related} />
-        </section>
-      </article>
-    </Container>
+          {/* Related */}
+          {related.length > 0 && (
+            <section className="mt-16">
+              <h2 className="mb-6 text-2xl font-semibold tracking-tight" style={{ color: "var(--text)" }}>You might also like</h2>
+              <PostGrid posts={related} />
+            </section>
+          )}
+        </article>
+      </Container>
+    </>
   );
 }

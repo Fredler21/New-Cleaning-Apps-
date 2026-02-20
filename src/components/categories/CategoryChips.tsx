@@ -5,19 +5,31 @@ type CategoryChipsProps = {
   categories: Category[];
 };
 
+const chipIcons: Record<string, string> = {
+  "dawn-hacks": "🧽",
+  "vinegar-hacks": "✨",
+  "baking-soda": "🧂",
+  "listerine-hacks": "🌿",
+  "peroxide-hacks": "💧",
+  "deep-clean": "🧹",
+  "dollar-store": "💰",
+  "laundry-kitchen": "👕"
+};
+
 export function CategoryChips({ categories }: CategoryChipsProps) {
   return (
-    <ul className="flex flex-wrap gap-2" aria-label="Featured categories">
+    <div className="hide-scrollbar -mx-4 flex gap-3 overflow-x-auto px-4 pb-2 sm:-mx-0 sm:flex-wrap sm:px-0" aria-label="Browse categories">
       {categories.map((category) => (
-        <li key={category.id}>
-          <Link
-            href={`/posts?category=${category.slug}`}
-            className="inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs text-slate-100 transition hover:border-premium-teal/50 hover:text-white"
-          >
-            {category.name}
-          </Link>
-        </li>
+        <Link
+          key={category.id}
+          href={`/posts?category=${category.slug}`}
+          className="group flex shrink-0 items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium transition-all duration-200 hover:text-teal-600 active:scale-[0.97]"
+          style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text-secondary)" }}
+        >
+          <span className="text-base">{chipIcons[category.slug] ?? "🧹"}</span>
+          {category.name}
+        </Link>
       ))}
-    </ul>
+    </div>
   );
 }

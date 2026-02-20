@@ -4,7 +4,7 @@ import { buildMeta } from "@/components/seo/Meta";
 
 export const metadata: Metadata = buildMeta({
   title: "Privacy",
-  description: "How CleaningHax Premium handles contact data, analytics, and content usage.",
+  description: "How CleaningHacks handles contact data, analytics, and content usage.",
   path: "/privacy"
 });
 
@@ -12,10 +12,13 @@ export default function PrivacyPage() {
   return (
     <Container>
       <section className="py-12">
-        <h1 className="text-3xl font-semibold text-white sm:text-4xl">Privacy Policy</h1>
-        <div className="mt-6 space-y-4 rounded-premium border border-white/10 bg-white/5 p-6 text-sm leading-7 text-slate-300 sm:text-base">
+        <div className="mb-10">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text)" }}>Privacy Policy</h1>
+          <p className="mt-3" style={{ color: "var(--text-secondary)" }}>How we handle your data — simple and transparent.</p>
+        </div>
+        <div className="space-y-4 rounded-xl p-6 text-sm leading-7 sm:p-8 sm:text-base" style={{ background: "var(--card-bg)", border: "1px solid var(--border)", color: "var(--text-secondary)" }}>
           <p>
-            CleaningHax Premium collects only the data needed to run this website and respond to messages submitted through the contact form.
+            CleaningHacks collects only the data needed to run this website and respond to messages submitted through the contact form.
             We do not sell personal information.
           </p>
           <p>

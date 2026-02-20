@@ -9,7 +9,8 @@ if (!apiKey) {
 }
 
 const promptsPath = path.join(process.cwd(), "scripts", "gemini-image-prompts.json");
-const outputDir = path.join(process.cwd(), "public", "graphics", "posts");
+const defaultOutputDir = path.join(process.cwd(), "public", "graphics", "posts");
+const graphicsRoot = path.join(process.cwd(), "public", "graphics");
 
 const getSupportedModel = async () => {
   const listResponse = await fetch(
@@ -52,7 +53,7 @@ const getSupportedModel = async () => {
 };
 
 const run = async () => {
-  await mkdir(outputDir, { recursive: true });
+  await mkdir(defaultOutputDir, { recursive: true });
   const model = await getSupportedModel();
   console.log(`Using Gemini model: ${model}`);
 
@@ -60,6 +61,11 @@ const run = async () => {
   const prompts = JSON.parse(raw);
 
   for (const item of prompts) {
+
+    const outputDir = item.dir
+      ? path.join(graphicsRoot, item.dir)
+      : defaultOutputDir;
+    await mkdir(outputDir, { recursive: true });
 
     const filePath = path.join(outputDir, `${item.slug}.png`);
     try {

@@ -14,9 +14,11 @@ export default function CategoriesPage() {
   return (
     <Container>
       <section className="py-12">
-        <h1 className="text-3xl font-semibold text-white sm:text-4xl">Cleaning categories</h1>
-        <p className="mt-3 max-w-2xl text-slate-300">Choose your focus and get highly practical routines with clear steps and safety-first guidance.</p>
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-10">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text)" }}>Browse Categories</h1>
+          <p className="mt-3 max-w-2xl" style={{ color: "var(--text-secondary)" }}>Choose your focus and get highly practical routines with clear steps and safety-first guidance.</p>
+        </div>
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((category) => (
             <CategoryCard key={category.id} category={category} />
           ))}

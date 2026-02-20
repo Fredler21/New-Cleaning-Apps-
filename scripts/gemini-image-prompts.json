@@ -58,5 +58,67 @@
   {
     "slug": "20-declutter-clean-pairing-hacks",
     "prompt": "Before-to-after inspired declutter and clean setup in a luxury living room, organized baskets and polished surfaces, realistic photo, no people, no text"
+  },
+
+  {
+    "slug": "hero-slide-1",
+    "dir": "posts",
+    "prompt": "Ultra-wide cinematic photo of a pristine modern kitchen countertop with gleaming white marble, a single teal spray bottle and neatly folded white microfiber cloth arranged artfully, soft golden morning light streaming through a large window, shallow depth of field, luxury editorial interior photography, 21:9 aspect ratio, no text, no logos, no people, no watermarks, warm neutral tones, premium clean aesthetic"
+  },
+  {
+    "slug": "hero-slide-2",
+    "dir": "posts",
+    "prompt": "Ultra-wide cinematic photo of a luxury spa-inspired bathroom, clean white subway tiles, a sparkling chrome rain shower head with water droplets, fresh white towels rolled on a wooden teak shelf, eucalyptus branch accent, soft diffused natural lighting, 21:9 aspect ratio, editorial interior photography, no text, no logos, no people, no watermarks, serene and immaculate atmosphere"
+  },
+  {
+    "slug": "hero-slide-3",
+    "dir": "posts",
+    "prompt": "Ultra-wide cinematic photo of a bright modern living room with freshly cleaned light oak hardwood floors reflecting sunlight, sheer white curtains gently billowing, a neat console table with three natural cleaning products in minimal bottles, Scandinavian interior design, airy and fresh atmosphere, 21:9 aspect ratio, editorial photography, no text, no logos, no people, no watermarks"
+  },
+  {
+    "slug": "hero-slide-4",
+    "dir": "posts",
+    "prompt": "Ultra-wide cinematic close-up of a gloved hand wiping a large glass window leaving a perfect streak-free shine, bright daylight reflections visible in the glass, city skyline softly blurred in background, shallow depth of field, premium editorial macro photography, 21:9 aspect ratio, clean modern teal and white color palette, no text, no logos, face not visible, no watermarks"
+  },
+
+  {
+    "slug": "cat-dawn",
+    "dir": "icons",
+    "prompt": "Portrait-oriented photo of a bright kitchen scene focused on a blue dish soap bottle next to a stack of sparkling clean white ceramic plates and a yellow sponge on a white marble counter, water droplets catching soft directional sunlight, clean minimal composition, 4:5 aspect ratio, premium editorial product photography, realistic textures, no text, no logos, no branding, no people, no watermarks"
+  },
+  {
+    "slug": "cat-vinegar",
+    "dir": "icons",
+    "prompt": "Portrait-oriented photo of a clear glass bottle of white vinegar placed on a white marble bathroom vanity counter, next to a gleaming polished chrome faucet with small water droplets catching light, a fresh lemon half in the background, clean and fresh atmosphere, 4:5 aspect ratio, editorial still-life photography, no text, no logos, no people, no watermarks"
+  },
+  {
+    "slug": "cat-baking-soda",
+    "dir": "icons",
+    "prompt": "Portrait-oriented overhead photo of an open box of white baking soda powder with a small wooden measuring scoop resting inside, surrounded by two fresh cut lemons on a light wood cutting board, soft overhead natural lighting, bright kitchen setting, 4:5 aspect ratio, editorial food-adjacent photography, no text, no logos, no people, no watermarks"
+  },
+  {
+    "slug": "cat-listerine",
+    "dir": "icons",
+    "prompt": "Portrait-oriented photo of a mint-green mouthwash bottle on a clean white bathroom shelf, fresh mint sprigs arranged beside it and a small amber glass spray bottle, cool blue-green toned lighting, fresh and hygienic atmosphere, 4:5 aspect ratio, editorial lifestyle photography, no text, no logos, no people, no watermarks, premium clean aesthetic"
+  },
+  {
+    "slug": "cat-peroxide",
+    "dir": "icons",
+    "prompt": "Portrait-oriented photo of a brown hydrogen peroxide bottle with white cap sitting on a bright white bathroom counter, a toothbrush holder nearby, pristine white hexagonal tile wall in background, clean and bright natural lighting, 4:5 aspect ratio, editorial minimalist bathroom photography, no text, no logos, no people, no watermarks"
+  },
+  {
+    "slug": "cat-deep-clean",
+    "dir": "icons",
+    "prompt": "Portrait-oriented overhead flat lay of premium cleaning tools arranged in a perfect grid on a clean white surface: yellow rubber gloves, two spray bottles (one teal one clear), a natural bristle brush, three folded microfiber cloths in different colors, 4:5 aspect ratio, bright even overhead lighting, editorial product photography, no text, no logos, no people, no watermarks"
+  },
+  {
+    "slug": "cat-dollar-store",
+    "dir": "icons",
+    "prompt": "Portrait-oriented photo of a collection of colorful budget cleaning supplies neatly arranged in a modern white wire basket on a light wooden shelf: orange spray bottle, green scrub brush, white organizing bins, blue sponges, cheerful bright natural lighting, 4:5 aspect ratio, editorial lifestyle photography, no text, no logos, no people, no watermarks"
+  },
+  {
+    "slug": "cat-laundry",
+    "dir": "icons",
+    "prompt": "Portrait-oriented photo of neatly stacked freshly folded white towels and soft pastel linen on a warm wooden surface, a modern white detergent bottle beside them, soft warm laundry room lighting with gentle steam wisps, cozy and clean atmosphere, 4:5 aspect ratio, editorial lifestyle photography, no text, no logos, no people, no watermarks"
   }
 ]
