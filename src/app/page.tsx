@@ -1,7 +1,7 @@
 import { HeroSlider } from "@/components/hero/HeroSlider";
 import { Container } from "@/components/layout/Container";
 import { categories } from "@/data/categories";
-import { featuredPosts, quickWinPosts } from "@/data/featured";
+import { featuredPosts, heroPosts, quickWinPosts } from "@/data/featured";
 import { TrendingCarousel } from "@/components/posts/TrendingCarousel";
 import { PostCard } from "@/components/posts/PostCard";
 import Link from "next/link";
@@ -34,7 +34,7 @@ export default function HomePage() {
       {/* Hero Slider */}
       <Container>
         <div className="pt-6 pb-2">
-          <HeroSlider posts={featuredPosts} />
+          <HeroSlider posts={heroPosts} />
         </div>
       </Container>
 
