@@ -85,3 +85,15 @@ Prompt: `Very subtle monochrome film grain/noise texture, seamless tileable over
 - Semantic landmarks and keyboard-accessible navigation
 - OpenGraph/Twitter metadata in app layout and pages
 - Static `robots.txt` and `sitemap.xml` in `public`
+
+## Folder Overview
+
+- `.github/workflows` — CI automation for lint, typecheck, and build on push/PR.
+- `public` — Static assets served directly (favicon, sitemap, robots, OG images, graphics, generated post images).
+- `scripts` — Utility scripts for Gemini image generation and prompt management.
+- `src/app` — Next.js App Router pages, layout, global styles, and API routes.
+- `src/components` — Reusable UI and feature components (navigation, cards, hero, SEO, form elements).
+- `src/data` — Local TypeScript content data for categories, featured content, and posts.
+- `src/lib` — Shared utility functions (formatting, filtering/search, slug helpers).
+- `src/styles` — Design tokens and style primitives used across the app.
+- `src/types` — Central TypeScript interfaces/types for posts and categories.
