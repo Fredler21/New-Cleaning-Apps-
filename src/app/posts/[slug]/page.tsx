@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { PostTOC } from "@/components/posts/PostTOC";
+import { PostTopBar } from "@/components/posts/PostTopBar";
 import { SafetyNote } from "@/components/posts/SafetyNote";
 import { ShareBar } from "@/components/posts/ShareBar";
 import { PostGrid } from "@/components/posts/PostGrid";
@@ -42,6 +43,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
 
   return (
     <>
+      <PostTopBar />
+
       {/* Hero banner */}
       <section className="relative h-[320px] overflow-hidden sm:h-[400px] lg:h-[440px]">
         <Image
