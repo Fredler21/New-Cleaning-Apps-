@@ -1,11 +1,5 @@
 import type { Post } from "@/types/post";
 
-const universalSafety = [
-  "Never mix bleach and ammonia. This can create dangerous chloramine gas.",
-  "Never mix bleach and vinegar. This can create toxic chlorine gas.",
-  "Open windows or run ventilation, wear gloves, patch-test surfaces, and keep products away from children and pets."
-];
-
 export const posts: Post[] = [
   {
     title: "13 Mind-Blowing Listerine Hacks",
@@ -34,7 +28,11 @@ export const posts: Post[] = [
       "Always test on an unseen area before first use.",
       "Store mixed solutions in labeled bottles and remake weekly."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Listerine contains alcohol and essential oils — avoid using on unsealed marble or lacquered wood, as it may strip finishes.",
+      "Do not apply Listerine-based sprays near eyes or open wounds. The menthol and eucalyptol can cause irritation on broken skin.",
+      "Keep Listerine solutions out of reach of children and pets. Even in diluted form, ingestion can cause nausea."
+    ]
   },
   {
     title: "7 Game-Changing Ultra Cleaning Hacks",
@@ -63,7 +61,11 @@ export const posts: Post[] = [
       "Keep two cloth zones: one for product, one for finishing.",
       "Set a timer block per room to maintain momentum."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Never mix bleach-based cleaners with ammonia-based products. The combination produces toxic chloramine gas that can cause respiratory distress.",
+      "When using degreasers, open windows or run a vent fan. Concentrated fumes in enclosed spaces can cause headaches and dizziness.",
+      "Wear rubber gloves throughout your cleaning session. Prolonged skin contact with all-purpose cleaners can cause dryness, irritation, or allergic reactions."
+    ]
   },
   {
     title: "14 Ways to Use Baking Soda in Your House",
@@ -92,7 +94,11 @@ export const posts: Post[] = [
       "Use non-scratch tools on polished stone and glass.",
       "Vacuum powder residues thoroughly to prevent haze."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Baking soda is mildly abrasive — avoid using it on polished granite, marble, or gold-plated fixtures as it can scratch or dull the finish.",
+      "Never mix baking soda with vinegar in a sealed container. The carbon dioxide gas buildup can cause the container to burst.",
+      "Although baking soda is non-toxic, keep it away from your eyes during scrubbing. Rinse immediately with cool water if contact occurs."
+    ]
   },
   {
     title: "8 Incredible Vinegar Hacks",
@@ -121,7 +127,11 @@ export const posts: Post[] = [
       "Do not use on natural stone unless manufacturer-approved.",
       "Rinse metal fixtures after treatment to maintain finish."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Never mix vinegar with bleach. The reaction creates toxic chlorine gas that can cause severe respiratory damage even in small amounts.",
+      "Vinegar's acidity can etch natural stone surfaces like marble, granite, and travertine. Use pH-neutral cleaners on these materials instead.",
+      "Avoid using vinegar on cast iron, aluminum, or waxed wood — the acid corrodes metal seasoning and strips protective wax coatings."
+    ]
   },
   {
     title: "16 Hydrogen Peroxide Cleaning Hacks",
@@ -150,7 +160,11 @@ export const posts: Post[] = [
       "Work small areas to monitor fabric and finish reactions.",
       "Rinse after treatment to prevent residue patterns."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Hydrogen peroxide bleaches colored fabrics and dark surfaces. Always spot-test in a hidden area and wait five minutes before full application.",
+      "Never mix hydrogen peroxide with vinegar in the same container. The reaction creates peracetic acid, which can irritate skin, eyes, and lungs.",
+      "Store hydrogen peroxide in its original dark bottle away from heat and sunlight. Exposure to light breaks it down, and high concentrations can cause skin burns."
+    ]
   },
   {
     title: "12 Shower Cleaning Hacks",
@@ -179,7 +193,11 @@ export const posts: Post[] = [
       "Ventilate for 20 minutes post-cleaning.",
       "Rotate grout and glass focus days to stay consistent."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Wet shower floors are extremely slippery during cleaning. Wear non-slip footwear or clean from outside the shower stall to prevent falls.",
+      "Never mix bleach-based shower cleaners with acidic products like vinegar or lime-dissolving sprays. The combination releases toxic chlorine gas.",
+      "Ensure the bathroom is well-ventilated when using shower mold removers. Run the exhaust fan and open a window to avoid inhaling concentrated fumes."
+    ]
   },
   {
     title: "5 Dollar Store Hacks You Should Know",
@@ -208,7 +226,11 @@ export const posts: Post[] = [
       "Label each bottle with dilution and date.",
       "Build room-based kits to reduce setup friction."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Dollar store cleaning products may lack child-resistant caps. Store all chemicals in a high cabinet out of reach of children and pets.",
+      "Check ingredient labels on budget cleaning products before mixing. Unlabeled or vaguely labeled cleaners may contain bleach or ammonia that reacts dangerously with other products.",
+      "Wear gloves when using any unfamiliar budget cleaning product for the first time. Cheaper formulations may contain harsher surfactants that irritate sensitive skin."
+    ]
   },
   {
     title: "30 Cleaning Myths You Should Be Wary Of",
@@ -237,7 +259,11 @@ export const posts: Post[] = [
       "Track what actually works for your surfaces.",
       "Prioritize safety over speed every time."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "More product does not mean more cleaning power. Over-applying cleaners leaves sticky residue that attracts dirt faster than a properly cleaned surface.",
+      "Bleach is not a catch-all cleaner. Using it on rust stains sets them permanently, and applying it to wood or fabric causes irreversible damage.",
+      "Natural does not always mean safe. Lemon juice etches marble, vinegar corrodes metals, and essential oils can be toxic to cats and dogs."
+    ]
   },
   {
     title: "11 Dawn Dish Soap Hacks for Greasy Kitchens",
@@ -266,7 +292,11 @@ export const posts: Post[] = [
       "Rinse cloths often to avoid grease transfer.",
       "Dry buff stainless surfaces for a higher-end finish."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Dawn is a surfactant, not a disinfectant. It removes grease effectively but does not kill bacteria — follow up with a food-safe sanitizer on cutting boards and prep surfaces.",
+      "A little Dawn goes a long way. Using too much creates excessive suds that are difficult to rinse and can leave a slippery, soap-film residue on floors and countertops.",
+      "Keep Dawn and all dish soaps away from pets' water bowls and food areas. Ingesting soapy water can cause vomiting and gastrointestinal upset in animals."
+    ]
   },
   {
     title: "9 Laundry Room Cleaning Hacks That Actually Save Time",
@@ -295,7 +325,11 @@ export const posts: Post[] = [
       "Use labeled bins to prevent clutter rebound.",
       "Wipe machine tops weekly to avoid product rings."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Clean dryer lint traps and vents regularly. Lint buildup is one of the leading causes of household fires — over 15,000 dryer fires occur annually.",
+      "Never pour liquid bleach directly onto colored clothing to remove stains. It will permanently bleach the fabric. Use color-safe oxygenated bleach instead.",
+      "When pulling machines forward for cleaning, turn off water supply valves first to prevent accidentally disconnecting hoses and causing a flood."
+    ]
   },
   {
     title: "10 Kitchen Sink Detox Hacks for Odor-Free Results",
@@ -324,7 +358,11 @@ export const posts: Post[] = [
       "Flush with hot water after each deep pass.",
       "Finish with dry wipe to prevent dull water marks."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Never use boiling water in PVC pipes if they are old or showing signs of wear. Extreme heat can soften plastic joints and cause leaks.",
+      "Do not put your hand inside a garbage disposal for any reason. Use tongs or pliers with the unit powered off and unplugged to retrieve stuck items.",
+      "When microwaving a sponge to sanitize it, ensure it is thoroughly wet first. A dry sponge can catch fire in the microwave within seconds."
+    ]
   },
   {
     title: "15 Bathroom Deep Clean Hacks for Hotel-Level Shine",
@@ -353,7 +391,11 @@ export const posts: Post[] = [
       "Use separate cloths for toilet and vanity zones.",
       "Always finish glass last for best visual impact."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Never mix toilet bowl cleaner (acidic) with bleach-based bathroom spray. This reaction produces toxic chlorine gas that accumulates rapidly in small bathrooms.",
+      "Use separate cleaning cloths for toilets and sinks. Cross-contamination transfers fecal bacteria to surfaces where you wash your face and brush your teeth.",
+      "Wear knee pads or kneel on a folded towel when scrubbing floors and tub edges. Prolonged kneeling on hard tile can cause bursitis and joint pain."
+    ]
   },
   {
     title: "6 Budget Cleaning Kits You Can Build in 20 Minutes",
@@ -382,7 +424,11 @@ export const posts: Post[] = [
       "Refill weekly so kits are always ready.",
       "Keep one mini kit in each bathroom cabinet."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "Label every spray bottle with its contents and dilution ratio. Unlabeled bottles lead to accidental misuse and dangerous product mixing.",
+      "Store cleaning kits in high cabinets or use child-safety locks if you have young children. Even mild cleaners can cause harm if ingested or sprayed in eyes.",
+      "Never store bleach and ammonia products in the same kit or caddy. Leaking bottles can mix and produce toxic chloramine fumes in an enclosed cabinet."
+    ]
   },
   {
     title: "18 Quick Wins for Busy Mornings",
@@ -411,7 +457,11 @@ export const posts: Post[] = [
       "Use a timer to keep momentum high.",
       "Do high-visibility surfaces first."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "When rushing through morning cleaning, never mix different spray products on the same surface without rinsing first. Chemical reactions can happen even from residue.",
+      "Be careful lifting heavy laundry baskets or trash bags in a hurry. Rushing with awkward loads is a common cause of back strain during household tasks.",
+      "If you squeegee the shower right after use, watch your footing on wet tile. Non-slip bath mats or shower shoes prevent slips during this quick daily habit."
+    ]
   },
   {
     title: "20 Declutter + Clean Pairing Hacks",
@@ -440,7 +490,11 @@ export const posts: Post[] = [
       "Clean immediately after removing clutter.",
       "End with a two-minute reset checklist."
     ],
-    safetyNotes: universalSafety
+    safetyNotes: [
+      "When moving furniture for decluttering, lift with your legs and not your back. Dragging heavy items across hard floors can scratch surfaces and cause injuries.",
+      "Dispose of expired medications through pharmacy take-back programs, not in the trash or toilet. Flushed drugs contaminate water supplies and trashed pills are a poisoning risk.",
+      "Wear a dust mask when decluttering storage areas, closets, or attics. Disturbing accumulated dust can trigger asthma attacks and allergic reactions."
+    ]
   }
 ];
 
