@@ -129,5 +129,14 @@
     "slug": "wd40",
     "dir": "icons",
     "prompt": "Portrait-oriented photo of a blue and yellow WD-40 spray can on a clean white marble countertop next to chrome bathroom fixtures and a folded yellow microfiber cloth, bright spa-like bathroom lighting, 4:5 aspect ratio, editorial product photography, no text, no logos, no people, no watermarks"
+  },
+  {
+    "slug": "10-best-ways-to-combat-cockroaches",
+    "prompt": "Premium editorial pest-control photo showing a single realistic cockroach on a clean white modern kitchen countertop with cleaning supplies in the background including a spray bottle and microfiber cloth, bright kitchen interior with soft cinematic daylight, slightly dramatic mood, realistic macro photography style, no people, no text"
+  },
+  {
+    "slug": "pest-control",
+    "dir": "icons",
+    "prompt": "Portrait-oriented photo of a clean modern kitchen defense setup against pests, spray bottle, sealed containers, and a small bait station on a white countertop, bright even lighting, 4:5 aspect ratio, editorial product photography, no text, no logos, no people, no watermarks"
   }
 ]

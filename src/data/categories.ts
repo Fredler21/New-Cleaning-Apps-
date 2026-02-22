@@ -72,5 +72,13 @@ export const categories: Category[] = [
     icon: "/graphics/icons/wd40.svg",
     description: "Surprising WD-40 cleaning tricks for bathroom grime, sticky residue, and stubborn buildup.",
     tags: ["quick wins", "bathroom", "kitchen"]
+  },
+  {
+    id: "pest-control",
+    name: "Pest Control",
+    slug: "pest-control",
+    icon: "/graphics/icons/pest-control.svg",
+    description: "Practical prevention and elimination tactics to keep your home pest-free and hygienic.",
+    tags: ["deep clean", "kitchen", "safety"]
   }
 ];
