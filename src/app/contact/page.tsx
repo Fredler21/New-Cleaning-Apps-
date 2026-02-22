@@ -15,7 +15,8 @@ export default function ContactPage() {
     setLoading(true);
     setStatus("");
 
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     const payload = {
       name: String(formData.get("name") || ""),
       email: String(formData.get("email") || ""),
@@ -48,7 +49,7 @@ export default function ContactPage() {
       }
 
       setStatusType("success");
-      event.currentTarget.reset();
+      form.reset();
       setStatus(result.message ?? "Message sent!");
     } catch {
       setLoading(false);
