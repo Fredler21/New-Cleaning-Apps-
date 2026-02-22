@@ -495,6 +495,37 @@ export const posts: Post[] = [
       "Dispose of expired medications through pharmacy take-back programs, not in the trash or toilet. Flushed drugs contaminate water supplies and trashed pills are a poisoning risk.",
       "Wear a dust mask when decluttering storage areas, closets, or attics. Disturbing accumulated dust can trigger asthma attacks and allergic reactions."
     ]
+  },
+  {
+    title: "8 Undemanding WD-40 Cleaning Hacks",
+    slug: "8-undemanding-wd40-cleaning-hacks",
+    category: "wd40-hacks",
+    readTime: "10 min",
+    tags: ["quick wins", "bathroom", "kitchen"],
+    excerpt:
+      "Surprisingly simple WD-40 tricks that dissolve grime, remove sticky messes, and restore shine in minutes.",
+    coverImage: "/graphics/posts/8-undemanding-wd40-cleaning-hacks.png",
+    supplies: ["WD-40", "Microfiber cloths", "Soft brush", "Warm water", "Dish soap", "Gloves"],
+    steps: [
+      { title: "Remove soap scum from glass shower doors", body: "Spray a light coat of WD-40 directly onto glass shower doors covered in soap scum and hard-water buildup. Let it sit for two minutes, then wipe with a microfiber cloth in straight strokes from top to bottom. The petroleum-based formula dissolves the mineral bonds that hold soap scum to glass surfaces. Follow up with a quick wipe of glass cleaner or a vinegar-water solution to remove any oily residue. The result is crystal-clear glass that looks brand new. Do this once a month and soap scum never gets a chance to build up into the thick, hazy layer that seems impossible to remove." },
+      { title: "Clean stubborn water stains from faucets", body: "Spray WD-40 onto chrome or brushed-nickel faucets that have white calcium and lime deposits. Let it penetrate for three minutes, then scrub gently with a soft cloth. The solvent breaks through mineral scale that vinegar alone struggles with on heavily built-up fixtures. Buff dry with a clean microfiber cloth for a streak-free shine. This works on bathroom faucets, kitchen fixtures, and even towel bars that have lost their luster from constant water splash exposure. Wipe away any excess with dish soap and warm water to remove the oily film." },
+      { title: "Dissolve sticky adhesive residue", body: "Spray WD-40 onto sticker residue, old tape marks, or label adhesive left behind on tiles, mirrors, or countertops. Wait one minute for the solvent to soften the glue, then peel or wipe it off with a cloth. WD-40 breaks down adhesive bonds on contact without scratching the surface underneath. This is especially useful for removing price tags from new bathroom accessories, old decal marks from tile walls, and sticky shelf-liner residue from cabinets. Clean the area with soapy water afterward to remove any oily trace." },
+      { title: "Remove crayon marks from walls", body: "Spray a small amount of WD-40 onto crayon marks on painted walls. Wipe gently with a soft cloth using straight strokes. The solvent dissolves the wax-based crayon pigment without damaging most interior paint finishes. Test on a small hidden area first — flat or matte paint is more sensitive than satin or semi-gloss. For large scribble areas, work in small sections and wipe each clean before moving to the next. Follow up with a damp cloth and mild dish soap to remove any residual oil from the wall surface." },
+      { title: "Clean grout stains on bathroom tiles", body: "Spray WD-40 along discolored grout lines in the bathroom, focusing on areas near the shower floor and around the tub where mildew and dirt settle. Let it sit for five minutes, then scrub with an old toothbrush in short back-and-forth strokes. WD-40 loosens embedded grime that regular bathroom cleaners leave behind. Wipe the tiles with a warm soapy cloth to remove the oily residue once the grout looks clean. This is not a replacement for deep mildew treatment, but it handles surface-level staining and dingy discoloration remarkably well." },
+      { title: "Restore shine to stainless steel fixtures", body: "Spray WD-40 onto a microfiber cloth — not directly onto the surface — and wipe stainless steel towel racks, soap dispensers, and cabinet handles in the direction of the grain. The thin oil layer removes fingerprints and water spots while leaving a subtle protective barrier against future marks. Buff with a dry cloth for a polished finish. This trick works in both bathrooms and kitchens and is especially effective on stainless steel appliance surfaces that show every fingerprint and smudge." },
+      { title: "Loosen rusty screws and hardware", body: "Spray WD-40 onto rusty screws on toilet seat hinges, towel bar brackets, or cabinet hardware. Wait five minutes for the formula to penetrate and loosen the corrosion. Gently turn the screw with the appropriate screwdriver — it should release without stripping. WD-40's penetrating oil reaches into the threads where rust bonds metal to metal. This saves you from breaking fixtures during removal and avoids the cost of replacing hardware that just needed loosening. Wipe away any drips with a cloth so the lubricant doesn't stain surrounding surfaces." },
+      { title: "Clean scuff marks from tile and linoleum floors", body: "Spray WD-40 onto black scuff marks left by shoes on bathroom tile or linoleum flooring. Let it sit for one minute, then wipe with a cloth. The solvent dissolves the rubber compound that causes scuff marks without affecting the floor finish. For textured tile, use a soft brush to work the product into the grooves. After the scuff marks are gone, mop the area with warm water and dish soap to remove the oily residue so the floor doesn't become slippery. This is far faster than scrubbing scuffs with a magic eraser or baking soda paste." }
+    ],
+    proTips: [
+      "Always wipe surfaces with soapy water after WD-40 to remove oily residue.",
+      "Spray onto a cloth rather than directly onto surfaces for controlled application.",
+      "Use in well-ventilated areas and avoid inhaling the aerosol spray."
+    ],
+    safetyNotes: [
+      "WD-40 is a petroleum-based product and is flammable. Never use it near open flames, gas stoves, or water heaters with pilot lights.",
+      "Avoid spraying WD-40 on natural stone surfaces like marble or granite — the petroleum solvents can stain and discolor porous stone permanently.",
+      "Always wash hands thoroughly with soap and water after handling WD-40. Prolonged skin contact can cause dryness and irritation. Keep it away from eyes and out of reach of children and pets."
+    ]
   }
 ];
 

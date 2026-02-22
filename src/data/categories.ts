@@ -64,5 +64,13 @@ export const categories: Category[] = [
     icon: "/graphics/icons/laundry.svg",
     description: "Fabric and food-zone techniques that keep daily routines light and reliable.",
     tags: ["laundry", "kitchen", "routine"]
+  },
+  {
+    id: "wd40-hacks",
+    name: "WD-40 Hacks",
+    slug: "wd40-hacks",
+    icon: "/graphics/icons/wd40.svg",
+    description: "Surprising WD-40 cleaning tricks for bathroom grime, sticky residue, and stubborn buildup.",
+    tags: ["quick wins", "bathroom", "kitchen"]
   }
 ];

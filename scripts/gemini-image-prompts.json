@@ -120,5 +120,14 @@
     "slug": "cat-laundry",
     "dir": "icons",
     "prompt": "Portrait-oriented photo of neatly stacked freshly folded white towels and soft pastel linen on a warm wooden surface, a modern white detergent bottle beside them, soft warm laundry room lighting with gentle steam wisps, cozy and clean atmosphere, 4:5 aspect ratio, editorial lifestyle photography, no text, no logos, no people, no watermarks"
+  },
+  {
+    "slug": "8-undemanding-wd40-cleaning-hacks",
+    "prompt": "Premium editorial cleaning photo showing a iconic blue and yellow WD-40 spray can being used to clean a modern luxury bathroom, the WD-40 can prominently displayed on a sparkling white bathroom countertop next to chrome fixtures, tiles, and microfiber cloth, bright spa-like upscale bathroom interior, soft cinematic daylight, realistic product photography, no people, no text"
+  },
+  {
+    "slug": "wd40",
+    "dir": "icons",
+    "prompt": "Portrait-oriented photo of a blue and yellow WD-40 spray can on a clean white marble countertop next to chrome bathroom fixtures and a folded yellow microfiber cloth, bright spa-like bathroom lighting, 4:5 aspect ratio, editorial product photography, no text, no logos, no people, no watermarks"
   }
 ]
