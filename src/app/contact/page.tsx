@@ -58,6 +58,16 @@ export default function ContactPage() {
           <p className="mt-3" style={{ color: "var(--text-secondary)" }}>
             Ask about brand collaborations, custom hack roundups, or content licensing.
           </p>
+          <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+            Or email us directly at{" "}
+            <a
+              href="mailto:support@trycleaninghacks.com"
+              className="underline font-medium"
+              style={{ color: "var(--accent)" }}
+            >
+              support@trycleaninghacks.com
+            </a>
+          </p>
         </div>
 
         <div className="mx-auto max-w-xl">
