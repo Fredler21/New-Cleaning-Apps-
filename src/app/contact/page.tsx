@@ -29,7 +29,16 @@ export default function ContactPage() {
         body: JSON.stringify(payload)
       });
 
-      const result = (await response.json()) as { message?: string; error?: string };
+      let result: { message?: string; error?: string };
+      try {
+        result = (await response.json()) as { message?: string; error?: string };
+      } catch {
+        setLoading(false);
+        setStatusType("error");
+        setStatus("Server error. Please try again later.");
+        return;
+      }
+
       setLoading(false);
 
       if (!response.ok) {
@@ -44,7 +53,7 @@ export default function ContactPage() {
     } catch {
       setLoading(false);
       setStatusType("error");
-      setStatus("Network error. Please try again.");
+      setStatus("Network error. Please check your connection and try again.");
     }
   };
 

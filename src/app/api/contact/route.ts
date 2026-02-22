@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const CONTACT_EMAIL = "support@trycleaninghacks.com";
 
 type ContactPayload = {
@@ -14,7 +12,13 @@ type ContactPayload = {
 const isValidEmail = (value: string): boolean => /\S+@\S+\.\S+/.test(value);
 
 export async function POST(request: Request) {
-  const body = (await request.json()) as Partial<ContactPayload>;
+  let body: Partial<ContactPayload>;
+
+  try {
+    body = (await request.json()) as Partial<ContactPayload>;
+  } catch {
+    return NextResponse.json({ error: "Invalid request." }, { status: 400 });
+  }
 
   if (!body.name || body.name.trim().length < 2) {
     return NextResponse.json({ error: "Name must be at least 2 characters." }, { status: 400 });
@@ -26,8 +30,18 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Message must be at least 10 characters." }, { status: 400 });
   }
 
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.error("RESEND_API_KEY is not set");
+    return NextResponse.json(
+      { error: "Email service is not configured. Please try again later." },
+      { status: 500 }
+    );
+  }
+
   try {
-    await resend.emails.send({
+    const resend = new Resend(apiKey);
+    const { error } = await resend.emails.send({
       from: `CleaningHacks Contact <onboarding@resend.dev>`,
       to: CONTACT_EMAIL,
       replyTo: body.email,
@@ -41,6 +55,14 @@ export async function POST(request: Request) {
         <p>${body.message.trim().replace(/\n/g, "<br />")}</p>
       `,
     });
+
+    if (error) {
+      console.error("Resend API error:", error);
+      return NextResponse.json(
+        { error: "Unable to send your message right now. Please try again later." },
+        { status: 500 }
+      );
+    }
   } catch (err) {
     console.error("Resend error:", err);
     return NextResponse.json(
