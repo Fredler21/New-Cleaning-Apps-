@@ -154,7 +154,7 @@ export default function PrivacyPage() {
           <Section title="8. Changes to This Policy">
             <p>
               We may update this Privacy Policy from time to time to reflect changes in our
-              practices or for legal, operational, or regulatory reasons. The "Last updated" date at
+              practices or for legal, operational, or regulatory reasons. The &ldquo;Last updated&rdquo; date at
               the top of this page indicates when the policy was last revised. Continued use of the
               website after any changes constitutes acceptance of the updated policy.
             </p>
