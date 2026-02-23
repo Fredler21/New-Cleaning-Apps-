@@ -11,7 +11,9 @@ const navLinks = [
   { href: "/categories", label: "Categories" },
   { href: "/posts", label: "Hacks" },
   { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
+  { href: "/contact", label: "Contact" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/privacy", label: "Privacy" }
 ];
 
 export function Navbar() {
