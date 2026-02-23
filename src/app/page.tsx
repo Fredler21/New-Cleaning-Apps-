@@ -17,7 +17,8 @@ const categoryImages: Record<string, string> = {
   "dollar-store": "/graphics/icons/cat-dollar-store.png",
   "laundry-kitchen": "/graphics/icons/cat-laundry.png",
   "wd40-hacks": "/graphics/icons/cat-wd40.png",
-  "pest-control": "/graphics/icons/cat-pest-control.png"
+  "pest-control": "/graphics/icons/cat-pest-control.png",
+  "home-fragrance": "/graphics/icons/cat-home-fragrance.png"
 };
 
 const categoryEmoji: Record<string, string> = {
@@ -30,7 +31,8 @@ const categoryEmoji: Record<string, string> = {
   "dollar-store": "💲",
   "laundry-kitchen": "👕",
   "wd40-hacks": "🔧",
-  "pest-control": "🪳"
+  "pest-control": "🪳",
+  "home-fragrance": "🌸"
 };
 
 export default function HomePage() {

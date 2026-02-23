@@ -80,5 +80,13 @@ export const categories: Category[] = [
     icon: "/graphics/icons/pest-control.svg",
     description: "Practical prevention and elimination tactics to keep your home pest-free and hygienic.",
     tags: ["deep clean", "kitchen", "safety"]
+  },
+  {
+    id: "home-fragrance",
+    name: "Home Fragrance",
+    slug: "home-fragrance",
+    icon: "/graphics/icons/home-fragrance.svg",
+    description: "DIY scent hacks and natural fragrance tricks that make every room in your house smell amazing.",
+    tags: ["odor control", "quick wins", "routine"]
   }
 ];
