@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { buildMeta } from "@/components/seo/Meta";
-import { FAQAccordion } from "@/components/ui/FAQAccordion";
 
 export const metadata: Metadata = buildMeta({
   title: "Privacy Policy",
@@ -9,35 +8,6 @@ export const metadata: Metadata = buildMeta({
     "Read how TryCleaningHacks collects, uses, and protects your personal data, including our cookie, advertising, and data-handling policies.",
   path: "/privacy",
 });
-
-/* ── FAQ data ─────────────────────────────────────────────── */
-const faqs = [
-  {
-    question: "What is the best way to deep-clean my bathroom?",
-    answer:
-      "Start by spraying an all-purpose cleaner on tiles, the tub, and the toilet. Let it sit for 5–10 minutes to break down grime. Scrub surfaces with a stiff brush, then rinse. For mirrors and glass, use a vinegar-water mix and a microfibre cloth to get a streak-free finish. Finish by mopping the floor with a disinfectant solution.",
-  },
-  {
-    question: "How do I remove tough grease stains from my kitchen?",
-    answer:
-      "Mix equal parts baking soda and dish soap into a paste. Apply it directly to the greasy area — stovetops, range hoods, or backsplash tiles — and let it sit for 15 minutes. Scrub with a non-scratch sponge and wipe clean with a damp cloth. For stubborn build-up, a degreaser spray works wonders.",
-  },
-  {
-    question: "How often should I wash my bedding and curtains?",
-    answer:
-      "Sheets and pillowcases should be washed weekly in hot water to eliminate dust mites and bacteria. Duvet covers and blankets can be washed every two to four weeks. Curtains should be laundered or steam-cleaned every three to six months, or more often if you have pets or allergies.",
-  },
-  {
-    question: "What natural cleaning products actually work?",
-    answer:
-      "White vinegar, baking soda, lemon juice, and castile soap are all highly effective. Vinegar cuts through grease and removes odours, baking soda is a gentle abrasive for scrubbing, lemon juice naturally disinfects and brightens, and castile soap works as an all-purpose cleaner when diluted with water.",
-  },
-  {
-    question: "How can I keep my home smelling fresh without air fresheners?",
-    answer:
-      "Open windows regularly for ventilation. Simmer a pot of water with citrus peels, cinnamon sticks, and cloves for a natural fragrance. Sprinkle baking soda on carpets before vacuuming to absorb odours. Place bowls of activated charcoal or coffee grounds in musty areas to neutralise smells.",
-  },
-];
 
 /* ── Section helper ───────────────────────────────────────── */
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
@@ -206,17 +176,6 @@ export default function PrivacyPage() {
             </p>
           </Section>
         </div>
-      </section>
-
-      {/* ── FAQ ────────────────────────────────────────── */}
-      <section className="pb-16">
-        <h2
-          className="mb-6 text-2xl font-bold tracking-tight sm:text-3xl"
-          style={{ color: "var(--text)" }}
-        >
-          Frequently Asked Questions
-        </h2>
-        <FAQAccordion items={faqs} />
       </section>
     </Container>
   );
