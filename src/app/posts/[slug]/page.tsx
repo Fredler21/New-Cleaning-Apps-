@@ -78,7 +78,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               headline: post.title,
               description: post.excerpt,
               image: post.coverImage,
-              author: { "@type": "Organization", name: "CleaningHacks" }
+              author: { "@type": "Organization", name: "TryCleaningHacks" }
             }}
           />
 

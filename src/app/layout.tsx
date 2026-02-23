@@ -10,22 +10,22 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cleaninghax.example"),
-  title: "CleaningHax Premium",
-  description: "Premium cleaning hacks inspired by social-friendly routines and high-end home care.",
+  metadataBase: new URL("https://trycleaninghacks.com"),
+  title: "TryCleaningHacks",
+  description: "Tested cleaning hacks, quick wins, and deep-clean routines for every home.",
   openGraph: {
-    title: "CleaningHax Premium",
-    description: "High-end cleaning hacks, quick wins, and deep-clean routines.",
-    url: "https://cleaninghax.example",
-    siteName: "CleaningHax Premium",
-    images: [{ url: "/og/og-home.png", width: 1200, height: 630, alt: "CleaningHax Premium" }],
+    title: "TryCleaningHacks",
+    description: "Tested cleaning hacks, quick wins, and deep-clean routines for every home.",
+    url: "https://trycleaninghacks.com",
+    siteName: "TryCleaningHacks",
+    images: [{ url: "/og/og-home.png", width: 1200, height: 630, alt: "TryCleaningHacks" }],
     locale: "en_US",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "CleaningHax Premium",
-    description: "Premium cleaning hacks for kitchen, bath, laundry, and deep clean routines.",
+    title: "TryCleaningHacks",
+    description: "Tested cleaning hacks for kitchen, bath, laundry, and deep-clean routines.",
     images: ["/og/og-home.png"]
   }
 };

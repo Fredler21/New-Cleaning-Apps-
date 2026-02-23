@@ -8,8 +8,8 @@ type MetaInput = {
 };
 
 export const buildMeta = ({ title, description, path = "/", image = "/og/og-default.png" }: MetaInput): Metadata => {
-  const fullTitle = `${title} | CleaningHax Premium`;
-  const url = `https://cleaninghax.example${path}`;
+  const fullTitle = `${title} | TryCleaningHacks`;
+  const url = `https://trycleaninghacks.com${path}`;
 
   return {
     title: fullTitle,

@@ -6,36 +6,36 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 export const metadata: Metadata = buildMeta({
   title: "Privacy Policy",
   description:
-    "Read how CleaningHax collects, uses, and protects your personal data, including our cookie, advertising, and third-party disclosure policies.",
+    "Read how TryCleaningHacks collects, uses, and protects your personal data, including our cookie, advertising, and data-handling policies.",
   path: "/privacy",
 });
 
 /* ── FAQ data ─────────────────────────────────────────────── */
 const faqs = [
   {
-    question: "What personal information does CleaningHax collect?",
+    question: "What is the best way to deep-clean my bathroom?",
     answer:
-      "We only collect information you voluntarily provide — such as your name, email address, and message when you use our contact form or subscribe to our newsletter. We also collect anonymous usage data through cookies and analytics tools (like Google Analytics) to understand how visitors interact with our site.",
+      "Start by spraying an all-purpose cleaner on tiles, the tub, and the toilet. Let it sit for 5–10 minutes to break down grime. Scrub surfaces with a stiff brush, then rinse. For mirrors and glass, use a vinegar-water mix and a microfibre cloth to get a streak-free finish. Finish by mopping the floor with a disinfectant solution.",
   },
   {
-    question: "Does CleaningHax use cookies or advertising trackers?",
+    question: "How do I remove tough grease stains from my kitchen?",
     answer:
-      "Yes. We use first-party cookies to remember your preferences (e.g., dark mode) and third-party cookies from services like Google AdSense and Google Analytics. These cookies help us serve relevant ads and measure site performance. You can manage or disable cookies through your browser settings at any time.",
+      "Mix equal parts baking soda and dish soap into a paste. Apply it directly to the greasy area — stovetops, range hoods, or backsplash tiles — and let it sit for 15 minutes. Scrub with a non-scratch sponge and wipe clean with a damp cloth. For stubborn build-up, a degreaser spray works wonders.",
   },
   {
-    question: "Will my data be shared with third parties?",
+    question: "How often should I wash my bedding and curtains?",
     answer:
-      "We do not sell your personal data. However, certain trusted third-party services — such as Google AdSense, Google Analytics, and our email provider — may receive limited data in order to deliver ads, measure traffic, and process newsletter subscriptions. Each of these services has its own privacy policy governing how they handle your information.",
+      "Sheets and pillowcases should be washed weekly in hot water to eliminate dust mites and bacteria. Duvet covers and blankets can be washed every two to four weeks. Curtains should be laundered or steam-cleaned every three to six months, or more often if you have pets or allergies.",
   },
   {
-    question: "How can I delete my data or opt out?",
+    question: "What natural cleaning products actually work?",
     answer:
-      "You can request deletion of any personal data we hold by contacting us through our Contact page. To opt out of personalised advertising, visit Google's Ad Settings (adssettings.google.com) or use the Network Advertising Initiative opt-out page. You can also clear or block cookies in your browser settings.",
+      "White vinegar, baking soda, lemon juice, and castile soap are all highly effective. Vinegar cuts through grease and removes odours, baking soda is a gentle abrasive for scrubbing, lemon juice naturally disinfects and brightens, and castile soap works as an all-purpose cleaner when diluted with water.",
   },
   {
-    question: "Is CleaningHax safe for children under 13?",
+    question: "How can I keep my home smelling fresh without air fresheners?",
     answer:
-      "CleaningHax is a general-audience website focused on household cleaning tips. We do not knowingly collect personal data from children under the age of 13. If you believe a child has submitted personal information through our site, please contact us immediately so we can remove it.",
+      "Open windows regularly for ventilation. Simmer a pot of water with citrus peels, cinnamon sticks, and cloves for a natural fragrance. Sprinkle baking soda on carpets before vacuuming to absorb odours. Place bowls of activated charcoal or coffee grounds in musty areas to neutralise smells.",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
           </h1>
           <p className="mt-3" style={{ color: "var(--text-secondary)" }}>
             Last updated: February 23, 2026 — Your privacy matters to us. Read below to understand
-            exactly how CleaningHax handles your data.
+            exactly how TryCleaningHacks handles your data.
           </p>
         </div>
 
@@ -103,7 +103,7 @@ export default function PrivacyPage() {
           {/* 3 */}
           <Section title="3. Cookies & Tracking Technologies">
             <p>
-              CleaningHax uses cookies — small text files stored on your device — to enhance your
+              TryCleaningHacks uses cookies — small text files stored on your device — to enhance your
               browsing experience. We use:
             </p>
             <ul className="ml-4 mt-2 list-disc space-y-1">
@@ -127,37 +127,7 @@ export default function PrivacyPage() {
           </Section>
 
           {/* 4 */}
-          <Section title="4. Third-Party Services">
-            <p>We work with the following trusted third-party providers:</p>
-            <ul className="ml-4 mt-2 list-disc space-y-1">
-              <li>
-                <strong>Google AdSense</strong> — serves advertisements; may use cookies to
-                personalise ads.{" "}
-                <a
-                  href="https://policies.google.com/privacy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline"
-                  style={{ color: "var(--accent)" }}
-                >
-                  Google Privacy Policy
-                </a>
-              </li>
-              <li>
-                <strong>Google Analytics</strong> — collects anonymised usage statistics.
-              </li>
-              <li>
-                <strong>Vercel Analytics</strong> — collects performance &amp; web-vital metrics.
-              </li>
-            </ul>
-            <p className="mt-2">
-              These services may collect data according to their own privacy policies. We encourage
-              you to review them.
-            </p>
-          </Section>
-
-          {/* 5 */}
-          <Section title="5. Data Sharing & Disclosure">
+          <Section title="4. Data Sharing & Disclosure">
             <p>
               We do <strong>not</strong> sell, rent, or trade your personal information. We may share
               data only:
@@ -165,12 +135,12 @@ export default function PrivacyPage() {
             <ul className="ml-4 mt-2 list-disc space-y-1">
               <li>With service providers who assist in operating the website (analytics, ads, email).</li>
               <li>If required by law, regulation, or legal process.</li>
-              <li>To protect the rights, safety, or property of CleaningHax or its users.</li>
+              <li>To protect the rights, safety, or property of TryCleaningHacks or its users.</li>
             </ul>
           </Section>
 
-          {/* 6 */}
-          <Section title="6. Data Retention">
+          {/* 5 */}
+          <Section title="5. Data Retention">
             <p>
               Contact form submissions are retained only as long as necessary to respond to your
               enquiry. Newsletter subscriber data is kept until you unsubscribe. Analytics data is
@@ -178,8 +148,8 @@ export default function PrivacyPage() {
             </p>
           </Section>
 
-          {/* 7 */}
-          <Section title="7. Your Rights">
+          {/* 6 */}
+          <Section title="6. Your Rights">
             <p>You have the right to:</p>
             <ul className="ml-4 mt-2 list-disc space-y-1">
               <li>Access the personal data we hold about you.</li>
@@ -201,17 +171,17 @@ export default function PrivacyPage() {
             </p>
           </Section>
 
-          {/* 8 */}
-          <Section title="8. Children's Privacy">
+          {/* 7 */}
+          <Section title="7. Children's Privacy">
             <p>
-              CleaningHax does not knowingly collect personal information from children under the age
+              TryCleaningHacks does not knowingly collect personal information from children under the age
               of 13. If you believe a child has provided us with personal data, please contact us so
               we can promptly delete it.
             </p>
           </Section>
 
-          {/* 9 */}
-          <Section title="9. Changes to This Policy">
+          {/* 8 */}
+          <Section title="8. Changes to This Policy">
             <p>
               We may update this Privacy Policy from time to time to reflect changes in our
               practices or for legal, operational, or regulatory reasons. The "Last updated" date at
@@ -220,8 +190,8 @@ export default function PrivacyPage() {
             </p>
           </Section>
 
-          {/* 10 */}
-          <Section title="10. Contact Us">
+          {/* 9 */}
+          <Section title="9. Contact Us">
             <p>
               If you have any questions or concerns about this Privacy Policy, please contact us
               through our{" "}

@@ -1,4 +1,4 @@
-# CleaningHax Premium
+# TryCleaningHacks
 
 Luxury cleaning hacks website built with Next.js App Router, TypeScript, and TailwindCSS.
 

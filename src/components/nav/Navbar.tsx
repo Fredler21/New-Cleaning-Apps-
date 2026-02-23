@@ -30,7 +30,7 @@ export function Navbar() {
               </svg>
             </div>
             <span className="text-lg font-semibold tracking-tight" style={{ color: "var(--text)" }}>
-              Cleaning<span className="text-teal-600 dark:text-teal-400">Hacks</span>
+              TryCleaning<span className="text-teal-600 dark:text-teal-400">Hacks</span>
             </span>
           </Link>
 

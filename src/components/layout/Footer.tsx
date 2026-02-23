@@ -30,7 +30,7 @@ export function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
-              <span className="text-base font-semibold" style={{ color: "var(--text)" }}>CleaningHacks</span>
+              <span className="text-base font-semibold" style={{ color: "var(--text)" }}>TryCleaningHacks</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
               The best place on the internet for tested, reliable cleaning solutions. Professional results using everyday ingredients.
@@ -84,7 +84,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-3 border-t py-6 sm:flex-row" style={{ borderColor: "var(--border)" }}>
-          <p className="text-xs" style={{ color: "var(--muted)" }}>© {new Date().getFullYear()} CleaningHacks. Smart cleaning, premium results.</p>
+          <p className="text-xs" style={{ color: "var(--muted)" }}>© {new Date().getFullYear()} TryCleaningHacks. Smart cleaning, real results.</p>
           <div className="flex items-center gap-3">
             <a
               href="https://pin.it/5TQpWRWSn"

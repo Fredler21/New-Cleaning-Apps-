@@ -42,7 +42,7 @@ export async function POST(request: Request) {
   try {
     const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
-      from: `CleaningHacks <noreply@contact.trycleaninghacks.com>`,
+      from: `TryCleaningHacks <noreply@contact.trycleaninghacks.com>`,
       to: CONTACT_EMAIL,
       replyTo: body.email,
       subject: `New Contact Form Message from ${body.name.trim()}`,
