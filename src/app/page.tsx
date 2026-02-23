@@ -15,7 +15,9 @@ const categoryImages: Record<string, string> = {
   "peroxide-hacks": "/graphics/icons/cat-peroxide.png",
   "deep-clean": "/graphics/icons/cat-deep-clean.png",
   "dollar-store": "/graphics/icons/cat-dollar-store.png",
-  "laundry-kitchen": "/graphics/icons/cat-laundry.png"
+  "laundry-kitchen": "/graphics/icons/cat-laundry.png",
+  "wd40-hacks": "/graphics/icons/cat-wd40.png",
+  "pest-control": "/graphics/icons/cat-pest-control.png"
 };
 
 const categoryEmoji: Record<string, string> = {
@@ -26,7 +28,9 @@ const categoryEmoji: Record<string, string> = {
   "peroxide-hacks": "💧",
   "deep-clean": "🏠",
   "dollar-store": "💲",
-  "laundry-kitchen": "👕"
+  "laundry-kitchen": "👕",
+  "wd40-hacks": "🔧",
+  "pest-control": "🪳"
 };
 
 export default function HomePage() {
