@@ -4,6 +4,7 @@ import { categories } from "@/data/categories";
 import { featuredPosts, heroPosts, quickWinPosts } from "@/data/featured";
 import { TrendingCarousel } from "@/components/posts/TrendingCarousel";
 import { PostCard } from "@/components/posts/PostCard";
+import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import Link from "next/link";
 
 const categoryImages: Record<string, string> = {
@@ -228,22 +229,7 @@ export default function HomePage() {
               </div>
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl" style={{ color: "var(--text)" }}>Get Premium Cleaning Briefs</h2>
               <p className="mt-3 text-sm" style={{ color: "var(--text-secondary)" }}>Weekly high-impact hacks, curated for a spotless home. No spam, unsubscribe anytime.</p>
-              <form className="mt-6 flex flex-col gap-3 sm:flex-row" aria-label="Email capture form">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 rounded-xl py-3 px-4 text-sm outline-none transition-colors"
-                  style={{ background: "var(--input-bg)", border: "1px solid var(--input-border)", color: "var(--text)" }}
-                  aria-label="Email address"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="shrink-0 sm:min-w-[140px] rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:shadow-md hover:brightness-105 active:scale-[0.98]"
-                >
-                  Subscribe
-                </button>
-              </form>
+              <NewsletterForm />
             </div>
           </div>
         </section>
