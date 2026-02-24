@@ -9,9 +9,7 @@ import { useTheme } from "@/context/ThemeContext";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/categories", label: "Categories" },
-  { href: "/posts", label: "Hacks" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
+  { href: "/posts", label: "Hacks" }
 ];
 
 export function Navbar() {
