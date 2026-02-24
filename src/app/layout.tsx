@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://trycleaninghacks.com"),
   title: "TryCleaningHacks",
   description: "Tested cleaning hacks, quick wins, and deep-clean routines for every home.",
+  verification: {
+    google: "5sbyW1HBzsmC93Y2dwlzj8ckF5rYZx0qbHOfXWymDIA",
+  },
   openGraph: {
     title: "TryCleaningHacks",
     description: "Tested cleaning hacks, quick wins, and deep-clean routines for every home.",
