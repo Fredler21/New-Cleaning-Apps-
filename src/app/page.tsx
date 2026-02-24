@@ -108,7 +108,7 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
-          <div className="flex gap-4 overflow-x-auto pb-4 hide-scrollbar -mx-1 px-1">
+          <div className="flex gap-4 overflow-x-auto pb-4 -mx-1 px-1">
             {categories.map((cat) => (
               <Link
                 key={cat.id}
