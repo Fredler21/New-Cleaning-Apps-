@@ -7,6 +7,7 @@ import { PostTOC } from "@/components/posts/PostTOC";
 import { PostTopBar } from "@/components/posts/PostTopBar";
 import { SafetyNote } from "@/components/posts/SafetyNote";
 import { ShareBar } from "@/components/posts/ShareBar";
+import { SaveHackButton } from "@/components/posts/SaveHackButton";
 import { PostGrid } from "@/components/posts/PostGrid";
 import { Badge } from "@/components/ui/Badge";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -85,12 +86,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
 
           {/* Action bar */}
           <div className="mb-10 flex flex-wrap items-center gap-3 rounded-xl px-5 py-3" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
-            <button className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:shadow-md active:scale-[0.97]">
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-              </svg>
-              Save Hack
-            </button>
+            <SaveHackButton slug={post.slug} variant="full" />
             <ShareBar title={post.title} slug={post.slug} />
           </div>
 
