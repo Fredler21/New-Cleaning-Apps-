@@ -11,6 +11,15 @@ type ContactPayload = {
 
 const isValidEmail = (value: string): boolean => /\S+@\S+\.\S+/.test(value);
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 export async function POST(request: Request) {
   let body: Partial<ContactPayload>;
 
@@ -48,11 +57,11 @@ export async function POST(request: Request) {
       subject: `New Contact Form Message from ${body.name.trim()}`,
       html: `
         <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${body.name.trim()}</p>
-        <p><strong>Email:</strong> ${body.email.trim()}</p>
+        <p><strong>Name:</strong> ${escapeHtml(body.name.trim())}</p>
+        <p><strong>Email:</strong> ${escapeHtml(body.email.trim())}</p>
         <hr />
         <p><strong>Message:</strong></p>
-        <p>${body.message.trim().replace(/\n/g, "<br />")}</p>
+        <p>${escapeHtml(body.message.trim()).replace(/\n/g, "<br />")}</p>
       `,
     });
 

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { HeroSlider } from "@/components/hero/HeroSlider";
 import { HeroSearch } from "@/components/hero/HeroSearch";
 import { Container } from "@/components/layout/Container";
@@ -7,6 +8,29 @@ import { TrendingCarousel } from "@/components/posts/TrendingCarousel";
 import { PostCard } from "@/components/posts/PostCard";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+  description:
+    "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans — no guesswork, no gimmicks.",
+  openGraph: {
+    title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+    description:
+      "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
+    url: "https://trycleaninghacks.com",
+    siteName: "TryCleaningHacks",
+    images: [{ url: "/og/og-home.png", width: 1200, height: 630, alt: "TryCleaningHacks" }],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+    description:
+      "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results in minutes.",
+    images: ["/og/og-home.png"],
+  },
+};
 
 const categoryImages: Record<string, string> = {
   "dawn-hacks": "/graphics/icons/cat-dawn.png",
@@ -84,7 +108,7 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
-          <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide -mx-1 px-1">
+          <div className="flex gap-4 overflow-x-auto pb-4 hide-scrollbar -mx-1 px-1">
             {categories.map((cat) => (
               <Link
                 key={cat.id}

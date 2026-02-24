@@ -28,7 +28,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title: post.title,
     description: post.excerpt,
     path: `/posts/${post.slug}`,
-    image: "/og/og-default.png"
+    image: "/og/og-default.png",
+    ogType: "article"
   });
 }
 

@@ -162,7 +162,7 @@ export default function AboutPage() {
                 </div>
                 <div className="pt-4" style={{ borderTop: "1px solid var(--border)" }}>
                   <p className="text-2xl font-bold" style={{ color: "var(--text)" }}>
-                    10
+                    11
                   </p>
                   <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
                     Categories covered

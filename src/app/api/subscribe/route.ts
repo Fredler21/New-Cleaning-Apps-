@@ -35,7 +35,7 @@ export async function POST(request: Request) {
       subject: `New Newsletter Subscriber: ${body.email.trim()}`,
       html: `
         <h2>New Newsletter Subscription</h2>
-        <p><strong>Email:</strong> ${body.email.trim()}</p>
+        <p><strong>Email:</strong> ${body.email.trim().replace(/</g, "&lt;").replace(/>/g, "&gt;")}</p>
         <p>This person subscribed to the Premium Cleaning Briefs newsletter on your website.</p>
       `,
     });

@@ -17,7 +17,7 @@ export function PostTopBar() {
   return (
     <div
       className="sticky top-0 z-30 border-b backdrop-blur-md"
-      style={{ background: "var(--surface)/90", borderColor: "var(--border)" }}
+      style={{ background: "color-mix(in srgb, var(--surface) 90%, transparent)", borderColor: "var(--border)" }}
     >
       <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
         {/* Back button */}

@@ -5,9 +5,10 @@ type MetaInput = {
   description: string;
   path?: string;
   image?: string;
+  ogType?: "website" | "article";
 };
 
-export const buildMeta = ({ title, description, path = "/", image = "/og/og-default.png" }: MetaInput): Metadata => {
+export const buildMeta = ({ title, description, path = "/", image = "/og/og-default.png", ogType = "website" }: MetaInput): Metadata => {
   const fullTitle = `${title} | TryCleaningHacks`;
   const url = `https://trycleaninghacks.com${path}`;
 
@@ -19,7 +20,7 @@ export const buildMeta = ({ title, description, path = "/", image = "/og/og-defa
       description,
       url,
       images: [{ url: image, width: 1200, height: 630, alt: title }],
-      type: "article"
+      type: ogType
     },
     twitter: {
       card: "summary_large_image",
