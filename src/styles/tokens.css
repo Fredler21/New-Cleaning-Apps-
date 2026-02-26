@@ -60,4 +60,6 @@
   --input-bg: rgba(255,255,255,0.04);
   --input-border: rgba(255,255,255,0.1);
   --select-bg: rgba(255,255,255,0.04);
+  --accent-light: rgba(13, 148, 136, 0.12);
+  --accent-surface: rgba(13, 148, 136, 0.15);
 }
