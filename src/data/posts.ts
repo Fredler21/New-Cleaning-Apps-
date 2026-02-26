@@ -32,6 +32,11 @@ export const posts: Post[] = [
       "Listerine contains alcohol and essential oils — avoid using on unsealed marble or lacquered wood, as it may strip finishes.",
       "Do not apply Listerine-based sprays near eyes or open wounds. The menthol and eucalyptol can cause irritation on broken skin.",
       "Keep Listerine solutions out of reach of children and pets. Even in diluted form, ingestion can cause nausea."
+    ],
+    faqs: [
+      { question: "Is Listerine safe to use as a cleaning product?", answer: "Yes, Listerine contains thymol and eucalyptol, which are natural antiseptics. When diluted with water, it works as an effective surface cleaner for countertops, tiles, and glass. However, avoid using it on unsealed marble or lacquered wood, as the alcohol content may strip finishes." },
+      { question: "How do you make a Listerine cleaning spray?", answer: "Mix equal parts original Listerine and water in a spray bottle. Shake gently before each use. This DIY solution works well on laminate countertops, bathroom vanities, and tile backsplashes at a fraction of the cost of commercial cleaners." },
+      { question: "Can Listerine remove bad smells from shoes?", answer: "Yes, mist the inside of shoes with a Listerine-water spray and let them air-dry. The essential oils combat odor-causing bacteria, and the alcohol dries quickly without leaving moisture that could encourage mold growth." }
     ]
   },
   {
@@ -65,6 +70,11 @@ export const posts: Post[] = [
       "Never mix bleach-based cleaners with ammonia-based products. The combination produces toxic chloramine gas that can cause respiratory distress.",
       "When using degreasers, open windows or run a vent fan. Concentrated fumes in enclosed spaces can cause headaches and dizziness.",
       "Wear rubber gloves throughout your cleaning session. Prolonged skin contact with all-purpose cleaners can cause dryness, irritation, or allergic reactions."
+    ],
+    faqs: [
+      { question: "What is the correct order for deep cleaning a room?", answer: "Always clean from top to bottom and from dry to wet. Start by removing clutter, then dust ceiling fans and light fixtures, work down to shelves and surfaces, and finish with floors. This prevents re-dirtying areas you already cleaned." },
+      { question: "How long does a proper deep clean take?", answer: "A thorough room-by-room deep clean takes about 30 to 45 minutes per room for an average-sized home. Pre-treating tough spots and using the right tools can cut that time significantly." },
+      { question: "How often should you deep clean your home?", answer: "Aim for a full deep clean once a month, with lighter maintenance cleaning weekly. High-traffic areas like kitchens and bathrooms benefit from more frequent attention." }
     ]
   },
   {
@@ -98,6 +108,11 @@ export const posts: Post[] = [
       "Baking soda is mildly abrasive — avoid using it on polished granite, marble, or gold-plated fixtures as it can scratch or dull the finish.",
       "Never mix baking soda with vinegar in a sealed container. The carbon dioxide gas buildup can cause the container to burst.",
       "Although baking soda is non-toxic, keep it away from your eyes during scrubbing. Rinse immediately with cool water if contact occurs."
+    ],
+    faqs: [
+      { question: "Is baking soda safe for all surfaces?", answer: "Baking soda is mildly abrasive, so it works well on stainless steel, porcelain, ceramic, and most tile. Avoid using it on polished granite, marble, gold-plated fixtures, or delicate glass, as it can scratch or dull those finishes." },
+      { question: "How do you unclog a drain with baking soda?", answer: "Pour half a cup of baking soda down the drain followed by half a cup of white vinegar. Cover the drain and wait 15 minutes while the fizzing breaks down grease and buildup, then flush with boiling water. Repeat monthly for free-flowing drains." },
+      { question: "Can baking soda remove carpet odors?", answer: "Yes, sprinkle a generous layer of baking soda over the carpet, let it sit for at least 15 minutes or overnight for strong odors, then vacuum thoroughly. Baking soda absorbs moisture and neutralizes acids that cause smells." }
     ]
   },
   {
@@ -131,6 +146,11 @@ export const posts: Post[] = [
       "Never mix vinegar with bleach. The reaction creates toxic chlorine gas that can cause severe respiratory damage even in small amounts.",
       "Vinegar's acidity can etch natural stone surfaces like marble, granite, and travertine. Use pH-neutral cleaners on these materials instead.",
       "Avoid using vinegar on cast iron, aluminum, or waxed wood — the acid corrodes metal seasoning and strips protective wax coatings."
+    ],
+    faqs: [
+      { question: "What surfaces should you never clean with vinegar?", answer: "Never use vinegar on natural stone like marble, granite, or travertine, as the acid etches and dulls the surface. Also avoid cast iron, aluminum, waxed wood, and rubber seals, as vinegar corrodes metal seasoning and strips protective coatings." },
+      { question: "Can you mix vinegar with bleach?", answer: "Never mix vinegar with bleach. The chemical reaction creates toxic chlorine gas that can cause severe respiratory damage even in small amounts. Always rinse surfaces between using different cleaning products." },
+      { question: "How do you descale a showerhead with vinegar?", answer: "Fill a plastic bag with undiluted white vinegar, submerge the showerhead, and secure with a rubber band. Leave it overnight, then scrub the nozzle holes with a toothbrush and run hot water for a minute. This dissolves mineral deposits and restores water pressure." }
     ]
   },
   {
@@ -164,6 +184,11 @@ export const posts: Post[] = [
       "Hydrogen peroxide bleaches colored fabrics and dark surfaces. Always spot-test in a hidden area and wait five minutes before full application.",
       "Never mix hydrogen peroxide with vinegar in the same container. The reaction creates peracetic acid, which can irritate skin, eyes, and lungs.",
       "Store hydrogen peroxide in its original dark bottle away from heat and sunlight. Exposure to light breaks it down, and high concentrations can cause skin burns."
+    ],
+    faqs: [
+      { question: "Is hydrogen peroxide safe to use around food prep areas?", answer: "Yes, 3% hydrogen peroxide is food-safe and breaks down into just water and oxygen, leaving no chemical residue. It kills E. coli and salmonella on contact, making it an excellent disinfectant for kitchen countertops and cutting boards." },
+      { question: "Does hydrogen peroxide bleach colored fabrics?", answer: "Yes, hydrogen peroxide can lighten or bleach colored fabrics and dark surfaces. Always spot-test in a hidden area and wait five minutes before full application. Stick to white fabrics for best results." },
+      { question: "How should you store hydrogen peroxide?", answer: "Keep hydrogen peroxide in its original dark bottle away from heat and sunlight. Exposure to light breaks it down, reducing its potency. A properly stored bottle maintains effectiveness for several months after opening." }
     ]
   },
   {
@@ -197,6 +222,11 @@ export const posts: Post[] = [
       "Wet shower floors are extremely slippery during cleaning. Wear non-slip footwear or clean from outside the shower stall to prevent falls.",
       "Never mix bleach-based shower cleaners with acidic products like vinegar or lime-dissolving sprays. The combination releases toxic chlorine gas.",
       "Ensure the bathroom is well-ventilated when using shower mold removers. Run the exhaust fan and open a window to avoid inhaling concentrated fumes."
+    ],
+    faqs: [
+      { question: "How often should you deep clean your shower?", answer: "Deep clean your shower once a week, with daily maintenance like squeegeeing glass doors after each use. This prevents soap scum and mineral deposits from hardening, making each deep clean quicker and easier." },
+      { question: "What is the best way to remove soap scum?", answer: "Heat one cup of white vinegar and mix it with one cup of Dawn dish soap in a spray bottle. Spray on soap scum, wait 15 minutes, and wipe with a sponge. The warm vinegar and soap combination is widely considered the most effective DIY soap scum remover." },
+      { question: "How do you prevent mold in the shower?", answer: "Run the bathroom exhaust fan for at least 20 minutes after every shower, squeegee glass doors and walls daily, and fix any areas where water pools. Good ventilation is the cheapest and most effective mold prevention tool." }
     ]
   },
   {
@@ -230,6 +260,11 @@ export const posts: Post[] = [
       "Dollar store cleaning products may lack child-resistant caps. Store all chemicals in a high cabinet out of reach of children and pets.",
       "Check ingredient labels on budget cleaning products before mixing. Unlabeled or vaguely labeled cleaners may contain bleach or ammonia that reacts dangerously with other products.",
       "Wear gloves when using any unfamiliar budget cleaning product for the first time. Cheaper formulations may contain harsher surfactants that irritate sensitive skin."
+    ],
+    faqs: [
+      { question: "Are dollar store cleaning supplies as effective as name brands?", answer: "For most cleaning tasks, yes. Dollar store microfiber cloths, spray bottles, brushes, baking soda, and vinegar perform just as well as premium-priced alternatives. Focus on material quality rather than packaging claims." },
+      { question: "How can you build a cleaning kit on a budget?", answer: "Buy spray bottles, microfiber cloths, a scrub brush, baking soda, and white vinegar from the dollar store. Mix your own cleaners using these staples. A complete multi-room cleaning kit costs under fifteen dollars this way." },
+      { question: "How often should you replace dollar store cleaning supplies?", answer: "Replace sponges every one to two weeks, scrub brushes monthly, and microfiber cloths when they stop absorbing effectively. Spray bottles and bins last indefinitely with proper care." }
     ]
   },
   {
@@ -263,6 +298,11 @@ export const posts: Post[] = [
       "More product does not mean more cleaning power. Over-applying cleaners leaves sticky residue that attracts dirt faster than a properly cleaned surface.",
       "Bleach is not a catch-all cleaner. Using it on rust stains sets them permanently, and applying it to wood or fabric causes irreversible damage.",
       "Natural does not always mean safe. Lemon juice etches marble, vinegar corrodes metals, and essential oils can be toxic to cats and dogs."
+    ],
+    faqs: [
+      { question: "Does more cleaning product mean a cleaner surface?", answer: "No. Using too much cleaner leaves sticky residue that actually attracts more dirt. Follow the label's recommended amount for optimal results. If surfaces feel tacky after cleaning, you are using too much." },
+      { question: "Is bleach an all-purpose cleaner?", answer: "No, bleach is a disinfectant, not a cleaner. It kills germs but does not remove grease, dirt, or grime. You need to clean a surface with soap first, then disinfect with bleach if needed." },
+      { question: "Can you mix different cleaning products for better results?", answer: "Never mix cleaning products. Bleach with ammonia creates toxic chloramine gas, and bleach with vinegar produces chlorine gas. Stick to one product at a time and rinse surfaces between switching." }
     ]
   },
   {
@@ -296,6 +336,11 @@ export const posts: Post[] = [
       "Dawn is a surfactant, not a disinfectant. It removes grease effectively but does not kill bacteria — follow up with a food-safe sanitizer on cutting boards and prep surfaces.",
       "A little Dawn goes a long way. Using too much creates excessive suds that are difficult to rinse and can leave a slippery, soap-film residue on floors and countertops.",
       "Keep Dawn and all dish soaps away from pets' water bowls and food areas. Ingesting soapy water can cause vomiting and gastrointestinal upset in animals."
+    ],
+    faqs: [
+      { question: "Why is Dawn dish soap so effective on grease?", answer: "Dawn contains powerful surfactants specifically formulated to break the molecular bond between grease and surfaces. This is why it is used in wildlife oil spill cleanup and works better than most general cleaners on cooking grease." },
+      { question: "How do you make a Dawn degreasing spray?", answer: "Add 10 drops of Dawn dish soap to a spray bottle filled with warm water. Shake gently to mix without creating excessive suds. This spray cuts through kitchen grease on stovetops, range hoods, and cabinet fronts for pennies." },
+      { question: "Can Dawn remove grease stains from clothing?", answer: "Yes, rub a small drop of undiluted Dawn directly into the grease stain, work it in with your fingers, and let it sit for 10 minutes before washing normally. Check the stain before drying, since heat sets grease stains permanently." }
     ]
   },
   {
@@ -329,6 +374,11 @@ export const posts: Post[] = [
       "Clean dryer lint traps and vents regularly. Lint buildup is one of the leading causes of household fires — over 15,000 dryer fires occur annually.",
       "Never pour liquid bleach directly onto colored clothing to remove stains. It will permanently bleach the fabric. Use color-safe oxygenated bleach instead.",
       "When pulling machines forward for cleaning, turn off water supply valves first to prevent accidentally disconnecting hoses and causing a flood."
+    ],
+    faqs: [
+      { question: "How often should you clean the dryer lint trap and vent?", answer: "Clean the lint screen after every load, wash it with soapy water monthly to remove fabric softener buildup, and have the full dryer vent cleaned annually. Lint buildup is one of the leading causes of household fires." },
+      { question: "How do you get rid of musty washer smell?", answer: "Run an empty hot cycle with two cups of white vinegar, then wipe the rubber gasket dry. Leave the door open between loads to let the drum air out. Do this monthly to prevent mildew odor." },
+      { question: "What is the best way to organize a laundry room?", answer: "Set up labeled bins for whites, darks, delicates, and towels so laundry is pre-sorted. Group products on a shelf by type and toss nearly empty bottles. Tape a maintenance checklist inside a cabinet door for weekly and monthly tasks." }
     ]
   },
   {
@@ -362,6 +412,11 @@ export const posts: Post[] = [
       "Never use boiling water in PVC pipes if they are old or showing signs of wear. Extreme heat can soften plastic joints and cause leaks.",
       "Do not put your hand inside a garbage disposal for any reason. Use tongs or pliers with the unit powered off and unplugged to retrieve stuck items.",
       "When microwaving a sponge to sanitize it, ensure it is thoroughly wet first. A dry sponge can catch fire in the microwave within seconds."
+    ],
+    faqs: [
+      { question: "Why does my kitchen sink smell bad?", answer: "Sink odors come from food particles and grease trapped in the drain, a dirty garbage disposal, or a bacteria-laden sponge. Flushing the drain with baking soda and vinegar weekly and replacing sponges every two weeks eliminates most sink odors." },
+      { question: "How do you clean a garbage disposal naturally?", answer: "Drop a few ice cubes and a tablespoon of coarse salt into the disposal and run it for 10 seconds to scrape away buildup. Follow with half a lemon to deodorize. Run cold water during operation to solidify grease for easier chopping." },
+      { question: "How often should you replace your kitchen sponge?", answer: "Replace kitchen sponges every one to two weeks. Between replacements, microwave a damp sponge for one minute to kill germs. A dirty sponge is one of the germiest items in the home and spreads bacteria to every surface you wipe." }
     ]
   },
   {
@@ -395,6 +450,11 @@ export const posts: Post[] = [
       "Never mix toilet bowl cleaner (acidic) with bleach-based bathroom spray. This reaction produces toxic chlorine gas that accumulates rapidly in small bathrooms.",
       "Use separate cleaning cloths for toilets and sinks. Cross-contamination transfers fecal bacteria to surfaces where you wash your face and brush your teeth.",
       "Wear knee pads or kneel on a folded towel when scrubbing floors and tub edges. Prolonged kneeling on hard tile can cause bursitis and joint pain."
+    ],
+    faqs: [
+      { question: "What is the correct order for cleaning a bathroom?", answer: "Start by removing all items from surfaces, then dust high spots. Apply cleaner to the toilet and let it sit. Work from top to bottom: mirrors, vanity, sink, tub, toilet, and floors last. Use separate cloths for the toilet and sink to prevent cross-contamination." },
+      { question: "How do you make a bathroom smell like a hotel?", answer: "Deep clean all surfaces, especially the base of the toilet and grout lines where odors hide. Replace towels with fresh ones, fold them neatly, and close the toilet lid. Add a subtle reed diffuser or a small dish of baking soda with essential oil for a clean, inviting scent." },
+      { question: "How often should you deep clean a bathroom?", answer: "Deep clean bathrooms once a week, with daily touch-ups like wiping the sink after brushing teeth and squeegeeing the shower. Monthly, add tasks like scrubbing grout and cleaning exhaust fan covers." }
     ]
   },
   {
@@ -428,6 +488,11 @@ export const posts: Post[] = [
       "Label every spray bottle with its contents and dilution ratio. Unlabeled bottles lead to accidental misuse and dangerous product mixing.",
       "Store cleaning kits in high cabinets or use child-safety locks if you have young children. Even mild cleaners can cause harm if ingested or sprayed in eyes.",
       "Never store bleach and ammonia products in the same kit or caddy. Leaking bottles can mix and produce toxic chloramine fumes in an enclosed cabinet."
+    ],
+    faqs: [
+      { question: "What should be in a basic cleaning kit?", answer: "A good starter kit includes a spray bottle with all-purpose cleaner, two microfiber cloths, a scrub brush, rubber gloves, and paper towels. Store everything in a portable caddy so you can carry it room to room without wasting time gathering supplies." },
+      { question: "How much does it cost to build a complete cleaning kit?", answer: "You can build a complete multi-room cleaning kit for under fifteen dollars using dollar store supplies. Spray bottles, microfiber cloths, brushes, baking soda, and vinegar are all affordable staples that deliver professional-level results." },
+      { question: "Why should you color-code cleaning supplies by room?", answer: "Color-coding prevents cross-contamination between rooms, especially between bathroom and kitchen. Use different colored cloths for each area so toilet-cleaning cloths never touch kitchen surfaces." }
     ]
   },
   {
@@ -461,6 +526,11 @@ export const posts: Post[] = [
       "When rushing through morning cleaning, never mix different spray products on the same surface without rinsing first. Chemical reactions can happen even from residue.",
       "Be careful lifting heavy laundry baskets or trash bags in a hurry. Rushing with awkward loads is a common cause of back strain during household tasks.",
       "If you squeegee the shower right after use, watch your footing on wet tile. Non-slip bath mats or shower shoes prevent slips during this quick daily habit."
+    ],
+    faqs: [
+      { question: "What is the fastest way to clean before leaving the house?", answer: "Focus on high-visibility surfaces. Make the bed, wipe the bathroom sink, load the dishwasher, wipe kitchen counters, and pick up five out-of-place items. These five tasks take under ten minutes and make your home look significantly tidier when you return." },
+      { question: "How do you keep a clean house with a busy schedule?", answer: "Build micro-habits into your existing routine. Wipe the sink after brushing teeth, squeegee the shower after use, and do a two-minute tidy before bed. Small consistent efforts prevent messes from compounding into weekend marathons." },
+      { question: "Is it better to clean daily or do it all on the weekend?", answer: "Daily micro-cleaning is far more effective and sustainable. Spending five to ten minutes each morning prevents buildup and keeps your home guest-ready. Weekend marathon sessions lead to burnout and inconsistent results." }
     ]
   },
   {
@@ -494,6 +564,11 @@ export const posts: Post[] = [
       "When moving furniture for decluttering, lift with your legs and not your back. Dragging heavy items across hard floors can scratch surfaces and cause injuries.",
       "Dispose of expired medications through pharmacy take-back programs, not in the trash or toilet. Flushed drugs contaminate water supplies and trashed pills are a poisoning risk.",
       "Wear a dust mask when decluttering storage areas, closets, or attics. Disturbing accumulated dust can trigger asthma attacks and allergic reactions."
+    ],
+    faqs: [
+      { question: "What is the four-box decluttering method?", answer: "Set out four containers labeled Keep, Donate, Trash, and Relocate. Pick up every item and place it in one box with no maybe pile allowed. Handle the Trash and Donate boxes immediately to prevent items from drifting back into the room." },
+      { question: "How do you stay decluttered after a big cleanout?", answer: "Schedule a 10-minute weekly reset for each room to return stray items, wipe surfaces, and toss anything that crept in. Without this maintenance habit, clutter rebuilds within two weeks." },
+      { question: "Should you declutter before or after cleaning?", answer: "Always declutter first. Removing items from surfaces lets you clean every square inch and see stains you would miss with clutter in the way. Clean surfaces look dramatically better than organized clutter." }
     ]
   },
   {
@@ -525,6 +600,11 @@ export const posts: Post[] = [
       "WD-40 is a petroleum-based product and is flammable. Never use it near open flames, gas stoves, or water heaters with pilot lights.",
       "Avoid spraying WD-40 on natural stone surfaces like marble or granite — the petroleum solvents can stain and discolor porous stone permanently.",
       "Always wash hands thoroughly with soap and water after handling WD-40. Prolonged skin contact can cause dryness and irritation. Keep it away from eyes and out of reach of children and pets."
+    ],
+    faqs: [
+      { question: "Can you use WD-40 for cleaning around the house?", answer: "Yes, WD-40 effectively removes soap scum from glass, dissolves adhesive residue, erases crayon marks from walls, and cleans scuff marks from floors. Always follow up with soapy water to remove the oily residue it leaves behind." },
+      { question: "Is WD-40 safe to use on all surfaces?", answer: "No. Avoid using WD-40 on natural stone like marble or granite, as the petroleum solvents can permanently stain porous stone. Also keep it away from open flames since it is flammable. Always test on a hidden area first." },
+      { question: "How do you remove WD-40 residue after cleaning?", answer: "Wipe the area with warm water and dish soap immediately after the WD-40 has done its job. This removes the oily film and prevents surfaces from becoming slippery or attracting dust." }
     ]
   },
   {
@@ -558,6 +638,11 @@ export const posts: Post[] = [
       "Boric acid is toxic if ingested by children or pets. Apply it only in areas inaccessible to kids and animals, such as behind appliances and inside closed cabinet hinges.",
       "Never use cockroach foggers or bug bombs in enclosed spaces without proper ventilation. The chemicals settle on food surfaces and can cause respiratory irritation for hours after deployment.",
       "Wash hands thoroughly after handling gel bait stations or boric acid powder. Avoid touching your face, food, or kitchen surfaces until hands are clean. Store all pest-control products in a locked cabinet away from children."
+    ],
+    faqs: [
+      { question: "What is the most effective way to get rid of cockroaches?", answer: "A combination approach works best: eliminate food and water sources through strict cleaning habits, seal all cracks and entry points with caulk, deploy gel bait stations in high-activity zones, and apply a thin dusting of boric acid behind appliances. Consistency is key." },
+      { question: "Does a clean house prevent cockroaches?", answer: "A consistently clean house dramatically reduces cockroach activity because it removes their food and water sources. However, cockroaches can enter from neighboring units or hitchhike in grocery bags, so sealing entry points and maintaining bait stations is important even in clean homes." },
+      { question: "Is boric acid safe to use for cockroaches at home?", answer: "Boric acid is highly effective but toxic if ingested by children or pets. Apply it only in thin, barely visible dustings in areas inaccessible to kids and animals, such as behind appliances and inside closed cabinet hinges. Always wash hands after handling." }
     ]
   },
   {
@@ -591,6 +676,11 @@ export const posts: Post[] = [
       "Many essential oils are toxic to cats and dogs — especially tea tree, eucalyptus, and peppermint. Research pet-safe options before using diffusers or sprays in homes with animals.",
       "Never leave a stovetop potpourri simmering unattended or let the water boil dry. Always use the lowest heat setting and keep the pot in sight.",
       "Keep homemade sprays and reed diffusers out of reach of children. Essential oils can cause skin irritation and are dangerous if ingested in concentrated form."
+    ],
+    faqs: [
+      { question: "What is the best natural way to make your house smell good?", answer: "Simmer a stovetop potpourri with sliced oranges, cinnamon sticks, cloves, and rosemary on low heat. The steam carries warm fragrance through your entire home within minutes. Alternatively, place baking soda jars with essential oil drops in every room for continuous odor absorption and gentle scent." },
+      { question: "How do you get rid of bad smells in a house naturally?", answer: "Address the source first — empty trash cans, clean drains, wash fabrics, and ventilate rooms. Then use baking soda to absorb lingering odors and essential oil sprays for pleasant fragrance. Air fresheners only mask odors and eliminating the source is essential." },
+      { question: "Are essential oils safe to use around pets?", answer: "Many essential oils are toxic to cats and dogs, especially tea tree, eucalyptus, and peppermint. Research pet-safe options before using diffusers or sprays. Keep reed diffusers and concentrated oils out of reach of all animals." }
     ]
   },
   {
@@ -624,6 +714,11 @@ export const posts: Post[] = [
       "Always unplug the vacuum before clearing a clog, checking the belt, or opening the filter compartment to avoid injury from moving parts.",
       "Never vacuum water, wet surfaces, or damp carpets with a standard vacuum. Moisture can damage the motor and create an electrical hazard. Use a wet-dry shop vac for liquid spills.",
       "Keep long hair, loose clothing, and dangling jewelry away from the rotating brush roll. These can get caught and cause injury or damage the vacuum belt."
+    ],
+    faqs: [
+      { question: "How do you find small items lost in carpet?", answer: "Stretch a piece of pantyhose over the vacuum hose and secure it with a rubber band. The suction pulls small items like earrings or screws against the fabric without sucking them into the dustbin. Turn off the vacuum to retrieve found items." },
+      { question: "How often should you vacuum your home?", answer: "Vacuum high-traffic areas twice a week and the rest of the home once a week. Move slowly — two slow passes are more effective than five fast ones. Empty the bin when it reaches two-thirds full, as suction drops significantly beyond that." },
+      { question: "How do you maintain your vacuum for best performance?", answer: "Empty the dustbin at two-thirds capacity, wash or replace filters monthly, check for hose clogs regularly, and clean the brush roll of tangled hair. A well-maintained vacuum can last 8 to 12 years." }
     ]
   },
   {
@@ -659,6 +754,11 @@ export const posts: Post[] = [
       "Never run the microwave empty — it can damage the magnetron and create a fire risk. Always have water or food inside when operating.",
       "Use oven mitts when removing heated bowls of water or vinegar. Superheated liquids can boil over suddenly when disturbed, causing burns.",
       "Avoid using harsh chemical cleaners or bleach inside the microwave. Residue can transfer to food and fumes can linger in the sealed cavity."
+    ],
+    faqs: [
+      { question: "What is the easiest way to clean a microwave?", answer: "Slice a lemon into a bowl of water and microwave on high for three to five minutes. The citric acid steam loosens baked-on food and neutralizes odors. Let it sit for two minutes with the door closed, then wipe clean with a cloth. Splatters lift off with almost no scrubbing." },
+      { question: "How do you get rid of microwave odors?", answer: "After cleaning, place an open container of baking soda inside overnight to absorb lingering smells. For a quick fix, microwave two tablespoons of baking soda in a cup of water for three minutes, or heat vanilla extract in water for a pleasant scent." },
+      { question: "How often should you clean your microwave?", answer: "Clean your microwave weekly to prevent splatters from hardening. Use a splatter cover over food every time you reheat to catch 95 percent of mess before it happens, turning weekly deep cleans into quick two-minute wipes." }
     ]
   },
   {
@@ -692,6 +792,11 @@ export const posts: Post[] = [
       "Do not use toothpaste on natural stone surfaces like marble, granite, or travertine — the abrasive can scratch polished finishes and the fluoride may etch the stone.",
       "Avoid using whitening toothpaste on gold-plated or brass items. The stronger abrasive in whitening formulas can strip plating and scratch softer metals.",
       "Keep toothpaste away from electronic screens, camera lenses, and eyeglasses. Despite internet claims, the abrasive will create micro-scratches that permanently damage coatings."
+    ],
+    faqs: [
+      { question: "What kind of toothpaste works best for cleaning?", answer: "Always use plain white toothpaste, not gel or colored varieties. White toothpaste contains mild abrasive particles like hydrated silica that gently polish surfaces. Gel formulas lack the right abrasive texture and colored toothpaste can stain light surfaces." },
+      { question: "Can toothpaste remove water rings from wood furniture?", answer: "Yes, apply a small amount of white toothpaste to the water ring and rub gently with a soft cloth following the grain of the wood. The abrasive particles work through the cloudy moisture without cutting through the lacquer. Test in a hidden area first." },
+      { question: "What surfaces should you not clean with toothpaste?", answer: "Avoid using toothpaste on natural stone like marble and granite, gold-plated or brass items, electronic screens, camera lenses, and eyeglasses. The abrasive will scratch polished finishes and damage protective coatings." }
     ]
   },
   {
@@ -725,6 +830,11 @@ export const posts: Post[] = [
       "Never mix bleach with ammonia or vinegar-based products. Store different cleaning chemicals separately and use only one product at a time per surface to avoid toxic reactions.",
       "Wear rubber gloves during bathroom and kitchen cleaning sessions. Prolonged contact with cleaning chemicals causes skin dryness, irritation, and can trigger contact dermatitis over time.",
       "When using spray cleaners, ensure adequate ventilation by opening a window or turning on an exhaust fan. Inhaling concentrated cleaning fumes in enclosed spaces can cause respiratory irritation and headaches."
+    ],
+    faqs: [
+      { question: "How do you create a weekly cleaning schedule that actually works?", answer: "Assign one major task to each day of the week: Monday for kitchen, Tuesday for bathrooms, Wednesday for dusting, Thursday for floors, Friday for laundry, Saturday for decluttering, and Sunday for rest. This spreads the workload so no single day feels overwhelming." },
+      { question: "How long does daily cleaning take with a schedule?", answer: "Each day's task takes 20 to 45 minutes depending on the room. Paired with five daily micro-habits that take under ten minutes total — making the bed, doing dishes, wiping counters, putting things away, and a quick evening tidy — your home stays consistently clean." },
+      { question: "What if you miss a day on the cleaning schedule?", answer: "Roll the missed task into the next day rather than skipping it entirely. The schedule is designed so each day builds on the previous one. Missing one day is fine, but skipping tasks regularly leads to buildup that eventually requires marathon cleaning sessions." }
     ]
   }
 ];
