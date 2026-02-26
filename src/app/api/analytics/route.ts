@@ -22,8 +22,9 @@ export async function POST(request: Request) {
     await trackPostView(body.slug.trim());
     return NextResponse.json({ success: true });
   } catch (err) {
-    console.error("Analytics tracking error:", err);
-    return NextResponse.json({ error: "Failed to track view." }, { status: 500 });
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("Analytics tracking error:", message, err);
+    return NextResponse.json({ error: "Failed to track view.", detail: message }, { status: 500 });
   }
 }
 
