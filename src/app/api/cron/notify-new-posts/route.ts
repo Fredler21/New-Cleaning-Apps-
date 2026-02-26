@@ -70,11 +70,11 @@ export async function GET(request: Request) {
       try {
         await sendMail({
           to: sub.email,
-          subject: `🧹 New Hack: ${post.title}`,
+          subject: `New from TryCleaningHacks: ${post.title}`,
           html: `
             <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden;">
               <div style="background: linear-gradient(135deg, #0d9488, #14b8a6); padding: 24px; text-align: center;">
-                <h1 style="color: #ffffff; margin: 0; font-size: 22px;">New Cleaning Hack! 🎉</h1>
+                <h1 style="color: #ffffff; margin: 0; font-size: 22px;">New Cleaning Hack!</h1>
               </div>
               <div style="padding: 24px;">
                 <img src="${coverUrl}" alt="${post.title}" style="width: 100%; border-radius: 8px; margin-bottom: 16px;" />
@@ -83,7 +83,7 @@ export async function GET(request: Request) {
                   ${post.excerpt}
                 </p>
                 <p style="font-size: 13px; color: #9ca3af; margin: 0 0 24px;">
-                  📖 ${post.readTime} &nbsp;·&nbsp; 🏷️ ${post.category}
+                  ${post.readTime} · ${post.category}
                 </p>
                 <div style="text-align: center;">
                   <a href="${postUrl}" style="background: #0d9488; color: #ffffff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; display: inline-block;">
@@ -96,6 +96,7 @@ export async function GET(request: Request) {
                   You're receiving this because you subscribed at 
                   <a href="https://trycleaninghacks.com" style="color: #0d9488;">trycleaninghacks.com</a>.
                 </p>
+                <p style="font-size: 12px; color: #9ca3af; margin: 4px 0 0;">Don't want these emails? <a href="https://trycleaninghacks.com/contact" style="color: #0d9488;">Unsubscribe here</a>.</p>
               </div>
             </div>
           `,

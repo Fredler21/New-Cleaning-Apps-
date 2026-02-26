@@ -36,26 +36,26 @@ export async function POST(request: Request) {
     /* --- Welcome email TO the subscriber --- */
     await sendMail({
       to: trimmedEmail,
-      subject: `Welcome to TryCleaningHacks! 🧹✨`,
+      subject: `Welcome to TryCleaningHacks`,
       html: `
         <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden;">
           <div style="background: linear-gradient(135deg, #0d9488, #14b8a6); padding: 32px 24px; text-align: center;">
             <h1 style="color: #ffffff; margin: 0; font-size: 28px;">Welcome to TryCleaningHacks!</h1>
-            <p style="color: #ccfbf1; margin: 8px 0 0; font-size: 16px;">Your home is about to get a whole lot cleaner ✨</p>
+            <p style="color: #ccfbf1; margin: 8px 0 0; font-size: 16px;">Your home is about to get a whole lot cleaner</p>
           </div>
           <div style="padding: 32px 24px;">
             <p style="font-size: 16px; color: #1f2937; line-height: 1.6;">
-              Thank you for subscribing to <strong>Premium Cleaning Briefs</strong>! 🎉
+              Thank you for subscribing to <strong>Premium Cleaning Briefs</strong>!
             </p>
             <p style="font-size: 16px; color: #1f2937; line-height: 1.6;">
               Every week, you'll receive our best cleaning hacks, tips, and tricks — straight to your inbox. No spam, just sparkling results.
             </p>
             <h3 style="color: #0d9488; margin-top: 24px;">Here's what to expect:</h3>
             <ul style="font-size: 15px; color: #374151; line-height: 1.8;">
-              <li>🏠 Weekly cleaning hacks that actually work</li>
-              <li>💡 DIY solutions using everyday ingredients</li>
-              <li>⏱️ Time-saving routines & schedules</li>
-              <li>🌿 Eco-friendly & budget-friendly tips</li>
+              <li>Weekly cleaning hacks that actually work</li>
+              <li>DIY solutions using everyday ingredients</li>
+              <li>Time-saving routines and schedules</li>
+              <li>Eco-friendly and budget-friendly tips</li>
             </ul>
             <div style="text-align: center; margin: 32px 0;">
               <a href="https://trycleaninghacks.com/posts" style="background: #0d9488; color: #ffffff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; display: inline-block;">
@@ -69,6 +69,7 @@ export async function POST(request: Request) {
           </div>
           <div style="background: #f9fafb; padding: 16px 24px; text-align: center;">
             <p style="font-size: 13px; color: #9ca3af; margin: 0;">© ${new Date().getFullYear()} TryCleaningHacks — Clean smarter, not harder.</p>
+            <p style="font-size: 12px; color: #9ca3af; margin: 4px 0 0;">Don't want these emails? <a href="https://trycleaninghacks.com/contact" style="color: #0d9488;">Unsubscribe here</a>.</p>
           </div>
         </div>
       `,

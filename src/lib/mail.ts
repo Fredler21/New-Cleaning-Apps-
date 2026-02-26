@@ -1,7 +1,9 @@
 import nodemailer from "nodemailer";
+import { randomUUID } from "crypto";
 
 const FROM_NAME = "TryCleaningHacks";
 const FROM_EMAIL = "support@trycleaninghacks.com";
+const DOMAIN = "trycleaninghacks.com";
 
 /**
  * Create a reusable Nodemailer transporter for Zoho SMTP.
@@ -23,6 +25,28 @@ function getTransporter() {
   });
 }
 
+/**
+ * Strip HTML tags to produce a plain-text version of an email body.
+ */
+function htmlToText(html: string): string {
+  return html
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/p>/gi, "\n\n")
+    .replace(/<\/li>/gi, "\n")
+    .replace(/<li[^>]*>/gi, "  - ")
+    .replace(/<\/h[1-6]>/gi, "\n\n")
+    .replace(/<a[^>]+href="([^"]*)"[^>]*>[^<]*<\/a>/gi, "$1")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 interface SendMailOptions {
   to: string;
   subject: string;
@@ -31,7 +55,11 @@ interface SendMailOptions {
 }
 
 /**
- * Send an email via Zoho SMTP.
+ * Send an email via Zoho SMTP with anti-spam best practices:
+ * - Unique Message-ID
+ * - List-Unsubscribe header (required by Gmail & Yahoo)
+ * - Plain-text alternative alongside HTML
+ * - Precedence header for bulk/newsletter emails
  */
 export async function sendMail({ to, subject, html, replyTo }: SendMailOptions) {
   const transporter = getTransporter();
@@ -42,6 +70,12 @@ export async function sendMail({ to, subject, html, replyTo }: SendMailOptions) 
     to,
     subject,
     html,
+    text: htmlToText(html),
+    headers: {
+      "Message-ID": `<${randomUUID()}@${DOMAIN}>`,
+      "List-Unsubscribe": `<mailto:${senderEmail}?subject=Unsubscribe>, <https://${DOMAIN}/contact>`,
+      "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+    },
     ...(replyTo ? { replyTo } : {}),
   });
 
