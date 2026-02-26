@@ -8,6 +8,7 @@ export const COLLECTIONS = {
   SUBSCRIBERS: "subscribers",
   CONTACTS: "contacts",
   ANALYTICS: "analytics",
+  NOTIFIED_POSTS: "notifiedPosts",
 } as const;
 
 /* ------------------------------------------------------------------ */
@@ -123,4 +124,22 @@ export async function getPostAnalyticsBySlug(slug: string) {
   const doc = await adminDb.collection(COLLECTIONS.ANALYTICS).doc(slug).get();
   if (!doc.exists) return null;
   return { id: doc.id, ...(doc.data() as PostAnalytics) };
+}
+
+/* ------------------------------------------------------------------ */
+/*  Notified Posts (tracks which posts subscribers were emailed about) */
+/* ------------------------------------------------------------------ */
+
+/** Mark a post as "notified" so we don't email about it again. */
+export async function markPostNotified(slug: string) {
+  await adminDb.collection(COLLECTIONS.NOTIFIED_POSTS).doc(slug).set({
+    slug,
+    notifiedAt: FieldValue.serverTimestamp(),
+  });
+}
+
+/** Get all post slugs that subscribers have already been notified about. */
+export async function getNotifiedSlugs(): Promise<Set<string>> {
+  const snap = await adminDb.collection(COLLECTIONS.NOTIFIED_POSTS).get();
+  return new Set(snap.docs.map((d) => d.id));
 }
