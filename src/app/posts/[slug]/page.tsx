@@ -157,6 +157,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               data={{
                 "@context": "https://schema.org",
                 "@type": "FAQPage",
+                name: `${post.title} — Frequently Asked Questions`,
                 mainEntity: post.faqs.map((faq) => ({
                   "@type": "Question",
                   name: faq.question,
