@@ -10,11 +10,12 @@ export function useTrackView(slug: string) {
   useEffect(() => {
     if (!slug) return;
 
-    // Use sendBeacon for reliability, fall back to fetch
     const payload = JSON.stringify({ slug });
 
+    // sendBeacon needs a Blob with correct content-type for JSON parsing
     if (navigator.sendBeacon) {
-      navigator.sendBeacon("/api/analytics", payload);
+      const blob = new Blob([payload], { type: "application/json" });
+      navigator.sendBeacon("/api/analytics", blob);
     } else {
       fetch("/api/analytics", {
         method: "POST",
