@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { trackPostView, getPostAnalytics, getPostAnalyticsBySlug } from "@/lib/firebase/collections";
+
+const DEPLOY_VERSION = "2026-02-26-v2";
 
 /**
  * POST /api/analytics  – Track a page view
@@ -11,20 +12,26 @@ export async function POST(request: Request) {
   try {
     body = (await request.json()) as { slug?: string };
   } catch {
-    return NextResponse.json({ error: "Invalid request." }, { status: 400 });
+    return NextResponse.json({ error: "Invalid request.", v: DEPLOY_VERSION }, { status: 400 });
   }
 
   if (!body.slug || typeof body.slug !== "string" || body.slug.trim().length === 0) {
-    return NextResponse.json({ error: "A valid slug is required." }, { status: 400 });
+    return NextResponse.json({ error: "A valid slug is required.", v: DEPLOY_VERSION }, { status: 400 });
   }
 
   try {
+    // Dynamic import so module-level init errors are caught here
+    const { trackPostView } = await import("@/lib/firebase/collections");
     await trackPostView(body.slug.trim());
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, v: DEPLOY_VERSION });
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
+    const stack = err instanceof Error ? err.stack?.split("\n").slice(0, 3).join(" | ") : undefined;
     console.error("Analytics tracking error:", message, err);
-    return NextResponse.json({ error: "Failed to track view.", detail: message }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to track view.", detail: message, stack, v: DEPLOY_VERSION },
+      { status: 500 }
+    );
   }
 }
 
@@ -37,15 +44,17 @@ export async function GET(request: Request) {
   const slug = searchParams.get("slug");
 
   try {
+    const { getPostAnalytics, getPostAnalyticsBySlug } = await import("@/lib/firebase/collections");
     if (slug) {
       const data = await getPostAnalyticsBySlug(slug);
-      return NextResponse.json(data ?? { slug, views: 0 });
+      return NextResponse.json({ ...(data ?? { slug, views: 0 }), v: DEPLOY_VERSION });
     }
 
     const data = await getPostAnalytics();
-    return NextResponse.json(data);
+    return NextResponse.json({ data, v: DEPLOY_VERSION });
   } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
     console.error("Analytics fetch error:", err);
-    return NextResponse.json({ error: "Failed to fetch analytics." }, { status: 500 });
+    return NextResponse.json({ error: "Failed to fetch analytics.", detail: message, v: DEPLOY_VERSION }, { status: 500 });
   }
 }

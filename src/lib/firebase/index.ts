@@ -1,6 +1,6 @@
 // Firebase – barrel exports
 export { app, db } from "./config";
-export { adminApp, adminDb } from "./admin";
+export { adminDb, getAdminDb } from "./admin";
 export {
   addSubscriber,
   getSubscribers,
