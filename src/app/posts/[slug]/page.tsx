@@ -9,6 +9,7 @@ import { SafetyNote } from "@/components/posts/SafetyNote";
 import { ShareBar } from "@/components/posts/ShareBar";
 import { SaveHackButton } from "@/components/posts/SaveHackButton";
 import { PostGrid } from "@/components/posts/PostGrid";
+import { ViewTracker } from "@/components/posts/ViewTracker";
 import { Badge } from "@/components/ui/Badge";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
@@ -66,6 +67,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
 
   return (
     <>
+      <ViewTracker slug={post.slug} />
       <PostTopBar />
 
       {/* Hero banner */}
