@@ -59,7 +59,6 @@
     "slug": "20-declutter-clean-pairing-hacks",
     "prompt": "Before-to-after inspired declutter and clean setup in a luxury living room, organized baskets and polished surfaces, realistic photo, no people, no text"
   },
-
   {
     "slug": "hero-slide-1",
     "dir": "posts",
@@ -80,7 +79,6 @@
     "dir": "posts",
     "prompt": "Ultra-wide cinematic close-up of a gloved hand wiping a large glass window leaving a perfect streak-free shine, bright daylight reflections visible in the glass, city skyline softly blurred in background, shallow depth of field, premium editorial macro photography, 21:9 aspect ratio, clean modern teal and white color palette, no text, no logos, face not visible, no watermarks"
   },
-
   {
     "slug": "cat-dawn",
     "dir": "icons",
@@ -159,5 +157,9 @@
   {
     "slug": "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
     "prompt": "Premium editorial overhead photo of a beautifully organized weekly cleaning planner notebook open on a modern white desk, surrounded by neatly arranged cleaning supplies including a teal spray bottle, folded pastel microfiber cloths, rubber gloves, and a small potted plant, bright natural daylight from a nearby window, clean organized aesthetic, realistic lifestyle photography, no people, no text on the planner pages, no watermarks"
+  },
+  {
+    "slug": "12-genius-rubbing-alcohol-cleaning-hacks",
+    "prompt": "Premium editorial cleaning photo showing a clear bottle of rubbing alcohol (isopropyl alcohol) on a modern kitchen countertop alongside a spray bottle, microfiber cloth, and cotton pads, clean bright modern interior, luxury minimal style, soft cinematic daylight, realistic product photography, no people, no text"
   }
 ]
