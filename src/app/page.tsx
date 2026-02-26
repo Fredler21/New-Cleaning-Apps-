@@ -165,8 +165,8 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredThisWeek.map((post, i) => (
-              <PostCard key={post.slug} post={post} featured={i === 0} />
+            {featuredThisWeek.map((post) => (
+              <PostCard key={post.slug} post={post} featured={true} />
             ))}
           </div>
         </section>
