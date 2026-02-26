@@ -6,6 +6,7 @@ export const metadata: Metadata = buildMeta({
   description:
     "Browse all tested cleaning hacks — search by room, ingredient, or technique. Quick wins, deep cleans, and budget-friendly solutions for every home.",
   path: "/posts",
+  keywords: ["all cleaning hacks", "cleaning guide", "home cleaning tips", "search cleaning hacks"],
 });
 
 export default function PostsLayout({ children }: { children: React.ReactNode }) {

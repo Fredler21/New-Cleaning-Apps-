@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
   description:
     "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans — no guesswork, no gimmicks.",
+  alternates: { canonical: "https://trycleaninghacks.com" },
+  keywords: [
+    "cleaning hacks", "house cleaning tips", "kitchen cleaning hacks",
+    "bathroom cleaning tips", "vinegar cleaning", "baking soda hacks",
+    "laundry hacks", "deep clean tips", "natural cleaning", "DIY cleaning",
+  ],
   openGraph: {
     title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
     description:

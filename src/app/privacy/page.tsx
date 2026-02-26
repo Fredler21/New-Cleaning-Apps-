@@ -7,6 +7,7 @@ export const metadata: Metadata = buildMeta({
   description:
     "Read how TryCleaningHacks collects, uses, and protects your personal data, including our cookie, advertising, and data-handling policies.",
   path: "/privacy",
+  noIndex: true,
 });
 
 /* ── Section helper ───────────────────────────────────────── */

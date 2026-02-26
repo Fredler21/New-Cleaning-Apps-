@@ -7,6 +7,7 @@ export const metadata: Metadata = buildMeta({
   description:
     "Learn about TryCleaningHacks — who we are, why we started, and how we help thousands of homeowners clean smarter every day.",
   path: "/about",
+  keywords: ["about TryCleaningHacks", "cleaning advice team", "home cleaning experts"],
 });
 
 export default function AboutPage() {

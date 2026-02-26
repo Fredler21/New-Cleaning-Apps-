@@ -7,32 +7,58 @@ import { CookieConsent } from "@/components/ui/CookieConsent";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { SavedHacksProvider } from "@/context/SavedHacksContext";
 import { Analytics } from "@vercel/analytics/next";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://trycleaninghacks.com"),
-  title: "TryCleaningHacks",
-  description: "Tested cleaning hacks, quick wins, and deep-clean routines for every home.",
+  title: {
+    default: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+    template: "%s | TryCleaningHacks",
+  },
+  description: "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
+  keywords: [
+    "cleaning hacks", "house cleaning tips", "cleaning tricks", "DIY cleaning",
+    "baking soda cleaning", "vinegar cleaning", "kitchen cleaning", "bathroom cleaning",
+    "laundry hacks", "deep clean", "home cleaning", "natural cleaning",
+  ],
+  authors: [{ name: "TryCleaningHacks", url: "https://trycleaninghacks.com" }],
+  creator: "TryCleaningHacks",
+  publisher: "TryCleaningHacks",
   verification: {
     google: "5sbyW1HBzsmC93Y2dwlzj8ckF5rYZx0qbHOfXWymDIA",
   },
+  alternates: {
+    canonical: "https://trycleaninghacks.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: "TryCleaningHacks",
-    description: "Tested cleaning hacks, quick wins, and deep-clean routines for every home.",
+    title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+    description: "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
     url: "https://trycleaninghacks.com",
     siteName: "TryCleaningHacks",
     images: [{ url: "/og/og-home.png", width: 1200, height: 630, alt: "TryCleaningHacks" }],
     locale: "en_US",
-    type: "website"
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TryCleaningHacks",
-    description: "Tested cleaning hacks for kitchen, bath, laundry, and deep-clean routines.",
-    images: ["/og/og-home.png"]
-  }
+    title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+    description: "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results in minutes.",
+    images: ["/og/og-home.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -48,6 +74,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-sans antialiased">
         <ThemeProvider>
           <SavedHacksProvider>
+            <JsonLd
+              data={{
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "TryCleaningHacks",
+                url: "https://trycleaninghacks.com",
+                description: "Discover 200+ tested cleaning hacks using everyday ingredients.",
+                potentialAction: {
+                  "@type": "SearchAction",
+                  target: "https://trycleaninghacks.com/posts?q={search_term_string}",
+                  "query-input": "required name=search_term_string",
+                },
+              }}
+            />
+            <JsonLd
+              data={{
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "TryCleaningHacks",
+                url: "https://trycleaninghacks.com",
+                logo: "https://trycleaninghacks.com/og/og-home.png",
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  email: "support@trycleaninghacks.com",
+                  contactType: "customer service",
+                },
+              }}
+            />
             <Navbar />
             <main className="min-h-screen">{children}</main>
             <Footer />

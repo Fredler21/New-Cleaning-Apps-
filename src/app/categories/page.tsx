@@ -7,7 +7,8 @@ import { categories } from "@/data/categories";
 export const metadata: Metadata = buildMeta({
   title: "Categories",
   description: "Explore premium cleaning categories including Dawn, vinegar, baking soda, deep clean, and budget hacks.",
-  path: "/categories"
+  path: "/categories",
+  keywords: ["cleaning categories", "Dawn hacks", "vinegar hacks", "baking soda cleaning", "budget cleaning"],
 });
 
 export default function CategoriesPage() {

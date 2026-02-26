@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { buildMeta } from "@/components/seo/Meta";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = buildMeta({
   title: "FAQ",
   description:
     "Frequently asked cleaning questions — find quick answers to common household cleaning problems.",
   path: "/faq",
+  keywords: ["cleaning FAQ", "cleaning questions", "house cleaning help", "cleaning tips"],
 });
 
 const faqs = [
@@ -56,6 +58,17 @@ const faqs = [
 export default function FAQPage() {
   return (
     <Container>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }}
+      />
       <section className="py-12">
         <div className="mb-10">
           <h1

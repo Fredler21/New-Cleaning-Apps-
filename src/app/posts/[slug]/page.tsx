@@ -11,7 +11,7 @@ import { SaveHackButton } from "@/components/posts/SaveHackButton";
 import { PostGrid } from "@/components/posts/PostGrid";
 import { Badge } from "@/components/ui/Badge";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { buildMeta } from "@/components/seo/Meta";
+import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
 import { posts, getPostBySlug } from "@/data/posts";
 import { titleToId } from "@/lib/format";
 
@@ -22,16 +22,38 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const post = getPostBySlug(params.slug);
   if (!post) {
-    return buildMeta({ title: "Post not found", description: "The requested post was not found.", path: "/posts" });
+    return {
+      title: "Post not found | TryCleaningHacks",
+      description: "The requested post was not found.",
+    };
   }
 
-  return buildMeta({
-    title: post.title,
+  const url = `${SITE_URL}/posts/${post.slug}`;
+  const fullTitle = `${post.title} | ${SITE_NAME}`;
+
+  return {
+    title: fullTitle,
     description: post.excerpt,
-    path: `/posts/${post.slug}`,
-    image: "/og/og-default.png",
-    ogType: "article"
-  });
+    keywords: [post.category.replace("-", " "), ...post.tags, "cleaning hacks", "home cleaning"],
+    alternates: { canonical: url },
+    openGraph: {
+      title: fullTitle,
+      description: post.excerpt,
+      url,
+      siteName: SITE_NAME,
+      images: [{ url: post.coverImage, width: 1200, height: 630, alt: post.title }],
+      locale: "en_US",
+      type: "article",
+      publishedTime: "2025-06-01T00:00:00Z",
+      authors: [SITE_NAME],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: fullTitle,
+      description: post.excerpt,
+      images: [post.coverImage],
+    },
+  };
 }
 
 export default function PostDetailPage({ params }: { params: { slug: string } }) {
@@ -73,14 +95,54 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
 
       <Container>
         <article className="py-10">
+          {/* Article + HowTo structured data */}
           <JsonLd
             data={{
               "@context": "https://schema.org",
               "@type": "Article",
               headline: post.title,
               description: post.excerpt,
-              image: post.coverImage,
-              author: { "@type": "Organization", name: "TryCleaningHacks" }
+              image: `${SITE_URL}${post.coverImage}`,
+              datePublished: "2025-06-01T00:00:00Z",
+              dateModified: new Date().toISOString(),
+              author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+              publisher: {
+                "@type": "Organization",
+                name: SITE_NAME,
+                logo: { "@type": "ImageObject", url: `${SITE_URL}/og/og-home.png` },
+              },
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": `${SITE_URL}/posts/${post.slug}`,
+              },
+            }}
+          />
+          <JsonLd
+            data={{
+              "@context": "https://schema.org",
+              "@type": "HowTo",
+              name: post.title,
+              description: post.excerpt,
+              image: `${SITE_URL}${post.coverImage}`,
+              totalTime: `PT${parseInt(post.readTime)}M`,
+              supply: post.supplies.map((s) => ({ "@type": "HowToSupply", name: s })),
+              step: post.steps.map((step, i) => ({
+                "@type": "HowToStep",
+                position: i + 1,
+                name: step.title,
+                text: step.body,
+              })),
+            }}
+          />
+          <JsonLd
+            data={{
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+                { "@type": "ListItem", position: 2, name: "Posts", item: `${SITE_URL}/posts` },
+                { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/posts/${post.slug}` },
+              ],
             }}
           />
 

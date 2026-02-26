@@ -6,6 +6,7 @@ export const metadata: Metadata = buildMeta({
   description:
     "Get in touch with the TryCleaningHacks team. Ask a question, suggest a hack, or report an issue — we'd love to hear from you.",
   path: "/contact",
+  keywords: ["contact TryCleaningHacks", "cleaning advice help", "suggest a topic"],
 });
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {

@@ -7,6 +7,7 @@ export const metadata: Metadata = buildMeta({
   description:
     "Review the Terms of Service for TryCleaningHacks — covering site usage, intellectual property, disclaimers, and user responsibilities.",
   path: "/terms",
+  noIndex: true,
 });
 
 /* ── Section helper ───────────────────────────────────────── */
