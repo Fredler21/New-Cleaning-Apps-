@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { addSubscriber } from "@/lib/firebase/collections";
 
 const CONTACT_EMAIL = "support@trycleaninghacks.com";
 
@@ -18,6 +19,20 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400 });
   }
 
+  const trimmedEmail = body.email.trim().toLowerCase();
+
+  /* ---------- Save to Firestore ---------- */
+  try {
+    const { duplicate } = await addSubscriber(trimmedEmail);
+    if (duplicate) {
+      return NextResponse.json({ message: "You're already subscribed! 🎉" });
+    }
+  } catch (err) {
+    console.error("Firestore error (subscriber):", err);
+    // Continue to send email even if Firestore fails
+  }
+
+  /* ---------- Send notification email ---------- */
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     console.error("RESEND_API_KEY is not set");
@@ -32,11 +47,12 @@ export async function POST(request: Request) {
     const { error } = await resend.emails.send({
       from: `TryCleaningHacks <noreply@contact.trycleaninghacks.com>`,
       to: CONTACT_EMAIL,
-      subject: `New Newsletter Subscriber: ${body.email.trim()}`,
+      subject: `New Newsletter Subscriber: ${trimmedEmail}`,
       html: `
         <h2>New Newsletter Subscription</h2>
-        <p><strong>Email:</strong> ${body.email.trim().replace(/</g, "&lt;").replace(/>/g, "&gt;")}</p>
+        <p><strong>Email:</strong> ${trimmedEmail.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</p>
         <p>This person subscribed to the Premium Cleaning Briefs newsletter on your website.</p>
+        <p><em>Subscriber saved to Firestore.</em></p>
       `,
     });
 

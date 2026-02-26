@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { addContact } from "@/lib/firebase/collections";
 
 const CONTACT_EMAIL = "support@trycleaninghacks.com";
 
@@ -39,6 +40,19 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Message must be at least 10 characters." }, { status: 400 });
   }
 
+  const trimmedName = body.name.trim();
+  const trimmedEmail = body.email.trim();
+  const trimmedMessage = body.message.trim();
+
+  /* ---------- Save to Firestore ---------- */
+  try {
+    await addContact(trimmedName, trimmedEmail, trimmedMessage);
+  } catch (err) {
+    console.error("Firestore error (contact):", err);
+    // Continue to send email even if Firestore fails
+  }
+
+  /* ---------- Send notification email ---------- */
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     console.error("RESEND_API_KEY is not set");
@@ -53,15 +67,16 @@ export async function POST(request: Request) {
     const { error } = await resend.emails.send({
       from: `TryCleaningHacks <noreply@contact.trycleaninghacks.com>`,
       to: CONTACT_EMAIL,
-      replyTo: body.email,
-      subject: `New Contact Form Message from ${body.name.trim()}`,
+      replyTo: trimmedEmail,
+      subject: `New Contact Form Message from ${trimmedName}`,
       html: `
         <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${escapeHtml(body.name.trim())}</p>
-        <p><strong>Email:</strong> ${escapeHtml(body.email.trim())}</p>
+        <p><strong>Name:</strong> ${escapeHtml(trimmedName)}</p>
+        <p><strong>Email:</strong> ${escapeHtml(trimmedEmail)}</p>
         <hr />
         <p><strong>Message:</strong></p>
-        <p>${escapeHtml(body.message.trim()).replace(/\n/g, "<br />")}</p>
+        <p>${escapeHtml(trimmedMessage).replace(/\n/g, "<br />")}</p>
+        <p><em>Contact saved to Firestore.</em></p>
       `,
     });
 
