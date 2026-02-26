@@ -87,11 +87,8 @@ export async function POST(request: Request) {
       `,
     });
   } catch (err) {
-    console.error("Email send error:", err);
-    return NextResponse.json(
-      { error: "Unable to process your subscription right now. Please try again later." },
-      { status: 500 }
-    );
+    // Log the error but don't fail the subscription — the user is already saved
+    console.error("Email send error (subscriber still saved):", err);
   }
 
   return NextResponse.json({ message: "You're subscribed! Check your inbox for weekly cleaning briefs." });

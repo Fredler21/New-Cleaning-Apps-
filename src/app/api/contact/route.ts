@@ -68,11 +68,8 @@ export async function POST(request: Request) {
       `,
     });
   } catch (err) {
-    console.error("Email send error:", err);
-    return NextResponse.json(
-      { error: "Unable to send your message right now. Please try again later." },
-      { status: 500 }
-    );
+    // Log the error but don't fail — the contact is already saved to Firestore
+    console.error("Email send error (contact still saved):", err);
   }
 
   return NextResponse.json({ message: "Thanks for reaching out! We'll reply to your email shortly." });
