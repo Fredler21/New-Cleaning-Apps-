@@ -82,7 +82,7 @@ export default function HomePage() {
           <div className="rounded-2xl p-4 sm:p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
             <HeroSearch />
             <div className="mt-4 flex flex-wrap gap-2">
-              {["Kitchen", "Bathroom", "Vinegar", "Baking Soda", "2-min fixes", "Deep clean"].map((filter) => (
+              {["Kitchen", "Bathroom", "Vinegar", "Baking Soda", "Laundry", "Deep clean"].map((filter) => (
                 <Link
                   key={filter}
                   href={`/posts?q=${filter.toLowerCase()}`}
