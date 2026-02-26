@@ -13,7 +13,6 @@ import { Badge } from "@/components/ui/Badge";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
 import { posts, getPostBySlug } from "@/data/posts";
-import { titleToId } from "@/lib/format";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -125,12 +124,18 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               description: post.excerpt,
               image: `${SITE_URL}${post.coverImage}`,
               totalTime: `PT${parseInt(post.readTime)}M`,
+              estimatedCost: {
+                "@type": "MonetaryAmount",
+                currency: "USD",
+                value: "0",
+              },
               supply: post.supplies.map((s) => ({ "@type": "HowToSupply", name: s })),
               step: post.steps.map((step, i) => ({
                 "@type": "HowToStep",
                 position: i + 1,
                 name: step.title,
                 text: step.body,
+                url: `${SITE_URL}/posts/${post.slug}#step-${i + 1}`,
               })),
             }}
           />
@@ -181,7 +186,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   Step-by-Step Instructions
                 </h2>
                 {post.steps.map((step, index) => (
-                  <section key={step.title} id={titleToId(step.title)} className="rounded-xl p-6 transition-all duration-200" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                  <section key={step.title} id={`step-${index + 1}`} className="rounded-xl p-6 transition-all duration-200" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
                     <div className="flex items-start gap-4">
                       <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-sm font-bold text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">{index + 1}</span>
                       <div>
