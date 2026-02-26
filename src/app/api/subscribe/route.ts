@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import { sendMail } from "@/lib/mail";
 import { addSubscriber } from "@/lib/firebase/collections";
 
 const CONTACT_EMAIL = "support@trycleaninghacks.com";
@@ -29,25 +29,12 @@ export async function POST(request: Request) {
     }
   } catch (err) {
     console.error("Firestore error (subscriber):", err);
-    // Continue to send email even if Firestore fails
   }
 
-  /* ---------- Send notification email ---------- */
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    console.error("RESEND_API_KEY is not set");
-    return NextResponse.json(
-      { error: "Service is not configured. Please try again later." },
-      { status: 500 }
-    );
-  }
-
+  /* ---------- Send emails via Zoho SMTP ---------- */
   try {
-    const resend = new Resend(apiKey);
-
     /* --- Welcome email TO the subscriber --- */
-    await resend.emails.send({
-      from: `TryCleaningHacks <noreply@contact.trycleaninghacks.com>`,
+    await sendMail({
       to: trimmedEmail,
       subject: `Welcome to TryCleaningHacks! 🧹✨`,
       html: `
@@ -88,8 +75,7 @@ export async function POST(request: Request) {
     });
 
     /* --- Notification email TO you --- */
-    const { error } = await resend.emails.send({
-      from: `TryCleaningHacks <noreply@contact.trycleaninghacks.com>`,
+    await sendMail({
       to: CONTACT_EMAIL,
       subject: `New Newsletter Subscriber: ${trimmedEmail}`,
       html: `
@@ -99,16 +85,8 @@ export async function POST(request: Request) {
         <p><em>Subscriber saved to Firestore. Welcome email sent.</em></p>
       `,
     });
-
-    if (error) {
-      console.error("Resend API error:", error);
-      return NextResponse.json(
-        { error: "Unable to process your subscription right now. Please try again later." },
-        { status: 500 }
-      );
-    }
   } catch (err) {
-    console.error("Resend error:", err);
+    console.error("Email send error:", err);
     return NextResponse.json(
       { error: "Unable to process your subscription right now. Please try again later." },
       { status: 500 }
