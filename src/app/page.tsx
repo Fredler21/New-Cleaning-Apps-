@@ -3,7 +3,7 @@ import { HeroSlider } from "@/components/hero/HeroSlider";
 import { HeroSearch } from "@/components/hero/HeroSearch";
 import { Container } from "@/components/layout/Container";
 import { categories } from "@/data/categories";
-import { featuredPosts, heroPosts, quickWinPosts } from "@/data/featured";
+import { featuredThisWeek, trendingPosts, heroPosts, quickWinPosts } from "@/data/featured";
 import { TrendingCarousel } from "@/components/posts/TrendingCarousel";
 import { PostCard } from "@/components/posts/PostCard";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
@@ -165,7 +165,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredPosts.slice(0, 3).map((post, i) => (
+            {featuredThisWeek.map((post, i) => (
               <PostCard key={post.slug} post={post} featured={i === 0} />
             ))}
           </div>
@@ -190,7 +190,7 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
-          <TrendingCarousel posts={featuredPosts} />
+          <TrendingCarousel posts={trendingPosts} />
         </section>
       </Container>
 
