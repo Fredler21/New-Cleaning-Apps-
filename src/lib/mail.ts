@@ -10,8 +10,8 @@ const DOMAIN = "trycleaninghacks.com";
  * Uses app-specific password for authentication.
  */
 function getTransporter() {
-  const user = process.env.ZOHO_EMAIL || FROM_EMAIL;
-  const pass = process.env.ZOHO_APP_PASSWORD;
+  const user = (process.env.ZOHO_EMAIL || FROM_EMAIL).trim();
+  const pass = (process.env.ZOHO_APP_PASSWORD || "").trim();
 
   if (!pass) {
     throw new Error("ZOHO_APP_PASSWORD is not set.");
