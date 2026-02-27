@@ -86,9 +86,14 @@ export async function POST(request: Request) {
         <p><em>Subscriber saved to Firestore. Welcome email sent.</em></p>
       `,
     });
-  } catch (err) {
-    // Log the error but don't fail the subscription — the user is already saved
-    console.error("Email send error (subscriber still saved):", err);
+  } catch (err: unknown) {
+    // Log detailed error info for debugging
+    const errMsg = err instanceof Error ? err.message : String(err);
+    const errStack = err instanceof Error ? err.stack : "";
+    console.error("EMAIL_SEND_FAILED:", errMsg);
+    console.error("EMAIL_SEND_STACK:", errStack);
+    console.error("ZOHO_EMAIL_SET:", !!process.env.ZOHO_EMAIL);
+    console.error("ZOHO_APP_PASSWORD_SET:", !!process.env.ZOHO_APP_PASSWORD);
   }
 
   return NextResponse.json({ message: "You're subscribed! Check your inbox for weekly cleaning briefs." });
