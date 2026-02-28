@@ -44,7 +44,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       images: [{ url: post.coverImage, width: 1200, height: 630, alt: post.title }],
       locale: "en_US",
       type: "article",
-      publishedTime: "2025-06-01T00:00:00Z",
+      publishedTime: post.datePublished,
       authors: [SITE_NAME],
     },
     twitter: {
@@ -104,8 +104,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               headline: post.title,
               description: post.excerpt,
               image: `${SITE_URL}${post.coverImage}`,
-              datePublished: "2025-06-01T00:00:00Z",
-              dateModified: new Date().toISOString(),
+              datePublished: post.datePublished,
+              dateModified: post.datePublished,
               author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
               publisher: {
                 "@type": "Organization",

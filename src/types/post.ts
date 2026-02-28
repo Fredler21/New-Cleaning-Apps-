@@ -11,6 +11,7 @@ export type PostFAQ = {
 export type Post = {
   title: string;
   slug: string;
+  datePublished: string;   // ISO 8601 date, e.g. "2025-06-10"
   category: string;
   readTime: string;
   tags: string[];
