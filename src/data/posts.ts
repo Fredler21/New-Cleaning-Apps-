@@ -2,13 +2,13 @@ import type { Post } from "@/types/post";
 
 export const posts: Post[] = [
   {
-    title: "13 Mind-Blowing Listerine Hacks",
+    title: "13 Surprising Ways to Clean With Listerine",
     slug: "13-mind-blowing-listerine-hacks",
     category: "listerine-hacks",
     readTime: "11 min",
     tags: ["quick wins", "odor control", "bathroom"],
     excerpt:
-      "Mint-fresh techniques that neutralize stale smells and refresh forgotten corners in minutes.",
+      "Learn 13 practical ways to use Listerine for cleaning — from deodorizing trash cans to disinfecting cutting boards and freshening closets.",
     coverImage: "/graphics/posts/13-mind-blowing-listerine-hacks.png",
     supplies: ["Listerine", "Spray bottle", "Microfiber cloths", "Soft brush", "Warm water", "Gloves"],
     steps: [
@@ -40,13 +40,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "7 Game-Changing Ultra Cleaning Hacks",
+    title: "7 Deep Cleaning Tricks That Save Hours Every Week",
     slug: "7-game-changing-ultra-cleaning-hacks",
     category: "deep-clean",
     readTime: "12 min",
     tags: ["deep clean", "weekend", "routine"],
     excerpt:
-      "A premium room-reset framework that delivers polished, camera-ready results without chaos.",
+      "Save time with these 7 deep cleaning tricks that cover every room — from dusting ceilings to sanitizing high-touch surfaces.",
     coverImage: "/graphics/posts/7-game-changing-ultra-cleaning-hacks.png",
     supplies: ["All-purpose cleaner", "Degreaser", "Microfiber bundle", "Detail brush", "Bucket", "Gloves"],
     steps: [
@@ -78,13 +78,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "14 Ways to Use Baking Soda in Your House",
+    title: "14 Proven Ways to Clean With Baking Soda",
     slug: "14-ways-to-use-baking-soda-in-your-house",
     category: "baking-soda",
     readTime: "13 min",
     tags: ["kitchen", "laundry", "odor control"],
     excerpt:
-      "Gentle, effective baking soda workflows for sinks, fabrics, bins, and everyday odor control.",
+      "From scrubbing sinks to freshening carpets, here are 14 tested ways to use baking soda for cleaning every room in your home.",
     coverImage: "/graphics/posts/14-ways-to-use-baking-soda-in-your-house.png",
     supplies: ["Baking soda", "Warm water", "Soft sponge", "Measuring spoon", "Cloth", "Gloves"],
     steps: [
@@ -116,13 +116,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "8 Incredible Vinegar Hacks",
+    title: "How to Clean Almost Anything With Vinegar (8 Methods)",
     slug: "8-incredible-vinegar-hacks",
     category: "vinegar-hacks",
     readTime: "10 min",
     tags: ["quick wins", "glass", "bathroom"],
     excerpt:
-      "Mineral-busting vinegar routines that restore shine and clarity across high-use surfaces.",
+      "White vinegar cleans glass, removes hard water stains, unclogs drains, and more. Here are 8 methods that actually work.",
     coverImage: "/graphics/posts/8-incredible-vinegar-hacks.png",
     supplies: ["White vinegar", "Spray bottle", "Warm water", "Microfiber", "Brush", "Gloves"],
     steps: [
@@ -154,13 +154,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "16 Hydrogen Peroxide Cleaning Hacks",
+    title: "16 Ways to Clean and Disinfect With Hydrogen Peroxide",
     slug: "16-hydrogen-peroxide-cleaning-hacks",
     category: "peroxide-hacks",
     readTime: "14 min",
     tags: ["deep clean", "bathroom", "laundry"],
     excerpt:
-      "Targeted brightening and stain lifting with careful methods for safer, cleaner outcomes.",
+      "Hydrogen peroxide whitens grout, removes blood stains, sanitizes countertops, and brightens laundry. Here are 16 safe ways to use it.",
     coverImage: "/graphics/posts/16-hydrogen-peroxide-cleaning-hacks.png",
     supplies: ["Hydrogen peroxide 3%", "Spray bottle", "Cotton pads", "Brush", "Microfiber", "Gloves"],
     steps: [
@@ -232,13 +232,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "5 Dollar Store Hacks You Should Know",
+    title: "5 Dollar Store Cleaning Products That Actually Work",
     slug: "5-dollar-store-hacks-you-should-know",
     category: "dollar-store",
     readTime: "9 min",
     tags: ["budget", "quick wins", "routine"],
     excerpt:
-      "Low-cost tools that deliver premium results when paired with a smart process.",
+      "These 5 dollar store cleaning supplies — from spray bottles to microfiber cloths — deliver the same results as expensive brands.",
     coverImage: "/graphics/posts/5-dollar-store-hacks-you-should-know.png",
     supplies: ["Organizer bins", "Spray bottles", "Microfiber packs", "Brush set", "Labels", "Gloves"],
     steps: [
@@ -270,13 +270,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "30 Cleaning Myths You Should Be Wary Of",
+    title: "30 Cleaning Myths You Need to Stop Believing",
     slug: "30-cleaning-myths-you-should-be-wary-of",
     category: "deep-clean",
     readTime: "15 min",
     tags: ["deep clean", "education", "safety"],
     excerpt:
-      "Myth-busting guidance that protects your home, your tools, and your time.",
+      "Bleach doesn't clean, vinegar damages stone, and more isn't better. Here are 30 common cleaning myths debunked with facts.",
     coverImage: "/graphics/posts/30-cleaning-myths-you-should-be-wary-of.png",
     supplies: ["Notebook", "Trusted cleaner labels", "Microfiber", "Timer", "Gloves", "Ventilation fan"],
     steps: [
@@ -308,13 +308,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "11 Dawn Dish Soap Hacks for Greasy Kitchens",
+    title: "11 Ways to Use Dawn Dish Soap Beyond the Sink",
     slug: "11-dawn-dish-soap-hacks-for-greasy-kitchens",
     category: "dawn-hacks",
     readTime: "12 min",
     tags: ["kitchen", "quick wins", "deep clean"],
     excerpt:
-      "Grease-cutting Dawn routines that leave stovetops, cabinet faces, and backsplashes clean and polished.",
+      "Dawn dish soap cuts grease on stovetops, unclogs drains, pre-treats laundry stains, and more. Here are 11 practical uses.",
     coverImage: "/graphics/posts/11-dawn-dish-soap-hacks-for-greasy-kitchens.png",
     supplies: ["Dawn dish soap", "Warm water", "Spray bottle", "Microfiber", "Soft brush", "Gloves"],
     steps: [
@@ -346,13 +346,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "9 Laundry Room Cleaning Hacks That Actually Save Time",
+    title: "How to Clean Your Laundry Room in Under 30 Minutes",
     slug: "9-laundry-room-cleaning-hacks-that-actually-save-time",
     category: "laundry-kitchen",
     readTime: "10 min",
     tags: ["laundry", "quick wins", "routine"],
     excerpt:
-      "Fast systems for lint zones, detergent shelves, and machine surrounds that keep laundry spaces crisp.",
+      "Clean your washer drum, dryer vent, utility sink, and floors with this step-by-step laundry room cleaning guide.",
     coverImage: "/graphics/posts/9-laundry-room-cleaning-hacks-that-actually-save-time.png",
     supplies: ["Lint brush", "Microfiber", "Mild cleaner", "Vacuum crevice tool", "Bin liners", "Gloves"],
     steps: [
@@ -384,13 +384,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "10 Kitchen Sink Detox Hacks for Odor-Free Results",
+    title: "How to Get Rid of Kitchen Sink Odor (10 Easy Fixes)",
     slug: "10-kitchen-sink-detox-hacks-for-odor-free-results",
     category: "laundry-kitchen",
     readTime: "11 min",
     tags: ["kitchen", "odor control", "quick wins"],
     excerpt:
-      "Simple sink and drain routines that remove buildup and keep your kitchen smelling clean all week.",
+      "Eliminate kitchen sink odor with these 10 easy fixes — from baking soda flushes to drain cleaning and faucet scrubbing.",
     coverImage: "/graphics/posts/10-kitchen-sink-detox-hacks-for-odor-free-results.png",
     supplies: ["Baking soda", "Dish soap", "Brush", "Hot water", "Microfiber", "Gloves"],
     steps: [
@@ -422,13 +422,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "15 Bathroom Deep Clean Hacks for Hotel-Level Shine",
+    title: "15 Bathroom Cleaning Tips for a Hotel-Level Finish",
     slug: "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
     category: "deep-clean",
     readTime: "16 min",
     tags: ["bathroom", "deep clean", "weekend"],
     excerpt:
-      "Structured bathroom reset tactics that brighten grout, glass, fixtures, and mirror edges with less effort.",
+      "Deep clean your bathroom like a professional with these 15 tips covering grout, glass, fixtures, and floors.",
     coverImage: "/graphics/posts/15-bathroom-deep-clean-hacks-for-hotel-level-shine.png",
     supplies: ["Bathroom cleaner", "Grout brush", "Squeegee", "Microfiber", "Vinegar solution", "Gloves"],
     steps: [
@@ -460,13 +460,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "6 Budget Cleaning Kits You Can Build in 20 Minutes",
+    title: "6 Budget Cleaning Kits You Can Put Together for Under $20",
     slug: "6-budget-cleaning-kits-you-can-build-in-20-minutes",
     category: "dollar-store",
     readTime: "9 min",
     tags: ["budget", "quick wins", "routine"],
     excerpt:
-      "Room-by-room cleaning kits using low-cost tools that still deliver premium, consistent outcomes.",
+      "Build room-by-room cleaning kits for under $20 using dollar store supplies. Each kit has everything you need to clean in one grab.",
     coverImage: "/graphics/posts/6-budget-cleaning-kits-you-can-build-in-20-minutes.png",
     supplies: ["Spray bottles", "Microfiber packs", "Labels", "Bucket caddy", "Brushes", "Gloves"],
     steps: [
@@ -498,13 +498,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "18 Quick Wins for Busy Mornings",
+    title: "18 Quick Cleaning Tasks You Can Do in 5 Minutes or Less",
     slug: "18-quick-wins-for-busy-mornings",
     category: "deep-clean",
     readTime: "12 min",
     tags: ["quick wins", "routine", "kitchen"],
     excerpt:
-      "Short, repeatable cleaning moves that keep your home polished when you only have a few minutes.",
+      "Short on time? These 18 quick cleaning tasks — from making the bed to wiping counters — take 5 minutes or less each.",
     coverImage: "/graphics/posts/18-quick-wins-for-busy-mornings.png",
     supplies: ["Microfiber cloths", "All-purpose spray", "Mini brush", "Trash liners", "Timer", "Gloves"],
     steps: [
@@ -536,13 +536,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "20 Declutter + Clean Pairing Hacks",
+    title: "The Complete Declutter and Clean Checklist (20 Pairings)",
     slug: "20-declutter-clean-pairing-hacks",
     category: "deep-clean",
     readTime: "14 min",
     tags: ["deep clean", "routine", "education"],
     excerpt:
-      "Pair decluttering and cleaning in one flow to keep rooms lighter, clearer, and easier to maintain.",
+      "Pair decluttering with cleaning using this 20-step checklist. Clear surfaces, sort items, and deep clean each room in one session.",
     coverImage: "/graphics/posts/20-declutter-clean-pairing-hacks.png",
     supplies: ["Storage bins", "Labels", "Microfiber", "Vacuum", "All-purpose cleaner", "Gloves"],
     steps: [
@@ -574,13 +574,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "8 Undemanding WD-40 Cleaning Hacks",
+    title: "8 Things You Can Clean With WD-40 (That You Didn't Know)",
     slug: "8-undemanding-wd40-cleaning-hacks",
     category: "wd40-hacks",
     readTime: "10 min",
     tags: ["quick wins", "bathroom", "kitchen"],
     excerpt:
-      "Surprisingly simple WD-40 tricks that dissolve grime, remove sticky messes, and restore shine in minutes.",
+      "WD-40 removes soap scum, cleans water stains, dissolves adhesive, and erases scuff marks. Here are 8 surprising cleaning uses.",
     coverImage: "/graphics/posts/8-undemanding-wd40-cleaning-hacks.png",
     supplies: ["WD-40", "Microfiber cloths", "Soft brush", "Warm water", "Dish soap", "Gloves"],
     steps: [
@@ -610,13 +610,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "10 Best Ways to Combat Cockroaches",
+    title: "How to Get Rid of Cockroaches Naturally (10 Effective Methods)",
     slug: "10-best-ways-to-combat-cockroaches",
     category: "pest-control",
     readTime: "12 min",
     tags: ["deep clean", "kitchen", "safety"],
     excerpt:
-      "Proven strategies to eliminate cockroaches and keep them from coming back using cleaning habits and smart prevention.",
+      "Get rid of cockroaches naturally using boric acid, gel bait, essential oils, and cleaning habits that eliminate food and water sources.",
     coverImage: "/graphics/posts/10-best-ways-to-combat-cockroaches.png",
     supplies: ["Boric acid", "Caulk gun", "Spray bottle", "Baking soda", "Essential oils", "Gloves"],
     steps: [
@@ -648,13 +648,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "10 Genius Ways to Make Your House Smell Great",
+    title: "10 Easy Ways to Make Your House Smell Amazing All Day",
     slug: "10-genius-ways-to-make-your-house-smell-great",
     category: "home-fragrance",
     readTime: "10 min",
     tags: ["odor control", "quick wins", "routine"],
     excerpt:
-      "Simple homemade fragrance hacks that fill every room with warm, inviting scents using everyday ingredients.",
+      "Make your house smell amazing all day with homemade room sprays, stovetop potpourri, baking soda jars, and eucalyptus bundles.",
     coverImage: "/graphics/posts/10-genius-ways-to-make-your-house-smell-great.png",
     supplies: ["Essential oils", "Spray bottle", "Baking soda", "Vanilla extract", "Cinnamon sticks", "Citrus fruits", "Small saucepan", "Mason jars"],
     steps: [
@@ -686,13 +686,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "10 Fascinating Vacuum Hacks You Need to Know",
+    title: "10 Vacuum Cleaning Tips Most People Miss",
     slug: "10-fascinating-vacuum-hacks-you-need-to-know",
     category: "deep-clean",
     readTime: "10 min",
     tags: ["deep clean", "quick wins", "routine"],
     excerpt:
-      "Clever vacuum tricks that go way beyond floors — freshen mattresses, rescue small items, and cut cleaning time in half.",
+      "Go beyond floors with these 10 vacuum cleaning tips — recover lost items, deodorize rooms, freshen mattresses, and clean vents.",
     coverImage: "/graphics/posts/10-fascinating-vacuum-hacks-you-need-to-know.png",
     supplies: ["Vacuum cleaner with attachments", "Pantyhose or thin sock", "Essential oils", "Baking soda", "Rubber band", "Dryer sheet", "Crevice tool", "Upholstery brush"],
     steps: [
@@ -724,13 +724,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "12 Microwave Cleaning Hacks for a Sparkling Kitchen",
+    title: "How to Clean a Microwave Inside and Out (12 Methods)",
     slug: "12-microwave-cleaning-hacks-for-a-sparkling-kitchen",
     category: "laundry-kitchen",
     readTime: "10 min",
     tags: ["kitchen", "quick wins", "odor control"],
     excerpt:
-      "Steam-powered tricks and pantry-staple solutions that dissolve caked-on splatters and eliminate microwave odors in minutes.",
+      "Clean your microwave inside and out using steam, lemon, vinegar, and baking soda. 12 methods for a sparkling, odor-free result.",
     coverImage: "/graphics/posts/12-microwave-cleaning-hacks-for-a-sparkling-kitchen.png",
     supplies: ["White vinegar", "Lemon", "Baking soda", "Dish soap", "Microfiber cloth", "Spray bottle", "Bowl", "Sponge"],
     steps: [
@@ -764,13 +764,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "10 Genius Toothpaste Cleaning Hacks You Never Knew",
+    title: "10 Things You Can Clean With Toothpaste",
     slug: "10-genius-toothpaste-cleaning-hacks-you-never-knew",
     category: "deep-clean",
     readTime: "9 min",
     tags: ["quick wins", "budget", "bathroom"],
     excerpt:
-      "Discover surprising ways to use basic white toothpaste to polish, brighten, and deodorize surfaces all around your home.",
+      "White toothpaste cleans silver, removes water rings from wood, polishes faucets, and erases scuff marks. Here are 10 uses.",
     coverImage: "/graphics/posts/10-genius-toothpaste-cleaning-hacks-you-never-knew.png",
     supplies: ["White toothpaste (non-gel)", "Soft cloth", "Old toothbrush", "Warm water", "Microfiber cloth", "Sponge"],
     steps: [
@@ -802,13 +802,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "The Ultimate Weekly Cleaning Schedule for a Spotless Home",
+    title: "The Complete Weekly Cleaning Schedule (Room by Room)",
     slug: "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
     category: "deep-clean",
     readTime: "14 min",
     tags: ["deep clean", "routine", "weekend"],
     excerpt:
-      "A realistic day-by-day cleaning system that spreads the workload across the week so your home stays spotless without marathon sessions.",
+      "A day-by-day cleaning schedule that covers kitchen, bathrooms, dusting, floors, and laundry — so your home stays clean all week.",
     coverImage: "/graphics/posts/the-ultimate-weekly-cleaning-schedule-for-a-spotless-home.png",
     supplies: ["All-purpose cleaner", "Microfiber cloths", "Vacuum", "Mop", "Toilet cleaner", "Glass cleaner", "Laundry detergent", "Trash bags", "Duster", "Rubber gloves"],
     steps: [
@@ -840,13 +840,13 @@ export const posts: Post[] = [
     ]
   },
   {
-    title: "12 Genius Rubbing Alcohol Cleaning Hacks for a Spotless Home",
+    title: "12 Ways to Clean and Disinfect With Rubbing Alcohol",
     slug: "12-genius-rubbing-alcohol-cleaning-hacks",
     category: "deep-clean",
     readTime: "10 min",
     tags: ["quick wins", "bathroom", "kitchen", "budget"],
     excerpt:
-      "Rubbing alcohol is the cheapest, fastest disinfectant hiding in your medicine cabinet. Here are 12 ways to use it all over your house.",
+      "Clean glass, disinfect countertops, degrease appliances, and sanitize electronics with rubbing alcohol. 12 practical methods.",
     coverImage: "/graphics/posts/12-genius-rubbing-alcohol-cleaning-hacks.png",
     supplies: ["Isopropyl rubbing alcohol (70% or 91%)", "Spray bottle", "Microfiber cloths", "Cotton pads", "Soft brush", "Warm water"],
     steps: [
