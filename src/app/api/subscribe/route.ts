@@ -40,29 +40,12 @@ export async function POST(request: Request) {
 
     const welcomeEmail = sendMail({
       to: trimmedEmail,
-      subject: "Welcome to TryCleaningHacks",
-      html: `
-        <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:560px;margin:0 auto;color:#1f2937;">
-          <p style="font-size:16px;line-height:1.6;">Hi there,</p>
-          <p style="font-size:16px;line-height:1.6;">
-            Thanks for subscribing to <strong>TryCleaningHacks</strong>. Every week we will send you
-            practical cleaning tips you can use right away — no fluff, just results.
-          </p>
-          <p style="font-size:16px;line-height:1.6;">Here is what you will get:</p>
-          <ul style="font-size:15px;color:#374151;line-height:1.8;padding-left:20px;">
-            <li>Weekly cleaning hacks that actually work</li>
-            <li>DIY solutions using everyday ingredients</li>
-            <li>Time-saving routines and schedules</li>
-          </ul>
-          <p style="font-size:16px;line-height:1.6;">
-            <a href="https://trycleaninghacks.com/posts" style="color:#0d9488;font-weight:600;">Browse our latest hacks</a>
-          </p>
-          <p style="font-size:14px;color:#6b7280;margin-top:32px;padding-top:16px;border-top:1px solid #e5e7eb;">
-            You are receiving this because you signed up at trycleaninghacks.com.<br/>
-            <a href="${unsub}" style="color:#6b7280;">Unsubscribe</a>
-          </p>
-        </div>
-      `,
+      subject: "Thanks for signing up",
+      html: `<p>Hi,</p>
+<p>Thanks for signing up at TryCleaningHacks. We will send you a quick cleaning tip each week.</p>
+<p>In the meantime, you can check out our guides here: <a href="https://trycleaninghacks.com/posts">trycleaninghacks.com/posts</a></p>
+<p>Cheers,<br>The TryCleaningHacks Team</p>
+<p style="font-size:12px;color:#999;"><a href="${unsub}">Unsubscribe</a></p>`,
     });
 
     const adminNotif = sendMail({

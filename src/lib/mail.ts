@@ -104,7 +104,6 @@ export async function sendMail({
     const unsub = unsubUrl(to);
     headers["List-Unsubscribe"] = `<${unsub}>`;
     headers["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click";
-    headers["Precedence"] = "bulk";
   }
 
   const info = await transporter.sendMail({
