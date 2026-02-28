@@ -57,14 +57,13 @@ export async function POST(request: Request) {
       to: CONTACT_EMAIL,
       replyTo: trimmedEmail,
       subject: `New Contact Form Message from ${trimmedName}`,
+      isNewsletter: false,
       html: `
-        <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${escapeHtml(trimmedName)}</p>
         <p><strong>Email:</strong> ${escapeHtml(trimmedEmail)}</p>
         <hr />
         <p><strong>Message:</strong></p>
         <p>${escapeHtml(trimmedMessage).replace(/\n/g, "<br />")}</p>
-        <p><em>Contact saved to Firestore.</em></p>
       `,
     });
   } catch (err) {

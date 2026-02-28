@@ -56,6 +56,18 @@ export async function addSubscriber(email: string, source = "website") {
   return { id: doc.id, duplicate: false };
 }
 
+/** Remove a subscriber by email. Returns true if found and deleted. */
+export async function removeSubscriber(email: string): Promise<boolean> {
+  const snap = await adminDb
+    .collection(COLLECTIONS.SUBSCRIBERS)
+    .where("email", "==", email.trim().toLowerCase())
+    .limit(1)
+    .get();
+  if (snap.empty) return false;
+  await snap.docs[0].ref.delete();
+  return true;
+}
+
 /** Get all subscribers (newest first). */
 export async function getSubscribers(limit = 100) {
   const snap = await adminDb

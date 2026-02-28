@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
-import { sendMail } from "@/lib/mail";
+import { sendMail, unsubUrl } from "@/lib/mail";
 import { addSubscriber } from "@/lib/firebase/collections";
+
+/** Allow up to 30 s for cold-start + SMTP handshake */
+export const maxDuration = 30;
 
 const CONTACT_EMAIL = "support@trycleaninghacks.com";
 
@@ -25,76 +28,59 @@ export async function POST(request: Request) {
   try {
     const { duplicate } = await addSubscriber(trimmedEmail);
     if (duplicate) {
-      return NextResponse.json({ message: "You're already subscribed! 🎉" });
+      return NextResponse.json({ message: "You're already subscribed!" });
     }
   } catch (err) {
     console.error("Firestore error (subscriber):", err);
   }
 
-  /* ---------- Send emails via Zoho SMTP ---------- */
+  /* ---------- Send emails via Zoho SMTP (in parallel) ---------- */
   try {
-    /* --- Welcome email TO the subscriber --- */
-    await sendMail({
+    const unsub = unsubUrl(trimmedEmail);
+
+    const welcomeEmail = sendMail({
       to: trimmedEmail,
-      subject: `Welcome to TryCleaningHacks`,
+      subject: "Welcome to TryCleaningHacks",
       html: `
-        <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden;">
-          <div style="background: linear-gradient(135deg, #0d9488, #14b8a6); padding: 32px 24px; text-align: center;">
-            <h1 style="color: #ffffff; margin: 0; font-size: 28px;">Welcome to TryCleaningHacks!</h1>
-            <p style="color: #ccfbf1; margin: 8px 0 0; font-size: 16px;">Your home is about to get a whole lot cleaner</p>
-          </div>
-          <div style="padding: 32px 24px;">
-            <p style="font-size: 16px; color: #1f2937; line-height: 1.6;">
-              Thank you for subscribing to <strong>Premium Cleaning Briefs</strong>!
-            </p>
-            <p style="font-size: 16px; color: #1f2937; line-height: 1.6;">
-              Every week, you'll receive our best cleaning hacks, tips, and tricks — straight to your inbox. No spam, just sparkling results.
-            </p>
-            <h3 style="color: #0d9488; margin-top: 24px;">Here's what to expect:</h3>
-            <ul style="font-size: 15px; color: #374151; line-height: 1.8;">
-              <li>Weekly cleaning hacks that actually work</li>
-              <li>DIY solutions using everyday ingredients</li>
-              <li>Time-saving routines and schedules</li>
-              <li>Eco-friendly and budget-friendly tips</li>
-            </ul>
-            <div style="text-align: center; margin: 32px 0;">
-              <a href="https://trycleaninghacks.com/posts" style="background: #0d9488; color: #ffffff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; display: inline-block;">
-                Browse Our Latest Hacks →
-              </a>
-            </div>
-            <p style="font-size: 14px; color: #6b7280; line-height: 1.6; border-top: 1px solid #e5e7eb; padding-top: 20px; margin-top: 24px;">
-              You're receiving this because you subscribed at <a href="https://trycleaninghacks.com" style="color: #0d9488;">trycleaninghacks.com</a>. 
-              If this wasn't you, simply ignore this email.
-            </p>
-          </div>
-          <div style="background: #f9fafb; padding: 16px 24px; text-align: center;">
-            <p style="font-size: 13px; color: #9ca3af; margin: 0;">© ${new Date().getFullYear()} TryCleaningHacks — Clean smarter, not harder.</p>
-            <p style="font-size: 12px; color: #9ca3af; margin: 4px 0 0;">Don't want these emails? <a href="https://trycleaninghacks.com/contact" style="color: #0d9488;">Unsubscribe here</a>.</p>
-          </div>
+        <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:560px;margin:0 auto;color:#1f2937;">
+          <p style="font-size:16px;line-height:1.6;">Hi there,</p>
+          <p style="font-size:16px;line-height:1.6;">
+            Thanks for subscribing to <strong>TryCleaningHacks</strong>. Every week we will send you
+            practical cleaning tips you can use right away — no fluff, just results.
+          </p>
+          <p style="font-size:16px;line-height:1.6;">Here is what you will get:</p>
+          <ul style="font-size:15px;color:#374151;line-height:1.8;padding-left:20px;">
+            <li>Weekly cleaning hacks that actually work</li>
+            <li>DIY solutions using everyday ingredients</li>
+            <li>Time-saving routines and schedules</li>
+          </ul>
+          <p style="font-size:16px;line-height:1.6;">
+            <a href="https://trycleaninghacks.com/posts" style="color:#0d9488;font-weight:600;">Browse our latest hacks</a>
+          </p>
+          <p style="font-size:14px;color:#6b7280;margin-top:32px;padding-top:16px;border-top:1px solid #e5e7eb;">
+            You are receiving this because you signed up at trycleaninghacks.com.<br/>
+            <a href="${unsub}" style="color:#6b7280;">Unsubscribe</a>
+          </p>
         </div>
       `,
     });
 
-    /* --- Notification email TO you --- */
-    await sendMail({
+    const adminNotif = sendMail({
       to: CONTACT_EMAIL,
-      subject: `New Newsletter Subscriber: ${trimmedEmail}`,
+      subject: `New subscriber: ${trimmedEmail}`,
+      isNewsletter: false,
       html: `
-        <h2>New Newsletter Subscription</h2>
-        <p><strong>Email:</strong> ${trimmedEmail.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</p>
-        <p>This person subscribed to the Premium Cleaning Briefs newsletter on your website.</p>
-        <p><em>Subscriber saved to Firestore. Welcome email sent.</em></p>
+        <p><strong>New subscriber:</strong> ${trimmedEmail.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</p>
+        <p>Saved to Firestore. Welcome email sent.</p>
       `,
     });
+
+    // Send both in parallel — cuts cold-start time in half
+    await Promise.allSettled([welcomeEmail, adminNotif]);
   } catch (err: unknown) {
-    // Log detailed error info for debugging
     const errMsg = err instanceof Error ? err.message : String(err);
-    const errStack = err instanceof Error ? err.stack : "";
     console.error("EMAIL_SEND_FAILED:", errMsg);
-    console.error("EMAIL_SEND_STACK:", errStack);
-    console.error("ZOHO_EMAIL_SET:", !!process.env.ZOHO_EMAIL);
-    console.error("ZOHO_APP_PASSWORD_SET:", !!process.env.ZOHO_APP_PASSWORD);
   }
 
-  return NextResponse.json({ message: "You're subscribed! Check your inbox for weekly cleaning briefs." });
+  return NextResponse.json({ message: "You're subscribed! Check your inbox for weekly cleaning tips." });
 }
