@@ -4,7 +4,7 @@ export const posts: Post[] = [
   {
     title: "13 Surprising Ways to Clean With Listerine",
     slug: "13-mind-blowing-listerine-hacks",
-    datePublished: "2025-06-10",
+    datePublished: "2026-02-20",
     category: "listerine-hacks",
     readTime: "11 min",
     tags: ["quick wins", "odor control", "bathroom"],
@@ -43,7 +43,7 @@ export const posts: Post[] = [
   {
     title: "7 Deep Cleaning Tricks That Save Hours Every Week",
     slug: "7-game-changing-ultra-cleaning-hacks",
-    datePublished: "2025-06-24",
+    datePublished: "2026-02-20",
     category: "deep-clean",
     readTime: "12 min",
     tags: ["deep clean", "weekend", "routine"],
@@ -82,7 +82,7 @@ export const posts: Post[] = [
   {
     title: "14 Proven Ways to Clean With Baking Soda",
     slug: "14-ways-to-use-baking-soda-in-your-house",
-    datePublished: "2025-07-08",
+    datePublished: "2026-02-20",
     category: "baking-soda",
     readTime: "13 min",
     tags: ["kitchen", "laundry", "odor control"],
@@ -121,7 +121,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Almost Anything With Vinegar (8 Methods)",
     slug: "8-incredible-vinegar-hacks",
-    datePublished: "2025-07-21",
+    datePublished: "2026-02-20",
     category: "vinegar-hacks",
     readTime: "10 min",
     tags: ["quick wins", "glass", "bathroom"],
@@ -160,7 +160,7 @@ export const posts: Post[] = [
   {
     title: "16 Ways to Clean and Disinfect With Hydrogen Peroxide",
     slug: "16-hydrogen-peroxide-cleaning-hacks",
-    datePublished: "2025-08-04",
+    datePublished: "2026-02-20",
     category: "peroxide-hacks",
     readTime: "14 min",
     tags: ["deep clean", "bathroom", "laundry"],
@@ -199,7 +199,7 @@ export const posts: Post[] = [
   {
     title: "How to Deep Clean a Shower (10 Proven Methods)",
     slug: "12-shower-cleaning-hacks",
-    datePublished: "2025-08-18",
+    datePublished: "2026-02-20",
     category: "deep-clean",
     readTime: "11 min",
     tags: ["bathroom", "deep clean", "shower cleaning", "soap scum removal"],
@@ -240,7 +240,7 @@ export const posts: Post[] = [
   {
     title: "5 Dollar Store Cleaning Products That Actually Work",
     slug: "5-dollar-store-hacks-you-should-know",
-    datePublished: "2025-09-01",
+    datePublished: "2026-02-20",
     category: "dollar-store",
     readTime: "9 min",
     tags: ["budget", "quick wins", "routine"],
@@ -279,7 +279,7 @@ export const posts: Post[] = [
   {
     title: "30 Cleaning Myths You Need to Stop Believing",
     slug: "30-cleaning-myths-you-should-be-wary-of",
-    datePublished: "2025-09-15",
+    datePublished: "2026-02-20",
     category: "deep-clean",
     readTime: "15 min",
     tags: ["deep clean", "education", "safety"],
@@ -318,7 +318,7 @@ export const posts: Post[] = [
   {
     title: "11 Ways to Use Dawn Dish Soap Beyond the Sink",
     slug: "11-dawn-dish-soap-hacks-for-greasy-kitchens",
-    datePublished: "2025-09-29",
+    datePublished: "2026-02-20",
     category: "dawn-hacks",
     readTime: "12 min",
     tags: ["kitchen", "quick wins", "deep clean"],
@@ -357,7 +357,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Your Laundry Room in Under 30 Minutes",
     slug: "9-laundry-room-cleaning-hacks-that-actually-save-time",
-    datePublished: "2025-10-13",
+    datePublished: "2026-02-20",
     category: "laundry-kitchen",
     readTime: "10 min",
     tags: ["laundry", "quick wins", "routine"],
@@ -396,7 +396,7 @@ export const posts: Post[] = [
   {
     title: "How to Get Rid of Kitchen Sink Odor (10 Easy Fixes)",
     slug: "10-kitchen-sink-detox-hacks-for-odor-free-results",
-    datePublished: "2025-10-27",
+    datePublished: "2026-02-20",
     category: "laundry-kitchen",
     readTime: "11 min",
     tags: ["kitchen", "odor control", "quick wins"],
@@ -435,7 +435,7 @@ export const posts: Post[] = [
   {
     title: "15 Bathroom Cleaning Tips for a Hotel-Level Finish",
     slug: "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
-    datePublished: "2025-11-10",
+    datePublished: "2026-02-20",
     category: "deep-clean",
     readTime: "16 min",
     tags: ["bathroom", "deep clean", "weekend"],
@@ -474,7 +474,7 @@ export const posts: Post[] = [
   {
     title: "6 Budget Cleaning Kits You Can Put Together for Under $20",
     slug: "6-budget-cleaning-kits-you-can-build-in-20-minutes",
-    datePublished: "2025-11-24",
+    datePublished: "2026-02-20",
     category: "dollar-store",
     readTime: "9 min",
     tags: ["budget", "quick wins", "routine"],
@@ -513,7 +513,7 @@ export const posts: Post[] = [
   {
     title: "18 Quick Cleaning Tasks You Can Do in 5 Minutes or Less",
     slug: "18-quick-wins-for-busy-mornings",
-    datePublished: "2025-12-08",
+    datePublished: "2026-02-20",
     category: "deep-clean",
     readTime: "12 min",
     tags: ["quick wins", "routine", "kitchen"],
@@ -552,7 +552,7 @@ export const posts: Post[] = [
   {
     title: "The Complete Declutter and Clean Checklist (20 Pairings)",
     slug: "20-declutter-clean-pairing-hacks",
-    datePublished: "2025-12-22",
+    datePublished: "2026-02-20",
     category: "deep-clean",
     readTime: "14 min",
     tags: ["deep clean", "routine", "education"],
@@ -591,7 +591,7 @@ export const posts: Post[] = [
   {
     title: "8 Things You Can Clean With WD-40 (That You Didn't Know)",
     slug: "8-undemanding-wd40-cleaning-hacks",
-    datePublished: "2026-01-05",
+    datePublished: "2026-02-22",
     category: "wd40-hacks",
     readTime: "10 min",
     tags: ["quick wins", "bathroom", "kitchen"],
@@ -628,7 +628,7 @@ export const posts: Post[] = [
   {
     title: "How to Get Rid of Cockroaches Naturally (10 Effective Methods)",
     slug: "10-best-ways-to-combat-cockroaches",
-    datePublished: "2026-01-19",
+    datePublished: "2026-02-22",
     category: "pest-control",
     readTime: "12 min",
     tags: ["deep clean", "kitchen", "safety"],
@@ -667,7 +667,7 @@ export const posts: Post[] = [
   {
     title: "10 Easy Ways to Make Your House Smell Amazing All Day",
     slug: "10-genius-ways-to-make-your-house-smell-great",
-    datePublished: "2026-01-30",
+    datePublished: "2026-02-23",
     category: "home-fragrance",
     readTime: "10 min",
     tags: ["odor control", "quick wins", "routine"],
@@ -706,7 +706,7 @@ export const posts: Post[] = [
   {
     title: "10 Vacuum Cleaning Tips Most People Miss",
     slug: "10-fascinating-vacuum-hacks-you-need-to-know",
-    datePublished: "2026-02-06",
+    datePublished: "2026-02-23",
     category: "deep-clean",
     readTime: "10 min",
     tags: ["deep clean", "quick wins", "routine"],
@@ -745,7 +745,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean a Microwave Inside and Out (12 Methods)",
     slug: "12-microwave-cleaning-hacks-for-a-sparkling-kitchen",
-    datePublished: "2026-02-10",
+    datePublished: "2026-02-23",
     category: "laundry-kitchen",
     readTime: "10 min",
     tags: ["kitchen", "quick wins", "odor control"],
@@ -786,7 +786,7 @@ export const posts: Post[] = [
   {
     title: "10 Things You Can Clean With Toothpaste",
     slug: "10-genius-toothpaste-cleaning-hacks-you-never-knew",
-    datePublished: "2026-02-16",
+    datePublished: "2026-02-23",
     category: "deep-clean",
     readTime: "9 min",
     tags: ["quick wins", "budget", "bathroom"],
@@ -825,7 +825,7 @@ export const posts: Post[] = [
   {
     title: "The Complete Weekly Cleaning Schedule (Room by Room)",
     slug: "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
-    datePublished: "2026-02-22",
+    datePublished: "2026-02-23",
     category: "deep-clean",
     readTime: "14 min",
     tags: ["deep clean", "routine", "weekend"],
@@ -864,7 +864,7 @@ export const posts: Post[] = [
   {
     title: "12 Ways to Clean and Disinfect With Rubbing Alcohol",
     slug: "12-genius-rubbing-alcohol-cleaning-hacks",
-    datePublished: "2026-02-27",
+    datePublished: "2026-02-26",
     category: "deep-clean",
     readTime: "10 min",
     tags: ["quick wins", "bathroom", "kitchen", "budget"],
