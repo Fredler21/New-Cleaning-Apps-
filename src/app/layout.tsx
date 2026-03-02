@@ -67,6 +67,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script
           async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R97SKNX12S"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-R97SKNX12S');
+            `,
+          }}
+        />
+        <script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5416667362161343"
           crossOrigin="anonymous"
         />
