@@ -9,12 +9,14 @@ import { titleToId } from "@/lib/format";
 import { SafetyNote } from "@/components/posts/SafetyNote";
 import { ShareBar } from "@/components/posts/ShareBar";
 import { SaveHackButton } from "@/components/posts/SaveHackButton";
+import { RelatedGuides } from "@/components/posts/RelatedGuides";
 import { PostGrid } from "@/components/posts/PostGrid";
 import { ViewTracker } from "@/components/posts/ViewTracker";
 import { Badge } from "@/components/ui/Badge";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
 import { posts, getPostBySlug } from "@/data/posts";
+import { internalLinks } from "@/data/internal-links";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -65,6 +67,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
   }
 
   const related = posts.filter((item) => item.category === post.category && item.slug !== post.slug).slice(0, 3);
+  const linkedSlugs = internalLinks[post.slug] ?? [];
+  const linkedPosts = linkedSlugs.map((s) => getPostBySlug(s)).filter(Boolean) as typeof posts;
 
   return (
     <>
@@ -238,6 +242,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   ))}
                 </ul>
               </section>
+
+              <RelatedGuides posts={linkedPosts} />
 
               <SafetyNote notes={post.safetyNotes} />
 
