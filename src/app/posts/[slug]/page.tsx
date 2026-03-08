@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { PostTOC } from "@/components/posts/PostTOC";
 import { PostTopBar } from "@/components/posts/PostTopBar";
+import { titleToId } from "@/lib/format";
 import { SafetyNote } from "@/components/posts/SafetyNote";
 import { ShareBar } from "@/components/posts/ShareBar";
 import { SaveHackButton } from "@/components/posts/SaveHackButton";
@@ -105,7 +106,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               description: post.excerpt,
               image: `${SITE_URL}${post.coverImage}`,
               datePublished: `${post.datePublished}T00:00:00Z`,
-              dateModified: `${post.datePublished}T00:00:00Z`,
+              dateModified: new Date().toISOString(),
+              inLanguage: "en",
               author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
               publisher: {
                 "@type": "Organization",
@@ -137,7 +139,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 position: i + 1,
                 name: step.title,
                 text: step.body,
-                url: `${SITE_URL}/posts/${post.slug}#step-${i + 1}`,
+                url: `${SITE_URL}/posts/${post.slug}#${titleToId(step.title)}`,
               })),
             }}
           />
@@ -207,7 +209,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   Step-by-Step Instructions
                 </h2>
                 {post.steps.map((step, index) => (
-                  <section key={step.title} id={`step-${index + 1}`} className="rounded-xl p-6 transition-all duration-200" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                  <section key={step.title} id={titleToId(step.title)} className="rounded-xl p-6 transition-all duration-200" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
                     <div className="flex items-start gap-4">
                       <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-sm font-bold text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">{index + 1}</span>
                       <div>

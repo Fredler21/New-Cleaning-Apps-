@@ -88,5 +88,13 @@ export const categories: Category[] = [
     icon: "/graphics/icons/home-fragrance.svg",
     description: "DIY scent hacks and natural fragrance tricks that make every room in your house smell amazing.",
     tags: ["odor control", "quick wins", "routine"]
+  },
+  {
+    id: "bathroom-cleaning",
+    name: "Bathroom Cleaning",
+    slug: "bathroom-cleaning",
+    icon: "/graphics/icons/bathroom.svg",
+    description: "Targeted toilet, shower, and sink cleaning methods that tackle hard water stains, soap scum, and mildew.",
+    tags: ["bathroom", "deep clean", "quick wins"]
   }
 ];

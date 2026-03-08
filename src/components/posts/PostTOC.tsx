@@ -7,7 +7,8 @@ type PostTOCProps = {
 
 export function PostTOC({ steps }: PostTOCProps) {
   return (
-    <aside
+    <nav
+      aria-label="Table of contents"
       className="rounded-xl p-5"
       style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
     >
@@ -46,6 +47,6 @@ export function PostTOC({ steps }: PostTOCProps) {
           </li>
         ))}
       </ol>
-    </aside>
+    </nav>
   );
 }
