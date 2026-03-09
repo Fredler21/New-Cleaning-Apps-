@@ -115,8 +115,8 @@ export async function GET(request: Request) {
         console.error(`[CRON] FAILED ${sub.email}: ${result.error}`);
       }
 
-      // Small delay between sends to respect rate limits
-      await new Promise((r) => setTimeout(r, 300));
+      // Delay between sends to respect Resend free-tier rate limit (2 req/s)
+      await new Promise((r) => setTimeout(r, 600));
     }
 
     await markPostNotified(post.slug);
