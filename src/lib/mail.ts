@@ -1,17 +1,27 @@
+import { Resend } from "resend";
 import nodemailer from "nodemailer";
 import type Mail from "nodemailer/lib/mailer";
 import { randomUUID } from "crypto";
+import { sanitiseEmail, isValidEmail } from "./email-validation";
 
-const FROM_NAME = "TryCleaningHacks";
-const FROM_EMAIL = "support@trycleaninghacks.com";
+export const FROM_NAME = "TryCleaningHacks";
+export const FROM_EMAIL = "support@trycleaninghacks.com";
 const DOMAIN = "trycleaninghacks.com";
-const SITE_URL = `https://${DOMAIN}`;
+export const SITE_URL = `https://${DOMAIN}`;
 
 /* ------------------------------------------------------------------
- *  Singleton SMTP transporter — reuses the TCP connection across
- *  multiple sendMail() calls within the same serverless invocation.
+ *  Provider detection: prefer Resend, fall back to Zoho SMTP
  * ------------------------------------------------------------------ */
+let _resend: Resend | null = null;
 let _transporter: Mail | null = null;
+
+function getResend(): Resend | null {
+  if (_resend) return _resend;
+  const key = process.env.RESEND_API_KEY?.trim();
+  if (!key) return null;
+  _resend = new Resend(key);
+  return _resend;
+}
 
 function getTransporter(): Mail {
   if (_transporter) return _transporter;
@@ -20,7 +30,7 @@ function getTransporter(): Mail {
   const pass = (process.env.ZOHO_APP_PASSWORD || "").trim();
 
   if (!pass) {
-    throw new Error("ZOHO_APP_PASSWORD is not set.");
+    throw new Error("Neither RESEND_API_KEY nor ZOHO_APP_PASSWORD is set.");
   }
 
   _transporter = nodemailer.createTransport({
@@ -28,7 +38,7 @@ function getTransporter(): Mail {
     port: 465,
     secure: true,
     auth: { user, pass },
-    pool: true,          // keep connection alive for multiple sends
+    pool: true,
     maxConnections: 1,
     maxMessages: 50,
   });
@@ -39,7 +49,7 @@ function getTransporter(): Mail {
 /* ------------------------------------------------------------------
  *  HTML → plain-text converter
  * ------------------------------------------------------------------ */
-function htmlToText(html: string): string {
+export function htmlToText(html: string): string {
   return html
     .replace(/<br\s*\/?>/gi, "\n")
     .replace(/<\/p>/gi, "\n\n")
@@ -61,62 +71,160 @@ function htmlToText(html: string): string {
 /* ------------------------------------------------------------------
  *  Build the one-click unsubscribe URL for a recipient
  * ------------------------------------------------------------------ */
-function unsubUrl(email: string): string {
+export function unsubUrl(email: string): string {
   return `${SITE_URL}/api/unsubscribe?email=${encodeURIComponent(email)}`;
 }
 
 /* ------------------------------------------------------------------
- *  sendMail
+ *  sendMail — unified interface, Resend primary, Zoho fallback
  * ------------------------------------------------------------------ */
-interface SendMailOptions {
+export interface SendMailOptions {
   to: string;
   subject: string;
   html: string;
+  text?: string;
   replyTo?: string;
   /** Set false for transactional emails (contact form, admin alerts) */
   isNewsletter?: boolean;
 }
 
+export interface SendMailResult {
+  success: boolean;
+  provider: "resend" | "zoho";
+  id?: string;
+  error?: string;
+  /** True if the error indicates the recipient doesn't exist (hard bounce). */
+  isBounce?: boolean;
+}
+
 /**
- * Send an email via Zoho SMTP with anti-spam best practices.
+ * Send an email with anti-spam best practices.
  *
- * Newsletter emails automatically get:
- *  - List-Unsubscribe + List-Unsubscribe-Post headers (Gmail/Yahoo requirement)
- *  - Proper one-click unsubscribe URL
- *  - Precedence: bulk header
+ * - Uses Resend API if RESEND_API_KEY is set, otherwise Zoho SMTP.
+ * - Sanitises the recipient address before sending.
+ * - Adds List-Unsubscribe headers for newsletter emails.
+ * - Returns structured result with bounce detection.
  */
-export async function sendMail({
-  to,
-  subject,
-  html,
-  replyTo,
-  isNewsletter = true,
-}: SendMailOptions) {
-  const transporter = getTransporter();
-  const senderEmail = (process.env.ZOHO_EMAIL || FROM_EMAIL).trim();
+export async function sendMail(opts: SendMailOptions): Promise<SendMailResult> {
+  const {
+    subject,
+    html,
+    replyTo,
+    isNewsletter = true,
+  } = opts;
 
-  /* Build headers — only add list-unsubscribe for newsletters */
-  const headers: Record<string, string> = {
-    "Message-ID": `<${randomUUID()}@${DOMAIN}>`,
-  };
+  // Sanitise the recipient
+  const to = sanitiseEmail(opts.to);
 
+  if (!isValidEmail(to)) {
+    return { success: false, provider: "resend", error: `Invalid email: ${to}`, isBounce: true };
+  }
+
+  const from = `${FROM_NAME} <${FROM_EMAIL}>`;
+  const plainText = opts.text || htmlToText(html);
+
+  // Build headers
+  const headers: Record<string, string> = {};
   if (isNewsletter) {
     const unsub = unsubUrl(to);
     headers["List-Unsubscribe"] = `<${unsub}>`;
     headers["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click";
   }
 
-  const info = await transporter.sendMail({
-    from: `${FROM_NAME} <${senderEmail}>`,
-    to,
-    subject,
-    html,
-    text: htmlToText(html),
-    headers,
-    ...(replyTo ? { replyTo } : {}),
-  });
+  /* ---------- Try Resend first ---------- */
+  const resend = getResend();
+  if (resend) {
+    try {
+      const { data, error } = await resend.emails.send({
+        from,
+        to: [to],
+        subject,
+        html,
+        text: plainText,
+        replyTo: replyTo ? [replyTo] : undefined,
+        headers,
+      });
 
-  return info;
+      if (error) {
+        const isBounce = isBounceError(error.message);
+        return { success: false, provider: "resend", error: error.message, isBounce };
+      }
+
+      return { success: true, provider: "resend", id: data?.id };
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      return { success: false, provider: "resend", error: msg, isBounce: isBounceError(msg) };
+    }
+  }
+
+  /* ---------- Fallback: Zoho SMTP ---------- */
+  try {
+    const transporter = getTransporter();
+    const senderEmail = (process.env.ZOHO_EMAIL || FROM_EMAIL).trim();
+
+    headers["Message-ID"] = `<${randomUUID()}@${DOMAIN}>`;
+
+    const info = await transporter.sendMail({
+      from: `${FROM_NAME} <${senderEmail}>`,
+      to,
+      subject,
+      html,
+      text: plainText,
+      headers,
+      ...(replyTo ? { replyTo } : {}),
+    });
+
+    return { success: true, provider: "zoho", id: info.messageId };
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    return { success: false, provider: "zoho", error: msg, isBounce: isBounceError(msg) };
+  }
 }
 
-export { FROM_EMAIL, FROM_NAME, SITE_URL, unsubUrl };
+/* ------------------------------------------------------------------
+ *  Retry wrapper
+ * ------------------------------------------------------------------ */
+
+export async function sendMailWithRetry(
+  opts: SendMailOptions,
+  maxRetries = 2,
+): Promise<SendMailResult> {
+  let lastResult: SendMailResult = { success: false, provider: "resend" };
+
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    lastResult = await sendMail(opts);
+
+    if (lastResult.success || lastResult.isBounce) {
+      // Don't retry bounces — the address is invalid
+      return lastResult;
+    }
+
+    // Exponential back-off: 1s, 2s
+    if (attempt < maxRetries) {
+      await new Promise((r) => setTimeout(r, 1000 * (attempt + 1)));
+    }
+  }
+
+  return lastResult;
+}
+
+/* ------------------------------------------------------------------
+ *  Bounce detection heuristics
+ * ------------------------------------------------------------------ */
+
+const BOUNCE_PATTERNS = [
+  /550/i,
+  /5\.1\.1/i,
+  /does not exist/i,
+  /user unknown/i,
+  /mailbox not found/i,
+  /invalid recipient/i,
+  /recipient rejected/i,
+  /no such user/i,
+  /account.*disabled/i,
+  /address rejected/i,
+];
+
+function isBounceError(message: string): boolean {
+  return BOUNCE_PATTERNS.some((p) => p.test(message));
+}

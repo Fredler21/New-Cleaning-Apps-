@@ -1,5 +1,6 @@
 import { adminDb } from "./admin";
 import { FieldValue } from "firebase-admin/firestore";
+import { sanitiseEmail, isValidEmail } from "../email-validation";
 
 /* ------------------------------------------------------------------ */
 /*  Collection names                                                   */
@@ -14,10 +15,19 @@ export const COLLECTIONS = {
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
 /* ------------------------------------------------------------------ */
+export type SubscriberStatus = "active" | "unsubscribed" | "bounced";
+
 export interface Subscriber {
   email: string;
   subscribedAt: FirebaseFirestore.Timestamp;
   source: string;
+  status: SubscriberStatus;
+  /** ISO string of when the address bounced, if applicable. */
+  bouncedAt?: string;
+  /** The bounce error message, for debugging. */
+  bounceReason?: string;
+  /** ISO string of when the subscriber unsubscribed, if applicable. */
+  unsubscribedAt?: string;
 }
 
 export interface Contact {
@@ -38,37 +48,84 @@ export interface PostAnalytics {
 /*  Subscribers                                                        */
 /* ------------------------------------------------------------------ */
 
-/** Add a newsletter subscriber. Returns the new document ID. */
-export async function addSubscriber(email: string, source = "website") {
+/** Add a newsletter subscriber. Sanitises email first. Returns the new document ID. */
+export async function addSubscriber(rawEmail: string, source = "website") {
+  const email = sanitiseEmail(rawEmail);
+
+  if (!isValidEmail(email)) {
+    return { id: "", duplicate: false, invalid: true };
+  }
+
   const ref = adminDb.collection(COLLECTIONS.SUBSCRIBERS);
 
   // Prevent duplicates
   const existing = await ref.where("email", "==", email).limit(1).get();
   if (!existing.empty) {
-    return { id: existing.docs[0].id, duplicate: true };
+    const data = existing.docs[0].data() as Subscriber;
+    // Re-activate if previously unsubscribed
+    if (data.status === "unsubscribed") {
+      await existing.docs[0].ref.update({ status: "active", unsubscribedAt: FieldValue.delete() });
+    }
+    return { id: existing.docs[0].id, duplicate: true, invalid: false };
   }
 
   const doc = await ref.add({
     email,
     subscribedAt: FieldValue.serverTimestamp(),
     source,
+    status: "active",
   });
-  return { id: doc.id, duplicate: false };
+  return { id: doc.id, duplicate: false, invalid: false };
 }
 
-/** Remove a subscriber by email. Returns true if found and deleted. */
-export async function removeSubscriber(email: string): Promise<boolean> {
+/** Mark a subscriber as unsubscribed (soft-delete). */
+export async function removeSubscriber(rawEmail: string): Promise<boolean> {
+  const email = sanitiseEmail(rawEmail);
   const snap = await adminDb
     .collection(COLLECTIONS.SUBSCRIBERS)
-    .where("email", "==", email.trim().toLowerCase())
+    .where("email", "==", email)
     .limit(1)
     .get();
   if (snap.empty) return false;
-  await snap.docs[0].ref.delete();
+  await snap.docs[0].ref.update({
+    status: "unsubscribed",
+    unsubscribedAt: new Date().toISOString(),
+  });
   return true;
 }
 
-/** Get all subscribers (newest first). */
+/** Mark a subscriber as bounced so we never send to them again. */
+export async function markSubscriberBounced(
+  rawEmail: string,
+  reason = "Hard bounce",
+): Promise<boolean> {
+  const email = sanitiseEmail(rawEmail);
+  const snap = await adminDb
+    .collection(COLLECTIONS.SUBSCRIBERS)
+    .where("email", "==", email)
+    .limit(1)
+    .get();
+  if (snap.empty) return false;
+  await snap.docs[0].ref.update({
+    status: "bounced",
+    bouncedAt: new Date().toISOString(),
+    bounceReason: reason,
+  });
+  return true;
+}
+
+/** Get all ACTIVE subscribers only (excludes bounced & unsubscribed). */
+export async function getActiveSubscribers(limit = 10000) {
+  const snap = await adminDb
+    .collection(COLLECTIONS.SUBSCRIBERS)
+    .where("status", "==", "active")
+    .orderBy("subscribedAt", "desc")
+    .limit(limit)
+    .get();
+  return snap.docs.map((d) => ({ id: d.id, ...(d.data() as Subscriber) }));
+}
+
+/** Get all subscribers regardless of status (for admin views). */
 export async function getSubscribers(limit = 100) {
   const snap = await adminDb
     .collection(COLLECTIONS.SUBSCRIBERS)

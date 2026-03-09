@@ -1,11 +1,13 @@
 import { NextResponse } from "next/server";
-import { sendMail, unsubUrl } from "@/lib/mail";
+import { sendMailWithRetry, unsubUrl } from "@/lib/mail";
 import {
-  getSubscribers,
+  getActiveSubscribers,
   getNotifiedSlugs,
   markPostNotified,
+  markSubscriberBounced,
 } from "@/lib/firebase/collections";
 import { posts } from "@/data/posts";
+import { newPostEmailHtml, newPostEmailText } from "@/lib/email-template";
 
 export const maxDuration = 60;
 
@@ -16,6 +18,14 @@ export const maxDuration = 60;
  * emailed about yet, sends notification emails, and marks them as done.
  *
  * Called by Vercel Cron daily at 8am UTC.
+ *
+ * Improvements over previous version:
+ *  - Only sends to active subscribers (excludes bounced/unsubscribed)
+ *  - Validates emails before sending
+ *  - Retries transient failures
+ *  - Marks bounced addresses automatically
+ *  - Professional HTML template with plain-text fallback
+ *  - Detailed per-email logging
  */
 export async function GET(request: Request) {
   /* ---------- Auth: only allow Vercel Cron or secret ---------- */
@@ -31,7 +41,7 @@ export async function GET(request: Request) {
   try {
     notifiedSlugs = await getNotifiedSlugs();
   } catch (err) {
-    console.error("Failed to fetch notified slugs:", err);
+    console.error("[CRON] Failed to fetch notified slugs:", err);
     return NextResponse.json({ error: "Failed to check notified posts." }, { status: 500 });
   }
 
@@ -41,12 +51,12 @@ export async function GET(request: Request) {
     return NextResponse.json({ message: "No new posts to notify about." });
   }
 
-  /* ---------- Get subscribers ---------- */
+  /* ---------- Get ACTIVE subscribers only ---------- */
   let subscribers: { email: string }[];
   try {
-    subscribers = await getSubscribers(10000);
+    subscribers = await getActiveSubscribers();
   } catch (err) {
-    console.error("Failed to fetch subscribers:", err);
+    console.error("[CRON] Failed to fetch subscribers:", err);
     return NextResponse.json({ error: "Failed to fetch subscribers." }, { status: 500 });
   }
 
@@ -54,46 +64,64 @@ export async function GET(request: Request) {
     for (const post of newPosts) {
       await markPostNotified(post.slug);
     }
-    return NextResponse.json({ message: "No subscribers yet. Posts marked as notified." });
+    return NextResponse.json({ message: "No active subscribers. Posts marked as notified." });
   }
 
-  /* ---------- Send emails for each new post via Zoho SMTP ---------- */
-  const results: { slug: string; sent: number; failed: number }[] = [];
+  console.log(`[CRON] Sending notifications for ${newPosts.length} post(s) to ${subscribers.length} subscriber(s).`);
+
+  /* ---------- Send emails for each new post ---------- */
+  const results: { slug: string; sent: number; failed: number; bounced: number }[] = [];
 
   for (const post of newPosts) {
     const postUrl = `https://trycleaninghacks.com/posts/${post.slug}`;
 
     let sent = 0;
     let failed = 0;
+    let bounced = 0;
 
     for (const sub of subscribers) {
-      try {
-        const unsub = unsubUrl(sub.email);
+      const unsub = unsubUrl(sub.email);
 
-        await sendMail({
-          to: sub.email,
-          subject: `${post.title}`,
-          html: `<p>Hi,</p>
-<p>We just published a new cleaning guide you might like:</p>
-<p><a href="${postUrl}">${post.title}</a></p>
-<p>${post.excerpt}</p>
-<p>${post.readTime}</p>
-<p><a href="${postUrl}">Read the full guide</a></p>
-<p style="font-size:12px;">You received this because you subscribed at trycleaninghacks.com.<br/>
-<a href="${unsub}">Unsubscribe</a></p>`,
-        });
+      const result = await sendMailWithRetry({
+        to: sub.email,
+        subject: `New Post on TryCleaningHacks: ${post.title}`,
+        html: newPostEmailHtml({
+          title: post.title,
+          excerpt: post.excerpt,
+          postUrl,
+          readTime: post.readTime,
+          unsubscribeUrl: unsub,
+        }),
+        text: newPostEmailText({
+          title: post.title,
+          excerpt: post.excerpt,
+          postUrl,
+          readTime: post.readTime,
+          unsubscribeUrl: unsub,
+        }),
+      });
+
+      if (result.success) {
         sent++;
-      } catch (err) {
-        console.error(`Failed to send to ${sub.email}:`, err);
+        console.log(`[CRON] Sent to ${sub.email} via ${result.provider} (${result.id})`);
+      } else if (result.isBounce) {
+        bounced++;
+        console.warn(`[CRON] BOUNCE ${sub.email}: ${result.error}`);
+        await markSubscriberBounced(sub.email, result.error).catch((e) =>
+          console.error(`[CRON] Failed to mark bounce for ${sub.email}:`, e),
+        );
+      } else {
         failed++;
+        console.error(`[CRON] FAILED ${sub.email}: ${result.error}`);
       }
 
-      // Small delay between sends to avoid Zoho rate limits
-      await new Promise((r) => setTimeout(r, 500));
+      // Small delay between sends to respect rate limits
+      await new Promise((r) => setTimeout(r, 300));
     }
 
     await markPostNotified(post.slug);
-    results.push({ slug: post.slug, sent, failed });
+    results.push({ slug: post.slug, sent, failed, bounced });
+    console.log(`[CRON] Post "${post.slug}": sent=${sent}, failed=${failed}, bounced=${bounced}`);
   }
 
   return NextResponse.json({

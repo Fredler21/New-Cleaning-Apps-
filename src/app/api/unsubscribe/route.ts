@@ -1,41 +1,40 @@
 import { NextResponse } from "next/server";
 import { removeSubscriber } from "@/lib/firebase/collections";
+import { sanitiseEmail, isValidEmail } from "@/lib/email-validation";
 
 /**
  * POST /api/unsubscribe
  * Body: { email: string } OR List-Unsubscribe=One-Click (RFC 8058)
  *
- * Removes a subscriber from the mailing list.
+ * Marks a subscriber as unsubscribed (soft-delete — preserves data for analytics).
  * Supports both JSON body and URL-encoded form (for one-click unsubscribe).
  */
 export async function POST(request: Request) {
-  let email = "";
+  let rawEmail = "";
 
   const contentType = request.headers.get("content-type") || "";
 
   try {
     if (contentType.includes("application/x-www-form-urlencoded")) {
-      // One-click unsubscribe (RFC 8058) — email is in the URL search params
       const url = new URL(request.url);
-      email = url.searchParams.get("email") || "";
+      rawEmail = url.searchParams.get("email") || "";
 
-      // Also check the body for the List-Unsubscribe=One-Click field
-      if (!email) {
+      if (!rawEmail) {
         const body = await request.text();
         const params = new URLSearchParams(body);
-        email = params.get("email") || "";
+        rawEmail = params.get("email") || "";
       }
     } else {
       const body = (await request.json()) as { email?: string };
-      email = body.email || "";
+      rawEmail = body.email || "";
     }
   } catch {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
 
-  email = email.trim().toLowerCase();
+  const email = sanitiseEmail(rawEmail);
 
-  if (!email || !/\S+@\S+\.\S+/.test(email)) {
+  if (!email || !isValidEmail(email)) {
     return NextResponse.json(
       { error: "A valid email address is required." },
       { status: 400 }
@@ -46,6 +45,7 @@ export async function POST(request: Request) {
     const removed = await removeSubscriber(email);
 
     if (removed) {
+      console.log(`[UNSUBSCRIBE] ${email} unsubscribed successfully.`);
       return NextResponse.json({
         message: "You have been unsubscribed successfully.",
       });
@@ -55,7 +55,7 @@ export async function POST(request: Request) {
       message: "That email was not found in our subscriber list.",
     });
   } catch (err) {
-    console.error("Unsubscribe error:", err);
+    console.error("[UNSUBSCRIBE] Error:", err);
     return NextResponse.json(
       { error: "Something went wrong. Please try again." },
       { status: 500 }
