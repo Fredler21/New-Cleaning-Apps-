@@ -12,28 +12,18 @@ const DOMAIN = "trycleaninghacks.com";
 export const SITE_URL = `https://${DOMAIN}`;
 
 /* ------------------------------------------------------------------
- *  Provider detection: prefer Resend, fall back to Zoho SMTP
+ *  Provider detection: prefer Zoho SMTP, fall back to Resend
  * ------------------------------------------------------------------ */
 let _resend: Resend | null = null;
 let _transporter: Mail | null = null;
 
-function getResend(): Resend | null {
-  if (_resend) return _resend;
-  const key = process.env.RESEND_API_KEY?.trim();
-  if (!key) return null;
-  _resend = new Resend(key);
-  return _resend;
-}
-
-function getTransporter(): Mail {
+function getTransporter(): Mail | null {
   if (_transporter) return _transporter;
 
   const user = (process.env.ZOHO_EMAIL || FROM_EMAIL).trim();
   const pass = (process.env.ZOHO_APP_PASSWORD || "").trim();
 
-  if (!pass) {
-    throw new Error("Neither RESEND_API_KEY nor ZOHO_APP_PASSWORD is set.");
-  }
+  if (!pass) return null;
 
   _transporter = nodemailer.createTransport({
     host: "smtp.zoho.com",
@@ -46,6 +36,14 @@ function getTransporter(): Mail {
   });
 
   return _transporter;
+}
+
+function getResend(): Resend | null {
+  if (_resend) return _resend;
+  const key = process.env.RESEND_API_KEY?.trim();
+  if (!key) return null;
+  _resend = new Resend(key);
+  return _resend;
 }
 
 /* ------------------------------------------------------------------
@@ -102,7 +100,8 @@ export interface SendMailResult {
 /**
  * Send an email with anti-spam best practices.
  *
- * - Uses Resend API if RESEND_API_KEY is set, otherwise Zoho SMTP.
+ * - Uses Zoho SMTP as primary (best inbox delivery).
+ * - Falls back to Resend API if Zoho is not configured.
  * - Sanitises the recipient address before sending.
  * - Adds List-Unsubscribe headers for newsletter emails.
  * - Returns structured result with bounce detection.
@@ -119,27 +118,52 @@ export async function sendMail(opts: SendMailOptions): Promise<SendMailResult> {
   const to = sanitiseEmail(opts.to);
 
   if (!isValidEmail(to)) {
-    return { success: false, provider: "resend", error: `Invalid email: ${to}`, isBounce: true };
+    return { success: false, provider: "zoho", error: `Invalid email: ${to}`, isBounce: true };
   }
 
   const plainText = opts.text || htmlToText(html);
 
-  // Build headers — these improve deliverability & spam score
-  const headers: Record<string, string> = {
-    "X-Mailer": "TryCleaningHacks/1.0",
-    Precedence: isNewsletter ? "bulk" : "transactional",
-  };
+  // Build headers
+  const headers: Record<string, string> = {};
   if (isNewsletter) {
     const unsub = unsubUrl(to);
-    headers["List-Unsubscribe"] = `<mailto:unsubscribe@contact.trycleaninghacks.com>, <${unsub}>`;
+    headers["List-Unsubscribe"] = `<${unsub}>`;
     headers["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click";
-    headers["Feedback-ID"] = `newsletter:trycleaninghacks`;
   }
 
-  /* ---------- Try Resend first ---------- */
+  /* ---------- Try Zoho SMTP first ---------- */
+  const transporter = getTransporter();
+  if (transporter) {
+    try {
+      const senderEmail = (process.env.ZOHO_EMAIL || FROM_EMAIL).trim();
+
+      headers["Message-ID"] = `<${randomUUID()}@${DOMAIN}>`;
+
+      const info = await transporter.sendMail({
+        from: `${FROM_NAME} <${senderEmail}>`,
+        to,
+        subject,
+        html,
+        text: plainText,
+        headers,
+        ...(replyTo ? { replyTo } : {}),
+      });
+
+      return { success: true, provider: "zoho", id: info.messageId };
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      const bounce = isBounceError(msg);
+      if (bounce) {
+        return { success: false, provider: "zoho", error: msg, isBounce: true };
+      }
+      // Zoho failed with a transient error — fall through to Resend
+      console.warn(`[MAIL] Zoho failed, trying Resend: ${msg}`);
+    }
+  }
+
+  /* ---------- Fallback: Resend ---------- */
   const resend = getResend();
   if (resend) {
-    // Resend uses the verified subdomain; replies go to the main address
     const resendFrom = `${FROM_NAME} <${RESEND_FROM_EMAIL}>`;
     const resendReplyTo = replyTo ? [replyTo] : [FROM_EMAIL];
 
@@ -166,28 +190,7 @@ export async function sendMail(opts: SendMailOptions): Promise<SendMailResult> {
     }
   }
 
-  /* ---------- Fallback: Zoho SMTP ---------- */
-  try {
-    const transporter = getTransporter();
-    const senderEmail = (process.env.ZOHO_EMAIL || FROM_EMAIL).trim();
-
-    headers["Message-ID"] = `<${randomUUID()}@${DOMAIN}>`;
-
-    const info = await transporter.sendMail({
-      from: `${FROM_NAME} <${senderEmail}>`,
-      to,
-      subject,
-      html,
-      text: plainText,
-      headers,
-      ...(replyTo ? { replyTo } : {}),
-    });
-
-    return { success: true, provider: "zoho", id: info.messageId };
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err);
-    return { success: false, provider: "zoho", error: msg, isBounce: isBounceError(msg) };
-  }
+  return { success: false, provider: "zoho", error: "No email provider configured (ZOHO_APP_PASSWORD or RESEND_API_KEY required)." };
 }
 
 /* ------------------------------------------------------------------
@@ -198,7 +201,7 @@ export async function sendMailWithRetry(
   opts: SendMailOptions,
   maxRetries = 2,
 ): Promise<SendMailResult> {
-  let lastResult: SendMailResult = { success: false, provider: "resend" };
+  let lastResult: SendMailResult = { success: false, provider: "zoho" };
 
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
     lastResult = await sendMail(opts);
