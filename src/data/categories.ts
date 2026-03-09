@@ -93,7 +93,7 @@ export const categories: Category[] = [
     id: "bathroom-cleaning",
     name: "Bathroom Cleaning",
     slug: "bathroom-cleaning",
-    icon: "/graphics/icons/bathroom.svg",
+    icon: "/graphics/icons/bathroom-cleaning.png",
     description: "Targeted toilet, shower, and sink cleaning methods that tackle hard water stains, soap scum, and mildew.",
     tags: ["bathroom", "deep clean", "quick wins"]
   }
