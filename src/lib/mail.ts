@@ -6,6 +6,8 @@ import { sanitiseEmail, isValidEmail } from "./email-validation";
 
 export const FROM_NAME = "TryCleaningHacks";
 export const FROM_EMAIL = "support@trycleaninghacks.com";
+/** Resend sends from the verified subdomain; replies go to FROM_EMAIL. */
+const RESEND_FROM_EMAIL = "support@contact.trycleaninghacks.com";
 const DOMAIN = "trycleaninghacks.com";
 export const SITE_URL = `https://${DOMAIN}`;
 
@@ -120,7 +122,6 @@ export async function sendMail(opts: SendMailOptions): Promise<SendMailResult> {
     return { success: false, provider: "resend", error: `Invalid email: ${to}`, isBounce: true };
   }
 
-  const from = `${FROM_NAME} <${FROM_EMAIL}>`;
   const plainText = opts.text || htmlToText(html);
 
   // Build headers
@@ -134,14 +135,18 @@ export async function sendMail(opts: SendMailOptions): Promise<SendMailResult> {
   /* ---------- Try Resend first ---------- */
   const resend = getResend();
   if (resend) {
+    // Resend uses the verified subdomain; replies go to the main address
+    const resendFrom = `${FROM_NAME} <${RESEND_FROM_EMAIL}>`;
+    const resendReplyTo = replyTo ? [replyTo] : [FROM_EMAIL];
+
     try {
       const { data, error } = await resend.emails.send({
-        from,
+        from: resendFrom,
         to: [to],
         subject,
         html,
         text: plainText,
-        replyTo: replyTo ? [replyTo] : undefined,
+        replyTo: resendReplyTo,
         headers,
       });
 
