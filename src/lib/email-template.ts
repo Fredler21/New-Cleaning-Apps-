@@ -13,6 +13,7 @@ const BRAND = "TryCleaningHacks";
 const SITE_URL = "https://trycleaninghacks.com";
 const BRAND_COLOR = "#0d9488"; // teal-600
 const FOOTER_COLOR = "#6b7280"; // gray-500
+const PHYSICAL_ADDRESS = "Miami, FL"; // CAN-SPAM requires a physical address
 
 /* ------------------------------------------------------------------ */
 /*  Shared layout wrapper                                              */
@@ -49,13 +50,16 @@ function emailWrapper(body: string, unsubscribeUrl: string): string {
           <tr>
             <td style="padding:24px 32px;border-top:1px solid #e5e7eb;text-align:center;">
               <p style="margin:0 0 8px;font-size:13px;color:${FOOTER_COLOR};">
-                You received this because you subscribed at
-                <a href="${SITE_URL}" style="color:${BRAND_COLOR};text-decoration:none;">${BRAND}</a>.
+                You received this email because you subscribed to ${BRAND} at
+                <a href="${SITE_URL}" style="color:${BRAND_COLOR};text-decoration:none;">${SITE_URL}</a>.
               </p>
-              <p style="margin:0;font-size:13px;color:${FOOTER_COLOR};">
+              <p style="margin:0 0 8px;font-size:13px;color:${FOOTER_COLOR};">
                 <a href="${unsubscribeUrl}" style="color:${FOOTER_COLOR};text-decoration:underline;">Unsubscribe</a>
                 &nbsp;&middot;&nbsp;
                 <a href="${SITE_URL}/privacy" style="color:${FOOTER_COLOR};text-decoration:underline;">Privacy Policy</a>
+              </p>
+              <p style="margin:0;font-size:11px;color:#9ca3af;">
+                ${BRAND} &middot; ${PHYSICAL_ADDRESS}
               </p>
             </td>
           </tr>
@@ -113,8 +117,9 @@ export function newPostEmailText(data: NewPostEmailData): string {
     `Read the post: ${data.postUrl}`,
     "",
     "---",
+    `You received this email because you subscribed to ${BRAND}.`,
     `Unsubscribe: ${data.unsubscribeUrl}`,
-    `${BRAND} — ${SITE_URL}`,
+    `${BRAND} | ${PHYSICAL_ADDRESS} | ${SITE_URL}`,
   ]
     .filter(Boolean)
     .join("\n");
@@ -156,7 +161,9 @@ export function welcomeEmailText(unsubscribeUrl: string): string {
     `Browse our guides: ${SITE_URL}/posts`,
     "",
     "---",
+    `You received this email because you subscribed to ${BRAND}.`,
     `Unsubscribe: ${unsubscribeUrl}`,
+    `${BRAND} | ${PHYSICAL_ADDRESS} | ${SITE_URL}`,
   ].join("\n");
 }
 

@@ -124,12 +124,16 @@ export async function sendMail(opts: SendMailOptions): Promise<SendMailResult> {
 
   const plainText = opts.text || htmlToText(html);
 
-  // Build headers
-  const headers: Record<string, string> = {};
+  // Build headers — these improve deliverability & spam score
+  const headers: Record<string, string> = {
+    "X-Mailer": "TryCleaningHacks/1.0",
+    Precedence: isNewsletter ? "bulk" : "transactional",
+  };
   if (isNewsletter) {
     const unsub = unsubUrl(to);
-    headers["List-Unsubscribe"] = `<${unsub}>`;
+    headers["List-Unsubscribe"] = `<mailto:unsubscribe@contact.trycleaninghacks.com>, <${unsub}>`;
     headers["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click";
+    headers["Feedback-ID"] = `newsletter:trycleaninghacks`;
   }
 
   /* ---------- Try Resend first ---------- */
