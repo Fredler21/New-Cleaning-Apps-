@@ -251,4 +251,13 @@ export const internalLinks: Record<string, string[]> = {
     "10-genius-ways-to-make-your-house-smell-great",
     "10-fascinating-vacuum-hacks-you-need-to-know",
   ],
+
+  /* ─── Oven Cleaning Hacks ─── */
+  "12-oven-cleaning-hacks-baked-on-grease": [
+    "how-to-clean-an-oven-without-harsh-chemicals",
+    "14-ways-to-use-baking-soda-in-your-house",
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+    "8-incredible-vinegar-hacks",
+    "12-microwave-cleaning-hacks-for-a-sparkling-kitchen",
+  ],
 };
