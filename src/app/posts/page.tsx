@@ -47,14 +47,7 @@ function PostsPageContent() {
   const filtered = useMemo(() => filterPosts(posts, { searchTerm, category, tag }), [searchTerm, category, tag]);
 
   return (
-    <Container>
-      <section className="py-12">
-        {/* Page header */}
-        <div className="mb-10">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text)" }}>All Cleaning Hacks</h1>
-          <p className="mt-3" style={{ color: "var(--text-secondary)" }}>Search and filter tested hacks by category, room, and ingredient.</p>
-        </div>
-
+    <>
         {/* Filters */}
         <div className="mb-8 rounded-xl p-5" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
           <div className="grid gap-3 sm:grid-cols-3">
@@ -116,7 +109,6 @@ function PostsPageContent() {
         </div>
 
         <PostGrid posts={filtered} />
-      </section>
 
       {/* Mobile nav bar */}
       <div className="fixed bottom-0 left-0 right-0 z-30 border-t p-3 backdrop-blur-xl md:hidden" style={{ background: "var(--nav-bg)", borderColor: "var(--nav-border)" }}>
@@ -125,14 +117,22 @@ function PostsPageContent() {
           <a href="#category-select" className="flex-1 rounded-xl px-4 py-3 text-center text-sm font-medium" style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text)" }}>Filter</a>
         </div>
       </div>
-    </Container>
+    </>
   );
 }
 
 export default function PostsPage() {
   return (
-    <Suspense fallback={<Container><section className="py-12"><div className="h-8 w-48 animate-pulse rounded-lg" style={{ background: "var(--surface)" }} /></section></Container>}>
-      <PostsPageContent />
-    </Suspense>
+    <Container>
+      <section className="py-12">
+        <div className="mb-10">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text)" }}>All Cleaning Hacks</h1>
+          <p className="mt-3" style={{ color: "var(--text-secondary)" }}>Search and filter tested hacks by category, room, and ingredient.</p>
+        </div>
+        <Suspense fallback={<div className="h-8 w-48 animate-pulse rounded-lg" style={{ background: "var(--surface)" }} />}>
+          <PostsPageContent />
+        </Suspense>
+      </section>
+    </Container>
   );
 }

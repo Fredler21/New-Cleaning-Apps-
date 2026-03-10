@@ -71,6 +71,7 @@ export default function HomePage() {
     <>
       {/* Hero Slider */}
       <Container>
+        <h1 className="sr-only">TryCleaningHacks — Tested Cleaning Hacks for Every Home</h1>
         <div className="pt-6 pb-2">
           <HeroSlider posts={heroPosts} />
         </div>
