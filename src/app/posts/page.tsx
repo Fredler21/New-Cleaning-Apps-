@@ -125,13 +125,64 @@ export default function PostsPage() {
   return (
     <Container>
       <section className="py-12">
+        {/* SEO-rich page header */}
         <div className="mb-10">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text)" }}>All Cleaning Hacks</h1>
-          <p className="mt-3" style={{ color: "var(--text-secondary)" }}>Search and filter tested hacks by category, room, and ingredient.</p>
+          <p className="mt-3 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+            Browse our complete library of 200+ tested cleaning hacks — from kitchen grease busters and bathroom mildew removers to laundry stain solutions and whole-home deep cleans. Every guide is verified by our editorial team using real-world testing, so you get professional-grade results with everyday ingredients like vinegar, baking soda, Dawn dish soap, and hydrogen peroxide.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+            Use the filters below to narrow results by category, tag, or keyword. Whether you need a quick five-minute fix for a coffee stain or a full weekend deep-clean routine, you&apos;ll find a step-by-step hack that works. New hacks are added weekly — bookmark this page and never run out of cleaning inspiration.
+          </p>
         </div>
+
+        {/* Client-side filters and grid */}
         <Suspense fallback={<div className="h-8 w-48 animate-pulse rounded-lg" style={{ background: "var(--surface)" }} />}>
           <PostsPageContent />
         </Suspense>
+
+        {/* SEO content below the grid */}
+        <div className="mt-16 rounded-xl p-6 sm:p-8" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+          <h2 className="text-xl font-semibold tracking-tight mb-4" style={{ color: "var(--text)" }}>
+            Why Our Cleaning Hacks Work
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: "🧪", title: "Tested & Verified", desc: "Every hack is tested on real surfaces before publishing. We document the ingredients, timing, and technique so you can replicate results exactly." },
+              { icon: "💰", title: "Budget-Friendly", desc: "Most hacks use ingredients you already own — vinegar, baking soda, dish soap, and lemon. No expensive specialty products required." },
+              { icon: "🌿", title: "Eco-Conscious", desc: "We prioritize natural, non-toxic solutions that are safe for kids, pets, and the environment. Harsh chemicals are always a last resort." },
+              { icon: "⏱️", title: "Time-Saving", desc: "Tagged by effort level so you can find quick five-minute fixes or thorough weekend deep-clean routines at a glance." },
+              { icon: "🏠", title: "Every Room Covered", desc: "Kitchen, bathroom, bedroom, garage, outdoor spaces — we cover every room and surface type including granite, stainless steel, tile, grout, fabric, and wood." },
+              { icon: "📱", title: "Easy to Follow", desc: "Step-by-step instructions with clear ingredient lists, safety notes, and pro tips. No guesswork, no vague advice — just results." },
+            ].map((item) => (
+              <div key={item.title} className="flex gap-3">
+                <span className="text-2xl flex-shrink-0">{item.icon}</span>
+                <div>
+                  <h3 className="font-semibold text-sm mb-1" style={{ color: "var(--text)" }}>{item.title}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Popular categories description */}
+        <div className="mt-10 rounded-xl p-6 sm:p-8" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+          <h2 className="text-xl font-semibold tracking-tight mb-4" style={{ color: "var(--text)" }}>
+            Popular Cleaning Categories
+          </h2>
+          <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--text-secondary)" }}>
+            Not sure where to start? Here are some of our most popular categories to explore:
+          </p>
+          <ul className="grid gap-3 sm:grid-cols-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+            <li><strong style={{ color: "var(--text)" }}>Vinegar Hacks</strong> — Descale appliances, remove hard water stains, deodorize drains, and clean glass streak-free using white distilled vinegar.</li>
+            <li><strong style={{ color: "var(--text)" }}>Baking Soda Hacks</strong> — Scrub grout, freshen carpets, neutralize fridge odors, and polish stainless steel naturally.</li>
+            <li><strong style={{ color: "var(--text)" }}>Dawn Dish Soap Hacks</strong> — Cut through grease on stovetops, clean bathtubs effortlessly, and make DIY all-purpose sprays.</li>
+            <li><strong style={{ color: "var(--text)" }}>Deep Clean Guides</strong> — Room-by-room checklists for spring cleaning, move-out prep, and seasonal refreshes.</li>
+            <li><strong style={{ color: "var(--text)" }}>Laundry &amp; Kitchen</strong> — Remove tough stains from clothing, whites brightening tricks, oven cleaning, and microwave steam hacks.</li>
+            <li><strong style={{ color: "var(--text)" }}>Dollar Store Finds</strong> — Budget cleaning tools and products that deliver premium results for under a dollar.</li>
+          </ul>
+        </div>
       </section>
     </Container>
   );
