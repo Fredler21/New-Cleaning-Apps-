@@ -31,7 +31,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     };
   }
 
-  const url = `${SITE_URL}/posts/${post.slug}`;
+  const url = `${SITE_URL}/cleaning-hacks/${post.slug}`;
   const fullTitle = `${post.title} | ${SITE_NAME}`;
 
   return {
@@ -120,7 +120,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               },
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": `${SITE_URL}/posts/${post.slug}`,
+                "@id": `${SITE_URL}/cleaning-hacks/${post.slug}`,
               },
             }}
           />
@@ -143,7 +143,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 position: i + 1,
                 name: step.title,
                 text: step.body,
-                url: `${SITE_URL}/posts/${post.slug}#${titleToId(step.title)}`,
+                url: `${SITE_URL}/cleaning-hacks/${post.slug}#${titleToId(step.title)}`,
               })),
             }}
           />
@@ -153,8 +153,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               "@type": "BreadcrumbList",
               itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-                { "@type": "ListItem", position: 2, name: "Posts", item: `${SITE_URL}/posts` },
-                { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/posts/${post.slug}` },
+                { "@type": "ListItem", position: 2, name: "Cleaning Hacks", item: `${SITE_URL}/cleaning-hacks` },
+                { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/cleaning-hacks/${post.slug}` },
               ],
             }}
           />
@@ -278,7 +278,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
 
               {/* Back nav */}
               <Link
-                href="/posts"
+                href="/cleaning-hacks"
                 className="flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition-all duration-200"
                 style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text-secondary)" }}
               >

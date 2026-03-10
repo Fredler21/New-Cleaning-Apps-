@@ -66,7 +66,7 @@ function makeHtml(unsubUrl) {
   <h1 style="color:#0d9488;">Welcome to TryCleaningHacks!</h1>
   <p>Thanks for subscribing. We'll send you our best cleaning tips and guides — no spam, just helpful content.</p>
   <p>In the meantime, check out our latest guides:</p>
-  <p><a href="${SITE}/posts" style="display:inline-block;padding:12px 28px;background:#0d9488;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;">Browse Guides →</a></p>
+  <p><a href="${SITE}/cleaning-hacks" style="display:inline-block;padding:12px 28px;background:#0d9488;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;">Browse Guides →</a></p>
   <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0;"/>
   <p style="font-size:13px;color:#6b7280;">
     You received this because you subscribed at <a href="${SITE}" style="color:#0d9488;">TryCleaningHacks</a>.<br/>
@@ -76,7 +76,7 @@ function makeHtml(unsubUrl) {
 }
 
 function makeText(unsubUrl) {
-  return `Welcome to TryCleaningHacks!\n\nThanks for subscribing. We'll send you our best cleaning tips and guides.\n\nBrowse guides: ${SITE}/posts\n\n---\nUnsubscribe: ${unsubUrl}`;
+  return `Welcome to TryCleaningHacks!\n\nThanks for subscribing. We'll send you our best cleaning tips and guides.\n\nBrowse guides: ${SITE}/cleaning-hacks\n\n---\nUnsubscribe: ${unsubUrl}`;
 }
 
 async function sendEmail(to, subject, html, text) {

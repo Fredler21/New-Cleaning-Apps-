@@ -10,7 +10,7 @@ export function HeroSearch() {
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
     const trimmed = query.trim();
-    router.push(trimmed ? `/posts?q=${encodeURIComponent(trimmed)}` : "/posts");
+    router.push(trimmed ? `/cleaning-hacks?q=${encodeURIComponent(trimmed)}` : "/cleaning-hacks");
   }
 
   return (

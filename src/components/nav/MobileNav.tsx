@@ -32,7 +32,7 @@ export function MobileNav({ open, links, onClose }: MobileNavProps) {
         </ul>
         <div className="mt-3 px-4 pb-2">
           <Link
-            href="/posts"
+            href="/cleaning-hacks"
             onClick={onClose}
             className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 px-5 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:shadow-md active:scale-[0.98]"
           >

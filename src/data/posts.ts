@@ -590,14 +590,14 @@ export const posts: Post[] = [
   },
   {
     title: "8 Things You Can Clean With WD-40 (That You Didn't Know)",
-    slug: "8-undemanding-wd40-cleaning-hacks",
+    slug: "8-easy-wd40-cleaning-hacks",
     datePublished: "2026-02-22",
     category: "wd40-hacks",
     readTime: "10 min",
     tags: ["quick wins", "bathroom", "kitchen"],
     excerpt:
       "WD-40 removes soap scum, cleans water stains, dissolves adhesive, and erases scuff marks. Here are 8 surprising cleaning uses.",
-    coverImage: "/graphics/posts/8-undemanding-wd40-cleaning-hacks.png",
+    coverImage: "/graphics/posts/8-easy-wd40-cleaning-hacks.png",
     supplies: ["WD-40", "Microfiber cloths", "Soft brush", "Warm water", "Dish soap", "Gloves"],
     steps: [
       { title: "Remove soap scum from glass shower doors", body: "Spray a light coat of WD-40 directly onto glass shower doors covered in soap scum and hard-water buildup. Let it sit for two minutes, then wipe with a microfiber cloth in straight strokes from top to bottom. The petroleum-based formula dissolves the mineral bonds that hold soap scum to glass surfaces. Follow up with a quick wipe of glass cleaner or a vinegar-water solution to remove any oily residue. The result is crystal-clear glass that looks brand new. Do this once a month and soap scum never gets a chance to build up into the thick, hazy layer that seems impossible to remove." },

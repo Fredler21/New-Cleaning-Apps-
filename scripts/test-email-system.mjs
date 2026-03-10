@@ -76,7 +76,7 @@ function makeHtml() {
           </p>
           <table role="presentation" cellpadding="0" cellspacing="0">
             <tr><td style="border-radius:8px;background-color:#0d9488;">
-              <a href="${SITE}/posts" target="_blank" style="display:inline-block;padding:14px 32px;color:#ffffff;text-decoration:none;font-size:16px;font-weight:600;border-radius:8px;">
+              <a href="${SITE}/cleaning-hacks" target="_blank" style="display:inline-block;padding:14px 32px;color:#ffffff;text-decoration:none;font-size:16px;font-weight:600;border-radius:8px;">
                 Visit TryCleaningHacks
               </a>
             </td></tr>
@@ -104,7 +104,7 @@ function makeText() {
     "",
     `Sent at: ${new Date().toISOString()}`,
     "",
-    `Visit: ${SITE}/posts`,
+    `Visit: ${SITE}/cleaning-hacks`,
   ].join("\n");
 }
 

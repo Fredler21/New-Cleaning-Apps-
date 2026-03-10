@@ -125,7 +125,7 @@ export const internalLinks: Record<string, string[]> = {
   ],
 
   /* ─── WD-40 ─── */
-  "8-undemanding-wd40-cleaning-hacks": [
+  "8-easy-wd40-cleaning-hacks": [
     "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles",
     "10-genius-toothpaste-cleaning-hacks-you-never-knew",
     "8-incredible-vinegar-hacks",
@@ -167,7 +167,7 @@ export const internalLinks: Record<string, string[]> = {
   /* ─── Toothpaste ─── */
   "10-genius-toothpaste-cleaning-hacks-you-never-knew": [
     "14-ways-to-use-baking-soda-in-your-house",
-    "8-undemanding-wd40-cleaning-hacks",
+    "8-easy-wd40-cleaning-hacks",
     "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles",
     "6-budget-cleaning-kits-you-can-build-in-20-minutes",
   ],

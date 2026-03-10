@@ -73,7 +73,7 @@ export async function GET(request: Request) {
   const results: { slug: string; sent: number; failed: number; bounced: number }[] = [];
 
   for (const post of newPosts) {
-    const postUrl = `https://trycleaninghacks.com/posts/${post.slug}`;
+    const postUrl = `https://trycleaninghacks.com/cleaning-hacks/${post.slug}`;
 
     let sent = 0;
     let failed = 0;

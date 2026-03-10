@@ -81,7 +81,7 @@ export function HeroSlider({ posts }: HeroSliderProps) {
             {/* Meta + CTA */}
             <div className="flex items-center gap-4">
               <Link
-                href={`/posts/${post.slug}`}
+                href={`/cleaning-hacks/${post.slug}`}
                 className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:shadow-md hover:brightness-105 active:scale-[0.98]"
               >
                 View Hack

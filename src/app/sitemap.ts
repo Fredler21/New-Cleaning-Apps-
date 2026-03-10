@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${SITE_URL}/posts`,
+      url: `${SITE_URL}/cleaning-hacks`,
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.9,
@@ -60,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   /* ── Post pages ───────────────────────────────────────── */
   const postPages: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${SITE_URL}/posts/${post.slug}`,
+    url: `${SITE_URL}/cleaning-hacks/${post.slug}`,
     lastModified: post.datePublished,
     changeFrequency: "monthly" as const,
     priority: 0.8,

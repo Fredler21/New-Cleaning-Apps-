@@ -96,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 description: "Discover 200+ tested cleaning hacks using everyday ingredients.",
                 potentialAction: {
                   "@type": "SearchAction",
-                  target: "https://trycleaninghacks.com/posts?q={search_term_string}",
+                  target: "https://trycleaninghacks.com/cleaning-hacks?q={search_term_string}",
                   "query-input": "required name=search_term_string",
                 },
               }}

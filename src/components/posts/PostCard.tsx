@@ -18,7 +18,7 @@ export function PostCard({ post, featured, trending }: PostCardProps) {
       className="group relative overflow-hidden rounded-card transition-all duration-300 hover:-translate-y-1"
       style={{ background: "var(--card-bg)", border: "1px solid var(--border)", boxShadow: "var(--card-shadow)" }}
     >
-      <Link href={`/posts/${post.slug}`} aria-label={post.title} className="block">
+      <Link href={`/cleaning-hacks/${post.slug}`} aria-label={post.title} className="block">
         <div className="relative overflow-hidden">
           <Image
             src={post.coverImage}
@@ -53,7 +53,7 @@ export function PostCard({ post, featured, trending }: PostCardProps) {
         </div>
 
         <h3 className="text-[17px] font-semibold leading-snug" style={{ color: "var(--text)" }}>
-          <Link href={`/posts/${post.slug}`} className="transition-colors duration-200 hover:text-teal-600">
+          <Link href={`/cleaning-hacks/${post.slug}`} className="transition-colors duration-200 hover:text-teal-600">
             {post.title}
           </Link>
         </h3>
@@ -62,7 +62,7 @@ export function PostCard({ post, featured, trending }: PostCardProps) {
 
         <div className="flex items-center justify-between pt-3" style={{ borderTop: "1px solid var(--border)" }}>
           <Link
-            href={`/posts/${post.slug}`}
+            href={`/cleaning-hacks/${post.slug}`}
             className="inline-flex items-center gap-1 text-sm font-medium text-teal-600 transition-colors hover:text-teal-700"
           >
             View Hack

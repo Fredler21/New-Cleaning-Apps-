@@ -11,9 +11,9 @@ export function ShareBar({ title, slug }: ShareBarProps) {
   const encoded = encodeURIComponent(title);
   const url = useMemo(() => {
     if (typeof window === "undefined") {
-      return `https://trycleaninghacks.com/posts/${slug}`;
+      return `https://trycleaninghacks.com/cleaning-hacks/${slug}`;
     }
-    return `${window.location.origin}/posts/${slug}`;
+    return `${window.location.origin}/cleaning-hacks/${slug}`;
   }, [slug]);
 
   return (

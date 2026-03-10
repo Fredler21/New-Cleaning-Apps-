@@ -131,7 +131,7 @@ if (newPosts.length > 0) {
   console.log("\nAll posts already notified. Sending test with most recent post.\n");
 }
 
-const postUrl = `${SITE}/posts/${postToSend.slug}`;
+const postUrl = `${SITE}/cleaning-hacks/${postToSend.slug}`;
 const subject = `New Post on TryCleaningHacks: ${postToSend.title}`;
 
 console.log(`\n--- Sending: "${postToSend.title}" to ${subscribers.length} subscribers ---\n`);

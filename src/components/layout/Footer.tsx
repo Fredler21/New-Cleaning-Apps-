@@ -5,10 +5,10 @@ import { Container } from "@/components/layout/Container";
 
 const footerLinks = {
   explore: [
-    { href: "/posts", label: "All Hacks" },
+    { href: "/cleaning-hacks", label: "All Hacks" },
     { href: "/categories", label: "Categories" },
-    { href: "/posts?tag=quick+wins", label: "Quick Wins" },
-    { href: "/posts?tag=deep+clean", label: "Deep Clean" }
+    { href: "/cleaning-hacks?tag=quick+wins", label: "Quick Wins" },
+    { href: "/cleaning-hacks?tag=deep+clean", label: "Deep Clean" }
   ],
   company: [
     { href: "/about", label: "About" },

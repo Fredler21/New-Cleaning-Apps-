@@ -113,7 +113,7 @@ function PostsPageContent() {
       {/* Mobile nav bar */}
       <div className="fixed bottom-0 left-0 right-0 z-30 border-t p-3 backdrop-blur-xl md:hidden" style={{ background: "var(--nav-bg)", borderColor: "var(--nav-border)" }}>
         <div className="mx-auto flex max-w-md gap-3">
-          <a href="/posts" className="flex-1 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm">Browse</a>
+          <a href="/cleaning-hacks" className="flex-1 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm">Browse</a>
           <a href="#category-select" className="flex-1 rounded-xl px-4 py-3 text-center text-sm font-medium" style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text)" }}>Filter</a>
         </div>
       </div>

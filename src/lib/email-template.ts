@@ -158,7 +158,7 @@ export function welcomeEmailText(unsubscribeUrl: string): string {
     "",
     "Thanks for subscribing. We'll send you our best cleaning tips and guides — no spam, just helpful content.",
     "",
-    `Browse our guides: ${SITE_URL}/posts`,
+    `Browse our guides: ${SITE_URL}/cleaning-hacks`,
     "",
     "---",
     `You received this email because you subscribed to ${BRAND}.`,

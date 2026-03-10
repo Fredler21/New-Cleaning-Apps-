@@ -20,7 +20,7 @@ export function RelatedGuides({ posts }: RelatedGuidesProps) {
         {posts.map((post) => (
           <Link
             key={post.slug}
-            href={`/posts/${post.slug}`}
+            href={`/cleaning-hacks/${post.slug}`}
             className="group flex items-start gap-3 rounded-lg px-4 py-3 transition-all duration-200 hover:-translate-y-0.5"
             style={{ background: "var(--surface-hover)", border: "1px solid var(--border)" }}
           >
