@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   publisher: "TryCleaningHacks",
   verification: {
     google: "5sbyW1HBzsmC93Y2dwlzj8ckF5rYZx0qbHOfXWymDIA",
+    other: {
+      "p:domain_verify": ["5e82ddb381fd726eb5ed1e3d6caaaff7"],
+    },
   },
   alternates: {
     canonical: "https://trycleaninghacks.com",
