@@ -96,5 +96,13 @@ export const categories: Category[] = [
     icon: "/graphics/icons/bathroom-cleaning.png",
     description: "Targeted toilet, shower, and sink cleaning methods that tackle hard water stains, soap scum, and mildew.",
     tags: ["bathroom", "deep clean", "quick wins"]
+  },
+  {
+    id: "paint-colors",
+    name: "Paint Colors",
+    slug: "paint-colors",
+    icon: "/graphics/icons/paint-colors.png",
+    description: "Low-maintenance paint and finish color guidance that helps walls, cabinets, and floors look cleaner between dusting days.",
+    tags: ["home", "quick wins", "dust control"]
   }
 ];
