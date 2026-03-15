@@ -260,4 +260,20 @@ export const internalLinks: Record<string, string[]> = {
     "8-incredible-vinegar-hacks",
     "12-microwave-cleaning-hacks-for-a-sparkling-kitchen",
   ],
+
+  /* ─── DIY All-Natural Sprays ─── */
+  "diy-all-natural-cleaning-sprays": [
+    "diy-bathroom-cleaning-recipes",
+    "8-incredible-vinegar-hacks",
+    "14-ways-to-use-baking-soda-in-your-house",
+    "10-genius-ways-to-make-your-house-smell-great",
+  ],
+
+  /* ─── DIY Bathroom Recipes ─── */
+  "diy-bathroom-cleaning-recipes": [
+    "diy-all-natural-cleaning-sprays",
+    "12-shower-cleaning-hacks",
+    "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
+    "how-to-remove-mold-from-bathroom-caulk",
+  ],
 };
