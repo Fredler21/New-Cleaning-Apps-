@@ -1474,6 +1474,115 @@ export const posts: Post[] = [
       { question: "How do you clean between the glass on an oven door?", answer: "Most oven doors can be partially disassembled by removing screws along the top or bottom edge. Consult your oven manual for model-specific instructions. Once open, clean the inner glass panels with a baking soda slurry and a microfiber cloth. Some people also use a thin cleaning wand wrapped in a cloth, inserted through the vents at the bottom of the door, as a no-disassembly option." },
       { question: "Why does my oven smoke when preheating?", answer: "Smoke during preheating is almost always caused by grease or food residue on the oven floor or bottom panel that burns when the element heats up. Clean the bottom panel and oven floor with baking soda paste. Also check the broiler drawer — accumulated crumbs and grease drips there can produce smoke. Using an oven liner prevents future buildup." }
     ]
+  },
+  {
+    title: "Best Paint Colors to Make Your House Look Less Dusty",
+    slug: "best-paint-colors-to-hide-dust",
+    datePublished: "2026-03-15",
+    category: "paint-colors",
+    readTime: "9 min",
+    tags: ["quick wins", "home", "dust control", "paint colors"],
+    excerpt:
+      "Want a cleaner-looking home between cleanings? These paint colors hide dust, lint, and everyday surface haze better than bright white or very dark walls.",
+    coverImage: "/graphics/posts/best-paint-colors-to-hide-dust.png",
+    supplies: ["Paint swatches", "Sample pots", "Foam roller", "Painter's tape", "Microfiber cloth", "Natural light"],
+    steps: [
+      { title: "Understand why some colors show dust more", body: "Dust visibility increases with high contrast. Bright white walls show gray dust shadows, and very dark walls show pale lint and particles quickly. Mid-tone balanced colors reduce this contrast and make daily dust less obvious." },
+      { title: "Pick warm greige for living areas", body: "Warm greige is one of the best all-around choices for hiding dust because it sits between beige and gray. It softens shadow lines and keeps walls looking cleaner for longer in sunlight-heavy rooms and high-traffic spaces." },
+      { title: "Use soft taupe in hallways and entry zones", body: "Hallways collect airborne dust from constant movement. Soft taupe masks both warm-toned dirt and cool-toned dust film better than pure white, so walls look maintained even when you skip a day or two of wiping." },
+      { title: "Choose muted sage for calm, low-contrast finish", body: "Muted sage green hides fine dust very well, especially near trim and shelving where particles settle. It is forgiving under mixed light and gives rooms a fresh look without amplifying surface imperfections." },
+      { title: "Avoid pure white and jet black for dust-prone homes", body: "If dust is a recurring issue, avoid ultra-bright whites and very dark charcoals on large wall areas. Both extremes create visual contrast that makes normal household dust appear faster and heavier than it actually is." },
+      { title: "Test samples in morning and evening light", body: "Paint a 2x2 foot sample area on at least two walls and review it in daylight and artificial light. A color that hides dust at noon may look harsher at night. This step prevents costly full-room repaint mistakes." },
+      { title: "Select eggshell or satin for easier maintenance", body: "Flat paint can trap dust film and shows wipe marks when spot cleaned. Eggshell or low-satin finishes are easier to dust and gently wipe, helping walls stay clean-looking with less effort over time." },
+      { title: "Use trim color one step softer, not stark white", body: "High-contrast white trim can make nearby wall dust more obvious. Choose trim one shade lighter than your wall color for a cohesive look that reduces visual dust lines around baseboards and frames." }
+    ],
+    proTips: [
+      "Best dust-hiding range is usually mid-tone warm neutrals.",
+      "Always test paint colors on real walls before committing.",
+      "Pair dust-friendly color with washable finish for easier upkeep."
+    ],
+    safetyNotes: [
+      "Use low-VOC paint and keep rooms ventilated during and after painting.",
+      "Wear a mask while sanding or preparing walls to reduce inhalation of fine dust.",
+      "Keep paint supplies closed and away from children and pets when not in use."
+    ],
+    faqs: [
+      { question: "What paint color hides dust the best?", answer: "Mid-tone warm greige is typically the most forgiving for everyday dust because it minimizes contrast between wall color and settled particles." },
+      { question: "Do dark walls make dust look worse?", answer: "Often yes. Very dark walls can make pale lint and dust stand out quickly, especially in bright daylight or near windows." },
+      { question: "Is white paint bad for dusty homes?", answer: "Bright white can make gray dust shadows more visible. Softer neutrals like greige, taupe, and muted sage usually stay cleaner-looking longer." }
+    ]
+  },
+  {
+    title: "Best Floor Colors to Hide Dust and Dirt in Busy Homes",
+    slug: "best-floor-colors-to-hide-dust-and-dirt",
+    datePublished: "2026-03-15",
+    category: "paint-colors",
+    readTime: "8 min",
+    tags: ["quick wins", "home", "dust control", "flooring"],
+    excerpt:
+      "Choosing the right floor color can make everyday dust and footprints less visible. These shades keep high-traffic rooms looking cleaner longer.",
+    coverImage: "/graphics/posts/best-floor-colors-to-hide-dust-and-dirt.png",
+    supplies: ["Floor swatches", "Sample planks", "Natural light", "Warm lighting", "Painter's tape", "Notebook"],
+    steps: [
+      { title: "Know why floor color affects visible dust", body: "Dust stands out most when there is strong contrast between particles and surface tone. Very dark floors show lint and pale dust quickly, while very light floors highlight hair and darker grit. Medium tones hide both better." },
+      { title: "Choose medium oak and natural wood tones", body: "Medium oak, honey oak, and natural matte wood tones are highly forgiving. They camouflage mixed debris, daily footprints, and light surface haze better than espresso or bleached-white floors." },
+      { title: "Pick warm greige tile for kitchens", body: "In kitchens, warm greige tile helps conceal both cool-gray dust and warmer crumb tones. It also remains visually stable under mixed lighting, which is important in rooms with under-cabinet and ceiling lights." },
+      { title: "Use low-variation patterns", body: "Planks or tile with gentle grain and small tonal variation hide micro-dust best. Extreme high-contrast veining can emphasize dirt lines, especially near seams and grout edges." },
+      { title: "Avoid ultra-gloss finishes", body: "High-gloss flooring reflects light in a way that highlights every speck. Matte or low-sheen finishes reduce glare and make routine dust less obvious between vacuuming sessions." },
+      { title: "Test samples in traffic lanes", body: "Place sample boards in entry paths and living room walk zones for two days. Observe them morning and evening. The best color is the one that still looks clean after real-life use, not just in showroom light." },
+      { title: "Match grout color to tile tone", body: "For tile floors, choose grout near the tile color rather than bright white contrast. Tonal grout minimizes visible dust lines and makes the whole floor appear cleaner and more uniform." }
+    ],
+    proTips: [
+      "Medium warm tones usually hide mixed debris best.",
+      "Matte finishes are more forgiving than glossy floors.",
+      "Always test samples in real home lighting before buying."
+    ],
+    safetyNotes: [
+      "Choose slip-resistant finishes in bathrooms, entries, and kitchen zones.",
+      "Ventilate rooms when installing flooring adhesives or sealers.",
+      "Confirm floor finish compatibility with your cleaning products to prevent damage."
+    ],
+    faqs: [
+      { question: "What floor color hides dust best?", answer: "Medium warm wood and greige tones are typically the most forgiving because they reduce contrast with both light dust and darker debris." },
+      { question: "Do dark floors always look dirtier?", answer: "In many homes, yes. Dark floors can show lint, dust, and footprints quickly, especially in direct sunlight or under bright LEDs." },
+      { question: "Should grout match tile if I want less visible dust?", answer: "Usually yes. Similar grout and tile tones reduce contrast and keep dust lines from standing out between cleanings." }
+    ]
+  },
+  {
+    title: "Best Cabinet Colors to Hide Fingerprints and Dust",
+    slug: "best-cabinet-colors-to-hide-fingerprints-and-dust",
+    datePublished: "2026-03-15",
+    category: "paint-colors",
+    readTime: "8 min",
+    tags: ["kitchen", "quick wins", "home", "paint colors"],
+    excerpt:
+      "If your cabinets always look smudged, color choice matters more than you think. These cabinet shades hide fingerprints, dust, and daily wear better.",
+    coverImage: "/graphics/posts/best-cabinet-colors-to-hide-fingerprints-and-dust.png",
+    supplies: ["Cabinet color chips", "Sample door cards", "Satin finish sample", "Matte finish sample", "Microfiber cloth", "Day/night lighting"],
+    steps: [
+      { title: "Understand cabinet smudge contrast", body: "Fingerprint visibility rises when oils and dust contrast sharply against cabinet color. Flat bright white and deep black often reveal smudges quickly. Mid-tone, muted colors are more forgiving in everyday use." },
+      { title: "Choose soft greige for all-purpose kitchens", body: "Soft greige cabinets balance warm and cool undertones, making dust and hand marks less obvious. They also pair well with many countertop materials, making them a practical long-term choice." },
+      { title: "Use muted olive or sage in high-touch zones", body: "Muted greens can conceal smudges on pantry doors and lower cabinets better than stark neutrals. These colors visually break up prints and dust haze under mixed kitchen lighting." },
+      { title: "Try mushroom taupe for family kitchens", body: "Mushroom taupe is highly forgiving for homes with kids or heavy cooking schedules. It hides minor scuffs and daily fingerprints while still looking clean and modern." },
+      { title: "Avoid high-gloss dark cabinet paint", body: "Glossy navy, black, and charcoal can look beautiful but often show every fingerprint. If using darker color, choose a softer satin finish and add handles to reduce direct touch on door faces." },
+      { title: "Pick the right finish level", body: "Cabinet finish matters as much as color. Satin and eggshell are usually easier to maintain than full gloss, while still allowing wipe-down cleaning without leaving obvious patch marks." },
+      { title: "Test sample doors before full repaint", body: "Paint sample boards and place them near sink and cooktop areas for several days. Check how they look after normal use and quick wipe-downs. Choose the color that still looks clean with minimal effort." }
+    ],
+    proTips: [
+      "Mid-tone muted shades hide daily cabinet smudges best.",
+      "Satin finish usually offers the best balance of cleanability and low streaking.",
+      "Install pulls/handles to reduce direct hand contact on painted surfaces."
+    ],
+    safetyNotes: [
+      "Use low-VOC paint for indoor cabinet projects.",
+      "Allow full cure time before heavy cleaning to avoid finish damage.",
+      "Use proper respirator and ventilation when sanding old cabinet coatings."
+    ],
+    faqs: [
+      { question: "What cabinet color hides fingerprints best?", answer: "Soft greige, muted sage, and mushroom taupe are usually top performers because they reduce contrast with oils, dust, and small smudges." },
+      { question: "Are white cabinets hard to keep clean-looking?", answer: "Bright white can show fingerprints and dust quickly in high-touch areas. Softer off-whites and warm greiges are usually easier to maintain visually." },
+      { question: "What cabinet finish is best to hide marks?", answer: "Satin is often the most practical choice because it wipes clean well while avoiding the high-reflection effect that makes smudges stand out on gloss finishes." }
+    ]
   }
 ];
 
