@@ -25,11 +25,9 @@ export async function POST(request: Request) {
     await trackPostView(body.slug.trim());
     return NextResponse.json({ success: true, v: DEPLOY_VERSION });
   } catch (err) {
-    const message = err instanceof Error ? err.message : String(err);
-    const stack = err instanceof Error ? err.stack?.split("\n").slice(0, 3).join(" | ") : undefined;
-    console.error("Analytics tracking error:", message, err);
+    console.error("Analytics tracking error:", err instanceof Error ? err.message : err);
     return NextResponse.json(
-      { error: "Failed to track view.", detail: message, stack, v: DEPLOY_VERSION },
+      { error: "Failed to track view.", v: DEPLOY_VERSION },
       { status: 500 }
     );
   }

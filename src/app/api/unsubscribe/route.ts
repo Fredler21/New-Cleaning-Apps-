@@ -106,7 +106,7 @@ export async function GET(request: Request) {
         const res = await fetch('/api/unsubscribe', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: '${email.replace(/'/g, "\\'")}' })
+          body: JSON.stringify({ email: ${JSON.stringify(email)} })
         });
         const data = await res.json();
         msg.innerHTML = '<span class="success">' + data.message + '</span><br><br><a href="https://www.trycleaninghacks.com">Back to TryCleaningHacks</a>';
