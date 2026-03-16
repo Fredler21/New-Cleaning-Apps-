@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://trycleaninghacks.com";
+export const SITE_URL = "https://www.trycleaninghacks.com";
 export const SITE_NAME = "TryCleaningHacks";
 
 type MetaInput = {

@@ -62,7 +62,7 @@ export async function POST(request: Request) {
   console.log(`[NOTIFY] Sending "${post.title}" to ${subscribers.length} subscriber(s).`);
 
   /* ---------- Send emails ---------- */
-  const postUrl = `https://trycleaninghacks.com/cleaning-hacks/${post.slug}`;
+  const postUrl = `https://www.trycleaninghacks.com/cleaning-hacks/${post.slug}`;
 
   let sent = 0;
   let failed = 0;

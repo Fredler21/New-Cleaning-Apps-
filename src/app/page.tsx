@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
   description:
     "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans — no guesswork, no gimmicks.",
-  alternates: { canonical: "https://trycleaninghacks.com" },
+  alternates: { canonical: "https://www.trycleaninghacks.com" },
   keywords: [
     "cleaning hacks", "house cleaning tips", "kitchen cleaning hacks",
     "bathroom cleaning tips", "vinegar cleaning", "baking soda hacks",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
     description:
       "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
-    url: "https://trycleaninghacks.com",
+    url: "https://www.trycleaninghacks.com",
     siteName: "TryCleaningHacks",
     images: [{ url: "/og/og-home.png", width: 1200, height: 630, alt: "TryCleaningHacks" }],
     locale: "en_US",

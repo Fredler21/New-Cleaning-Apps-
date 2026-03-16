@@ -10,7 +10,7 @@
  */
 
 const BRAND = "TryCleaningHacks";
-const SITE_URL = "https://trycleaninghacks.com";
+const SITE_URL = "https://www.trycleaninghacks.com";
 const BRAND_COLOR = "#0d9488"; // teal-600
 const FOOTER_COLOR = "#6b7280"; // gray-500
 const PHYSICAL_ADDRESS = "Miami, FL"; // CAN-SPAM requires a physical address

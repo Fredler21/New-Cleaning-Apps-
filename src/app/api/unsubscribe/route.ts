@@ -109,7 +109,7 @@ export async function GET(request: Request) {
           body: JSON.stringify({ email: '${email.replace(/'/g, "\\'")}' })
         });
         const data = await res.json();
-        msg.innerHTML = '<span class="success">' + data.message + '</span><br><br><a href="https://trycleaninghacks.com">Back to TryCleaningHacks</a>';
+        msg.innerHTML = '<span class="success">' + data.message + '</span><br><br><a href="https://www.trycleaninghacks.com">Back to TryCleaningHacks</a>';
         btn.style.display = 'none';
       } catch {
         msg.innerHTML = '<span class="error">Something went wrong. Please try again.</span>';

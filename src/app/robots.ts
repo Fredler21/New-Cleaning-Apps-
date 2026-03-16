@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://trycleaninghacks.com/sitemap.xml",
+    sitemap: "https://www.trycleaninghacks.com/sitemap.xml",
   };
 }
