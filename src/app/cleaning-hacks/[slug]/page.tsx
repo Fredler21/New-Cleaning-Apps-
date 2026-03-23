@@ -112,7 +112,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               datePublished: `${post.datePublished}T00:00:00Z`,
               dateModified: new Date().toISOString(),
               inLanguage: "en",
-              author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+              author: post.author
+                ? { "@type": "Person", name: post.author, url: `${SITE_URL}/about` }
+                : { "@type": "Organization", name: SITE_NAME, url: `${SITE_URL}/about` },
               publisher: {
                 "@type": "Organization",
                 name: SITE_NAME,
@@ -177,6 +179,34 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               }}
             />
           )}
+
+          {/* Author + meta bar */}
+          <div className="mb-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm" style={{ color: "var(--text-secondary)" }}>
+            <span className="flex items-center gap-1.5">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              <span>By{" "}
+                <a href="/about" className="font-medium hover:underline" style={{ color: "var(--accent)" }}>
+                  {post.author ?? "TryCleaningHacks Editorial Team"}
+                </a>
+              </span>
+            </span>
+            <span className="flex items-center gap-1.5">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <time dateTime={post.datePublished}>
+                {new Date(post.datePublished).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+              </time>
+            </span>
+            <span className="flex items-center gap-1.5">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              {post.readTime} read
+            </span>
+          </div>
 
           {/* Action bar */}
           <div className="mb-10 flex flex-wrap items-center gap-3 rounded-xl px-5 py-3" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
