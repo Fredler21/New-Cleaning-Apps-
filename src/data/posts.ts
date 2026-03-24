@@ -1837,6 +1837,175 @@ export const posts: Post[] = [
       }
     ]
   }
+  ,
+  {
+    title: "How to Clean Hardwood Floors the Right Way (9 Rules That Prevent Damage)",
+    slug: "how-to-clean-hardwood-floors",
+    datePublished: "2026-03-24",
+    category: "deep-clean",
+    readTime: "11 min",
+    tags: ["hardwood floors", "floor care", "deep clean"],
+    excerpt:
+      "Most hardwood floor damage comes from the cleaning routine, not foot traffic. These 9 rules explain exactly what to do — and what to avoid — to keep wood floors clean, scratch-free, and looking new for decades.",
+    coverImage: "/graphics/posts/how-to-clean-hardwood-floors.png",
+    supplies: [
+      "Microfiber dry mop or dust mop",
+      "Vacuum with hard floor setting (beater bar disabled)",
+      "Dedicated hardwood floor cleaner (Bona or similar pH-neutral formula)",
+      "Clean empty spray bottle",
+      "Dry microfiber mop pads (2–3)",
+      "Soft-bristle broom",
+      "Felt furniture leg pads",
+      "Clean white microfiber cloths"
+    ],
+    steps: [
+      {
+        title: "Rule 1: Vacuum before you mop — always",
+        body: "One of the most common hardwood floor mistakes is going straight to a mop. Any grit, sand, or debris that isn't removed first gets dragged and pressed across the floor by the mop head, acting like sandpaper on the finish. Use a vacuum on its hard floor setting with the beater bar disabled — or a dry microfiber dust mop — before any wet cleaning. Work in rows starting from the wall farthest from the exit, moving toward the door. Pay attention to edges and corners where dust compacts into grainy deposits. This dry-clean step takes less than five minutes in most rooms and prevents the microscopic scratching that clouds a floor's finish over years of cleaning. If you use a broom, choose one with soft, fine bristles — stiff brooms scatter debris instead of collecting it."
+      },
+      {
+        title: "Rule 2: Never use a soaking-wet mop",
+        body: "Water is hardwood's primary enemy. Excess moisture seeps between planks, swells the wood, warps boards, and loosens the adhesive holding floating floors in place. The correct technique is a barely-damp mop with no visible drips or standing water — a mop damp enough that it evaporates in under a minute after contact with the floor. Wring out mop pads until they feel almost dry before use. Never use a bucket-and-string mop on hardwood; these deposit too much water. Flat microfiber mops with removable, machine-washable pads are the industry standard for wood floors precisely because you can control moisture. If you accidentally over-wet an area, dry it immediately with a clean, dry microfiber cloth — don't wait for it to air dry on its own."
+      },
+      {
+        title: "Rule 3: Use a dedicated hardwood floor cleaner — not vinegar, not all-purpose spray",
+        body: "Vinegar is acidic (pH around 2.5). Wood floor finishes — polyurethane, aluminum oxide, oil-based — are pH-sensitive. Regular vinegar use gradually dulls and degrades the finish coating, stripping away the layer that protects the wood from moisture, staining, and scratching. Once the finish is etched, it cannot be polished back; the floor needs to be refinished. The same issue applies to most all-purpose household cleaners, which are either alkaline or contain surfactants designed for non-porous surfaces. Use only cleaners specifically formulated for hardwood floors — Bona, Method, or comparable pH-neutral formulas. Spray directly on the mop head or on a small floor section, not from a distance — this controls the amount of liquid applied. Read the bottle for your specific floor finish type; some oil-finished floors require a different cleaner than polyurethane-finished floors."
+      },
+      {
+        title: "Rule 4: Always mop with the grain of the wood, not against it",
+        body: "Wood grain runs along the length of each plank. Mopping across the grain forces moisture and debris into the spaces between plank edges, which is exactly where water causes the most cumulative damage. Mopping with the grain moves the cleaning path along the plank surface, allowing the mop head to cover the maximum surface area while directing debris toward the end of each board rather than into side seams. This applies to dry dusting and vacuuming as well. Developing this direction habit costs nothing and makes a measurable difference over years of regular cleaning. In rooms with diagonal floor installation, mop along the direction the planks run, not the direction of the room."
+      },
+      {
+        title: "Rule 5: Dry the floor completely before anyone walks on it",
+        body: "Standing water on hardwood is obvious damage waiting to happen — but even the residual moisture from a correctly used barely-damp mop is enough to attract fresh dust and pet hair if people walk on the floor immediately. Let freshly mopped hardwood dry for at least five minutes before foot traffic. In humid conditions or poorly ventilated rooms, this can take slightly longer. Opening windows or running a fan across the surface significantly reduces drying time. If you see any water beading or visible moisture remaining after three minutes, wipe it with a dry microfiber cloth. The goal is a completely dry, streak-free surface before the room is used again. Streak lines left behind by a mop are almost always a sign the mop carried too much liquid."
+      },
+      {
+        title: "Rule 6: Remove shoes and add felt pads to every piece of furniture",
+        body: "This isn't a cleaning step — it's a damage prevention rule that reduces how often deep cleaning is needed. Shoes, especially heeled footwear, concentrate extraordinary pressure per square inch; a 140-pound person in stiletto heels exerts more floor pressure per square inch than a 6,000-pound elephant. Entry rugs and a no-shoes household rule prevent the majority of grit-related scratching. For furniture, apply self-adhesive felt pads to every leg that contacts the floor. Check and replace these pads annually — worn felt pads lose their protective function and can become abrasive themselves as dirt embeds in them. Area rugs in high-traffic corridors and under dining tables protect the floor from the two zones that see the most abrasion."
+      },
+      {
+        title: "Rule 7: Spot-clean spills within 60 seconds",
+        body: "Hardwood is not sealed against liquids — even polyurethane-finished floors have microscopic seams where liquid can penetrate if left to sit. The 60-second rule exists because most household spills (water, juice, coffee, pet accidents) don't cause damage if wiped up immediately but begin to penetrate the seams when allowed to sit. Keep a clean dry microfiber cloth in the kitchen and dining area within arm's reach. Blot, don't wipe — wiping spreads the spill across a larger area. For sticky spills, dampen the cloth lightly with your dedicated hardwood cleaner and blot the residue. For pet urine, which is acidic and highly corrosive to wood finish, respond within 30 seconds if possible. Dried or soaked-in pet urine on hardwood often requires sanding and recoating the affected boards to fully remediate."
+      },
+      {
+        title: "Rule 8: Deep clean quarterly with a concentrated hardwood formula",
+        body: "Regular weekly maintenance — vacuum plus barely-damp mop — handles everyday dust and surface grime. But over months, a film of micro-residue from cleaning products, shoe rubber, cooking oils, and oxidized finish builds up on the floor surface, making it look dull even after mopping. A quarterly deep clean with a concentrated hardwood cleaner (diluted per instructions) addresses this buildup. Apply the cleaner to a small section using a wring-dry mop, work it in with gentle circular motion at the problem areas, then immediately wipe up with a clean dry pad. Do not let even a concentrated cleaner sit on the floor — the goal is apply-and-lift, not soak. After the deep clean, the floor should have a noticeably brighter sheen and feel cleaner underfoot. This is also the right time to inspect for areas where the finish is thinning or scratched, which signals time for professional recoating."
+      },
+      {
+        title: "Rule 9: Know when the floor needs refinishing, not just cleaning",
+        body: "Every hardwood floor has a finite number of refinishes in its lifetime, determined by the thickness of the solid wood above the tongue-and-groove joint. But most floors go to refinishing much later than needed because owners assume dullness or scratching means more cleaning is required. The signs that cleaning has reached its limit: floors that look dull immediately after mopping, scratches that extend below the finish into the raw wood (check by running your fingernail across — if it catches, it's below the finish), graying at plank seams (moisture and dirt below the finish), or soft spots where boards flex underfoot. Spot recoating is far less expensive and disruptive than full refinishing. A flooring professional can recoat just the worn traffic areas with fresh polyurethane in a day. This is the maintenance step that doubles the life of a hardwood floor versus floors that only receive cleaning."
+      }
+    ],
+    proTips: [
+      "Schedule hardwood floor mopping for evenings or early morning — the 5-minute no-foot-traffic drying window is easiest to guarantee then.",
+      "In winter, use a humidifier to maintain 35–55% relative humidity. Dry air causes hardwood planks to contract and develop visible gaps between boards.",
+      "Never use wax on floors with a polyurethane finish — it creates a slippery buildup that clouds the finish permanently and is very difficult to remove."
+    ],
+    safetyNotes: [
+      "Wet hardwood floors are a slip hazard. Ensure the floor is fully dry before allowing children, elderly household members, or pets to re-enter the room.",
+      "Do not use steam mops on hardwood floors under any circumstances. The combination of high moisture and heat accelerates finish degradation and can cause permanent warping, especially in engineered and laminate wood."
+    ],
+    faqs: [
+      {
+        question: "How often should you clean hardwood floors?",
+        answer: "Dry dusting or vacuuming should happen 1–2 times per week in high-traffic homes, weekly in low-traffic spaces. Damp mopping is appropriate every 1–2 weeks depending on foot traffic. Quarterly deep cleaning handles the film buildup that weekly mopping doesn't address. Over-cleaning with wet methods causes more long-term damage than under-cleaning."
+      },
+      {
+        question: "Can I use Swiffer WetJet on hardwood floors?",
+        answer: "Swiffer WetJet is not recommended for unsealed, waxed, or unfinished hardwood. For polyurethane-finished hardwood it can be used sparingly, but the cleaning solution contains surfactants that can dull the finish over time. A dry microfiber mop with an approved hardwood cleaner sprayed directly onto the pad is a safer long-term approach."
+      },
+      {
+        question: "What is the best cleaner for hardwood floors?",
+        answer: "Bona Hardwood Floor Cleaner is the most widely recommended pH-neutral formula and is approved by most major flooring manufacturers. Method Squirt + Mop is also commonly used. Avoid anything with vinegar, bleach, ammonia, or citrus oil — all of these degrade hardwood finishes over time."
+      },
+      {
+        question: "Why do my hardwood floors look streaky after mopping?",
+        answer: "Streaks after mopping are almost always caused by one of three things: too much water on the mop head, leftover cleaner residue, or a cleaning product not formulated for hardwood. Switch to a barely-damp mop pad, verify you're using a hardwood-specific cleaner, and buff the floor with a dry microfiber pad immediately after mopping for a streak-free result."
+      },
+      {
+        question: "Can I mop hardwood with just water?",
+        answer: "Plain water is slightly preferable to harsh cleaners, but it still carries the risks of any wet mopping: moisture at the seams and no cleaning action against oil or residue. For basic maintenance between deep cleans, a single pass with a barely-damp water-only mop pad is acceptable. For removing footprints, grime, or residue, use a dedicated hardwood cleaner."
+      }
+    ]
+  },
+  {
+    title: "How to Remove Yellow Armpit Stains From Shirts (5 Methods Tested)",
+    slug: "how-to-remove-yellow-armpit-stains-from-shirts",
+    datePublished: "2026-03-25",
+    category: "laundry-kitchen",
+    readTime: "10 min",
+    tags: ["laundry", "stain removal", "shirts"],
+    excerpt:
+      "Yellow armpit stains aren't from sweat — they're a chemical reaction between aluminum in deodorant and proteins in perspiration. Here are 5 tested methods ranked by effectiveness, from color-safe options to the nuclear approach for set-in stains.",
+    coverImage: "/graphics/posts/how-to-remove-yellow-armpit-stains.png",
+    supplies: [
+      "Baking soda",
+      "3% hydrogen peroxide",
+      "Dish soap (Dawn or similar)",
+      "White vinegar",
+      "OxiClean powder or oxygen booster",
+      "Table salt",
+      "Cream of tartar (optional)",
+      "Uncoated white aspirin tablets (optional)",
+      "Soft-bristled scrub brush or old toothbrush",
+      "Cold water",
+      "Rubber gloves"
+    ],
+    steps: [
+      {
+        title: "Method 1: Baking soda + hydrogen peroxide paste (best overall for white shirts)",
+        body: "This is the most reliably effective method for yellow armpit stains on white and light-colored shirts, and the one most cleaning experts reach for first. The chemistry is straightforward: hydrogen peroxide oxidizes the yellowed aluminum-sweat compound (actually a metallic salt buildup from antiperspirant) and baking soda acts as a mild abrasive to physically lift the loosened residue from fabric fibers. Mix 2 tablespoons of baking soda with 1 tablespoon of hydrogen peroxide and a small squeeze of dish soap (about ½ teaspoon) until a thick paste forms. Apply the paste directly to the stain with a spoon or your gloved fingertip in a generous layer. Use a soft-bristled scrub brush or old toothbrush to work the paste gently into the fabric using small circular strokes — this opens the weave and lets the peroxide penetrate the stain rather than just sitting on top. Let the paste sit for 30 to 60 minutes in direct sunlight if possible — UV light amplifies the oxidizing action of peroxide and dramatically improves results on stubborn or old stains. Rinse with cold water, then launder as normal. Do not use this method on dark-colored shirts — hydrogen peroxide will bleach the dye. A small patch test on an inside seam is always worthwhile before treating a visible area."
+      },
+      {
+        title: "Method 2: White vinegar pre-soak (best for colored and synthetic fabrics)",
+        body: "White vinegar works through acid action: the acetic acid breaks down the alkaline aluminum compounds in antiperspirant residue. This method is slower than the peroxide paste but safer for colored fabrics and synthetic blends. Fill a basin with cold water and add ½ cup of white vinegar. Submerge the stained garment and let it soak for 30 to 60 minutes. For fresh or mild stains, this alone is often enough — launder after soaking and the stain will be significantly reduced or gone. For more set-in stains, after soaking, pour undiluted white vinegar directly onto the affected area and scrub lightly with a soft brush before laundering. The vinegar smell fully dissipates in the wash cycle. This method works best as a preventive step: soaking shirts in a diluted vinegar bath before the stain has a chance to fully set is more effective than using vinegar on established yellow stains. Never use vinegar on shirts with acetate or rayon components — the acid can damage these fibers."
+      },
+      {
+        title: "Method 3: OxiClean soak (best for old, heat-set stains that have been through the dryer)",
+        body: "For yellow armpit stains that have been washed and dried multiple times — and have essentially fused to the fabric — an oxygen booster like OxiClean is the most effective option. Heat-setting through multiple dryer cycles makes stains significantly harder to remove, but oxygen releasers can still break them down with adequate dwell time. Dissolve one scoop of OxiClean powder in a gallon of the warmest water safe for your fabric (check the garment label). Submerge the shirt and let it soak for 4 to 6 hours — or overnight for truly stubborn stains. The oxygen-releasing compounds in the formula continuously work against the stain throughout the soak. Do not wring or scrub the fabric during the soak; let the chemistry do the work. After soaking, remove the shirt and launder normally. For cotton and cotton-poly blend shirts, this is consistently the most effective method for old stains. Check the stain before putting the shirt in the dryer — if residue remains, repeat the OxiClean soak before heat-setting the remaining stain further."
+      },
+      {
+        title: "Method 4: Baking soda + salt + dish soap scrub (safest for delicate fabrics)",
+        body: "This is the recommended method for delicate fabrics or shirts where you can't use hydrogen peroxide or OxiClean. The combination of baking soda and salt provides gentle physical abrasion, while dish soap cuts through the greasy component of sweat and deodorant buildup. Mix 2 tablespoons of baking soda, 1 tablespoon of table salt, and 1 tablespoon of dish soap with just enough water to form a thick, spreadable paste. Apply to the stain and spread evenly. Use a soft brush to massage the paste into the fabric with light circular strokes for 3–5 minutes — this is the active scrubbing phase, not just application. Let the paste sit on the fabric for 20 to 30 minutes. Rinse with cold water, checking whether the stain has lifted. For mild and recent stains, this usually removes the yellow completely. For moderate stains, a second application with a slightly longer dwell time is often needed. This method is color-safe and works on most fabrics including linen, modal, and cotton blends, making it a reliable fallback when stronger oxidizing agents aren't appropriate."
+      },
+      {
+        title: "Method 5: Aspirin + cream of tartar paste (for stubborn set-in stains on white shirts only)",
+        body: "This lesser-known method comes from old-school laundry techniques and works through the combined mild acid action of salicylic acid (aspirin) and tartaric acid (cream of tartar), which together dissolve the aluminum salt compounds responsible for yellowing more aggressively than either ingredient alone. Crush 5 uncoated white aspirin tablets to a fine powder using the back of a spoon. Mix with 2 tablespoons of cream of tartar and enough warm water to form a thick paste — approximately 2 tablespoons. Apply the paste generously to the yellow stained area and spread evenly. Allow to sit for 30 to 45 minutes. This method is specifically for white cotton and cotton-blend shirts — both aspirin and cream of tartar can potentially alter the tone of dyed fabrics. For white shirts with severe, long-standing yellow stains, this is often the treatment that finally works after other methods have reduced but not eliminated the stain. After the dwell time, rinse in cold water and launder immediately. A second cold rinse before washing prevents any white paste residue from remaining."
+      }
+    ],
+    proTips: [
+      "The single best way to prevent yellow armpit stains: switch from an antiperspirant to an aluminum-free deodorant. Most yellow staining is caused by aluminum compounds reacting with sweat protein, not by sweat alone.",
+      "Always check the stain before putting the shirt in the dryer. Dryer heat permanently heat-sets any remaining stain. If the stain is still visible after washing, air dry and treat again before using the dryer.",
+      "For shirts already damaged through repeated dryer heat, try two consecutive overnight OxiClean soaks in the warmest water the fabric allows — this is the most effective rescue approach for heat-set yellowing."
+    ],
+    safetyNotes: [
+      "Hydrogen peroxide (3%) will bleach colored and dark fabrics. It is safe for white and very light-colored garments only. Always perform a patch test on an inside seam before using peroxide on any colored fabric.",
+      "Do not mix hydrogen peroxide and vinegar directly in the same application — combined they form peracetic acid, which is corrosive and can irritate skin. If using both methods sequentially, rinse the shirt thoroughly with water between treatments.",
+      "Wear rubber gloves when working with hydrogen peroxide paste, especially if you have sensitive skin."
+    ],
+    faqs: [
+      {
+        question: "What causes yellow armpit stains?",
+        answer: "Yellow armpit stains are not primarily caused by sweat — they're caused by a chemical reaction between the aluminum compounds in antiperspirants and the proteins and salts in perspiration. The reaction creates a yellow-brown metallic salt compound that embeds in fabric fibers. This is why switching to an aluminum-free deodorant is the most effective long-term prevention strategy."
+      },
+      {
+        question: "Does washing armpit-stained shirts make the staining worse?",
+        answer: "Yes, it can — especially heat drying. Hot water and dryer heat cause the aluminum-sweat compound to bond more permanently with the fabric fibers, which is called heat-setting. Always wash stained shirts in cold water and air dry until the stain has been fully removed. Inspect the shirt after washing and before drying each time."
+      },
+      {
+        question: "Will OxiClean remove old yellow armpit stains that have been through the dryer?",
+        answer: "OxiClean can still remove heat-set stains in many cases, but it requires a significantly longer soak — 6 hours to overnight rather than 1–2 hours. The key is using the warmest water the fabric can handle and allowing full dwell time without disturbing the soak. For very heavy heat-set staining, two consecutive overnight soaks often work when a single soak doesn't."
+      },
+      {
+        question: "Are these methods safe for synthetic fabrics like nylon and polyester?",
+        answer: "Method 2 (vinegar soak) and Method 4 (baking soda/salt/dish soap) are safest for synthetics. Avoid peroxide on nylon, which can yellow or degrade under oxidizing agents. OxiClean is generally safe for most synthetics at lower water temperatures. Always check the garment care label and test on an inside seam before treating synthetic fabrics."
+      },
+      {
+        question: "How do I prevent yellow armpit stains from forming in the first place?",
+        answer: "Use an aluminum-free deodorant rather than an antiperspirant. Allow deodorant to fully dry before dressing (2–3 minutes). Wear an undershirt as a barrier. Launder shirts after each wear. Wash with cold water and air dry — dryer heat is the biggest factor in stain permanence. These steps together essentially eliminate recurring yellowing."
+      }
+    ]
+  }
 ];
 
 export const getPostBySlug = (slug: string): Post | undefined =>
