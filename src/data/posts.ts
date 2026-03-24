@@ -1858,7 +1858,7 @@ export const posts: Post[] = [
     tags: ["laundry", "stain removal", "shirts"],
     excerpt:
       "Yellow armpit stains aren't from sweat — they're a chemical reaction between aluminum in deodorant and proteins in perspiration. Here are 5 tested methods ranked by effectiveness, from color-safe options to the nuclear approach for set-in stains.",
-    coverImage: "/graphics/posts/how-to-remove-yellow-armpit-stains.png",
+    coverImage: "/graphics/posts/how-to-remove-yellow-armpit-stains-from-shirts.png",
     supplies: [
       "Baking soda",
       "3% hydrogen peroxide",
