@@ -1,10 +1,10 @@
-import type { Post } from "@/types/post";
+ import type { Post } from "@/types/post";
 
 export const posts: Post[] = [
   {
     title: "13 Surprising Ways to Clean With Listerine",
     slug: "13-mind-blowing-listerine-hacks",
-    datePublished: "2026-02-20",
+    datePublished: "2025-09-08",
     category: "listerine-hacks",
     readTime: "11 min",
     tags: ["quick wins", "odor control", "bathroom"],
@@ -43,7 +43,7 @@ export const posts: Post[] = [
   {
     title: "7 Deep Cleaning Tricks That Save Hours Every Week",
     slug: "7-game-changing-ultra-cleaning-hacks",
-    datePublished: "2026-02-20",
+    datePublished: "2025-09-22",
     category: "deep-clean",
     readTime: "12 min",
     tags: ["deep clean", "weekend", "routine"],
@@ -82,7 +82,7 @@ export const posts: Post[] = [
   {
     title: "14 Proven Ways to Clean With Baking Soda",
     slug: "14-ways-to-use-baking-soda-in-your-house",
-    datePublished: "2026-02-20",
+    datePublished: "2025-10-06",
     category: "baking-soda",
     readTime: "13 min",
     tags: ["kitchen", "laundry", "odor control"],
@@ -121,7 +121,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Almost Anything With Vinegar (8 Methods)",
     slug: "8-incredible-vinegar-hacks",
-    datePublished: "2026-02-20",
+    datePublished: "2025-10-20",
     category: "vinegar-hacks",
     readTime: "10 min",
     tags: ["quick wins", "glass", "bathroom"],
@@ -160,7 +160,7 @@ export const posts: Post[] = [
   {
     title: "16 Ways to Clean and Disinfect With Hydrogen Peroxide",
     slug: "16-hydrogen-peroxide-cleaning-hacks",
-    datePublished: "2026-02-20",
+    datePublished: "2025-11-03",
     category: "peroxide-hacks",
     readTime: "14 min",
     tags: ["deep clean", "bathroom", "laundry"],
@@ -199,7 +199,7 @@ export const posts: Post[] = [
   {
     title: "How to Deep Clean a Shower (10 Proven Methods)",
     slug: "12-shower-cleaning-hacks",
-    datePublished: "2026-02-20",
+    datePublished: "2025-11-17",
     category: "deep-clean",
     readTime: "11 min",
     tags: ["bathroom", "deep clean", "shower cleaning", "soap scum removal"],
@@ -240,7 +240,7 @@ export const posts: Post[] = [
   {
     title: "5 Dollar Store Cleaning Products That Actually Work",
     slug: "5-dollar-store-hacks-you-should-know",
-    datePublished: "2026-02-20",
+    datePublished: "2025-12-01",
     category: "dollar-store",
     readTime: "9 min",
     tags: ["budget", "quick wins", "routine"],
@@ -279,7 +279,7 @@ export const posts: Post[] = [
   {
     title: "30 Cleaning Myths You Need to Stop Believing",
     slug: "30-cleaning-myths-you-should-be-wary-of",
-    datePublished: "2026-02-20",
+    datePublished: "2025-12-15",
     category: "deep-clean",
     readTime: "15 min",
     tags: ["deep clean", "education", "safety"],
@@ -318,7 +318,7 @@ export const posts: Post[] = [
   {
     title: "11 Ways to Use Dawn Dish Soap Beyond the Sink",
     slug: "11-dawn-dish-soap-hacks-for-greasy-kitchens",
-    datePublished: "2026-02-20",
+    datePublished: "2026-01-05",
     category: "dawn-hacks",
     readTime: "12 min",
     tags: ["kitchen", "quick wins", "deep clean"],
@@ -357,7 +357,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Your Laundry Room in Under 30 Minutes",
     slug: "9-laundry-room-cleaning-hacks-that-actually-save-time",
-    datePublished: "2026-02-20",
+    datePublished: "2026-01-19",
     category: "laundry-kitchen",
     readTime: "10 min",
     tags: ["laundry", "quick wins", "routine"],
@@ -396,7 +396,7 @@ export const posts: Post[] = [
   {
     title: "How to Get Rid of Kitchen Sink Odor (10 Easy Fixes)",
     slug: "10-kitchen-sink-detox-hacks-for-odor-free-results",
-    datePublished: "2026-02-20",
+    datePublished: "2026-02-02",
     category: "laundry-kitchen",
     readTime: "11 min",
     tags: ["kitchen", "odor control", "quick wins"],
@@ -435,7 +435,7 @@ export const posts: Post[] = [
   {
     title: "15 Bathroom Cleaning Tips for a Hotel-Level Finish",
     slug: "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
-    datePublished: "2026-02-20",
+    datePublished: "2026-02-09",
     category: "deep-clean",
     readTime: "16 min",
     tags: ["bathroom", "deep clean", "weekend"],
@@ -474,7 +474,7 @@ export const posts: Post[] = [
   {
     title: "6 Budget Cleaning Kits You Can Put Together for Under $20",
     slug: "6-budget-cleaning-kits-you-can-build-in-20-minutes",
-    datePublished: "2026-02-20",
+    datePublished: "2026-02-13",
     category: "dollar-store",
     readTime: "9 min",
     tags: ["budget", "quick wins", "routine"],
@@ -513,7 +513,7 @@ export const posts: Post[] = [
   {
     title: "18 Quick Cleaning Tasks You Can Do in 5 Minutes or Less",
     slug: "18-quick-wins-for-busy-mornings",
-    datePublished: "2026-02-20",
+    datePublished: "2026-02-16",
     category: "deep-clean",
     readTime: "12 min",
     tags: ["quick wins", "routine", "kitchen"],
@@ -552,7 +552,7 @@ export const posts: Post[] = [
   {
     title: "The Complete Declutter and Clean Checklist (20 Pairings)",
     slug: "20-declutter-clean-pairing-hacks",
-    datePublished: "2026-02-20",
+    datePublished: "2026-02-18",
     category: "deep-clean",
     readTime: "14 min",
     tags: ["deep clean", "routine", "education"],
@@ -1746,6 +1746,95 @@ export const posts: Post[] = [
       { question: "What removes yellow armpit stains permanently?", answer: "The most effective method is a paste of baking soda, hydrogen peroxide, and dish soap applied with a toothbrush and left for 60 to 90 minutes before washing. For old set-in stains that have been through the dryer, an OxiClean overnight soak followed by the peroxide paste treatment removes most staining." },
       { question: "Will bleach remove yellow armpit stains?", answer: "No. Chlorine bleach reacts with the protein compounds in armpit stains and can actually worsen the discoloration, turning white shirts grey or orange. Use oxygen bleach (OxiClean) instead, which is safe for both whites and colors and effectively breaks down the stain compounds." },
       { question: "How do you prevent armpit stains on shirts?", answer: "Switching to aluminum-free deodorant eliminates the primary cause of yellow staining. If you use antiperspirant, apply it thinly and let it dry before dressing. Wash heavily worn shirts within 24 hours and always check the armpit area before putting shirts in the dryer, since heat permanently sets sweat-based stains." }
+    ]
+  },
+  {
+    title: "How to Deep Clean Your Mattress at Home (What's Living In It Will Surprise You)",
+    slug: "how-to-deep-clean-your-mattress",
+    datePublished: "2026-03-24",
+    category: "deep-clean",
+    readTime: "13 min",
+    tags: ["deep clean", "bedroom", "odor control"],
+    excerpt:
+      "Most people have never deep cleaned their mattress — and most don't know about the dust mites, moisture, and allergens building up inside. Here's a complete 8-step method that removes stains, eliminates odors, and leaves your mattress genuinely fresh.",
+    coverImage: "/graphics/posts/how-to-deep-clean-your-mattress.png",
+    supplies: [
+      "Vacuum with upholstery attachment",
+      "Baking soda (1–2 boxes)",
+      "Enzyme cleaner (like Nature's Miracle)",
+      "Hydrogen peroxide 3%",
+      "Dish soap",
+      "Cold water",
+      "White cloths or microfiber towels",
+      "Spray bottle",
+      "Lavender essential oil (optional)",
+      "Rubber gloves"
+    ],
+    steps: [
+      {
+        title: "Strip everything and wash all bedding first",
+        body: "Before you touch the mattress, pull off every layer — sheets, pillowcases, mattress pad, and duvet cover — and get them into the wash immediately. Use the hottest water setting the fabric label allows. Hot water above 130°F kills dust mites, which live in fabric by the millions and are a leading trigger for nighttime allergies and asthma. While the bedding washes, you have a clear window to work on the mattress itself. This sequencing matters: if you deep clean the mattress and then put back unwashed sheets, you're re-introducing the same dust, oils, and allergens you just removed. The laundry cycle gives you roughly 90 minutes of uninterrupted mattress cleaning time — exactly what you need. Wash pillows separately if they're machine-washable. Down and synthetic fill pillows both handle a gentle cycle well; just add a tennis ball to prevent clumping during the dry cycle."
+      },
+      {
+        title: "Vacuum the entire mattress — top, sides, and seams",
+        body: "Fit your vacuum with the upholstery attachment — not the regular floor head — and work in slow, overlapping rows from the headboard end toward the foot. Go slowly enough that the suction can pull fine particles out of the fabric, not just skim the surface. Most people vacuum in three passes and consider it done. Do at least six overlapping passes in alternating directions for a genuine clean. Then vacuum all four sides of the mattress, which collect dust and skin cells pressed against the bed frame and wall. Run the crevice tool along every seam and button indentation — these are where dead skin and dust accumulate most heavily. Studies from the American Lung Association estimate that a typical mattress can harbor anywhere from 100,000 to 10 million dust mites. Thorough vacuuming doesn't eliminate them entirely, but it removes the shed skin flakes they feed on, which dramatically reduces their population over time. If you have a handheld UV sanitizer wand, make a single slow pass over the surface now."
+      },
+      {
+        title: "Treat urine stains with enzyme cleaner — the only thing that fully works",
+        body: "If you have urine stains — from a child, a pet, or a previous sleeper — this is the step that separates a genuinely clean mattress from one that just looks clean. Standard cleaning products mask urine odor temporarily; they do not break it down. The reason the smell returns is uric acid crystals, which reactivate with humidity and body heat. Only enzyme cleaners contain the biological compounds that break down uric acid at a molecular level. Spray the enzyme cleaner generously over the stain — it needs to penetrate as deep as the urine did, which may be several inches into the foam or springs. Cover the area with a damp cloth and let it dwell for 15 to 30 minutes. Blot (never rub) from the outside of the stain inward, using clean white cloths so you can see the transfer. For old, set-in stains, you may need two full applications. After blotting, sprinkle a thick layer of baking soda over the treated area and let it absorb overnight before vacuuming. Do not skip the dwell time — rushing this step is why the smell comes back."
+      },
+      {
+        title: "Remove blood stains with cold water and hydrogen peroxide",
+        body: "The cardinal rule with blood stains is temperature: always use cold water. Heat — including hot water, a hairdryer, or steam — permanently sets the protein in blood into fabric fibers and makes the stain impossible to remove. Mix one part 3% hydrogen peroxide with two parts cold water in a spray bottle. Spray lightly onto the blood stain and let it bubble for five minutes. The peroxide's oxidizing action breaks up the iron-containing compounds in blood. Blot with a clean white cloth, working from the outer edge inward. For fresh stains, one round is usually enough. For older stains, apply a small amount of dish soap to the treated area, work it gently into the fabric with your fingertip, let it sit for three minutes, then blot clean with cold water. Never oversaturate a mattress with liquid — the goal is targeted spot treatment, not soaking. Excess moisture trapped inside the mattress creates the perfect environment for mold and mildew, which is a problem far worse than the original stain."
+      },
+      {
+        title: "Tackle general yellowing and mystery stains with a baking soda paste",
+        body: "Most mattresses develop a general yellowing over time from body oils, sweat, and humidity — even if you use a mattress pad. This isn't a single stain you can treat in isolation. Mix a paste of baking soda, a small amount of dish soap, and just enough hydrogen peroxide to form a spreadable consistency. Apply it to yellowed areas with a spoon or gloved hand. Let the paste sit for 30 to 45 minutes. The baking soda draws moisture and oils to the surface, the peroxide lifts oxidized staining, and the dish soap cuts through the built-up body oil film. Wipe away the dried paste with a barely damp cloth, then blot dry with a clean dry towel. Don't try to identify every mystery stain — the paste is gentle enough to use across the entire top surface. Always test in a corner first if you have a memory foam or latex mattress, as some specialty foams react differently to peroxide than traditional innerspring mattresses."
+      },
+      {
+        title: "The baking soda deodorizing treatment — what most guides get wrong",
+        body: "Here's where most mattress-cleaning guides fail you: they tell you to sprinkle baking soda, wait 15 to 30 minutes, then vacuum. That's not enough time. For baking soda to meaningfully absorb the sweat, body oil, and humidity locked into mattress fibers, it needs a minimum of four hours — and overnight is genuinely better. The longer dwell time allows the sodium bicarbonate to pull volatile acid compounds out of the foam or springs, which is where persistent odors actually live. Pour one to two full boxes of baking soda in an even layer across the entire top surface. Use your hand or a clean dry brush to gently work it into the tufts and across seams. For a bonus effect, add 10 drops of lavender essential oil to the baking soda in a jar and shake it before sprinkling — the oil disperses an antibacterial compound called linalool as the baking soda sits. Close the bedroom door to keep air movement low while it works. This is the best use of a long Saturday morning: strip the bed, treat stains, apply the baking soda layer, go about your day, and come back in the evening."
+      },
+      {
+        title: "Vacuum thoroughly for the second time",
+        body: "Once the baking soda has sat for its full dwell time, vacuum the entire mattress surface again using the same slow, overlapping technique from Step 2. This second vacuum pass removes the baking soda along with everything it absorbed — moisture, body oils, and odor compounds that have been drawn to the surface by the treatment. Run the upholstery attachment slowly enough to pull the powder out of the fibers completely, not just the loose surface layer. A light layer of white powder visible after vacuuming just means you need another pass. Skipping this step or rushing it means you'll put sheets over residual baking soda, which eventually clumps into a gritty film inside pillowcases. After vacuuming, run your hand across the mattress — it should feel dry, smooth, and slightly cool. If any area feels damp from the earlier stain treatments, let it air-dry for another 20 to 30 minutes before continuing."
+      },
+      {
+        title: "Allow complete drying before remaking the bed",
+        body: "This is the step most people skip — and it's the reason a deep-cleaned mattress sometimes develops a musty smell within two weeks. Moisture trapped inside the mattress from stain treatment, even in small amounts, creates the warm humid environment where mold and mildew grow. After the final vacuum, let the mattress air-dry for at least two to four hours with the windows open and a fan running across the surface if possible. If it's a warm day, prop the mattress on its side near an open window for maximum airflow. Only remake the bed when the surface feels genuinely room-temperature dry — not just dry on top. This patience pays dividends: a fully dried mattress after a proper deep clean can go six months before it needs attention again, especially if you add a quality mattress protector now. A zippered, waterproof mattress protector that allows airflow is the single investment that makes every future cleaning faster and your mattress genuinely last longer."
+      }
+    ],
+    proTips: [
+      "Do this on a warm, low-humidity day — open windows and a fan running across the mattress speeds drying dramatically and prevents the main risk of moisture-related mold.",
+      "Always use cold or cool water on protein-based stains (blood, urine, sweat). Hot or warm water sets these stains permanently into the fibers.",
+      "A quality zippered mattress protector installed after this clean means your next deep clean is mostly just the baking soda treatment — the hard stain work won't need to be repeated."
+    ],
+    safetyNotes: [
+      "Never oversaturate your mattress with liquid. Excess moisture trapped inside foam or coils creates conditions for mold and mildew growth, which can cause respiratory issues and is very difficult to remediate.",
+      "Hydrogen peroxide can lighten or discolor some colored and dark mattress fabrics. Test on a hidden corner and wait five minutes before applying to visible areas.",
+      "Enzyme cleaners contain active biological compounds that may irritate sensitive skin. Wear rubber gloves during application and keep the room ventilated. Keep pets out of the room while enzyme cleaner is actively dwelling."
+    ],
+    faqs: [
+      {
+        question: "How often should you deep clean a mattress?",
+        answer: "Deep clean your mattress every six months as a baseline. If you have allergies, asthma, pets that sleep on the bed, or young children, every three to four months is more appropriate. Using a waterproof mattress protector significantly reduces how often a full deep clean is needed — it intercepts the sweat, oils, and spills before they reach the mattress itself."
+      },
+      {
+        question: "What is the best way to remove urine smell from a mattress?",
+        answer: "Only enzyme cleaners fully eliminate urine odor because they break down uric acid crystals at a molecular level. Standard cleaners and baking soda alone only mask the smell temporarily — the crystals reactivate with heat and humidity and the odor returns. Apply enzyme cleaner generously, let it dwell for 15 to 30 minutes, blot thoroughly, then cover the area with baking soda overnight before vacuuming."
+      },
+      {
+        question: "Can you clean a memory foam mattress the same way?",
+        answer: "Mostly yes, with one key difference: memory foam is extremely sensitive to moisture. Never soak a memory foam mattress and never apply liquid generously across the full surface. Use enzyme cleaner, hydrogen peroxide, and baking soda in targeted spot applications only, applied sparingly. Allow much longer drying time — memory foam dries more slowly than innerspring mattresses. Never use a steam cleaner on memory foam."
+      },
+      {
+        question: "Does baking soda actually kill dust mites?",
+        answer: "No — baking soda does not kill dust mites. It absorbs the moisture, body oils, and organic compounds that dust mites feed on, which reduces their food source and population over time. The only reliable methods for killing dust mites in a mattress are high heat (above 130°F), UV light exposure, and encasement in an allergen-barrier mattress protector. Regular hot washing of all bedding is the most effective dust mite control you can do."
+      },
+      {
+        question: "How do you get blood stains out of a white mattress?",
+        answer: "Use 3% hydrogen peroxide applied directly to the stain and let it bubble for five minutes, then blot with a clean white cloth using cold water. For older stains that have set, add a small amount of dish soap to the peroxide, work it gently into the fabric, wait three minutes, and blot with cold water. Never use hot water or a heated dryer on blood stains — heat permanently bonds the protein compounds in blood to fabric fibers."
+      }
     ]
   }
 ];

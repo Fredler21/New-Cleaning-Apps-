@@ -12,7 +12,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
   description:
-    "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans — no guesswork, no gimmicks.",
+    "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans — no guesswork, no gimmicks.",
   alternates: { canonical: "https://www.trycleaninghacks.com" },
   keywords: [
     "cleaning hacks", "house cleaning tips", "kitchen cleaning hacks",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
     description:
-      "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
+      "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
     url: "https://www.trycleaninghacks.com",
     siteName: "TryCleaningHacks",
     images: [{ url: "/og/og-home.png", width: 1200, height: 630, alt: "TryCleaningHacks" }],
@@ -71,8 +71,15 @@ export default function HomePage() {
     <>
       {/* Hero Slider */}
       <Container>
-        <h1 className="sr-only">TryCleaningHacks — Tested Cleaning Hacks for Every Home</h1>
-        <div className="pt-6 pb-2">
+        <div className="pt-6 pb-1 text-center">
+          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl" style={{ color: "var(--text)" }}>
+            Tested Cleaning Hacks for Every Home
+          </h1>
+          <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+            Real methods. Everyday ingredients. Professional results — no guesswork.
+          </p>
+        </div>
+        <div className="pt-4 pb-2">
           <HeroSlider posts={heroPosts} />
         </div>
       </Container>

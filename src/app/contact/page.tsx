@@ -145,7 +145,7 @@ export default function ContactPage() {
           </h2>
           <div className="grid gap-4">
             {[
-              { q: "How quickly will I hear back?", a: "Most inquiries receive a reply within 24–48 hours on business days. For urgent cleaning emergencies, try searching our 200+ guides — the answer is often already published." },
+              { q: "How quickly will I hear back?", a: "Most inquiries receive a reply within 24–48 hours on business days. For urgent cleaning emergencies, try searching our 40+ guides — the answer is often already published." },
               { q: "Can I submit a guest post or hack?", a: "Absolutely! We welcome reader-submitted hacks. Include the cleaning problem, ingredients used, step-by-step instructions, and a photo if possible. Our editors will test and verify before publishing." },
               { q: "Do you offer sponsored content?", a: "Yes. We work with cleaning brands, home-improvement companies, and eco-friendly product makers on sponsored articles, product features, and social media campaigns. Reach out with your proposal and budget." },
               { q: "I found an error in a guide. How do I report it?", a: "We take accuracy seriously. Use the form above to describe the issue — include the article title and what needs correcting. We\u2019ll review and update the guide promptly." },
