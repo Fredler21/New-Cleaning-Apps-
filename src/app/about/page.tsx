@@ -56,7 +56,7 @@ export default function AboutPage() {
                 vinegar, dish soap, and hydrogen peroxide.
               </p>
               <p className="mt-3">
-                Today the site covers more than 40 in-depth cleaning guides across 11 categories,
+                Today the site covers more than 40 in-depth cleaning guides across 14 categories,
                 with new content added every week. Every guide goes through our testing and
                 editorial review process before it goes live.
               </p>
@@ -258,7 +258,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div>
                   <p className="text-2xl font-bold" style={{ color: "var(--text)" }}>
-                    320+
+                    230+
                   </p>
                   <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
                     Individual cleaning techniques
@@ -274,7 +274,7 @@ export default function AboutPage() {
                 </div>
                 <div className="pt-4" style={{ borderTop: "1px solid var(--border)" }}>
                   <p className="text-2xl font-bold" style={{ color: "var(--text)" }}>
-                    11
+                    14
                   </p>
                   <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
                     Categories covered
