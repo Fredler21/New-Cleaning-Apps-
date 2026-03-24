@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { buildMeta } from "@/components/seo/Meta";
+import { posts } from "@/data/posts";
+import { categories } from "@/data/categories";
 
 export const metadata: Metadata = buildMeta({
   title: "About Us",
@@ -12,6 +14,10 @@ export const metadata: Metadata = buildMeta({
 });
 
 export default function AboutPage() {
+  const totalGuides = posts.length;
+  const totalTechniques = posts.reduce((sum, p) => sum + (p.steps?.length ?? 0), 0);
+  const totalCategories = categories.length;
+
   return (
     <Container>
       <section className="py-12">
@@ -56,7 +62,7 @@ export default function AboutPage() {
                 vinegar, dish soap, and hydrogen peroxide.
               </p>
               <p className="mt-3">
-                Today the site covers more than 40 in-depth cleaning guides across 14 categories,
+                Today the site covers more than {totalGuides} in-depth cleaning guides across {totalCategories} categories,
                 with new content added every week. Every guide goes through our testing and
                 editorial review process before it goes live.
               </p>
@@ -258,7 +264,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div>
                   <p className="text-2xl font-bold" style={{ color: "var(--text)" }}>
-                    230+
+                    {totalTechniques}+
                   </p>
                   <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
                     Individual cleaning techniques
@@ -266,7 +272,7 @@ export default function AboutPage() {
                 </div>
                 <div className="pt-4" style={{ borderTop: "1px solid var(--border)" }}>
                   <p className="text-2xl font-bold" style={{ color: "var(--text)" }}>
-                    40+
+                    {totalGuides}+
                   </p>
                   <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
                     In-depth cleaning guides
@@ -274,7 +280,7 @@ export default function AboutPage() {
                 </div>
                 <div className="pt-4" style={{ borderTop: "1px solid var(--border)" }}>
                   <p className="text-2xl font-bold" style={{ color: "var(--text)" }}>
-                    14
+                    {totalCategories}
                   </p>
                   <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
                     Categories covered
