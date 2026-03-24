@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
     template: "%s | TryCleaningHacks",
   },
-  description: "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
+  description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
   keywords: [
     "cleaning hacks", "house cleaning tips", "cleaning tricks", "DIY cleaning",
     "baking soda cleaning", "vinegar cleaning", "kitchen cleaning", "bathroom cleaning",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
-    description: "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
+    description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
     url: "https://www.trycleaninghacks.com",
     siteName: "TryCleaningHacks",
     images: [{ url: "/og/og-home.png", width: 1200, height: 630, alt: "TryCleaningHacks" }],
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
-    description: "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results in minutes.",
+    description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results in minutes.",
     images: ["/og/og-home.png"],
   },
 };
