@@ -122,7 +122,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "@type": "WebSite",
                 name: "TryCleaningHacks",
                 url: "https://www.trycleaninghacks.com",
-                description: "Discover 200+ tested cleaning hacks using everyday ingredients.",
+                description: "Discover tested cleaning hacks using everyday ingredients.",
                 potentialAction: {
                   "@type": "SearchAction",
                   target: "https://www.trycleaninghacks.com/cleaning-hacks?q={search_term_string}",

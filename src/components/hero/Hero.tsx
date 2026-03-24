@@ -64,13 +64,13 @@ export function Hero() {
             {/* Trust indicators */}
             <div className="mt-10 flex items-center gap-6 border-t border-white/10 pt-6">
               <div className="text-center">
-                <p className="text-xl font-bold text-white">200+</p>
+                <p className="text-xl font-bold text-white">42+</p>
                 <p className="text-xs text-slate-400">Tested Hacks</p>
               </div>
               <div className="h-8 w-px bg-white/10" />
               <div className="text-center">
-                <p className="text-xl font-bold text-white">50K+</p>
-                <p className="text-xs text-slate-400">Monthly Readers</p>
+                <p className="text-xl font-bold text-white">New</p>
+                <p className="text-xs text-slate-400">Weekly Guides</p>
               </div>
               <div className="h-8 w-px bg-white/10" />
               <div className="text-center">

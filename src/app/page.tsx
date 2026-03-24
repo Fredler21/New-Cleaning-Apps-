@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
     description:
-      "Discover 200+ tested cleaning hacks using everyday ingredients. Professional results in minutes.",
+      "Discover tested cleaning hacks using everyday ingredients. Professional results in minutes.",
     images: ["/og/og-home.png"],
   },
 };
