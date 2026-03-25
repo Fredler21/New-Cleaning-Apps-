@@ -133,7 +133,7 @@ export function welcomeEmailHtml(unsubscribeUrl: string): string {
   const body = `
     <h1 style="margin:0 0 16px;font-size:22px;color:#1f2937;">Welcome to ${BRAND}!</h1>
     <p style="margin:0 0 16px;font-size:16px;color:#374151;line-height:1.6;">
-      Thanks for subscribing. We'll send you our best cleaning tips and guides — no spam, just helpful content.
+      Thanks for subscribing. We'll send you our best cleaning tips and guides, no spam, just helpful content.
     </p>
     <p style="margin:0 0 24px;font-size:16px;color:#374151;line-height:1.6;">
       In the meantime, check out our latest guides:
@@ -156,7 +156,7 @@ export function welcomeEmailText(unsubscribeUrl: string): string {
   return [
     `Welcome to ${BRAND}!`,
     "",
-    "Thanks for subscribing. We'll send you our best cleaning tips and guides — no spam, just helpful content.",
+    "Thanks for subscribing. We'll send you our best cleaning tips and guides, no spam, just helpful content.",
     "",
     `Browse our guides: ${SITE_URL}/cleaning-hacks`,
     "",

@@ -36,7 +36,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="mt-3" style={{ color: "var(--text-secondary)" }}>
-            Last updated: February 23, 2026 — Your privacy matters to us. Read below to understand
+            Last updated: February 23, 2026. Your privacy matters to us. Read below to understand
             exactly how TryCleaningHacks handles your data.
           </p>
         </div>
@@ -74,20 +74,20 @@ export default function PrivacyPage() {
           {/* 3 */}
           <Section title="3. Cookies & Tracking Technologies">
             <p>
-              TryCleaningHacks uses cookies — small text files stored on your device — to enhance your
+              TryCleaningHacks uses cookies, small text files stored on your device, to enhance your
               browsing experience. We use:
             </p>
             <ul className="ml-4 mt-2 list-disc space-y-1">
               <li>
-                <strong>Essential cookies</strong> — required for basic site functionality (e.g.,
+                <strong>Essential cookies</strong>, required for basic site functionality (e.g.,
                 theme preference).
               </li>
               <li>
-                <strong>Analytics cookies</strong> — provided by Google Analytics to help us
+                <strong>Analytics cookies</strong>, provided by Google Analytics to help us
                 understand traffic patterns and popular content.
               </li>
               <li>
-                <strong>Advertising cookies</strong> — used by Google AdSense and its partners to
+                <strong>Advertising cookies</strong>, used by Google AdSense and its partners to
                 serve ads that may be relevant to your interests.
               </li>
             </ul>

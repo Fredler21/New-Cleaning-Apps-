@@ -39,7 +39,7 @@ export default function EditorialPolicyPage() {
             Editorial Policy
           </h1>
           <p className="mt-3" style={{ color: "var(--text-secondary)" }}>
-            Last updated: March 2026 — How TryCleaningHacks creates, reviews, and maintains its
+            Last updated: March 2026. How TryCleaningHacks creates, reviews, and maintains its
             cleaning guides.
           </p>
         </div>
@@ -56,14 +56,14 @@ export default function EditorialPolicyPage() {
             <p>
               TryCleaningHacks publishes cleaning guides that are practical, safe, and verified
               before publication. We do not publish a method we have not personally tested or
-              thoroughly researched. Our goal is to give homeowners accurate, actionable advice
-              — not to aggregate tips from other websites or restate advice that hasn&apos;t been
+              thoroughly researched. Our goal is to give homeowners accurate, actionable advice,
+              not to aggregate tips from other websites or restate advice that hasn&apos;t been
               verified to actually work.
             </p>
             <p className="mt-3">
               We also believe in being direct about failure. If a cleaning hack is ineffective,
               potentially damaging to certain surfaces, or unsafe when combined with other
-              household products, we say so — even when that means going against popular advice.
+              household products, we say so, even when that means going against popular advice.
             </p>
           </Section>
 
@@ -75,17 +75,17 @@ export default function EditorialPolicyPage() {
             </p>
             <ul className="ml-4 mt-3 list-disc space-y-2">
               <li>
-                <strong>Sarah Mitchell (Founder &amp; Lead Writer)</strong> — Former professional
+                <strong>Sarah Mitchell (Founder &amp; Lead Writer)</strong>, former professional
                 house cleaner with 9 years of experience cleaning residential and commercial
                 properties. Sarah personally tests cleaning methods before writing them up.
               </li>
               <li>
-                <strong>James Park (Contributing Writer)</strong> — Home improvement writer
+                <strong>James Park (Contributing Writer)</strong>, home improvement writer
                 specializing in DIY household maintenance and product research. James conducts
                 comparative testing and writes evidence-based deep-dive guides.
               </li>
               <li>
-                <strong>Olivia Torres (Safety &amp; Editorial Reviewer)</strong> — Reviews all
+                <strong>Olivia Torres (Safety &amp; Editorial Reviewer)</strong>, reviews all
                 chemical compatibility information, ventilation requirements, and surface warnings.
                 Olivia&apos;s background is in occupational health and consumer product safety.
               </li>
@@ -103,33 +103,33 @@ export default function EditorialPolicyPage() {
             </p>
             <ol className="ml-4 mt-3 list-decimal space-y-3">
               <li>
-                <strong>Problem identification</strong> — We identify a specific cleaning
+                <strong>Problem identification</strong>, we identify a specific cleaning
                 challenge that homeowners commonly face, including what existing online advice gets
                 wrong or leaves out.
               </li>
               <li>
-                <strong>Method research</strong> — We research the underlying chemistry or
+                <strong>Method research</strong>, we research the underlying chemistry or
                 mechanism of action for each proposed solution, so we understand why something
                 should or shouldn&apos;t work before testing it.
               </li>
               <li>
-                <strong>Hands-on testing</strong> — Each method is physically tested on the
+                <strong>Hands-on testing</strong>, each method is physically tested on the
                 relevant surface type. We note what works, what doesn&apos;t, how long each step
                 takes, and what mistakes are easy to make.
               </li>
               <li>
-                <strong>Surface compatibility checks</strong> — We test methods on multiple
+                <strong>Surface compatibility checks</strong>, we test methods on multiple
                 surface types (e.g., ceramic, porcelain, stainless steel, natural stone, sealed
                 wood) and clearly document which surfaces are safe and which are not.
               </li>
               <li>
-                <strong>Safety review</strong> — Olivia reviews chemical interactions, maximum
+                <strong>Safety review</strong>, Olivia reviews chemical interactions, maximum
                 concentrations, ventilation requirements, and any risk of damage to surfaces or
                 harm to people or pets. Safety notes are written with specific guidance, not
                 just generic caution language.
               </li>
               <li>
-                <strong>Final editorial review</strong> — A second team member reads the guide
+                <strong>Final editorial review</strong>, a second team member reads the guide
                 for clarity, accuracy, and completeness before it is published.
               </li>
             </ol>
@@ -138,7 +138,7 @@ export default function EditorialPolicyPage() {
           <Section title="How We Handle Product Recommendations">
             <p>
               TryCleaningHacks primarily teaches cleaning methods using everyday household
-              ingredients — white vinegar, baking soda, dish soap, hydrogen peroxide, and similar
+              ingredients, white vinegar, baking soda, dish soap, hydrogen peroxide, and similar
               pantry staples. When we mention specific commercial products, we do so because we
               have found them genuinely useful for the described task, not as commercial promotion.
             </p>

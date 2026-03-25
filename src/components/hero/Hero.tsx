@@ -39,7 +39,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-5 max-w-lg text-base leading-relaxed text-slate-300 sm:text-lg">
-              Tested cleaning hacks using everyday ingredients — no guesswork, no gimmicks. Professional results in minutes.
+              Tested cleaning hacks using everyday ingredients, no guesswork, no gimmicks. Professional results in minutes.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">

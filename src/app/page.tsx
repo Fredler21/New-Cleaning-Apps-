@@ -10,9 +10,9 @@ import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+  title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
   description:
-    "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans — no guesswork, no gimmicks.",
+    "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans, no guesswork, no gimmicks.",
   alternates: { canonical: "https://www.trycleaninghacks.com" },
   keywords: [
     "cleaning hacks", "house cleaning tips", "kitchen cleaning hacks",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "laundry hacks", "deep clean tips", "natural cleaning", "DIY cleaning",
   ],
   openGraph: {
-    title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+    title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
     description:
       "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
     url: "https://www.trycleaninghacks.com",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+    title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
     description:
       "Discover tested cleaning hacks using everyday ingredients. Professional results in minutes.",
     images: ["/og/og-home.png"],
@@ -76,7 +76,7 @@ export default function HomePage() {
             Tested Cleaning Hacks for Every Home
           </h1>
           <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-            Real methods. Everyday ingredients. Professional results — no guesswork.
+            Real methods. Everyday ingredients. Professional results, no guesswork.
           </p>
         </div>
         <div className="pt-4 pb-2">
@@ -210,7 +210,7 @@ export default function HomePage() {
               <span className="flex h-8 w-8 items-center justify-center rounded-lg text-base" style={{ background: "var(--accent-light)" }}>⚡</span>
               Quick Wins
             </h2>
-            <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>2–5 minute hacks for instant results.</p>
+            <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>2 to 5 minute hacks for instant results.</p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {quickWinPosts.map((post) => (

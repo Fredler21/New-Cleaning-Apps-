@@ -146,7 +146,7 @@ function SubscribeModal({
     <Modal open={open} title="Subscribe to Save Hacks" onClose={onClose}>
       <p className="mb-4 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
         Enter your email to unlock saving. You&rsquo;ll also get our free weekly cleaning
-        tips — unsubscribe anytime.
+        tips, unsubscribe anytime.
       </p>
 
       <form onSubmit={onSubmit} className="space-y-3">

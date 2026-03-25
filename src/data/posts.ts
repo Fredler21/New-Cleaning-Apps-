@@ -1787,7 +1787,7 @@ export const posts: Post[] = [
     coverImage: "/graphics/posts/how-to-deep-clean-your-mattress.png",
     supplies: [
       "Vacuum with upholstery attachment",
-      "Baking soda (1–2 boxes)",
+      "Baking soda (1 to 2 boxes)",
       "Enzyme cleaner (like Nature's Miracle)",
       "Hydrogen peroxide 3%",
       "Dish soap",
@@ -1888,7 +1888,7 @@ export const posts: Post[] = [
       "Vacuum with hard floor setting (beater bar disabled)",
       "Dedicated hardwood floor cleaner (Bona or similar pH-neutral formula)",
       "Clean empty spray bottle",
-      "Dry microfiber mop pads (2–3)",
+      "Dry microfiber mop pads (2 to 3)",
       "Soft-bristle broom",
       "Felt furniture leg pads",
       "Clean white microfiber cloths"
@@ -1941,7 +1941,7 @@ export const posts: Post[] = [
     ],
     proTips: [
       "Schedule hardwood floor mopping for evenings or early morning the 5-minute no-foot-traffic drying window is easiest to guarantee then.",
-      "In winter, use a humidifier to maintain 35–55% relative humidity. Dry air causes hardwood planks to contract and develop visible gaps between boards.",
+      "In winter, use a humidifier to maintain 35 to 55% relative humidity. Dry air causes hardwood planks to contract and develop visible gaps between boards.",
       "Never use wax on floors with a polyurethane finish it creates a slippery buildup that clouds the finish permanently and is very difficult to remove."
     ],
     safetyNotes: [
@@ -1951,7 +1951,7 @@ export const posts: Post[] = [
     faqs: [
       {
         question: "How often should you clean hardwood floors?",
-        answer: "Dry dusting or vacuuming should happen 1–2 times per week in high-traffic homes, weekly in low-traffic spaces. Damp mopping is appropriate every 1–2 weeks depending on foot traffic. Quarterly deep cleaning handles the film buildup that weekly mopping doesn't address. Over-cleaning with wet methods causes more long-term damage than under-cleaning."
+        answer: "Dry dusting or vacuuming should happen 1 to 2 times per week in high-traffic homes, weekly in low-traffic spaces. Damp mopping is appropriate every 1 to 2 weeks depending on foot traffic. Quarterly deep cleaning handles the film buildup that weekly mopping doesn't address. Over-cleaning with wet methods causes more long-term damage than under-cleaning."
       },
       {
         question: "Can I use Swiffer WetJet on hardwood floors?",
@@ -2009,7 +2009,7 @@ export const posts: Post[] = [
       },
       {
         title: "Method 4: Baking soda + salt + dish soap scrub (safest for delicate fabrics)",
-        body: "This is the recommended method for delicate fabrics or shirts where you can't use hydrogen peroxide or OxiClean. The combination of baking soda and salt provides gentle physical abrasion, while dish soap cuts through the greasy component of sweat and deodorant buildup. Mix 2 tablespoons of baking soda, 1 tablespoon of table salt, and 1 tablespoon of dish soap with just enough water to form a thick, spreadable paste. Apply to the stain and spread evenly. Use a soft brush to massage the paste into the fabric with light circular strokes for 3–5 minutes this is the active scrubbing phase, not just application. Let the paste sit on the fabric for 20 to 30 minutes. Rinse with cold water, checking whether the stain has lifted. For mild and recent stains, this usually removes the yellow completely. For moderate stains, a second application with a slightly longer dwell time is often needed. This method is color-safe and works on most fabrics including linen, modal, and cotton blends, making it a reliable fallback when stronger oxidizing agents aren't appropriate. For stains that have partially responded to this method but not fully cleared, apply a fresh paste and hold the fabric in direct sunlight for the 20-30 minute dwell time. UV light activates the baking soda reaction similarly to how it boosts hydrogen peroxide, and the combination produces noticeably better results on resistant stains than indoor application alone."
+        body: "This is the recommended method for delicate fabrics or shirts where you can't use hydrogen peroxide or OxiClean. The combination of baking soda and salt provides gentle physical abrasion, while dish soap cuts through the greasy component of sweat and deodorant buildup. Mix 2 tablespoons of baking soda, 1 tablespoon of table salt, and 1 tablespoon of dish soap with just enough water to form a thick, spreadable paste. Apply to the stain and spread evenly. Use a soft brush to massage the paste into the fabric with light circular strokes for 3 to 5 minutes this is the active scrubbing phase, not just application. Let the paste sit on the fabric for 20 to 30 minutes. Rinse with cold water, checking whether the stain has lifted. For mild and recent stains, this usually removes the yellow completely. For moderate stains, a second application with a slightly longer dwell time is often needed. This method is color-safe and works on most fabrics including linen, modal, and cotton blends, making it a reliable fallback when stronger oxidizing agents aren't appropriate. For stains that have partially responded to this method but not fully cleared, apply a fresh paste and hold the fabric in direct sunlight for the 20-30 minute dwell time. UV light activates the baking soda reaction similarly to how it boosts hydrogen peroxide, and the combination produces noticeably better results on resistant stains than indoor application alone."
       },
       {
         title: "Method 5: Aspirin + cream of tartar paste (for stubborn set-in stains on white shirts only)",
@@ -2045,7 +2045,7 @@ export const posts: Post[] = [
       },
       {
         question: "Will OxiClean remove old yellow armpit stains that have been through the dryer?",
-        answer: "OxiClean can still remove heat-set stains in many cases, but it requires a significantly longer soak 6 hours to overnight rather than 1–2 hours. The key is using the warmest water the fabric can handle and allowing full dwell time without disturbing the soak. For very heavy heat-set staining, two consecutive overnight soaks often work when a single soak doesn't."
+        answer: "OxiClean can still remove heat-set stains in many cases, but it requires a significantly longer soak 6 hours to overnight rather than 1 to 2 hours. The key is using the warmest water the fabric can handle and allowing full dwell time without disturbing the soak. For very heavy heat-set staining, two consecutive overnight soaks often work when a single soak doesn't."
       },
       {
         question: "Are these methods safe for synthetic fabrics like nylon and polyester?",
@@ -2053,7 +2053,7 @@ export const posts: Post[] = [
       },
       {
         question: "How do I prevent yellow armpit stains from forming in the first place?",
-        answer: "Use an aluminum-free deodorant rather than an antiperspirant. Allow deodorant to fully dry before dressing (2–3 minutes). Wear an undershirt as a barrier. Launder shirts after each wear. Wash with cold water and air dry dryer heat is the biggest factor in stain permanence. These steps together essentially eliminate recurring yellowing."
+        answer: "Use an aluminum-free deodorant rather than an antiperspirant. Allow deodorant to fully dry before dressing (2 to 3 minutes). Wear an undershirt as a barrier. Launder shirts after each wear. Wash with cold water and air dry dryer heat is the biggest factor in stain permanence. These steps together essentially eliminate recurring yellowing."
       }
     ]
   },

@@ -8,7 +8,7 @@ import { categories } from "@/data/categories";
 export const metadata: Metadata = buildMeta({
   title: "About Us",
   description:
-    "Meet the team behind TryCleaningHacks — real people with hands-on cleaning experience. Learn about our testing process, editorial standards, and mission to make home cleaning simpler.",
+    "Meet the team behind TryCleaningHacks, real people with hands-on cleaning experience. Learn about our testing process, editorial standards, and mission to make home cleaning simpler.",
   path: "/about",
   keywords: ["about TryCleaningHacks", "cleaning experts", "who writes TryCleaningHacks", "editorial team"],
 });
@@ -50,13 +50,13 @@ export default function AboutPage() {
                 TryCleaningHacks was founded by Sarah Mitchell in 2025 after nearly a decade
                 working as a professional house cleaner in the greater Chicago area. During those
                 years Sarah cleaned hundreds of homes and discovered that most cleaning advice
-                online was either vague, product-heavy, or just plain wrong — the kind of tips
+                online was either vague, product-heavy, or just plain wrong, the kind of tips
                 that sounded clever but didn&apos;t hold up when she actually tried them on stubborn
                 grease, soap scum, or set-in stains.
               </p>
               <p className="mt-3">
-                She started writing down what actually worked — specific methods, exact
-                proportions, surface-by-surface notes — and began sharing them with clients. The
+                She started writing down what actually worked, specific methods, exact
+                proportions, surface-by-surface notes, and began sharing them with clients. The
                 response was overwhelming. That notebook became TryCleaningHacks: a library of
                 genuinely tested guides built around everyday ingredients like baking soda, white
                 vinegar, dish soap, and hydrogen peroxide.
@@ -88,12 +88,12 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <p className="font-semibold" style={{ color: "var(--text)" }}>
-                      Sarah Mitchell — Founder &amp; Lead Writer
+                      Sarah Mitchell, Founder &amp; Lead Writer
                     </p>
                     <p className="mt-1 text-sm leading-relaxed">
                       Sarah spent 9 years as a professional house cleaner before founding
                       TryCleaningHacks. She has personally tested every method published on the
-                      site — from removing hard water stains from chrome to deep-cleaning oven
+                      site, from removing hard water stains from chrome to deep-cleaning oven
                       racks without commercial fumes. She focuses on what works in real homes,
                       not laboratory conditions.
                     </p>
@@ -110,7 +110,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <p className="font-semibold" style={{ color: "var(--text)" }}>
-                      James Park — Contributing Writer
+                      James Park, Contributing Writer
                     </p>
                     <p className="mt-1 text-sm leading-relaxed">
                       James is a home improvement writer with six years of experience covering
@@ -131,13 +131,13 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <p className="font-semibold" style={{ color: "var(--text)" }}>
-                      Olivia Torres — Safety &amp; Editorial Reviewer
+                      Olivia Torres, Safety &amp; Editorial Reviewer
                     </p>
                     <p className="mt-1 text-sm leading-relaxed">
                       Olivia reviews every guide for chemical safety, ingredient compatibility,
                       and surface suitability before it is published. Her background is in
                       occupational health and consumer product safety, and she ensures that every
-                      safety note on the site is specific, accurate, and genuinely useful —
+                      safety note on the site is specific, accurate, and genuinely useful,
                       not just boilerplate disclaimer language.
                     </p>
                   </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p>
-                We believe everyone deserves a clean, comfortable home — regardless of budget,
+                We believe everyone deserves a clean, comfortable home, regardless of budget,
                 experience, or how busy life gets. Our mission is to publish cleaning advice that
                 is practical, safety-conscious, and grounded in real testing. We do not publish
                 a method unless we have personally verified it works and is safe to use.
@@ -162,7 +162,7 @@ export default function AboutPage() {
               <p className="mt-3">
                 We also commit to being honest when something doesn&apos;t work. If a popular
                 hack is ineffective or potentially dangerous on certain surfaces, we say so
-                clearly — even if it means going against widely shared advice.
+                clearly, even if it means going against widely shared advice.
               </p>
             </div>
 
@@ -177,26 +177,26 @@ export default function AboutPage() {
               <p>Every guide on TryCleaningHacks goes through the following process:</p>
               <ol className="ml-4 mt-3 list-decimal space-y-2">
                 <li>
-                  <strong>Topic selection</strong> — We identify real cleaning problems that
+                  <strong>Topic selection</strong>, we identify real cleaning problems that
                   homeowners search for the most, focusing on questions where existing answers
                   online are incomplete or misleading.
                 </li>
                 <li>
-                  <strong>Hands-on testing</strong> — Each method is physically tested on the
+                  <strong>Hands-on testing</strong>, each method is physically tested on the
                   relevant surface type before being written up. We note what works, what
                   doesn&apos;t, and under what conditions.
                 </li>
                 <li>
-                  <strong>Safety review</strong> — Olivia reviews all chemical interactions,
+                  <strong>Safety review</strong>, Olivia reviews all chemical interactions,
                   ventilation requirements, and surface compatibility warnings before publication.
                 </li>
                 <li>
-                  <strong>Step-by-step writing</strong> — We write guides with exact quantities,
+                  <strong>Step-by-step writing</strong>, we write guides with exact quantities,
                   dwell times, and tool specifications so the instructions can actually be followed
                   without guessing.
                 </li>
                 <li>
-                  <strong>Ongoing updates</strong> — If a method is found to cause problems
+                  <strong>Ongoing updates</strong>, if a method is found to cause problems
                   on specific surface types or with certain product formulations, we update
                   the guide promptly.
                 </li>
@@ -220,7 +220,7 @@ export default function AboutPage() {
               <p>
                 Whether you&apos;re a busy parent looking for 5-minute quick wins, a first-time
                 renter tackling move-out cleaning, someone dealing with a stubborn stain, or a
-                homeowner who wants a reliable deep-clean routine — TryCleaningHacks is written
+                homeowner who wants a reliable deep-clean routine, TryCleaningHacks is written
                 for you. All content is free, clearly organized, and works equally well on phone
                 and desktop.
               </p>
@@ -244,7 +244,7 @@ export default function AboutPage() {
                 <a href="mailto:support@trycleaninghacks.com" className="underline" style={{ color: "var(--accent)" }}>
                   support@trycleaninghacks.com
                 </a>
-                . We typically respond within 24–48 hours.
+                . We typically respond within 24 to 48 hours.
               </p>
             </div>
           </div>
@@ -291,7 +291,7 @@ export default function AboutPage() {
                     Free
                   </p>
                   <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-                    Always — no paywalls ever
+                    Always, no paywalls ever
                   </p>
                 </div>
               </div>

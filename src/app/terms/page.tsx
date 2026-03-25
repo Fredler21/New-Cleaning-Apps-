@@ -5,7 +5,7 @@ import { buildMeta } from "@/components/seo/Meta";
 export const metadata: Metadata = buildMeta({
   title: "Terms of Service",
   description:
-    "Review the Terms of Service for TryCleaningHacks — covering site usage, intellectual property, disclaimers, and user responsibilities.",
+    "Review the Terms of Service for TryCleaningHacks, covering site usage, intellectual property, disclaimers, and user responsibilities.",
   path: "/terms",
   keywords: ["TryCleaningHacks terms", "terms of service", "site usage policy"],
 });
@@ -35,7 +35,7 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p className="mt-3" style={{ color: "var(--text-secondary)" }}>
-            Last updated: February 23, 2026 — Please read these terms carefully before using
+            Last updated: February 23, 2026. Please read these terms carefully before using
             TryCleaningHacks.
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function TermsPage() {
           {/* 3 */}
           <Section title="3. Intellectual Property">
             <p>
-              All content on the Site — including text, graphics, logos, images, and software — is
+              All content on the Site, including text, graphics, logos, images, and software, is
               the property of TryCleaningHacks or its content suppliers and is protected by
               applicable copyright and intellectual property laws. You may not reproduce,
               distribute, modify, or create derivative works from any content without prior written
@@ -122,7 +122,7 @@ export default function TermsPage() {
               by Google AdSense and other advertising partners. TryCleaningHacks is not responsible
               for the content, accuracy, or practices of any third-party sites. Clicking on
               advertisements or external links is at your own risk. Our advertising partners may
-              use cookies to serve personalized ads — see our{" "}
+              use cookies to serve personalized ads, see our{" "}
               <a
                 href="/privacy"
                 className="underline"

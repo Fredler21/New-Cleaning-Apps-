@@ -16,7 +16,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.trycleaninghacks.com"),
   title: {
-    default: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+    default: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
     template: "%s | TryCleaningHacks",
   },
   description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+    title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
     description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
     url: "https://www.trycleaninghacks.com",
     siteName: "TryCleaningHacks",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TryCleaningHacks — Tested Cleaning Hacks for Every Home",
+    title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
     description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results in minutes.",
     images: ["/og/og-home.png"],
   },

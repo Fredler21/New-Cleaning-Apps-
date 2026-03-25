@@ -4,7 +4,7 @@ import { buildMeta } from "@/components/seo/Meta";
 export const metadata: Metadata = buildMeta({
   title: "All Cleaning Hacks",
   description:
-    "Browse all tested cleaning hacks — search by room, ingredient, or technique. Quick wins, deep cleans, and budget-friendly solutions for every home.",
+    "Browse all tested cleaning hacks, search by room, ingredient, or technique. Quick wins, deep cleans, and budget-friendly solutions for every home.",
   path: "/cleaning-hacks",
   keywords: ["all cleaning hacks", "cleaning guide", "home cleaning tips", "search cleaning hacks"],
 });
