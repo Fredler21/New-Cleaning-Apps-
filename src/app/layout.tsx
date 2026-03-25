@@ -34,9 +34,10 @@ export const metadata: Metadata = {
       "p:domain_verify": ["5e82ddb381fd726eb5ed1e3d6caaaff7"],
     },
   },
-  alternates: {
-    canonical: "https://www.trycleaninghacks.com",
-  },
+  // NOTE: Do NOT set alternates.canonical here. A global canonical on the
+  // root layout would incorrectly default every page to the homepage URL.
+  // Each page (or its layout) sets its own canonical via buildMeta() or
+  // an explicit alternates.canonical in that page's metadata export.
   robots: {
     index: true,
     follow: true,
