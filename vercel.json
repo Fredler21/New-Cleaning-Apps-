@@ -4,13 +4,5 @@
       "path": "/api/cron/notify-new-posts",
       "schedule": "0 8 * * *"
     }
-  ],
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "trycleaninghacks.com" }],
-      "destination": "https://www.trycleaninghacks.com/$1",
-      "permanent": true
-    }
   ]
 }
