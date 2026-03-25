@@ -300,4 +300,52 @@ export const internalLinks: Record<string, string[]> = {
     "8-incredible-vinegar-hacks",
     "how-to-clean-stainless-steel-appliances-without-streaks",
   ],
+
+  /* ─── Mattress Deep Clean ─── */
+  "how-to-deep-clean-your-mattress": [
+    "16-hydrogen-peroxide-cleaning-hacks",
+    "14-ways-to-use-baking-soda-in-your-house",
+    "how-to-remove-pet-stains-and-odors-from-carpet",
+    "7-game-changing-ultra-cleaning-hacks",
+  ],
+
+  /* ─── Hardwood Floors ─── */
+  "how-to-clean-hardwood-floors": [
+    "8-incredible-vinegar-hacks",
+    "how-to-remove-pet-stains-and-odors-from-carpet",
+    "10-fascinating-vacuum-hacks-you-need-to-know",
+    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+  ],
+
+  /* ─── Armpit Stains ─── */
+  "how-to-remove-yellow-armpit-stains-from-shirts": [
+    "how-to-whiten-yellow-pillows-washing-machine",
+    "9-laundry-room-cleaning-hacks-that-actually-save-time",
+    "16-hydrogen-peroxide-cleaning-hacks",
+    "14-ways-to-use-baking-soda-in-your-house",
+  ],
+
+  /* ─── Best Paint Colors (dust) ─── */
+  "best-paint-colors-to-hide-dust": [
+    "best-floor-colors-to-hide-dust-and-dirt",
+    "best-cabinet-colors-to-hide-fingerprints-and-dust",
+    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+    "18-quick-wins-for-busy-mornings",
+  ],
+
+  /* ─── Best Floor Colors (dust) ─── */
+  "best-floor-colors-to-hide-dust-and-dirt": [
+    "best-paint-colors-to-hide-dust",
+    "best-cabinet-colors-to-hide-fingerprints-and-dust",
+    "how-to-clean-hardwood-floors",
+    "10-fascinating-vacuum-hacks-you-need-to-know",
+  ],
+
+  /* ─── Best Cabinet Colors (fingerprints) ─── */
+  "best-cabinet-colors-to-hide-fingerprints-and-dust": [
+    "best-paint-colors-to-hide-dust",
+    "best-floor-colors-to-hide-dust-and-dirt",
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+    "how-to-clean-stainless-steel-appliances-without-streaks",
+  ],
 };
