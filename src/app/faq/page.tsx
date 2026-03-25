@@ -53,6 +53,36 @@ const faqs = [
     answer:
       "Open windows regularly for ventilation. Simmer a pot of water with citrus peels, cinnamon sticks, and cloves for a natural fragrance. Sprinkle baking soda on carpets before vacuuming to absorb odours. Place bowls of activated charcoal or coffee grounds in musty areas to neutralise smells.",
   },
+  {
+    question: "Can I mix vinegar and baking soda for cleaning?",
+    answer:
+      "Technically yes, but it's not the most effective approach. When vinegar and baking soda combine, they neutralise each other, producing mostly water and carbon dioxide. The fizzing action can help loosen light grime, but you lose the individual cleaning power of both ingredients. For best results, use them separately — baking soda as a scrubbing paste and vinegar as a rinse or spray.",
+  },
+  {
+    question: "Is hydrogen peroxide safe to use as a household disinfectant?",
+    answer:
+      "Yes, 3% hydrogen peroxide (the standard concentration sold in pharmacies) is safe and effective for disinfecting surfaces, killing mould, and whitening grout. Spray it directly onto surfaces, leave for 5–10 minutes, then wipe clean. Avoid mixing it with vinegar, as the combination creates peracetic acid which can irritate skin and lungs. Store hydrogen peroxide in a dark container as light degrades it quickly.",
+  },
+  {
+    question: "What can I use WD-40 for around the house?",
+    answer:
+      "WD-40 has dozens of household uses beyond lubricating hinges. It removes sticky adhesive residue, crayon marks from walls, scuff marks from floors, and water stains from stainless steel. It also prevents rust on tools and loosens stuck zips. Apply a small amount with a cloth, let it sit briefly, then wipe away. Always test on an inconspicuous area first, especially on painted or finished surfaces.",
+  },
+  {
+    question: "Can Listerine be used for cleaning around the home?",
+    answer:
+      "Yes — Listerine's active ingredients (thymol, eucalyptol, and alcohol) make it a surprisingly effective cleaning agent. It can deodorise bins and washing machines, kill mould on surfaces, clean toilet bowls, and even freshen carpets when diluted with water. Use the original amber formula for best results, as it has the highest concentration of active ingredients. Avoid using it on marble or natural stone as the acidity can cause etching.",
+  },
+  {
+    question: "How do I get rid of ants and common household pests naturally?",
+    answer:
+      "For ants, wipe down surfaces with white vinegar to erase their scent trails, and sprinkle food-grade diatomaceous earth along entry points. Cinnamon, peppermint oil, and coffee grounds also deter ants naturally. For cockroaches, a mix of baking soda and sugar placed in shallow dishes works as a natural bait. Keep surfaces dry and seal food in airtight containers to remove attractants. For fruit flies, place a small bowl of apple cider vinegar covered with cling film with a few holes poked in it — they fly in but cannot escape.",
+  },
+  {
+    question: "What is the best way to whiten laundry without bleach?",
+    answer:
+      "Oxygen-based washing powder (such as sodium percarbonate) is the most effective bleach-free whitener — add half a cup to your wash along with your regular detergent. White vinegar added to the fabric softener compartment brightens whites and removes detergent residue. For stubborn yellowing, soak items overnight in a solution of hot water and oxygen powder before washing. Drying whites in direct sunlight also has a natural bleaching effect.",
+  },
 ];
 
 export default function FAQPage() {
