@@ -276,4 +276,28 @@ export const internalLinks: Record<string, string[]> = {
     "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
     "how-to-remove-mold-from-bathroom-caulk",
   ],
+
+  /* ─── Borax Cleaning ─── */
+  "10-borax-cleaning-hacks-that-actually-work": [
+    "how-to-clean-grout-without-scrubbing",
+    "16-hydrogen-peroxide-cleaning-hacks",
+    "14-ways-to-use-baking-soda-in-your-house",
+    "7-game-changing-ultra-cleaning-hacks",
+  ],
+
+  /* ─── Whiten Yellow Pillows ─── */
+  "how-to-whiten-yellow-pillows-washing-machine": [
+    "9-laundry-room-cleaning-hacks-that-actually-save-time",
+    "how-to-remove-yellow-armpit-stains-from-shirts",
+    "14-ways-to-use-baking-soda-in-your-house",
+    "8-incredible-vinegar-hacks",
+  ],
+
+  /* ─── Glass Stovetop ─── */
+  "how-to-clean-a-glass-stovetop-without-scratching": [
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+    "12-oven-cleaning-hacks-baked-on-grease",
+    "8-incredible-vinegar-hacks",
+    "how-to-clean-stainless-steel-appliances-without-streaks",
+  ],
 };
