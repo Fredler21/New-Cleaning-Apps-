@@ -24,7 +24,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
         <p className="mt-2 line-clamp-2 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>{category.description}</p>
 
         <Link
-          href={`/posts?category=${category.slug}`}
+          href={`/cleaning-hacks?category=${category.slug}`}
           className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-teal-600 transition-all duration-200 hover:text-teal-700"
         >
           Explore

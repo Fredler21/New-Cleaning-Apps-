@@ -126,7 +126,7 @@ export default function HomePage() {
             {categories.map((cat) => (
               <Link
                 key={cat.id}
-                href={`/categories?filter=${cat.slug}`}
+                href={`/cleaning-hacks?category=${cat.slug}`}
                 className="group relative flex-shrink-0 w-[180px] overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
                 style={{ boxShadow: "var(--card-shadow)" }}
               >
