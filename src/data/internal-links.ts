@@ -356,4 +356,20 @@ export const internalLinks: Record<string, string[]> = {
     "10-genius-ways-to-make-your-house-smell-great",
     "10-kitchen-sink-detox-hacks-for-odor-free-results",
   ],
+
+  /* ─── Dishwasher ─── */
+  "how-to-clean-a-dishwasher": [
+    "how-to-clean-an-air-fryer",
+    "12-microwave-cleaning-hacks-for-a-sparkling-kitchen",
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+    "8-incredible-vinegar-hacks",
+  ],
+
+  /* ─── Air Fryer ─── */
+  "how-to-clean-an-air-fryer": [
+    "how-to-clean-a-dishwasher",
+    "12-microwave-cleaning-hacks-for-a-sparkling-kitchen",
+    "how-to-clean-an-oven-without-harsh-chemicals",
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+  ],
 };
