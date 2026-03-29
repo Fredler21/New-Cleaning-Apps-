@@ -2,11 +2,17 @@ import type { Metadata } from "next";
 import { buildMeta } from "@/components/seo/Meta";
 
 export const metadata: Metadata = buildMeta({
-  title: "All Cleaning Hacks",
+  title: "Browse All 40+ Cleaning Hacks — Filter by Room, Ingredient & Technique",
   description:
-    "Browse all tested cleaning hacks, search by room, ingredient, or technique. Quick wins, deep cleans, and budget-friendly solutions for every home.",
+    "Search and filter our full library of 40+ tried-and-tested cleaning hacks. Sort by room (kitchen, bathroom, laundry), ingredient (vinegar, baking soda, Dawn), or effort level. Every hack includes step-by-step instructions, ingredient lists, and safety notes.",
   path: "/cleaning-hacks",
-  keywords: ["all cleaning hacks", "cleaning guide", "home cleaning tips", "search cleaning hacks"],
+  ogType: "website",
+  keywords: [
+    "all cleaning hacks", "cleaning hack library", "search cleaning hacks",
+    "filter cleaning tips by room", "cleaning guide directory",
+    "kitchen cleaning hacks", "bathroom cleaning tips", "vinegar cleaning guide",
+    "baking soda cleaning hacks", "dawn dish soap hacks",
+  ],
 });
 
 export default function PostsLayout({ children }: { children: React.ReactNode }) {

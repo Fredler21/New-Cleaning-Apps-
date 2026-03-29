@@ -14,12 +14,61 @@ export default function PostsPage({ searchParams }: Props) {
   const searchTerm = searchParams.q ?? "";
 
   const filtered = filterPosts(posts, { searchTerm, category, tag });
+
+  /* CollectionPage + BreadcrumbList JSON-LD */
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.trycleaninghacks.com/cleaning-hacks",
+        url: "https://www.trycleaninghacks.com/cleaning-hacks",
+        name: "Browse All 40+ Cleaning Hacks — Filter by Room, Ingredient & Technique",
+        description:
+          "Search and filter our full library of 40+ tried-and-tested cleaning hacks. Sort by room, ingredient, or effort level.",
+        isPartOf: { "@id": "https://www.trycleaninghacks.com" },
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: posts.length,
+          itemListElement: posts.slice(0, 20).map((p, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            url: `https://www.trycleaninghacks.com/cleaning-hacks/${p.slug}`,
+            name: p.title,
+          })),
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.trycleaninghacks.com" },
+          { "@type": "ListItem", position: 2, name: "All Cleaning Hacks", item: "https://www.trycleaninghacks.com/cleaning-hacks" },
+        ],
+      },
+    ],
+  };
+
   return (
     <Container>
+      {/* Structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <section className="py-12">
+        {/* Breadcrumb nav */}
+        <nav aria-label="Breadcrumb" className="mb-6 text-sm" style={{ color: "var(--text-secondary)" }}>
+          <ol className="flex items-center gap-1.5">
+            <li><a href="/" className="hover:underline" style={{ color: "var(--accent)" }}>Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" className="font-medium" style={{ color: "var(--text)" }}>All Cleaning Hacks</li>
+          </ol>
+        </nav>
+
         {/* SEO-rich page header */}
         <div className="mb-10">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text)" }}>All Cleaning Hacks</h1>
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text)" }}>Browse All Cleaning Hacks</h1>
           <p className="mt-3 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
             Browse our complete library of tested cleaning hacks, from kitchen grease busters and bathroom mildew removers to laundry stain solutions and whole-home deep cleans. Every guide is verified by our editorial team using real-world testing, so you get professional-grade results with everyday ingredients like vinegar, baking soda, Dawn dish soap, and hydrogen peroxide.
           </p>
