@@ -134,10 +134,10 @@ export const internalLinks: Record<string, string[]> = {
 
   /* ─── Pest Control ─── */
   "10-best-ways-to-combat-cockroaches": [
+    "how-to-get-rid-of-maggots-in-trash-can",
     "10-kitchen-sink-detox-hacks-for-odor-free-results",
     "7-game-changing-ultra-cleaning-hacks",
     "14-ways-to-use-baking-soda-in-your-house",
-    "10-genius-ways-to-make-your-house-smell-great",
   ],
 
   /* ─── Home Fragrance ─── */
@@ -347,5 +347,13 @@ export const internalLinks: Record<string, string[]> = {
     "best-floor-colors-to-hide-dust-and-dirt",
     "11-dawn-dish-soap-hacks-for-greasy-kitchens",
     "how-to-clean-stainless-steel-appliances-without-streaks",
+  ],
+
+  /* ─── Maggots in Trash Can ─── */
+  "how-to-get-rid-of-maggots-in-trash-can": [
+    "10-best-ways-to-combat-cockroaches",
+    "how-to-clean-and-deodorize-garbage-disposal",
+    "10-genius-ways-to-make-your-house-smell-great",
+    "10-kitchen-sink-detox-hacks-for-odor-free-results",
   ],
 };
