@@ -1,99 +1,23 @@
 # TryCleaningHacks
 
-Luxury cleaning hacks website built with Next.js App Router, TypeScript, and TailwindCSS.
+![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-7f1d1d?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178c6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06b6d4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-## Stack
+🧽 TryCleaningHacks is a content website for people who want fast, practical, and tested home cleaning advice.
 
-- Next.js (App Router) + TypeScript
-- TailwindCSS
-- Local typed data layer (`src/data`)
+🏠 The website helps readers find cleaning hacks for kitchens, bathrooms, laundry, deep cleaning, pest control, and everyday home care.
 
-## Run Locally
+🔎 Visitors can browse by category, search for specific problems, read step-by-step guides, and subscribe to email updates for new cleaning tips.
 
-1. Install dependencies:
+📬 The project also includes newsletter signup, analytics, SEO pages, and backend routes for contact, subscriptions, notifications, and email workflows.
 
-```bash
-npm install
-```
+## What This Website Is For
 
-2. Start development server:
+✨ This website is built to publish easy cleaning guides that use common products and simple methods.
 
-```bash
-npm run dev
-```
+🛁 It is meant for homeowners, renters, busy families, and anyone who wants a cleaner home without guessing what works.
 
-3. Open:
+🧴 The goal is to turn everyday cleaning questions into clear answers, searchable topics, and useful content people can save and come back to.
 
-```bash
-http://localhost:3000
-```
-
-## Scripts
-
-- `npm run dev` – development server
-- `npm run build` – production build
-- `npm run start` – run production server
-- `npm run lint` – linting
-- `npm run typecheck` – strict TypeScript check
-- `npm run generate:images` – generate post images with Gemini API into `public/graphics/posts`
-
-## Generate Subject Images with Gemini
-
-1. Copy `.env.example` to `.env.local` and add your key:
-
-```bash
-cp .env.example .env.local
-```
-
-2. Export the key in your shell:
-
-```bash
-export GEMINI_API_KEY="your_api_key_here"
-```
-
-3. Generate images:
-
-```bash
-npm run generate:images
-```
-
-Prompts are stored in `scripts/gemini-image-prompts.json` and outputs are written to `public/graphics/posts`.
-
-## Image Production Prompts
-
-Place generated files in the exact paths below.
-
-### `/public/graphics/hero-premium-kitchen.jpg`
-
-Prompt: `Premium modern kitchen interior, cinematic soft morning light, polished stone countertops, brushed steel details, spotless surfaces, upscale lifestyle editorial style, depth of field, realistic photography, no text, no people, 4k.`
-
-### `/public/graphics/hero-premium-bathroom.jpg`
-
-Prompt: `Luxury minimal spa bathroom, matte stone textures, soft natural daylight, pristine glass shower, premium fixtures, calm high-end aesthetic, realistic photo, no text, no people, 4k.`
-
-### `/public/graphics/texture-noise.png`
-
-Prompt: `Very subtle monochrome film grain/noise texture, seamless tileable overlay, low contrast, transparent-friendly, minimalist premium UI background texture.`
-
-### OpenGraph Prompts
-
-- `/public/og/og-default.png`: `Dark premium gradient background navy to charcoal with subtle teal glow, elegant minimal composition, cleaning lifestyle theme, no text.`
-- `/public/og/og-home.png`: `Premium cleaning brand mood board, modern kitchen and bathroom visual blend, dark luxury palette with teal accent, no text.`
-
-## Accessibility and SEO
-
-- Semantic landmarks and keyboard-accessible navigation
-- OpenGraph/Twitter metadata in app layout and pages
-- Static `robots.txt` and `sitemap.xml` in `public`
-
-## Folder Overview
-
-- `.github/workflows` — CI automation for lint, typecheck, and build on push/PR.
-- `public` — Static assets served directly (favicon, sitemap, robots, OG images, graphics, generated post images).
-- `scripts` — Utility scripts for Gemini image generation and prompt management.
-- `src/app` — Next.js App Router pages, layout, global styles, and API routes.
-- `src/components` — Reusable UI and feature components (navigation, cards, hero, SEO, form elements).
-- `src/data` — Local TypeScript content data for categories, featured content, and posts.
-- `src/lib` — Shared utility functions (formatting, filtering/search, slug helpers).
-- `src/styles` — Design tokens and style primitives used across the app.
-- `src/types` — Central TypeScript interfaces/types for posts and categories.
