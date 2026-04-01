@@ -1,6 +1,6 @@
 # TryCleaningHacks
 
-![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-7f1d1d?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178c6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06b6d4?style=for-the-badge&logo=tailwindcss&logoColor=white)
@@ -20,4 +20,12 @@
 🛁 It is meant for homeowners, renters, busy families, and anyone who wants a cleaner home without guessing what works.
 
 🧴 The goal is to turn everyday cleaning questions into clear answers, searchable topics, and useful content people can save and come back to.
+
+---
+
+## 📄 License
+
+This project is proprietary. All rights reserved © 2025 Fredler Gracia Pierre-Louis.
+
+Unauthorized copying, distribution, or modification of this project, in whole or in part, is strictly prohibited without prior written permission from the owner.
 
