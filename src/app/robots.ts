@@ -6,7 +6,11 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/"],
+        disallow: [
+          "/api/",
+          "/categories?*",
+          "/cleaning-hacks?*",
+        ],
       },
     ],
     sitemap: "https://www.trycleaninghacks.com/sitemap.xml",
