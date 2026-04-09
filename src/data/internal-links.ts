@@ -30,7 +30,7 @@ export const internalLinks: Record<string, string[]> = {
 
   /* ─── Vinegar ─── */
   "8-incredible-vinegar-hacks": [
-    "14-ways-to-use-baking-soda-in-your-house",
+    "how-to-remove-limescale-from-a-kettle",
     "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles",
     "remove-hard-water-stains-from-toilet",
     "12-shower-cleaning-hacks",
@@ -78,7 +78,7 @@ export const internalLinks: Record<string, string[]> = {
 
   /* ─── Laundry Room ─── */
   "9-laundry-room-cleaning-hacks-that-actually-save-time": [
-    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+    "how-to-get-cigarette-smell-out-of-clothes",
     "14-ways-to-use-baking-soda-in-your-house",
     "10-genius-ways-to-make-your-house-smell-great",
     "18-quick-wins-for-busy-mornings",
@@ -371,5 +371,29 @@ export const internalLinks: Record<string, string[]> = {
     "12-microwave-cleaning-hacks-for-a-sparkling-kitchen",
     "how-to-clean-an-oven-without-harsh-chemicals",
     "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+  ],
+
+  /* ─── Cigarette Smell Out of Clothes ─── */
+  "how-to-get-cigarette-smell-out-of-clothes": [
+    "9-laundry-room-cleaning-hacks-that-actually-save-time",
+    "how-to-remove-yellow-armpit-stains-from-shirts",
+    "14-ways-to-use-baking-soda-in-your-house",
+    "how-to-remove-pet-stains-and-odors-from-carpet",
+  ],
+
+  /* ─── Limescale from Kettle ─── */
+  "how-to-remove-limescale-from-a-kettle": [
+    "8-incredible-vinegar-hacks",
+    "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles",
+    "remove-hard-water-stains-from-toilet",
+    "how-to-clean-a-dishwasher",
+  ],
+
+  /* ─── Wooden Cutting Board ─── */
+  "how-to-clean-a-wooden-cutting-board": [
+    "13-mind-blowing-listerine-hacks",
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+    "14-ways-to-use-baking-soda-in-your-house",
+    "how-to-clean-a-dishwasher",
   ],
 };
