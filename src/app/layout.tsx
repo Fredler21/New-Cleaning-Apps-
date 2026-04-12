@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
     url: "https://www.trycleaninghacks.com",
     siteName: "TryCleaningHacks",
-    images: [{ url: "/og/og-home.png", width: 1200, height: 630, alt: "TryCleaningHacks" }],
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: "TryCleaningHacks" }],
     locale: "en_US",
     type: "website",
   },
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
     description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results in minutes.",
-    images: ["/og/og-home.png"],
+    images: ["/api/og"],
   },
 };
 
