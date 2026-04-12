@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="fav-grad" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="32" height="32" rx="8" fill="#060f1e"/>
+  <!-- Droplet -->
+  <path
+    d="M16 4 C11.5 8 7 13 7 19.5 A9 9 0 0 1 25 19.5 C25 13 20.5 8 16 4Z"
+    fill="url(#fav-grad)"
+  />
+  <!-- Sparkle star -->
+  <path
+    d="M16 15 L16.9 17.5 L19.5 18.5 L16.9 19.5 L16 22 L15.1 19.5 L12.5 18.5 L15.1 17.5 Z"
+    fill="white"
+    opacity="0.95"
+  />
+</svg>

@@ -15,6 +15,13 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.trycleaninghacks.com"),
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/favicon.svg",
+  },
   title: {
     default: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
     template: "%s | TryCleaningHacks",
