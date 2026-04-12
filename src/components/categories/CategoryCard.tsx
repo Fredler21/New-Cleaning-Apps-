@@ -6,7 +6,26 @@ type CategoryCardProps = {
   category: Category;
 };
 
+const cardEmojis: Record<string, string> = {
+  "dawn-hacks": "🧽",
+  "vinegar-hacks": "✨",
+  "baking-soda": "🧂",
+  "listerine-hacks": "🌿",
+  "peroxide-hacks": "💧",
+  "deep-clean": "🧹",
+  "dollar-store": "💰",
+  "laundry-kitchen": "👕",
+  "wd40-hacks": "🔧",
+  "pest-control": "🪲",
+  "home-fragrance": "🌸",
+  "bathroom-cleaning": "🚿",
+  "paint-colors": "🎨",
+  "diy-cleaners": "🧪",
+};
+
 export function CategoryCard({ category }: CategoryCardProps) {
+  const emoji = cardEmojis[category.slug];
+
   return (
     <article
       className="group relative overflow-hidden rounded-card p-6 transition-all duration-300 hover:-translate-y-1"
@@ -17,7 +36,11 @@ export function CategoryCard({ category }: CategoryCardProps) {
           className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl"
           style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
         >
-          <Image src={category.icon} alt={category.name} width={22} height={22} className="opacity-80" />
+          {emoji ? (
+            <span className="text-2xl" role="img" aria-label={category.name}>{emoji}</span>
+          ) : (
+            <Image src={category.icon} alt={category.name} width={22} height={22} className="opacity-80" />
+          )}
         </div>
 
         <h3 className="text-lg font-semibold" style={{ color: "var(--text)" }}>{category.name}</h3>
