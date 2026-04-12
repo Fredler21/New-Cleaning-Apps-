@@ -13,7 +13,13 @@ const chipIcons: Record<string, string> = {
   "peroxide-hacks": "💧",
   "deep-clean": "🧹",
   "dollar-store": "💰",
-  "laundry-kitchen": "👕"
+  "laundry-kitchen": "👕",
+  "wd40-hacks": "🔧",
+  "pest-control": "🪲",
+  "home-fragrance": "🌸",
+  "bathroom-cleaning": "🚿",
+  "paint-colors": "🎨",
+  "diy-cleaners": "🧪"
 };
 
 export function CategoryChips({ categories }: CategoryChipsProps) {
