@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Container } from "@/components/layout/Container";
 import { MobileNav } from "@/components/nav/MobileNav";
@@ -23,31 +24,15 @@ export function Navbar() {
       <Container>
         <div className="flex h-[68px] items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="group flex items-center gap-3 shrink-0" aria-label="TryCleaningHacks home">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl overflow-hidden transition-transform duration-200 group-hover:scale-105">
-              <svg viewBox="0 0 48 48" fill="none" className="h-9 w-9" aria-hidden="true">
-                <defs>
-                  <linearGradient id="nav-drop-grad" x1="0" y1="0" x2=".6" y2="1">
-                    <stop offset="0%" stopColor="#2dd4bf"/>
-                    <stop offset="100%" stopColor="#0d9488"/>
-                  </linearGradient>
-                  <radialGradient id="nav-shine" cx="35%" cy="30%" r="55%">
-                    <stop offset="0%" stopColor="rgba(255,255,255,0.22)"/>
-                    <stop offset="100%" stopColor="rgba(255,255,255,0)"/>
-                  </radialGradient>
-                </defs>
-                <path d="M24 5 C17 11 8 19 8 30 A16 16 0 0 1 40 30 C40 19 31 11 24 5Z" fill="url(#nav-drop-grad)"/>
-                <path d="M24 5 C17 11 8 19 8 30 A16 16 0 0 1 40 30 C40 19 31 11 24 5Z" fill="url(#nav-shine)"/>
-                <path d="M24 21.5 L25.5 25.5 L29.5 27 L25.5 28.5 L24 32.5 L22.5 28.5 L18.5 27 L22.5 25.5 Z" fill="white" opacity="0.95"/>
-                <circle cx="17" cy="15" r="2.5" fill="white" opacity="0.3"/>
-              </svg>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-[11px] font-semibold tracking-[0.15em] uppercase opacity-50" style={{ color: "var(--text-secondary)" }}>Try</span>
-              <span className="text-[17px] font-bold tracking-tight leading-none" style={{ color: "var(--text)" }}>
-                Cleaning<span className="text-teal-500">Hacks</span>
-              </span>
-            </div>
+          <Link href="/" className="group shrink-0 transition-opacity duration-200 hover:opacity-85" aria-label="TryCleaningHacks home">
+            <Image
+              src="/graphics/icons/logo-gemini.png"
+              alt="TryCleaningHacks"
+              width={200}
+              height={52}
+              className="h-[36px] w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop nav — centered */}
