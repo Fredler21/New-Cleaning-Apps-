@@ -109,10 +109,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           pintrk('page');
         `}
       </Script>
-      <noscript>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img height="1" width="1" style={{display:'none'}} alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2613182917179&noscript=1" />
-      </noscript>
       <body className="font-sans antialiased">
         <noscript>
           <iframe
@@ -121,6 +117,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             width="0"
             style={{display:'none',visibility:'hidden'}}
           />
+        </noscript>
+        <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img height="1" width="1" style={{display:'none'}} alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2613182917179&noscript=1" />
         </noscript>
         <ThemeProvider>
           <SavedHacksProvider>
