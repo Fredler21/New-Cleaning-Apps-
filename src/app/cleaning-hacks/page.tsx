@@ -6,23 +6,32 @@ import { PostFiltersClient } from "@/components/posts/PostFiltersClient";
 import { posts } from "@/data/posts";
 import { filterPosts } from "@/lib/search";
 
-export const metadata: Metadata = buildMeta({
-  title: "Browse All 40+ Cleaning Hacks — Filter by Room, Ingredient & Technique",
-  description:
-    "Search and filter our full library of 40+ tried-and-tested cleaning hacks. Sort by room (kitchen, bathroom, laundry), ingredient (vinegar, baking soda, Dawn), or effort level. Every hack includes step-by-step instructions, ingredient lists, and safety notes.",
-  path: "/cleaning-hacks",
-  ogType: "website",
-  keywords: [
-    "all cleaning hacks", "cleaning hack library", "search cleaning hacks",
-    "filter cleaning tips by room", "cleaning guide directory",
-    "kitchen cleaning hacks", "bathroom cleaning tips", "vinegar cleaning guide",
-    "baking soda cleaning hacks", "dawn dish soap hacks",
-  ],
-});
-
 type Props = {
   searchParams: { category?: string; tag?: string; q?: string };
 };
+
+export function generateMetadata({ searchParams }: Props): Metadata {
+  const hasFilters =
+    (searchParams.category && searchParams.category !== "all") ||
+    (searchParams.tag && searchParams.tag !== "all") ||
+    Boolean(searchParams.q);
+
+  return buildMeta({
+    title: "Browse All 40+ Cleaning Hacks — Filter by Room, Ingredient & Technique",
+    description:
+      "Search and filter our full library of 40+ tried-and-tested cleaning hacks. Sort by room (kitchen, bathroom, laundry), ingredient (vinegar, baking soda, Dawn), or effort level. Every hack includes step-by-step instructions, ingredient lists, and safety notes.",
+    path: "/cleaning-hacks",
+    ogType: "website",
+    keywords: [
+      "all cleaning hacks", "cleaning hack library", "search cleaning hacks",
+      "filter cleaning tips by room", "cleaning guide directory",
+      "kitchen cleaning hacks", "bathroom cleaning tips", "vinegar cleaning guide",
+      "baking soda cleaning hacks", "dawn dish soap hacks",
+    ],
+    // Filtered/search views are not canonical pages — tell Google not to index them.
+    noIndex: Boolean(hasFilters),
+  });
+}
 
 export default function PostsPage({ searchParams }: Props) {
   const category = searchParams.category ?? "all";
