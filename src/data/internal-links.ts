@@ -78,17 +78,17 @@ export const internalLinks: Record<string, string[]> = {
 
   /* ─── Laundry Room ─── */
   "9-laundry-room-cleaning-hacks-that-actually-save-time": [
+    "how-to-make-laundry-smell-good-after-washing",
     "how-to-get-cigarette-smell-out-of-clothes",
     "14-ways-to-use-baking-soda-in-your-house",
     "10-genius-ways-to-make-your-house-smell-great",
-    "18-quick-wins-for-busy-mornings",
   ],
 
   /* ─── Kitchen Sink Odor ─── */
   "10-kitchen-sink-detox-hacks-for-odor-free-results": [
+    "how-to-sterilize-kitchen-sponge",
     "how-to-clean-and-deodorize-garbage-disposal",
     "11-dawn-dish-soap-hacks-for-greasy-kitchens",
-    "14-ways-to-use-baking-soda-in-your-house",
     "10-genius-ways-to-make-your-house-smell-great",
   ],
 
@@ -230,10 +230,10 @@ export const internalLinks: Record<string, string[]> = {
 
   /* ─── Bathroom Caulk Mold ─── */
   "how-to-remove-mold-from-bathroom-caulk": [
+    "how-to-clean-leather-mold-safely",
     "12-shower-cleaning-hacks",
-    "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
     "16-hydrogen-peroxide-cleaning-hacks",
-    "remove-hard-water-stains-from-toilet",
+    "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
   ],
 
   /* ─── Garbage Disposal ─── */
@@ -375,8 +375,8 @@ export const internalLinks: Record<string, string[]> = {
 
   /* ─── Cigarette Smell Out of Clothes ─── */
   "how-to-get-cigarette-smell-out-of-clothes": [
+    "how-to-make-laundry-smell-good-after-washing",
     "9-laundry-room-cleaning-hacks-that-actually-save-time",
-    "how-to-remove-yellow-armpit-stains-from-shirts",
     "14-ways-to-use-baking-soda-in-your-house",
     "how-to-remove-pet-stains-and-odors-from-carpet",
   ],
@@ -395,5 +395,29 @@ export const internalLinks: Record<string, string[]> = {
     "11-dawn-dish-soap-hacks-for-greasy-kitchens",
     "14-ways-to-use-baking-soda-in-your-house",
     "how-to-clean-a-dishwasher",
+  ],
+
+  /* ─── Laundry Smell ─── */
+  "how-to-make-laundry-smell-good-after-washing": [
+    "9-laundry-room-cleaning-hacks-that-actually-save-time",
+    "how-to-get-cigarette-smell-out-of-clothes",
+    "10-genius-ways-to-make-your-house-smell-great",
+    "how-to-whiten-yellow-pillows-washing-machine",
+  ],
+
+  /* ─── Leather Mold ─── */
+  "how-to-clean-leather-mold-safely": [
+    "how-to-remove-mold-from-bathroom-caulk",
+    "16-hydrogen-peroxide-cleaning-hacks",
+    "12-genius-rubbing-alcohol-cleaning-hacks",
+    "7-game-changing-ultra-cleaning-hacks",
+  ],
+
+  /* ─── Kitchen Sponge ─── */
+  "how-to-sterilize-kitchen-sponge": [
+    "how-to-clean-a-wooden-cutting-board",
+    "10-kitchen-sink-detox-hacks-for-odor-free-results",
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+    "14-ways-to-use-baking-soda-in-your-house",
   ],
 };
