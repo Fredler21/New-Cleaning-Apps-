@@ -48,7 +48,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       locale: "en_US",
       type: "article",
       publishedTime: `${post.datePublished}T00:00:00Z`,
-      authors: [SITE_NAME],
+      authors: [post.author ?? "Sarah Mitchell"],
     },
     twitter: {
       card: "summary_large_image",
@@ -187,8 +187,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
               <span>By{" "}
-                <a href="/about" className="font-medium hover:underline" style={{ color: "var(--accent)" }}>
-                  {post.author ?? "TryCleaningHacks Editorial Team"}
+                <a href="/author/sarah-mitchell" className="font-medium hover:underline" style={{ color: "var(--accent)" }}>
+                  {post.author ?? "Sarah Mitchell"}
                 </a>
               </span>
             </span>

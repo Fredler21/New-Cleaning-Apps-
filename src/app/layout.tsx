@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
     template: "%s | TryCleaningHacks",
   },
-  description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
+  description: "Discover 52+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
   keywords: [
     "cleaning hacks", "house cleaning tips", "cleaning tricks", "DIY cleaning",
     "baking soda cleaning", "vinegar cleaning", "kitchen cleaning", "bathroom cleaning",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
-    description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
+    description: "Discover 52+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
     url: "https://www.trycleaninghacks.com",
     siteName: "TryCleaningHacks",
     images: [{ url: "/api/og", width: 1200, height: 630, alt: "TryCleaningHacks" }],
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
-    description: "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results in minutes.",
+    description: "Discover 52+ tested cleaning hacks using everyday ingredients. Professional results in minutes.",
     images: ["/api/og"],
   },
 };
@@ -76,13 +76,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`light ${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
-      <head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5416667362161343"
-          crossOrigin="anonymous"
-        />
-      </head>
+      <head />
+
+      {/* Google AdSense */}
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5416667362161343"
+        strategy="afterInteractive"
+        crossOrigin="anonymous"
+      />
       <Script id="gtm" strategy="afterInteractive">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

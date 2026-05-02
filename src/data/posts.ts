@@ -4,6 +4,7 @@ export const posts: Post[] = [
   {
     title: "13 Surprising Ways to Clean With Listerine",
     slug: "13-mind-blowing-listerine-hacks",
+    author: "Sarah Mitchell",
     datePublished: "2025-09-08",
     category: "listerine-hacks",
     readTime: "11 min",
@@ -45,6 +46,7 @@ export const posts: Post[] = [
   {
     title: "7 Deep Cleaning Tricks That Save Hours Every Week",
     slug: "7-game-changing-ultra-cleaning-hacks",
+    author: "Sarah Mitchell",
     datePublished: "2025-09-22",
     category: "deep-clean",
     readTime: "12 min",
@@ -86,6 +88,7 @@ export const posts: Post[] = [
   {
     title: "14 Proven Ways to Clean With Baking Soda",
     slug: "14-ways-to-use-baking-soda-in-your-house",
+    author: "Sarah Mitchell",
     datePublished: "2025-10-06",
     category: "baking-soda",
     readTime: "13 min",
@@ -127,6 +130,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Almost Anything With Vinegar (8 Methods)",
     slug: "8-incredible-vinegar-hacks",
+    author: "Sarah Mitchell",
     datePublished: "2025-10-20",
     category: "vinegar-hacks",
     readTime: "10 min",
@@ -168,6 +172,7 @@ export const posts: Post[] = [
   {
     title: "16 Ways to Clean and Disinfect With Hydrogen Peroxide",
     slug: "16-hydrogen-peroxide-cleaning-hacks",
+    author: "Sarah Mitchell",
     datePublished: "2025-11-03",
     category: "peroxide-hacks",
     readTime: "14 min",
@@ -209,6 +214,7 @@ export const posts: Post[] = [
   {
     title: "How to Deep Clean a Shower (10 Proven Methods)",
     slug: "12-shower-cleaning-hacks",
+    author: "Sarah Mitchell",
     datePublished: "2025-11-17",
     category: "deep-clean",
     readTime: "11 min",
@@ -252,6 +258,7 @@ export const posts: Post[] = [
   {
     title: "5 Dollar Store Cleaning Products That Actually Work",
     slug: "5-dollar-store-hacks-you-should-know",
+    author: "Sarah Mitchell",
     datePublished: "2025-12-01",
     category: "dollar-store",
     readTime: "9 min",
@@ -293,6 +300,7 @@ export const posts: Post[] = [
   {
     title: "30 Cleaning Myths You Need to Stop Believing",
     slug: "30-cleaning-myths-you-should-be-wary-of",
+    author: "Sarah Mitchell",
     datePublished: "2025-12-15",
     category: "deep-clean",
     readTime: "15 min",
@@ -334,6 +342,7 @@ export const posts: Post[] = [
   {
     title: "11 Ways to Use Dawn Dish Soap Beyond the Sink",
     slug: "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+    author: "Sarah Mitchell",
     datePublished: "2026-01-05",
     category: "dawn-hacks",
     readTime: "12 min",
@@ -375,6 +384,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Your Laundry Room in Under 30 Minutes",
     slug: "9-laundry-room-cleaning-hacks-that-actually-save-time",
+    author: "Sarah Mitchell",
     datePublished: "2026-01-19",
     category: "laundry-kitchen",
     readTime: "10 min",
@@ -416,6 +426,7 @@ export const posts: Post[] = [
   {
     title: "How to Get Rid of Kitchen Sink Odor (10 Easy Fixes)",
     slug: "10-kitchen-sink-detox-hacks-for-odor-free-results",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-02",
     category: "laundry-kitchen",
     readTime: "11 min",
@@ -457,6 +468,7 @@ export const posts: Post[] = [
   {
     title: "15 Bathroom Cleaning Tips for a Hotel-Level Finish",
     slug: "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-09",
     category: "deep-clean",
     readTime: "16 min",
@@ -498,6 +510,7 @@ export const posts: Post[] = [
   {
     title: "6 Budget Cleaning Kits You Can Put Together for Under $20",
     slug: "6-budget-cleaning-kits-you-can-build-in-20-minutes",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-13",
     category: "dollar-store",
     readTime: "9 min",
@@ -539,6 +552,7 @@ export const posts: Post[] = [
   {
     title: "18 Quick Cleaning Tasks You Can Do in 5 Minutes or Less",
     slug: "18-quick-wins-for-busy-mornings",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-16",
     category: "deep-clean",
     readTime: "12 min",
@@ -580,6 +594,7 @@ export const posts: Post[] = [
   {
     title: "The Complete Declutter and Clean Checklist (20 Pairings)",
     slug: "20-declutter-clean-pairing-hacks",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-18",
     category: "deep-clean",
     readTime: "14 min",
@@ -621,6 +636,7 @@ export const posts: Post[] = [
   {
     title: "8 Things You Can Clean With WD-40 (That You Didn't Know)",
     slug: "8-easy-wd40-cleaning-hacks",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-22",
     category: "wd40-hacks",
     readTime: "10 min",
@@ -660,6 +676,7 @@ export const posts: Post[] = [
   {
     title: "How to Get Rid of Cockroaches Naturally (10 Effective Methods)",
     slug: "10-best-ways-to-combat-cockroaches",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-22",
     category: "pest-control",
     readTime: "12 min",
@@ -701,6 +718,7 @@ export const posts: Post[] = [
   {
     title: "10 Easy Ways to Make Your House Smell Amazing All Day",
     slug: "10-genius-ways-to-make-your-house-smell-great",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-23",
     category: "home-fragrance",
     readTime: "10 min",
@@ -742,6 +760,7 @@ export const posts: Post[] = [
   {
     title: "10 Vacuum Cleaning Tips Most People Miss",
     slug: "10-fascinating-vacuum-hacks-you-need-to-know",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-23",
     category: "deep-clean",
     readTime: "10 min",
@@ -783,6 +802,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean a Microwave Inside and Out (12 Methods)",
     slug: "12-microwave-cleaning-hacks-for-a-sparkling-kitchen",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-23",
     category: "laundry-kitchen",
     readTime: "10 min",
@@ -826,6 +846,7 @@ export const posts: Post[] = [
   {
     title: "10 Things You Can Clean With Toothpaste",
     slug: "10-genius-toothpaste-cleaning-hacks-you-never-knew",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-23",
     category: "deep-clean",
     readTime: "9 min",
@@ -867,6 +888,7 @@ export const posts: Post[] = [
   {
     title: "The Complete Weekly Cleaning Schedule (Room by Room)",
     slug: "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-23",
     category: "deep-clean",
     readTime: "14 min",
@@ -908,6 +930,7 @@ export const posts: Post[] = [
   {
     title: "12 Ways to Clean and Disinfect With Rubbing Alcohol",
     slug: "12-genius-rubbing-alcohol-cleaning-hacks",
+    author: "Sarah Mitchell",
     datePublished: "2026-02-26",
     category: "deep-clean",
     readTime: "10 min",
@@ -951,6 +974,7 @@ export const posts: Post[] = [
   {
     title: "How to Remove Hard Water Stains From Glass, Faucets & Tiles",
     slug: "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-02",
     category: "vinegar-hacks",
     readTime: "12 min",
@@ -992,6 +1016,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Grout Without Scrubbing (7 Easy Methods)",
     slug: "how-to-clean-grout-without-scrubbing",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-02",
     category: "deep-clean",
     readTime: "11 min",
@@ -1030,6 +1055,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean an Oven Without Harsh Chemicals (8 Natural Methods)",
     slug: "how-to-clean-an-oven-without-harsh-chemicals",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-02",
     category: "deep-clean",
     readTime: "13 min",
@@ -1069,6 +1095,7 @@ export const posts: Post[] = [
   {
     title: "How to Remove Hard Water Stains From a Toilet (7 Proven Methods)",
     slug: "remove-hard-water-stains-from-toilet",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-08",
     category: "bathroom-cleaning",
     readTime: "12 min",
@@ -1160,6 +1187,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Stainless Steel Appliances Without Streaks (9 Methods)",
     slug: "how-to-clean-stainless-steel-appliances-without-streaks",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-08",
     category: "laundry-kitchen",
     readTime: "11 min",
@@ -1249,6 +1277,7 @@ export const posts: Post[] = [
   {
     title: "How to Remove Mold and Mildew From Bathroom Caulk (8 Methods)",
     slug: "how-to-remove-mold-from-bathroom-caulk",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-08",
     category: "bathroom-cleaning",
     readTime: "13 min",
@@ -1340,6 +1369,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean and Deodorize a Garbage Disposal (10 Easy Methods)",
     slug: "how-to-clean-and-deodorize-garbage-disposal",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-08",
     category: "laundry-kitchen",
     readTime: "10 min",
@@ -1434,6 +1464,7 @@ export const posts: Post[] = [
   {
     title: "How to Remove Pet Stains and Odors From Carpet (8 Proven Methods)",
     slug: "how-to-remove-pet-stains-and-odors-from-carpet",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-08",
     category: "deep-clean",
     readTime: "14 min",
@@ -1525,6 +1556,7 @@ export const posts: Post[] = [
   {
     title: "12 Oven Cleaning Hacks That Cut Through Baked-On Grease Fast",
     slug: "12-oven-cleaning-hacks-baked-on-grease",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-10",
     category: "deep-clean",
     readTime: "14 min",
@@ -1572,6 +1604,7 @@ export const posts: Post[] = [
   {
     title: "Best Paint Colors to Make Your House Look Less Dusty",
     slug: "best-paint-colors-to-hide-dust",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-15",
     category: "paint-colors",
     readTime: "9 min",
@@ -1611,6 +1644,7 @@ export const posts: Post[] = [
   {
     title: "Best Floor Colors to Hide Dust and Dirt in Busy Homes",
     slug: "best-floor-colors-to-hide-dust-and-dirt",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-15",
     category: "paint-colors",
     readTime: "8 min",
@@ -1649,6 +1683,7 @@ export const posts: Post[] = [
   {
     title: "Best Cabinet Colors to Hide Fingerprints and Dust",
     slug: "best-cabinet-colors-to-hide-fingerprints-and-dust",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-15",
     category: "paint-colors",
     readTime: "8 min",
@@ -1687,6 +1722,7 @@ export const posts: Post[] = [
   {
     title: "10 DIY All-Natural Cleaning Sprays You Can Make at Home",
     slug: "diy-all-natural-cleaning-sprays",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-15",
     category: "diy-cleaners",
     readTime: "10 min",
@@ -1733,6 +1769,7 @@ export const posts: Post[] = [
   {
     title: "8 DIY Bathroom Cleaning Recipes That Beat Store-Bought",
     slug: "diy-bathroom-cleaning-recipes",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-15",
     category: "diy-cleaners",
     readTime: "9 min",
@@ -1778,6 +1815,7 @@ export const posts: Post[] = [
   {
     title: "How to Deep Clean Your Mattress at Home (What's Living In It Will Surprise You)",
     slug: "how-to-deep-clean-your-mattress",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-24",
     category: "deep-clean",
     readTime: "13 min",
@@ -1876,6 +1914,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Hardwood Floors the Right Way (9 Rules That Prevent Damage)",
     slug: "how-to-clean-hardwood-floors",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-24",
     category: "deep-clean",
     readTime: "11 min",
@@ -1974,6 +2013,7 @@ export const posts: Post[] = [
   {
     title: "How to Remove Yellow Armpit Stains From Shirts (5 Methods Tested)",
     slug: "how-to-remove-yellow-armpit-stains-from-shirts",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-25",
     category: "laundry-kitchen",
     readTime: "10 min",
@@ -2060,6 +2100,7 @@ export const posts: Post[] = [
   {
     title: "10 Borax Cleaning Hacks That Actually Work",
     slug: "10-borax-cleaning-hacks-that-actually-work",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-25",
     category: "deep-clean",
     readTime: "12 min",
@@ -2100,6 +2141,7 @@ export const posts: Post[] = [
   {
     title: "How To Whiten Yellow Pillows In The Washing Machine",
     slug: "how-to-whiten-yellow-pillows-washing-machine",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-25",
     category: "laundry-kitchen",
     readTime: "10 min",
@@ -2138,6 +2180,7 @@ export const posts: Post[] = [
   {
     title: "How To Clean A Glass Stovetop Without Scratching It",
     slug: "how-to-clean-a-glass-stovetop-without-scratching",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-25",
     category: "deep-clean",
     readTime: "10 min",
@@ -2176,6 +2219,7 @@ export const posts: Post[] = [
   {
     title: "How to Get Rid of Maggots in a Trash Can (And Keep Them Gone for Good)",
     slug: "how-to-get-rid-of-maggots-in-trash-can",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-29",
     category: "pest-control",
     readTime: "12 min",
@@ -2251,6 +2295,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean a Dishwasher So It Actually Works Like New Again",
     slug: "how-to-clean-a-dishwasher",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-29",
     category: "deep-clean",
     readTime: "13 min",
@@ -2326,6 +2371,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean an Air Fryer (Inside and Out) So It Stops Smoking and Smelling",
     slug: "how-to-clean-an-air-fryer",
+    author: "Sarah Mitchell",
     datePublished: "2026-03-29",
     category: "laundry-kitchen",
     readTime: "12 min",
@@ -2401,6 +2447,7 @@ export const posts: Post[] = [
   {
     title: "How to Get Cigarette Smell Out of Clothes",
     slug: "how-to-get-cigarette-smell-out-of-clothes",
+    author: "Sarah Mitchell",
     datePublished: "2026-04-09",
     category: "laundry-kitchen",
     readTime: "12 min",
@@ -2479,6 +2526,7 @@ export const posts: Post[] = [
   {
     title: "How to Remove Limescale from a Kettle",
     slug: "how-to-remove-limescale-from-a-kettle",
+    author: "Sarah Mitchell",
     datePublished: "2026-04-09",
     category: "vinegar-hacks",
     readTime: "10 min",
@@ -2557,6 +2605,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean a Wooden Cutting Board",
     slug: "how-to-clean-a-wooden-cutting-board",
+    author: "Sarah Mitchell",
     datePublished: "2026-04-09",
     category: "deep-clean",
     readTime: "11 min",
@@ -2636,6 +2685,7 @@ export const posts: Post[] = [
   {
     title: "How to Make Laundry Smell Good After Washing (7 Methods That Work)",
     slug: "how-to-make-laundry-smell-good-after-washing",
+    author: "Sarah Mitchell",
     datePublished: "2026-04-18",
     category: "laundry-kitchen",
     readTime: "10 min",
@@ -2720,6 +2770,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Leather Mold Safely (5 Methods That Protect the Surface)",
     slug: "how-to-clean-leather-mold-safely",
+    author: "Sarah Mitchell",
     datePublished: "2026-04-18",
     category: "deep-clean",
     readTime: "9 min",
@@ -2801,6 +2852,7 @@ export const posts: Post[] = [
   {
     title: "How to Sterilize a Kitchen Sponge (5 Methods Ranked by Effectiveness)",
     slug: "how-to-sterilize-kitchen-sponge",
+    author: "Sarah Mitchell",
     datePublished: "2026-04-18",
     category: "laundry-kitchen",
     readTime: "8 min",
