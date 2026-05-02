@@ -420,4 +420,12 @@ export const internalLinks: Record<string, string[]> = {
     "11-dawn-dish-soap-hacks-for-greasy-kitchens",
     "14-ways-to-use-baking-soda-in-your-house",
   ],
+
+  /* ─── Plastic Shower Curtain Liner ─── */
+  "how-to-clean-plastic-shower-curtain-liner-by-hand-and-in-a-washer": [
+    "12-shower-cleaning-hacks",
+    "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
+    "how-to-remove-mold-from-bathroom-caulk",
+    "diy-bathroom-cleaning-recipes",
+  ],
 };
