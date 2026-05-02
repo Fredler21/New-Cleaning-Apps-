@@ -86,7 +86,7 @@ export default function SarahMitchellPage() {
                   in the greater Chicago area before founding TryCleaningHacks in 2025. During
                   that time she cleaned hundreds of homes and accumulated firsthand knowledge of
                   what actually removes stubborn grease, soap scum, hard water stains, and
-                  set-in odors — and what doesn't.
+                  set-in odors — and what doesn&apos;t.
                 </p>
                 <p>
                   She started writing down the methods that held up under real-world conditions,
