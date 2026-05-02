@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: "https://trycleaninghacks.com/sitemap.xml",
+    sitemap: "https://www.trycleaninghacks.com/sitemap.xml",
   };
 }

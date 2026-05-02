@@ -46,19 +46,19 @@ export default function PostsPage({ searchParams }: Props) {
     "@graph": [
       {
         "@type": "CollectionPage",
-        "@id": "https://trycleaninghacks.com/cleaning-hacks",
-        url: "https://trycleaninghacks.com/cleaning-hacks",
+        "@id": "https://www.trycleaninghacks.com/cleaning-hacks",
+        url: "https://www.trycleaninghacks.com/cleaning-hacks",
         name: "Browse All 53+ Cleaning Hacks — Filter by Room, Ingredient & Technique",
         description:
           "Search and filter our full library of 53+ tried-and-tested cleaning hacks. Sort by room, ingredient, or effort level.",
-        isPartOf: { "@id": "https://trycleaninghacks.com" },
+        isPartOf: { "@id": "https://www.trycleaninghacks.com" },
         mainEntity: {
           "@type": "ItemList",
           numberOfItems: posts.length,
           itemListElement: posts.slice(0, 20).map((p, i) => ({
             "@type": "ListItem",
             position: i + 1,
-            url: `https://trycleaninghacks.com/cleaning-hacks/${p.slug}`,
+            url: `https://www.trycleaninghacks.com/cleaning-hacks/${p.slug}`,
             name: p.title,
           })),
         },
@@ -66,8 +66,8 @@ export default function PostsPage({ searchParams }: Props) {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://trycleaninghacks.com" },
-          { "@type": "ListItem", position: 2, name: "All Cleaning Hacks", item: "https://trycleaninghacks.com/cleaning-hacks" },
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.trycleaninghacks.com" },
+          { "@type": "ListItem", position: 2, name: "All Cleaning Hacks", item: "https://www.trycleaninghacks.com/cleaning-hacks" },
         ],
       },
     ],

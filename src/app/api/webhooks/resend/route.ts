@@ -8,7 +8,7 @@ import { markSubscriberBounced } from "@/lib/firebase/collections";
  *
  * Setup in Resend dashboard:
  *   1. Go to Settings → Webhooks
- *   2. Add endpoint: https://trycleaninghacks.com/api/webhooks/resend
+ *   2. Add endpoint: https://www.trycleaninghacks.com/api/webhooks/resend
  *   3. Select events: email.bounced, email.complained
  *   4. Copy the signing secret to RESEND_WEBHOOK_SECRET env var
  */

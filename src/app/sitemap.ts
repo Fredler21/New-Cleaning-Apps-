@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { posts } from "@/data/posts";
 
-const SITE_URL = "https://trycleaninghacks.com";
+const SITE_URL = "https://www.trycleaninghacks.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();

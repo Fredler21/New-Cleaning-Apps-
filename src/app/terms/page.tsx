@@ -60,11 +60,11 @@ export default function TermsPage() {
               These Terms and Conditions (&ldquo;Terms&rdquo;) govern your access to and use of the
               website located at{" "}
               <a
-                href="https://trycleaninghacks.com"
+                href="https://www.trycleaninghacks.com"
                 className="underline"
                 style={{ color: "var(--accent)" }}
               >
-                trycleaninghacks.com
+                www.trycleaninghacks.com
               </a>{" "}
               (the &ldquo;Site&rdquo;).
             </p>
