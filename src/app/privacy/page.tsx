@@ -54,8 +54,8 @@ export default function PrivacyPage() {
             <p>
               Welcome to TryCleaningHacks (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;).
               We operate the website{" "}
-              <a href="https://www.trycleaninghacks.com" className="underline" style={{ color: "var(--accent)" }}>
-                www.trycleaninghacks.com
+              <a href="https://trycleaninghacks.com" className="underline" style={{ color: "var(--accent)" }}>
+                trycleaninghacks.com
               </a>{" "}
               (the &ldquo;Site&rdquo;), a blog dedicated to tested cleaning tips, DIY methods, and
               home-care guides.

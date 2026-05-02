@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.trycleaninghacks.com"),
+  metadataBase: new URL("https://trycleaninghacks.com"),
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "baking soda cleaning", "vinegar cleaning", "kitchen cleaning", "bathroom cleaning",
     "laundry hacks", "deep clean", "home cleaning", "natural cleaning",
   ],
-  authors: [{ name: "TryCleaningHacks", url: "https://www.trycleaninghacks.com" }],
+  authors: [{ name: "TryCleaningHacks", url: "https://trycleaninghacks.com" }],
   creator: "TryCleaningHacks",
   publisher: "TryCleaningHacks",
   verification: {
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
     description: "Discover 52+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
-    url: "https://www.trycleaninghacks.com",
+    url: "https://trycleaninghacks.com",
     siteName: "TryCleaningHacks",
     images: [{ url: "/api/og", width: 1200, height: 630, alt: "TryCleaningHacks" }],
     locale: "en_US",
@@ -131,11 +131,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 name: "TryCleaningHacks",
-                url: "https://www.trycleaninghacks.com",
+                url: "https://trycleaninghacks.com",
                 description: "Discover tested cleaning hacks using everyday ingredients.",
                 potentialAction: {
                   "@type": "SearchAction",
-                  target: "https://www.trycleaninghacks.com/cleaning-hacks?q={search_term_string}",
+                  target: "https://trycleaninghacks.com/cleaning-hacks?q={search_term_string}",
                   "query-input": "required name=search_term_string",
                 },
               }}
@@ -145,8 +145,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 name: "TryCleaningHacks",
-                url: "https://www.trycleaninghacks.com",
-                logo: "https://www.trycleaninghacks.com/og/og-home.png",
+                url: "https://trycleaninghacks.com",
+                logo: "https://trycleaninghacks.com/og/og-home.png",
                 contactPoint: {
                   "@type": "ContactPoint",
                   email: "support@trycleaninghacks.com",
