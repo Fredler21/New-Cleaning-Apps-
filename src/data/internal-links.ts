@@ -428,4 +428,36 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-remove-mold-from-bathroom-caulk",
     "diy-bathroom-cleaning-recipes",
   ],
+
+  /* ─── Ketchup ─── */
+  "how-to-clean-with-ketchup": [
+    "10-genius-toothpaste-cleaning-hacks-you-never-knew",
+    "how-to-clean-stainless-steel-appliances-without-streaks",
+    "8-incredible-vinegar-hacks",
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+  ],
+
+  /* ─── Cast Iron Skillet ─── */
+  "how-to-deep-clean-a-cast-iron-skillet": [
+    "how-to-clean-with-ketchup",
+    "how-to-clean-a-wooden-cutting-board",
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+    "how-to-clean-a-glass-stovetop-without-scratching",
+  ],
+
+  /* ─── Baseboards ─── */
+  "how-to-clean-baseboards": [
+    "best-paint-colors-to-hide-dust",
+    "how-to-clean-hardwood-floors",
+    "7-game-changing-ultra-cleaning-hacks",
+    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+  ],
+
+  /* ─── Bathroom Drain Smell ─── */
+  "how-to-clean-a-bathroom-drain-that-smells": [
+    "how-to-clean-and-deodorize-garbage-disposal",
+    "10-kitchen-sink-detox-hacks-for-odor-free-results",
+    "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
+    "14-ways-to-use-baking-soda-in-your-house",
+  ],
 };
