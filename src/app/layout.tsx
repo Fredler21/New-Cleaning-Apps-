@@ -76,7 +76,25 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`light ${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
-      <head />
+      <head>
+        {/* Ezoic Privacy Scripts - must load before the header script */}
+        <script
+          data-cfasync="false"
+          src="https://cmp.gatekeeperconsent.com/min.js"
+        />
+        <script
+          data-cfasync="false"
+          src="https://the.gatekeeperconsent.com/cmp.min.js"
+        />
+        {/* Ezoic Header Script */}
+        <script async src="//www.ezojs.com/ezoic/sa.min.js" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.ezstandalone = window.ezstandalone || {};ezstandalone.cmd = ezstandalone.cmd || [];`,
+          }}
+        />
+        <script src="//ezoicanalytics.com/analytics.js" />
+      </head>
 
       {/* Google AdSense */}
       <Script
