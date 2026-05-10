@@ -101,13 +101,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script src="//ezoicanalytics.com/analytics.js" />
       </head>
 
-      {/* Google AdSense */}
-      <Script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5416667362161343"
-        strategy="afterInteractive"
-        crossOrigin="anonymous"
-      />
+      {/* AdSense auto-ads removed — ads are now served by Ezoic.
+          AdSense inventory remains accessible via Ezoic Mediation
+          (link your AdSense account in the Ezoic dashboard). */}
       <Script id="gtm" strategy="afterInteractive">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

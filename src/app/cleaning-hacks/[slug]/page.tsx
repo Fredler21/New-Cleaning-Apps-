@@ -12,6 +12,7 @@ import { SaveHackButton } from "@/components/posts/SaveHackButton";
 import { RelatedGuides } from "@/components/posts/RelatedGuides";
 import { PostGrid } from "@/components/posts/PostGrid";
 import { ViewTracker } from "@/components/posts/ViewTracker";
+import { EzoicAd } from "@/components/ads/EzoicAd";
 import { Badge } from "@/components/ui/Badge";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
@@ -214,6 +215,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
             <ShareBar title={post.title} slug={post.slug} />
           </div>
 
+          {/* Ezoic ad: top of article (under hero/action bar). Replace ID with your dashboard placement. */}
+          <EzoicAd id={101} className="mb-8" />
+
           <div className="grid gap-10 lg:grid-cols-[1fr_300px]">
             <div className="space-y-8">
               {/* Supplies / Ingredients */}
@@ -373,6 +377,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 </p>
               </section>
 
+              {/* Ezoic ad: mid-article, after pro tips / how-we-tested. */}
+              <EzoicAd id={102} />
+
               <RelatedGuides posts={linkedPosts} />
 
               <SafetyNote notes={post.safetyNotes} />
@@ -419,6 +426,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               </Link>
             </div>
           </div>
+
+          {/* Ezoic ad: end of article, above related posts. */}
+          <EzoicAd id={103} className="mt-12" />
 
           {/* Related */}
           {related.length > 0 && (
