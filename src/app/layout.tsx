@@ -77,9 +77,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`light ${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
-        {/* Ezoic Privacy Scripts - must load before the header script.
-            Loaded synchronously in document order per Ezoic's integration
-            requirements (privacy/consent must resolve before ads init). */}
+        {/* Ezoic Privacy (CMP) Scripts — MUST load before sa.min.js.
+            Rendered as raw <script> tags here so Next.js cannot reorder
+            or defer them. data-cfasync="false" prevents Cloudflare Rocket
+            Loader from rewriting load order. */}
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script
           data-cfasync="false"
@@ -90,15 +91,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           data-cfasync="false"
           src="https://the.gatekeeperconsent.com/cmp.min.js"
         />
-        {/* Ezoic Header Script */}
-        <script async src="//www.ezojs.com/ezoic/sa.min.js" />
+        {/* Ezoic Header Script (loads after CMP). */}
+        <script async src="https://www.ezojs.com/ezoic/sa.min.js" />
+        {/* Ezoic ezstandalone command queue. */}
         <script
           dangerouslySetInnerHTML={{
             __html: `window.ezstandalone = window.ezstandalone || {};ezstandalone.cmd = ezstandalone.cmd || [];`,
           }}
         />
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script src="//ezoicanalytics.com/analytics.js" />
+        <script src="https://ezoicanalytics.com/analytics.js" />
       </head>
 
       {/* AdSense auto-ads removed — ads are now served by Ezoic.
