@@ -78,29 +78,36 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`light ${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
         {/* Ezoic Privacy (CMP) Scripts — MUST load before sa.min.js.
-            Rendered as raw <script> tags here so Next.js cannot reorder
-            or defer them. data-cfasync="false" prevents Cloudflare Rocket
-            Loader from rewriting load order. */}
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script
-          data-cfasync="false"
+            Use next/script beforeInteractive so Next injects them in
+            order in <head> before any other JS, and React 19 does not
+            hoist them. data-cfasync attribute prevents Cloudflare
+            Rocket Loader rewriting their order. */}
+        <Script
+          id="ezoic-cmp-1"
           src="https://cmp.gatekeeperconsent.com/min.js"
-        />
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script
+          strategy="beforeInteractive"
           data-cfasync="false"
+        />
+        <Script
+          id="ezoic-cmp-2"
           src="https://the.gatekeeperconsent.com/cmp.min.js"
+          strategy="beforeInteractive"
+          data-cfasync="false"
         />
-        {/* Ezoic Header Script (loads after CMP). */}
-        <script async src="https://www.ezojs.com/ezoic/sa.min.js" />
-        {/* Ezoic ezstandalone command queue. */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.ezstandalone = window.ezstandalone || {};ezstandalone.cmd = ezstandalone.cmd || [];`,
-          }}
+        {/* Ezoic Header Script (must come AFTER CMP scripts in the DOM). */}
+        <Script
+          id="ezoic-sa"
+          src="https://www.ezojs.com/ezoic/sa.min.js"
+          strategy="beforeInteractive"
         />
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script src="https://ezoicanalytics.com/analytics.js" />
+        <Script id="ezoic-init" strategy="beforeInteractive">
+          {`window.ezstandalone = window.ezstandalone || {};ezstandalone.cmd = ezstandalone.cmd || [];`}
+        </Script>
+        <Script
+          id="ezoic-analytics"
+          src="https://ezoicanalytics.com/analytics.js"
+          strategy="beforeInteractive"
+        />
       </head>
 
       {/* AdSense auto-ads removed — ads are now served by Ezoic.
