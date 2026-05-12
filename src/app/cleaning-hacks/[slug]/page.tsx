@@ -6,6 +6,7 @@ import { Container } from "@/components/layout/Container";
 import { PostTOC } from "@/components/posts/PostTOC";
 import { PostTopBar } from "@/components/posts/PostTopBar";
 import { titleToId } from "@/lib/format";
+import { renderInlineLinks } from "@/lib/inline-links";
 import { SafetyNote } from "@/components/posts/SafetyNote";
 import { ShareBar } from "@/components/posts/ShareBar";
 import { SaveHackButton } from "@/components/posts/SaveHackButton";
@@ -252,7 +253,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-sm font-bold text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">{index + 1}</span>
                       <div>
                         <h3 className="text-lg font-semibold" style={{ color: "var(--text)" }}>{step.title}</h3>
-                        <p className="mt-3 text-[15px] leading-7" style={{ color: "var(--text-secondary)" }}>{step.body}</p>
+                        <p className="mt-3 text-[15px] leading-7" style={{ color: "var(--text-secondary)" }}>{renderInlineLinks(step.body)}</p>
                       </div>
                     </div>
                   </section>
@@ -271,7 +272,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   {post.proTips.map((tip) => (
                     <li key={tip} className="flex items-start gap-3 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
                       <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-teal-100 text-xs text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">✓</span>
-                      {tip}
+                      <span>{renderInlineLinks(tip)}</span>
                     </li>
                   ))}
                 </ul>
@@ -400,7 +401,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                           {faq.question}
                         </summary>
                         <p className="px-4 pb-4 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                          {faq.answer}
+                          {renderInlineLinks(faq.answer)}
                         </p>
                       </details>
                     ))}

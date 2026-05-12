@@ -460,4 +460,12 @@ export const internalLinks: Record<string, string[]> = {
     "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
     "14-ways-to-use-baking-soda-in-your-house",
   ],
+
+  /* ─── Declutter Your Room ─── */
+  "how-to-declutter-your-room": [
+    "20-declutter-clean-pairing-hacks",
+    "7-game-changing-ultra-cleaning-hacks",
+    "18-quick-wins-for-busy-mornings",
+    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+  ],
 };
