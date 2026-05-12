@@ -468,4 +468,12 @@ export const internalLinks: Record<string, string[]> = {
     "18-quick-wins-for-busy-mornings",
     "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
   ],
+
+  /* ─── Keep Flies Away Outdoors ─── */
+  "how-to-keep-flies-away-outdoors": [
+    "how-to-get-rid-of-maggots-in-trash-can",
+    "10-best-ways-to-combat-cockroaches",
+    "diy-all-natural-cleaning-sprays",
+    "10-genius-ways-to-make-your-house-smell-great",
+  ],
 };
