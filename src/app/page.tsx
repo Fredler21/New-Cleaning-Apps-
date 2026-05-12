@@ -111,7 +111,7 @@ export default function HomePage() {
         <EzoicAd id={104} className="py-4" />
       </Container>
 
-      {/* Browse by Category — horizontal scroll */}
+      {/* Browse by Category, horizontal scroll */}
       <Container>
         <section className="py-8">
           <div className="mb-6 flex items-end justify-between">
@@ -136,7 +136,7 @@ export default function HomePage() {
                 className="group relative flex-shrink-0 w-[180px] overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
                 style={{ boxShadow: "var(--card-shadow)" }}
               >
-                {/* Background — color fallback */}
+                {/* Background, color fallback */}
                 <div className="aspect-[4/5] w-full bg-gradient-to-br from-teal-100 to-emerald-50 dark:from-teal-900/40 dark:to-emerald-900/20 relative overflow-hidden">
                   <div
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"

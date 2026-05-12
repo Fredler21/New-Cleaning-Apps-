@@ -34,7 +34,7 @@ function parsePrivateKey(raw: string): string {
 }
 
 /**
- * Lazy singleton — Firebase Admin is initialised on first call, not at import time.
+ * Lazy singleton, Firebase Admin is initialised on first call, not at import time.
  * This prevents module-level crashes from breaking the whole API route.
  */
 let _app: App | null = null;

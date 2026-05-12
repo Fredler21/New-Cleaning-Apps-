@@ -8,7 +8,7 @@ import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
 import { posts } from "@/data/posts";
 
 export const metadata: Metadata = buildMeta({
-  title: "Sarah Mitchell – Founder & Lead Writer",
+  title: "Sarah Mitchell, Founder & Lead Writer",
   description:
     "Sarah Mitchell is the founder and lead writer at TryCleaningHacks. After 9 years as a professional house cleaner in the Chicago area, she tests every method personally before publishing.",
   path: "/author/sarah-mitchell",
@@ -86,7 +86,7 @@ export default function SarahMitchellPage() {
                   in the greater Chicago area before founding TryCleaningHacks in 2025. During
                   that time she cleaned hundreds of homes and accumulated firsthand knowledge of
                   what actually removes stubborn grease, soap scum, hard water stains, and
-                  set-in odors — and what doesn&apos;t.
+                  set-in odors, and what doesn&apos;t.
                 </p>
                 <p>
                   She started writing down the methods that held up under real-world conditions,

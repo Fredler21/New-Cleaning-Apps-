@@ -100,7 +100,7 @@ export function HeroSlider({ posts }: HeroSliderProps) {
         </div>
       ))}
 
-      {/* Arrow buttons — visible on hover */}
+      {/* Arrow buttons, visible on hover */}
       <button
         onClick={prev}
         className="absolute left-4 top-1/2 z-30 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white transition opacity-0 hover:bg-white/30 group-hover:opacity-100"

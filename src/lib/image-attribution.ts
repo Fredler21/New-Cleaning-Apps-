@@ -13,7 +13,7 @@ export type ImageAttribution = {
  * (fetch-unsplash-images.mjs / generate-gemini-images.mjs) and returns
  * the attribution info. Returns null if no sidecar exists.
  *
- * Safe to call from server components — reads the file synchronously
+ * Safe to call from server components, reads the file synchronously
  * from /public at build/render time on the server only.
  */
 export function getImageAttribution(slug: string): ImageAttribution | null {
@@ -26,7 +26,7 @@ export function getImageAttribution(slug: string): ImageAttribution | null {
       const meta = JSON.parse(raw) as ImageAttribution & Record<string, unknown>;
       return meta;
     } catch {
-      // sidecar missing — that's fine
+      // sidecar missing, that's fine
     }
   }
   return null;

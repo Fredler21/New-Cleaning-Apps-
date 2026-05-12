@@ -1,4 +1,4 @@
-// Firebase – barrel exports
+// Firebase, barrel exports
 export { app, db } from "./config";
 export { adminDb, getAdminDb } from "./admin";
 export {

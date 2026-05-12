@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const DEPLOY_VERSION = "2026-02-26-v2";
 
 /**
- * POST /api/analytics  – Track a page view
+ * POST /api/analytics , Track a page view
  * Body: { slug: string }
  */
 export async function POST(request: Request) {
@@ -34,8 +34,8 @@ export async function POST(request: Request) {
 }
 
 /**
- * GET /api/analytics           – Get all post analytics
- * GET /api/analytics?slug=xxx  – Get analytics for one post
+ * GET /api/analytics          , Get all post analytics
+ * GET /api/analytics?slug=xxx , Get analytics for one post
  */
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);

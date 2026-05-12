@@ -11,7 +11,7 @@ type EzoicAdProps = {
   id: number;
   /**
    * Optional wrapper className for spacing/centering. Do NOT
-   * apply styles to the inner placeholder div itself — Ezoic
+   * apply styles to the inner placeholder div itself, Ezoic
    * forbids reserving size for ad slots (causes white space
    * when no ad fills).
    */
@@ -32,7 +32,7 @@ declare global {
  *
  * Renders the required `ezoic-pub-ad-placeholder-{id}` div and
  * queues a `showAds(id)` call via `ezstandalone.cmd`. Safe to
- * use multiple times on a page — each call is queued and
+ * use multiple times on a page, each call is queued and
  * processed by the Ezoic header script loaded in the root
  * layout.
  */

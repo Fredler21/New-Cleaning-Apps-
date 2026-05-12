@@ -77,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`light ${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
-        {/* Ezoic Privacy (CMP) Scripts — MUST load before sa.min.js.
+        {/* Ezoic Privacy (CMP) Scripts, MUST load before sa.min.js.
             Use next/script beforeInteractive so Next injects them in
             order in <head> before any other JS, and React 19 does not
             hoist them. data-cfasync attribute prevents Cloudflare
@@ -110,7 +110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
 
-      {/* AdSense auto-ads removed — ads are now served by Ezoic.
+      {/* AdSense auto-ads removed, ads are now served by Ezoic.
           AdSense inventory remains accessible via Ezoic Mediation
           (link your AdSense account in the Ezoic dashboard). */}
       <Script id="gtm" strategy="afterInteractive">

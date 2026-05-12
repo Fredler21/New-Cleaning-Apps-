@@ -23,7 +23,7 @@ export function useTrackView(slug: string) {
         headers: { "Content-Type": "application/json" },
         keepalive: true,
       }).catch(() => {
-        /* swallow – analytics should never break UX */
+        /* swallow, analytics should never break UX */
       });
     }
   }, [slug]);

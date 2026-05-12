@@ -6,7 +6,7 @@ import { sanitiseEmail, isValidEmail } from "@/lib/email-validation";
  * POST /api/unsubscribe
  * Body: { email: string } OR List-Unsubscribe=One-Click (RFC 8058)
  *
- * Marks a subscriber as unsubscribed (soft-delete — preserves data for analytics).
+ * Marks a subscriber as unsubscribed (soft-delete, preserves data for analytics).
  * Supports both JSON body and URL-encoded form (for one-click unsubscribe).
  */
 export async function POST(request: Request) {

@@ -91,7 +91,7 @@ export function isValidEmail(email: string): boolean {
 
 /**
  * Check whether the domain is suspicious (disposable).
- * Does NOT block — callers can decide policy.
+ * Does NOT block, callers can decide policy.
  */
 export function isSuspiciousDomain(email: string): boolean {
   const domain = email.split("@")[1];

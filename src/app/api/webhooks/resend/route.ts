@@ -55,7 +55,7 @@ export async function POST(request: Request) {
       const reason = event.data.reason || `Bounce (${event.data.bounce_type || "unknown"})`;
 
       for (const email of recipients) {
-        console.warn(`[WEBHOOK] Hard bounce: ${email} — ${reason}`);
+        console.warn(`[WEBHOOK] Hard bounce: ${email}, ${reason}`);
         await markSubscriberBounced(email, reason).catch((e) =>
           console.error(`[WEBHOOK] Failed to mark bounce for ${email}:`, e),
         );
@@ -76,7 +76,7 @@ export async function POST(request: Request) {
     }
 
     default:
-      // Other events (delivered, opened, clicked) — just acknowledge
+      // Other events (delivered, opened, clicked), just acknowledge
       console.log(`[WEBHOOK] Ignoring event type: ${eventType}`);
   }
 

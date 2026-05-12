@@ -1,7 +1,7 @@
 import { posts } from "@/data/posts";
 
 /**
- * Featured This Week — rotates a window of 3 posts every week.
+ * Featured This Week, rotates a window of 3 posts every week.
  * Uses the ISO week number so the selection shifts automatically
  * each Monday without any manual intervention.
  */
@@ -20,7 +20,7 @@ export const featuredThisWeek = Array.from({ length: 3 }, (_, i) =>
 );
 
 /**
- * Trending Now — shows the 5 most recently added posts.
+ * Trending Now, shows the 5 most recently added posts.
  * Posts at the end of the array are the newest, so we reverse-slice.
  * Every time a new post is added, this list updates automatically.
  */
@@ -28,7 +28,7 @@ export const trendingPosts = [...posts].reverse().slice(0, 5);
 
 export const quickWinPosts = posts.filter((post) => post.tags.includes("quick wins")).slice(0, 4);
 
-/* Banner/slider posts — swap out Listerine for Cleaning Myths */
+/* Banner/slider posts, swap out Listerine for Cleaning Myths */
 const mythsPost = posts.find((p) => p.slug === "30-cleaning-myths-you-should-be-wary-of");
 export const heroPosts = [
   ...(mythsPost ? [mythsPost] : []),

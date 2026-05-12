@@ -280,7 +280,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 </ul>
               </section>
 
-              {/* How we tested this guide — global E-E-A-T trust block */}
+              {/* How we tested this guide, global E-E-A-T trust block */}
               <section
                 id="how-we-tested"
                 className="rounded-xl p-6"

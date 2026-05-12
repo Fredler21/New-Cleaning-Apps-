@@ -17,7 +17,7 @@ export function generateMetadata({ searchParams }: Props): Metadata {
     Boolean(searchParams.q);
 
   return buildMeta({
-    title: "Browse All 53+ Cleaning Hacks — Filter by Room, Ingredient & Technique",
+    title: "Browse All 53+ Cleaning Hacks, Filter by Room, Ingredient & Technique",
     description:
       "Search and filter our full library of 53+ tried-and-tested cleaning hacks. Sort by room (kitchen, bathroom, laundry), ingredient (vinegar, baking soda, Dawn), or effort level. Every hack includes step-by-step instructions, ingredient lists, and safety notes.",
     path: "/cleaning-hacks",
@@ -28,7 +28,7 @@ export function generateMetadata({ searchParams }: Props): Metadata {
       "kitchen cleaning hacks", "bathroom cleaning tips", "vinegar cleaning guide",
       "baking soda cleaning hacks", "dawn dish soap hacks",
     ],
-    // Filtered/search views are not canonical pages — tell Google not to index them.
+    // Filtered/search views are not canonical pages, tell Google not to index them.
     noIndex: Boolean(hasFilters),
   });
 }
@@ -48,7 +48,7 @@ export default function PostsPage({ searchParams }: Props) {
         "@type": "CollectionPage",
         "@id": "https://www.trycleaninghacks.com/cleaning-hacks",
         url: "https://www.trycleaninghacks.com/cleaning-hacks",
-        name: "Browse All 53+ Cleaning Hacks — Filter by Room, Ingredient & Technique",
+        name: "Browse All 53+ Cleaning Hacks, Filter by Room, Ingredient & Technique",
         description:
           "Search and filter our full library of 53+ tried-and-tested cleaning hacks. Sort by room, ingredient, or effort level.",
         isPartOf: { "@id": "https://www.trycleaninghacks.com" },

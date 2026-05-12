@@ -6,7 +6,7 @@ import { categories } from "@/data/categories";
 import { posts } from "@/data/posts";
 
 export const metadata: Metadata = buildMeta({
-  title: "Cleaning Categories — Browse by Ingredient, Room, or Method",
+  title: "Cleaning Categories, Browse by Ingredient, Room, or Method",
   description:
     "Explore every cleaning category on TryCleaningHacks, from Dawn dish soap and white vinegar to baking soda, hydrogen peroxide, deep clean routines, bathroom care, pest control, and DIY cleaners. Each category is grounded in real testing and clear, surface-safe instructions.",
   path: "/categories",

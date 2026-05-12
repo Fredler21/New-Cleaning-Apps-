@@ -1,5 +1,5 @@
 /**
- * Internal link map — connects related posts for SEO cross-linking.
+ * Internal link map, connects related posts for SEO cross-linking.
  * Each key is a post slug; the value is an array of related slugs
  * (ordered by relevance, max 4 per post).
  */

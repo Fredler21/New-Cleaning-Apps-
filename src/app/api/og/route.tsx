@@ -15,7 +15,7 @@ export function GET() {
           overflow: "hidden",
         }}
       >
-        {/* Deep background glow — left teal */}
+        {/* Deep background glow, left teal */}
         <div
           style={{
             position: "absolute",
@@ -28,7 +28,7 @@ export function GET() {
             display: "flex",
           }}
         />
-        {/* Deep background glow — bottom gold */}
+        {/* Deep background glow, bottom gold */}
         <div
           style={{
             position: "absolute",
@@ -126,7 +126,7 @@ export function GET() {
                 maxWidth: "500px",
               }}
             >
-              40+ tested cleaning hacks with everyday ingredients — professional results for every room.
+              40+ tested cleaning hacks with everyday ingredients, professional results for every room.
             </span>
           </div>
 

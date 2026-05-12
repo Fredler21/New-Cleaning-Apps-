@@ -76,7 +76,7 @@ export function unsubUrl(email: string): string {
 }
 
 /* ------------------------------------------------------------------
- *  sendMail — unified interface, Resend primary, Zoho fallback
+ *  sendMail, unified interface, Resend primary, Zoho fallback
  * ------------------------------------------------------------------ */
 export interface SendMailOptions {
   to: string;
@@ -156,7 +156,7 @@ export async function sendMail(opts: SendMailOptions): Promise<SendMailResult> {
       if (bounce) {
         return { success: false, provider: "zoho", error: msg, isBounce: true };
       }
-      // Zoho failed with a transient error — fall through to Resend
+      // Zoho failed with a transient error, fall through to Resend
       console.warn(`[MAIL] Zoho failed, trying Resend: ${msg}`);
     }
   }
@@ -207,7 +207,7 @@ export async function sendMailWithRetry(
     lastResult = await sendMail(opts);
 
     if (lastResult.success || lastResult.isBounce) {
-      // Don't retry bounces — the address is invalid
+      // Don't retry bounces, the address is invalid
       return lastResult;
     }
 

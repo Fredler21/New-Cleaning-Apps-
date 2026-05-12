@@ -35,7 +35,7 @@ export function Navbar() {
             />
           </Link>
 
-          {/* Desktop nav — centered */}
+          {/* Desktop nav, centered */}
           <nav className="hidden items-center gap-1 md:flex flex-1 justify-center" aria-label="Primary navigation">
             {navLinks.map((item) => (
               <Link
