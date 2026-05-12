@@ -19,6 +19,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
 import { posts, getPostBySlug } from "@/data/posts";
 import { internalLinks } from "@/data/internal-links";
+import { ImageAttribution } from "@/components/posts/ImageAttribution";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -103,6 +104,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
 
       <Container>
         <article className="py-10">
+          <ImageAttribution slug={post.slug} />
           {/* Article + HowTo structured data */}
           <JsonLd
             data={{

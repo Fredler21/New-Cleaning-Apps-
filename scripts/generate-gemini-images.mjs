@@ -1,5 +1,8 @@
 import { readFile, mkdir, writeFile, access } from "node:fs/promises";
 import path from "node:path";
+import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ path: path.join(process.cwd(), ".env.local"), override: true });
 
 const apiKey = process.env.GEMINI_API_KEY;
 
@@ -8,9 +11,54 @@ if (!apiKey) {
   process.exit(1);
 }
 
+const args = new Set(process.argv.slice(2));
+// --candid flag rewrites prompts to look like real amateur photography
+// (reduces the "AI stock" feel that ad networks like Ezoic flag).
+const CANDID = args.has("--candid");
+// --force regenerates even if the file already exists.
+const FORCE = args.has("--force");
+
 const promptsPath = path.join(process.cwd(), "scripts", "gemini-image-prompts.json");
 const defaultOutputDir = path.join(process.cwd(), "public", "graphics", "posts");
 const graphicsRoot = path.join(process.cwd(), "public", "graphics");
+
+// Phrases that scream "AI stock photo" to reviewers — strip them out.
+const AI_TELL_PATTERNS = [
+  /\bpremium editorial\b/gi,
+  /\bultra[-\s]?realistic\b/gi,
+  /\b4k(?:\s+ultra\s+hd)?\b/gi,
+  /\bcinematic\b/gi,
+  /\bluxury\b/gi,
+  /\bmagazine style\b/gi,
+  /\bprofessional .*? photography style\b/gi,
+  /\bpinterest optimized( vertical)?( composition)?\b/gi,
+  /\bpinterest pin\b/gi,
+  /\bpinterest aesthetic\b/gi,
+  /\bvertical pinterest format\b/gi,
+  /\bdramatic\b/gi,
+  /\bhighly detailed\b/gi,
+  /\bsparkling\b/gi,
+  /\bgleaming\b/gi,
+  /\bspotless(ly)?\b/gi
+];
+
+const CANDID_PREFIX =
+  "Casual amateur smartphone photo, slightly imperfect framing, natural household lighting, " +
+  "everyday lived-in feel with minor wear and a few visible signs of real use, " +
+  "muted natural colors, no studio lighting, no glossy retouching, no over-saturation, ";
+
+const CANDID_SUFFIX =
+  ", shot on iPhone, soft mixed indoor lighting, slight grain, realistic depth of field, " +
+  "candid composition, natural color cast, no text, no logos, no watermarks";
+
+const toCandidPrompt = (prompt) => {
+  let out = prompt;
+  for (const pattern of AI_TELL_PATTERNS) {
+    out = out.replace(pattern, "");
+  }
+  out = out.replace(/\s{2,}/g, " ").trim();
+  return CANDID_PREFIX + out + CANDID_SUFFIX;
+};
 
 const getSupportedModel = async () => {
   const listResponse = await fetch(
@@ -68,13 +116,18 @@ const run = async () => {
     await mkdir(outputDir, { recursive: true });
 
     const filePath = path.join(outputDir, `${item.slug}.png`);
-    try {
-      await access(filePath);
-      console.log(`Skipped ${filePath} (already exists)`);
-      continue;
-    } catch {
-      // file does not exist
+    const metaPath = path.join(outputDir, `${item.slug}.meta.json`);
+    if (!FORCE) {
+      try {
+        await access(filePath);
+        console.log(`Skipped ${filePath} (already exists, use --force to regenerate)`);
+        continue;
+      } catch {
+        // file does not exist
+      }
     }
+
+    const promptToUse = CANDID ? toCandidPrompt(item.prompt) : item.prompt;
 
     let attempt = 0;
     while (attempt < 4) {
@@ -86,7 +139,7 @@ const run = async () => {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            contents: [{ parts: [{ text: item.prompt }] }],
+            contents: [{ parts: [{ text: promptToUse }] }],
             generationConfig: {
               responseModalities: ["TEXT", "IMAGE"]
             }
@@ -105,7 +158,20 @@ const run = async () => {
 
         const imageBuffer = Buffer.from(imagePart.inlineData.data, "base64");
         await writeFile(filePath, imageBuffer);
-        console.log(`Generated ${filePath}`);
+        await writeFile(
+          metaPath,
+          JSON.stringify(
+            {
+              slug: item.slug,
+              source: CANDID ? "gemini-candid" : "gemini",
+              model,
+              generatedAt: new Date().toISOString()
+            },
+            null,
+            2
+          )
+        );
+        console.log(`Generated ${filePath}${CANDID ? " (candid mode)" : ""}`);
         break;
       }
 

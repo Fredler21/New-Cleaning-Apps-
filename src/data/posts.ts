@@ -53,7 +53,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "weekend", "routine"],
     excerpt:
       "After timing the same bathroom clean twice once with my old routine and once using these tricks the second run took 22 minutes to the first run's 45. Here's what made the biggest difference and the one mistake I see in almost every cleaning routine.",
-    coverImage: "/graphics/posts/7-game-changing-ultra-cleaning-hacks.png",
+    coverImage: "/graphics/posts/7-game-changing-ultra-cleaning-hacks.jpg",
     supplies: ["All-purpose cleaner", "Degreaser", "Microfiber bundle", "Detail brush", "Bucket", "Gloves"],
     steps: [
       { title: "Do a full room scan first", body: "Walk through the room and remove anything that doesn't belong dishes, laundry, shoes, and random items. Clearing surfaces before you spray means every wipe actually reaches the surface instead of just pushing clutter around. This single step cuts your total cleaning time in half. Grab a laundry basket to collect misplaced items as you go, then redistribute them to their proper rooms after you finish cleaning. Professional cleaners always start with a clear-the-deck pass before touching any products. This pre-clean pass also gives you a mental inventory of what the room needs: where the worst buildup is, which surfaces need different products, and which areas you can skim quickly. Making this assessment before you open any bottles keeps you from doing duplicate passes or forgetting problem spots that you noticed the first time you walked in. Pay particular attention to areas that will require product dwell time: stovetop grime, soap scum, and grout all benefit from pre-treatment spray while you're doing the initial scan pass. By the time you've cleared the room and collected stray items, the pre-treated surfaces have already been working for two to three minutes." },
@@ -95,7 +95,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "laundry", "odor control"],
     excerpt:
       "I spent a month replacing cleaning products with baking soda wherever possible and kept honest notes. Some uses were genuine revelations. A few were clearly outperformed by simpler alternatives. Here's what actually held up after four weeks of real testing.",
-    coverImage: "/graphics/posts/14-ways-to-use-baking-soda-in-your-house.png",
+    coverImage: "/graphics/posts/14-ways-to-use-baking-soda-in-your-house.jpg",
     supplies: ["Baking soda", "Warm water", "Soft sponge", "Measuring spoon", "Cloth", "Gloves"],
     steps: [
       { title: "Make a baking soda paste for sinks", body: "Mix three tablespoons of baking soda with one tablespoon of water to form a thick paste. Apply it to stainless steel or porcelain sinks and scrub gently with a soft sponge in circular motions. The mild abrasive lifts food stains and water marks without scratching. Rinse thoroughly and dry for a bright finish. For stubborn discoloration around the drain or at the waterline, let the paste sit for 10 minutes before scrubbing. This method works on both kitchen and bathroom sinks and leaves them looking brand new. Stainless steel sinks in particular benefit from a baking soda paste polish once a week the paste removes the dull gray film that builds up from mineral deposits and restores the brushed finish's reflectivity. After rinsing the paste out, dry the sink immediately and apply a drop of mineral oil to a cloth for a final buff that makes the stainless steel look showroom-new and creates a protective layer that slows future water spot formation." },
@@ -179,7 +179,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "bathroom", "laundry"],
     excerpt:
       "A bottle of 3% hydrogen peroxide costs under two dollars and genuinely outperforms cleaners at fifteen times the price for certain jobs. Here's where it's worth reaching for first and two mistakes that make it actively harmful to specific surfaces and fabrics.",
-    coverImage: "/graphics/posts/16-hydrogen-peroxide-cleaning-hacks.png",
+    coverImage: "/graphics/posts/16-hydrogen-peroxide-cleaning-hacks.jpg",
     supplies: ["Hydrogen peroxide 3%", "Spray bottle", "Cotton pads", "Brush", "Microfiber", "Gloves"],
     steps: [
       { title: "Whiten grout lines", body: "Pour 3% hydrogen peroxide directly onto grout lines and let it fizz for 10 minutes. Scrub with a stiff grout brush in short strokes, then wipe clean with a damp cloth. Peroxide bleaches mildew stains without the strong fumes of chlorine bleach. Repeat weekly for grout that stays white. For deeply stained grout, mix peroxide with baking soda into a paste and apply it with an old toothbrush. Let the paste sit for 20 minutes before scrubbing for maximum whitening power. Unlike chlorine bleach, hydrogen peroxide is safe on colored grout it whitens by releasing oxygen that breaks down stain compounds rather than by stripping color across the entire surface indiscriminately. Use the paste version for floor grout in showers, which gets the most intense buildup from soap scum, hard water, and constant moisture, and reserve the liquid pour for lighter maintenance on wall tiles." },
@@ -221,7 +221,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "shower cleaning", "soap scum removal"],
     excerpt:
       "I deep cleaned the same shower twice in one week once with my old routine and once with these ten methods applied in the right sequence. The difference wasn't even close. Here's what changed and the daily habit that eliminated most of my scrubbing for good.",
-    coverImage: "/graphics/posts/12-shower-cleaning-hacks.png",
+    coverImage: "/graphics/posts/12-shower-cleaning-hacks.jpg",
     supplies: ["White vinegar", "Baking soda", "Dawn dish soap", "Squeegee", "Stiff brush", "Old toothbrush", "Microfiber cloths", "Spray bottle", "Gloves"],
     steps: [
       { title: "Squeegee glass doors after every shower", body: "The easiest way to prevent soap scum and hard-water spots is to squeegee the glass door and tile walls right after you turn off the water. This takes about 30 seconds and removes roughly 90 percent of the moisture that causes buildup. Start from the top and pull downward in overlapping strokes. A basic squeegee costs under ten dollars and saves you from scrubbing hardened mineral deposits every weekend. Hang it inside the shower so it is always within reach. If other household members are resistant to squeegeeing, put the squeegee directly in the path of exiting the shower hang it at eye level on the inside of the shower door or on the wall immediately opposite the exit. Physical placement makes using it the path of least resistance. After two weeks of habitually squeegeeing, the reduction in soap scum on glass doors versus not squeegeeing is dramatic enough that it becomes self-reinforcing. The visual evidence glass that stays clear between deep cleans is a more compelling motivator than any argument for why squeegeeing matters. Once you see it work, the habit maintains itself." },
@@ -265,7 +265,7 @@ export const posts: Post[] = [
     tags: ["budget", "quick wins", "routine"],
     excerpt:
       "I outfitted my entire cleaning supply system from the dollar store and compared results against the name brands I'd been using. For most tasks, the difference was negligible. Here's what's genuinely worth buying, what to skip, and the one item that outperformed everything I spent more on.",
-    coverImage: "/graphics/posts/5-dollar-store-hacks-you-should-know.png",
+    coverImage: "/graphics/posts/5-dollar-store-hacks-you-should-know.jpg",
     supplies: ["Organizer bins", "Spray bottles", "Microfiber packs", "Brush set", "Labels", "Gloves"],
     steps: [
       { title: "Grab spray bottles for custom cleaners", body: "Dollar-store spray bottles let you mix your own all-purpose cleaner, glass cleaner, and bathroom spray for pennies. Fill one with equal parts vinegar and water, another with dish soap and water. Label each bottle clearly. You get the same results as brand-name sprays at a fraction of the cost. Look for bottles with adjustable nozzles that can switch between mist and stream settings. Having multiple bottles ready to go means you clean more often because the prep work is already done. When selecting bottles, squeeze the trigger several times before buying some dollar store bottles have stiff or inconsistent trigger mechanisms that fatigue your hand during a cleaning session. A bottle that sprays smoothly and consistently is the single most important quality criterion. The trigger feel, not the bottle material, is what determines whether you reach for it every day or leave it under the sink." },
@@ -307,7 +307,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "education", "safety"],
     excerpt:
       "I've been on the wrong side of most of these myths. Bleach-over-grease, newspaper on mirrors, vinegar on marble all things I did before understanding why they don't work or actively cause damage. Here's what actually changed how I clean and the two safety myths that matter most.",
-    coverImage: "/graphics/posts/30-cleaning-myths-you-should-be-wary-of.png",
+    coverImage: "/graphics/posts/30-cleaning-myths-you-should-be-wary-of.jpg",
     supplies: ["Notebook", "Trusted cleaner labels", "Microfiber", "Timer", "Gloves", "Ventilation fan"],
     steps: [
       { title: "Myth: More product means cleaner surfaces", body: "Using too much cleaner actually leaves sticky residue that attracts more dirt. A thin, even application is all you need. Excess product also takes longer to rinse off and can leave streaks on glass and countertops. Follow the label's recommended amount it's designed for optimal results. Overusing product also wastes money and creates more chemical exposure in your home. If you notice surfaces feeling tacky or streaky after cleaning, you're probably using too much and should cut back by half. A practical test: spray half the amount you normally use on your kitchen counter and wipe it. If the surface is just as clean or cleaner because there's no residue to distribute dust then you've been using too much. Most people who switch to proper amounts save money on cleaning products while getting better results, because the product is making clean contact with the surface rather than lubricating it." },
@@ -349,7 +349,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "deep clean"],
     excerpt:
       "I've kept a bottle of diluted Dawn near my stove for three years and it handles cooking grease better than the dedicated degreaser sprays I've tried. Here are 11 uses beyond the dish sink that actually hold up and the one mistake that makes Dawn less effective on the surface you need it most on.",
-    coverImage: "/graphics/posts/11-dawn-dish-soap-hacks-for-greasy-kitchens.png",
+    coverImage: "/graphics/posts/11-dawn-dish-soap-hacks-for-greasy-kitchens.jpg",
     supplies: ["Dawn dish soap", "Warm water", "Spray bottle", "Microfiber", "Soft brush", "Gloves"],
     steps: [
       { title: "Make a Dawn degreasing spray", body: "Add 10 drops of Dawn dish soap to a spray bottle filled with warm water. Shake gently to mix without creating too many suds. This spray cuts through kitchen grease on stovetops, range hoods, and cabinet fronts for pennies. The surfactants in Dawn break the bond between grease and surfaces on contact. Keep the bottle next to the stove for daily wipe-downs after cooking. A single bottle lasts weeks because you only need a light mist to cut through grease effectively. Use warm water rather than cold when mixing Dawn dissolves faster and distributes more evenly in warm water, preventing the soap from settling at the bottom of the bottle between uses. Keep the spray nozzle set to stream rather than mist for stovetop use since a direct stream is easier to control on vertical surfaces like backsplash tiles without soaking surrounding areas you're not targeting." },
@@ -391,7 +391,7 @@ export const posts: Post[] = [
     tags: ["laundry", "quick wins", "routine"],
     excerpt:
       "My laundry room was the last room I ever cleaned, which meant the machines doing all my cleaning were themselves never cleaned. One afternoon changed that. Here's what I found inside my filter, what was creating the musty smell, and the 30-minute routine that prevents it all.",
-    coverImage: "/graphics/posts/9-laundry-room-cleaning-hacks-that-actually-save-time.png",
+    coverImage: "/graphics/posts/9-laundry-room-cleaning-hacks-that-actually-save-time.jpg",
     supplies: ["Lint brush", "Microfiber", "Mild cleaner", "Vacuum crevice tool", "Bin liners", "Gloves"],
     steps: [
       { title: "Clean the washer drum and gasket", body: "Run an empty hot cycle with two cups of white vinegar to remove detergent residue and mildew. After the cycle, wipe the rubber gasket with a microfiber cloth, paying attention to the folds where water and lint hide. Leave the door open afterward to let it dry. This prevents the musty smell many washers develop. Front-loaders are especially prone to gasket mildew because water pools in the rubber seal. If you see black spots, scrub them with a baking soda paste and an old toothbrush before running the vinegar cycle. Also check the outer drum lip the visible ring of metal where the drum meets the opening. This surface collects lint, hair, and soap residue that is never addressed during regular washing. Wipe it with a vinegar-dampened cloth each month. A clean drum lip means the fresh load you're placing inside isn't immediately picking up residue from the weeks of previous washes." },
@@ -433,7 +433,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "odor control", "quick wins"],
     excerpt:
       "My kitchen sink smelled no matter how often I cleaned it until I figured out what I was actually missing. The fix wasn't a new product; it was addressing three different sources at once. Here's what finally worked and the one mistake that kept the smell coming back.",
-    coverImage: "/graphics/posts/10-kitchen-sink-detox-hacks-for-odor-free-results.png",
+    coverImage: "/graphics/posts/10-kitchen-sink-detox-hacks-for-odor-free-results.jpg",
     supplies: ["Baking soda", "Dish soap", "Brush", "Hot water", "Microfiber", "Gloves"],
     steps: [
       { title: "Clear and rinse the sink completely", body: "Remove all dishes, sponges, and soap dispensers from the sink. Rinse the entire basin with hot water to flush loose food particles. Starting clean lets you see stains, discoloration, and buildup you'd miss with dishes piled up. This only takes a minute and makes every following step more effective. Take this opportunity to toss out any cracked sponges or expired cleaning products sitting by the sink. A clear workspace makes the whole process faster and more thorough." },
@@ -475,7 +475,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "weekend"],
     excerpt:
       "I tracked what makes a bathroom feel hotel-clean versus just technically scrubbed and found it came down to two things, not fifteen. But doing all 15 steps correctly is what creates the consistent result every time including the one step most people skip that is responsible for most bathroom odor.",
-    coverImage: "/graphics/posts/15-bathroom-deep-clean-hacks-for-hotel-level-shine.png",
+    coverImage: "/graphics/posts/15-bathroom-deep-clean-hacks-for-hotel-level-shine.jpg",
     supplies: ["Bathroom cleaner", "Grout brush", "Squeegee", "Microfiber", "Vinegar solution", "Gloves"],
     steps: [
       { title: "Remove everything from surfaces", body: "Take all bottles, toothbrush holders, soap dishes, and decorations off the countertop, shower ledge, and toilet tank. You can't clean around clutter removing items lets you wipe every square inch and see stains you've been missing. Stack items on a towel outside the bathroom. While items are out, check expiration dates on medications and toss old products. Rinse the bottoms of bottles that have soap residue rings putting dirty bottles back on a clean surface defeats the purpose." },
@@ -517,7 +517,7 @@ export const posts: Post[] = [
     tags: ["budget", "quick wins", "routine"],
     excerpt:
       "Before I built dedicated cleaning kits, I cleaned when things looked obviously dirty. Now I clean significantly more often not because I became more motivated, but because the supplies are already where I need them. Here's the system I built for under $15 and what changed when I started using it.",
-    coverImage: "/graphics/posts/6-budget-cleaning-kits-you-can-build-in-20-minutes.png",
+    coverImage: "/graphics/posts/6-budget-cleaning-kits-you-can-build-in-20-minutes.jpg",
     supplies: ["Spray bottles", "Microfiber packs", "Labels", "Bucket caddy", "Brushes", "Gloves"],
     steps: [
       { title: "Build a kitchen cleaning kit", body: "Fill a small caddy with a Dawn-and-water spray bottle, two microfiber cloths, a scrub brush, and a roll of paper towels. Store it under the kitchen sink for instant access. Having everything in one grab-and-go container means you clean up messes immediately instead of letting them sit because supplies are scattered. Include a pair of rubber gloves in the caddy so you never skip cleaning because you don't want to touch something. A dedicated kitchen kit pays for itself by preventing stains from setting in. Choose a caddy that's narrow enough to stand in the front section of the under-sink cabinet, not pushed to the back where retrieval requires reaching past everything else. The easier it is to grab the caddy, the more often it gets used. Front-position access is the difference between a caddy you reach for every meal and one you dig out twice a week." },
@@ -559,7 +559,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "routine", "kitchen"],
     excerpt:
       "I spent a month tracking which two to five minute cleaning habits made the biggest visible difference to how my home actually felt day to day. Three habits outperformed all the others by a wide margin and one popular tip turned out to be almost worthless. Here is the exact list of eighteen quick cleaning tasks you can do in five minutes or less, ranked by impact, with the common mistake that turns these short tasks into fifteen minute chores and the daily order that makes the routine actually stick.",
-    coverImage: "/graphics/posts/18-quick-wins-for-busy-mornings.png",
+    coverImage: "/graphics/posts/18-quick-wins-for-busy-mornings.jpg",
     supplies: ["Microfiber cloths", "All-purpose spray", "Mini brush", "Trash liners", "Timer", "Gloves"],
     steps: [
       { title: "Make the bed immediately", body: "Pull up the covers, straighten pillows, and smooth the duvet as soon as you get up. It takes 90 seconds and instantly makes the bedroom look 80% cleaner. An unmade bed makes the entire room feel messy no matter how clean everything else is. This one habit sets the tone for the whole day. Studies have shown that people who make their beds report feeling more productive throughout the morning. It creates a chain reaction of small tidy decisions that compound by evening. The psychological effect of a made bed is difficult to overstate: it signals that the day has started intentionally and creates a visual standard of order that makes other tidying decisions feel consistent with an established pattern rather than effortful choices. People who consistently make their beds report lower stress when entering their bedroom at the end of the day." },
@@ -607,7 +607,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "routine", "education"],
     excerpt:
       "I've decluttered the same spaces three or four times over the years, each time thinking this time it will stick. The version that actually held was the one where I did these two things differently. Here's what prevented the re-clutter and the specific mistake I made every previous time.",
-    coverImage: "/graphics/posts/20-declutter-clean-pairing-hacks.png",
+    coverImage: "/graphics/posts/20-declutter-clean-pairing-hacks.jpg",
     supplies: ["Storage bins", "Labels", "Microfiber", "Vacuum", "All-purpose cleaner", "Gloves"],
     steps: [
       { title: "Start with one room at a time", body: "Pick the room that bothers you most and commit to finishing it before moving on. Jumping between rooms creates half-done chaos everywhere. Close the door, set a timer for 30 minutes, and focus. A completely finished room gives you motivation to tackle the next one. Take a before photo so you can see the transformation when you're done. That visual proof of progress is incredibly motivating and helps on days when you don't feel like decluttering. The room you find most anxiety-inducing is worth starting with specifically because completing it removes the largest psychological weight. Finishing the most daunting space first means all subsequent rooms feel more manageable by comparison, and the momentum from the difficult room carries through the rest of the session instead of hanging over it." },
@@ -649,7 +649,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "bathroom", "kitchen"],
     excerpt:
       "I was skeptical about WD-40 for cleaning until I tested it on a shower door that hadn't responded to six commercial bathroom sprays. Here's what it genuinely handles that nothing else matched and the surfaces where it causes permanent damage if you're not careful.",
-    coverImage: "/graphics/posts/8-easy-wd40-cleaning-hacks.png",
+    coverImage: "/graphics/posts/8-easy-wd40-cleaning-hacks.jpg",
     supplies: ["WD-40", "Microfiber cloths", "Soft brush", "Warm water", "Dish soap", "Gloves"],
     steps: [
       { title: "Remove soap scum from glass shower doors", body: "Spray a light coat of WD-40 directly onto glass shower doors covered in soap scum and hard-water buildup. Let it sit for two minutes, then wipe with a microfiber cloth in straight strokes from top to bottom. The petroleum-based formula dissolves the mineral bonds that hold soap scum to glass surfaces. Follow up with a quick wipe of glass cleaner or a vinegar-water solution to remove any oily residue. The result is crystal-clear glass that looks brand new. Do this once a month and soap scum never gets a chance to build up into the thick, hazy layer that seems impossible to remove. For the best visual result, do this on a shower door you can see in direct natural light rather than under bathroom lighting. What looks acceptably clean under artificial light often reveals a milky surface haze in daylight that confirms how much WD-40 actually removed. The difference between before and after in daylight is the most convincing argument for adding this to a monthly cleaning rotation." },
@@ -689,7 +689,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "kitchen", "safety"],
     excerpt:
       "I dealt with cockroaches after moving above a restaurant not an easy starting condition and tested every method here under genuine high-pressure circumstances. Here's what actually controlled the infestation and the single mistake that made everything significantly worse before it improved.",
-    coverImage: "/graphics/posts/10-best-ways-to-combat-cockroaches.png",
+    coverImage: "/graphics/posts/10-best-ways-to-combat-cockroaches.jpg",
     supplies: ["Boric acid", "Caulk gun", "Spray bottle", "Baking soda", "Essential oils", "Gloves"],
     steps: [
       { title: "Eliminate all food sources immediately", body: "Cockroaches survive on crumbs, grease, and food residue that humans overlook. Wipe down all kitchen countertops, stovetops, and dining surfaces every night before bed. Store all open food in airtight containers cereal boxes, chip bags, and pet food are prime targets. Sweep the kitchen floor daily, paying special attention to the areas under the stove, refrigerator, and kitchen table where crumbs collect invisibly. Even a thin film of cooking grease on the stovetop is a feast for roaches. Taking away their food supply is the single most effective long-term strategy because cockroaches will not stay where there is nothing to eat. The interior of small appliances is a frequently missed food source: toaster crumb trays, the space under the coffee maker's drip tray, and the area inside the toaster oven accumulate significant food debris. Empty toaster crumb trays weekly and wipe the insides of toasters and toaster ovens monthly these warm, food-rich environments are prime overnight cockroach feeding areas." },
@@ -731,7 +731,7 @@ export const posts: Post[] = [
     tags: ["odor control", "quick wins", "routine"],
     excerpt:
       "I replaced every air freshener in my home with these methods and the difference wasn't subtle. The stovetop potpourri gets more unsolicited compliments from visitors than any candle I've ever owned. Here's what actually works long-term and the one mistake that makes home fragrance efforts feel like moving chemicals around.",
-    coverImage: "/graphics/posts/10-genius-ways-to-make-your-house-smell-great.png",
+    coverImage: "/graphics/posts/10-genius-ways-to-make-your-house-smell-great.jpg",
     supplies: ["Essential oils", "Spray bottle", "Baking soda", "Vanilla extract", "Cinnamon sticks", "Citrus fruits", "Small saucepan", "Mason jars"],
     steps: [
       { title: "Make a DIY linen and room spray", body: "Fill a glass spray bottle with one cup of distilled water, two tablespoons of vodka or rubbing alcohol, and 20 drops of your favorite essential oil lavender, eucalyptus, and orange are crowd favorites. Shake well before each use and mist onto curtains, throw pillows, bedding, and upholstered furniture. The alcohol helps the essential oils disperse evenly and evaporate cleanly without leaving water spots on fabric. This single bottle replaces expensive store-bought room sprays and lasts for weeks. Keep one in every room so a quick spritz is always within reach. The scent is subtle and natural, nothing like the overpowering chemical fragrance of commercial air fresheners." },
@@ -773,7 +773,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "quick wins", "routine"],
     excerpt:
       "After years of vacuuming the same way, I discovered most of the dirt I wasn't picking up was because of technique, not the machine. Two changes doubled what came out of my floors. Here's what actually makes a measurable difference in vacuum results.",
-    coverImage: "/graphics/posts/10-fascinating-vacuum-hacks-you-need-to-know.png",
+    coverImage: "/graphics/posts/10-fascinating-vacuum-hacks-you-need-to-know.jpg",
     supplies: ["Vacuum cleaner with attachments", "Pantyhose or thin sock", "Essential oils", "Baking soda", "Rubber band", "Dryer sheet", "Crevice tool", "Upholstery brush"],
     steps: [
       { title: "Recover tiny lost items from carpet", body: "Stretch a piece of pantyhose or a thin sock over the end of your vacuum hose and secure it with a rubber band. Turn the vacuum on and slowly sweep over the area where you dropped a small earring, screw, or pill. The suction pulls lightweight items against the fabric barrier without sucking them into the dustbin. Once you hear a gentle clink or see the item pressed against the fabric, turn the vacuum off and carefully remove the item. This hack saves you from crawling on hands and knees with a flashlight and works especially well on thick-pile carpets where tiny objects vanish instantly. For very small items like a ring setting or hearing aid battery, fold the pantyhose over the end of the hose to create a double-layer barrier the extra layer prevents any suction gaps at the edges while still keeping strong enough vacuum pull to lift the item off the carpet surface. Sweep in slow grid-pattern passes rather than random sweeps to ensure complete coverage of the search area." },
@@ -815,7 +815,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "odor control"],
     excerpt:
       "I once cleaned a shared microwave at work that hadn't been touched in 18 months. Every method on this list either worked or didn't under genuinely difficult conditions. Here's the honest ranking and the one daily habit that makes the entire list mostly unnecessary.",
-    coverImage: "/graphics/posts/12-microwave-cleaning-hacks-for-a-sparkling-kitchen.png",
+    coverImage: "/graphics/posts/12-microwave-cleaning-hacks-for-a-sparkling-kitchen.jpg",
     supplies: ["White vinegar", "Lemon", "Baking soda", "Dish soap", "Microfiber cloth", "Spray bottle", "Bowl", "Sponge"],
     steps: [
       { title: "Steam-clean with lemon water", body: "Slice a lemon in half and squeeze the juice into a microwave-safe bowl filled with one cup of water. Drop the lemon halves into the bowl and microwave on high for three to five minutes until the window is steamy. The citric acid in the steam loosens baked-on food particles while the lemon neutralizes trapped odors. Let the bowl sit inside with the door closed for another two minutes so the steam can continue working. Then wipe the interior with a damp microfiber cloth splatters will lift off with almost no scrubbing. This is the single most effective first step for any microwave deep clean." },
@@ -859,7 +859,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "budget", "bathroom"],
     excerpt:
       "I tested white toothpaste against dedicated products on silver, car headlights, and water-ringed wood furniture. Some results were genuinely impressive. Here's the honest comparison and the surfaces where toothpaste causes irreversible damage.",
-    coverImage: "/graphics/posts/10-genius-toothpaste-cleaning-hacks-you-never-knew.png",
+    coverImage: "/graphics/posts/10-genius-toothpaste-cleaning-hacks-you-never-knew.jpg",
     supplies: ["White toothpaste (non-gel)", "Soft cloth", "Old toothbrush", "Warm water", "Microfiber cloth", "Sponge"],
     steps: [
       { title: "Polish silver jewelry and flatware", body: "Apply a small amount of plain white toothpaste to tarnished silver and rub gently with a soft cloth in small circular motions. The mild abrasive in toothpaste usually hydrated silica or calcium carbonate lifts tarnish without scratching the surface. Focus on darkened areas but avoid gemstones, pearls, or plated jewelry as the abrasive can damage softer materials. Rinse under lukewarm water and buff dry with a clean microfiber cloth. The results are immediate and dramatic silver pieces come out looking freshly polished. This works equally well on sterling silver flatware that has developed the dark patina from sitting unused in a drawer. For pieces with intricate engravings or detail work, use a soft-bristle toothbrush dipped in toothpaste rather than a cloth. The brush bristles work the paste into the recessed areas where tarnish typically darkens first and is most visible, producing complete coverage that cloth rubbing misses on decorative or monogrammed pieces." },
@@ -1835,7 +1835,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "bedroom", "odor control"],
     excerpt:
       "The first time I deep cleaned my mattress, the vacuum canister turned gray with dust before I'd finished the first half of the surface. Here's an honest 8-step method that removes stains, eliminates odors, and actually works including what I got wrong the first time and the one product that makes all the difference.",
-    coverImage: "/graphics/posts/how-to-deep-clean-your-mattress.png",
+    coverImage: "/graphics/posts/how-to-deep-clean-your-mattress.jpg",
     supplies: [
       "Vacuum with upholstery attachment",
       "Baking soda (1 to 2 boxes)",
@@ -1934,7 +1934,7 @@ export const posts: Post[] = [
     tags: ["hardwood floors", "floor care", "deep clean"],
     excerpt:
       "After my first house's hardwood floors dulled within a year of installation entirely from my cleaning routine, not foot traffic I finally figured out what I was doing wrong. These 9 rules explain exactly what damages hardwood floors and how to clean them properly so they stay beautiful for decades.",
-    coverImage: "/graphics/posts/how-to-clean-hardwood-floors.png",
+    coverImage: "/graphics/posts/how-to-clean-hardwood-floors.jpg",
     supplies: [
       "Microfiber dry mop or dust mop",
       "Vacuum with hard floor setting (beater bar disabled)",
@@ -3023,7 +3023,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "budget"],
     excerpt:
       "I dug an old tarnished copper saucepan out of the back of a cabinet and put a bottle of plain ketchup against three commercial copper polishes to see if the pantry hack actually works. The result was startling on copper and brass, useful on cast iron, and outright damaging on a few surfaces I tested it on. Here is exactly what ketchup cleans well, the surfaces it ruins, and the technique that produces the showroom shine in under five minutes.",
-    coverImage: "/graphics/posts/how-to-clean-with-ketchup.png",
+    coverImage: "/graphics/posts/how-to-clean-with-ketchup.jpg",
     supplies: [
       "Plain ketchup",
       "Soft microfiber cloths",
@@ -3178,7 +3178,7 @@ export const posts: Post[] = [
     tags: ["dust control", "deep clean", "routine"],
     excerpt:
       "I cleaned every baseboard in a 1,800 square foot house in under ninety minutes after years of dreading the job and skipping it entirely. The trick is not the cleaner you use. It is the order you tackle the work and the two tools that mean you barely have to bend over. Here is the exact sequence that makes baseboards look professionally detailed and the dust repelling finish that keeps them clean four times longer than wiping with water alone.",
-    coverImage: "/graphics/posts/how-to-clean-baseboards.png",
+    coverImage: "/graphics/posts/how-to-clean-baseboards.jpg",
     supplies: [
       "Microfiber cloths",
       "Spray bottle",
@@ -3522,7 +3522,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "organization", "food storage", "routine"],
     excerpt:
       "I tracked our household food waste for three months before reorganizing the refrigerator and three months after. The before number was embarrassing. The after number was less than half. The change was not better Tupperware or fancier bins. It was a deliberate zone system that puts every food in the place where it stays freshest the longest and where you actually see it before it expires. Here is the exact zone by zone method, the temperature science behind why standard refrigerator advice ruins half your produce, and the weekly fifteen minute routine that keeps the system running on its own.",
-    coverImage: "/graphics/posts/how-to-organize-your-refrigerator.png",
+    coverImage: "/graphics/posts/how-to-organize-your-refrigerator.jpg",
     supplies: [
       "Clear stackable storage bins or baskets",
       "Adjustable shelf liners",
