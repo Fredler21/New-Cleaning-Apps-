@@ -11,7 +11,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "odor control", "bathroom"],
     excerpt:
       "I tested every one of these Listerine hacks in my own home over a single weekend. Most worked. Two surprised me enough to become permanent habits. Here's what honestly held up and the mistakes that can damage the wrong surfaces.",
-    coverImage: "/graphics/posts/13-mind-blowing-listerine-hacks.png",
+    coverImage: "/graphics/posts/13-mind-blowing-listerine-hacks.jpg",
     supplies: ["Listerine", "Spray bottle", "Microfiber cloths", "Soft brush", "Warm water", "Gloves"],
     steps: [
       { title: "Make a Listerine all-purpose spray", body: "Mix equal parts original Listerine and water in a spray bottle. The thymol and eucalyptol in Listerine are natural antiseptics that cut through light grime and leave a fresh mint scent. Shake gently before each use and label the bottle so nobody mistakes it for mouthwash. This simple DIY solution costs a fraction of commercial surface sprays and works especially well on laminate countertops, bathroom vanities, and tile backsplashes. Keep one bottle in the kitchen and another in the bathroom so you always have it within reach. Use only the original amber-colored Listerine for cleaning the blue, green, and whitening varieties contain dyes and different concentrations that can stain surfaces. The original formula is the most cost-effective and the safest for household surfaces. A single bottle of Listerine makes several weeks of cleaning spray, making the per-use cost genuinely negligible compared to name-brand all-purpose cleaners." },
@@ -137,7 +137,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "glass", "bathroom"],
     excerpt:
       "I've cleaned with white vinegar for years and also learned what it permanently damaged. Here's what it genuinely excels at two methods that outperform more expensive alternatives and three surfaces I'll never use it on again after seeing the results firsthand.",
-    coverImage: "/graphics/posts/8-incredible-vinegar-hacks.png",
+    coverImage: "/graphics/posts/8-incredible-vinegar-hacks.jpg",
     supplies: ["White vinegar", "Spray bottle", "Warm water", "Microfiber", "Brush", "Gloves"],
     steps: [
       { title: "Descale your showerhead overnight", body: "Fill a plastic bag with undiluted white vinegar, submerge the showerhead, and secure with a rubber band. Leave it overnight. In the morning, remove the bag and run hot water for one minute. Mineral deposits dissolve completely, restoring full water pressure and even spray. If your showerhead is removable, unscrew it and soak it directly in a bowl of vinegar for an even deeper clean. Use an old toothbrush to scrub individual nozzle holes where calcium buildup restricts water flow. Pay attention to the outer rim of the showerhead face where mineral buildup forms a crusty deposit ring that's clearly visible. After the vinegar soak, this outer crust should wipe away with a cloth. If your water is particularly hard, repeat this soak every six weeks rather than waiting until pressure drops noticeably regular maintenance prevents the scale from bonding so firmly that longer soak times are needed." },
@@ -901,7 +901,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "routine", "weekend"],
     excerpt:
       "I've tried three weekly cleaning schedules and abandoned two within a month. The version that actually held had two specific design principles the others lacked. Here's what made it sustainable and the most common reason cleaning schedules collapse within two weeks.",
-    coverImage: "/graphics/posts/the-ultimate-weekly-cleaning-schedule-for-a-spotless-home.png",
+    coverImage: "/graphics/posts/the-ultimate-weekly-cleaning-schedule-for-a-spotless-home.jpg",
     supplies: ["All-purpose cleaner", "Microfiber cloths", "Vacuum", "Mop", "Toilet cleaner", "Glass cleaner", "Laundry detergent", "Trash bags", "Duster", "Rubber gloves"],
     steps: [
       { title: "Monday Kitchen deep reset", body: "Start the week by tackling the room that gets the most daily use. Wipe down all countertops, the stovetop, and appliance fronts with an all-purpose cleaner. Clean the microwave inside and out using the steam method heat a bowl of lemon water for three minutes, then wipe down the softened splatters. Empty the fridge of expired items, wipe shelves with a baking soda solution, and replace the liner if you use one. Take out kitchen trash and recycling, then sweep and mop the floor. This 30-to-40-minute session means your kitchen is guest-ready for the entire week and prevents grease and food residue from building up into a much bigger job." },
@@ -943,7 +943,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "bathroom", "kitchen", "budget"],
     excerpt:
       "I switched my disinfection routine entirely to rubbing alcohol for 60 days and compared results against the products I replaced. For some surfaces it outperformed everything. For others it was clearly second choice. Here's the honest ranking.",
-    coverImage: "/graphics/posts/12-genius-rubbing-alcohol-cleaning-hacks.png",
+    coverImage: "/graphics/posts/12-genius-rubbing-alcohol-cleaning-hacks.jpg",
     supplies: ["Isopropyl rubbing alcohol (70% or 91%)", "Spray bottle", "Microfiber cloths", "Cotton pads", "Soft brush", "Warm water"],
     steps: [
       { title: "Make a streak-free glass cleaner", body: "Mix one cup of rubbing alcohol with one cup of water and one tablespoon of white vinegar in a spray bottle. Spray onto mirrors, windows, and glass tabletops, then wipe with a lint-free microfiber cloth in a Z-pattern. The alcohol evaporates almost instantly, leaving zero streaks behind even in direct sunlight. This homemade formula outperforms most store-bought glass cleaners at a fraction of the cost. Make a fresh batch every two weeks to keep the solution at full strength. For exterior windows where grime is heavier, use a 2:1 alcohol-to-water ratio with an extra tablespoon of dish soap added. The dish soap cuts through the oxidized dust-and-pollen film on exterior glass that pure alcohol solutions can struggle to lift completely in a single pass without a second wipe." },
@@ -987,7 +987,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "kitchen", "quick wins", "deep clean"],
     excerpt:
       "I moved into a home with twelve years of untreated hard water stains on shower glass, faucets, and tiles. After testing every popular method on the same heavily mineralized surfaces over six weeks, the ten approaches in this guide are ranked by what actually worked on real long term buildup, not just fresh deposits. The vinegar wrap method removed mineral crust that fifteen minute sprays could not touch, the warm vinegar trick dissolved stains roughly twice as fast as cold vinegar on the same surfaces, and one simple prevention habit reduced new staining by approximately eighty percent in the first month. Here is the exact step by step that restores foggy shower glass, calcified faucets, and stained bathroom tiles to a like new finish, plus the surfaces where vinegar will permanently etch and damage the material instead of cleaning it.",
-    coverImage: "/graphics/posts/how-to-remove-hard-water-stains-from-glass-faucets-and-tiles.png",
+    coverImage: "/graphics/posts/how-to-remove-hard-water-stains-from-glass-faucets-and-tiles.jpg",
     supplies: ["White vinegar", "Baking soda", "Spray bottle", "Microfiber cloths", "Lemon", "Dish soap", "Old toothbrush", "Plastic wrap", "Rubber gloves"],
     steps: [
       { title: "Make a vinegar soak for shower doors", body: "Fill a spray bottle with equal parts white vinegar and hot water. Spray generously onto glass shower doors, covering every inch of the surface. The acetic acid in vinegar dissolves the calcium and magnesium deposits that form those cloudy white streaks. Let it sit for at least 15 minutes for heavy buildup, soak paper towels in vinegar and press them flat against the glass so the solution doesn't drip away. Remove the towels, scrub with a non-scratch sponge in circular motions, and rinse with warm water. Dry immediately with a clean microfiber cloth to prevent new water spots from forming as the glass dries. For shower glass that hasn't been cleaned in several months or longer, the 15-minute contact time is not enough. Apply the vinegar-soaked paper towels and leave them undisturbed for 45 to 60 minutes. Spray additional vinegar onto the towels halfway through if they appear to have dried out so the ongoing acidity keeps dissolving the mineral layer until the full contact time is complete." },
@@ -1036,7 +1036,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "kitchen", "deep clean", "quick wins"],
     excerpt:
       "I stopped scrubbing grout and started using dwell time instead. The baking soda and peroxide paste removed more buildup with zero brushing than 20 minutes of manual scrubbing had. Here's the method that actually works and the single step that makes the results permanent.",
-    coverImage: "/graphics/posts/how-to-clean-grout-without-scrubbing.png",
+    coverImage: "/graphics/posts/how-to-clean-grout-without-scrubbing.jpg",
     supplies: ["Baking soda", "Hydrogen peroxide", "White vinegar", "Spray bottle", "Oxygen bleach powder", "Old toothbrush", "Microfiber cloths", "Warm water"],
     steps: [
       { title: "Apply a baking soda and peroxide paste", body: "Mix half a cup of baking soda with a quarter cup of hydrogen peroxide to form a thick paste. Spread it directly onto grout lines using your fingers or an old toothbrush. Let the paste sit for at least 30 minutes the peroxide bubbles into the porous grout surface and lifts out embedded dirt, mildew, and stains without aggressive scrubbing. After soaking, wipe the paste away with a damp cloth and rinse with warm water. Most grout lines will look noticeably whiter after a single application. For severely stained grout, leave the paste on for up to two hours before wiping clean. This method works best on white or light-colored grout. Always test a small hidden section first because hydrogen peroxide can slightly lighten already-colored grout if left on for extended periods. The paste is most effective at room temperature so don't apply it to tiles that are still warm from a recent shower, as heat can accelerate the peroxide reaction and reduce efficient contact time with the stained areas." },
@@ -1075,7 +1075,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "deep clean", "budget"],
     excerpt:
       "I deep cleaned a severely neglected oven without commercial oven cleaner and documented every method step by step. Most worked. Here's the honest ranking of which natural approaches handle heavy buildup versus light maintenance and the daily habit that eliminates the need for any of it.",
-    coverImage: "/graphics/posts/how-to-clean-an-oven-without-harsh-chemicals.png",
+    coverImage: "/graphics/posts/how-to-clean-an-oven-without-harsh-chemicals.jpg",
     supplies: ["Baking soda", "White vinegar", "Dish soap", "Spray bottle", "Lemon", "Microfiber cloths", "Non-scratch sponge", "Rubber gloves", "Old towels"],
     steps: [
       { title: "Make an overnight baking soda paste", body: "Mix half a cup of baking soda with enough water to form a spreadable paste about three tablespoons. Remove the oven racks and set them aside. Spread the paste over the entire interior of the oven, coating the bottom, sides, back wall, and door glass. Avoid the heating elements. The paste will turn brown as it reacts with grease and baked-on food. Close the oven door and let the paste work overnight at least 12 hours. The baking soda slowly dissolves carbonized food and grease without producing any fumes. This is the foundation of natural oven cleaning and handles even heavily neglected ovens. Apply an extra-thick layer to the oven floor where cooking drips accumulate most and have the longest baking-on time. The floor of the oven is always the most difficult area and benefits from a double coat of paste apply one layer, let it begin to dry for 10 minutes, then apply a second layer on top. The doubled thickness means the baking soda reaches deeper into carbonized residue rather than just sitting on the surface crust." },
@@ -1115,7 +1115,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "quick wins", "routine"],
     excerpt:
       "My apartment toilet had a rust-brown mineral ring nearly half an inch thick and no prior cleaning had touched it. Here's what actually worked on severe established buildup and the cheap weekly habit that prevents any ring from forming in the first place.",
-    coverImage: "/graphics/posts/remove-hard-water-stains-from-toilet.png",
+    coverImage: "/graphics/posts/remove-hard-water-stains-from-toilet.jpg",
     supplies: [
       "White vinegar",
       "Baking soda",
@@ -1207,7 +1207,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "routine"],
     excerpt:
       "After two years of built-up fingerprints and kitchen grease on my stainless refrigerator, I tested all nine methods in a single afternoon. Here's the honest ranking and the one reason most stainless steel cleaning attempts produce more streaking than they remove.",
-    coverImage: "/graphics/posts/how-to-clean-stainless-steel-appliances-without-streaks.png",
+    coverImage: "/graphics/posts/how-to-clean-stainless-steel-appliances-without-streaks.jpg",
     supplies: [
       "Microfiber cloths",
       "Olive oil or mineral oil",
@@ -1297,7 +1297,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "safety"],
     excerpt:
       "The bathroom caulk in my first apartment was solid black with mold when I moved in. I tested every method under real conditions on genuinely established mold. Here's what actually worked and the one step most people skip after cleaning that allows mold to return within weeks.",
-    coverImage: "/graphics/posts/how-to-remove-mold-from-bathroom-caulk.png",
+    coverImage: "/graphics/posts/how-to-remove-mold-from-bathroom-caulk.jpg",
     supplies: [
       "Bleach (sodium hypochlorite)",
       "Hydrogen peroxide (3%)",
@@ -1389,7 +1389,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "odor control", "quick wins", "routine"],
     excerpt:
       "My garbage disposal smelled despite regular rinsing and I spent months adding citrus peels and vinegar without improvement. The actual source was something I had never looked at. Here's what I found and the routine that has kept it odor-neutral for over six months.",
-    coverImage: "/graphics/posts/how-to-clean-and-deodorize-garbage-disposal.png",
+    coverImage: "/graphics/posts/how-to-clean-and-deodorize-garbage-disposal.jpg",
     supplies: [
       "Ice cubes",
       "Rock salt or coarse salt",
@@ -1484,7 +1484,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "odor control", "routine"],
     excerpt:
       "After years of treating pet stains the wrong way hot water, scrubbing, cleaning only visible spots I finally understood why the odor always came back. Here's what the UV blacklight revealed and why enzymatic cleaners are the only product that actually solves the problem.",
-    coverImage: "/graphics/posts/how-to-remove-pet-stains-and-odors-from-carpet.png",
+    coverImage: "/graphics/posts/how-to-remove-pet-stains-and-odors-from-carpet.jpg",
     supplies: [
       "Enzymatic pet stain cleaner",
       "White vinegar",
@@ -1576,7 +1576,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "deep clean", "budget"],
     excerpt:
       "I inherited a neglected oven when I moved into my apartment layers of carbonized grease that had never been touched. These 12 hacks are what I actually tested, including the one method that outperformed commercial oven cleaner.",
-    coverImage: "/graphics/posts/12-oven-cleaning-hacks-baked-on-grease.png",
+    coverImage: "/graphics/posts/12-oven-cleaning-hacks-baked-on-grease.jpg",
     supplies: ["Baking soda", "White vinegar", "Dawn dish soap", "Spray bottle", "Microfiber cloths", "Plastic scraper", "Rubber gloves", "Old toothbrush", "Lemon", "Warm water", "Hydrogen peroxide", "Aluminum foil"],
     steps: [
       { title: "Make a baking soda overnight paste for the oven interior", body: "Mix half a cup of baking soda with three tablespoons of water until you get a thick, spreadable paste. Remove the oven racks and set them aside. Spread the paste over every interior surface of the oven bottom, sides, back wall, and ceiling avoiding the heating elements. Pay extra attention to areas with heavy grease buildup or blackened food residue. Close the oven door and leave the paste to work overnight, or for a minimum of 12 hours. The baking soda slowly breaks down carbonized grease and burnt food while you sleep, turning rock-hard residue into a soft, wipe-able layer. In the morning, use a damp microfiber cloth to wipe away the dried paste. You'll see it come off brown and grimy that's the dissolved grease lifting off. For stubborn patches, use a plastic scraper to gently nudge the residue loose. This zero-effort method handles 90 percent of oven cleaning without any scrubbing or harsh fumes." },
@@ -1624,7 +1624,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "home", "dust control", "paint colors"],
     excerpt:
       "After painting four rooms in different shades over three moves, the difference in how fast each wall showed dust was one of the most practical decorating lessons I've learned. Here's what the real-world testing revealed.",
-    coverImage: "/graphics/posts/best-paint-colors-to-hide-dust.png",
+    coverImage: "/graphics/posts/best-paint-colors-to-hide-dust.jpg",
     supplies: ["Paint swatches", "Sample pots", "Foam roller", "Painter's tape", "Microfiber cloth", "Natural light"],
     steps: [
       { title: "Understand why some colors show dust more", body: "Dust visibility is driven almost entirely by contrast between the particle color and the wall color behind it. Household dust is a mix of skin cells, fabric fibers, pollen, and fine soil most of it lands in the gray-to-tan range. Bright white walls create maximum contrast with these gray particles, so even a thin film of settled dust looks like a visible shadow. Very dark walls have the opposite problem pale lint, pet hair, and light-colored dust stand out sharply against deep tones. The solution is choosing mid-tone colors that sit close to the natural color of dust itself, reducing contrast so particles blend in rather than stand out. Understanding this principle is the foundation of every color choice that follows." },
@@ -1664,7 +1664,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "home", "dust control", "flooring"],
     excerpt:
       "I've lived with four different floor types across four homes, and the difference in how often I needed to sweep to maintain the same appearance was significant not subtle. Here's what years of real use revealed about floor color and daily dust.",
-    coverImage: "/graphics/posts/best-floor-colors-to-hide-dust-and-dirt.png",
+    coverImage: "/graphics/posts/best-floor-colors-to-hide-dust-and-dirt.jpg",
     supplies: ["Floor swatches", "Sample planks", "Natural light", "Warm lighting", "Painter's tape", "Notebook"],
     steps: [
       { title: "Know why floor color affects visible dust", body: "Floor color has an even bigger impact on visible dust than wall color because floors are the primary collection surface for every particle in your home skin cells, pet hair, food crumbs, tracked-in soil, and airborne dust all settle on floors by gravity. The key principle is contrast: very dark floors like espresso hardwood or charcoal tile create maximum contrast with pale dust, lint, and pet hair, making every speck visible within hours of cleaning. Very light floors like bleached oak or bright white tile have the opposite problem dark hair, crumbs, and soil particles stand out sharply. Medium tones in the warm neutral range minimize contrast with the broadest range of common household debris, keeping floors looking cleaner significantly longer between sweeping or vacuuming sessions. This contrast principle applies equally to hardwood, laminate, luxury vinyl, and tile flooring. Homes in dry climates or near construction zones face this challenge even more, since fine particulate matter settles continuously throughout the day regardless of how often you clean." },
@@ -1703,7 +1703,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "home", "paint colors"],
     excerpt:
       "After repainting our kitchen cabinets twice in three years first a choice that showed every fingerprint within hours, then a shade that didn't the daily maintenance difference between those two decisions was obvious. Here's what the real test revealed.",
-    coverImage: "/graphics/posts/best-cabinet-colors-to-hide-fingerprints-and-dust.png",
+    coverImage: "/graphics/posts/best-cabinet-colors-to-hide-fingerprints-and-dust.jpg",
     supplies: ["Cabinet color chips", "Sample door cards", "Satin finish sample", "Matte finish sample", "Microfiber cloth", "Day/night lighting"],
     steps: [
       { title: "Understand cabinet smudge contrast", body: "Kitchen cabinets get touched dozens of times every day opening, closing, reaching for handles, brushing past while cooking which means fingerprint oils, cooking grease, and airborne dust accumulate on their surfaces faster than almost any other painted area in the home. Fingerprint and smudge visibility is driven by contrast between the transparent oil film left by your fingers and the color of the cabinet surface beneath it. On flat bright white cabinets, finger oils create subtle dark smudge marks that stand out in angled light. On deep black or navy cabinets, the same oils create visible lighter patches. Mid-tone muted colors in the warm neutral range are the most forgiving because they minimize the contrast between clean surface and touched surface, making daily finger contact essentially invisible under normal kitchen lighting. This principle matters most on lower cabinets and drawers at hip and hand height where contact is constant and unavoidable." },
@@ -1742,7 +1742,7 @@ export const posts: Post[] = [
     tags: ["diy", "eco-friendly", "budget", "quick wins"],
     excerpt:
       "I spent two weeks testing every one of these DIY spray recipes in my own home to find out which ones actually deliver results. Here's what worked, what flopped, and the three formulas I've kept making ever since.",
-    coverImage: "/graphics/posts/diy-all-natural-cleaning-sprays.png",
+    coverImage: "/graphics/posts/diy-all-natural-cleaning-sprays.jpg",
     supplies: ["Spray bottles", "White vinegar", "Baking soda", "Castile soap", "Essential oils (lemon, tea tree, lavender)", "Rubbing alcohol", "Distilled water", "Lemon juice", "Olive oil", "Salt"],
     steps: [
       { title: "Why I stopped buying store-bought sprays (and what I found instead)", body: "I used to spend about $30 a month on cleaning sprays a bathroom cleaner for tile, a separate glass cleaner, a kitchen degreaser, a fabric freshener, and two or three others I barely used. Then I started reading ingredient labels and realized I was paying mostly for water, surfactants, and fragrance in a branded bottle. I spent two weeks systematically testing DIY versions of every spray I used, making them from pantry staples, testing them side by side against the commercial versions on real household messes. The results surprised me: most of the homemade versions worked just as well. A few worked better. Here are the exact recipes I settled on the ones that have genuinely replaced every bottle under my sink." },
@@ -1789,7 +1789,7 @@ export const posts: Post[] = [
     tags: ["diy", "bathroom", "eco-friendly", "deep clean"],
     excerpt:
       "I replaced every store-bought bathroom product with homemade versions for a full month. Most performed just as well. A few were genuinely better. Here's exactly what I made and how each one held up including which ones I'll keep using permanently.",
-    coverImage: "/graphics/posts/diy-bathroom-cleaning-recipes.png",
+    coverImage: "/graphics/posts/diy-bathroom-cleaning-recipes.jpg",
     supplies: ["Spray bottles", "White vinegar", "Baking soda", "Hydrogen peroxide", "Dawn dish soap", "Tea tree essential oil", "Lemon essential oil", "Castile soap", "Rubbing alcohol", "Microfiber cloths"],
     steps: [
       { title: "Why I switched my entire bathroom cleaning routine to homemade", body: "A few years ago I had a small bathroom accident that motivated me to look at the ingredient labels on my cleaning products for the first time. What I found wasn't alarming in a dramatic way but it was quietly unsatisfying. Most commercial bathroom sprays are 90% water with a cocktail of surfactants, synthetic fragrances, and preservatives, sold in branded bottles at six to nine dollars apiece. I started replacing them one by one with homemade versions over the course of a month, and what I discovered was that for bathroom cleaning specifically, homemade recipes perform extremely well. The chemistry is simple: mold dies when it loses moisture or meets an antifungal compound; soap scum dissolves when acid breaks its mineral bonds; germs die with brief contact from disinfecting agents. You don't need synthetic fragrances or proprietary cleaning agents to achieve any of those things. Here are the eight recipes I tested, with honest notes on each." },
@@ -2033,7 +2033,7 @@ export const posts: Post[] = [
     tags: ["laundry", "stain removal", "shirts"],
     excerpt:
       "I ruined three good white shirts trying the wrong treatments before I understood what yellow armpit stains actually are and why they come back after washing. Here are 5 tested methods ranked by effectiveness, including the overnight trick that saved shirts I thought were permanently destroyed.",
-    coverImage: "/graphics/posts/how-to-remove-yellow-armpit-stains-from-shirts.png",
+    coverImage: "/graphics/posts/how-to-remove-yellow-armpit-stains-from-shirts.jpg",
     supplies: [
       "Baking soda",
       "3% hydrogen peroxide",
@@ -2161,7 +2161,7 @@ export const posts: Post[] = [
     tags: ["laundry", "deep clean", "bedroom"],
     excerpt:
       "My pillows were so yellow I'd been hiding them under an extra pillowcase for months. I tested four wash methods back-to-back on pillows with the same level of staining. Three of them barely made a dent. The fourth made them look like I'd just ripped the tags off. Here's the exact formula and why the other methods fail.",
-    coverImage: "/graphics/posts/how-to-whiten-yellow-pillows-washing-machine.png",
+    coverImage: "/graphics/posts/how-to-whiten-yellow-pillows-washing-machine.jpg",
     supplies: ["Laundry detergent", "OxiClean or oxygen powder", "Borax", "White vinegar", "Washing machine", "Wool dryer balls (optional)", "Tennis balls (optional)"],
     steps: [
       { title: "Why your pillows are yellow and why detergent alone won't fix it", body: "I used to assume yellow pillows just meant they needed a wash. They don't at least not a standard one. The yellowing is caused almost entirely by two things: sweat and body oils transferring through pillowcases, and the natural oxidation of the pillow fill material over time. Sweat contains proteins and salts that bind to synthetic fibres and cotton fill, and body oils from hair and skin gradually saturate the outer layer of the fill. The resulting yellow-brown staining is not dirt in the conventional sense it does not respond to surfactant cleaners the way visible grime does. You need an oxidizing agent, elevated wash temperature, and a water softener to break the protein-oil complex apart and lift it out of the fill. This is why standard detergent alone rarely whitens a yellow pillow: it is chemically the wrong tool for the job. Understanding this guides every step below. Pillowcases extend pillow life significantly using a pillow protector under the pillowcase doubles the barrier and is the single most effective prevention strategy, cutting the time between whitening washes from months to years." },
@@ -2200,7 +2200,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "deep clean", "quick wins"],
     excerpt:
       "I burned something onto my glass stovetop badly enough that I genuinely considered just leaving it there forever. After going through every method I could find, one of them worked so well I actually texted my sister about it. Here's what removed the worst baked-on black carbon without a single scratch, why most advice about this gets it wrong, and the one tool almost nobody uses that makes the biggest difference.",
-    coverImage: "/graphics/posts/how-to-clean-a-glass-stovetop-without-scratching.png",
+    coverImage: "/graphics/posts/how-to-clean-a-glass-stovetop-without-scratching.jpg",
     supplies: ["Baking soda", "White vinegar", "Dish soap", "Razor blade scraper (single edge)", "Microfiber cloths", "Spray bottle", "Warm water"],
     steps: [
       { title: "Why I kept scratching mine and what I was doing wrong", body: "I scratched my first glass stovetop with a scouring pad the first week I owned it. The second one I scratched with a rough sponge. By the third stovetop I finally understood the problem. Glass-ceramic (sold under brand names like Ceran, Schott, and Vitroceramic) is made from a tempered composite that looks smooth but is microscopically porous. The scratches people blame on cleaning products are almost always caused by abrasive tools steel wool, rough sponge backs, and even grains of baking soda dragged dry across the surface without lubrication. The glass itself is hard enough to resist most cleaning chemicals, but softer than most particles dragged across it under pressure. Understanding this changes everything about technique: the goal is always to lift residue off the surface using chemistry and moisture, never to scrape it off using friction. Every method in this guide applies cleaner, waits for it to work, and wipes gently rather than scrubbing. The one exception is a single-edge razor blade scraper held at the correct angle, which is the only mechanical tool safe for glass stovetop use and the correct solution for genuinely baked-on carbon residue." },
@@ -2239,7 +2239,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "outdoor", "odor control", "kitchen"],
     excerpt:
       "If you have ever opened a garbage can and found maggots crawling inside, you know how unsettling it is. I dealt with a severe case during a Florida summer and tested every removal method I could find. Here is what actually eliminated them overnight and the simple weekly habit that has kept them from coming back.",
-    coverImage: "/graphics/posts/how-to-get-rid-of-maggots-in-trash-can.png",
+    coverImage: "/graphics/posts/how-to-get-rid-of-maggots-in-trash-can.jpg",
     supplies: ["Boiling water", "White vinegar", "Dish soap (Dawn)", "Baking soda", "Diatomaceous earth (food grade)", "Bleach", "Trash bags (heavy-duty)", "Essential oils (peppermint or eucalyptus)", "Spray bottle", "Rubber gloves"],
     steps: [
       {
@@ -2315,7 +2315,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "kitchen", "odor control", "routine"],
     excerpt:
       "My dishwasher smelled like a wet dog and left a white film on every glass. After testing every method I could find over a single weekend, one approach eliminated the odor completely and two others turned out to be myths that wasted my time. Here is the full breakdown of what actually restored mine to factory-clean performance.",
-    coverImage: "/graphics/posts/how-to-clean-a-dishwasher.png",
+    coverImage: "/graphics/posts/how-to-clean-a-dishwasher.jpg",
     supplies: ["White vinegar", "Baking soda", "Dish soap (Dawn)", "Old toothbrush", "Microfiber cloth", "Toothpick or wooden skewer", "Stainless steel cleaner (optional)", "Rubber gloves"],
     steps: [
       {
@@ -2391,7 +2391,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "kitchen", "quick wins", "odor control"],
     excerpt:
       "My air fryer was smoking every time I used it and the basket smelled like last week's chicken wings. I tried the quick-wipe approach for months before finally doing a proper deep clean. The difference was immediate and I wish I had done it sooner. Here is every method I tested and the exact routine that keeps mine grease-free permanently.",
-    coverImage: "/graphics/posts/how-to-clean-an-air-fryer.png",
+    coverImage: "/graphics/posts/how-to-clean-an-air-fryer.jpg",
     supplies: ["Dish soap (Dawn)", "Baking soda", "White vinegar", "Non-abrasive sponge", "Old toothbrush", "Microfiber cloth", "Wooden skewer or toothpick", "Warm water"],
     steps: [
       {
@@ -2467,7 +2467,7 @@ export const posts: Post[] = [
     tags: ["laundry", "odor control", "quick wins"],
     excerpt:
       "Cigarette smell is one of the most stubborn odors fabric can absorb. I tested every commonly recommended method across multiple garments over two weeks and found that most single-step approaches fall short. Here is exactly what eliminated the smell completely and the one mistake that makes it nearly permanent.",
-    coverImage: "/graphics/posts/how-to-get-cigarette-smell-out-of-clothes.png",
+    coverImage: "/graphics/posts/how-to-get-cigarette-smell-out-of-clothes.jpg",
     supplies: ["Baking soda", "White vinegar", "Enzyme laundry detergent", "OxiClean", "Activated charcoal packets", "Laundry mesh bag", "Garment steamer or steam iron", "Outdoor drying rack"],
     steps: [
       {
