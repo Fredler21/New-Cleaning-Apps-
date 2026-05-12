@@ -476,4 +476,12 @@ export const internalLinks: Record<string, string[]> = {
     "diy-all-natural-cleaning-sprays",
     "10-genius-ways-to-make-your-house-smell-great",
   ],
+
+  /* ─── Organize Refrigerator ─── */
+  "how-to-organize-your-refrigerator": [
+    "how-to-clean-a-dishwasher",
+    "7-game-changing-ultra-cleaning-hacks",
+    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+    "how-to-clean-and-deodorize-garbage-disposal",
+  ],
 };
