@@ -484,4 +484,36 @@ export const internalLinks: Record<string, string[]> = {
     "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
     "how-to-clean-and-deodorize-garbage-disposal",
   ],
+
+  /* ─── Rage Clean ─── */
+  "how-to-rage-clean": [
+    "7-game-changing-ultra-cleaning-hacks",
+    "18-quick-wins-for-busy-mornings",
+    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+  ],
+
+  /* ─── Lost Socks ─── */
+  "how-to-stop-losing-socks-in-the-washing-machine": [
+    "9-laundry-room-cleaning-hacks-that-actually-save-time",
+    "how-to-make-laundry-smell-good-after-washing",
+    "how-to-whiten-yellow-pillows-washing-machine",
+    "how-to-remove-yellow-armpit-stains-from-shirts",
+  ],
+
+  /* ─── Clean Showerhead ─── */
+  "how-to-clean-a-showerhead": [
+    "12-shower-cleaning-hacks",
+    "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
+    "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles",
+    "how-to-remove-limescale-from-a-kettle",
+  ],
+
+  /* ─── Bed Bugs ─── */
+  "how-to-get-rid-of-bed-bugs": [
+    "10-best-ways-to-combat-cockroaches",
+    "how-to-deep-clean-your-mattress",
+    "how-to-get-rid-of-maggots-in-trash-can",
+    "how-to-keep-flies-away-outdoors",
+  ],
 };
