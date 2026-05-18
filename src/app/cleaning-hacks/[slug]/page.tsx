@@ -114,7 +114,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               description: post.excerpt,
               image: `${SITE_URL}${post.coverImage}`,
               datePublished: `${post.datePublished}T00:00:00Z`,
-              dateModified: new Date().toISOString(),
+              dateModified: `${post.dateUpdated ?? post.datePublished}T00:00:00Z`,
               inLanguage: "en",
               author: post.author
                 ? { "@type": "Person", name: post.author, url: `${SITE_URL}/about` }

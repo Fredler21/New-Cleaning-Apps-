@@ -106,7 +106,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script
           id="ezoic-analytics"
           src="https://ezoicanalytics.com/analytics.js"
-          strategy="beforeInteractive"
+          strategy="lazyOnload"
         />
       </head>
 
@@ -132,7 +132,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           gtag('config', 'G-R97SKNX12S');
         `}
       </Script>
-      <Script id="pinterest-tag" strategy="afterInteractive">
+      <Script id="pinterest-tag" strategy="lazyOnload">
         {`
           !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
           pintrk('load', '2613182917179');

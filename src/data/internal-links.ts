@@ -516,4 +516,12 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-get-rid-of-maggots-in-trash-can",
     "how-to-keep-flies-away-outdoors",
   ],
+
+  /* ─── Clean Washing Machine ─── */
+  "how-to-clean-a-washing-machine": [
+    "how-to-whiten-yellow-pillows-washing-machine",
+    "how-to-make-laundry-smell-good-after-washing",
+    "9-laundry-room-cleaning-hacks-that-actually-save-time",
+    "how-to-stop-losing-socks-in-the-washing-machine",
+  ],
 };
