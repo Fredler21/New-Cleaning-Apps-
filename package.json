@@ -11,13 +11,17 @@
     "generate:images": "node scripts/generate-gemini-images.mjs",
     "generate:images:candid": "node scripts/generate-gemini-images.mjs --candid",
     "fetch:unsplash": "node scripts/fetch-unsplash-images.mjs",
-    "audit:images": "node scripts/audit-post-images.mjs"
+    "audit:images": "node scripts/audit-post-images.mjs",
+    "agent:dry": "node scripts/agent/run.mjs --dry-run",
+    "agent:local": "node scripts/agent/run.mjs --no-pr",
+    "agent:run": "node scripts/agent/run.mjs"
   },
   "dependencies": {
     "@opentelemetry/api": "^1.9.0",
     "@vercel/analytics": "^1.6.1",
     "firebase": "^12.9.0",
     "firebase-admin": "^13.7.0",
+    "google-trends-api": "^4.9.2",
     "next": "^14.2.35",
     "nodemailer": "^8.0.1",
     "react": "18.3.1",

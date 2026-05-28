@@ -14,10 +14,10 @@ export const internalLinks: Record<string, string[]> = {
 
   /* ─── Deep Clean ─── */
   "7-game-changing-ultra-cleaning-hacks": [
+    "baseboard-cleaning-hacks-that-save-time",
     "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
     "18-quick-wins-for-busy-mornings",
     "20-declutter-clean-pairing-hacks",
-    "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
   ],
 
   /* ─── Baking Soda ─── */
@@ -279,10 +279,10 @@ export const internalLinks: Record<string, string[]> = {
 
   /* ─── Borax Cleaning ─── */
   "10-borax-cleaning-hacks-that-actually-work": [
+    "baseboard-cleaning-hacks-that-save-time",
     "how-to-clean-grout-without-scrubbing",
     "16-hydrogen-peroxide-cleaning-hacks",
     "14-ways-to-use-baking-soda-in-your-house",
-    "7-game-changing-ultra-cleaning-hacks",
   ],
 
   /* ─── Whiten Yellow Pillows ─── */
@@ -524,4 +524,12 @@ export const internalLinks: Record<string, string[]> = {
     "9-laundry-room-cleaning-hacks-that-actually-save-time",
     "how-to-stop-losing-socks-in-the-washing-machine",
   ],
+  /* ─── 10 Baseboard Cleaning Hacks That Actually Save Time and Your Back ─── */
+  "baseboard-cleaning-hacks-that-save-time": [
+    "7-game-changing-ultra-cleaning-hacks",
+    "10-borax-cleaning-hacks-that-actually-work",
+    "how-to-clean-a-dishwasher",
+    "10-fascinating-vacuum-hacks-you-need-to-know",
+  ],
+
 };
