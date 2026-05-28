@@ -148,10 +148,10 @@ export default function CategoriesPage() {
             className="mt-3 text-[15px] leading-7"
             style={{ color: "var(--text-secondary)" }}
           >
-            Every guide in every category goes through the same review pipeline. Sarah Mitchell and the
-            contributing writers test each method on the relevant surface, Olivia Torres reviews the
-            chemistry and surface compatibility before publication, and we update the guide if a reader
-            reports an edge case we missed. Read the full breakdown on our{" "}
+            Every guide in every category goes through the same review pipeline. Each method
+            is researched against established cleaning chemistry, drafted, and reviewed for
+            accuracy and surface safety before publication. If a reader reports an edge case
+            we missed, the guide is updated. Read the full breakdown on our{" "}
             <a
               href="/editorial-policy"
               className="underline"
@@ -159,7 +159,7 @@ export default function CategoriesPage() {
             >
               Editorial Policy
             </a>{" "}
-            page or learn more about the team on our{" "}
+            page or learn more on our{" "}
             <a href="/about" className="underline" style={{ color: "var(--accent)" }}>
               About
             </a>{" "}

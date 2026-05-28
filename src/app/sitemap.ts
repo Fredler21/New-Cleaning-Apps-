@@ -77,7 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.4,
     },
     {
-      url: `${SITE_URL}/author/sarah-mitchell`,
+      url: `${SITE_URL}/author/fredler-pierre-louis`,
       lastModified: siteFreshness,
       changeFrequency: "monthly",
       priority: 0.6,

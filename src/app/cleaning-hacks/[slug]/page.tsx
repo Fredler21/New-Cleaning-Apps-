@@ -51,7 +51,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       locale: "en_US",
       type: "article",
       publishedTime: `${post.datePublished}T00:00:00Z`,
-      authors: [post.author ?? "Sarah Mitchell"],
+      authors: [post.author ?? "Fredler Pierre-Louis"],
     },
     twitter: {
       card: "summary_large_image",
@@ -191,8 +191,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
               <span>By{" "}
-                <a href="/author/sarah-mitchell" className="font-medium hover:underline" style={{ color: "var(--accent)" }}>
-                  {post.author ?? "Sarah Mitchell"}
+                <a href="/author/fredler-pierre-louis" className="font-medium hover:underline" style={{ color: "var(--accent)" }}>
+                  {post.author ?? "Fredler Pierre-Louis"}
                 </a>
               </span>
             </span>
@@ -312,11 +312,11 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 >
                   Every method on this page was hands on tested by{" "}
                   <Link
-                    href="/author/sarah-mitchell"
+                    href="/author/fredler-pierre-louis"
                     className="underline"
                     style={{ color: "var(--accent)" }}
                   >
-                    {post.author ?? "Sarah Mitchell"}
+                    {post.author ?? "Fredler Pierre-Louis"}
                   </Link>{" "}
                   on the actual surface or material described, not on a staged photo set. We
                   recorded the timing, the dwell intervals, and the conditions where each method
@@ -339,7 +339,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Reviewed by Olivia Torres for chemical safety and surface compatibility.
+                    Reviewed for chemical safety and surface compatibility before publication.
                   </li>
                   <li className="flex items-start gap-2">
                     <span

@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     "baking soda cleaning", "vinegar cleaning", "kitchen cleaning", "bathroom cleaning",
     "laundry hacks", "deep clean", "home cleaning", "natural cleaning",
   ],
-  authors: [{ name: "TryCleaningHacks", url: "https://www.trycleaninghacks.com" }],
-  creator: "TryCleaningHacks",
+  authors: [{ name: "Fredler Pierre-Louis", url: "https://www.trycleaninghacks.com/author/fredler-pierre-louis" }],
+  creator: "Fredler Pierre-Louis",
   publisher: "TryCleaningHacks",
   verification: {
     google: "5sbyW1HBzsmC93Y2dwlzj8ckF5rYZx0qbHOfXWymDIA",
