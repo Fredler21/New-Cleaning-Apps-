@@ -1,0 +1,59 @@
+name: Auto-Post Agent
+
+on:
+  schedule:
+    # Mon / Wed / Fri at 14:00 UTC (~09:00 ET)
+    - cron: "0 14 * * 1,3,5"
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Optional: force a specific topic (skips Pinterest)"
+        required: false
+        type: string
+      dry_run:
+        description: "Dry run (no Claude/Gemini spend, no PR)"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure git
+        run: |
+          git config user.name  "auto-post-agent[bot]"
+          git config user.email "auto-post-agent@users.noreply.github.com"
+
+      - name: Run agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          FLAGS=""
+          if [ -n "${{ inputs.topic }}" ]; then
+            FLAGS="$FLAGS --topic=\"${{ inputs.topic }}\""
+          fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            FLAGS="$FLAGS --dry-run"
+          fi
+          eval node scripts/agent/run.mjs $FLAGS

@@ -1,0 +1,16 @@
+{
+  "lastRun": "2026-05-28T17:19:27.229Z",
+  "processedPinIds": [],
+  "queuedTopics": [],
+  "publishedSlugs": [
+    "baseboard-cleaning-hacks-that-save-time"
+  ],
+  "runs": [
+    {
+      "at": "2026-05-28T17:19:27.229Z",
+      "pickedFrom": "forced",
+      "topic": "baseboard cleaning hacks",
+      "slug": "baseboard-cleaning-hacks-that-save-time"
+    }
+  ]
+}
