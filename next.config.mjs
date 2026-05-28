@@ -21,6 +21,11 @@ const nextConfig = {
         destination: "/cleaning-hacks/8-easy-wd40-cleaning-hacks",
         permanent: true,
       },
+      {
+        source: "/author/sarah-mitchell",
+        destination: "/author/fredler-pierre-louis",
+        permanent: true,
+      },
     ];
   },
 };

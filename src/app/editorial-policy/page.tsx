@@ -69,31 +69,13 @@ export default function EditorialPolicyPage() {
 
           <Section title="Who Creates Our Content">
             <p>
-              All guides on TryCleaningHacks are written by members of our editorial team or
-              reviewed contributors with direct, hands-on cleaning experience. Our core team
-              includes:
-            </p>
-            <ul className="ml-4 mt-3 list-disc space-y-2">
-              <li>
-                <strong>Sarah Mitchell (Founder &amp; Lead Writer)</strong>, former professional
-                house cleaner with 9 years of experience cleaning residential and commercial
-                properties. Sarah personally tests cleaning methods before writing them up.
-              </li>
-              <li>
-                <strong>James Park (Contributing Writer)</strong>, home improvement writer
-                specializing in DIY household maintenance and product research. James conducts
-                comparative testing and writes evidence-based deep-dive guides.
-              </li>
-              <li>
-                <strong>Olivia Torres (Safety &amp; Editorial Reviewer)</strong>, reviews all
-                chemical compatibility information, ventilation requirements, and surface warnings.
-                Olivia&apos;s background is in occupational health and consumer product safety.
-              </li>
-            </ul>
-            <p className="mt-3">
-              We do not use AI-generated text without human review and verification. All published
-              content is written or substantively edited by a human team member who is accountable
-              for its accuracy.
+              TryCleaningHacks is researched, written, and edited by{" "}
+              <Link href="/author/fredler-pierre-louis" className="underline" style={{ color: "var(--accent)" }}>
+                Fredler Pierre-Louis
+              </Link>
+              . Every guide goes through a structured review for accuracy, safety, and clarity
+              before publication. Methods are checked against multiple sources on cleaning
+              chemistry and surface compatibility, not pulled from a single secondary article.
             </p>
           </Section>
 
@@ -123,14 +105,14 @@ export default function EditorialPolicyPage() {
                 wood) and clearly document which surfaces are safe and which are not.
               </li>
               <li>
-                <strong>Safety review</strong>, Olivia reviews chemical interactions, maximum
+                <strong>Safety review</strong>, we verify chemical interactions, maximum
                 concentrations, ventilation requirements, and any risk of damage to surfaces or
                 harm to people or pets. Safety notes are written with specific guidance, not
                 just generic caution language.
               </li>
               <li>
-                <strong>Final editorial review</strong>, a second team member reads the guide
-                for clarity, accuracy, and completeness before it is published.
+                <strong>Final editorial review</strong>, every guide is read end-to-end for
+                clarity, accuracy, and completeness before it is published.
               </li>
             </ol>
           </Section>

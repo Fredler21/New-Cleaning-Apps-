@@ -6,16 +6,15 @@ import { posts } from "@/data/posts";
 import { categories } from "@/data/categories";
 
 export const metadata: Metadata = buildMeta({
-  title: "About Us",
+  title: "About",
   description:
-    "Meet the team behind TryCleaningHacks, real people with hands-on cleaning experience. Learn about our testing process, editorial standards, and mission to make home cleaning simpler.",
+    "TryCleaningHacks is a small site run by Fredler Pierre-Louis sharing practical, tested cleaning methods for everyday homes.",
   path: "/about",
-  keywords: ["about TryCleaningHacks", "cleaning experts", "who writes TryCleaningHacks", "editorial team"],
+  keywords: ["about TryCleaningHacks", "Fredler Pierre-Louis", "cleaning blog"],
 });
 
 export default function AboutPage() {
   const totalGuides = posts.length;
-  const totalTechniques = posts.reduce((sum, p) => sum + (p.steps?.length ?? 0), 0);
   const totalCategories = categories.length;
 
   return (
@@ -29,7 +28,7 @@ export default function AboutPage() {
             About TryCleaningHacks
           </h1>
           <p className="mt-3" style={{ color: "var(--text-secondary)" }}>
-            Real people. Hands-on testing. Practical cleaning advice you can trust.
+            Practical cleaning advice, written by one person who cares about getting it right.
           </p>
         </div>
 
@@ -38,213 +37,96 @@ export default function AboutPage() {
             className="space-y-6 text-base leading-8"
             style={{ color: "var(--text-secondary)" }}
           >
-            {/* Our Story */}
+            {/* Hello */}
             <div
               className="rounded-xl p-6"
               style={{ background: "var(--card-bg)", border: "1px solid var(--border)" }}
             >
               <h2 className="mb-3 text-lg font-semibold" style={{ color: "var(--text)" }}>
-                Our Story
+                Hi, I&apos;m Fredler
               </h2>
               <p>
-                TryCleaningHacks was founded by Sarah Mitchell in 2025 after nearly a decade
-                working as a professional house cleaner in the greater Chicago area. During those
-                years Sarah cleaned hundreds of homes and discovered that most cleaning advice
-                online was either vague, product-heavy, or just plain wrong, the kind of tips
-                that sounded clever but didn&apos;t hold up when she actually tried them on stubborn
-                grease, soap scum, or set-in stains.
+                Welcome to TryCleaningHacks. I&apos;m Fredler Pierre-Louis, and I run this site.
+                It started for a simple reason: most cleaning advice online is vague,
+                product-heavy, or just plain wrong. I wanted a place that gave straight answers,
+                step-by-step methods, exact quantities, and honest notes about what works and
+                what doesn&apos;t.
               </p>
               <p className="mt-3">
-                She started writing down what actually worked, specific methods, exact
-                proportions, surface-by-surface notes, and began sharing them with clients. The
-                response was overwhelming. That notebook became TryCleaningHacks: a library of
-                genuinely tested guides built around everyday ingredients like baking soda, white
-                vinegar, dish soap, and hydrogen peroxide.
-              </p>
-              <p className="mt-3">
-                Today the site covers more than {totalGuides} in-depth cleaning guides across {totalCategories} categories,
-                with new content added every week. Every guide goes through our testing and
-                editorial review process before it goes live.
+                Today the site has {totalGuides}+ guides across {totalCategories} categories,
+                covering kitchens, bathrooms, laundry, appliances, floors, odors, and more. New
+                guides are added every week. If you have a cleaning question you can&apos;t find
+                an answer to, I&apos;d like to hear it.
               </p>
             </div>
 
-            {/* Meet the Team */}
+            {/* What this site is */}
             <div
               className="rounded-xl p-6"
               style={{ background: "var(--card-bg)", border: "1px solid var(--border)" }}
             >
               <h2 className="mb-3 text-lg font-semibold" style={{ color: "var(--text)" }}>
-                Meet the Team
-              </h2>
-
-              <div className="space-y-6">
-                {/* Sarah */}
-                <div className="flex gap-4">
-                  <div
-                    className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-xl font-bold"
-                    style={{ background: "var(--accent-subtle)", color: "var(--accent)" }}
-                  >
-                    SM
-                  </div>
-                  <div>
-                    <p className="font-semibold" style={{ color: "var(--text)" }}>
-                      Sarah Mitchell, Founder &amp; Lead Writer
-                    </p>
-                    <p className="mt-1 text-sm leading-relaxed">
-                      Sarah spent 9 years as a professional house cleaner before founding
-                      TryCleaningHacks. She has personally tested every method published on the
-                      site, from removing hard water stains from chrome to deep-cleaning oven
-                      racks without commercial fumes. She focuses on what works in real homes,
-                      not laboratory conditions.
-                    </p>
-                  </div>
-                </div>
-
-                {/* James */}
-                <div className="flex gap-4" style={{ borderTop: "1px solid var(--border)", paddingTop: "1.25rem" }}>
-                  <div
-                    className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-xl font-bold"
-                    style={{ background: "var(--accent-subtle)", color: "var(--accent)" }}
-                  >
-                    JP
-                  </div>
-                  <div>
-                    <p className="font-semibold" style={{ color: "var(--text)" }}>
-                      James Park, Contributing Writer
-                    </p>
-                    <p className="mt-1 text-sm leading-relaxed">
-                      James is a home improvement writer with six years of experience covering
-                      DIY maintenance, household chemistry, and product testing. He contributes
-                      in-depth guides on appliance care, floor cleaning, and pest prevention,
-                      bringing a research-first approach that complements Sarah&apos;s hands-on testing.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Olivia */}
-                <div className="flex gap-4" style={{ borderTop: "1px solid var(--border)", paddingTop: "1.25rem" }}>
-                  <div
-                    className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-xl font-bold"
-                    style={{ background: "var(--accent-subtle)", color: "var(--accent)" }}
-                  >
-                    OT
-                  </div>
-                  <div>
-                    <p className="font-semibold" style={{ color: "var(--text)" }}>
-                      Olivia Torres, Safety &amp; Editorial Reviewer
-                    </p>
-                    <p className="mt-1 text-sm leading-relaxed">
-                      Olivia reviews every guide for chemical safety, ingredient compatibility,
-                      and surface suitability before it is published. Her background is in
-                      occupational health and consumer product safety, and she ensures that every
-                      safety note on the site is specific, accurate, and genuinely useful,
-                      not just boilerplate disclaimer language.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Our Mission */}
-            <div
-              className="rounded-xl p-6"
-              style={{ background: "var(--card-bg)", border: "1px solid var(--border)" }}
-            >
-              <h2 className="mb-3 text-lg font-semibold" style={{ color: "var(--text)" }}>
-                Our Mission
+                What this site is
               </h2>
               <p>
-                We believe everyone deserves a clean, comfortable home, regardless of budget,
-                experience, or how busy life gets. Our mission is to publish cleaning advice that
-                is practical, safety-conscious, and grounded in real testing. We do not publish
-                a method unless we have personally verified it works and is safe to use.
+                A library of cleaning guides built around methods that actually hold up in real
+                homes. Most use everyday ingredients, baking soda, white vinegar, dish soap,
+                hydrogen peroxide, instead of expensive specialty products.
               </p>
               <p className="mt-3">
-                We also commit to being honest when something doesn&apos;t work. If a popular
-                hack is ineffective or potentially dangerous on certain surfaces, we say so
-                clearly, even if it means going against widely shared advice.
+                Each guide is written to be followed: clear steps, real quantities, dwell times,
+                and notes on which surfaces a method is safe for. Where a popular hack
+                doesn&apos;t work, or is risky on certain materials, the guide says so.
               </p>
             </div>
 
-            {/* How We Test */}
+            {/* How content is made */}
             <div
               className="rounded-xl p-6"
               style={{ background: "var(--card-bg)", border: "1px solid var(--border)" }}
             >
               <h2 className="mb-3 text-lg font-semibold" style={{ color: "var(--text)" }}>
-                How We Research and Test
+                How the guides are made
               </h2>
-              <p>Every guide on TryCleaningHacks goes through the following process:</p>
-              <ol className="ml-4 mt-3 list-decimal space-y-2">
-                <li>
-                  <strong>Topic selection</strong>, we identify real cleaning problems that
-                  homeowners search for the most, focusing on questions where existing answers
-                  online are incomplete or misleading.
-                </li>
-                <li>
-                  <strong>Hands-on testing</strong>, each method is physically tested on the
-                  relevant surface type before being written up. We note what works, what
-                  doesn&apos;t, and under what conditions.
-                </li>
-                <li>
-                  <strong>Safety review</strong>, Olivia reviews all chemical interactions,
-                  ventilation requirements, and surface compatibility warnings before publication.
-                </li>
-                <li>
-                  <strong>Step-by-step writing</strong>, we write guides with exact quantities,
-                  dwell times, and tool specifications so the instructions can actually be followed
-                  without guessing.
-                </li>
-                <li>
-                  <strong>Ongoing updates</strong>, if a method is found to cause problems
-                  on specific surface types or with certain product formulations, we update
-                  the guide promptly.
-                </li>
-              </ol>
+              <p>
+                Each guide goes through research on the underlying cleaning chemistry, a
+                drafting pass, and a final review for accuracy, safety, and clarity before it
+                goes live. Methods are checked against multiple sources, and surface-safety
+                warnings are written specifically rather than as generic disclaimers.
+              </p>
               <p className="mt-3">
-                For a full description of our editorial standards, see our{" "}
+                If a method on the site ever causes a problem on your surface or product, I
+                want to know. Read the full process on the{" "}
                 <Link href="/editorial-policy" className="underline" style={{ color: "var(--accent)" }}>
                   Editorial Policy
-                </Link>.
+                </Link>{" "}
+                page.
               </p>
             </div>
 
-            {/* Who This Is For */}
+            {/* Get in touch */}
             <div
               className="rounded-xl p-6"
               style={{ background: "var(--card-bg)", border: "1px solid var(--border)" }}
             >
               <h2 className="mb-3 text-lg font-semibold" style={{ color: "var(--text)" }}>
-                Who This Is For
+                Get in touch
               </h2>
               <p>
-                Whether you&apos;re a busy parent looking for 5-minute quick wins, a first-time
-                renter tackling move-out cleaning, someone dealing with a stubborn stain, or a
-                homeowner who wants a reliable deep-clean routine, TryCleaningHacks is written
-                for you. All content is free, clearly organized, and works equally well on phone
-                and desktop.
-              </p>
-            </div>
-
-            {/* Get in Touch */}
-            <div
-              className="rounded-xl p-6"
-              style={{ background: "var(--card-bg)", border: "1px solid var(--border)" }}
-            >
-              <h2 className="mb-3 text-lg font-semibold" style={{ color: "var(--text)" }}>
-                Get in Touch
-              </h2>
-              <p>
-                Have a cleaning question, a guide suggestion, or feedback about something we got
-                wrong? We read every message. Reach us through our{" "}
-                <a href="/contact" className="underline" style={{ color: "var(--accent)" }}>
+                Have a cleaning question, a topic suggestion, a correction, or a partnership
+                idea? Reach me through the{" "}
+                <Link href="/contact" className="underline" style={{ color: "var(--accent)" }}>
                   Contact page
-                </a>{" "}
+                </Link>{" "}
                 or email{" "}
-                <a href="mailto:support@trycleaninghacks.com" className="underline" style={{ color: "var(--accent)" }}>
+                <a
+                  href="mailto:support@trycleaninghacks.com"
+                  className="underline"
+                  style={{ color: "var(--accent)" }}
+                >
                   support@trycleaninghacks.com
                 </a>
-                . We typically respond within 24 to 48 hours.
+                . I read every message and reply within 1 to 2 business days.
               </p>
             </div>
           </div>
@@ -259,23 +141,15 @@ export default function AboutPage() {
                 className="mb-4 text-xs font-semibold uppercase tracking-wider"
                 style={{ color: "var(--muted)" }}
               >
-                By the numbers
+                Quick facts
               </h3>
               <div className="space-y-4">
                 <div>
                   <p className="text-2xl font-bold" style={{ color: "var(--text)" }}>
-                    {totalTechniques}+
-                  </p>
-                  <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-                    Individual cleaning techniques
-                  </p>
-                </div>
-                <div className="pt-4" style={{ borderTop: "1px solid var(--border)" }}>
-                  <p className="text-2xl font-bold" style={{ color: "var(--text)" }}>
                     {totalGuides}+
                   </p>
                   <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-                    In-depth cleaning guides
+                    Cleaning guides
                   </p>
                 </div>
                 <div className="pt-4" style={{ borderTop: "1px solid var(--border)" }}>
@@ -291,7 +165,7 @@ export default function AboutPage() {
                     Free
                   </p>
                   <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-                    Always, no paywalls ever
+                    Always, no paywalls
                   </p>
                 </div>
               </div>
@@ -319,13 +193,13 @@ export default function AboutPage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="underline" style={{ color: "var(--accent)" }}>
-                    Contact Us
+                  <Link href="/terms" className="underline" style={{ color: "var(--accent)" }}>
+                    Terms
                   </Link>
                 </li>
                 <li>
-                  <Link href="/faq" className="underline" style={{ color: "var(--accent)" }}>
-                    Cleaning FAQ
+                  <Link href="/contact" className="underline" style={{ color: "var(--accent)" }}>
+                    Contact
                   </Link>
                 </li>
               </ul>

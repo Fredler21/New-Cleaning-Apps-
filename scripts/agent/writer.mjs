@@ -111,11 +111,16 @@ export const loadExamplePost = async () => {
 // ---------------------------------------------------------------------------
 const VOICE_GUIDE = `
 VOICE & STYLE RULES (non-negotiable):
-- Write like Sarah Mitchell: first-person, tested-it-myself, slightly skeptical, no fluff.
-- Every step body is 4-8 sentences. Concrete details (times, quantities, surface types).
-- Include at least one "what surprised me" or "what didn't work" moment.
+- Write authoritatively and clearly. Use "I" sparingly and never invent personal anecdotes.
+  Prefer phrasing like "this method works well on", "the most reliable approach is",
+  "for stubborn buildup, do X", "this is what holds up best in real homes".
+- Every step body is 4-8 sentences. Concrete details (times, quantities, surface types,
+  what to look for, what can go wrong).
+- Include at least one "what doesn't work well" or "what to watch out for" moment per post.
 - No emojis. No marketing adjectives ("amazing", "incredible", "ultimate").
 - No "in conclusion" / "in summary" type wrap-ups.
+- Do NOT fabricate first-person test stories (e.g., "I scrubbed for 20 minutes and watched
+  the grime lift"). Stick to factual, instructive language.
 
 LENGTH RULES (CRITICAL — readers expect long-form, SEO depends on it):
 - Step bodies combined MUST total ${MIN_WORDS}-${MAX_WORDS} words (target: ~${TARGET_WORDS}).
@@ -175,7 +180,7 @@ type Post = {
   title: string;            // 8-14 words, specific, no clickbait, NO dashes
   slug: string;             // kebab-case, unique, 4-9 words
   datePublished: string;    // today's ISO date YYYY-MM-DD
-  author: "Sarah Mitchell";
+  author: "Fredler Pierre-Louis";
   category: string;         // one of the existing categories above
   readTime: string;         // e.g. "11 min"
   tags: string[];           // 3-5 short tags
@@ -247,7 +252,7 @@ export const generatePost = async ({
   }
 
   // Force-fix a few fields the model sometimes drifts on.
-  post.author = post.author || "Sarah Mitchell";
+  post.author = post.author || "Fredler Pierre-Louis";
   post.datePublished = new Date().toISOString().slice(0, 10);
   post.coverImage = `/graphics/posts/${post.slug}.png`;
 
