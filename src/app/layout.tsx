@@ -108,6 +108,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src="https://ezoicanalytics.com/analytics.js"
           strategy="lazyOnload"
         />
+        {/* Google AdSense verification + Auto Ads (works alongside Ezoic
+            Mediation. The script tag is what Google's crawler looks for
+            during site review for ads.google.com/adsense ownership). */}
+        <Script
+          id="adsense-verification"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5416667362161343"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
       </head>
 
       {/* AdSense auto-ads removed, ads are now served by Ezoic.

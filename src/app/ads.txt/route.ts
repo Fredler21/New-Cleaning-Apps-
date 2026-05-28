@@ -24,7 +24,7 @@ const EZOIC_ADS_TXT =
 
 // Hard-coded AdSense ownership line. Reads from env first so we can rotate
 // without a deploy, but ships with a baseline so the route is never empty.
-const ADSENSE_PUB_ID = process.env.ADSENSE_PUB_ID || ""; // e.g. "pub-1234567890123456"
+const ADSENSE_PUB_ID = process.env.ADSENSE_PUB_ID || "pub-5416667362161343";
 
 const buildMinimalAdsTxt = () => {
   const lines = [
