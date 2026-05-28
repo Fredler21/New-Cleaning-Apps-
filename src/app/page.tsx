@@ -7,7 +7,6 @@ import { featuredThisWeek, trendingPosts, heroPosts, quickWinPosts } from "@/dat
 import { TrendingCarousel } from "@/components/posts/TrendingCarousel";
 import { PostCard } from "@/components/posts/PostCard";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
-import { EzoicAd } from "@/components/ads/EzoicAd";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -104,11 +103,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-      </Container>
-
-      {/* Ezoic ad: under hero/search, above categories. Replace ID with dashboard placement. */}
-      <Container>
-        <EzoicAd id={104} className="py-4" />
       </Container>
 
       {/* Browse by Category, horizontal scroll */}

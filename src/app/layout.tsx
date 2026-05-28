@@ -77,40 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`light ${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
-        {/* Ezoic Privacy (CMP) Scripts, MUST load before sa.min.js.
-            Use next/script beforeInteractive so Next injects them in
-            order in <head> before any other JS, and React 19 does not
-            hoist them. data-cfasync attribute prevents Cloudflare
-            Rocket Loader rewriting their order. */}
-        <Script
-          id="ezoic-cmp-1"
-          src="https://cmp.gatekeeperconsent.com/min.js"
-          strategy="beforeInteractive"
-          data-cfasync="false"
-        />
-        <Script
-          id="ezoic-cmp-2"
-          src="https://the.gatekeeperconsent.com/cmp.min.js"
-          strategy="beforeInteractive"
-          data-cfasync="false"
-        />
-        {/* Ezoic Header Script (must come AFTER CMP scripts in the DOM). */}
-        <Script
-          id="ezoic-sa"
-          src="https://www.ezojs.com/ezoic/sa.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script id="ezoic-init" strategy="beforeInteractive">
-          {`window.ezstandalone = window.ezstandalone || {};ezstandalone.cmd = ezstandalone.cmd || [];`}
-        </Script>
-        <Script
-          id="ezoic-analytics"
-          src="https://ezoicanalytics.com/analytics.js"
-          strategy="lazyOnload"
-        />
-        {/* AdSense ownership verification (in addition to /ads.txt).
-            Loads alongside Ezoic; AdSense inventory is still served
-            via Ezoic Mediation once AdSense is approved. */}
+        {/* AdSense ownership verification + ad serving. */}
         <Script
           id="adsense-verification"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5416667362161343"
@@ -119,9 +86,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
 
-      {/* AdSense auto-ads removed, ads are now served by Ezoic.
-          AdSense inventory remains accessible via Ezoic Mediation
-          (link your AdSense account in the Ezoic dashboard). */}
       <Script id="gtm" strategy="afterInteractive">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
