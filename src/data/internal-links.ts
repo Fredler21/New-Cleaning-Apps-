@@ -511,10 +511,17 @@ export const internalLinks: Record<string, string[]> = {
 
   /* ─── Bed Bugs ─── */
   "how-to-get-rid-of-bed-bugs": [
+    "how-to-get-rid-of-bed-bugs-fast",
     "10-best-ways-to-combat-cockroaches",
     "how-to-deep-clean-your-mattress",
     "how-to-get-rid-of-maggots-in-trash-can",
-    "how-to-keep-flies-away-outdoors",
+  ],
+
+  "how-to-get-rid-of-bed-bugs-fast": [
+    "how-to-get-rid-of-bed-bugs",
+    "how-to-deep-clean-your-mattress",
+    "10-best-ways-to-combat-cockroaches",
+    "how-to-get-rid-of-maggots-in-trash-can",
   ],
 
   /* ─── Clean Washing Machine ─── */
