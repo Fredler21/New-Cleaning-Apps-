@@ -3813,7 +3813,7 @@ export const posts: Post[] = [
       "dust control"
     ],
     "excerpt": "I tested ten different baseboard cleaning methods over three weeks, including the viral sock trick and a homemade dryer sheet hack. Two methods cut my cleaning time in half and eliminated the need to crawl around on my knees. Here's what actually worked and the shortcuts that made things worse.",
-    "coverImage": "/uploads/baseboard-cleaning-hacks-that-save-time.png",
+    "coverImage": "/uploads/baseboard-cleaning-hacks-that-save-time.jpg",
     "supplies": [
       "Microfiber cloths",
       "Old socks",

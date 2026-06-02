@@ -101,7 +101,7 @@ export const categories: Category[] = [
     id: "paint-colors",
     name: "Paint Colors",
     slug: "paint-colors",
-    icon: "/graphics/icons/paint-colors.png",
+    icon: "/graphics/icons/paint-colors.jpg",
     description: "Low-maintenance paint and finish color guidance that helps walls, cabinets, and floors look cleaner between dusting days.",
     tags: ["home", "quick wins", "dust control"]
   },
@@ -109,7 +109,7 @@ export const categories: Category[] = [
     id: "diy-cleaners",
     name: "DIY Cleaners",
     slug: "diy-cleaners",
-    icon: "/graphics/icons/diy-cleaners.png",
+    icon: "/graphics/icons/diy-cleaners.jpg",
     description: "Homemade cleaning sprays, pastes, and solutions made from simple pantry ingredients that replace expensive store-bought products.",
     tags: ["diy", "eco-friendly", "budget", "bathroom"]
   }
