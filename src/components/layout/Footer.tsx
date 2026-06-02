@@ -14,7 +14,6 @@ const footerLinks = {
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
     { href: "/editorial-policy", label: "Editorial Policy" },
-    { href: "/ai-content-policy", label: "AI Content Policy" },
     { href: "/privacy", label: "Privacy" },
     { href: "/terms", label: "Terms" },
     { href: "/faq", label: "FAQ" }
