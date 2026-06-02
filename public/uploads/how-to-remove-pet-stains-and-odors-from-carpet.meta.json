@@ -1,10 +1,7 @@
 {
   "slug": "how-to-remove-pet-stains-and-odors-from-carpet",
-  "source": "unsplash",
-  "unsplashId": "hRfVrKqDtCQ",
-  "photographer": "Gustavo Zambelli",
-  "photographerUrl": "https://unsplash.com/@zamax?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/a-small-dog-wearing-round-sunglasses-on-a-rug-hRfVrKqDtCQ?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "A small dog wearing round sunglasses on a rug",
-  "fetchedAt": "2026-05-13T22:56:44.886Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:42.508Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:42.508Z"
 }

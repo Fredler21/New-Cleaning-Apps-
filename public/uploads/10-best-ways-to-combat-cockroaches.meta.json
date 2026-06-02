@@ -1,10 +1,7 @@
 {
   "slug": "10-best-ways-to-combat-cockroaches",
-  "source": "unsplash",
-  "unsplashId": "yLor6GEU2yw",
-  "photographer": "Cabri Caldwell",
-  "photographerUrl": "https://unsplash.com/@minimizethenorganize?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/woman-organizing-food-in-a-well-stocked-pantry-yLor6GEU2yw?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "Woman organizing food in a well-stocked pantry",
-  "fetchedAt": "2026-05-13T22:56:44.043Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:34.287Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:34.289Z"
 }

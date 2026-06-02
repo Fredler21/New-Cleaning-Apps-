@@ -1,10 +1,7 @@
 {
   "slug": "how-to-clean-leather-mold-safely",
-  "source": "unsplash",
-  "unsplashId": "7UqGdTdUin4",
-  "photographer": "Austin Park",
-  "photographerUrl": "https://unsplash.com/@aussiep?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/brown-leather-couch-on-white-ceramic-floor-tiles-7UqGdTdUin4?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "brown leather couch on white ceramic floor tiles",
-  "fetchedAt": "2026-05-13T22:56:46.001Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:39.811Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:39.811Z"
 }

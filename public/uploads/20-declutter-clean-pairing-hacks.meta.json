@@ -1,10 +1,7 @@
 {
   "slug": "20-declutter-clean-pairing-hacks",
-  "source": "unsplash",
-  "unsplashId": "8KzgXVPTZn0",
-  "photographer": "Angela Bailey",
-  "photographerUrl": "https://unsplash.com/@angelabaileyy?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/throw-pillows-on-white-couch-8KzgXVPTZn0?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "throw pillows on white couch",
-  "fetchedAt": "2026-05-13T22:56:43.960Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:36.221Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:36.221Z"
 }

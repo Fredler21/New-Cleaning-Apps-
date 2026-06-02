@@ -1,10 +1,7 @@
 {
   "slug": "10-fascinating-vacuum-hacks-you-need-to-know",
-  "source": "unsplash",
-  "unsplashId": "Tdlo4VAidtg",
-  "photographer": "Annie Spratt",
-  "photographerUrl": "https://unsplash.com/@anniespratt?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-fire-place-Tdlo4VAidtg?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "a living room filled with furniture and a fire place",
-  "fetchedAt": "2026-05-13T22:56:44.146Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:34.625Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:34.625Z"
 }

@@ -1,10 +1,7 @@
 {
   "slug": "best-floor-colors-to-hide-dust-and-dirt",
-  "source": "unsplash",
-  "unsplashId": "NLbNAaBFv7c",
-  "photographer": "Josh Hemsley",
-  "photographerUrl": "https://unsplash.com/@joshhemsley?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/beige-container-NLbNAaBFv7c?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "beige container",
-  "fetchedAt": "2026-05-13T22:56:45.171Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:37.418Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:37.418Z"
 }

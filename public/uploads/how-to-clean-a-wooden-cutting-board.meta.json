@@ -1,10 +1,7 @@
 {
   "slug": "how-to-clean-a-wooden-cutting-board",
-  "source": "unsplash",
-  "unsplashId": "tPQp088GrUE",
-  "photographer": "Åsa Pålsson",
-  "photographerUrl": "https://unsplash.com/@asapalsson?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/sliced-lemon-on-chopping-board-tPQp088GrUE?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "sliced lemon on chopping board",
-  "fetchedAt": "2026-05-13T22:56:45.926Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:38.619Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:38.619Z"
 }

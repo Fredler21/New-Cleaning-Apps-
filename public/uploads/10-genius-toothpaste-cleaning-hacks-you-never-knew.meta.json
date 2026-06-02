@@ -1,10 +1,7 @@
 {
   "slug": "10-genius-toothpaste-cleaning-hacks-you-never-knew",
-  "source": "unsplash",
-  "unsplashId": "CBITUkeqHJo",
-  "photographer": "Martin May",
-  "photographerUrl": "https://unsplash.com/@_juanmay?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/clear-glass-bottle-on-brown-ceramic-tile-CBITUkeqHJo?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "clear glass bottle on brown ceramic tile",
-  "fetchedAt": "2026-05-13T22:56:44.238Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:34.763Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:34.763Z"
 }

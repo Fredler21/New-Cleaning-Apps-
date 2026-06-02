@@ -1,10 +1,7 @@
 {
   "slug": "remove-hard-water-stains-from-toilet",
-  "source": "unsplash",
-  "unsplashId": "yFWaFuem3mA",
-  "photographer": "James Fitzgerald",
-  "photographerUrl": "https://unsplash.com/@reallygoodjames?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/white-towel-on-white-ceramic-bathtub-yFWaFuem3mA?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "white towel on white ceramic bathtub",
-  "fetchedAt": "2026-05-13T22:56:44.715Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:43.102Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:43.102Z"
 }

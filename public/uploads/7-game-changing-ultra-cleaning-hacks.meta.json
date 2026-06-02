@@ -1,10 +1,7 @@
 {
   "slug": "7-game-changing-ultra-cleaning-hacks",
-  "source": "unsplash",
-  "unsplashId": "jjrXvzbqC5E",
-  "photographer": "CDC",
-  "photographerUrl": "https://unsplash.com/@cdc?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/man-in-gray-hoodie-and-blue-denim-jeans-standing-on-brown-wooden-parquet-flooring-jjrXvzbqC5E?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "man in gray hoodie and blue denim jeans standing on brown wooden parquet flooring",
-  "fetchedAt": "2026-05-13T22:56:43.117Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:36.665Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:36.665Z"
 }

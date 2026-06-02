@@ -1,10 +1,7 @@
 {
   "slug": "best-cabinet-colors-to-hide-fingerprints-and-dust",
-  "source": "unsplash",
-  "unsplashId": "gSptirCdrUs",
-  "photographer": "Megan Nixon",
-  "photographerUrl": "https://unsplash.com/@megnixon?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/a-kitchen-shelf-filled-with-dishes-and-plants-gSptirCdrUs?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "a kitchen shelf filled with dishes and plants",
-  "fetchedAt": "2026-05-13T22:56:45.217Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:37.307Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:37.307Z"
 }

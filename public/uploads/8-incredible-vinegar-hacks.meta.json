@@ -1,10 +1,7 @@
 {
   "slug": "8-incredible-vinegar-hacks",
-  "source": "unsplash",
-  "unsplashId": "KL1xcrVav5A",
-  "photographer": "Haberdoedas",
-  "photographerUrl": "https://unsplash.com/@haberdoedas?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/a-bottle-of-wine-sitting-on-top-of-a-table-KL1xcrVav5A?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "A bottle of wine sitting on top of a table",
-  "fetchedAt": "2026-05-13T22:56:43.355Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:36.997Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:36.997Z"
 }

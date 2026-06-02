@@ -1,10 +1,7 @@
 {
   "slug": "how-to-deep-clean-a-cast-iron-skillet",
-  "source": "unsplash",
-  "unsplashId": "QzXBGq_V8S4",
-  "photographer": "Jessica Price",
-  "photographerUrl": "https://unsplash.com/@jpricedesign?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/brown-sausage-on-black-pan-QzXBGq_V8S4?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "brown sausage on black pan",
-  "fetchedAt": "2026-05-13T22:56:46.333Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:40.730Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:40.730Z"
 }

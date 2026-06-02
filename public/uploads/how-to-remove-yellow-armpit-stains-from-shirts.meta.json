@@ -1,10 +1,7 @@
 {
   "slug": "how-to-remove-yellow-armpit-stains-from-shirts",
-  "source": "unsplash",
-  "unsplashId": "hMMXhKSZk7k",
-  "photographer": "Nimble Made",
-  "photographerUrl": "https://unsplash.com/@nimblemade?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/white-button-up-shirt-on-clothes-hanger-hMMXhKSZk7k?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "white button up shirt on clothes hanger",
-  "fetchedAt": "2026-05-13T22:56:45.465Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:42.652Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:42.652Z"
 }

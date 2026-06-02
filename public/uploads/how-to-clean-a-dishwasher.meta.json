@@ -1,10 +1,7 @@
 {
   "slug": "how-to-clean-a-dishwasher",
-  "source": "unsplash",
-  "unsplashId": "z6IUJy2dnpg",
-  "photographer": "Caroline Badran",
-  "photographerUrl": "https://unsplash.com/@___atmos?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/modern-kitchen-and-dining-area-with-concrete-ceiling-z6IUJy2dnpg?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "Modern kitchen and dining area with concrete ceiling",
-  "fetchedAt": "2026-05-13T22:56:45.691Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:38.280Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:38.280Z"
 }

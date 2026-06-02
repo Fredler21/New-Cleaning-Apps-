@@ -1,10 +1,7 @@
 {
   "slug": "how-to-clean-an-air-fryer",
-  "source": "unsplash",
-  "unsplashId": "J5q4kLEcV0k",
-  "photographer": "Annika Palmari",
-  "photographerUrl": "https://unsplash.com/@palmariannika?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/pizza-on-stainless-steel-tray-J5q4kLEcV0k?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "pizza on stainless steel tray",
-  "fetchedAt": "2026-05-13T22:56:45.808Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:38.713Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:38.713Z"
 }

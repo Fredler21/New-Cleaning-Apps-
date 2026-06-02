@@ -1,10 +1,7 @@
 {
   "slug": "10-kitchen-sink-detox-hacks-for-odor-free-results",
-  "source": "unsplash",
-  "unsplashId": "diHGlclTjM4",
-  "photographer": "Filip Baotić",
-  "photographerUrl": "https://unsplash.com/@filipbaotic?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/stainless-steel-faucet-turned-off-diHGlclTjM4?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "stainless steel faucet turned off",
-  "fetchedAt": "2026-05-13T22:56:43.742Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:34.947Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:34.947Z"
 }

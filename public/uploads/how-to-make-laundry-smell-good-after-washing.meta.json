@@ -1,10 +1,7 @@
 {
   "slug": "how-to-make-laundry-smell-good-after-washing",
-  "source": "unsplash",
-  "unsplashId": "Q_cAsBDLEI0",
-  "photographer": "Dmitry Ganin",
-  "photographerUrl": "https://unsplash.com/@ganinph?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/a-pair-of-white-gloves-Q_cAsBDLEI0?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "a pair of white gloves",
-  "fetchedAt": "2026-05-13T22:56:45.961Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:41.981Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:41.981Z"
 }

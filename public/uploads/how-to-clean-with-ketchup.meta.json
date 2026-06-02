@@ -1,10 +1,7 @@
 {
   "slug": "how-to-clean-with-ketchup",
-  "source": "unsplash",
-  "unsplashId": "635ZeE2-LWE",
-  "photographer": "Clay Banks",
-  "photographerUrl": "https://unsplash.com/@claybanks?utm_source=cleaninghax&utm_medium=referral",
-  "photoUrl": "https://unsplash.com/photos/kitchen-counter-with-tomatoes-eggs-and-utensils-635ZeE2-LWE?utm_source=cleaninghax&utm_medium=referral",
-  "altDescription": "Kitchen counter with tomatoes, eggs, and utensils.",
-  "fetchedAt": "2026-05-13T22:56:46.278Z"
+  "source": "gemini",
+  "model": "gemini-image",
+  "generatedAt": "2026-06-02T21:02:40.334Z",
+  "restoredFromUnsplashAt": "2026-06-02T21:02:40.334Z"
 }
