@@ -16,7 +16,7 @@ const TARGET_WORDS = 2000;
 const MAX_WORDS = 2800;
 
 const POSTS_PATH = path.join(process.cwd(), "src", "data", "posts.ts");
-const POSTS_IMG_DIR = path.join(process.cwd(), "public", "graphics", "posts");
+const POSTS_IMG_DIR = path.join(process.cwd(), "public", "uploads");
 
 // ---------------------------------------------------------------------------
 // Dash stripping: the user wants no em-dashes / en-dashes / stylistic " - "
@@ -185,7 +185,7 @@ type Post = {
   readTime: string;         // e.g. "11 min"
   tags: string[];           // 3-5 short tags
   excerpt: string;          // 2-3 sentences, first-person, sets up the test, NO dashes
-  coverImage: string;       // "/graphics/posts/<slug>.jpg"
+  coverImage: string;       // "/uploads/<slug>.jpg"
   supplies: string[];       // 5-8 items
   steps: { title: string; body: string }[];  // 10-12 steps, last two per the voice rules
   proTips: string[];        // 3 items
@@ -254,7 +254,7 @@ export const generatePost = async ({
   // Force-fix a few fields the model sometimes drifts on.
   post.author = post.author || "Fredler Pierre-Louis";
   post.datePublished = new Date().toISOString().slice(0, 10);
-  post.coverImage = `/graphics/posts/${post.slug}.png`;
+  post.coverImage = `/uploads/${post.slug}.png`;
 
   // Post-process: strip any em/en/stylistic dashes from every string field.
   post = sanitizePost(post);
@@ -359,7 +359,7 @@ export const buildImagePrompt = (post) => {
 };
 
 /**
- * Throws if /graphics/posts/<slug>.{jpg,png} already exists.
+ * Throws if /uploads/<slug>.{jpg,png} already exists.
  * Call this BEFORE running the Gemini pipeline to avoid silently overwriting
  * a real human-curated cover image with an AI one.
  */
@@ -369,7 +369,7 @@ export const assertNoExistingCover = async (slug) => {
     try {
       await access(p, FS.F_OK);
       throw new Error(
-        `Cover image already exists at public/graphics/posts/${slug}.${ext}. ` +
+        `Cover image already exists at public/uploads/${slug}.${ext}. ` +
           `Refusing to overwrite. Pick a different slug or remove the existing file.`
       );
     } catch (err) {
