@@ -39,17 +39,20 @@ export const metadata: Metadata = {
 };
 
 const categoryImages: Record<string, string> = {
-  "dawn-hacks": "/graphics/icons/cat-dawn.png",
-  "vinegar-hacks": "/graphics/icons/cat-vinegar.png",
-  "baking-soda": "/graphics/icons/cat-baking-soda.png",
-  "listerine-hacks": "/graphics/icons/cat-listerine.png",
-  "peroxide-hacks": "/graphics/icons/cat-peroxide.png",
-  "deep-clean": "/graphics/icons/cat-deep-clean.png",
-  "dollar-store": "/graphics/icons/cat-dollar-store.png",
-  "laundry-kitchen": "/graphics/icons/cat-laundry.png",
+  "dawn-hacks": "/graphics/icons/cat-dawn.jpg",
+  "vinegar-hacks": "/graphics/icons/cat-vinegar.jpg",
+  "baking-soda": "/graphics/icons/cat-baking-soda.jpg",
+  "listerine-hacks": "/graphics/icons/cat-listerine.jpg",
+  "peroxide-hacks": "/graphics/icons/cat-peroxide.jpg",
+  "deep-clean": "/graphics/icons/cat-deep-clean.jpg",
+  "dollar-store": "/graphics/icons/cat-dollar-store.jpg",
+  "laundry-kitchen": "/graphics/icons/cat-laundry.jpg",
   "wd40-hacks": "/graphics/icons/cat-wd40.png",
   "pest-control": "/graphics/icons/cat-pest-control.png",
-  "home-fragrance": "/graphics/icons/cat-home-fragrance.png"
+  "home-fragrance": "/graphics/icons/cat-home-fragrance.png",
+  "bathroom-cleaning": "/graphics/icons/bathroom-cleaning.png",
+  "paint-colors": "/graphics/icons/paint-colors.jpg",
+  "diy-cleaners": "/graphics/icons/diy-cleaners.jpg"
 };
 
 const categoryEmoji: Record<string, string> = {
@@ -63,7 +66,10 @@ const categoryEmoji: Record<string, string> = {
   "laundry-kitchen": "👕",
   "wd40-hacks": "🔧",
   "pest-control": "🪳",
-  "home-fragrance": "🌸"
+  "home-fragrance": "🌸",
+  "bathroom-cleaning": "🚿",
+  "paint-colors": "🎨",
+  "diy-cleaners": "🧪"
 };
 
 export default function HomePage() {
