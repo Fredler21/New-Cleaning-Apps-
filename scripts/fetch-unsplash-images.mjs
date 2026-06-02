@@ -11,7 +11,7 @@
 //
 // Behavior:
 //   - Reads scripts/unsplash-image-queries.json -> [{ slug, query, orientation? }]
-//   - Downloads the top match for each query into public/graphics/posts/<slug>.jpg
+//   - Downloads the top match for each query into public/uploads/<slug>.jpg
 //   - Writes a sidecar <slug>.meta.json with attribution (required by
 //     Unsplash API guidelines).
 //   - Skips slugs whose .jpg already exists unless --force is passed.

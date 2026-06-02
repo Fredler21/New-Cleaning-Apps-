@@ -532,4 +532,28 @@ export const internalLinks: Record<string, string[]> = {
     "10-fascinating-vacuum-hacks-you-need-to-know",
   ],
 
+  /* ─── How to Get Onion Smell Out of the House ─── */
+  "how-to-get-onions-smell-out-of-the-house": [
+    "10-genius-ways-to-make-your-house-smell-great",
+    "10-kitchen-sink-detox-hacks-for-odor-free-results",
+    "how-to-make-your-entire-home-smell-like-cinnamon",
+    "how-to-clean-a-bathroom-drain-that-smells",
+  ],
+
+  /* ─── How to Deep Clean a Plunger ─── */
+  "how-to-deep-clean-a-plunger": [
+    "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
+    "diy-bathroom-cleaning-recipes",
+    "how-to-clean-a-bathroom-drain-that-smells",
+    "remove-hard-water-stains-from-toilet",
+  ],
+
+  /* ─── How to Make Your Entire Home Smell Like Cinnamon ─── */
+  "how-to-make-your-entire-home-smell-like-cinnamon": [
+    "10-genius-ways-to-make-your-house-smell-great",
+    "how-to-get-onions-smell-out-of-the-house",
+    "how-to-make-laundry-smell-good-after-washing",
+    "diy-all-natural-cleaning-sprays",
+  ],
+
 };

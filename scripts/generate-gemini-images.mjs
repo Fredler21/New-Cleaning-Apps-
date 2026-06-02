@@ -20,7 +20,7 @@ const CANDID = args.has("--candid");
 const FORCE = args.has("--force");
 
 const promptsPath = path.join(process.cwd(), "scripts", "gemini-image-prompts.json");
-const defaultOutputDir = path.join(process.cwd(), "public", "graphics", "posts");
+const defaultOutputDir = path.join(process.cwd(), "public", "uploads");
 const graphicsRoot = path.join(process.cwd(), "public", "graphics");
 
 // Phrases that scream "AI stock photo" to reviewers — strip them out.

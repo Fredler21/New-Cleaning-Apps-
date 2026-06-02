@@ -11,7 +11,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "odor control", "bathroom"],
     excerpt:
       "I tested every one of these Listerine hacks in my own home over a single weekend. Most worked. Two surprised me enough to become permanent habits. Here's what honestly held up and the mistakes that can damage the wrong surfaces.",
-    coverImage: "/graphics/posts/13-mind-blowing-listerine-hacks.jpg",
+    coverImage: "/uploads/13-mind-blowing-listerine-hacks.jpg",
     supplies: ["Listerine", "Spray bottle", "Microfiber cloths", "Soft brush", "Warm water", "Gloves"],
     steps: [
       { title: "Make a Listerine all-purpose spray", body: "Mix equal parts original Listerine and water in a spray bottle. The thymol and eucalyptol in Listerine are natural antiseptics that cut through light grime and leave a fresh mint scent. Shake gently before each use and label the bottle so nobody mistakes it for mouthwash. This simple DIY solution costs a fraction of commercial surface sprays and works especially well on laminate countertops, bathroom vanities, and tile backsplashes. Keep one bottle in the kitchen and another in the bathroom so you always have it within reach. Use only the original amber-colored Listerine for cleaning the blue, green, and whitening varieties contain dyes and different concentrations that can stain surfaces. The original formula is the most cost-effective and the safest for household surfaces. A single bottle of Listerine makes several weeks of cleaning spray, making the per-use cost genuinely negligible compared to name-brand all-purpose cleaners." },
@@ -53,7 +53,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "weekend", "routine"],
     excerpt:
       "After timing the same bathroom clean twice once with my old routine and once using these tricks the second run took 22 minutes to the first run's 45. Here's what made the biggest difference and the one mistake I see in almost every cleaning routine.",
-    coverImage: "/graphics/posts/7-game-changing-ultra-cleaning-hacks.jpg",
+    coverImage: "/uploads/7-game-changing-ultra-cleaning-hacks.jpg",
     supplies: ["All-purpose cleaner", "Degreaser", "Microfiber bundle", "Detail brush", "Bucket", "Gloves"],
     steps: [
       { title: "Do a full room scan first", body: "Walk through the room and remove anything that doesn't belong dishes, laundry, shoes, and random items. Clearing surfaces before you spray means every wipe actually reaches the surface instead of just pushing clutter around. This single step cuts your total cleaning time in half. Grab a laundry basket to collect misplaced items as you go, then redistribute them to their proper rooms after you finish cleaning. Professional cleaners always start with a clear-the-deck pass before touching any products. This pre-clean pass also gives you a mental inventory of what the room needs: where the worst buildup is, which surfaces need different products, and which areas you can skim quickly. Making this assessment before you open any bottles keeps you from doing duplicate passes or forgetting problem spots that you noticed the first time you walked in. Pay particular attention to areas that will require product dwell time: stovetop grime, soap scum, and grout all benefit from pre-treatment spray while you're doing the initial scan pass. By the time you've cleared the room and collected stray items, the pre-treated surfaces have already been working for two to three minutes." },
@@ -95,7 +95,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "laundry", "odor control"],
     excerpt:
       "I spent a month replacing cleaning products with baking soda wherever possible and kept honest notes. Some uses were genuine revelations. A few were clearly outperformed by simpler alternatives. Here's what actually held up after four weeks of real testing.",
-    coverImage: "/graphics/posts/14-ways-to-use-baking-soda-in-your-house.jpg",
+    coverImage: "/uploads/14-ways-to-use-baking-soda-in-your-house.jpg",
     supplies: ["Baking soda", "Warm water", "Soft sponge", "Measuring spoon", "Cloth", "Gloves"],
     steps: [
       { title: "Make a baking soda paste for sinks", body: "Mix three tablespoons of baking soda with one tablespoon of water to form a thick paste. Apply it to stainless steel or porcelain sinks and scrub gently with a soft sponge in circular motions. The mild abrasive lifts food stains and water marks without scratching. Rinse thoroughly and dry for a bright finish. For stubborn discoloration around the drain or at the waterline, let the paste sit for 10 minutes before scrubbing. This method works on both kitchen and bathroom sinks and leaves them looking brand new. Stainless steel sinks in particular benefit from a baking soda paste polish once a week the paste removes the dull gray film that builds up from mineral deposits and restores the brushed finish's reflectivity. After rinsing the paste out, dry the sink immediately and apply a drop of mineral oil to a cloth for a final buff that makes the stainless steel look showroom-new and creates a protective layer that slows future water spot formation." },
@@ -137,7 +137,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "glass", "bathroom"],
     excerpt:
       "I've cleaned with white vinegar for years and also learned what it permanently damaged. Here's what it genuinely excels at two methods that outperform more expensive alternatives and three surfaces I'll never use it on again after seeing the results firsthand.",
-    coverImage: "/graphics/posts/8-incredible-vinegar-hacks.jpg",
+    coverImage: "/uploads/8-incredible-vinegar-hacks.jpg",
     supplies: ["White vinegar", "Spray bottle", "Warm water", "Microfiber", "Brush", "Gloves"],
     steps: [
       { title: "Descale your showerhead overnight", body: "Fill a plastic bag with undiluted white vinegar, submerge the showerhead, and secure with a rubber band. Leave it overnight. In the morning, remove the bag and run hot water for one minute. Mineral deposits dissolve completely, restoring full water pressure and even spray. If your showerhead is removable, unscrew it and soak it directly in a bowl of vinegar for an even deeper clean. Use an old toothbrush to scrub individual nozzle holes where calcium buildup restricts water flow. Pay attention to the outer rim of the showerhead face where mineral buildup forms a crusty deposit ring that's clearly visible. After the vinegar soak, this outer crust should wipe away with a cloth. If your water is particularly hard, repeat this soak every six weeks rather than waiting until pressure drops noticeably regular maintenance prevents the scale from bonding so firmly that longer soak times are needed." },
@@ -179,7 +179,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "bathroom", "laundry"],
     excerpt:
       "A bottle of 3% hydrogen peroxide costs under two dollars and genuinely outperforms cleaners at fifteen times the price for certain jobs. Here's where it's worth reaching for first and two mistakes that make it actively harmful to specific surfaces and fabrics.",
-    coverImage: "/graphics/posts/16-hydrogen-peroxide-cleaning-hacks.jpg",
+    coverImage: "/uploads/16-hydrogen-peroxide-cleaning-hacks.jpg",
     supplies: ["Hydrogen peroxide 3%", "Spray bottle", "Cotton pads", "Brush", "Microfiber", "Gloves"],
     steps: [
       { title: "Whiten grout lines", body: "Pour 3% hydrogen peroxide directly onto grout lines and let it fizz for 10 minutes. Scrub with a stiff grout brush in short strokes, then wipe clean with a damp cloth. Peroxide bleaches mildew stains without the strong fumes of chlorine bleach. Repeat weekly for grout that stays white. For deeply stained grout, mix peroxide with baking soda into a paste and apply it with an old toothbrush. Let the paste sit for 20 minutes before scrubbing for maximum whitening power. Unlike chlorine bleach, hydrogen peroxide is safe on colored grout it whitens by releasing oxygen that breaks down stain compounds rather than by stripping color across the entire surface indiscriminately. Use the paste version for floor grout in showers, which gets the most intense buildup from soap scum, hard water, and constant moisture, and reserve the liquid pour for lighter maintenance on wall tiles." },
@@ -221,7 +221,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "shower cleaning", "soap scum removal"],
     excerpt:
       "I deep cleaned the same shower twice in one week once with my old routine and once with these ten methods applied in the right sequence. The difference wasn't even close. Here's what changed and the daily habit that eliminated most of my scrubbing for good.",
-    coverImage: "/graphics/posts/12-shower-cleaning-hacks.jpg",
+    coverImage: "/uploads/12-shower-cleaning-hacks.jpg",
     supplies: ["White vinegar", "Baking soda", "Dawn dish soap", "Squeegee", "Stiff brush", "Old toothbrush", "Microfiber cloths", "Spray bottle", "Gloves"],
     steps: [
       { title: "Squeegee glass doors after every shower", body: "The easiest way to prevent soap scum and hard-water spots is to squeegee the glass door and tile walls right after you turn off the water. This takes about 30 seconds and removes roughly 90 percent of the moisture that causes buildup. Start from the top and pull downward in overlapping strokes. A basic squeegee costs under ten dollars and saves you from scrubbing hardened mineral deposits every weekend. Hang it inside the shower so it is always within reach. If other household members are resistant to squeegeeing, put the squeegee directly in the path of exiting the shower hang it at eye level on the inside of the shower door or on the wall immediately opposite the exit. Physical placement makes using it the path of least resistance. After two weeks of habitually squeegeeing, the reduction in soap scum on glass doors versus not squeegeeing is dramatic enough that it becomes self-reinforcing. The visual evidence glass that stays clear between deep cleans is a more compelling motivator than any argument for why squeegeeing matters. Once you see it work, the habit maintains itself." },
@@ -265,7 +265,7 @@ export const posts: Post[] = [
     tags: ["budget", "quick wins", "routine"],
     excerpt:
       "I outfitted my entire cleaning supply system from the dollar store and compared results against the name brands I'd been using. For most tasks, the difference was negligible. Here's what's genuinely worth buying, what to skip, and the one item that outperformed everything I spent more on.",
-    coverImage: "/graphics/posts/5-dollar-store-hacks-you-should-know.jpg",
+    coverImage: "/uploads/5-dollar-store-hacks-you-should-know.jpg",
     supplies: ["Organizer bins", "Spray bottles", "Microfiber packs", "Brush set", "Labels", "Gloves"],
     steps: [
       { title: "Grab spray bottles for custom cleaners", body: "Dollar-store spray bottles let you mix your own all-purpose cleaner, glass cleaner, and bathroom spray for pennies. Fill one with equal parts vinegar and water, another with dish soap and water. Label each bottle clearly. You get the same results as brand-name sprays at a fraction of the cost. Look for bottles with adjustable nozzles that can switch between mist and stream settings. Having multiple bottles ready to go means you clean more often because the prep work is already done. When selecting bottles, squeeze the trigger several times before buying some dollar store bottles have stiff or inconsistent trigger mechanisms that fatigue your hand during a cleaning session. A bottle that sprays smoothly and consistently is the single most important quality criterion. The trigger feel, not the bottle material, is what determines whether you reach for it every day or leave it under the sink." },
@@ -307,7 +307,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "education", "safety"],
     excerpt:
       "I've been on the wrong side of most of these myths. Bleach-over-grease, newspaper on mirrors, vinegar on marble all things I did before understanding why they don't work or actively cause damage. Here's what actually changed how I clean and the two safety myths that matter most.",
-    coverImage: "/graphics/posts/30-cleaning-myths-you-should-be-wary-of.jpg",
+    coverImage: "/uploads/30-cleaning-myths-you-should-be-wary-of.jpg",
     supplies: ["Notebook", "Trusted cleaner labels", "Microfiber", "Timer", "Gloves", "Ventilation fan"],
     steps: [
       { title: "Myth: More product means cleaner surfaces", body: "Using too much cleaner actually leaves sticky residue that attracts more dirt. A thin, even application is all you need. Excess product also takes longer to rinse off and can leave streaks on glass and countertops. Follow the label's recommended amount it's designed for optimal results. Overusing product also wastes money and creates more chemical exposure in your home. If you notice surfaces feeling tacky or streaky after cleaning, you're probably using too much and should cut back by half. A practical test: spray half the amount you normally use on your kitchen counter and wipe it. If the surface is just as clean or cleaner because there's no residue to distribute dust then you've been using too much. Most people who switch to proper amounts save money on cleaning products while getting better results, because the product is making clean contact with the surface rather than lubricating it." },
@@ -349,7 +349,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "deep clean"],
     excerpt:
       "I've kept a bottle of diluted Dawn near my stove for three years and it handles cooking grease better than the dedicated degreaser sprays I've tried. Here are 11 uses beyond the dish sink that actually hold up and the one mistake that makes Dawn less effective on the surface you need it most on.",
-    coverImage: "/graphics/posts/11-dawn-dish-soap-hacks-for-greasy-kitchens.jpg",
+    coverImage: "/uploads/11-dawn-dish-soap-hacks-for-greasy-kitchens.jpg",
     supplies: ["Dawn dish soap", "Warm water", "Spray bottle", "Microfiber", "Soft brush", "Gloves"],
     steps: [
       { title: "Make a Dawn degreasing spray", body: "Add 10 drops of Dawn dish soap to a spray bottle filled with warm water. Shake gently to mix without creating too many suds. This spray cuts through kitchen grease on stovetops, range hoods, and cabinet fronts for pennies. The surfactants in Dawn break the bond between grease and surfaces on contact. Keep the bottle next to the stove for daily wipe-downs after cooking. A single bottle lasts weeks because you only need a light mist to cut through grease effectively. Use warm water rather than cold when mixing Dawn dissolves faster and distributes more evenly in warm water, preventing the soap from settling at the bottom of the bottle between uses. Keep the spray nozzle set to stream rather than mist for stovetop use since a direct stream is easier to control on vertical surfaces like backsplash tiles without soaking surrounding areas you're not targeting." },
@@ -391,7 +391,7 @@ export const posts: Post[] = [
     tags: ["laundry", "quick wins", "routine"],
     excerpt:
       "My laundry room was the last room I ever cleaned, which meant the machines doing all my cleaning were themselves never cleaned. One afternoon changed that. Here's what I found inside my filter, what was creating the musty smell, and the 30-minute routine that prevents it all.",
-    coverImage: "/graphics/posts/9-laundry-room-cleaning-hacks-that-actually-save-time.jpg",
+    coverImage: "/uploads/9-laundry-room-cleaning-hacks-that-actually-save-time.jpg",
     supplies: ["Lint brush", "Microfiber", "Mild cleaner", "Vacuum crevice tool", "Bin liners", "Gloves"],
     steps: [
       { title: "Clean the washer drum and gasket", body: "Run an empty hot cycle with two cups of white vinegar to remove detergent residue and mildew. After the cycle, wipe the rubber gasket with a microfiber cloth, paying attention to the folds where water and lint hide. Leave the door open afterward to let it dry. This prevents the musty smell many washers develop. Front-loaders are especially prone to gasket mildew because water pools in the rubber seal. If you see black spots, scrub them with a baking soda paste and an old toothbrush before running the vinegar cycle. Also check the outer drum lip the visible ring of metal where the drum meets the opening. This surface collects lint, hair, and soap residue that is never addressed during regular washing. Wipe it with a vinegar-dampened cloth each month. A clean drum lip means the fresh load you're placing inside isn't immediately picking up residue from the weeks of previous washes." },
@@ -433,7 +433,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "odor control", "quick wins"],
     excerpt:
       "My kitchen sink smelled no matter how often I cleaned it until I figured out what I was actually missing. The fix wasn't a new product; it was addressing three different sources at once. Here's what finally worked and the one mistake that kept the smell coming back.",
-    coverImage: "/graphics/posts/10-kitchen-sink-detox-hacks-for-odor-free-results.jpg",
+    coverImage: "/uploads/10-kitchen-sink-detox-hacks-for-odor-free-results.jpg",
     supplies: ["Baking soda", "Dish soap", "Brush", "Hot water", "Microfiber", "Gloves"],
     steps: [
       { title: "Clear and rinse the sink completely", body: "Remove all dishes, sponges, and soap dispensers from the sink. Rinse the entire basin with hot water to flush loose food particles. Starting clean lets you see stains, discoloration, and buildup you'd miss with dishes piled up. This only takes a minute and makes every following step more effective. Take this opportunity to toss out any cracked sponges or expired cleaning products sitting by the sink. A clear workspace makes the whole process faster and more thorough." },
@@ -475,7 +475,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "weekend"],
     excerpt:
       "I tracked what makes a bathroom feel hotel-clean versus just technically scrubbed and found it came down to two things, not fifteen. But doing all 15 steps correctly is what creates the consistent result every time including the one step most people skip that is responsible for most bathroom odor.",
-    coverImage: "/graphics/posts/15-bathroom-deep-clean-hacks-for-hotel-level-shine.jpg",
+    coverImage: "/uploads/15-bathroom-deep-clean-hacks-for-hotel-level-shine.jpg",
     supplies: ["Bathroom cleaner", "Grout brush", "Squeegee", "Microfiber", "Vinegar solution", "Gloves"],
     steps: [
       { title: "Remove everything from surfaces", body: "Take all bottles, toothbrush holders, soap dishes, and decorations off the countertop, shower ledge, and toilet tank. You can't clean around clutter removing items lets you wipe every square inch and see stains you've been missing. Stack items on a towel outside the bathroom. While items are out, check expiration dates on medications and toss old products. Rinse the bottoms of bottles that have soap residue rings putting dirty bottles back on a clean surface defeats the purpose." },
@@ -517,7 +517,7 @@ export const posts: Post[] = [
     tags: ["budget", "quick wins", "routine"],
     excerpt:
       "Before I built dedicated cleaning kits, I cleaned when things looked obviously dirty. Now I clean significantly more often not because I became more motivated, but because the supplies are already where I need them. Here's the system I built for under $15 and what changed when I started using it.",
-    coverImage: "/graphics/posts/6-budget-cleaning-kits-you-can-build-in-20-minutes.jpg",
+    coverImage: "/uploads/6-budget-cleaning-kits-you-can-build-in-20-minutes.jpg",
     supplies: ["Spray bottles", "Microfiber packs", "Labels", "Bucket caddy", "Brushes", "Gloves"],
     steps: [
       { title: "Build a kitchen cleaning kit", body: "Fill a small caddy with a Dawn-and-water spray bottle, two microfiber cloths, a scrub brush, and a roll of paper towels. Store it under the kitchen sink for instant access. Having everything in one grab-and-go container means you clean up messes immediately instead of letting them sit because supplies are scattered. Include a pair of rubber gloves in the caddy so you never skip cleaning because you don't want to touch something. A dedicated kitchen kit pays for itself by preventing stains from setting in. Choose a caddy that's narrow enough to stand in the front section of the under-sink cabinet, not pushed to the back where retrieval requires reaching past everything else. The easier it is to grab the caddy, the more often it gets used. Front-position access is the difference between a caddy you reach for every meal and one you dig out twice a week." },
@@ -559,7 +559,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "routine", "kitchen"],
     excerpt:
       "I spent a month tracking which two to five minute cleaning habits made the biggest visible difference to how my home actually felt day to day. Three habits outperformed all the others by a wide margin and one popular tip turned out to be almost worthless. Here is the exact list of eighteen quick cleaning tasks you can do in five minutes or less, ranked by impact, with the common mistake that turns these short tasks into fifteen minute chores and the daily order that makes the routine actually stick.",
-    coverImage: "/graphics/posts/18-quick-wins-for-busy-mornings.jpg",
+    coverImage: "/uploads/18-quick-wins-for-busy-mornings.jpg",
     supplies: ["Microfiber cloths", "All-purpose spray", "Mini brush", "Trash liners", "Timer", "Gloves"],
     steps: [
       { title: "Make the bed immediately", body: "Pull up the covers, straighten pillows, and smooth the duvet as soon as you get up. It takes 90 seconds and instantly makes the bedroom look 80% cleaner. An unmade bed makes the entire room feel messy no matter how clean everything else is. This one habit sets the tone for the whole day. Studies have shown that people who make their beds report feeling more productive throughout the morning. It creates a chain reaction of small tidy decisions that compound by evening. The psychological effect of a made bed is difficult to overstate: it signals that the day has started intentionally and creates a visual standard of order that makes other tidying decisions feel consistent with an established pattern rather than effortful choices. People who consistently make their beds report lower stress when entering their bedroom at the end of the day." },
@@ -607,7 +607,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "routine", "education"],
     excerpt:
       "I've decluttered the same spaces three or four times over the years, each time thinking this time it will stick. The version that actually held was the one where I did these two things differently. Here's what prevented the re-clutter and the specific mistake I made every previous time.",
-    coverImage: "/graphics/posts/20-declutter-clean-pairing-hacks.jpg",
+    coverImage: "/uploads/20-declutter-clean-pairing-hacks.jpg",
     supplies: ["Storage bins", "Labels", "Microfiber", "Vacuum", "All-purpose cleaner", "Gloves"],
     steps: [
       { title: "Start with one room at a time", body: "Pick the room that bothers you most and commit to finishing it before moving on. Jumping between rooms creates half-done chaos everywhere. Close the door, set a timer for 30 minutes, and focus. A completely finished room gives you motivation to tackle the next one. Take a before photo so you can see the transformation when you're done. That visual proof of progress is incredibly motivating and helps on days when you don't feel like decluttering. The room you find most anxiety-inducing is worth starting with specifically because completing it removes the largest psychological weight. Finishing the most daunting space first means all subsequent rooms feel more manageable by comparison, and the momentum from the difficult room carries through the rest of the session instead of hanging over it." },
@@ -649,7 +649,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "bathroom", "kitchen"],
     excerpt:
       "I was skeptical about WD-40 for cleaning until I tested it on a shower door that hadn't responded to six commercial bathroom sprays. Here's what it genuinely handles that nothing else matched and the surfaces where it causes permanent damage if you're not careful.",
-    coverImage: "/graphics/posts/8-easy-wd40-cleaning-hacks.jpg",
+    coverImage: "/uploads/8-easy-wd40-cleaning-hacks.jpg",
     supplies: ["WD-40", "Microfiber cloths", "Soft brush", "Warm water", "Dish soap", "Gloves"],
     steps: [
       { title: "Remove soap scum from glass shower doors", body: "Spray a light coat of WD-40 directly onto glass shower doors covered in soap scum and hard-water buildup. Let it sit for two minutes, then wipe with a microfiber cloth in straight strokes from top to bottom. The petroleum-based formula dissolves the mineral bonds that hold soap scum to glass surfaces. Follow up with a quick wipe of glass cleaner or a vinegar-water solution to remove any oily residue. The result is crystal-clear glass that looks brand new. Do this once a month and soap scum never gets a chance to build up into the thick, hazy layer that seems impossible to remove. For the best visual result, do this on a shower door you can see in direct natural light rather than under bathroom lighting. What looks acceptably clean under artificial light often reveals a milky surface haze in daylight that confirms how much WD-40 actually removed. The difference between before and after in daylight is the most convincing argument for adding this to a monthly cleaning rotation." },
@@ -689,7 +689,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "kitchen", "safety"],
     excerpt:
       "I dealt with cockroaches after moving above a restaurant not an easy starting condition and tested every method here under genuine high-pressure circumstances. Here's what actually controlled the infestation and the single mistake that made everything significantly worse before it improved.",
-    coverImage: "/graphics/posts/10-best-ways-to-combat-cockroaches.jpg",
+    coverImage: "/uploads/10-best-ways-to-combat-cockroaches.jpg",
     supplies: ["Boric acid", "Caulk gun", "Spray bottle", "Baking soda", "Essential oils", "Gloves"],
     steps: [
       { title: "Eliminate all food sources immediately", body: "Cockroaches survive on crumbs, grease, and food residue that humans overlook. Wipe down all kitchen countertops, stovetops, and dining surfaces every night before bed. Store all open food in airtight containers cereal boxes, chip bags, and pet food are prime targets. Sweep the kitchen floor daily, paying special attention to the areas under the stove, refrigerator, and kitchen table where crumbs collect invisibly. Even a thin film of cooking grease on the stovetop is a feast for roaches. Taking away their food supply is the single most effective long-term strategy because cockroaches will not stay where there is nothing to eat. The interior of small appliances is a frequently missed food source: toaster crumb trays, the space under the coffee maker's drip tray, and the area inside the toaster oven accumulate significant food debris. Empty toaster crumb trays weekly and wipe the insides of toasters and toaster ovens monthly these warm, food-rich environments are prime overnight cockroach feeding areas." },
@@ -731,7 +731,7 @@ export const posts: Post[] = [
     tags: ["odor control", "quick wins", "routine"],
     excerpt:
       "I replaced every air freshener in my home with these methods and the difference wasn't subtle. The stovetop potpourri gets more unsolicited compliments from visitors than any candle I've ever owned. Here's what actually works long-term and the one mistake that makes home fragrance efforts feel like moving chemicals around.",
-    coverImage: "/graphics/posts/10-genius-ways-to-make-your-house-smell-great.jpg",
+    coverImage: "/uploads/10-genius-ways-to-make-your-house-smell-great.jpg",
     supplies: ["Essential oils", "Spray bottle", "Baking soda", "Vanilla extract", "Cinnamon sticks", "Citrus fruits", "Small saucepan", "Mason jars"],
     steps: [
       { title: "Make a DIY linen and room spray", body: "Fill a glass spray bottle with one cup of distilled water, two tablespoons of vodka or rubbing alcohol, and 20 drops of your favorite essential oil lavender, eucalyptus, and orange are crowd favorites. Shake well before each use and mist onto curtains, throw pillows, bedding, and upholstered furniture. The alcohol helps the essential oils disperse evenly and evaporate cleanly without leaving water spots on fabric. This single bottle replaces expensive store-bought room sprays and lasts for weeks. Keep one in every room so a quick spritz is always within reach. The scent is subtle and natural, nothing like the overpowering chemical fragrance of commercial air fresheners." },
@@ -773,7 +773,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "quick wins", "routine"],
     excerpt:
       "After years of vacuuming the same way, I discovered most of the dirt I wasn't picking up was because of technique, not the machine. Two changes doubled what came out of my floors. Here's what actually makes a measurable difference in vacuum results.",
-    coverImage: "/graphics/posts/10-fascinating-vacuum-hacks-you-need-to-know.jpg",
+    coverImage: "/uploads/10-fascinating-vacuum-hacks-you-need-to-know.jpg",
     supplies: ["Vacuum cleaner with attachments", "Pantyhose or thin sock", "Essential oils", "Baking soda", "Rubber band", "Dryer sheet", "Crevice tool", "Upholstery brush"],
     steps: [
       { title: "Recover tiny lost items from carpet", body: "Stretch a piece of pantyhose or a thin sock over the end of your vacuum hose and secure it with a rubber band. Turn the vacuum on and slowly sweep over the area where you dropped a small earring, screw, or pill. The suction pulls lightweight items against the fabric barrier without sucking them into the dustbin. Once you hear a gentle clink or see the item pressed against the fabric, turn the vacuum off and carefully remove the item. This hack saves you from crawling on hands and knees with a flashlight and works especially well on thick-pile carpets where tiny objects vanish instantly. For very small items like a ring setting or hearing aid battery, fold the pantyhose over the end of the hose to create a double-layer barrier the extra layer prevents any suction gaps at the edges while still keeping strong enough vacuum pull to lift the item off the carpet surface. Sweep in slow grid-pattern passes rather than random sweeps to ensure complete coverage of the search area." },
@@ -815,7 +815,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "odor control"],
     excerpt:
       "I once cleaned a shared microwave at work that hadn't been touched in 18 months. Every method on this list either worked or didn't under genuinely difficult conditions. Here's the honest ranking and the one daily habit that makes the entire list mostly unnecessary.",
-    coverImage: "/graphics/posts/12-microwave-cleaning-hacks-for-a-sparkling-kitchen.jpg",
+    coverImage: "/uploads/12-microwave-cleaning-hacks-for-a-sparkling-kitchen.jpg",
     supplies: ["White vinegar", "Lemon", "Baking soda", "Dish soap", "Microfiber cloth", "Spray bottle", "Bowl", "Sponge"],
     steps: [
       { title: "Steam-clean with lemon water", body: "Slice a lemon in half and squeeze the juice into a microwave-safe bowl filled with one cup of water. Drop the lemon halves into the bowl and microwave on high for three to five minutes until the window is steamy. The citric acid in the steam loosens baked-on food particles while the lemon neutralizes trapped odors. Let the bowl sit inside with the door closed for another two minutes so the steam can continue working. Then wipe the interior with a damp microfiber cloth splatters will lift off with almost no scrubbing. This is the single most effective first step for any microwave deep clean." },
@@ -859,7 +859,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "budget", "bathroom"],
     excerpt:
       "I tested white toothpaste against dedicated products on silver, car headlights, and water-ringed wood furniture. Some results were genuinely impressive. Here's the honest comparison and the surfaces where toothpaste causes irreversible damage.",
-    coverImage: "/graphics/posts/10-genius-toothpaste-cleaning-hacks-you-never-knew.jpg",
+    coverImage: "/uploads/10-genius-toothpaste-cleaning-hacks-you-never-knew.jpg",
     supplies: ["White toothpaste (non-gel)", "Soft cloth", "Old toothbrush", "Warm water", "Microfiber cloth", "Sponge"],
     steps: [
       { title: "Polish silver jewelry and flatware", body: "Apply a small amount of plain white toothpaste to tarnished silver and rub gently with a soft cloth in small circular motions. The mild abrasive in toothpaste usually hydrated silica or calcium carbonate lifts tarnish without scratching the surface. Focus on darkened areas but avoid gemstones, pearls, or plated jewelry as the abrasive can damage softer materials. Rinse under lukewarm water and buff dry with a clean microfiber cloth. The results are immediate and dramatic silver pieces come out looking freshly polished. This works equally well on sterling silver flatware that has developed the dark patina from sitting unused in a drawer. For pieces with intricate engravings or detail work, use a soft-bristle toothbrush dipped in toothpaste rather than a cloth. The brush bristles work the paste into the recessed areas where tarnish typically darkens first and is most visible, producing complete coverage that cloth rubbing misses on decorative or monogrammed pieces." },
@@ -901,7 +901,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "routine", "weekend"],
     excerpt:
       "I've tried three weekly cleaning schedules and abandoned two within a month. The version that actually held had two specific design principles the others lacked. Here's what made it sustainable and the most common reason cleaning schedules collapse within two weeks.",
-    coverImage: "/graphics/posts/the-ultimate-weekly-cleaning-schedule-for-a-spotless-home.jpg",
+    coverImage: "/uploads/the-ultimate-weekly-cleaning-schedule-for-a-spotless-home.jpg",
     supplies: ["All-purpose cleaner", "Microfiber cloths", "Vacuum", "Mop", "Toilet cleaner", "Glass cleaner", "Laundry detergent", "Trash bags", "Duster", "Rubber gloves"],
     steps: [
       { title: "Monday Kitchen deep reset", body: "Start the week by tackling the room that gets the most daily use. Wipe down all countertops, the stovetop, and appliance fronts with an all-purpose cleaner. Clean the microwave inside and out using the steam method heat a bowl of lemon water for three minutes, then wipe down the softened splatters. Empty the fridge of expired items, wipe shelves with a baking soda solution, and replace the liner if you use one. Take out kitchen trash and recycling, then sweep and mop the floor. This 30-to-40-minute session means your kitchen is guest-ready for the entire week and prevents grease and food residue from building up into a much bigger job." },
@@ -943,7 +943,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "bathroom", "kitchen", "budget"],
     excerpt:
       "I switched my disinfection routine entirely to rubbing alcohol for 60 days and compared results against the products I replaced. For some surfaces it outperformed everything. For others it was clearly second choice. Here's the honest ranking.",
-    coverImage: "/graphics/posts/12-genius-rubbing-alcohol-cleaning-hacks.jpg",
+    coverImage: "/uploads/12-genius-rubbing-alcohol-cleaning-hacks.jpg",
     supplies: ["Isopropyl rubbing alcohol (70% or 91%)", "Spray bottle", "Microfiber cloths", "Cotton pads", "Soft brush", "Warm water"],
     steps: [
       { title: "Make a streak-free glass cleaner", body: "Mix one cup of rubbing alcohol with one cup of water and one tablespoon of white vinegar in a spray bottle. Spray onto mirrors, windows, and glass tabletops, then wipe with a lint-free microfiber cloth in a Z-pattern. The alcohol evaporates almost instantly, leaving zero streaks behind even in direct sunlight. This homemade formula outperforms most store-bought glass cleaners at a fraction of the cost. Make a fresh batch every two weeks to keep the solution at full strength. For exterior windows where grime is heavier, use a 2:1 alcohol-to-water ratio with an extra tablespoon of dish soap added. The dish soap cuts through the oxidized dust-and-pollen film on exterior glass that pure alcohol solutions can struggle to lift completely in a single pass without a second wipe." },
@@ -987,7 +987,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "kitchen", "quick wins", "deep clean"],
     excerpt:
       "I moved into a home with twelve years of untreated hard water stains on shower glass, faucets, and tiles. After testing every popular method on the same heavily mineralized surfaces over six weeks, the ten approaches in this guide are ranked by what actually worked on real long term buildup, not just fresh deposits. The vinegar wrap method removed mineral crust that fifteen minute sprays could not touch, the warm vinegar trick dissolved stains roughly twice as fast as cold vinegar on the same surfaces, and one simple prevention habit reduced new staining by approximately eighty percent in the first month. Here is the exact step by step that restores foggy shower glass, calcified faucets, and stained bathroom tiles to a like new finish, plus the surfaces where vinegar will permanently etch and damage the material instead of cleaning it.",
-    coverImage: "/graphics/posts/how-to-remove-hard-water-stains-from-glass-faucets-and-tiles.jpg",
+    coverImage: "/uploads/how-to-remove-hard-water-stains-from-glass-faucets-and-tiles.jpg",
     supplies: ["White vinegar", "Baking soda", "Spray bottle", "Microfiber cloths", "Lemon", "Dish soap", "Old toothbrush", "Plastic wrap", "Rubber gloves"],
     steps: [
       { title: "Make a vinegar soak for shower doors", body: "Fill a spray bottle with equal parts white vinegar and hot water. Spray generously onto glass shower doors, covering every inch of the surface. The acetic acid in vinegar dissolves the calcium and magnesium deposits that form those cloudy white streaks. Let it sit for at least 15 minutes for heavy buildup, soak paper towels in vinegar and press them flat against the glass so the solution doesn't drip away. Remove the towels, scrub with a non-scratch sponge in circular motions, and rinse with warm water. Dry immediately with a clean microfiber cloth to prevent new water spots from forming as the glass dries. For shower glass that hasn't been cleaned in several months or longer, the 15-minute contact time is not enough. Apply the vinegar-soaked paper towels and leave them undisturbed for 45 to 60 minutes. Spray additional vinegar onto the towels halfway through if they appear to have dried out so the ongoing acidity keeps dissolving the mineral layer until the full contact time is complete." },
@@ -1036,7 +1036,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "kitchen", "deep clean", "quick wins"],
     excerpt:
       "I stopped scrubbing grout and started using dwell time instead. The baking soda and peroxide paste removed more buildup with zero brushing than 20 minutes of manual scrubbing had. Here's the method that actually works and the single step that makes the results permanent.",
-    coverImage: "/graphics/posts/how-to-clean-grout-without-scrubbing.jpg",
+    coverImage: "/uploads/how-to-clean-grout-without-scrubbing.jpg",
     supplies: ["Baking soda", "Hydrogen peroxide", "White vinegar", "Spray bottle", "Oxygen bleach powder", "Old toothbrush", "Microfiber cloths", "Warm water"],
     steps: [
       { title: "Apply a baking soda and peroxide paste", body: "Mix half a cup of baking soda with a quarter cup of hydrogen peroxide to form a thick paste. Spread it directly onto grout lines using your fingers or an old toothbrush. Let the paste sit for at least 30 minutes the peroxide bubbles into the porous grout surface and lifts out embedded dirt, mildew, and stains without aggressive scrubbing. After soaking, wipe the paste away with a damp cloth and rinse with warm water. Most grout lines will look noticeably whiter after a single application. For severely stained grout, leave the paste on for up to two hours before wiping clean. This method works best on white or light-colored grout. Always test a small hidden section first because hydrogen peroxide can slightly lighten already-colored grout if left on for extended periods. The paste is most effective at room temperature so don't apply it to tiles that are still warm from a recent shower, as heat can accelerate the peroxide reaction and reduce efficient contact time with the stained areas." },
@@ -1075,7 +1075,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "deep clean", "budget"],
     excerpt:
       "I deep cleaned a severely neglected oven without commercial oven cleaner and documented every method step by step. Most worked. Here's the honest ranking of which natural approaches handle heavy buildup versus light maintenance and the daily habit that eliminates the need for any of it.",
-    coverImage: "/graphics/posts/how-to-clean-an-oven-without-harsh-chemicals.jpg",
+    coverImage: "/uploads/how-to-clean-an-oven-without-harsh-chemicals.jpg",
     supplies: ["Baking soda", "White vinegar", "Dish soap", "Spray bottle", "Lemon", "Microfiber cloths", "Non-scratch sponge", "Rubber gloves", "Old towels"],
     steps: [
       { title: "Make an overnight baking soda paste", body: "Mix half a cup of baking soda with enough water to form a spreadable paste about three tablespoons. Remove the oven racks and set them aside. Spread the paste over the entire interior of the oven, coating the bottom, sides, back wall, and door glass. Avoid the heating elements. The paste will turn brown as it reacts with grease and baked-on food. Close the oven door and let the paste work overnight at least 12 hours. The baking soda slowly dissolves carbonized food and grease without producing any fumes. This is the foundation of natural oven cleaning and handles even heavily neglected ovens. Apply an extra-thick layer to the oven floor where cooking drips accumulate most and have the longest baking-on time. The floor of the oven is always the most difficult area and benefits from a double coat of paste apply one layer, let it begin to dry for 10 minutes, then apply a second layer on top. The doubled thickness means the baking soda reaches deeper into carbonized residue rather than just sitting on the surface crust." },
@@ -1115,7 +1115,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "quick wins", "routine"],
     excerpt:
       "My apartment toilet had a rust-brown mineral ring nearly half an inch thick and no prior cleaning had touched it. Here's what actually worked on severe established buildup and the cheap weekly habit that prevents any ring from forming in the first place.",
-    coverImage: "/graphics/posts/remove-hard-water-stains-from-toilet.jpg",
+    coverImage: "/uploads/remove-hard-water-stains-from-toilet.jpg",
     supplies: [
       "White vinegar",
       "Baking soda",
@@ -1207,7 +1207,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "routine"],
     excerpt:
       "After two years of built-up fingerprints and kitchen grease on my stainless refrigerator, I tested all nine methods in a single afternoon. Here's the honest ranking and the one reason most stainless steel cleaning attempts produce more streaking than they remove.",
-    coverImage: "/graphics/posts/how-to-clean-stainless-steel-appliances-without-streaks.jpg",
+    coverImage: "/uploads/how-to-clean-stainless-steel-appliances-without-streaks.jpg",
     supplies: [
       "Microfiber cloths",
       "Olive oil or mineral oil",
@@ -1297,7 +1297,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "safety"],
     excerpt:
       "The bathroom caulk in my first apartment was solid black with mold when I moved in. I tested every method under real conditions on genuinely established mold. Here's what actually worked and the one step most people skip after cleaning that allows mold to return within weeks.",
-    coverImage: "/graphics/posts/how-to-remove-mold-from-bathroom-caulk.jpg",
+    coverImage: "/uploads/how-to-remove-mold-from-bathroom-caulk.jpg",
     supplies: [
       "Bleach (sodium hypochlorite)",
       "Hydrogen peroxide (3%)",
@@ -1389,7 +1389,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "odor control", "quick wins", "routine"],
     excerpt:
       "My garbage disposal smelled despite regular rinsing and I spent months adding citrus peels and vinegar without improvement. The actual source was something I had never looked at. Here's what I found and the routine that has kept it odor-neutral for over six months.",
-    coverImage: "/graphics/posts/how-to-clean-and-deodorize-garbage-disposal.jpg",
+    coverImage: "/uploads/how-to-clean-and-deodorize-garbage-disposal.jpg",
     supplies: [
       "Ice cubes",
       "Rock salt or coarse salt",
@@ -1484,7 +1484,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "odor control", "routine"],
     excerpt:
       "After years of treating pet stains the wrong way hot water, scrubbing, cleaning only visible spots I finally understood why the odor always came back. Here's what the UV blacklight revealed and why enzymatic cleaners are the only product that actually solves the problem.",
-    coverImage: "/graphics/posts/how-to-remove-pet-stains-and-odors-from-carpet.jpg",
+    coverImage: "/uploads/how-to-remove-pet-stains-and-odors-from-carpet.jpg",
     supplies: [
       "Enzymatic pet stain cleaner",
       "White vinegar",
@@ -1576,7 +1576,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "deep clean", "budget"],
     excerpt:
       "I inherited a neglected oven when I moved into my apartment layers of carbonized grease that had never been touched. These 12 hacks are what I actually tested, including the one method that outperformed commercial oven cleaner.",
-    coverImage: "/graphics/posts/12-oven-cleaning-hacks-baked-on-grease.jpg",
+    coverImage: "/uploads/12-oven-cleaning-hacks-baked-on-grease.jpg",
     supplies: ["Baking soda", "White vinegar", "Dawn dish soap", "Spray bottle", "Microfiber cloths", "Plastic scraper", "Rubber gloves", "Old toothbrush", "Lemon", "Warm water", "Hydrogen peroxide", "Aluminum foil"],
     steps: [
       { title: "Make a baking soda overnight paste for the oven interior", body: "Mix half a cup of baking soda with three tablespoons of water until you get a thick, spreadable paste. Remove the oven racks and set them aside. Spread the paste over every interior surface of the oven bottom, sides, back wall, and ceiling avoiding the heating elements. Pay extra attention to areas with heavy grease buildup or blackened food residue. Close the oven door and leave the paste to work overnight, or for a minimum of 12 hours. The baking soda slowly breaks down carbonized grease and burnt food while you sleep, turning rock-hard residue into a soft, wipe-able layer. In the morning, use a damp microfiber cloth to wipe away the dried paste. You'll see it come off brown and grimy that's the dissolved grease lifting off. For stubborn patches, use a plastic scraper to gently nudge the residue loose. This zero-effort method handles 90 percent of oven cleaning without any scrubbing or harsh fumes." },
@@ -1624,7 +1624,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "home", "dust control", "paint colors"],
     excerpt:
       "After painting four rooms in different shades over three moves, the difference in how fast each wall showed dust was one of the most practical decorating lessons I've learned. Here's what the real-world testing revealed.",
-    coverImage: "/graphics/posts/best-paint-colors-to-hide-dust.jpg",
+    coverImage: "/uploads/best-paint-colors-to-hide-dust.jpg",
     supplies: ["Paint swatches", "Sample pots", "Foam roller", "Painter's tape", "Microfiber cloth", "Natural light"],
     steps: [
       { title: "Understand why some colors show dust more", body: "Dust visibility is driven almost entirely by contrast between the particle color and the wall color behind it. Household dust is a mix of skin cells, fabric fibers, pollen, and fine soil most of it lands in the gray-to-tan range. Bright white walls create maximum contrast with these gray particles, so even a thin film of settled dust looks like a visible shadow. Very dark walls have the opposite problem pale lint, pet hair, and light-colored dust stand out sharply against deep tones. The solution is choosing mid-tone colors that sit close to the natural color of dust itself, reducing contrast so particles blend in rather than stand out. Understanding this principle is the foundation of every color choice that follows." },
@@ -1664,7 +1664,7 @@ export const posts: Post[] = [
     tags: ["quick wins", "home", "dust control", "flooring"],
     excerpt:
       "I've lived with four different floor types across four homes, and the difference in how often I needed to sweep to maintain the same appearance was significant not subtle. Here's what years of real use revealed about floor color and daily dust.",
-    coverImage: "/graphics/posts/best-floor-colors-to-hide-dust-and-dirt.jpg",
+    coverImage: "/uploads/best-floor-colors-to-hide-dust-and-dirt.jpg",
     supplies: ["Floor swatches", "Sample planks", "Natural light", "Warm lighting", "Painter's tape", "Notebook"],
     steps: [
       { title: "Know why floor color affects visible dust", body: "Floor color has an even bigger impact on visible dust than wall color because floors are the primary collection surface for every particle in your home skin cells, pet hair, food crumbs, tracked-in soil, and airborne dust all settle on floors by gravity. The key principle is contrast: very dark floors like espresso hardwood or charcoal tile create maximum contrast with pale dust, lint, and pet hair, making every speck visible within hours of cleaning. Very light floors like bleached oak or bright white tile have the opposite problem dark hair, crumbs, and soil particles stand out sharply. Medium tones in the warm neutral range minimize contrast with the broadest range of common household debris, keeping floors looking cleaner significantly longer between sweeping or vacuuming sessions. This contrast principle applies equally to hardwood, laminate, luxury vinyl, and tile flooring. Homes in dry climates or near construction zones face this challenge even more, since fine particulate matter settles continuously throughout the day regardless of how often you clean." },
@@ -1703,7 +1703,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "home", "paint colors"],
     excerpt:
       "After repainting our kitchen cabinets twice in three years first a choice that showed every fingerprint within hours, then a shade that didn't the daily maintenance difference between those two decisions was obvious. Here's what the real test revealed.",
-    coverImage: "/graphics/posts/best-cabinet-colors-to-hide-fingerprints-and-dust.jpg",
+    coverImage: "/uploads/best-cabinet-colors-to-hide-fingerprints-and-dust.jpg",
     supplies: ["Cabinet color chips", "Sample door cards", "Satin finish sample", "Matte finish sample", "Microfiber cloth", "Day/night lighting"],
     steps: [
       { title: "Understand cabinet smudge contrast", body: "Kitchen cabinets get touched dozens of times every day opening, closing, reaching for handles, brushing past while cooking which means fingerprint oils, cooking grease, and airborne dust accumulate on their surfaces faster than almost any other painted area in the home. Fingerprint and smudge visibility is driven by contrast between the transparent oil film left by your fingers and the color of the cabinet surface beneath it. On flat bright white cabinets, finger oils create subtle dark smudge marks that stand out in angled light. On deep black or navy cabinets, the same oils create visible lighter patches. Mid-tone muted colors in the warm neutral range are the most forgiving because they minimize the contrast between clean surface and touched surface, making daily finger contact essentially invisible under normal kitchen lighting. This principle matters most on lower cabinets and drawers at hip and hand height where contact is constant and unavoidable." },
@@ -1742,7 +1742,7 @@ export const posts: Post[] = [
     tags: ["diy", "eco-friendly", "budget", "quick wins"],
     excerpt:
       "I spent two weeks testing every one of these DIY spray recipes in my own home to find out which ones actually deliver results. Here's what worked, what flopped, and the three formulas I've kept making ever since.",
-    coverImage: "/graphics/posts/diy-all-natural-cleaning-sprays.jpg",
+    coverImage: "/uploads/diy-all-natural-cleaning-sprays.jpg",
     supplies: ["Spray bottles", "White vinegar", "Baking soda", "Castile soap", "Essential oils (lemon, tea tree, lavender)", "Rubbing alcohol", "Distilled water", "Lemon juice", "Olive oil", "Salt"],
     steps: [
       { title: "Why I stopped buying store-bought sprays (and what I found instead)", body: "I used to spend about $30 a month on cleaning sprays a bathroom cleaner for tile, a separate glass cleaner, a kitchen degreaser, a fabric freshener, and two or three others I barely used. Then I started reading ingredient labels and realized I was paying mostly for water, surfactants, and fragrance in a branded bottle. I spent two weeks systematically testing DIY versions of every spray I used, making them from pantry staples, testing them side by side against the commercial versions on real household messes. The results surprised me: most of the homemade versions worked just as well. A few worked better. Here are the exact recipes I settled on the ones that have genuinely replaced every bottle under my sink." },
@@ -1789,7 +1789,7 @@ export const posts: Post[] = [
     tags: ["diy", "bathroom", "eco-friendly", "deep clean"],
     excerpt:
       "I replaced every store-bought bathroom product with homemade versions for a full month. Most performed just as well. A few were genuinely better. Here's exactly what I made and how each one held up including which ones I'll keep using permanently.",
-    coverImage: "/graphics/posts/diy-bathroom-cleaning-recipes.jpg",
+    coverImage: "/uploads/diy-bathroom-cleaning-recipes.jpg",
     supplies: ["Spray bottles", "White vinegar", "Baking soda", "Hydrogen peroxide", "Dawn dish soap", "Tea tree essential oil", "Lemon essential oil", "Castile soap", "Rubbing alcohol", "Microfiber cloths"],
     steps: [
       { title: "Why I switched my entire bathroom cleaning routine to homemade", body: "A few years ago I had a small bathroom accident that motivated me to look at the ingredient labels on my cleaning products for the first time. What I found wasn't alarming in a dramatic way but it was quietly unsatisfying. Most commercial bathroom sprays are 90% water with a cocktail of surfactants, synthetic fragrances, and preservatives, sold in branded bottles at six to nine dollars apiece. I started replacing them one by one with homemade versions over the course of a month, and what I discovered was that for bathroom cleaning specifically, homemade recipes perform extremely well. The chemistry is simple: mold dies when it loses moisture or meets an antifungal compound; soap scum dissolves when acid breaks its mineral bonds; germs die with brief contact from disinfecting agents. You don't need synthetic fragrances or proprietary cleaning agents to achieve any of those things. Here are the eight recipes I tested, with honest notes on each." },
@@ -1835,7 +1835,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "bedroom", "odor control"],
     excerpt:
       "The first time I deep cleaned my mattress, the vacuum canister turned gray with dust before I'd finished the first half of the surface. Here's an honest 8-step method that removes stains, eliminates odors, and actually works including what I got wrong the first time and the one product that makes all the difference.",
-    coverImage: "/graphics/posts/how-to-deep-clean-your-mattress.jpg",
+    coverImage: "/uploads/how-to-deep-clean-your-mattress.jpg",
     supplies: [
       "Vacuum with upholstery attachment",
       "Baking soda (1 to 2 boxes)",
@@ -1934,7 +1934,7 @@ export const posts: Post[] = [
     tags: ["hardwood floors", "floor care", "deep clean"],
     excerpt:
       "After my first house's hardwood floors dulled within a year of installation entirely from my cleaning routine, not foot traffic I finally figured out what I was doing wrong. These 9 rules explain exactly what damages hardwood floors and how to clean them properly so they stay beautiful for decades.",
-    coverImage: "/graphics/posts/how-to-clean-hardwood-floors.jpg",
+    coverImage: "/uploads/how-to-clean-hardwood-floors.jpg",
     supplies: [
       "Microfiber dry mop or dust mop",
       "Vacuum with hard floor setting (beater bar disabled)",
@@ -2033,7 +2033,7 @@ export const posts: Post[] = [
     tags: ["laundry", "stain removal", "shirts"],
     excerpt:
       "I ruined three good white shirts trying the wrong treatments before I understood what yellow armpit stains actually are and why they come back after washing. Here are 5 tested methods ranked by effectiveness, including the overnight trick that saved shirts I thought were permanently destroyed.",
-    coverImage: "/graphics/posts/how-to-remove-yellow-armpit-stains-from-shirts.jpg",
+    coverImage: "/uploads/how-to-remove-yellow-armpit-stains-from-shirts.jpg",
     supplies: [
       "Baking soda",
       "3% hydrogen peroxide",
@@ -2120,7 +2120,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "bathroom", "laundry", "odor control"],
     excerpt:
       "I'd been walking past borax in the laundry aisle for years, assuming it was something my grandmother used. After two weeks of actually testing it room by room, I'm embarrassed I waited so long. A few of these results genuinely shocked me especially the toilet and the oven door glass. Here's what worked, what didn't, and the one surface you should never use it on.",
-    coverImage: "/graphics/posts/10-borax-cleaning-hacks-that-actually-work.jpg",
+    coverImage: "/uploads/10-borax-cleaning-hacks-that-actually-work.jpg",
     supplies: ["Borax (20 Mule Team)", "Warm water", "Spray bottle", "Rubber gloves", "Soft brush or old toothbrush", "Microfiber cloths", "Bucket"],
     steps: [
       { title: "Why I'd avoided borax (and why I was wrong)", body: "I assumed borax was basically the same thing as baking soda just old-fashioned branding. It's not. Borax is sodium tetraborate, a naturally occurring mineral salt mined primarily in the Mojave Desert. It is not the same as boric acid a common point of confusion and it does not contain bleach or chlorine. Borax works through three mechanisms: it raises the pH of water to around 9.5, which disrupts bacterial cell walls; it softens hard water so other cleaners work better; and it inhibits the growth of mould and mildew by depriving fungi of the conditions they need to reproduce. The box you are looking for is 20 Mule Team Borax, sold in the laundry aisle of most supermarkets. Keep it out of reach of children and pets, wear gloves when handling the powder directly, and avoid breathing the dust not because it is acutely toxic, but because prolonged powder inhalation irritates airways the same way any fine particulate does. With those precautions in mind, it is one of the most versatile and cost-effective cleaning agents available and large boxes last for months of regular use." },
@@ -2161,7 +2161,7 @@ export const posts: Post[] = [
     tags: ["laundry", "deep clean", "bedroom"],
     excerpt:
       "My pillows were so yellow I'd been hiding them under an extra pillowcase for months. I tested four wash methods back-to-back on pillows with the same level of staining. Three of them barely made a dent. The fourth made them look like I'd just ripped the tags off. Here's the exact formula and why the other methods fail.",
-    coverImage: "/graphics/posts/how-to-whiten-yellow-pillows-washing-machine.jpg",
+    coverImage: "/uploads/how-to-whiten-yellow-pillows-washing-machine.jpg",
     supplies: ["Laundry detergent", "OxiClean or oxygen powder", "Borax", "White vinegar", "Washing machine", "Wool dryer balls (optional)", "Tennis balls (optional)"],
     steps: [
       { title: "Why your pillows are yellow and why detergent alone won't fix it", body: "I used to assume yellow pillows just meant they needed a wash. They don't at least not a standard one. The yellowing is caused almost entirely by two things: sweat and body oils transferring through pillowcases, and the natural oxidation of the pillow fill material over time. Sweat contains proteins and salts that bind to synthetic fibres and cotton fill, and body oils from hair and skin gradually saturate the outer layer of the fill. The resulting yellow-brown staining is not dirt in the conventional sense it does not respond to surfactant cleaners the way visible grime does. You need an oxidizing agent, elevated wash temperature, and a water softener to break the protein-oil complex apart and lift it out of the fill. This is why standard detergent alone rarely whitens a yellow pillow: it is chemically the wrong tool for the job. Understanding this guides every step below. Pillowcases extend pillow life significantly using a pillow protector under the pillowcase doubles the barrier and is the single most effective prevention strategy, cutting the time between whitening washes from months to years." },
@@ -2200,7 +2200,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "deep clean", "quick wins"],
     excerpt:
       "I burned something onto my glass stovetop badly enough that I genuinely considered just leaving it there forever. After going through every method I could find, one of them worked so well I actually texted my sister about it. Here's what removed the worst baked-on black carbon without a single scratch, why most advice about this gets it wrong, and the one tool almost nobody uses that makes the biggest difference.",
-    coverImage: "/graphics/posts/how-to-clean-a-glass-stovetop-without-scratching.jpg",
+    coverImage: "/uploads/how-to-clean-a-glass-stovetop-without-scratching.jpg",
     supplies: ["Baking soda", "White vinegar", "Dish soap", "Razor blade scraper (single edge)", "Microfiber cloths", "Spray bottle", "Warm water"],
     steps: [
       { title: "Why I kept scratching mine and what I was doing wrong", body: "I scratched my first glass stovetop with a scouring pad the first week I owned it. The second one I scratched with a rough sponge. By the third stovetop I finally understood the problem. Glass-ceramic (sold under brand names like Ceran, Schott, and Vitroceramic) is made from a tempered composite that looks smooth but is microscopically porous. The scratches people blame on cleaning products are almost always caused by abrasive tools steel wool, rough sponge backs, and even grains of baking soda dragged dry across the surface without lubrication. The glass itself is hard enough to resist most cleaning chemicals, but softer than most particles dragged across it under pressure. Understanding this changes everything about technique: the goal is always to lift residue off the surface using chemistry and moisture, never to scrape it off using friction. Every method in this guide applies cleaner, waits for it to work, and wipes gently rather than scrubbing. The one exception is a single-edge razor blade scraper held at the correct angle, which is the only mechanical tool safe for glass stovetop use and the correct solution for genuinely baked-on carbon residue." },
@@ -2239,7 +2239,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "outdoor", "odor control", "kitchen"],
     excerpt:
       "If you have ever opened a garbage can and found maggots crawling inside, you know how unsettling it is. I dealt with a severe case during a Florida summer and tested every removal method I could find. Here is what actually eliminated them overnight and the simple weekly habit that has kept them from coming back.",
-    coverImage: "/graphics/posts/how-to-get-rid-of-maggots-in-trash-can.jpg",
+    coverImage: "/uploads/how-to-get-rid-of-maggots-in-trash-can.jpg",
     supplies: ["Boiling water", "White vinegar", "Dish soap (Dawn)", "Baking soda", "Diatomaceous earth (food grade)", "Bleach", "Trash bags (heavy-duty)", "Essential oils (peppermint or eucalyptus)", "Spray bottle", "Rubber gloves"],
     steps: [
       {
@@ -2315,7 +2315,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "kitchen", "odor control", "routine"],
     excerpt:
       "My dishwasher smelled like a wet dog and left a white film on every glass. After testing every method I could find over a single weekend, one approach eliminated the odor completely and two others turned out to be myths that wasted my time. Here is the full breakdown of what actually restored mine to factory-clean performance.",
-    coverImage: "/graphics/posts/how-to-clean-a-dishwasher.jpg",
+    coverImage: "/uploads/how-to-clean-a-dishwasher.jpg",
     supplies: ["White vinegar", "Baking soda", "Dish soap (Dawn)", "Old toothbrush", "Microfiber cloth", "Toothpick or wooden skewer", "Stainless steel cleaner (optional)", "Rubber gloves"],
     steps: [
       {
@@ -2391,7 +2391,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "kitchen", "quick wins", "odor control"],
     excerpt:
       "My air fryer was smoking every time I used it and the basket smelled like last week's chicken wings. I tried the quick-wipe approach for months before finally doing a proper deep clean. The difference was immediate and I wish I had done it sooner. Here is every method I tested and the exact routine that keeps mine grease-free permanently.",
-    coverImage: "/graphics/posts/how-to-clean-an-air-fryer.jpg",
+    coverImage: "/uploads/how-to-clean-an-air-fryer.jpg",
     supplies: ["Dish soap (Dawn)", "Baking soda", "White vinegar", "Non-abrasive sponge", "Old toothbrush", "Microfiber cloth", "Wooden skewer or toothpick", "Warm water"],
     steps: [
       {
@@ -2467,7 +2467,7 @@ export const posts: Post[] = [
     tags: ["laundry", "odor control", "quick wins"],
     excerpt:
       "Cigarette smell is one of the most stubborn odors fabric can absorb. I tested every commonly recommended method across multiple garments over two weeks and found that most single-step approaches fall short. Here is exactly what eliminated the smell completely and the one mistake that makes it nearly permanent.",
-    coverImage: "/graphics/posts/how-to-get-cigarette-smell-out-of-clothes.jpg",
+    coverImage: "/uploads/how-to-get-cigarette-smell-out-of-clothes.jpg",
     supplies: ["Baking soda", "White vinegar", "Enzyme laundry detergent", "OxiClean", "Activated charcoal packets", "Laundry mesh bag", "Garment steamer or steam iron", "Outdoor drying rack"],
     steps: [
       {
@@ -2546,7 +2546,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "deep clean", "quick wins"],
     excerpt:
       "The white chalky flakes floating in my morning tea were the reason I finally dealt with the limescale that had been building for months. After testing vinegar, lemon juice, and commercial descalers across two identical kettles, one method worked faster and left no aftertaste. Here is exactly what I did and the sequence that matters.",
-    coverImage: "/graphics/posts/how-to-remove-limescale-from-a-kettle.jpg",
+    coverImage: "/uploads/how-to-remove-limescale-from-a-kettle.jpg",
     supplies: ["White distilled vinegar", "Fresh lemon or citric acid powder", "Baking soda", "Measuring cup", "Non-abrasive sponge", "Soft cloth", "Water"],
     steps: [
       {
@@ -2625,7 +2625,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "deep clean", "routine"],
     excerpt:
       "My wooden cutting board had knife grooves that smelled like old garlic and a corner stain I had given up on. After testing every method I could find across three different boards over a month, I found a cleaning sequence that works genuinely well and a conditioning routine that keeps wood boards looking new for years. The mistakes most people make are the ones that crack and warp boards permanently.",
-    coverImage: "/graphics/posts/how-to-clean-a-wooden-cutting-board.jpg",
+    coverImage: "/uploads/how-to-clean-a-wooden-cutting-board.jpg",
     supplies: ["Coarse kosher salt", "Lemon", "Dish soap (Dawn)", "White vinegar", "Hydrogen peroxide (3%)", "Baking soda", "Food-grade mineral oil", "Soft scrub brush", "Microfiber cloth"],
     steps: [
       {
@@ -2705,7 +2705,7 @@ export const posts: Post[] = [
     tags: ["laundry", "odor control", "routine"],
     excerpt:
       "After months of laundry coming out of the wash smelling flat, musty, or like nothing at all, I tested every freshening method across dozens of loads. Here is what genuinely produced lasting scent and the two mistakes that were quietly making every load worse.",
-    coverImage: "/graphics/posts/how-to-make-laundry-smell-good-after-washing.jpg",
+    coverImage: "/uploads/how-to-make-laundry-smell-good-after-washing.jpg",
     supplies: [
       "White vinegar",
       "Baking soda",
@@ -2790,7 +2790,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "safety", "quick wins"],
     excerpt:
       "When I found white mold blooms across a leather bag I had stored for a season, I tested every cleaning approach on different sections of the same surface. Here is what removed the mold completely without damaging the leather and the one step that made it never come back.",
-    coverImage: "/graphics/posts/how-to-clean-leather-mold-safely.jpg",
+    coverImage: "/uploads/how-to-clean-leather-mold-safely.jpg",
     supplies: [
       "Rubbing alcohol (70%)",
       "White vinegar",
@@ -2872,7 +2872,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "routine"],
     excerpt:
       "A kitchen sponge can harbor more bacteria per square centimeter than a toilet seat, and rinsing it under hot water reduces bacterial count by almost nothing. I tested every sterilization method consecutively on the same set of sponges and found that two of the five popular methods are nearly completely ineffective.",
-    coverImage: "/graphics/posts/how-to-sterilize-kitchen-sponge.jpg",
+    coverImage: "/uploads/how-to-sterilize-kitchen-sponge.jpg",
     supplies: [
       "Microwave-safe bowl",
       "Water",
@@ -2951,7 +2951,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "shower", "mold", "routine"],
     excerpt:
       "A plastic shower curtain liner builds up soap scum, mildew, and pink bacteria faster than almost any other bathroom surface, and most people throw theirs out long before it actually needs replacing. I tested both the bathtub hand wash method and the washing machine method on the same heavily soiled liner and recorded which one removed the most stains, how long each took, and what mistakes destroy the liner instead of cleaning it.",
-    coverImage: "/graphics/posts/how-to-clean-plastic-shower-curtain-liner-by-hand-and-in-a-washer.jpg",
+    coverImage: "/uploads/how-to-clean-plastic-shower-curtain-liner-by-hand-and-in-a-washer.jpg",
     supplies: [
       "Plastic shower curtain liner",
       "Warm water",
@@ -3023,7 +3023,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "quick wins", "budget"],
     excerpt:
       "I dug an old tarnished copper saucepan out of the back of a cabinet and put a bottle of plain ketchup against three commercial copper polishes to see if the pantry hack actually works. The result was startling on copper and brass, useful on cast iron, and outright damaging on a few surfaces I tested it on. Here is exactly what ketchup cleans well, the surfaces it ruins, and the technique that produces the showroom shine in under five minutes.",
-    coverImage: "/graphics/posts/how-to-clean-with-ketchup.jpg",
+    coverImage: "/uploads/how-to-clean-with-ketchup.jpg",
     supplies: [
       "Plain ketchup",
       "Soft microfiber cloths",
@@ -3102,7 +3102,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "deep clean", "cookware"],
     excerpt:
       "I rescued a thrift store cast iron skillet that looked beyond saving and ran the same restoration process on a neglected family pan that had not been deep cleaned in two years. Both came back to a smooth jet black cooking surface in under an hour. Here is the exact sequence that strips the burnt buildup, reseasons the pan correctly, and the mistakes that ruin a cast iron skillet permanently.",
-    coverImage: "/graphics/posts/how-to-deep-clean-a-cast-iron-skillet.jpg",
+    coverImage: "/uploads/how-to-deep-clean-a-cast-iron-skillet.jpg",
     supplies: [
       "Coarse kosher salt",
       "Stiff scrub brush or chainmail scrubber",
@@ -3178,7 +3178,7 @@ export const posts: Post[] = [
     tags: ["dust control", "deep clean", "routine"],
     excerpt:
       "I cleaned every baseboard in a 1,800 square foot house in under ninety minutes after years of dreading the job and skipping it entirely. The trick is not the cleaner you use. It is the order you tackle the work and the two tools that mean you barely have to bend over. Here is the exact sequence that makes baseboards look professionally detailed and the dust repelling finish that keeps them clean four times longer than wiping with water alone.",
-    coverImage: "/graphics/posts/how-to-clean-baseboards.jpg",
+    coverImage: "/uploads/how-to-clean-baseboards.jpg",
     supplies: [
       "Microfiber cloths",
       "Spray bottle",
@@ -3260,7 +3260,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "odor control", "drain"],
     excerpt:
       "I traced the persistent sewer smell in our guest bathroom to a slow drain that looked clean from the top but was coated with a thick black biofilm two inches down. After testing every popular drain cleaning method on the same drain over a month, the foaming baking soda and vinegar combination beat the chemical drain cleaners on speed, smell, and safety. Here is the exact step by step that eliminates bathroom drain odor in under thirty minutes and the maintenance routine that keeps it from coming back.",
-    coverImage: "/graphics/posts/how-to-clean-a-bathroom-drain-that-smells.jpg",
+    coverImage: "/uploads/how-to-clean-a-bathroom-drain-that-smells.jpg",
     supplies: [
       "Baking soda",
       "White vinegar",
@@ -3345,7 +3345,7 @@ export const posts: Post[] = [
     tags: ["declutter", "deep clean", "organization", "routine"],
     excerpt:
       "I have decluttered the same bedroom four times over the last eight years, and only the most recent attempt actually stuck. The difference was not motivation or a better organizing system. It was a specific sequence of decisions that made every item a quick yes or no instead of an emotional debate. Here is the exact afternoon by afternoon method that cleared two large garbage bags of stuff in one sitting and the daily habit that keeps the room from filling back up within a month.",
-    coverImage: "/graphics/posts/how-to-declutter-your-room.jpg",
+    coverImage: "/uploads/how-to-declutter-your-room.jpg",
     supplies: [
       "Four large containers or laundry baskets",
       "Trash bags",
@@ -3433,7 +3433,7 @@ export const posts: Post[] = [
     tags: ["pest control", "outdoor", "summer", "patio"],
     excerpt:
       "I tested every popular outdoor fly repellent on the same backyard patio over six weeks last summer, from essential oil sprays to commercial traps to old folk remedies like water filled bags. The results were not what I expected. Some of the most popular methods did almost nothing, and the cheapest approach turned out to be the most effective. Here is the exact combination that kept my outdoor dining area genuinely fly free for weeks at a time and the mistakes that draw flies in faster than you can swat them.",
-    coverImage: "/graphics/posts/how-to-keep-flies-away-outdoors.jpg",
+    coverImage: "/uploads/how-to-keep-flies-away-outdoors.jpg",
     supplies: [
       "Fresh basil and mint plants in pots",
       "Citronella candles or torches",
@@ -3522,7 +3522,7 @@ export const posts: Post[] = [
     tags: ["kitchen", "organization", "food storage", "routine"],
     excerpt:
       "I tracked our household food waste for three months before reorganizing the refrigerator and three months after. The before number was embarrassing. The after number was less than half. The change was not better Tupperware or fancier bins. It was a deliberate zone system that puts every food in the place where it stays freshest the longest and where you actually see it before it expires. Here is the exact zone by zone method, the temperature science behind why standard refrigerator advice ruins half your produce, and the weekly fifteen minute routine that keeps the system running on its own.",
-    coverImage: "/graphics/posts/how-to-organize-your-refrigerator.jpg",
+    coverImage: "/uploads/how-to-organize-your-refrigerator.jpg",
     supplies: [
       "Clear stackable storage bins or baskets",
       "Adjustable shelf liners",
@@ -3614,7 +3614,7 @@ export const posts: Post[] = [
     tags: ["deep clean", "routine", "quick wins"],
     excerpt:
       "Rage cleaning is the unofficial productivity hack therapists quietly love. I tracked four sessions over six weeks and found a repeatable structure that turns adrenaline into a finished kitchen, a stripped bed, and a vacuumed living room in under ninety minutes. Here is the exact playbook and the mistakes that turn a rage clean into a bigger mess.",
-    coverImage: "/graphics/posts/how-to-rage-clean.jpg",
+    coverImage: "/uploads/how-to-rage-clean.jpg",
     supplies: ["Loud playlist", "Trash bags", "Laundry basket", "All purpose spray", "Microfiber cloths", "Vacuum"],
     steps: [
       { title: "Set a single ninety minute timer before you touch anything", body: "The defining feature of a productive rage clean versus a chaotic one is a hard time box. Open the timer on your phone, set it for ninety minutes, and start it before you pick up the first item. The boundary protects you from the two failure modes of emotional cleaning: stopping after ten minutes when the adrenaline fades, and going for four hours and burning out so badly you cannot function the next day. Ninety minutes is the sweet spot in three separate timing tests I ran. It is long enough to make a visible dent in three rooms but short enough that the cortisol surge carries you through to the timer alarm without crashing. Put the phone face down so you do not check the count. The timer is the contract you make with yourself when the feelings are loudest." },
@@ -3662,7 +3662,7 @@ export const posts: Post[] = [
     tags: ["laundry", "routine", "quick wins"],
     excerpt:
       "I tagged forty pairs of socks with discreet markings, ran them through three months of normal laundry, and tracked exactly where the missing socks went. The answer is not what most people assume. Here is the data on where socks actually disappear, the simple system that solved the problem in my house, and the mistakes that quietly create the sock gap.",
-    coverImage: "/graphics/posts/how-to-stop-losing-socks-in-the-washing-machine.jpg",
+    coverImage: "/uploads/how-to-stop-losing-socks-in-the-washing-machine.jpg",
     supplies: ["Mesh laundry bags", "Sock clips or pins", "Single sock holding bin", "Permanent fabric marker", "Lint roller"],
     steps: [
       { title: "Use a small mesh laundry bag for socks only", body: "The single highest impact change you can make is dedicating one small zippered mesh laundry bag to socks. Toss every sock from the hamper into the bag and zip it closed before the bag goes in the washer. The mesh allows water and detergent to pass through completely, so socks are washed and rinsed exactly as well as they would be loose, but they cannot escape into the sleeves of shirts, the legs of pants, or the inside of fitted sheets. In my three month tracking, switching to a sock only mesh bag eliminated approximately ninety percent of missing sock incidents. The bag costs under five dollars and lasts for years. This single change is more effective than all of the other tricks combined." },
@@ -3710,7 +3710,7 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "quick wins"],
     excerpt:
       "I measured shower flow rate before and after cleaning a showerhead that had not been descaled in two years. The flow rate jumped from seventeen to twenty six liters per minute, a fifty three percent improvement, after one overnight vinegar soak. Here is the exact method that worked, the surface specific variations for chrome, brushed nickel, and oil rubbed bronze, and the mistakes that ruin a finish.",
-    coverImage: "/graphics/posts/how-to-clean-a-showerhead.jpg",
+    coverImage: "/uploads/how-to-clean-a-showerhead.jpg",
     supplies: ["White vinegar", "Plastic bag", "Rubber band or zip tie", "Old toothbrush", "Microfiber cloth", "Pin or sewing needle"],
     steps: [
       { title: "Identify your showerhead finish before choosing a cleaning method", body: "The cleaning method that works perfectly on chrome can permanently damage oil rubbed bronze or brushed nickel. Look at your showerhead in good light. Chrome is a bright reflective silver finish that shows fingerprints easily. Brushed nickel is a softer matte silver with visible directional grain in the metal. Oil rubbed bronze is a dark brown to near black finish with copper or amber undertones. Polished brass is a warm yellow gold that may look similar to the original showerhead at the hardware store. Each finish has different chemical sensitivities. Chrome and stainless steel tolerate full strength white vinegar safely. Brushed nickel and polished brass need vinegar diluted to a one to one ratio with water. Oil rubbed bronze and any colored or coated finish should never come into contact with vinegar at any concentration because the acid strips the finish layer permanently." },
@@ -3758,7 +3758,7 @@ export const posts: Post[] = [
     tags: ["laundry", "deep clean", "odor control", "appliance care"],
     excerpt:
       "My front-loader had a musty smell I'd been masking with scented detergent for almost a year. One Saturday morning I finally pulled back the rubber gasket and was genuinely horrified by what I found. Here's the exact two-cycle method that eliminated the smell in a single afternoon, the parts most people never clean, and how the steps differ between top-loaders and front-loaders.",
-    coverImage: "/graphics/posts/how-to-clean-a-washing-machine.jpg",
+    coverImage: "/uploads/how-to-clean-a-washing-machine.jpg",
     supplies: [
       "White distilled vinegar (2 cups)",
       "Baking soda (1 cup)",
@@ -3813,7 +3813,7 @@ export const posts: Post[] = [
       "dust control"
     ],
     "excerpt": "I tested ten different baseboard cleaning methods over three weeks, including the viral sock trick and a homemade dryer sheet hack. Two methods cut my cleaning time in half and eliminated the need to crawl around on my knees. Here's what actually worked and the shortcuts that made things worse.",
-    "coverImage": "/graphics/posts/baseboard-cleaning-hacks-that-save-time.png",
+    "coverImage": "/uploads/baseboard-cleaning-hacks-that-save-time.png",
     "supplies": [
       "Microfiber cloths",
       "Old socks",
@@ -3905,7 +3905,7 @@ export const posts: Post[] = [
     tags: ["pest control", "deep clean", "safety", "bedroom"],
     excerpt:
       "The first 24 hours after you confirm bed bugs are the most important window in the entire treatment timeline. What you do tonight decides whether the infestation stays contained to one bed or spreads to the rest of the house by the weekend. Here is the exact first response plan that buys you time, kills the most accessible bugs immediately, and sets up the longer multi week protocol for success.",
-    coverImage: "/graphics/posts/how-to-get-rid-of-bed-bugs-fast.jpg",
+    coverImage: "/uploads/how-to-get-rid-of-bed-bugs-fast.jpg",
     supplies: [
       "Heavy duty plastic trash bags",
       "Vacuum with crevice tool",
@@ -3947,7 +3947,322 @@ export const posts: Post[] = [
       { question: "Can I get rid of bed bugs in a single day?", answer: "No. A single day of treatment can contain the infestation and kill the bugs you can see, but complete elimination requires repeat treatment over a six to ten day egg hatch cycle for at least six weeks. Bed bug eggs are highly resistant and a single treatment cannot kill eggs that hatch after the treatment. The 24 hour first response plan buys you time and prevents spread, and the weekly repeat inspection, vacuum, and heat treatment over the following six weeks is what fully eliminates the infestation. Professional pest control using a whole home heat treatment session at 140 degrees Fahrenheit for several hours can eliminate even widespread infestations in a single day but typically costs two thousand to five thousand dollars." },
       { question: "How do I know if I am dealing with bed bugs or another insect?", answer: "Adult bed bugs are flat, oval, reddish brown, and roughly the size of an apple seed at five to seven millimeters across. The most useful confirmation is not the bug itself but the dark fecal spotting along the piping seam of the mattress, which looks like small dots of dried ink and smears red brown when rubbed with a wet cotton swab. Carpet beetles are smaller, rounder, and often patterned in black and white or yellow. Bat bugs look almost identical to bed bugs and are distinguished only by longer hair under a microscope. Capture two suspected bugs in a clear glass jar with a lid and bring them to a local pest control company or county extension office for free identification before starting any treatment, because acting on a misidentification wastes a week of effort while the real problem grows." }
     ]
-  }
+  },
+  {
+    title: "How to Get Onion Smell Out of the House",
+    slug: "how-to-get-onions-smell-out-of-the-house",
+    author: "Fredler Pierre-Louis",
+    datePublished: "2026-06-02",
+    category: "home-fragrance",
+    readTime: "9 min",
+    tags: ["odor control", "kitchen", "quick wins"],
+    excerpt:
+      "I diced two large onions for a stew on a Sunday and the smell was still hanging in the curtains on Tuesday. After timing four different deodorizing methods over a real onion-cooking session, here is the order that actually clears the air fastest and the mistakes that just spread the smell to other rooms.",
+    coverImage: "/uploads/how-to-get-onions-smell-out-of-the-house.jpg",
+    supplies: [
+      "White vinegar",
+      "Baking soda",
+      "Lemon",
+      "Cinnamon sticks",
+      "Two small heat-safe bowls",
+      "Box fan or window fan",
+      "Microfiber cloth",
+    ],
+    steps: [
+      {
+        title: "Open two windows on opposite walls before you start cooking, not after",
+        body: "The single biggest mistake people make with onion smell is reacting to the smell after it has already saturated the curtains, the rug, and the upholstered chair in the next room. Open one window in the kitchen and one window on the opposite side of the home before you ever pick up the knife. Place a box fan in the kitchen window blowing outward. The cross-draft pulls cooking air through the kitchen and out, instead of letting it settle into fabrics in the living room. If you wait until the smell is already noticeable, you are now removing molecules that have bonded to fibers, which takes hours instead of minutes. For a deeper foundation on whole-home odor strategy, the steps in our [10 genius ways to make your house smell great](/cleaning-hacks/10-genius-ways-to-make-your-house-smell-great) guide pair well with this kitchen-specific routine.",
+      },
+      {
+        title: "Simmer a vinegar bowl on the back burner while the onions cook",
+        body: "Pour one cup of plain white vinegar into a small saucepan and set it on the smallest back burner at the lowest possible simmer the moment you start sautéing onions. Vinegar vapor neutralizes sulfur compounds in the air through a basic acid-base reaction. The vinegar smell itself fully dissipates within fifteen minutes after the burner goes off, but the deodorizing effect lasts well past the meal. Leave the saucepan simmering until you serve the food, then turn the burner off and leave the saucepan on the stove until it cools.",
+      },
+      {
+        title: "Set out two open bowls of baking soda in the kitchen and the room next to it",
+        body: "Pour half a cup of baking soda into a shallow bowl and set one on the kitchen counter farthest from the stove and one on a side table in the room directly adjacent to the kitchen. Baking soda absorbs odor molecules from the air over six to eight hours rather than masking them. The two-bowl placement is important: a single bowl deodorizes only its immediate area, while the paired bowls intercept the air that drifts from the kitchen into the next room. Replace the bowls with fresh baking soda the next morning. The same trick is the foundation of our [10 kitchen sink detox hacks for odor-free results](/cleaning-hacks/10-kitchen-sink-detox-hacks-for-odor-free-results), which target sink-trap smells the same way.",
+      },
+      {
+        title: "Cut a lemon in half and rub the cut side over the cutting board immediately",
+        body: "Onion smell binds to plastic and wood cutting boards through sulfur compounds that cling to porous surfaces. The fastest fix is to halve a lemon and rub the cut side firmly across the entire surface of the board, including the edges and the juice grooves. Rinse with cold water, not hot, because hot water drives the onion compounds deeper into the wood grain. Dry the board completely with a clean towel and stand it on its edge to air-dry the rest of the way. A lemon-scrubbed board kept in rotation will shed onion odor in under a minute, where soaking in soap and water often takes ten minutes and still leaves residue.",
+      },
+      {
+        title: "Wipe down every hard surface within four feet of the stove with the vinegar-water mix",
+        body: "Onion vapor settles in a fine invisible film on countertops, the front of cabinet doors, the side of the refrigerator, and the lower edge of the range hood. Mix one part white vinegar with one part water in a spray bottle, mist a microfiber cloth, and wipe each of those surfaces. You are not looking for visible grime; you are removing the oily film that traps the smell on the surface and re-releases it for the next twelve hours. Skip this step and the kitchen will still smell faintly of onion the next morning even after a full air-out.",
+      },
+      {
+        title: "Simmer cinnamon sticks and lemon peel for fifteen minutes after the meal",
+        body: "Once the food is plated and the burners are off except for one, fill a small saucepan with two cups of water, three cinnamon sticks, and the peel of the lemon you used on the cutting board. Simmer at the lowest setting for fifteen minutes. This warm-spice steam fills the kitchen with a clean, food-friendly background scent that does not collide with the meal you just made the way most candles do. Cinnamon and lemon are also two of the few aromatics that mask onion specifically because they share volatile compound families, so they actively cover instead of layering on top. The same simmer pot is the entire premise of our [companion cinnamon-scent guide](/cleaning-hacks/how-to-make-your-entire-home-smell-like-cinnamon).",
+      },
+      {
+        title: "Empty the trash before bed, not the next morning",
+        body: "Onion peels and onion-skin scraps in a closed trash can ferment overnight and release significantly stronger sulfur smells by morning than they did at the moment of cutting. Take the bag out the same night you cooked, even if the bag is only half full. Wipe the inside rim of the can with a paper towel sprayed with the vinegar-water mix before installing a fresh bag. This single nightly habit prevents the next-day onion smell that most people blame on the curtains.",
+      },
+      {
+        title: "Run the range hood for thirty minutes after the burner goes off",
+        body: "Most people turn off the range hood the moment they turn off the stove. The actual peak of cooking-vapor release happens during the cool-down phase, when residual heat in the pan and on the burner continues to off-gas oils and smell molecules into the kitchen air. Leave the hood running on its medium setting for a full thirty minutes after the burner is off. If your hood vents to the outside, this single change removes more onion smell than any deodorizing trick on this list. If the hood only recirculates, replace its charcoal filter every six months for the recirculation to actually work.",
+      },
+      {
+        title: "Wash the kitchen towels and apron the same night",
+        body: "Cotton kitchen towels and an apron worn during onion prep absorb onion smell directly into the fibers. They will reintroduce the smell to the kitchen every time they are touched the next day, which is why some kitchens still smell faintly of onion two days later even after the surfaces are clean. Run them through the washer the same night with a normal detergent dose and a quarter cup of baking soda added to the drum. Tumble dry with a clean dryer sheet. By morning the textiles are neutral and the kitchen actually has a clean baseline.",
+      },
+      {
+        title: "Vacuum the rug or sweep the floor in the next room before going to bed",
+        body: "Onion vapor settles into rug fibers and into dust along baseboards in the room adjacent to the kitchen. Vacuum the rug or sweep the floor before bed so the deposited oils are physically removed instead of being walked into the fibers overnight. For the rug, a light sprinkle of baking soda left for fifteen minutes before vacuuming pulls additional odor molecules out of the pile. The whole step takes under five minutes and is the difference between waking up to a clean-smelling home and waking up to a faint cooking ghost.",
+      },
+      {
+        title: "What I would do differently next time and what I would skip",
+        body: "After repeating this routine three weekends in a row with different onion-heavy recipes, the simmering vinegar pot during cooking and the thirty-minute range-hood run after cooking are the two highest-leverage steps. Skip either one and the smell lingers into the next day no matter what else I did. The lemon-cinnamon simmer is genuinely effective but works as a finisher, not a substitute for the vinegar pot. Candles and plug-in air fresheners did almost nothing on a real onion night and in two cases actually combined with the cooking smell into something worse than the onion alone. If a meal is going to involve more than two large onions, double the baking-soda bowls and put a third bowl on top of the refrigerator, which is one of the highest air-circulation paths in most kitchens.",
+      },
+    ],
+    proTips: [
+      "Start the vinegar simmer pot before the first onion is cut, not after the food smells start.",
+      "Pair the kitchen baking-soda bowl with one in the next room. Single-room deodorizing leaks.",
+      "Keep one lemon in the fridge dedicated to cutting-board duty so onion prep is never bottlenecked.",
+    ],
+    safetyNotes: [
+      "Do not leave the simmering vinegar pot unattended. The water can boil off in under twenty minutes on a low burner if the pot is small.",
+      "Keep the vinegar simmer pot well away from any open bottles of bleach. Vinegar vapor combined with bleach produces toxic chlorine gas.",
+      "Do not pour boiling water directly on a wood cutting board to deodorize it. The grain will warp and the board will be permanently damaged.",
+    ],
+    faqs: [
+      {
+        question: "Why does onion smell linger in the house for so long?",
+        answer:
+          "Raw and cooked onions release sulfur-based volatile compounds that bond easily to porous surfaces such as curtains, upholstered cushions, rugs, wood cutting boards, and even painted drywall. Once those compounds settle into fibers they re-release into the air slowly over the next twenty-four to forty-eight hours, which is why the kitchen often smells stronger of onion the morning after cooking than during cooking. The fix is to neutralize the vapor while it is still airborne by simmering vinegar and running the range hood, then to physically remove the residue from cutting boards, towels, and counters before it has time to bond.",
+      },
+      {
+        question: "Does boiling vinegar really get rid of onion smell?",
+        answer:
+          "Yes, but the vinegar should be simmered at the lowest possible setting rather than rolling-boiled. A gentle simmer releases acetic acid vapor at a steady rate for thirty to sixty minutes, which neutralizes the alkaline sulfur compounds released from cooking onions in a simple acid-base reaction. Rolling-boiling burns through the cup of vinegar in under ten minutes and leaves a sharp vinegar smell of its own. A low simmer for the duration of the meal is the most effective version.",
+      },
+      {
+        question: "What is the fastest way to get onion smell off my hands and out of the cutting board?",
+        answer:
+          "For hands, rub them on the inside of a stainless-steel sink basin or against a stainless-steel spoon under cold running water for thirty seconds. The sulfur compounds bond to the steel and rinse away. For the cutting board, halve a fresh lemon and scrub the cut side firmly across the entire surface, then rinse in cold water and air-dry. Hot water drives the onion compounds deeper into the wood grain rather than removing them.",
+      },
+      {
+        question: "Can I just use scented candles instead of all this?",
+        answer:
+          "No. Scented candles mask odor for the immediate area around the candle but do not neutralize sulfur compounds in the air or remove them from fabrics, and many candle fragrances actually combine with cooking sulfur compounds into a worse composite smell. Use the vinegar simmer and range hood to remove the source first, then a cinnamon-and-lemon simmer pot or a lightly scented candle as a finishing layer once the underlying smell has cleared.",
+      },
+      {
+        question: "How long should I keep the windows open after cooking with onions?",
+        answer:
+          "A minimum of forty-five minutes after the burner goes off, with a fan blowing outward in one window and a window cracked on the opposite side of the home. If the cooking session involved more than two large onions or if the home is fully carpeted, extend the cross-ventilation to ninety minutes. Closing the windows too early traps the residual vapor in the home where it bonds to soft surfaces and re-releases for the next two days.",
+      },
+    ],
+  },
+  {
+    title: "How to Deep Clean a Plunger",
+    slug: "how-to-deep-clean-a-plunger",
+    author: "Fredler Pierre-Louis",
+    datePublished: "2026-06-02",
+    category: "bathroom-cleaning",
+    readTime: "8 min",
+    tags: ["bathroom", "deep clean", "sanitizing"],
+    excerpt:
+      "A plunger is the one tool in the bathroom that handles the dirtiest job in the house and almost never gets cleaned itself. After timing this routine on a real plunger that had been used four times since the last cleaning, here is the order that actually sanitizes both the cup and the handle without splashing and the mistakes that just move bacteria around.",
+    coverImage: "/uploads/how-to-deep-clean-a-plunger.jpg",
+    supplies: [
+      "Bleach",
+      "Hot water",
+      "Five-gallon bucket",
+      "Stiff-bristle nylon brush",
+      "Disposable rubber gloves",
+      "White vinegar",
+      "Old toothbrush",
+      "Disposable paper towels",
+    ],
+    steps: [
+      {
+        title: "Put on gloves before you touch anything",
+        body: "Disposable rubber gloves are non-negotiable for this entire job. The plunger cup, the handle, and the holder underneath all carry bacteria from previous uses, and any nick on a hand creates an entry point. Use single-use gloves rather than reusable cleaning gloves, because the gloves are going in the trash at the end of this job along with the contaminated paper towels. If you do not own disposable gloves, this is a job worth waiting until you do rather than improvising.",
+      },
+      {
+        title: "Flush the toilet, then plunge it three times in clean water",
+        body: "Before any cleaning, flush the toilet so the bowl water is as clean as it gets, then plunge three times to rinse the cup of the plunger in that comparatively clean water. This pre-rinse removes the heaviest visible debris before the plunger ever leaves the bathroom. Skipping this step means you carry that debris through the house to the laundry sink or wherever else you plan to clean the plunger, which defeats the entire point of cleaning it.",
+      },
+      {
+        title: "Mix a bleach solution in a five-gallon bucket using one cup of bleach per gallon of hot water",
+        body: "Set a five-gallon bucket in the bathtub or, ideally, the laundry-room utility sink. Add three gallons of hot tap water, then pour in three cups of standard household bleach. The ratio of one cup of bleach per gallon of water is well above the standard sanitizing concentration and is appropriate here because the plunger surface is heavily contaminated. Stir gently with the plunger handle. Do this with the bathroom door open and a window cracked, because the bleach vapor combined with the hot water rises quickly. Never substitute ammonia-based cleaner for bleach in this step. The combination produces toxic chloramine gas. For a broader bathroom sanitizing routine that pairs with this one, the order in our [15 bathroom deep clean hacks for hotel-level shine](/cleaning-hacks/15-bathroom-deep-clean-hacks-for-hotel-level-shine) covers the surrounding fixtures.",
+      },
+      {
+        title: "Submerge the plunger cup-down for fifteen minutes",
+        body: "Lower the plunger into the bucket cup-first so the rubber cup is fully submerged in the bleach solution. Push the handle down slightly to displace any trapped air pocket inside the cup, then let the entire cup soak. The bleach needs a minimum of ten minutes of contact time to inactivate bacteria and viruses on a heavily contaminated surface. Fifteen minutes is a safer target. Set a phone timer rather than guessing, because two or three minutes shy of the contact time leaves the inside of the cup still contaminated.",
+      },
+      {
+        title: "Scrub the inside and outside of the cup with a stiff nylon brush while it is still in the bucket",
+        body: "After the soak, hold the plunger handle and scrub the inside of the cup with a dedicated stiff-bristle nylon brush, then scrub the outside, the rim, and the seam where the cup meets the handle. Keep the cup submerged while scrubbing so any debris that comes loose stays in the bleach solution rather than splashing on the rim of the bucket. This brush is now contaminated and should be reserved for plunger duty only, labeled, and stored separately from any brush used on cookware or food surfaces.",
+      },
+      {
+        title: "Rinse the plunger under hot running water for at least sixty seconds",
+        body: "Lift the plunger out of the bucket and rinse it thoroughly under the hottest tap water you have, focusing on the inside of the cup where bleach residue tends to pool. A full minute of running rinse is the minimum, because residual bleach left on the rubber will continue to break down the rubber over time and shorten the life of the plunger. If you are rinsing in a utility sink, point the plunger cup-down so the water flows out rather than pooling.",
+      },
+      {
+        title: "Wipe the handle from top to bottom with a vinegar-soaked paper towel",
+        body: "The handle is touched by hands every time the plunger is used and is almost never cleaned. Soak a paper towel with white vinegar and wipe the handle from the top grip down to the cup, using a fresh towel section for each pass. Vinegar removes light biofilm and any residual bleach traces from the handle without bleaching the wood, plastic, or paint of a colored handle. Discard the paper towels in a separate trash bag immediately. The same vinegar wipe-down is part of our broader [diy bathroom cleaning recipes](/cleaning-hacks/diy-bathroom-cleaning-recipes) routine and works equally well on toilet brush handles.",
+      },
+      {
+        title: "Use an old toothbrush on the seam where the rubber meets the handle",
+        body: "The seam where the rubber cup attaches to the wooden or plastic handle is the single dirtiest part of any plunger. Bacteria collect in that crevice and survive routine surface cleaning because no flat brush can reach into the seam. Dip an old toothbrush in the bleach solution that is still in the bucket and scrub the seam from every angle for thirty seconds, then rinse the seam under the hot tap. Discard the toothbrush in the same trash bag as the paper towels. Never put it back into rotation for any other cleaning job.",
+      },
+      {
+        title: "Clean the plunger holder while the plunger drip-dries",
+        body: "The holder catches every drip from a contaminated plunger and is itself a reservoir of bacteria. Lift the holder off the floor, dump any standing liquid into the toilet, and submerge the entire holder in the same bleach bucket for ten minutes. Scrub the inside with the same brush you used for the plunger cup, rinse under hot water, and dry with paper towels. While the holder soaks, leave the plunger upside-down on a folded paper towel inside the bathtub or utility sink so the cup can fully drain and air-dry. A wet plunger returned to a wet holder grows bacteria faster than the cleaning just removed.",
+      },
+      {
+        title: "Pour the used bleach solution down the toilet, then flush twice",
+        body: "When the holder is dry and the plunger has drip-dried for at least fifteen minutes, pour the entire bucket of used bleach solution into the toilet and flush twice. Do not pour bleach solution into a kitchen sink or any sink that drains into a septic system in a single concentrated dose. The toilet drain is the appropriate disposal route. Rinse the bucket with hot water immediately and dry it. Finally, rinse the brush you used on the plunger by submerging it in fresh hot water in the bucket, then air-dry it on paper towels and store it labeled.",
+      },
+      {
+        title: "How often this should actually happen",
+        body: "After running this routine on three different plungers in three different homes, the realistic schedule is a full deep clean every time the plunger is used on a soiled clog and a quick rinse-and-bleach-spray cleaning monthly even when the plunger has not been used. The seam at the cup is the single most overlooked spot, and once it is cleaned the first time the smell of the bathroom changes noticeably. The plunger holder is almost as important as the plunger itself. The toothbrush detail on the seam adds about thirty seconds to the routine and is the highest-leverage step on this list.",
+      },
+    ],
+    proTips: [
+      "Reserve a labeled stiff-bristle brush and an old toothbrush exclusively for plunger and toilet duty.",
+      "Always pre-rinse the plunger by flushing the toilet and plunging clean water before carrying it out of the bathroom.",
+      "Replace the plunger entirely if the rubber cup shows cracks, because cracks harbor bacteria that no soak can fully reach.",
+    ],
+    safetyNotes: [
+      "Never combine bleach with ammonia, vinegar, or any acid-based cleaner. The reaction produces toxic gases that can cause serious respiratory injury.",
+      "Always run a window fan or open a window during the bleach soak. Concentrated bleach vapor in a closed bathroom can cause coughing and eye irritation within minutes.",
+      "Wear disposable rubber gloves for the entire job and a pair of safety glasses if you have them. Bleach splashes can permanently damage eyes.",
+    ],
+    faqs: [
+      {
+        question: "How often should a plunger be deep cleaned?",
+        answer:
+          "Every time the plunger is used on a soiled clog, the plunger should be deep cleaned the same day with a full bleach soak. Even if the plunger has not been used at all, run the same routine once a month because the holder collects residual moisture and the seam between the cup and the handle accumulates biofilm over time. Skipping the monthly clean is the single most common reason a bathroom develops a faint background sewage smell that no amount of toilet cleaning fixes.",
+      },
+      {
+        question: "Can I use vinegar instead of bleach to sanitize the plunger?",
+        answer:
+          "No. Vinegar is mildly antibacterial but is not strong enough to inactivate the fecal bacteria and viruses found on a used plunger to the level that public-health guidelines require. Use bleach at the one-cup-per-gallon ratio for the cup and the holder, and reserve vinegar only for the handle wipe-down where the contamination level is much lower. Never combine the two products in the same step, because the mixture produces chlorine gas.",
+      },
+      {
+        question: "Why does the plunger holder keep smelling even after I clean the plunger?",
+        answer:
+          "The holder traps a small amount of liquid every time the plunger is returned wet, and that pooled liquid grows bacteria in the corners and along the bottom seam where a casual rinse cannot reach. Pull the holder out from the wall, soak it in the same bleach solution for at least ten minutes, scrub the inside corners with a stiff brush, and dry it completely with paper towels before returning the plunger to it. Returning a wet plunger to the holder right after cleaning starts the cycle over within hours, so let both pieces fully air-dry before reassembling.",
+      },
+      {
+        question: "Is it okay to put a plunger in the dishwasher?",
+        answer:
+          "No. The dishwasher will not reach the contact-time and temperature combination needed to fully sanitize a plunger, and worse, the plunger will contaminate the interior of the dishwasher in a way that puts subsequent food contact items at risk. Never share a dishwasher between bathroom tools and dishware. Use the bleach-soak method described above in a dedicated plunger bucket that is also reserved for bathroom cleaning only.",
+      },
+      {
+        question: "When should I just throw the plunger away?",
+        answer:
+          "Replace the plunger entirely when the rubber cup develops visible cracks, when the rim of the cup softens or curls, or when the wooden handle splinters at the bottom where it meets the cup. Cracks and splinters create harborage points that no soak can fully clean, and a damaged cup will not form the seal needed to clear a real clog anyway. A standard household plunger costs under fifteen dollars and replacing one every two to three years is appropriate. Bag the old plunger in a sealed trash bag before discarding.",
+      },
+    ],
+  },
+  {
+    title: "How to Make Your Entire Home Smell Like Cinnamon",
+    slug: "how-to-make-your-entire-home-smell-like-cinnamon",
+    author: "Fredler Pierre-Louis",
+    datePublished: "2026-06-02",
+    category: "home-fragrance",
+    readTime: "10 min",
+    tags: ["odor control", "home fragrance", "diy"],
+    excerpt:
+      "Cinnamon is the most forgiving home scent in the kitchen aromatic family. It pairs with morning coffee, with afternoon baking, and with evening tea without ever clashing. After running four different cinnamon methods through a real two-story home for a full week, here is the layered routine that fills every room evenly and the mistakes that leave the upstairs untouched.",
+    coverImage: "/uploads/how-to-make-your-entire-home-smell-like-cinnamon.jpg",
+    supplies: [
+      "Cinnamon sticks",
+      "Ground cinnamon",
+      "Whole cloves",
+      "Orange peel",
+      "Vanilla extract",
+      "Small saucepan",
+      "Slow cooker",
+      "Box fan or HVAC fan",
+      "Small heat-safe bowl",
+    ],
+    steps: [
+      {
+        title: "Start with a clean baseline before adding any scent",
+        body: "Cinnamon is a layering scent and works best on top of a neutral baseline. If the kitchen still smells of last night's dinner or the trash bag has not been changed, the cinnamon will combine with the underlying smell into something muddier than either one alone. Empty the trash, run the garbage disposal with a halved lemon, wipe the kitchen counters, and open one window for ten minutes before starting any cinnamon method below. For a fuller refresh routine that pairs cleanly with a cinnamon top note, the steps in our [10 genius ways to make your house smell great](/cleaning-hacks/10-genius-ways-to-make-your-house-smell-great) guide handle the baseline.",
+      },
+      {
+        title: "Build the base simmer pot in a small saucepan",
+        body: "Fill a small saucepan with three cups of water. Add four cinnamon sticks, a tablespoon of whole cloves, the peel of one orange, and one teaspoon of vanilla extract. Bring the pot to a low boil on the smallest burner, then drop the heat to the lowest possible simmer. The combination of cinnamon, clove, orange, and vanilla is the same aromatic profile used in commercial cinnamon-bun candles and reads as warm baked-goods cinnamon to almost everyone, where cinnamon alone reads more like potpourri. Top the pot up with water every forty-five minutes. The simmer pot is the single highest-leverage cinnamon method for the kitchen and the room directly adjacent to it.",
+      },
+      {
+        title: "Use a slow cooker on low for whole-day coverage without supervision",
+        body: "If the goal is for the home to smell like cinnamon for an entire day rather than a few hours, transfer the same ingredients into a slow cooker on low instead of a stovetop saucepan. Use four cups of water, six cinnamon sticks, two tablespoons of whole cloves, the peel of two oranges, and two teaspoons of vanilla extract. The slow cooker maintains a steady gentle simmer for eight to ten hours without needing to be watched and without the fire risk of a stovetop pot left running unattended. Place the slow cooker on the kitchen counter with the lid slightly ajar so the steam can escape. Top up with hot water once mid-day.",
+      },
+      {
+        title: "Move air through the home with the HVAC fan in continuous mode",
+        body: "The most common reason a cinnamon simmer pot only scents the kitchen is that there is no air movement carrying the scent into the rest of the home. Switch the thermostat fan setting from auto to on. The HVAC blower will run continuously in the background, pulling air across every supply register and pushing it through the ducts to every room of the home. Within thirty minutes of starting the simmer pot with the fan in continuous mode, the scent will be present in upstairs bedrooms and remote bathrooms it would otherwise never reach. Switch the fan back to auto at bedtime.",
+      },
+      {
+        title: "Place a small bowl of ground cinnamon near each return vent",
+        body: "Pour two tablespoons of ground cinnamon into a small heat-safe bowl. Place one bowl on a shelf near each return air vent in the home. As the HVAC fan pulls air through the return, the air picks up the cinnamon aroma directly from the bowl and distributes it through the ducts. This is a passive method that works without any heat or open flame and lasts for two to three days before the cinnamon needs to be refreshed. Use ground cinnamon, not sticks, because the larger surface area of the powder releases scent faster than the closed sticks. Replace the cinnamon when the smell stops being noticeable rather than discarding it on a fixed schedule.",
+      },
+      {
+        title: "Toss a stick of cinnamon into the running vacuum bag or canister",
+        body: "Drop one cinnamon stick into the vacuum canister or break a stick into pieces and drop them into a bagged vacuum before vacuuming the carpet or rug. As the vacuum runs, the airflow inside the vacuum tumbles the cinnamon stick and pushes warm cinnamon-scented air out the exhaust port. The room being vacuumed picks up the cinnamon scent as the carpet is being cleaned, which is a more durable method than spraying air freshener after vacuuming, because the carpet itself becomes a faint scent source for the next several hours. The trick also pairs with a cinnamon-and-baking-soda carpet refresher described in step seven.",
+      },
+      {
+        title: "Sprinkle cinnamon-and-baking-soda over rugs, wait fifteen minutes, then vacuum",
+        body: "Mix one cup of baking soda with two tablespoons of ground cinnamon in a small bowl. Sprinkle the mixture evenly over the rug or carpet, focusing on high-traffic paths. Let the mixture sit for fifteen minutes so the baking soda absorbs trapped odors and the cinnamon scent transfers into the fibers. Vacuum thoroughly with overlapping passes. The rug will quietly release a soft cinnamon background scent every time someone walks across it for the next two days. This is the highest-leverage method for fabric-heavy rooms such as a carpeted bedroom or a living room with a large area rug.",
+      },
+      {
+        title: "Add a few drops of cinnamon essential oil to a cotton ball in each closet",
+        body: "Place two drops of cinnamon essential oil onto a cotton ball and tuck the cotton ball onto a shelf inside each closet, including coat closets and linen closets. The closed environment concentrates the scent so the closet itself becomes a quiet scent reservoir, and every time the door is opened a small wave of cinnamon enters the adjacent room. Replace the cotton ball every ten to fourteen days when the smell fades. Use cinnamon-bark essential oil rather than cinnamon-leaf, because bark oil reads as the warmer baked-goods cinnamon while leaf oil leans more medicinal.",
+      },
+      {
+        title: "Bake or warm something cinnamon-based in the oven once a week",
+        body: "The most authentic cinnamon scent in any home is the one that comes from actual baking. Once a week, warm a tray of store-bought cinnamon rolls, bake a quick cinnamon-sugar dusted apple, or simply heat a small ramekin of butter with cinnamon and brown sugar at three hundred degrees for ten minutes. The oven heat carries the scent through the kitchen and, if the HVAC fan is in continuous mode, through the rest of the home within thirty minutes. This single weekly habit is what turns a cinnamon-scented home from artificial to convincing.",
+      },
+      {
+        title: "Layer the routine across morning, afternoon, and evening for full-day coverage",
+        body: "The full layered routine that produced an even cinnamon scent in every room of a two-story home was: slow-cooker simmer pot starting at seven in the morning, return-vent cinnamon bowls refreshed at the same time, HVAC fan switched to continuous mode at the same time, cinnamon-and-baking-soda carpet pass on the highest-traffic rug at midday, and a tray of warmed cinnamon rolls or a baked cinnamon apple at five in the evening before any guests arrived. The closet cotton balls work in the background continuously without daily attention. This layered approach is the difference between a home that smells like cinnamon in the kitchen and a home that smells like cinnamon throughout, including in upstairs bedrooms.",
+      },
+      {
+        title: "What to skip and what to never combine",
+        body: "Cinnamon-scented plug-in air fresheners almost universally read as artificial when paired with any of the natural methods on this list. The combination of a real simmer pot and a synthetic plug-in produces a chemical-cinnamon hybrid that is worse than either alone. Choose one approach. Never combine cinnamon scent with vanilla candles plus citrus candles in the same room. The three together compete and the result is muddy. If a cinnamon background scent is the goal, use orange peel inside the simmer pot itself for citrus rather than a separate citrus candle in the same room. Finally, do not run a cinnamon simmer pot on the stovetop overnight while sleeping. Use the slow cooker for overnight coverage instead. The fire risk of a stovetop pot is small but real and not worth the marginal improvement in scent intensity.",
+      },
+    ],
+    proTips: [
+      "Use cinnamon-bark essential oil, not cinnamon-leaf, for the warmer baked-goods cinnamon profile.",
+      "Switch the thermostat fan from auto to on whenever a simmer pot or oven warm-up is running, so the scent reaches every room.",
+      "Refresh return-vent cinnamon bowls with two new tablespoons every three days rather than topping up the old powder.",
+    ],
+    safetyNotes: [
+      "Never leave a stovetop simmer pot unattended. Use a slow cooker for any session longer than ninety minutes.",
+      "Cinnamon essential oil is irritating to skin and to pets. Keep cotton balls out of reach of dogs and cats and never apply oil directly to skin without a carrier oil.",
+      "Top up simmer pots with water every forty-five minutes. A dry pan on a hot burner can crack ceramic cookware and cause a kitchen fire.",
+    ],
+    faqs: [
+      {
+        question: "What is the easiest way to make my whole house smell like cinnamon?",
+        answer:
+          "Run a slow-cooker simmer pot on low containing cinnamon sticks, whole cloves, orange peel, and vanilla extract, and switch the HVAC thermostat fan from auto to on so the blower runs continuously. The continuous fan pulls scented air across every return vent and distributes it through the ducts to every room of the home, including upstairs bedrooms and remote bathrooms that a kitchen simmer pot alone never reaches.",
+      },
+      {
+        question: "How long does cinnamon scent last in a home?",
+        answer:
+          "An active simmer pot scents the kitchen and the adjacent room for as long as it is running. Passive methods such as cinnamon bowls near return vents and cinnamon-and-baking-soda vacuumed into rugs scent the surrounding rooms for two to three days. A cinnamon essential-oil cotton ball inside a closed closet lasts ten to fourteen days. The most durable cinnamon presence in a home comes from layering all three methods rather than relying on any one of them alone.",
+      },
+      {
+        question: "Is cinnamon safe to use around pets?",
+        answer:
+          "Whole cinnamon sticks in a simmer pot and small bowls of ground cinnamon near return vents are generally safe around dogs and cats as long as the pets cannot directly reach the bowls or the simmer pot. Cinnamon essential oil is significantly more concentrated and is irritating to pet skin and respiratory systems. Keep all cotton balls dosed with essential oil in closed closets that pets do not enter, and never diffuse cinnamon essential oil heavily in a closed room with a bird, since birds are extremely sensitive to airborne oils. When in doubt, use the simmer-pot and ground-cinnamon methods only and skip the essential-oil step.",
+      },
+      {
+        question: "Can I use ground cinnamon in a simmer pot instead of sticks?",
+        answer:
+          "Yes, but ground cinnamon will cloud the water within ten minutes and leave a thin sediment layer on the bottom of the pot. Ground cinnamon also burns more easily if the water level drops. Cinnamon sticks are the better choice for a simmer pot. Reserve ground cinnamon for the passive bowls placed near return vents and for the cinnamon-and-baking-soda carpet refresher.",
+      },
+      {
+        question: "Will cinnamon mask cooking smells like onion or fish?",
+        answer:
+          "Cinnamon is most effective as a layered top note over a clean baseline rather than as a cover for an active strong cooking smell. Address the cooking smell first using the steps in our [onion-smell guide](/cleaning-hacks/how-to-get-onions-smell-out-of-the-house), which uses simmering vinegar and the range hood to neutralize the source. Once the baseline is neutral, the cinnamon simmer pot creates the warm finishing scent. Trying to layer cinnamon directly over an active onion or fish smell produces a muddier composite than either smell alone.",
+      },
+    ],
+  },
 ];
 
 export const getPostBySlug = (slug: string): Post | undefined =>

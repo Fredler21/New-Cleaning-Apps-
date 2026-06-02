@@ -13,7 +13,7 @@ import { readFile, readdir, stat } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
 
-const POSTS_DIR = path.join(process.cwd(), "public", "graphics", "posts");
+const POSTS_DIR = path.join(process.cwd(), "public", "uploads");
 
 const loadSlugsFromPostsTs = async () => {
   try {

@@ -18,7 +18,7 @@ export type ImageAttribution = {
  */
 export function getImageAttribution(slug: string): ImageAttribution | null {
   const candidates = [
-    path.join(process.cwd(), "public", "graphics", "posts", `${slug}.meta.json`),
+    path.join(process.cwd(), "public", "uploads", `${slug}.meta.json`),
   ];
   for (const file of candidates) {
     try {

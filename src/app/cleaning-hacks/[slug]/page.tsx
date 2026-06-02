@@ -39,7 +39,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: fullTitle,
     description: post.excerpt,
-    keywords: [post.category.replace("-", " "), ...post.tags, "cleaning hacks", "home cleaning"],
+    keywords: [post.category.replace(/-/g, " "), ...post.tags, "cleaning hacks", "home cleaning"],
     alternates: { canonical: url },
     openGraph: {
       title: fullTitle,
@@ -77,33 +77,111 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
       <ViewTracker slug={post.slug} />
       <PostTopBar />
 
-      {/* Hero banner */}
-      <section className="relative h-[320px] overflow-hidden sm:h-[400px] lg:h-[440px]">
-        <Image
-          src={post.coverImage}
-          alt={post.title}
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/20" />
-        <Container>
-          <div className="relative flex h-[320px] flex-col justify-end pb-8 sm:h-[400px] lg:h-[440px]">
-            <div className="flex items-center gap-2">
-              <Badge variant="teal">{post.category.replace("-", " ")}</Badge>
-              <Badge>⏱ {post.readTime}</Badge>
-            </div>
-            <h1 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              {post.title}
-            </h1>
-            <p className="mt-3 max-w-2xl text-base text-slate-300">{post.excerpt}</p>
-          </div>
-        </Container>
-      </section>
-
       <Container>
-        <article className="py-10">
-          <ImageAttribution slug={post.slug} />
+        <article className="py-8 sm:py-12">
+          {/* Editorial-style header: breadcrumb + title + byline + hero figure,
+              modeled on the wavehooks / Helpful-Content article layout that
+              AdSense reviewers recognise as a normal blog post. */}
+          <nav
+            className="mb-4 flex flex-wrap items-center gap-1.5 text-xs"
+            style={{ color: "var(--muted)" }}
+            aria-label="Breadcrumb"
+          >
+            <Link href="/" className="hover:underline">Home</Link>
+            <span aria-hidden>›</span>
+            <Link href="/cleaning-hacks" className="hover:underline">Cleaning Hacks</Link>
+            <span aria-hidden>›</span>
+            <Link
+              href={`/categories/${post.category}`}
+              className="hover:underline capitalize"
+            >
+              {post.category.replace(/-/g, " ")}
+            </Link>
+          </nav>
+
+          <div className="mb-3 flex flex-wrap items-center gap-2">
+            <Badge variant="teal">{post.category.replace(/-/g, " ")}</Badge>
+            <Badge>⏱ {post.readTime}</Badge>
+          </div>
+
+          <h1
+            className="max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl"
+            style={{ color: "var(--text)" }}
+          >
+            {post.title}
+          </h1>
+
+          <div
+            className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm"
+            style={{ color: "var(--text-secondary)" }}
+          >
+            <span>
+              By{" "}
+              <Link
+                href="/author/fredler-pierre-louis"
+                className="font-medium hover:underline"
+                style={{ color: "var(--accent)" }}
+              >
+                {post.author ?? "Fredler Pierre-Louis"}
+              </Link>
+            </span>
+            <span aria-hidden>•</span>
+            <time dateTime={post.datePublished}>
+              {new Date(post.datePublished).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </time>
+            {post.dateUpdated && post.dateUpdated !== post.datePublished && (
+              <>
+                <span aria-hidden>•</span>
+                <span>
+                  Updated{" "}
+                  {new Date(post.dateUpdated).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </span>
+              </>
+            )}
+          </div>
+
+          <p
+            className="mt-4 max-w-2xl text-base leading-7 sm:text-lg"
+            style={{ color: "var(--text-secondary)" }}
+          >
+            {post.excerpt}
+          </p>
+
+          <figure className="mt-6 overflow-hidden rounded-2xl" style={{ border: "1px solid var(--border)" }}>
+            <div className="relative aspect-[16/9] w-full">
+              <Image
+                src={post.coverImage}
+                alt={post.title}
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
+                className="object-cover"
+              />
+            </div>
+            <figcaption
+              className="px-4 py-2 text-xs"
+              style={{
+                background: "var(--surface)",
+                color: "var(--muted)",
+                borderTop: "1px solid var(--border)",
+              }}
+            >
+              {post.title} — illustrated for {SITE_NAME}
+            </figcaption>
+          </figure>
+
+          <div className="mt-2">
+            <ImageAttribution slug={post.slug} />
+          </div>
+
           {/* Article + HowTo structured data */}
           <JsonLd
             data={{
@@ -183,36 +261,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
             />
           )}
 
-          {/* Author + meta bar */}
-          <div className="mb-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm" style={{ color: "var(--text-secondary)" }}>
-            <span className="flex items-center gap-1.5">
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
-              <span>By{" "}
-                <a href="/author/fredler-pierre-louis" className="font-medium hover:underline" style={{ color: "var(--accent)" }}>
-                  {post.author ?? "Fredler Pierre-Louis"}
-                </a>
-              </span>
-            </span>
-            <span className="flex items-center gap-1.5">
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <time dateTime={post.datePublished}>
-                {new Date(post.datePublished).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
-              </time>
-            </span>
-            <span className="flex items-center gap-1.5">
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              {post.readTime} read
-            </span>
-          </div>
-
           {/* Action bar */}
-          <div className="mb-10 flex flex-wrap items-center gap-3 rounded-xl px-5 py-3" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+          <div className="mb-10 mt-8 flex flex-wrap items-center gap-3 rounded-xl px-5 py-3" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
             <SaveHackButton slug={post.slug} variant="full" />
             <ShareBar title={post.title} slug={post.slug} />
           </div>
