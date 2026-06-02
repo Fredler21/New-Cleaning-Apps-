@@ -39,7 +39,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: fullTitle,
     description: post.excerpt,
-    keywords: [post.category.replace("-", " "), ...post.tags, "cleaning hacks", "home cleaning"],
+    keywords: [post.category.replace(/-/g, " "), ...post.tags, "cleaning hacks", "home cleaning"],
     alternates: { canonical: url },
     openGraph: {
       title: fullTitle,
@@ -95,12 +95,12 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               href={`/categories/${post.category}`}
               className="hover:underline capitalize"
             >
-              {post.category.replace("-", " ")}
+              {post.category.replace(/-/g, " ")}
             </Link>
           </nav>
 
           <div className="mb-3 flex flex-wrap items-center gap-2">
-            <Badge variant="teal">{post.category.replace("-", " ")}</Badge>
+            <Badge variant="teal">{post.category.replace(/-/g, " ")}</Badge>
             <Badge>⏱ {post.readTime}</Badge>
           </div>
 
