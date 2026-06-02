@@ -7,6 +7,7 @@ import { CookieConsent } from "@/components/ui/CookieConsent";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { SavedHacksProvider } from "@/context/SavedHacksContext";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { JsonLd } from "@/components/seo/JsonLd";
 import Script from "next/script";
 
@@ -162,6 +163,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </SavedHacksProvider>
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
