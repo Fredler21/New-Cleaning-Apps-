@@ -1,5 +1,6 @@
 import { readFile, mkdir, writeFile, access } from "node:fs/promises";
 import path from "node:path";
+import sharp from "sharp";
 import "dotenv/config";
 import dotenv from "dotenv";
 dotenv.config({ path: path.join(process.cwd(), ".env.local"), override: true });
@@ -115,7 +116,11 @@ const run = async () => {
       : defaultOutputDir;
     await mkdir(outputDir, { recursive: true });
 
-    const filePath = path.join(outputDir, `${item.slug}.png`);
+    // Output as JPEG (matches posts.ts coverImage paths and looks less
+    // "AI-export-y" to ad-network reviewers; sharp() also strips EXIF/
+    // PNG metadata that flags AI-generated content).
+    const filePath = path.join(outputDir, `${item.slug}.jpg`);
+    const legacyPngPath = path.join(outputDir, `${item.slug}.png`);
     const metaPath = path.join(outputDir, `${item.slug}.meta.json`);
     if (!FORCE) {
       try {
@@ -157,7 +162,28 @@ const run = async () => {
         }
 
         const imageBuffer = Buffer.from(imagePart.inlineData.data, "base64");
-        await writeFile(filePath, imageBuffer);
+
+        // Process: resize to web-friendly width, convert to JPEG with mozjpeg,
+        // strip EXIF / metadata. This is the same shape wavehooks-style sites
+        // hand to AdSense reviewers (own-domain JPEGs, no AI metadata).
+        const processed = await sharp(imageBuffer)
+          .rotate()
+          .resize({ width: 1600, withoutEnlargement: true })
+          .jpeg({ quality: 82, mozjpeg: true })
+          .withMetadata({}) // drop EXIF/XMP
+          .toBuffer();
+
+        await writeFile(filePath, processed);
+
+        // Best-effort: remove any leftover legacy .png from a prior run so
+        // we don't ship two copies of the same hero.
+        try {
+          const { unlink } = await import("node:fs/promises");
+          await unlink(legacyPngPath);
+        } catch {
+          /* nothing to clean up */
+        }
+
         await writeFile(
           metaPath,
           JSON.stringify(
