@@ -534,10 +534,34 @@ export const internalLinks: Record<string, string[]> = {
 
   /* ─── How to Get Onion Smell Out of the House ─── */
   "how-to-get-onions-smell-out-of-the-house": [
+    "how-to-get-garlic-smell-out-of-the-house",
     "10-genius-ways-to-make-your-house-smell-great",
     "10-kitchen-sink-detox-hacks-for-odor-free-results",
     "how-to-make-your-entire-home-smell-like-cinnamon",
-    "how-to-clean-a-bathroom-drain-that-smells",
+  ],
+
+  /* ─── How to Get Garlic Smell Out of the House ─── */
+  "how-to-get-garlic-smell-out-of-the-house": [
+    "how-to-get-onions-smell-out-of-the-house",
+    "how-to-get-fish-smell-out-of-the-house",
+    "10-genius-ways-to-make-your-house-smell-great",
+    "10-kitchen-sink-detox-hacks-for-odor-free-results",
+  ],
+
+  /* ─── How to Get Fish Smell Out of the House ─── */
+  "how-to-get-fish-smell-out-of-the-house": [
+    "how-to-get-cooking-grease-smell-out-of-the-house",
+    "how-to-get-garlic-smell-out-of-the-house",
+    "10-kitchen-sink-detox-hacks-for-odor-free-results",
+    "how-to-make-your-entire-home-smell-like-cinnamon",
+  ],
+
+  /* ─── How to Get Cooking Grease Smell Out of the House ─── */
+  "how-to-get-cooking-grease-smell-out-of-the-house": [
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+    "12-oven-cleaning-hacks-baked-on-grease",
+    "how-to-get-fish-smell-out-of-the-house",
+    "10-genius-ways-to-make-your-house-smell-great",
   ],
 
   /* ─── How to Deep Clean a Plunger ─── */
