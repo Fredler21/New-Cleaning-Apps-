@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { PostTOC } from "@/components/posts/PostTOC";
 import { PostTopBar } from "@/components/posts/PostTopBar";
@@ -16,7 +16,7 @@ import { ViewTracker } from "@/components/posts/ViewTracker";
 import { Badge } from "@/components/ui/Badge";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
-import { posts, getPostBySlug } from "@/data/posts";
+import { posts, getPostBySlug, getPostByPreviousSlug } from "@/data/posts";
 import { internalLinks } from "@/data/internal-links";
 import { ImageAttribution } from "@/components/posts/ImageAttribution";
 
@@ -65,6 +65,12 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
   const post = getPostBySlug(params.slug);
 
   if (!post) {
+    // The slug may be a retired one from a rename. 308-redirect it to the
+    // post's current slug so URLs Google already indexed never 404.
+    const moved = getPostByPreviousSlug(params.slug);
+    if (moved) {
+      permanentRedirect(`/cleaning-hacks/${moved.slug}`);
+    }
     notFound();
   }
 

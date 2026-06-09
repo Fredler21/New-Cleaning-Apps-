@@ -16,28 +16,9 @@ const nextConfig = {
         destination: "/cleaning-hacks/:slug",
         permanent: true,
       },
-      {
-        source: "/cleaning-hacks/8-undemanding-wd40-cleaning-hacks",
-        destination: "/cleaning-hacks/8-easy-wd40-cleaning-hacks",
-        permanent: true,
-      },
-      // Renamed post slugs — 301 the old indexed URLs to their current slugs
-      // so Google recovers the existing index entry instead of dropping a 404.
-      {
-        source: "/cleaning-hacks/how-to-get-rid-of-bed-bugs",
-        destination: "/cleaning-hacks/how-to-get-rid-of-bed-bugs-fast",
-        permanent: true,
-      },
-      {
-        source: "/cleaning-hacks/how-to-clean-hardwood-floors-without-damage",
-        destination: "/cleaning-hacks/how-to-clean-hardwood-floors",
-        permanent: true,
-      },
-      {
-        source: "/cleaning-hacks/how-to-remove-yellow-armpit-stains",
-        destination: "/cleaning-hacks/how-to-remove-yellow-armpit-stains-from-shirts",
-        permanent: true,
-      },
+      // NOTE: renamed *post* slugs are handled by the `previousSlugs` field on
+      // each post (see src/types/post.ts), which 308-redirects old URLs to the
+      // current slug. Add retired slugs there, not here.
       {
         source: "/author/sarah-mitchell",
         destination: "/author/fredler-pierre-louis",

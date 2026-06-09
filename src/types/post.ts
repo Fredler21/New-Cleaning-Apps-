@@ -11,6 +11,13 @@ export type PostFAQ = {
 export type Post = {
   title: string;
   slug: string;
+  /**
+   * Slugs this post used to live at. When you rename `slug`, move the old
+   * value here instead of deleting it. The post route will 308-redirect every
+   * previous slug to the current one, so URLs Google already indexed keep
+   * working and never 404 (which is what drops them from the index).
+   */
+  previousSlugs?: string[];
   datePublished: string;   // ISO 8601 date, e.g. "2025-06-10"
   /**
    * ISO 8601 date the post was last *materially* updated (new section, rewritten

@@ -642,6 +642,7 @@ export const posts: Post[] = [
   {
     title: "8 Things You Can Clean With WD-40 (That You Didn't Know)",
     slug: "8-easy-wd40-cleaning-hacks",
+    previousSlugs: ["8-undemanding-wd40-cleaning-hacks"],
     author: "Fredler Pierre-Louis",
     datePublished: "2026-02-22",
     category: "wd40-hacks",
@@ -1927,6 +1928,7 @@ export const posts: Post[] = [
   {
     title: "How to Clean Hardwood Floors the Right Way (9 Rules That Prevent Damage)",
     slug: "how-to-clean-hardwood-floors",
+    previousSlugs: ["how-to-clean-hardwood-floors-without-damage"],
     author: "Fredler Pierre-Louis",
     datePublished: "2026-03-24",
     category: "deep-clean",
@@ -2026,6 +2028,7 @@ export const posts: Post[] = [
   {
     title: "How to Remove Yellow Armpit Stains From Shirts (5 Methods Tested)",
     slug: "how-to-remove-yellow-armpit-stains-from-shirts",
+    previousSlugs: ["how-to-remove-yellow-armpit-stains"],
     author: "Fredler Pierre-Louis",
     datePublished: "2026-03-25",
     category: "laundry-kitchen",
@@ -3898,6 +3901,7 @@ export const posts: Post[] = [
   {
     title: "How to Get Rid of Bed Bugs Fast: A 24-Hour First Response Plan",
     slug: "how-to-get-rid-of-bed-bugs-fast",
+    previousSlugs: ["how-to-get-rid-of-bed-bugs"],
     author: "Fredler Pierre-Louis",
     datePublished: "2026-05-30",
     category: "pest-control",
@@ -4579,3 +4583,10 @@ export const posts: Post[] = [
 
 export const getPostBySlug = (slug: string): Post | undefined =>
   posts.find((post) => post.slug === slug);
+
+/**
+ * Find a post by one of its retired slugs. Used by the post route to
+ * 308-redirect old indexed URLs to the post's current slug after a rename.
+ */
+export const getPostByPreviousSlug = (slug: string): Post | undefined =>
+  posts.find((post) => post.previousSlugs?.includes(slug));
