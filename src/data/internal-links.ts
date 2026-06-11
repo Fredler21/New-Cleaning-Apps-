@@ -580,4 +580,28 @@ export const internalLinks: Record<string, string[]> = {
     "diy-all-natural-cleaning-sprays",
   ],
 
+  /* ─── How to Clean a Robot Vacuum ─── */
+  "how-to-clean-a-robot-vacuum": [
+    "10-fascinating-vacuum-hacks-you-need-to-know",
+    "how-to-clean-hardwood-floors",
+    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+    "how-to-clean-a-glass-stovetop-without-scratching",
+  ],
+
+  /* ─── How to Clean a Humidifier ─── */
+  "how-to-clean-a-humidifier": [
+    "how-to-remove-limescale-from-a-kettle",
+    "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles",
+    "how-to-clean-a-washing-machine",
+    "16-hydrogen-peroxide-cleaning-hacks",
+  ],
+
+  /* ─── How to Clean a Reusable Water Bottle ─── */
+  "how-to-clean-a-reusable-water-bottle": [
+    "how-to-sterilize-kitchen-sponge",
+    "how-to-clean-a-wooden-cutting-board",
+    "how-to-clean-a-dishwasher",
+    "8-incredible-vinegar-hacks",
+  ],
+
 };

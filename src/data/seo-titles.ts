@@ -23,4 +23,7 @@ export const seoTitles: Record<string, string> = {
   "how-to-get-rid-of-bed-bugs-fast": "How to Get Rid of Bed Bugs Fast",
   "how-to-declutter-your-room": "How to Declutter Your Room in One Afternoon",
   "how-to-keep-flies-away-outdoors": "How to Keep Flies Away Outdoors (10 Methods)",
+  "how-to-clean-a-robot-vacuum": "How to Clean a Robot Vacuum (Stop Streaks)",
+  "how-to-clean-a-humidifier": "How to Clean a Humidifier (Stop White Dust)",
+  "how-to-clean-a-reusable-water-bottle": "How to Clean a Reusable Water Bottle",
 };

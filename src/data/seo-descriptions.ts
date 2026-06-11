@@ -156,4 +156,10 @@ export const seoDescriptions: Record<string, string> = {
     "How to get fish smell out of the house fast, with the deodorizing routine that clears the air and stops it soaking into the whole home.",
   "how-to-get-cooking-grease-smell-out-of-the-house":
     "How to get cooking grease smell out of the house, including why it clings to walls and cabinets and the routine that clears the greasy film.",
+  "how-to-clean-a-robot-vacuum":
+    "How to clean a robot vacuum so it stops streaking, smelling, and getting stuck, with the brush, filter, sensor, and dock steps most people skip.",
+  "how-to-clean-a-humidifier":
+    "How to clean a humidifier and stop white dust, pink slime, and musty mist, with the descale, disinfect, and water-type fixes for each problem.",
+  "how-to-clean-a-reusable-water-bottle":
+    "How to clean a reusable water bottle and finally get the smell out, including the straw and gasket steps that a quick rinse and dishwasher miss.",
 };

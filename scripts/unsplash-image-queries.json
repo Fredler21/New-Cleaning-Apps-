@@ -313,5 +313,20 @@
     "slug": "how-to-clean-a-showerhead",
     "query": "chrome showerhead bathroom water spray",
     "orientation": "portrait"
+  },
+  {
+    "slug": "how-to-clean-a-robot-vacuum",
+    "query": "robot vacuum cleaning floor home",
+    "orientation": "portrait"
+  },
+  {
+    "slug": "how-to-clean-a-humidifier",
+    "query": "humidifier mist bedroom nightstand",
+    "orientation": "portrait"
+  },
+  {
+    "slug": "how-to-clean-a-reusable-water-bottle",
+    "query": "reusable water bottle stainless steel kitchen",
+    "orientation": "portrait"
   }
 ]
