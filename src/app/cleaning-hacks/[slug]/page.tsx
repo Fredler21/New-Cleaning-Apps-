@@ -18,6 +18,8 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
 import { posts, getPostBySlug, getPostByPreviousSlug } from "@/data/posts";
 import { internalLinks } from "@/data/internal-links";
+import { seoDescriptions } from "@/data/seo-descriptions";
+import { seoTitles } from "@/data/seo-titles";
 import { ImageAttribution } from "@/components/posts/ImageAttribution";
 
 export function generateStaticParams() {
@@ -34,16 +36,21 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   }
 
   const url = `${SITE_URL}/cleaning-hacks/${post.slug}`;
-  const fullTitle = `${post.title} | ${SITE_NAME}`;
+  // Prefer a shorter title for the <title> tag when the H1 would overflow the
+  // ~60-char SERP limit. The on-page H1 still uses the full post.title.
+  const fullTitle = `${seoTitles[post.slug] ?? post.title} | ${SITE_NAME}`;
+  // Prefer a tight, keyword-front-loaded search snippet (~155 chars) when one
+  // exists. Fall back to the longer on-page excerpt otherwise.
+  const description = seoDescriptions[post.slug] ?? post.excerpt;
 
   return {
     title: fullTitle,
-    description: post.excerpt,
+    description,
     keywords: [post.category.replace(/-/g, " "), ...post.tags, "cleaning hacks", "home cleaning"],
     alternates: { canonical: url },
     openGraph: {
       title: fullTitle,
-      description: post.excerpt,
+      description,
       url,
       siteName: SITE_NAME,
       images: [{ url: post.coverImage, width: 1200, height: 630, alt: post.title }],
@@ -55,7 +62,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
-      description: post.excerpt,
+      description,
       images: [post.coverImage],
     },
   };
