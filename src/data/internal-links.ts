@@ -604,4 +604,28 @@ export const internalLinks: Record<string, string[]> = {
     "8-incredible-vinegar-hacks",
   ],
 
+  /* ─── How to Organize Your Office Desk ─── */
+  "how-to-organize-your-office-desk": [
+    "how-to-declutter-your-room",
+    "12-genius-rubbing-alcohol-cleaning-hacks",
+    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+    "20-declutter-clean-pairing-hacks",
+  ],
+
+  /* ─── How to Clean Your Closet ─── */
+  "how-to-clean-your-closet": [
+    "how-to-declutter-your-room",
+    "10-fascinating-vacuum-hacks-you-need-to-know",
+    "how-to-make-laundry-smell-good-after-washing",
+    "20-declutter-clean-pairing-hacks",
+  ],
+
+  /* ─── How to Clean an AC Vent ─── */
+  "how-to-clean-an-ac-vent": [
+    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+    "11-dawn-dish-soap-hacks-for-greasy-kitchens",
+    "10-fascinating-vacuum-hacks-you-need-to-know",
+    "10-genius-ways-to-make-your-house-smell-great",
+  ],
+
 };
