@@ -30,7 +30,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const post = getPostBySlug(params.slug);
   if (!post) {
     return {
-      title: "Post not found | TryCleaningHacks",
+      title: { absolute: "Post not found | TryCleaningHacks" },
       description: "The requested post was not found.",
     };
   }
@@ -44,7 +44,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const description = seoDescriptions[post.slug] ?? post.excerpt;
 
   return {
-    title: fullTitle,
+    // Use `absolute` so Next.js's root `title.template` ("%s | TryCleaningHacks")
+    // does not double-append the brand suffix to a title that already includes it.
+    title: { absolute: fullTitle },
     description,
     keywords: [post.category.replace(/-/g, " "), ...post.tags, "cleaning hacks", "home cleaning"],
     alternates: { canonical: url },
