@@ -162,4 +162,10 @@ export const seoDescriptions: Record<string, string> = {
     "How to clean a humidifier and stop white dust, pink slime, and musty mist, with the descale, disinfect, and water-type fixes for each problem.",
   "how-to-clean-a-reusable-water-bottle":
     "How to clean a reusable water bottle and finally get the smell out, including the straw and gasket steps that a quick rinse and dishwasher miss.",
+  "how-to-organize-your-office-desk":
+    "How to organize your office desk with a one-afternoon reset and the daily one-minute habit that keeps the surface clear for good, even on a small desk.",
+  "how-to-clean-your-closet":
+    "How to clean and reorganize your closet from top to bottom in the right order, plus the weekly five-minute habit that keeps it from ever needing a full reset again.",
+  "how-to-clean-an-ac-vent":
+    "How to clean an AC vent safely without spreading dust through the house, plus the filter change that stops the dust halo from ever coming back.",
 };

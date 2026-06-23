@@ -26,4 +26,7 @@ export const seoTitles: Record<string, string> = {
   "how-to-clean-a-robot-vacuum": "How to Clean a Robot Vacuum (Stop Streaks)",
   "how-to-clean-a-humidifier": "How to Clean a Humidifier (Stop White Dust)",
   "how-to-clean-a-reusable-water-bottle": "How to Clean a Reusable Water Bottle",
+  "how-to-organize-your-office-desk": "How to Organize Your Office Desk",
+  "how-to-clean-your-closet": "How to Clean Your Closet (Top to Bottom)",
+  "how-to-clean-an-ac-vent": "How to Clean an AC Vent the Safe Way",
 };
