@@ -628,4 +628,25 @@ export const internalLinks: Record<string, string[]> = {
     "10-genius-ways-to-make-your-house-smell-great",
   ],
 
+  "how-to-get-rid-of-fruit-flies-fast": [
+    "how-to-get-rid-of-maggots-in-trash-can",
+    "10-kitchen-sink-detox-hacks-for-odor-free-results",
+    "how-to-clean-and-deodorize-garbage-disposal",
+    "how-to-keep-flies-away-outdoors",
+  ],
+
+  "how-to-clean-a-coffee-maker": [
+    "how-to-remove-limescale-from-a-kettle",
+    "how-to-clean-a-dishwasher",
+    "12-microwave-cleaning-hacks-for-a-sparkling-kitchen",
+    "8-incredible-vinegar-hacks",
+  ],
+
+  "how-to-clean-white-sneakers": [
+    "how-to-whiten-yellow-pillows-washing-machine",
+    "how-to-remove-yellow-armpit-stains-from-shirts",
+    "14-ways-to-use-baking-soda-in-your-house",
+    "how-to-clean-a-washing-machine",
+  ],
+
 };
