@@ -3,6 +3,7 @@ import { HeroSlider } from "@/components/hero/HeroSlider";
 import { HeroSearch } from "@/components/hero/HeroSearch";
 import { Container } from "@/components/layout/Container";
 import { categories } from "@/data/categories";
+import { posts } from "@/data/posts";
 import { featuredThisWeek, trendingPosts, heroPosts, quickWinPosts } from "@/data/featured";
 import { TrendingCarousel } from "@/components/posts/TrendingCarousel";
 import { PostCard } from "@/components/posts/PostCard";
@@ -72,6 +73,22 @@ const categoryEmoji: Record<string, string> = {
   "diy-cleaners": "🧪"
 };
 
+// Real article count per category, so the grid reflects how much is actually
+// published rather than the number of tags on each category.
+const categoryCounts: Record<string, number> = posts.reduce(
+  (acc, post) => {
+    acc[post.category] = (acc[post.category] || 0) + 1;
+    return acc;
+  },
+  {} as Record<string, number>
+);
+
+// Lead with the best-stocked categories so a visitor never lands on a
+// single-article category from the top of the homepage grid.
+const sortedCategories = [...categories].sort(
+  (a, b) => (categoryCounts[b.slug] || 0) - (categoryCounts[a.slug] || 0)
+);
+
 export default function HomePage() {
   return (
     <>
@@ -129,28 +146,31 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="flex gap-4 overflow-x-auto pb-4 -mx-1 px-1">
-            {categories.map((cat) => (
-              <Link
-                key={cat.id}
-                href={`/cleaning-hacks?category=${cat.slug}`}
-                className="group relative flex-shrink-0 w-[180px] overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
-                style={{ boxShadow: "var(--card-shadow)" }}
-              >
-                {/* Background, color fallback */}
-                <div className="aspect-[4/5] w-full bg-gradient-to-br from-teal-100 to-emerald-50 dark:from-teal-900/40 dark:to-emerald-900/20 relative overflow-hidden">
-                  <div
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                    style={{ backgroundImage: `url(${categoryImages[cat.slug] || cat.icon})` }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <span className="text-lg mb-1 block">{categoryEmoji[cat.slug] || "✨"}</span>
-                  <h3 className="text-sm font-semibold text-white">{cat.name}</h3>
-                  <p className="text-xs text-white/70 line-clamp-1 mt-0.5">{cat.tags.length} topics</p>
-                </div>
-              </Link>
-            ))}
+            {sortedCategories.map((cat) => {
+              const count = categoryCounts[cat.slug] || 0;
+              return (
+                <Link
+                  key={cat.id}
+                  href={`/cleaning-hacks?category=${cat.slug}`}
+                  className="group relative flex-shrink-0 w-[180px] overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
+                  style={{ boxShadow: "var(--card-shadow)" }}
+                >
+                  {/* Background, color fallback */}
+                  <div className="aspect-[4/5] w-full bg-gradient-to-br from-teal-100 to-emerald-50 dark:from-teal-900/40 dark:to-emerald-900/20 relative overflow-hidden">
+                    <div
+                      className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                      style={{ backgroundImage: `url(${categoryImages[cat.slug] || cat.icon})` }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <span className="text-lg mb-1 block">{categoryEmoji[cat.slug] || "✨"}</span>
+                    <h3 className="text-sm font-semibold text-white">{cat.name}</h3>
+                    <p className="text-xs text-white/70 line-clamp-1 mt-0.5">{count} {count === 1 ? "hack" : "hacks"}</p>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </section>
       </Container>

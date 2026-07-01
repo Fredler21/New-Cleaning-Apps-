@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Who runs TryCleaningHacks?",
     answer:
-      "TryCleaningHacks is run by a small team of cleaning enthusiasts and researchers passionate about making home care easier for everyone. Every guide is tested and written by real people who care about results, safety, and simplicity.",
+      "TryCleaningHacks is run by Fredler Pierre-Louis, who personally researches, tests, and writes every guide. It started from a simple frustration: most cleaning advice online is vague, product-heavy, or just plain wrong. Every guide here is tested by a real person who cares about results, safety, and simplicity.",
   },
   {
     question: "Is TryCleaningHacks free to use?",
