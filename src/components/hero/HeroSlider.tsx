@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 import type { Post } from "@/types/post";
 
@@ -23,6 +23,21 @@ export function HeroSlider({ posts }: HeroSliderProps) {
   const next = useCallback(() => setActive((i) => (i + 1) % slides.length), [slides.length]);
   const prev = useCallback(() => setActive((i) => (i - 1 + slides.length) % slides.length), [slides.length]);
 
+  // Swipe support for touch screens.
+  const touchStartX = useRef<number | null>(null);
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0]?.clientX ?? null;
+    setPaused(true);
+  };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    const start = touchStartX.current;
+    touchStartX.current = null;
+    setPaused(false);
+    if (start == null) return;
+    const dx = (e.changedTouches[0]?.clientX ?? start) - start;
+    if (Math.abs(dx) > 40) (dx < 0 ? next : prev)();
+  };
+
   useEffect(() => {
     if (paused) return;
     const id = setInterval(next, 5500);
@@ -31,10 +46,12 @@ export function HeroSlider({ posts }: HeroSliderProps) {
 
   return (
     <section
-      className="relative w-full overflow-hidden rounded-slider shadow-slider"
-      style={{ aspectRatio: "21/9", minHeight: 340, maxHeight: 520 }}
+      className="group relative w-full touch-pan-y overflow-hidden rounded-slider shadow-slider"
+      style={{ aspectRatio: "16/10", minHeight: 320, maxHeight: 520 }}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
       aria-roledescription="carousel"
       aria-label="Featured cleaning hacks"
     >
@@ -57,7 +74,7 @@ export function HeroSlider({ posts }: HeroSliderProps) {
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
 
           {/* Content */}
-          <div className="relative z-20 flex h-full flex-col justify-end p-8 md:p-12 lg:p-16 max-w-2xl">
+          <div className="relative z-20 flex h-full flex-col justify-end p-5 sm:p-8 md:p-12 lg:p-16 max-w-2xl">
             {/* Badges */}
             <div className="flex items-center gap-2 mb-3">
               <span className="inline-flex items-center rounded-full bg-teal-500 px-3 py-1 text-xs font-semibold text-white uppercase tracking-wide">
@@ -122,17 +139,22 @@ export function HeroSlider({ posts }: HeroSliderProps) {
         </svg>
       </button>
 
-      {/* Dot indicators */}
-      <div className="absolute bottom-4 left-1/2 z-30 -translate-x-1/2 flex items-center gap-2">
+      {/* Dot indicators (larger, tappable hit area on touch) */}
+      <div className="absolute bottom-4 left-1/2 z-30 flex -translate-x-1/2 items-center gap-1">
         {slides.map((_, i) => (
           <button
             key={i}
             onClick={() => setActive(i)}
-            className={`h-2 rounded-full transition-all duration-300 ${
-              i === active ? "w-6 bg-teal-400" : "w-2 bg-white/40 hover:bg-white/60"
-            }`}
+            className="flex h-6 items-center justify-center px-1"
             aria-label={`Go to slide ${i + 1}`}
-          />
+            aria-current={i === active}
+          >
+            <span
+              className={`block h-2 rounded-full transition-all duration-300 ${
+                i === active ? "w-6 bg-teal-400" : "w-2 bg-white/50 hover:bg-white/70"
+              }`}
+            />
+          </button>
         ))}
       </div>
     </section>

@@ -5,6 +5,9 @@ import { notFound, permanentRedirect } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { PostTOC } from "@/components/posts/PostTOC";
 import { PostTopBar } from "@/components/posts/PostTopBar";
+import { ReadingProgress } from "@/components/posts/ReadingProgress";
+import { MobileTOC } from "@/components/posts/MobileTOC";
+import { MobileActionBar } from "@/components/posts/MobileActionBar";
 import { titleToId } from "@/lib/format";
 import { renderInlineLinks } from "@/lib/inline-links";
 import { SafetyNote } from "@/components/posts/SafetyNote";
@@ -90,10 +93,11 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
   return (
     <>
       <ViewTracker slug={post.slug} />
+      <ReadingProgress />
       <PostTopBar />
 
       <Container>
-        <article className="py-8 sm:py-12">
+        <article className="py-8 pb-24 sm:py-12 lg:pb-12">
           {/* Editorial-style header: breadcrumb + title + byline + hero figure,
               modeled on the wavehooks / Helpful-Content article layout that
               AdSense reviewers recognise as a normal blog post. */}
@@ -284,6 +288,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
 
           <div className="grid gap-10 lg:grid-cols-[1fr_300px]">
             <div className="space-y-8">
+              {/* Quick navigation for phones (desktop uses the sticky sidebar) */}
+              <MobileTOC steps={post.steps} />
+
               {/* Supplies / Ingredients */}
               <section id="supplies" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
                 <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
@@ -497,6 +504,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
           )}
         </article>
       </Container>
+
+      <MobileActionBar title={post.title} slug={post.slug} />
     </>
   );
 }

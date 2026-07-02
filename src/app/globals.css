@@ -9,14 +9,61 @@ body {
   min-height: 100%;
 }
 
+html {
+  /* Stop Android/iOS from silently inflating font sizes, which was making the
+     layout look zoomed and inconsistent between phones. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
   transition: background-color 0.3s ease, color 0.3s ease;
+  /* Belt-and-suspenders: never let a stray wide element create a sideways
+     scroll / zoom-out on phones. */
+  overflow-x: clip;
+  /* Cleaner taps on touch screens (no grey flash box). */
+  -webkit-tap-highlight-color: transparent;
 }
 
-* {
-  scroll-behavior: smooth;
+/* Comfortable touch targets on coarse (touch) pointers. */
+@media (pointer: coarse) {
+  a,
+  button,
+  summary,
+  [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ── Scroll reveal (progressive enhancement) ──
+   Content is fully visible by default. Only when JavaScript is available
+   (html.js) and the user has not asked for reduced motion do we start the
+   reveal hidden and fade it in. This keeps content visible for crawlers and
+   no-JS visitors. */
+.js .reveal {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .js .reveal.reveal-visible {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* Premium scrollbar */

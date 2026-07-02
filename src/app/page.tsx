@@ -8,6 +8,8 @@ import { featuredThisWeek, trendingPosts, heroPosts, quickWinPosts } from "@/dat
 import { TrendingCarousel } from "@/components/posts/TrendingCarousel";
 import { PostCard } from "@/components/posts/PostCard";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
+import { Reveal } from "@/components/ui/Reveal";
+import { categoryGradient } from "@/lib/category-color";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -152,21 +154,23 @@ export default function HomePage() {
                 <Link
                   key={cat.id}
                   href={`/cleaning-hacks?category=${cat.slug}`}
-                  className="group relative flex-shrink-0 w-[180px] overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
+                  className="group relative flex-shrink-0 w-[168px] overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1.5"
                   style={{ boxShadow: "var(--card-shadow)" }}
                 >
-                  {/* Background, color fallback */}
-                  <div className="aspect-[4/5] w-full bg-gradient-to-br from-teal-100 to-emerald-50 dark:from-teal-900/40 dark:to-emerald-900/20 relative overflow-hidden">
+                  {/* Background: category-tinted gradient behind the photo */}
+                  <div className="aspect-[4/5] w-full relative overflow-hidden" style={{ background: categoryGradient(cat.slug) }}>
                     <div
-                      className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                      className="absolute inset-0 bg-cover bg-center opacity-90 transition-transform duration-500 group-hover:scale-105"
                       style={{ backgroundImage: `url(${categoryImages[cat.slug] || cat.icon})` }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <span className="text-lg mb-1 block">{categoryEmoji[cat.slug] || "✨"}</span>
+                    <span className="mb-2 flex h-9 w-9 items-center justify-center rounded-xl bg-white/20 text-lg backdrop-blur-sm">
+                      {categoryEmoji[cat.slug] || "✨"}
+                    </span>
                     <h3 className="text-sm font-semibold text-white">{cat.name}</h3>
-                    <p className="text-xs text-white/70 line-clamp-1 mt-0.5">{count} {count === 1 ? "hack" : "hacks"}</p>
+                    <p className="mt-0.5 line-clamp-1 text-xs text-white/80">{count} {count === 1 ? "hack" : "hacks"}</p>
                   </div>
                 </Link>
               );
@@ -198,11 +202,13 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredThisWeek.map((post) => (
-              <PostCard key={post.slug} post={post} featured={true} />
-            ))}
-          </div>
+          <Reveal>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {featuredThisWeek.map((post) => (
+                <PostCard key={post.slug} post={post} featured={true} />
+              ))}
+            </div>
+          </Reveal>
         </section>
       </Container>
 
@@ -224,7 +230,9 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
-          <TrendingCarousel posts={trendingPosts} />
+          <Reveal>
+            <TrendingCarousel posts={trendingPosts} />
+          </Reveal>
         </section>
       </Container>
 
@@ -238,6 +246,7 @@ export default function HomePage() {
             </h2>
             <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>2 to 5 minute hacks for instant results.</p>
           </div>
+          <Reveal>
           <div className="grid gap-4 sm:grid-cols-2">
             {quickWinPosts.map((post) => (
               <Link key={post.slug} href={`/cleaning-hacks/${post.slug}`}>
@@ -266,11 +275,13 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+          </Reveal>
         </section>
       </Container>
 
       {/* Newsletter */}
       <Container>
+        <Reveal>
         <section className="my-16 overflow-hidden rounded-2xl" style={{ background: "var(--accent-light)", border: "1px solid var(--accent-surface)" }}>
           <div className="px-6 py-12 sm:px-10 sm:py-14">
             <div className="mx-auto max-w-xl text-center">
@@ -285,6 +296,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        </Reveal>
       </Container>
     </>
   );

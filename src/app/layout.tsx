@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/nav/Navbar";
@@ -74,10 +74,31 @@ export const metadata: Metadata = {
   },
 };
 
+// Explicit viewport so phones always render at device width and can pinch-zoom
+// (accessibility). viewportFit "cover" lets us pad against the notch/home-bar
+// via env(safe-area-inset-*). themeColor tints the Android browser chrome.
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#060f23" },
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`light ${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
+        {/* Flag JS availability before first paint so scroll-reveal only hides
+            content when it can actually be revealed (keeps it visible for
+            no-JS visitors and crawlers). */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js')",
+          }}
+        />
         {/* AdSense ownership verification + ad serving. */}
         <Script
           id="adsense-verification"

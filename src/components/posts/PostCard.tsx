@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 import { SaveHackButton } from "@/components/posts/SaveHackButton";
+import { categoryColor, categoryGradient } from "@/lib/category-color";
 import type { Post } from "@/types/post";
 
 type PostCardProps = {
@@ -13,11 +14,14 @@ type PostCardProps = {
 };
 
 export function PostCard({ post, featured, trending }: PostCardProps) {
+  const color = categoryColor(post.category);
   return (
     <article
-      className="group relative overflow-hidden rounded-card transition-all duration-300 hover:-translate-y-1"
+      className="group relative overflow-hidden rounded-card transition-all duration-300 hover:-translate-y-1.5"
       style={{ background: "var(--card-bg)", border: "1px solid var(--border)", boxShadow: "var(--card-shadow)" }}
     >
+      {/* Category color accent along the top */}
+      <div className="absolute inset-x-0 top-0 z-10 h-1" style={{ background: categoryGradient(post.category) }} />
       <Link href={`/cleaning-hacks/${post.slug}`} aria-label={post.title} className="block">
         <div className="relative overflow-hidden">
           <Image
@@ -48,8 +52,16 @@ export function PostCard({ post, featured, trending }: PostCardProps) {
 
       <div className="space-y-3 p-5">
         <div className="flex items-center gap-2">
-          <Badge variant="teal">{post.tags[0]}</Badge>
-          <span className="text-xs" style={{ color: "var(--muted)" }}>Easy</span>
+          <span
+            className="inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-semibold capitalize text-white"
+            style={{ background: categoryGradient(post.category) }}
+          >
+            {post.category.replace(/-/g, " ")}
+          </span>
+          <span className="inline-flex items-center gap-1 text-xs" style={{ color: color.solid }}>
+            <span className="h-1.5 w-1.5 rounded-full" style={{ background: color.solid }} />
+            Easy
+          </span>
         </div>
 
         <h3 className="text-[17px] font-semibold leading-snug" style={{ color: "var(--text)" }}>
