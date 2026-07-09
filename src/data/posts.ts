@@ -131,6 +131,7 @@ export const posts: Post[] = [
       "Buy the big agricultural or pool sized bag rather than the small kitchen boxes if you clean with it often. It is the identical product at a fraction of the price per pound, and I refill a labeled shaker jar from it.",
       "Keep a lidded parmesan style shaker filled with baking soda by the sink. The holes lay down an even, controllable layer for carpet and mattress jobs and stop you from dumping a heavy uneven pile in one spot.",
       "Always test a hidden corner first on anything porous, colored, or delicate, such as an unglazed tile, a dyed grout, or a solvent code sofa, and wait for it to dry before you commit to the whole surface.",
+      "A scoop of baking soda in the wash is my secret for grimy bathroom textiles. It is the same method behind [cleaning a plastic shower curtain liner by hand and in the washer](/cleaning-hacks/how-to-clean-plastic-shower-curtain-liner-by-hand-and-in-a-washer) to strip soap scum and pink mildew.",
     ],
     safetyNotes: [
       "Never seal baking soda and vinegar together in a closed jar, bottle, or capped drain. The carbon dioxide gas has nowhere to escape and the container can burst. Always leave the opening uncovered or only loosely covered.",
@@ -178,6 +179,7 @@ export const posts: Post[] = [
       "Do not store your vinegar spray in a bottle with a metal pump or metal parts, since the acid slowly corrodes them. Use an all plastic sprayer and it will last for years.",
       "Label the bottle with what is in it and the date you mixed it. A 50/50 vinegar and water spray is stable for months, but labeling stops anyone from grabbing it for a stone counter by mistake.",
       "When you are unsure whether a surface can take vinegar, always run the one drop, 30 second test on a hidden corner first. Thirty seconds of testing has saved me from far more expensive mistakes than the marble sill I already ruined.",
+      "Vinegar's best trick is dissolving hard-water scale, and the classic example is a weak, clogged showerhead. Follow [how to clean a showerhead and restore water pressure](/cleaning-hacks/how-to-clean-a-showerhead) using the overnight vinegar-bag soak.",
     ],
     safetyNotes: [
       "Never mix vinegar with bleach, or use it on a surface you just bleached without rinsing thoroughly first. The two react to release toxic chlorine gas, which is dangerous even in small amounts in a closed bathroom.",
@@ -419,6 +421,8 @@ export const posts: Post[] = [
       "Match the water temperature to the grease. Warm to hot water melts oil so the soap can grab it, while cold water lets grease stay solid, which is why a cold wipe always feels like it is just pushing the mess around.",
       "Let the solution dwell instead of adding more soap. Ninety percent of the time a spot that resists just needs another two to five minutes of contact, not a stronger mix, and the weaker mix rinses clean without film.",
       "Wash microfiber cloths on their own without fabric softener. Softener coats the fibers and kills their grip on grease, so a softened cloth smears where a clean one lifts. Air dry them or use low heat.",
+      "A dab of white paste toothpaste is a mild abrasive that polishes chrome and lifts scuffs Dawn cannot. Once your kitchen is degreased, try these [genius toothpaste cleaning hacks](/cleaning-hacks/10-genius-toothpaste-cleaning-hacks-you-never-knew) on faucets, sneakers, and headlights.",
+      "Dawn is my grease workhorse, but it does not deodorize. For a smelly drain, trash can, or cutting board I reach for antiseptic mouthwash instead, these [surprising ways to clean with Listerine](/cleaning-hacks/13-mind-blowing-listerine-hacks) explain why the amber formula works.",
     ],
     safetyNotes: [
       "Dawn is a surfactant, not a disinfectant. It strips grease and physically carries bacteria away, but it does not kill pathogens, so follow up with a food safe sanitizer on cutting boards and prep surfaces after raw meat.",
@@ -467,7 +471,8 @@ export const posts: Post[] = [
     proTips: [
       "Do a 5-minute lint sweep after heavy laundry days.",
       "Use labeled bins to prevent clutter rebound.",
-      "Wipe machine tops weekly to avoid product rings."
+      "Wipe machine tops weekly to avoid product rings.",
+      "A tidy laundry room does not fix the great mystery of the missing sock. If your pairs keep vanishing, here is [how to stop losing socks in the washing machine](/cleaning-hacks/how-to-stop-losing-socks-in-the-washing-machine) for good.",
     ],
     safetyNotes: [
       "Clean dryer lint traps and vents regularly. Lint buildup is one of the leading causes of household fires over 15,000 dryer fires occur annually.",
@@ -557,6 +562,8 @@ export const posts: Post[] = [
       "Assign cloths by color so the toilet cloth is never confused with the sink cloth. I use one specific color for the toilet only and it removed all guesswork.",
       "Do a light angled test at the end, tilting your head so raking light hits mirrors, glass, and the door. It reveals the smears and handprints a straight on look misses every time.",
       "Dry the strip of floor in front of the tub after every shower. That bath mat zone stays wet longest and is where floor mold reliably starts.",
+      "A few viral bathroom \"deep clean\" tricks do nothing but waste your Saturday, and mixing bleach with vinegar is downright dangerous. Before you try the next one, skim my roundup of [30 cleaning myths you should stop believing](/cleaning-hacks/30-cleaning-myths-you-should-be-wary-of).",
+      "A spotless bathroom can still smell if the problem is down the pipe. When a sour odor lingers after you clean, here is [how to clean a bathroom drain that smells](/cleaning-hacks/how-to-clean-a-bathroom-drain-that-smells) and clear the biofilm behind it.",
     ],
     safetyNotes: [
       "Never mix toilet bowl cleaner or vinegar (both acidic) with any bleach based product. The reaction releases chlorine gas, which builds up fast in a small closed bathroom and is genuinely dangerous. Pick one product, rinse fully, and ventilate before switching.",
@@ -600,6 +607,8 @@ export const posts: Post[] = [
       "Do a two minute left to right scan of every kit on Sunday evening. Check the spray bottle level, confirm at least two clean cloths, and make sure the brush is not worn flat. Knowing everything is stocked before the week starts removes a small recurring friction that adds up.",
       "Keep a small backup stash of spray bottles, cloths, and gloves in one drawer so you can restock a depleted kit on the spot instead of postponing until the next store run.",
       "Mix cheap solutions in small batches. A Dawn and water spray sours in about two weeks and a big bottle just goes to waste, so six to eight ounces at a time is plenty.",
+      "You can source most of these kit items for about a dollar each. Pair this build list with my favorite [dollar store cleaning products that actually work](/cleaning-hacks/5-dollar-store-hacks-you-should-know) to assemble a full caddy for under ten dollars.",
+      "A cheap toothbrush and a little dish soap from your dollar-store kit are all you need for scuffed white shoes. Here is the full method: [how to clean white sneakers so they look new again](/cleaning-hacks/how-to-clean-white-sneakers).",
     ],
     safetyNotes: [
       "Label every spray bottle with its contents and dilution ratio the moment you fill it. Within a week, identical unlabeled bottles become impossible to tell apart, and one of them might be a bleach solution.",
@@ -650,7 +659,8 @@ export const posts: Post[] = [
       "Use a timer to keep momentum high.",
       "Do high-visibility surfaces first.",
       "Anchor each quick task to an existing daily trigger like brushing teeth or starting the coffee. The trigger is what makes the habit stick through busy weeks.",
-      "Pair the morning routine with a two minute evening reset of the kitchen. The evening reset protects the morning routine and makes both feel easier."
+      "Pair the morning routine with a two minute evening reset of the kitchen. The evening reset protects the morning routine and makes both feel easier.",
+      "Some days you do not want a schedule, you want to channel a bad mood into a spotless room. That is a real strategy, here is [how to rage clean](/cleaning-hacks/how-to-rage-clean) and turn big feelings into a clean house.",
     ],
     safetyNotes: [
       "When rushing through morning cleaning, never mix different spray products on the same surface without rinsing first. Chemical reactions can happen even from residue.",
@@ -699,6 +709,7 @@ export const posts: Post[] = [
       "Clean top down and vacuum before you mop, every time. Dust falls, so finishing the floor before the shelves guarantees a redo, and mopping over loose dust just makes streaky mud.",
       "Give yourself roughly five seconds per item while sorting. A decision that takes longer is almost always a disguised no, so send it to the dated box rather than back onto the shelf.",
       "Date perishable products with a marker the day you open them, especially sunscreen and anything used near the eyes, so the next purge is a glance instead of a guess.",
+      "Decluttering works best when you finish with a system you will actually maintain. Once the pile is sorted, follow [how to clean your closet from top to bottom](/cleaning-hacks/how-to-clean-your-closet) so it stays that way.",
     ],
     safetyNotes: [
       "When you move furniture to clean underneath, bend your knees and lift with your legs rather than your back, and get a second person for anything heavy. Dragging a loaded dresser across a hard floor can gouge the finish and strain your back at the same time. Slide a folded towel or felt pad under the legs and push instead of dragging.",
@@ -746,6 +757,7 @@ export const posts: Post[] = [
       "Match the dwell time to the mess. A greasy fingerprint needs about a minute, thick calcium scale wants three minutes or a soaked cloth compress for five, and a rusted bolt can take fifteen to twenty. Wiping too soon is the most common reason people think it did not work.",
       "Keep a dedicated set of cloths for WD-40 jobs and wash them separately. The oil transfers, and a cloth that has wiped WD-40 will smear residue onto glass or a mirror the next time you grab it for a quick clean.",
       "Warm the surface a little first in cold weather. A faucet or tile that has been sitting cold lets the solvent evaporate slower and work better; on a freezing morning I run warm water over a fixture for a few seconds before I spray.",
+      "WD-40 is not the only pantry-adjacent surprise, the acids in ketchup polish tarnished copper and brass. If you like unconventional fixes, try these [ways to clean with ketchup](/cleaning-hacks/how-to-clean-with-ketchup).",
     ],
     safetyNotes: [
       "WD-40 is petroleum based and flammable. Never spray it near an open flame, a gas stove pilot light, a lit candle, or a water heater. The fine aerosol mist can ignite in the air, so keep flames well away and give the room airflow before and after.",
@@ -933,7 +945,8 @@ export const posts: Post[] = [
     proTips: [
       "Clean your microwave weekly to prevent hardened buildup fresh splatters wipe off in seconds.",
       "Always use microwave-safe containers for the steam methods to avoid cracking or warping.",
-      "Leave the door cracked open after cleaning to let moisture escape and prevent mildew."
+      "Leave the door cracked open after cleaning to let moisture escape and prevent mildew.",
+      "The steam-and-wipe idea that softens microwave splatter has a cousin one appliance over. Follow [how to clean an air fryer inside and out](/cleaning-hacks/how-to-clean-an-air-fryer) to lift baked-on grease without scrubbing off the basket's nonstick coating.",
     ],
     safetyNotes: [
       "Never run the microwave empty it can damage the magnetron and create a fire risk. Always have water or food inside when operating.",
@@ -976,6 +989,7 @@ export const posts: Post[] = [
       "A pea sized amount is plenty for most jobs. Start small and add more only where a spot is stubborn. A thick glob just means more rinsing and residue, not more cleaning power.",
       "Never let the paste dry on the surface. Dried toothpaste is far harder to remove from engraving, grooves, and textured rubber than the grime you were trying to clean, so work in small areas and wipe before it sets.",
       "Test a hidden spot first on anything you care about: wood, painted walls (especially flat or matte paint), and plated fixtures. Thirty seconds of testing saves you from a permanent shiny patch or worn plating.",
+      "Toothpaste polishes, but it will not dissolve sticky residue or rust. For crayon on walls, label goo, and rust rings, keep these [8 easy things you can clean with WD-40](/cleaning-hacks/8-easy-wd40-cleaning-hacks) in your back pocket.",
     ],
     safetyNotes: [
       "Never use toothpaste on natural stone like marble, granite, or travertine. The abrasive scratches the polish and the compounds in the paste can etch and dull these surfaces, and that damage is permanent.",
@@ -1117,7 +1131,8 @@ export const posts: Post[] = [
       "Warm vinegar is more effective than room-temperature vinegar for dissolving mineral deposits.",
       "Apply a rain-repellent product to shower glass for long-lasting spot prevention.",
       "For year old or older hard water buildup, extend the vinegar contact time to forty five to sixty minutes and cover the soaked paper towels with plastic wrap to prevent evaporation. Short fifteen minute treatments will not dissolve established mineral crust.",
-      "Heat the vinegar in the microwave for sixty seconds before applying. Warm vinegar dissolves mineral deposits roughly twice as fast as room temperature vinegar on the same surface."
+      "Heat the vinegar in the microwave for sixty seconds before applying. Warm vinegar dissolves mineral deposits roughly twice as fast as room temperature vinegar on the same surface.",
+      "Glass and chrome are not the only victims of hard water, the toilet bowl gets the worst mineral ring of all. For that stubborn line, here is [how to remove hard water stains from a toilet](/cleaning-hacks/remove-hard-water-stains-from-toilet).",
     ],
     safetyNotes: [
       "Never use vinegar on natural stone surfaces like marble, travertine, or limestone. The acid etches and dulls the surface permanently.",
@@ -1199,7 +1214,8 @@ export const posts: Post[] = [
     proTips: [
       "Never use baking soda paste on self-cleaning oven coatings check your manual first.",
       "Line the bottom rack with foil to catch future drips and make the next clean easier.",
-      "Sprinkle salt on fresh oven spills immediately it absorbs the mess and prevents baking on."
+      "Sprinkle salt on fresh oven spills immediately it absorbs the mess and prevents baking on.",
+      "If a fume-free approach is not cutting it on a really neglected oven, I have a full arsenal for the worst cases. My [12 oven cleaning hacks for baked-on grease](/cleaning-hacks/12-oven-cleaning-hacks-baked-on-grease) include the overnight paste that finally lifted a black carbonized layer for me.",
     ],
     safetyNotes: [
       "Always let the oven cool completely before applying any cleaning solution. Working in a hot oven risks burns from surfaces, steam, and heated cleaning agents.",
@@ -1288,7 +1304,8 @@ export const posts: Post[] = [
     proTips: [
       "Lower the water level before scrubbing by turning off the supply valve and flushing this exposes the stain ring for direct contact with your cleaning solution.",
       "Always wet a pumice stone before using it on porcelain a dry pumice stone will scratch the surface permanently.",
-      "Pour one cup of vinegar into the toilet weekly as a preventive flush to stop mineral deposits from building up."
+      "Pour one cup of vinegar into the toilet weekly as a preventive flush to stop mineral deposits from building up.",
+      "The same acids that dissolve toilet-bowl scale also brighten dingy grout lines. If your tile floor or shower needs help too, here is [how to clean grout without scrubbing](/cleaning-hacks/how-to-clean-grout-without-scrubbing).",
     ],
     safetyNotes: [
       "Never mix bleach with vinegar or ammonia-based products. These combinations produce toxic chlorine or chloramine gas that causes respiratory damage in enclosed bathroom spaces.",
@@ -1380,7 +1397,8 @@ export const posts: Post[] = [
     proTips: [
       "Always wipe with the grain never in circles or against the grain direction.",
       "Use two separate microfiber cloths: one damp for cleaning and one dry for buffing.",
-      "Apply products to the cloth, not the surface, to prevent drip marks and over-saturation."
+      "Apply products to the cloth, not the surface, to prevent drip marks and over-saturation.",
+      "Wiping stainless steel with a filthy sponge just spreads bacteria around. Before your next pass, learn [how to sterilize a kitchen sponge](/cleaning-hacks/how-to-sterilize-kitchen-sponge), with the five methods ranked by how well they actually work.",
     ],
     safetyNotes: [
       "Never use steel wool, abrasive pads, or powdered cleansers on stainless steel. These scratch the finish permanently and create grooves where bacteria and grime accumulate.",
@@ -1566,7 +1584,8 @@ export const posts: Post[] = [
     proTips: [
       "Always run cold water not hot when grinding food, because cold water keeps fats solid so they flush through instead of coating the pipes.",
       "Clean the splash guard underside every two weeks it is usually the single biggest odor source that most people never check.",
-      "Freeze vinegar in ice cube trays for a quick weekly disposal cleaning that takes under 30 seconds."
+      "Freeze vinegar in ice cube trays for a quick weekly disposal cleaning that takes under 30 seconds.",
+      "After you deodorize the disposal, the sink and appliance fronts around it usually need attention. Finish the job with [how to clean stainless steel appliances without streaks](/cleaning-hacks/how-to-clean-stainless-steel-appliances-without-streaks) so no smudges are left behind.",
     ],
     safetyNotes: [
       "Always disconnect power at the circuit breaker before reaching into or cleaning inside a garbage disposal. The wall switch alone is not a reliable safety lockout someone could flip it accidentally.",
@@ -1657,7 +1676,9 @@ export const posts: Post[] = [
     proTips: [
       "Use a UV blacklight to find hidden pet urine stains that are invisible to the eye but continue causing odor.",
       "Never use hot water on pet vomit stains heat cooks the proteins and permanently sets the stain into the carpet fibers.",
-      "Keep an emergency kit near your pet area: enzymatic cleaner, white cloths, baking soda, and a vinegar spray bottle."
+      "Keep an emergency kit near your pet area: enzymatic cleaner, white cloths, baking soda, and a vinegar spray bottle.",
+      "Pet accidents and oven grease share a trick: enzymes and time beat scrubbing. If you would rather skip the fumes on your oven too, [how to clean an oven without harsh chemicals](/cleaning-hacks/how-to-clean-an-oven-without-harsh-chemicals) gets there with baking soda and vinegar.",
+      "Enzyme and oxygen cleaners rescue carpet, and the very same chemistry lifts set-in sweat stains from fabric. Here is [how to remove yellow armpit stains from shirts](/cleaning-hacks/how-to-remove-yellow-armpit-stains-from-shirts), tested five ways.",
     ],
     safetyNotes: [
       "Always test cleaning solutions on a hidden area of carpet before applying to the stain. Hydrogen peroxide can bleach dark carpets, and some enzymatic cleaners may affect certain carpet dyes.",
@@ -1705,7 +1726,9 @@ export const posts: Post[] = [
     proTips: [
       "Clean your oven while it's slightly warm not hot so grease is softer and easier to wipe away.",
       "Use a plastic scraper instead of metal to avoid scratching enamel coatings on oven interiors.",
-      "Place a baking sheet on the rack below whatever you're cooking to catch drips before they hit the oven floor."
+      "Place a baking sheet on the rack below whatever you're cooking to catch drips before they hit the oven floor.",
+      "Borax is the unsung hero behind a lot of these grease-cutting pastes. If it works this well on baked-on oven grime, it is worth learning the rest of its uses, my [borax cleaning hacks that actually work](/cleaning-hacks/10-borax-cleaning-hacks-that-actually-work) cover laundry, drains, and mold.",
+      "The cooktop needs a gentler hand than the oven cavity. The scrubbers that are fine inside the oven will scratch ceramic glass, so follow [how to clean a glass stovetop without scratching it](/cleaning-hacks/how-to-clean-a-glass-stovetop-without-scratching) using the razor-and-cream-cleanser method.",
     ],
     safetyNotes: [
       "Never use the self-clean cycle on ovens older than ten years or with worn door gaskets. The extreme heat (900°F+) can crack oven components, blow fuses, or damage the door lock mechanism. Manual cleaning is safer for older appliances.",
@@ -1748,7 +1771,8 @@ export const posts: Post[] = [
     proTips: [
       "Best dust-hiding range is usually mid-tone warm neutrals.",
       "Always test paint colors on real walls before committing.",
-      "Pair dust-friendly color with washable finish for easier upkeep."
+      "Pair dust-friendly color with washable finish for easier upkeep.",
+      "Wall color sets the mood, but the floor shows the most traffic and dust. See the [best floor colors to hide dust and dirt](/cleaning-hacks/best-floor-colors-to-hide-dust-and-dirt) so your whole palette works together instead of showing every speck.",
     ],
     safetyNotes: [
       "Use low-VOC paint and keep rooms ventilated during and after painting.",
@@ -1787,7 +1811,8 @@ export const posts: Post[] = [
     proTips: [
       "Medium warm tones usually hide mixed debris best.",
       "Matte finishes are more forgiving than glossy floors.",
-      "Always test samples in real home lighting before buying."
+      "Always test samples in real home lighting before buying.",
+      "Flooring is only part of the picture. If you are choosing finishes to fight visible grime, the [best cabinet colors to hide fingerprints and dust](/cleaning-hacks/best-cabinet-colors-to-hide-fingerprints-and-dust) will keep your kitchen looking clean between wipe-downs.",
     ],
     safetyNotes: [
       "Choose slip-resistant finishes in bathrooms, entries, and kitchen zones.",
@@ -1914,6 +1939,7 @@ export const posts: Post[] = [
       "Make small batches. Three of my sprays lost noticeable strength by week three, and the Dawn ones separate. Four cups is the most I mix at once now.",
       "Label every bottle with the surfaces to avoid, not just what is inside. That one habit is what stopped me from ruining a stone counter a second time.",
       "Warm the vinegar for the soap scum remover. Cold vinegar made that recipe feel useless, and 30 seconds in the microwave made it genuinely impressive.",
+      "A good DIY spray keeps mildew at bay, but once it roots into silicone caulk you need a targeted fix. Follow [how to remove mold and mildew from bathroom caulk](/cleaning-hacks/how-to-remove-mold-from-bathroom-caulk) with a bleach-gel poultice.",
     ],
     safetyNotes: [
       "Never mix vinegar, hydrogen peroxide, or rubbing alcohol with bleach or any bleach based cleaner. These combinations release toxic gases. Rinse a surface fully and let it dry before switching between a homemade cleaner and any bleach product.",
@@ -2001,7 +2027,8 @@ export const posts: Post[] = [
     proTips: [
       "Do this on a warm, low-humidity day open windows and a fan running across the mattress speeds drying dramatically and prevents the main risk of moisture-related mold.",
       "Always use cold or cool water on protein-based stains (blood, urine, sweat). Hot or warm water sets these stains permanently into the fibers.",
-      "A quality zippered mattress protector installed after this clean means your next deep clean is mostly just the baking soda treatment the hard stain work won't need to be repeated."
+      "A quality zippered mattress protector installed after this clean means your next deep clean is mostly just the baking soda treatment the hard stain work won't need to be repeated.",
+      "A mattress is not the only thing pets claim, carpet holds odor even longer. For accidents that keep coming back, here is [how to remove pet stains and odors from carpet](/cleaning-hacks/how-to-remove-pet-stains-and-odors-from-carpet) with an enzyme cleaner.",
     ],
     safetyNotes: [
       "Never oversaturate your mattress with liquid. Excess moisture trapped inside foam or coils creates conditions for mold and mildew growth, which can cause respiratory issues and is very difficult to remediate.",
@@ -2250,6 +2277,7 @@ export const posts: Post[] = [
       "Keep a labeled borax spray bottle in the bathroom and use it as your weekly shower wipe down. Once grout is clean, that habit stops mold from re establishing so you never have to do the two hour paste again.",
       "Cling film is the quiet hero of borax cleaning. Anywhere you want a long dwell time (rust, black grout, a set in toilet ring), covering the paste to keep it wet is what turns a partial result into a complete one.",
       "Borax shines on dwell time jobs, not quick wipes. For a fast counter pass, reach for your regular spray; save the borax for the overnight and thirty minute tasks where its slow alkaline action actually pays off.",
+      "Warm borax water is a great grime cutter for grilles and registers. When dust is baked onto the louvers, follow [how to clean an AC vent the safe way](/cleaning-hacks/how-to-clean-an-ac-vent) so you do not push debris deeper into the ducts.",
     ],
     safetyNotes: [
       "Store borax in its original box, out of reach of children and pets, ideally in a high or locked cabinet. It is not acutely toxic in trace amounts, but it is not edible; a swallowed mouthful can cause nausea and vomiting and should be treated as a poison control call.",
@@ -2406,7 +2434,9 @@ export const posts: Post[] = [
     proTips: [
       "Freeze meat scraps, fish bones, and seafood waste in a sealed bag until trash pickup day to prevent the odor that attracts flies.",
       "Sprinkle food-grade diatomaceous earth under each new trash bag as a continuous, non-toxic line of defense against larvae.",
-      "Wash and fully sun-dry your trash can every two weeks during summer months. Moisture left behind is the most common cause of repeat infestations."
+      "Wash and fully sun-dry your trash can every two weeks during summer months. Moisture left behind is the most common cause of repeat infestations.",
+      "Maggots and roaches are drawn to the same rotting food and grease, and they often show up together. If you are fighting one, get ahead of the other with these [natural ways to get rid of cockroaches](/cleaning-hacks/10-best-ways-to-combat-cockroaches) before an infestation takes hold.",
+      "Maggots in the bin usually mean flies are already breeding nearby. Break the cycle with [how to get rid of fruit flies fast and keep them gone](/cleaning-hacks/how-to-get-rid-of-fruit-flies-fast) using an apple-cider-vinegar trap.",
     ],
     safetyNotes: [
       "Always wear rubber gloves when cleaning a maggot-infested trash can. Maggots feed on decaying organic matter that harbors harmful bacteria including E. coli and Salmonella.",
@@ -2482,7 +2512,8 @@ export const posts: Post[] = [
     proTips: [
       "Run your kitchen sink hot water tap for 30 seconds before starting a dishwasher cycle so the initial fill water is already hot and improves first-pass cleaning.",
       "Clean the filter every two weeks and run a vinegar cycle once a month. These two habits alone prevent 90% of dishwasher odor and performance issues.",
-      "Leave the dishwasher door cracked open an inch after every cycle to prevent mold and mildew growth in the moist interior."
+      "Leave the dishwasher door cracked open an inch after every cycle to prevent mold and mildew growth in the moist interior.",
+      "One thing that should never go in your freshly cleaned dishwasher is wood, the heat and water warp and crack it. Instead, here is [how to clean a wooden cutting board](/cleaning-hacks/how-to-clean-a-wooden-cutting-board) and sanitize it safely by hand.",
     ],
     safetyNotes: [
       "Never use bleach inside a stainless steel dishwasher tub. Bleach corrodes stainless steel and degrades rubber gaskets. Use white vinegar instead for safe and effective cleaning.",
@@ -2558,7 +2589,8 @@ export const posts: Post[] = [
     proTips: [
       "Flip the air fryer upside down monthly to access and wipe the heating element. This single step eliminates smoking during cooking.",
       "Use a silicone brush to oil food directly instead of spraying the basket with cooking spray. Aerosol propellants leave a sticky residue that ruins non-stick coatings over time.",
-      "Line the basket with air fryer parchment paper when cooking greasy foods like bacon or wings to catch dripping grease and cut cleanup time in half."
+      "Line the basket with air fryer parchment paper when cooking greasy foods like bacon or wings to catch dripping grease and cut cleanup time in half.",
+      "The same lemon-and-water steam that loosens air fryer grease works wonders one appliance over. See my [microwave cleaning hacks for a sparkling kitchen](/cleaning-hacks/12-microwave-cleaning-hacks-for-a-sparkling-kitchen) to blast off dried-on splatter in about five minutes.",
     ],
     safetyNotes: [
       "Always unplug the air fryer and let it cool completely for at least 30 minutes before cleaning any part of it. The heating element and interior surfaces retain extreme heat after cooking.",
@@ -2796,7 +2828,8 @@ export const posts: Post[] = [
     proTips: [
       "Stand the board on its edge to dry after every wash. This single habit prevents warping entirely by allowing both faces to dry at the same rate.",
       "Oil with food-grade mineral oil once a month. When the dry wood surface looks lighter in color than usual, that is the sign it needs conditioning before the next wash.",
-      "Use hydrogen peroxide weekly on boards used for raw meat. Pour it directly onto the clean dry surface, let it sit for five minutes, and wipe clean. It sanitizes knife grooves that a brush cannot reach."
+      "Use hydrogen peroxide weekly on boards used for raw meat. Pour it directly onto the clean dry surface, let it sit for five minutes, and wipe clean. It sanitizes knife grooves that a brush cannot reach.",
+      "Wood is not the only kitchen tool that hates the dishwasher, cast iron does too. For rescuing a rusty or sticky pan, see [how to deep clean a cast iron skillet](/cleaning-hacks/how-to-deep-clean-a-cast-iron-skillet) and re-season it properly.",
     ],
     safetyNotes: [
       "Never put a wooden cutting board in the dishwasher. The sustained heat and full water saturation cause cracking, warping, and permanent structural damage within one to three cycles.",
@@ -2882,7 +2915,9 @@ export const posts: Post[] = [
     proTips: [
       "Add half a cup of white vinegar to the softener compartment on every load to remove residue and eliminate flat smells without adding any fragrance.",
       "Move laundry to the dryer within 30 minutes of the wash cycle finishing. Wet clothes left in the drum develop mildew smell that requires a complete rewash.",
-      "Use wool dryer balls with essential oil drops added before the final 10 minutes of the cycle for scent that lasts through the day."
+      "Use wool dryer balls with essential oil drops added before the final 10 minutes of the cycle for scent that lasts through the day.",
+      "Fresh-smelling laundry is one thing, but smoke is a stubborn, oily odor that clings to fibers. If that is your battle, follow [how to get cigarette smell out of clothes](/cleaning-hacks/how-to-get-cigarette-smell-out-of-clothes) for the vinegar-soak method.",
+      "Fresh-smelling laundry aside, the fridge is the other place odors love to hide at home. A quick reset helps, here is [how to organize your refrigerator](/cleaning-hacks/how-to-organize-your-refrigerator) so nothing rots forgotten in the back.",
     ],
     safetyNotes: [
       "Do not mix white vinegar and bleach in the same wash cycle. The combination produces toxic chlorine gas. Use vinegar and bleach as separate treatments on different wash days.",
@@ -3352,7 +3387,9 @@ export const posts: Post[] = [
     proTips: [
       "Pull a cotton sock over your hand and use it like a glove dipped in cleaning solution. The fabric conforms to every curve in the baseboard profile and cleans an entire wall faster than a flat cloth.",
       "Run a fresh dryer sheet along the dry baseboard as the final step. The anti static coating repels new dust and keeps the trim visibly cleaner three to four times longer than wiping alone.",
-      "Always vacuum the baseboards before applying any liquid cleaner. Loose dust turns into streaky mud the moment it gets wet, and the dry pass cuts the total cleaning time roughly in half."
+      "Always vacuum the baseboards before applying any liquid cleaner. Loose dust turns into streaky mud the moment it gets wet, and the dry pass cuts the total cleaning time roughly in half.",
+      "Once your baseboards are clean, the goal is keeping them that way with less bending over. My [time-saving baseboard cleaning hacks](/cleaning-hacks/baseboard-cleaning-hacks-that-save-time) cover the dryer-sheet dust barrier and a fast monthly touch-up.",
+      "While you are chasing dust, do not overlook the machine that can spread it. A dirty humidifier throws fine white mineral dust across every surface, here is [how to clean a humidifier and stop the white dust](/cleaning-hacks/how-to-clean-a-humidifier).",
     ],
     safetyNotes: [
       "Test any cleaning solution on a hidden section of baseboard, such as the trim behind a piece of furniture, before working through an entire room. Some painted finishes lift color when contacted by mild detergents and the test pass prevents a costly mistake.",
@@ -3437,7 +3474,8 @@ export const posts: Post[] = [
     proTips: [
       "Always remove the drain stopper or strainer and clean the underside separately. The pivot rod and stopper underside hold the dirtiest layer of buildup in the entire drain system and are responsible for a large portion of the smell on their own.",
       "Let the baking soda and salt mixture sit dry in the drain for ten to fifteen minutes before pouring vinegar. The salt is the key abrasive that breaks the biofilm bond, and the dry contact time is the single biggest factor in how thoroughly this method cleans.",
-      "Run a weekly thirty second flush of half a cup of boiling water followed by a quarter cup of white vinegar. This single habit prevents the biofilm from rebuilding and extends the time between deep cleanings to six months or longer in most bathrooms."
+      "Run a weekly thirty second flush of half a cup of boiling water followed by a quarter cup of white vinegar. This single habit prevents the biofilm from rebuilding and extends the time between deep cleanings to six months or longer in most bathrooms.",
+      "A smelly drain is often only half the bathroom's odor problem, the plunger sitting next to it is the other half. Here is [how to deep clean a plunger](/cleaning-hacks/how-to-deep-clean-a-plunger) so it stops spreading bacteria.",
     ],
     safetyNotes: [
       "Never combine baking soda and vinegar with any commercial drain cleaner in the same session. If a chemical product was used recently, run cold water down the drain for ten minutes to flush the system before any other cleaning. Mixing bleach with vinegar produces toxic chlorine gas, and mixing bleach with ammonia produces chloramine fumes.",
@@ -3525,7 +3563,8 @@ export const posts: Post[] = [
     proTips: [
       "Take a before photo from the doorway and an after photo from the same angle. The visual proof of transformation is the single most motivating tool when the room starts to slip months later and you need to remember what it can look like.",
       "Process the trash and donate containers the same afternoon. Trash to the outdoor bin before dinner, donations to the car trunk before bed. Anything that sits overnight has a high probability of drifting back into the room within seventy two hours.",
-      "Pair the declutter with the maintenance habits in our [eighteen quick wins for busy mornings](/cleaning-hacks/18-quick-wins-for-busy-mornings) so the five minute nightly reset turns into an automatic routine rather than another thing you have to remember."
+      "Pair the declutter with the maintenance habits in our [eighteen quick wins for busy mornings](/cleaning-hacks/18-quick-wins-for-busy-mornings) so the five minute nightly reset turns into an automatic routine rather than another thing you have to remember.",
+      "The same declutter momentum works beyond the bedroom. When you are ready for your workspace, follow [how to organize your office desk](/cleaning-hacks/how-to-organize-your-office-desk) to cut the visual clutter that kills focus.",
     ],
     safetyNotes: [
       "Lift heavy storage bins with bent knees and a straight back rather than bending forward at the waist. Decluttering sessions often involve moving boxes that have been stored for years and may be heavier than expected.",
@@ -3900,7 +3939,8 @@ export const posts: Post[] = [
     proTips: [
       "Set a recurring monthly reminder for the hot vinegar maintenance cycle one cycle is enough to prevent smell from coming back.",
       "Use HE detergent at the dose printed on the bottle, not a full cap most people overdose, which is the main source of internal residue.",
-      "Keep an old hand towel folded over the open door after every load it absorbs gasket moisture without you having to wipe."
+      "Keep an old hand towel folded over the open door after every load it absorbs gasket moisture without you having to wipe.",
+      "Any appliance that holds standing water grows scale and mold, not just your washer. The same descaling logic applies to your morning brew, here is [how to clean and descale a coffee maker](/cleaning-hacks/how-to-clean-a-coffee-maker) for drip and Keurig machines.",
     ],
     safetyNotes: [
       "Never combine vinegar and chlorine bleach in the same cycle. The mix releases toxic chlorine gas. Run a plain hot rinse first if you have used bleach recently.",
@@ -3945,6 +3985,7 @@ export const posts: Post[] = [
       "Time the whole job for right after you vacuum the floors, while the supplies are already out and the loose dust is freshly disturbed and easy to grab.",
       "Stash a container of used dryer sheets under the sink specifically for the dust repellent trick, so laundry day quietly restocks your supply.",
       "Wring every cloth until it feels barely damp rather than wet; almost every baseboard problem I created came from too much water, not too little.",
+      "Dust does not just settle on the floor, it clings to the trim right above it. For the step-by-step version with the least back strain, read [how to clean baseboards without bending over for hours](/cleaning-hacks/how-to-clean-baseboards).",
     ],
     safetyNotes: [
       "Never mix dish soap or any cleaner with bleach, ammonia, or peroxide based products. Those combinations can release toxic fumes that burn your eyes and lungs. Pick one cleaner and stick with it.",
@@ -4400,6 +4441,7 @@ export const posts: Post[] = [
       "Start the vinegar simmer pot the second garlic hits the oil, not after the smell builds up.",
       "Rub your hands on the stainless-steel sink before touching any towel, handle, or phone to stop the smell from traveling.",
       "Pair a coffee-grounds bowl with the baking-soda bowl. Coffee captures the oilier garlic molecules baking soda is slow to grab.",
+      "Garlic and fish odors both come from lingering food compounds, and both respond to the same acid-and-airflow approach. For a fresh catch gone pungent, see [how to get fish smell out of the house](/cleaning-hacks/how-to-get-fish-smell-out-of-the-house).",
     ],
     safetyNotes: [
       "Do not leave the simmering vinegar pot unattended. The water can boil off in under twenty minutes on a low burner if the pot is small.",
@@ -4504,6 +4546,8 @@ export const posts: Post[] = [
       "Add the squeezed lemon halves to the vinegar simmer pot. The combined acid hits fish odor harder than vinegar alone because fish smell is alkaline.",
       "Wipe the pan and take the fish packaging out to the outdoor bin in the first five minutes. The oil, pan, and drain are the real source.",
       "Run the range hood for forty-five minutes, not thirty. Heavier fish vapor off-gasses longer than onion or garlic.",
+      "Fish is not the only kitchen smell that overstays its welcome, fried-food grease drifts into soft furnishings for days. Here is [how to get cooking grease smell out of the house](/cleaning-hacks/how-to-get-cooking-grease-smell-out-of-the-house).",
+      "If you can beat fish odor you can beat garlic, which lingers thanks to sulfur compounds on your hands and air. Here is [how to get garlic smell out of the house](/cleaning-hacks/how-to-get-garlic-smell-out-of-the-house) and off your fingers.",
     ],
     safetyNotes: [
       "Do not leave the simmering vinegar pot unattended. The water can boil off in under twenty minutes on a low burner if the pot is small.",
@@ -5180,7 +5224,8 @@ export const posts: Post[] = [
     proTips: [
       "Turn the system fully off at the thermostat before unscrewing a single vent. A blower that kicks on mid clean blows years of dust straight into your face and into other rooms.",
       "Wash the vent cover in soapy water and scrub between every slat with an old toothbrush. The sticky film between the slats is the real reason they look permanently dusty.",
-      "Replace the air filter and write the install date on the edge. A clean filter is what keeps the vents and ducts from getting dirty in the first place."
+      "Replace the air filter and write the install date on the edge. A clean filter is what keeps the vents and ducts from getting dirty in the first place.",
+      "Air vents and robot vacuums both quit working when they pack with fine dust. If yours is leaving streaks or losing suction, here is [how to clean a robot vacuum](/cleaning-hacks/how-to-clean-a-robot-vacuum), including the brush and filter people forget.",
     ],
     safetyNotes: [
       "Always wear a dust mask and safety glasses when cleaning a long-neglected vent. The packed dust mat inside can contain pet dander, mold spores, and fiberglass particles you do not want to inhale.",
@@ -5235,6 +5280,7 @@ export const posts: Post[] = [
       "Warm the vinegar for about fifteen seconds in the microwave before adding soap. A warm trap releases more scent and pulled in noticeably more flies for me in the first hour.",
       "Treat the drain even if you think produce is the culprit. Nine times out of ten there is film in the drain too, and cleaning both at once stops you from chasing the problem for a second week.",
       "Track your daily trap catch as your progress meter. A falling count means you are winning even while you still see a few flies in the air; a flat count means you missed a source.",
+      "Fruit flies are a nuisance, but bed bugs are a genuine emergency that spreads fast. If you suspect them, do not wait, here is [how to get rid of bed bugs fast](/cleaning-hacks/how-to-get-rid-of-bed-bugs-fast) before they establish.",
     ],
     safetyNotes: [
       "Never mix bleach with vinegar, ammonia, or hydrogen peroxide, and do not pour bleach down a drain right after vinegar. The combination can release toxic chlorine gas. For fruit flies you only need baking soda, vinegar, boiling water, and enzyme cleaner, which are safe used in sequence.",
@@ -5280,6 +5326,8 @@ export const posts: Post[] = [
       "Run a plain water cycle to preheat and rinse the machine right before you brew coffee in the morning. It warms the boiler and flushes any dust or overnight staleness out of the tubing.",
       "Store your machine with the reservoir empty and the lid open when you are away for more than a day or two. A dry tank cannot grow mold, and this single habit prevents the pink slime almost entirely.",
       "Label a small squeeze bottle with your maintenance vinegar mix so you are not measuring every time. I keep one on the shelf next to the machine, and having it ready is the difference between actually descaling monthly and forgetting for a year.",
+      "Descaling your coffee maker is pointless if you pour it into a slimy bottle. The same weekly habit applies, my guide to [how to clean a reusable water bottle](/cleaning-hacks/how-to-clean-a-reusable-water-bottle) covers the straw, gasket, and threads most people skip.",
+      "If your coffee tastes musty, your laundry probably smells that way too, for the same hidden-biofilm reason. Give the bigger machine the same treatment with [how to clean a washing machine](/cleaning-hacks/how-to-clean-a-washing-machine) for top and front loaders.",
     ],
     safetyNotes: [
       "Never mix vinegar with bleach, ammonia, or any other cleaner in the reservoir or the sink. Vinegar with bleach releases toxic chlorine gas. Use vinegar on its own with water, and keep it far away from any chlorine based product.",
@@ -5325,6 +5373,7 @@ export const posts: Post[] = [
       "Keep a magic eraser and a damp cloth by the door and give the white rubber a ten second wipe after each wear; catching scuffs before they set means you almost never need a full deep clean.",
       "Work on one shoe at a time and finish it completely so you have a clean reference next to the dirty one; it is much easier to see whether you have actually lifted the dinginess.",
       "Buy a spare magic eraser before you start a badly scuffed pair; melamine sponges crumble as you use them and running out mid job is annoying.",
+      "White canvas sneakers are forgiving, but leather is not, harsh cleaners dry it out and crack it. For leather shoes, bags, or jackets with spots, follow [how to clean leather mold safely](/cleaning-hacks/how-to-clean-leather-mold-safely) instead.",
     ],
     safetyNotes: [
       "Never use chlorine bleach on white sneakers. It reacts with the brighteners and rubber and turns them a permanent yellow or orange that is far worse than the original dirt.",
