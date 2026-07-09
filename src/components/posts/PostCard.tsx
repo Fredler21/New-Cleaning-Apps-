@@ -18,7 +18,17 @@ export function PostCard({ post, featured, trending }: PostCardProps) {
   return (
     <article
       className="group relative overflow-hidden rounded-card transition-all duration-300 hover:-translate-y-1.5"
-      style={{ background: "var(--card-bg)", border: "1px solid var(--border)", boxShadow: "var(--card-shadow)" }}
+      style={{
+        background: "var(--card-bg)",
+        border: "1px solid var(--border)",
+        boxShadow: "var(--card-shadow)",
+        // Skip rendering/layout of off-screen cards. Big paint-time win on the
+        // 81-card /cleaning-hacks grid; the intrinsic size reserves scroll space
+        // so the scrollbar stays stable. Progressive enhancement (ignored where
+        // unsupported).
+        contentVisibility: "auto",
+        containIntrinsicSize: "auto 420px",
+      }}
     >
       {/* Category color accent along the top */}
       <div className="absolute inset-x-0 top-0 z-10 h-1" style={{ background: categoryGradient(post.category) }} />
@@ -29,6 +39,7 @@ export function PostCard({ post, featured, trending }: PostCardProps) {
             alt={post.title}
             width={900}
             height={600}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
           />
