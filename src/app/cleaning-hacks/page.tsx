@@ -17,9 +17,9 @@ export function generateMetadata({ searchParams }: Props): Metadata {
     Boolean(searchParams.q);
 
   return buildMeta({
-    title: "Browse All 53+ Cleaning Hacks, Filter by Room, Ingredient & Technique",
+    title: `Browse All ${posts.length} Cleaning Hacks, Filter by Room & Ingredient`,
     description:
-      "Search and filter our full library of 53+ tried-and-tested cleaning hacks. Sort by room (kitchen, bathroom, laundry), ingredient (vinegar, baking soda, Dawn), or effort level. Every hack includes step-by-step instructions, ingredient lists, and safety notes.",
+      `Search and filter our full library of ${posts.length} tried-and-tested cleaning hacks. Sort by room (kitchen, bathroom, laundry), ingredient (vinegar, baking soda, Dawn), or effort level. Every hack includes step-by-step instructions, ingredient lists, and safety notes.`,
     path: "/cleaning-hacks",
     ogType: "website",
     keywords: [
@@ -48,14 +48,14 @@ export default function PostsPage({ searchParams }: Props) {
         "@type": "CollectionPage",
         "@id": "https://www.trycleaninghacks.com/cleaning-hacks",
         url: "https://www.trycleaninghacks.com/cleaning-hacks",
-        name: "Browse All 53+ Cleaning Hacks, Filter by Room, Ingredient & Technique",
+        name: `Browse All ${posts.length} Cleaning Hacks, Filter by Room, Ingredient & Technique`,
         description:
-          "Search and filter our full library of 53+ tried-and-tested cleaning hacks. Sort by room, ingredient, or effort level.",
+          `Search and filter our full library of ${posts.length} tried-and-tested cleaning hacks. Sort by room, ingredient, or effort level.`,
         isPartOf: { "@id": "https://www.trycleaninghacks.com" },
         mainEntity: {
           "@type": "ItemList",
           numberOfItems: posts.length,
-          itemListElement: posts.slice(0, 20).map((p, i) => ({
+          itemListElement: posts.map((p, i) => ({
             "@type": "ListItem",
             position: i + 1,
             url: `https://www.trycleaninghacks.com/cleaning-hacks/${p.slug}`,

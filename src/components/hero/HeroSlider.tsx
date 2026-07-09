@@ -9,10 +9,10 @@ type HeroSliderProps = {
 };
 
 const slideImages = [
-  "/uploads/hero-slide-1.png",
-  "/uploads/hero-slide-2.png",
-  "/uploads/hero-slide-3.png",
-  "/uploads/hero-slide-4.png"
+  "/uploads/hero-slide-1.webp",
+  "/uploads/hero-slide-2.webp",
+  "/uploads/hero-slide-3.webp",
+  "/uploads/hero-slide-4.webp"
 ];
 
 export function HeroSlider({ posts }: HeroSliderProps) {

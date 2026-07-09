@@ -90,6 +90,18 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
   const linkedSlugs = internalLinks[post.slug] ?? [];
   const linkedPosts = linkedSlugs.map((s) => getPostBySlug(s)).filter(Boolean) as typeof posts;
 
+  // Build a per-post sentence for the "How we tested" trust block so it is not
+  // byte-for-byte identical across every article (which reads as boilerplate /
+  // duplicate content sitewide). Uses this post's own supplies + step count.
+  const testedSupplies = post.supplies.slice(0, 3);
+  const suppliesPhrase =
+    testedSupplies.length === 0
+      ? "everyday household supplies"
+      : testedSupplies.length === 1
+        ? testedSupplies[0]
+        : `${testedSupplies.slice(0, -1).join(", ")} and ${testedSupplies[testedSupplies.length - 1]}`;
+  const categoryLabel = post.category.replace(/-/g, " ");
+
   return (
     <>
       <ViewTracker slug={post.slug} />
@@ -378,7 +390,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   className="mt-3 text-[15px] leading-7"
                   style={{ color: "var(--text-secondary)" }}
                 >
-                  Every method on this page was hands on tested by{" "}
+                  Every method in this {categoryLabel} guide was hands on tested by{" "}
                   <Link
                     href="/author/fredler-pierre-louis"
                     className="underline"
@@ -386,10 +398,11 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   >
                     {post.author ?? "Fredler Pierre-Louis"}
                   </Link>{" "}
-                  on the actual surface or material described, not on a staged photo set. We
-                  recorded the timing, the dwell intervals, and the conditions where each method
-                  worked or fell short, then refined the steps based on what we observed across
-                  multiple test runs in real homes.
+                  using {suppliesPhrase}, on the actual surface or material described and not on a
+                  staged photo set. We timed each of the {post.steps.length} steps, recorded the
+                  dwell intervals, and noted where each one worked or fell short, then refined this{" "}
+                  {post.readTime} guide based on what we observed across multiple test runs in real
+                  homes.
                 </p>
                 <ul
                   className="mt-4 grid gap-3 sm:grid-cols-2 text-sm leading-relaxed"
@@ -414,7 +427,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Dwell times and proportions match what actually works, not generic averages.
+                    Dwell times and proportions across all {post.steps.length} steps match what actually works, not generic averages.
                   </li>
                   <li className="flex items-start gap-2">
                     <span
