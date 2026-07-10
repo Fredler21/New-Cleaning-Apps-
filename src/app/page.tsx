@@ -7,6 +7,7 @@ import { posts } from "@/data/posts";
 import { featuredThisWeek, trendingPosts, heroPosts, quickWinPosts } from "@/data/featured";
 import { TrendingCarousel } from "@/components/posts/TrendingCarousel";
 import { PostCard } from "@/components/posts/PostCard";
+import { AllGuidesIndex } from "@/components/posts/AllGuidesIndex";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import { Reveal } from "@/components/ui/Reveal";
 import { categoryGradient } from "@/lib/category-color";
@@ -15,7 +16,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
   description:
-    "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans, no guesswork, no gimmicks.",
+    `Discover ${posts.length} tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans, no guesswork, no gimmicks.`,
   alternates: { canonical: "https://www.trycleaninghacks.com" },
   keywords: [
     "cleaning hacks", "house cleaning tips", "kitchen cleaning hacks",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
     description:
-      "Discover 40+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
+      `Discover ${posts.length} tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.`,
     url: "https://www.trycleaninghacks.com",
     siteName: "TryCleaningHacks",
     images: [{ url: "/og/og-home.png", width: 1200, height: 630, alt: "TryCleaningHacks" }],
@@ -277,6 +278,13 @@ export default function HomePage() {
           </div>
           </Reveal>
         </section>
+      </Container>
+
+      {/* Complete guide index, gives every article a link from the homepage */}
+      <Container>
+        <Reveal>
+          <AllGuidesIndex />
+        </Reveal>
       </Container>
 
       {/* Newsletter */}
