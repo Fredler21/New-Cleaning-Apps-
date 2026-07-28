@@ -8,6 +8,27 @@
  * 3-6 entries per post and prefer same-category / same-ingredient relevance.
  */
 export const internalLinks: Record<string, string[]> = {
+  "how-to-clean-ceiling-fan-blades": [
+    "how-to-clean-an-ac-vent",
+    "how-to-clean-baseboards",
+    "baseboard-cleaning-hacks-that-save-time",
+    "best-paint-colors-to-hide-dust",
+    "18-quick-wins-for-busy-mornings",
+  ],
+  "how-to-clean-window-and-door-tracks": [
+    "14-ways-to-use-baking-soda-in-your-house",
+    "8-incredible-vinegar-hacks",
+    "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles",
+    "how-to-remove-mold-from-bathroom-caulk",
+    "how-to-clean-baseboards",
+  ],
+  "how-to-clean-a-microfiber-couch": [
+    "how-to-remove-pet-stains-and-odors-from-carpet",
+    "how-to-deep-clean-your-mattress",
+    "12-genius-rubbing-alcohol-cleaning-hacks",
+    "how-to-clean-hardwood-floors",
+    "diy-all-natural-cleaning-sprays",
+  ],
   "13-mind-blowing-listerine-hacks": [
     "10-genius-ways-to-make-your-house-smell-great",
     "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
@@ -30,6 +51,7 @@ export const internalLinks: Record<string, string[]> = {
     "remove-hard-water-stains-from-toilet",
     "how-to-clean-a-coffee-maker",
     "how-to-clean-plastic-shower-curtain-liner-by-hand-and-in-a-washer",
+    "how-to-clean-window-and-door-tracks",
   ],
   "8-incredible-vinegar-hacks": [
     "how-to-remove-limescale-from-a-kettle",
@@ -37,6 +59,7 @@ export const internalLinks: Record<string, string[]> = {
     "remove-hard-water-stains-from-toilet",
     "12-shower-cleaning-hacks",
     "how-to-clean-a-showerhead",
+    "how-to-clean-window-and-door-tracks",
   ],
   "16-hydrogen-peroxide-cleaning-hacks": [
     "12-genius-rubbing-alcohol-cleaning-hacks",
@@ -180,6 +203,7 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-clean-stainless-steel-appliances-without-streaks",
     "how-to-clean-a-robot-vacuum",
     "how-to-deep-clean-a-cast-iron-skillet",
+    "how-to-clean-a-microfiber-couch",
   ],
   "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles": [
     "remove-hard-water-stains-from-toilet",
@@ -238,6 +262,7 @@ export const internalLinks: Record<string, string[]> = {
     "10-fascinating-vacuum-hacks-you-need-to-know",
     "how-to-clean-a-bathroom-drain-that-smells",
     "how-to-clean-a-humidifier",
+    "how-to-clean-a-microfiber-couch",
   ],
   "12-oven-cleaning-hacks-baked-on-grease": [
     "how-to-clean-an-oven-without-harsh-chemicals",
@@ -287,6 +312,7 @@ export const internalLinks: Record<string, string[]> = {
     "14-ways-to-use-baking-soda-in-your-house",
     "how-to-remove-pet-stains-and-odors-from-carpet",
     "7-game-changing-ultra-cleaning-hacks",
+    "how-to-clean-a-microfiber-couch",
   ],
   "how-to-clean-hardwood-floors": [
     "8-incredible-vinegar-hacks",
@@ -305,6 +331,7 @@ export const internalLinks: Record<string, string[]> = {
     "best-cabinet-colors-to-hide-fingerprints-and-dust",
     "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
     "18-quick-wins-for-busy-mornings",
+    "how-to-clean-ceiling-fan-blades",
   ],
   "best-floor-colors-to-hide-dust-and-dirt": [
     "best-paint-colors-to-hide-dust",
@@ -405,6 +432,7 @@ export const internalLinks: Record<string, string[]> = {
     "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
     "baseboard-cleaning-hacks-that-save-time",
     "how-to-clean-a-humidifier",
+    "how-to-clean-ceiling-fan-blades",
   ],
   "how-to-clean-a-bathroom-drain-that-smells": [
     "how-to-clean-and-deodorize-garbage-disposal",
@@ -558,6 +586,7 @@ export const internalLinks: Record<string, string[]> = {
     "10-genius-ways-to-make-your-house-smell-great",
     "how-to-clean-a-humidifier",
     "how-to-clean-a-robot-vacuum",
+    "how-to-clean-ceiling-fan-blades",
   ],
   "how-to-get-rid-of-fruit-flies-fast": [
     "how-to-get-rid-of-maggots-in-trash-can",
