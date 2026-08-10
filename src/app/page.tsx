@@ -8,6 +8,7 @@ import { featuredThisWeek, trendingPosts, heroPosts, quickWinPosts } from "@/dat
 import { TrendingCarousel } from "@/components/posts/TrendingCarousel";
 import { PostCard } from "@/components/posts/PostCard";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
+import { AllGuidesIndex } from "@/components/posts/AllGuidesIndex";
 import { Reveal } from "@/components/ui/Reveal";
 import { categoryGradient } from "@/lib/category-color";
 import Link from "next/link";
@@ -277,6 +278,12 @@ export default function HomePage() {
           </div>
           </Reveal>
         </section>
+      </Container>
+
+      {/* Complete guide index, collapsed. Gives every article a link from the
+          homepage so deeper posts are not reachable only via the sitemap. */}
+      <Container>
+        <AllGuidesIndex />
       </Container>
 
       {/* Newsletter */}
