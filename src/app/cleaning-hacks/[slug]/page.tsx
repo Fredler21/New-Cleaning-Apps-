@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
@@ -24,6 +25,11 @@ import { internalLinks } from "@/data/internal-links";
 import { seoDescriptions } from "@/data/seo-descriptions";
 import { seoTitles } from "@/data/seo-titles";
 import { ImageAttribution } from "@/components/posts/ImageAttribution";
+import { FieldNotes } from "@/components/posts/FieldNotes";
+import { PostPhotos } from "@/components/posts/PostPhotos";
+import { MethodComparison } from "@/components/posts/MethodComparison";
+import { CostBreakdown } from "@/components/posts/CostBreakdown";
+import type { SectionKey } from "@/types/post";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -101,6 +107,129 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
         ? testedSupplies[0]
         : `${testedSupplies.slice(0, -1).join(", ")} and ${testedSupplies[testedSupplies.length - 1]}`;
   const categoryLabel = post.category.replace(/-/g, " ");
+
+  /* ── Section assembly ──────────────────────────────────────────────────
+     Every article rendering the identical supplies -> steps -> tips -> FAQ
+     skeleton is what makes a library of guides read as templated output. A
+     post can set `sectionOrder` to rearrange or omit these, and the extra
+     sections (field notes, photos, comparison, cost) only render when that
+     post actually has the data, so they vary naturally between articles.  */
+  const sectionBlocks: Record<SectionKey, React.ReactNode> = {
+    supplies: (
+      <>
+                  {/* Supplies / Ingredients */}
+                  <section id="supplies" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                    <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
+                      <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                      What You&apos;ll Need
+                    </h2>
+                    <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                      {post.supplies.map((supply) => (
+                        <div key={supply} className="flex items-center gap-2.5 rounded-lg px-3 py-2.5" style={{ background: "var(--surface-hover)", border: "1px solid var(--border)" }}>
+                          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-teal-50 text-xs text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">✓</span>
+                          <span className="text-sm" style={{ color: "var(--text-secondary)" }}>{supply}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+
+      </>
+    ),
+    steps: (
+      <>
+                  {/* Steps */}
+                  <section id="steps" className="space-y-5">
+                    <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
+                      <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      Step-by-Step Instructions
+                    </h2>
+                    {post.steps.map((step, index) => (
+                      <section key={step.title} id={titleToId(step.title)} className="rounded-xl p-6 transition-all duration-200" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                        <div className="flex items-start gap-4">
+                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-sm font-bold text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">{index + 1}</span>
+                          <div>
+                            <h3 className="text-lg font-semibold" style={{ color: "var(--text)" }}>{step.title}</h3>
+                            <p className="mt-3 text-[15px] leading-7" style={{ color: "var(--text-secondary)" }}>{renderInlineLinks(step.body)}</p>
+                          </div>
+                        </div>
+                      </section>
+                    ))}
+                  </section>
+
+      </>
+    ),
+    fieldNotes: post.fieldNotes?.length ? <FieldNotes notes={post.fieldNotes} /> : null,
+    photos: post.photos?.length ? <PostPhotos photos={post.photos} /> : null,
+    comparison: post.comparison?.length ? <MethodComparison rows={post.comparison} /> : null,
+    cost: post.costBreakdown?.length ? <CostBreakdown rows={post.costBreakdown} /> : null,
+    proTips: (
+      <>
+                  {/* Pro tips */}
+                  <section id="pro-tips" className="rounded-xl border border-teal-200 bg-teal-50 p-6 dark:border-teal-400/20 dark:bg-teal-500/5">
+                    <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
+                      <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                      </svg>
+                      Pro Tips
+                    </h2>
+                    <ul className="mt-4 space-y-3">
+                      {post.proTips.map((tip) => (
+                        <li key={tip} className="flex items-start gap-3 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+                          <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-teal-100 text-xs text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">✓</span>
+                          <span>{renderInlineLinks(tip)}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+      </>
+    ),
+    faq: (
+      <>
+                  {/* FAQ section */}
+                  {post.faqs && post.faqs.length > 0 && (
+                    <section id="faq" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                      <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
+                        <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Frequently Asked Questions
+                      </h2>
+                      <div className="mt-4 space-y-4">
+                        {post.faqs.map((faq) => (
+                          <details key={faq.question} className="group rounded-lg" style={{ background: "var(--surface-hover)", border: "1px solid var(--border)" }}>
+                            <summary className="cursor-pointer select-none px-4 py-3 text-sm font-medium" style={{ color: "var(--text)" }}>
+                              {faq.question}
+                            </summary>
+                            <p className="px-4 pb-4 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+                              {renderInlineLinks(faq.answer)}
+                            </p>
+                          </details>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+      </>
+    ),
+  };
+
+  const DEFAULT_SECTION_ORDER: SectionKey[] = [
+    "supplies",
+    "steps",
+    "fieldNotes",
+    "photos",
+    "comparison",
+    "cost",
+    "proTips",
+    "faq",
+  ];
+  const orderedSections = (post.sectionOrder ?? DEFAULT_SECTION_ORDER).map((key) => (
+    <Fragment key={key}>{sectionBlocks[key]}</Fragment>
+  ));
+
 
   return (
     <>
@@ -303,62 +432,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               {/* Quick navigation for phones (desktop uses the sticky sidebar) */}
               <MobileTOC steps={post.steps} />
 
-              {/* Supplies / Ingredients */}
-              <section id="supplies" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
-                <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-                  <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                  </svg>
-                  What You&apos;ll Need
-                </h2>
-                <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
-                  {post.supplies.map((supply) => (
-                    <div key={supply} className="flex items-center gap-2.5 rounded-lg px-3 py-2.5" style={{ background: "var(--surface-hover)", border: "1px solid var(--border)" }}>
-                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-teal-50 text-xs text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">✓</span>
-                      <span className="text-sm" style={{ color: "var(--text-secondary)" }}>{supply}</span>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Steps */}
-              <section id="steps" className="space-y-5">
-                <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-                  <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Step-by-Step Instructions
-                </h2>
-                {post.steps.map((step, index) => (
-                  <section key={step.title} id={titleToId(step.title)} className="rounded-xl p-6 transition-all duration-200" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
-                    <div className="flex items-start gap-4">
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-sm font-bold text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">{index + 1}</span>
-                      <div>
-                        <h3 className="text-lg font-semibold" style={{ color: "var(--text)" }}>{step.title}</h3>
-                        <p className="mt-3 text-[15px] leading-7" style={{ color: "var(--text-secondary)" }}>{renderInlineLinks(step.body)}</p>
-                      </div>
-                    </div>
-                  </section>
-                ))}
-              </section>
-
-              {/* Pro tips */}
-              <section id="pro-tips" className="rounded-xl border border-teal-200 bg-teal-50 p-6 dark:border-teal-400/20 dark:bg-teal-500/5">
-                <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-                  <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                  Pro Tips
-                </h2>
-                <ul className="mt-4 space-y-3">
-                  {post.proTips.map((tip) => (
-                    <li key={tip} className="flex items-start gap-3 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-teal-100 text-xs text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">✓</span>
-                      <span>{renderInlineLinks(tip)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </section>
+              {orderedSections}
 
               {/* How this guide was made: provenance block */}
               <section
@@ -465,29 +539,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
 
               <SafetyNote notes={post.safetyNotes} />
 
-              {/* FAQ section */}
-              {post.faqs && post.faqs.length > 0 && (
-                <section id="faq" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
-                  <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-                    <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Frequently Asked Questions
-                  </h2>
-                  <div className="mt-4 space-y-4">
-                    {post.faqs.map((faq) => (
-                      <details key={faq.question} className="group rounded-lg" style={{ background: "var(--surface-hover)", border: "1px solid var(--border)" }}>
-                        <summary className="cursor-pointer select-none px-4 py-3 text-sm font-medium" style={{ color: "var(--text)" }}>
-                          {faq.question}
-                        </summary>
-                        <p className="px-4 pb-4 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                          {renderInlineLinks(faq.answer)}
-                        </p>
-                      </details>
-                    ))}
-                  </div>
-                </section>
-              )}
+              {/* FAQ renders via orderedSections */}
             </div>
 
             {/* Sidebar */}

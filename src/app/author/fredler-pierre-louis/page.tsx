@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { buildMeta } from "@/components/seo/Meta";
@@ -6,6 +7,15 @@ import { PostGrid } from "@/components/posts/PostGrid";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
 import { posts } from "@/data/posts";
+
+/**
+ * Set to true once public/photos/author/fredler.jpg exists.
+ *
+ * Kept as an explicit flag rather than a filesystem check so a missing file
+ * can never render a broken image on the page that exists to establish who
+ * stands behind the site.
+ */
+const HAS_AUTHOR_PHOTO = false;
 
 export const metadata: Metadata = buildMeta({
   title: "Fredler Pierre-Louis",
@@ -59,12 +69,26 @@ export default function FredlerPierreLouisPage() {
             className="mb-10 flex flex-col gap-6 rounded-2xl p-8 sm:flex-row sm:items-start"
             style={{ background: "var(--card-bg)", border: "1px solid var(--border)" }}
           >
-            <div
-              className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full text-2xl font-bold"
-              style={{ background: "var(--accent-subtle)", color: "var(--accent)" }}
-            >
-              FP
-            </div>
+            {/* A real photograph of a real person is one of the strongest
+                credibility signals an author page can carry. Drop a square
+                headshot at public/photos/author/fredler.jpg and flip
+                HAS_AUTHOR_PHOTO to true; the initials stand in until then. */}
+            {HAS_AUTHOR_PHOTO ? (
+              <Image
+                src="/photos/author/fredler.jpg"
+                alt="Fredler Pierre-Louis"
+                width={80}
+                height={80}
+                className="h-20 w-20 shrink-0 rounded-full object-cover"
+              />
+            ) : (
+              <div
+                className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full text-2xl font-bold"
+                style={{ background: "var(--accent-subtle)", color: "var(--accent)" }}
+              >
+                FP
+              </div>
+            )}
             <div className="flex-1">
               <h1
                 className="text-2xl font-bold tracking-tight sm:text-3xl"
