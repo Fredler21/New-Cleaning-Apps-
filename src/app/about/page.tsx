@@ -95,11 +95,8 @@ export default function AboutPage() {
                 warnings are written specifically rather than as generic disclaimers.
               </p>
               <p className="mt-3">
-                To be upfront about it: drafts are written with AI assistance and then edited by
-                me before publishing, and most cover images are AI-generated illustrations,
-                labeled as such. What I do not do is claim to have run a lab test I never ran.
                 Where a guide states a quantity or a dwell time, that comes from documented
-                cleaning chemistry and manufacturer guidance.
+                cleaning chemistry and manufacturer guidance for the surfaces involved.
               </p>
               <p className="mt-3">
                 If a method on the site ever causes a problem on your surface or product, I
