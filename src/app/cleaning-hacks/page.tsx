@@ -19,7 +19,7 @@ export function generateMetadata({ searchParams }: Props): Metadata {
   return buildMeta({
     title: `Browse All ${posts.length} Cleaning Hacks, Filter by Room & Ingredient`,
     description:
-      `Search and filter our full library of ${posts.length} tried-and-tested cleaning hacks. Sort by room (kitchen, bathroom, laundry), ingredient (vinegar, baking soda, Dawn), or effort level. Every hack includes step-by-step instructions, ingredient lists, and safety notes.`,
+      `Search and filter our full library of ${posts.length} practical cleaning hacks. Sort by room (kitchen, bathroom, laundry), ingredient (vinegar, baking soda, Dawn), or effort level. Every hack includes step-by-step instructions, ingredient lists, and safety notes.`,
     path: "/cleaning-hacks",
     ogType: "website",
     keywords: [
@@ -50,7 +50,7 @@ export default function PostsPage({ searchParams }: Props) {
         url: "https://www.trycleaninghacks.com/cleaning-hacks",
         name: `Browse All ${posts.length} Cleaning Hacks, Filter by Room, Ingredient & Technique`,
         description:
-          `Search and filter our full library of ${posts.length} tried-and-tested cleaning hacks. Sort by room, ingredient, or effort level.`,
+          `Search and filter our full library of ${posts.length} practical cleaning hacks. Sort by room, ingredient, or effort level.`,
         isPartOf: { "@id": "https://www.trycleaninghacks.com" },
         mainEntity: {
           "@type": "ItemList",
@@ -95,7 +95,7 @@ export default function PostsPage({ searchParams }: Props) {
         <div className="mb-10">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text)" }}>Browse All Cleaning Hacks</h1>
           <p className="mt-3 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-            Browse our complete library of tested cleaning hacks, from kitchen grease busters and bathroom mildew removers to laundry stain solutions and whole-home deep cleans. Every guide is verified by our editorial team using real-world testing, so you get professional-grade results with everyday ingredients like vinegar, baking soda, Dawn dish soap, and hydrogen peroxide.
+            Browse the complete library of cleaning guides, from kitchen grease busters and bathroom mildew removers to laundry stain solutions and whole-home deep cleans. Every guide is researched against cleaning chemistry and manufacturer guidance, then reviewed by a person before it goes live, so you get clear steps and honest limits with everyday ingredients like vinegar, baking soda, Dawn dish soap, and hydrogen peroxide.
           </p>
           <p className="mt-3 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
             Use the filters below to narrow results by category, tag, or keyword. Whether you need a quick five-minute fix for a coffee stain or a full weekend deep-clean routine, you&apos;ll find a step-by-step hack that works. New hacks are added weekly, bookmark this page and never run out of cleaning inspiration.
@@ -126,7 +126,7 @@ export default function PostsPage({ searchParams }: Props) {
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { icon: "🧪", title: "Tested & Verified", desc: "Every hack is tested on real surfaces before publishing. We document the ingredients, timing, and technique so you can replicate results exactly." },
+              { icon: "🧪", title: "Researched & Reviewed", desc: "Every hack is checked against cleaning chemistry and manufacturer guidance, then reviewed by a person. We document the ingredients, timing, and technique so you can follow it exactly." },
               { icon: "💰", title: "Budget-Friendly", desc: "Most hacks use ingredients you already own, like vinegar, baking soda, dish soap, and lemon. No expensive specialty products required." },
               { icon: "🌿", title: "Eco-Conscious", desc: "We prioritize natural, non-toxic solutions that are safe for kids, pets, and the environment. Harsh chemicals are always a last resort." },
               { icon: "⏱️", title: "Time-Saving", desc: "Tagged by effort level so you can find quick five-minute fixes or thorough weekend deep-clean routines at a glance." },

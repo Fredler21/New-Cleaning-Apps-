@@ -36,7 +36,7 @@ export function AllGuidesIndex() {
           Every Cleaning Guide
         </h2>
         <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-          Browse the complete library of {posts.length} tested guides, organized by category.
+          Browse the complete library of {posts.length} step-by-step guides, organized by category.
         </p>
       </div>
 

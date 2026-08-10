@@ -10,7 +10,7 @@ export const metadata: Metadata = buildMeta({
   path: "/editorial-policy",
   keywords: [
     "TryCleaningHacks editorial policy",
-    "how we test cleaning hacks",
+    "how TryCleaningHacks uses AI",
     "editorial standards",
     "content accuracy",
   ],
@@ -54,11 +54,10 @@ export default function EditorialPolicyPage() {
         >
           <Section title="Our Content Philosophy">
             <p>
-              TryCleaningHacks publishes cleaning guides that are practical, safe, and verified
-              before publication. We do not publish a method we have not personally tested or
-              thoroughly researched. Our goal is to give homeowners accurate, actionable advice,
-              not to aggregate tips from other websites or restate advice that hasn&apos;t been
-              verified to actually work.
+              TryCleaningHacks publishes cleaning guides that are practical, safe, and reviewed
+              before publication. Our goal is to give homeowners accurate, actionable advice
+              grounded in how cleaning agents actually behave, rather than restating tips
+              collected from other websites without checking whether they hold up.
             </p>
             <p className="mt-3">
               We also believe in being direct about failure. If a cleaning hack is ineffective,
@@ -69,19 +68,42 @@ export default function EditorialPolicyPage() {
 
           <Section title="Who Creates Our Content">
             <p>
-              TryCleaningHacks is researched, written, and edited by{" "}
+              TryCleaningHacks is run, edited, and published by{" "}
               <Link href="/author/fredler-pierre-louis" className="underline" style={{ color: "var(--accent)" }}>
                 Fredler Pierre-Louis
               </Link>
-              . Every guide goes through a structured review for accuracy, safety, and clarity
-              before publication. Methods are checked against multiple sources on cleaning
-              chemistry and surface compatibility, not pulled from a single secondary article.
+              , working alone. There is no larger editorial staff. Every guide is reviewed by a
+              person for accuracy, safety, and clarity before it goes live, and that person is
+              accountable for what the site publishes.
             </p>
           </Section>
 
-          <Section title="Our Testing Process">
+          <Section title="How We Use AI">
             <p>
-              Before publishing a cleaning guide, we follow a structured testing process:
+              We want to be straightforward about this, because a lot of sites are not.
+            </p>
+            <p className="mt-3">
+              Guides on this site are drafted with the help of AI writing tools, then researched,
+              corrected, and edited by a person before publication. AI is used the way a research
+              assistant would be used: to assemble a first draft and organize the structure. It is
+              not the final word on anything, and nothing is published straight from a model.
+            </p>
+            <p className="mt-3">
+              Most cover images on this site are AI-generated illustrations. They depict the
+              technique a guide describes; they are not photographs of a specific result achieved
+              in a specific home. Every AI-generated image carries a visible label saying so.
+            </p>
+            <p className="mt-3">
+              Where a guide describes what a method does, that description reflects documented
+              cleaning chemistry and manufacturer guidance, not a claim that a staff member
+              personally ran a controlled trial. When we do not know something, we say we do not
+              know it.
+            </p>
+          </Section>
+
+          <Section title="How a Guide Gets Made">
+            <p>
+              Before a cleaning guide is published, it goes through this process:
             </p>
             <ol className="ml-4 mt-3 list-decimal space-y-3">
               <li>
@@ -91,18 +113,17 @@ export default function EditorialPolicyPage() {
               </li>
               <li>
                 <strong>Method research</strong>, we research the underlying chemistry or
-                mechanism of action for each proposed solution, so we understand why something
-                should or shouldn&apos;t work before testing it.
+                mechanism of action for each proposed solution, so the guide can explain why
+                something works rather than just asserting that it does.
               </li>
               <li>
-                <strong>Hands-on testing</strong>, each method is physically tested on the
-                relevant surface type. We note what works, what doesn&apos;t, how long each step
-                takes, and what mistakes are easy to make.
+                <strong>Drafting</strong>, a first draft is assembled with AI assistance against
+                that research, then rewritten where it is vague, padded, or wrong.
               </li>
               <li>
-                <strong>Surface compatibility checks</strong>, we test methods on multiple
-                surface types (e.g., ceramic, porcelain, stainless steel, natural stone, sealed
-                wood) and clearly document which surfaces are safe and which are not.
+                <strong>Surface compatibility check</strong>, we verify against manufacturer and
+                materials guidance which surfaces a method is safe for (ceramic, porcelain,
+                stainless steel, natural stone, sealed wood) and document which ones it is not.
               </li>
               <li>
                 <strong>Safety review</strong>, we verify chemical interactions, maximum
@@ -111,8 +132,8 @@ export default function EditorialPolicyPage() {
                 just generic caution language.
               </li>
               <li>
-                <strong>Final editorial review</strong>, every guide is read end-to-end for
-                clarity, accuracy, and completeness before it is published.
+                <strong>Final human review</strong>, every guide is read end-to-end by a person
+                for clarity, accuracy, and completeness before it is published.
               </li>
             </ol>
           </Section>
@@ -121,8 +142,9 @@ export default function EditorialPolicyPage() {
             <p>
               TryCleaningHacks primarily teaches cleaning methods using everyday household
               ingredients, white vinegar, baking soda, dish soap, hydrogen peroxide, and similar
-              pantry staples. When we mention specific commercial products, we do so because we
-              have found them genuinely useful for the described task, not as commercial promotion.
+              pantry staples. When we name a specific commercial product, it is because that
+              product is the standard or widely documented choice for the described task, not
+              because anyone paid for the mention.
             </p>
             <p className="mt-3">
               We do not accept payment in exchange for positive coverage of commercial cleaning

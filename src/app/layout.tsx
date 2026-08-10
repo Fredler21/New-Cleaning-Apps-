@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     apple: "/favicon.svg",
   },
   title: {
-    default: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
+    default: "TryCleaningHacks, Practical Cleaning Hacks for Every Home",
     template: "%s | TryCleaningHacks",
   },
-  description: "Discover 52+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
+  description: "Discover practical cleaning hacks using everyday ingredients. clear steps for kitchen, bathroom, laundry, and whole-home deep cleans.",
   keywords: [
     "cleaning hacks", "house cleaning tips", "cleaning tricks", "DIY cleaning",
     "baking soda cleaning", "vinegar cleaning", "kitchen cleaning", "bathroom cleaning",
@@ -58,8 +58,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
-    description: "Discover 52+ tested cleaning hacks using everyday ingredients. Professional results for kitchen, bathroom, laundry, and whole-home deep cleans.",
+    title: "TryCleaningHacks, Practical Cleaning Hacks for Every Home",
+    description: "Discover practical cleaning hacks using everyday ingredients. clear steps for kitchen, bathroom, laundry, and whole-home deep cleans.",
     url: "https://www.trycleaninghacks.com",
     siteName: "TryCleaningHacks",
     images: [{ url: "/api/og", width: 1200, height: 630, alt: "TryCleaningHacks" }],
@@ -68,8 +68,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TryCleaningHacks, Tested Cleaning Hacks for Every Home",
-    description: "Discover 52+ tested cleaning hacks using everyday ingredients. Professional results in minutes.",
+    title: "TryCleaningHacks, Practical Cleaning Hacks for Every Home",
+    description: "Discover practical cleaning hacks using everyday ingredients. clear steps you can follow in minutes.",
     images: ["/api/og"],
   },
 };
@@ -155,7 +155,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "@type": "WebSite",
                 name: "TryCleaningHacks",
                 url: "https://www.trycleaninghacks.com",
-                description: "Discover tested cleaning hacks using everyday ingredients.",
+                description: "Discover practical cleaning hacks using everyday ingredients.",
                 potentialAction: {
                   "@type": "SearchAction",
                   target: "https://www.trycleaninghacks.com/cleaning-hacks?q={search_term_string}",

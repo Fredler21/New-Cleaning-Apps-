@@ -121,13 +121,25 @@ VOICE & STYLE RULES (non-negotiable):
 - No "in conclusion" / "in summary" type wrap-ups.
 - Do NOT fabricate first-person test stories (e.g., "I scrubbed for 20 minutes and watched
   the grime lift"). Stick to factual, instructive language.
+- HARD RULE, no invented evidence. Never claim that anyone tested, timed, measured, tracked,
+  or compared anything, and never invent a result from such a claim. That means no
+  "I tested X methods", no "in my testing", no "side by side test", no "after N trials",
+  no invented percentages, flow rates, minute counts, or before/after numbers.
+  Publishing fabricated evidence is a Google misrepresentation-policy violation and it is
+  what got this site rejected from AdSense. Explain the underlying chemistry and cite what
+  a method does and why; do not manufacture a study to justify it.
+- Quantities and dwell times must come from documented cleaning chemistry or manufacturer
+  guidance, presented as instructions ("give it 12 hours"), never as measured findings
+  ("12 hours was what worked in my trial").
 
 LENGTH RULES (CRITICAL — readers expect long-form, SEO depends on it):
 - Step bodies combined MUST total ${MIN_WORDS}-${MAX_WORDS} words (target: ~${TARGET_WORDS}).
 - Each step body should be 150-250 words. NEVER less than 120 words per step.
 - Pack each step with: specific quantities, dwell times, surface types, what to look for,
-  what went wrong in your test, how long it took, cost comparison to commercial products.
-- If you are tempted to wrap up early or summarize, instead add more concrete testing details.
+  the common way this step goes wrong, roughly how long it takes, and how it compares in
+  cost to a commercial product. State these as instruction, not as findings from a trial.
+- If you are tempted to wrap up early or summarize, instead go deeper on mechanism: why the
+  chemistry works, which surfaces it damages, what the failure mode looks like.
 
 PUNCTUATION RULES (CRITICAL):
 - DO NOT use em-dashes (—) anywhere. Never.
@@ -184,7 +196,8 @@ type Post = {
   category: string;         // one of the existing categories above
   readTime: string;         // e.g. "11 min"
   tags: string[];           // 3-5 short tags
-  excerpt: string;          // 2-3 sentences, first-person, sets up the test, NO dashes
+  excerpt: string;          // 2-3 sentences framing the problem and what the guide solves.
+                            // NO dashes. NO claims that anyone tested or measured anything.
   coverImage: string;       // "/uploads/<slug>.jpg"
   supplies: string[];       // 5-8 items
   steps: { title: string; body: string }[];  // 10-12 steps, last two per the voice rules
@@ -259,7 +272,62 @@ export const generatePost = async ({
   // Post-process: strip any em/en/stylistic dashes from every string field.
   post = sanitizePost(post);
 
+  // Hard gate: refuse to emit a post that fabricates evidence.
+  assertNoFabricatedEvidence(post);
+
   return post;
+};
+
+// ---------------------------------------------------------------------------
+// Fabricated-evidence guard.
+//
+// The site was rejected from AdSense for content that claimed hands-on testing
+// that never happened, complete with invented percentages and timings. Prompt
+// wording alone is not a sufficient safeguard against that recurring, so this
+// is enforced in code: any draft that claims someone tested, timed, measured,
+// or compared something is rejected outright rather than published.
+// ---------------------------------------------------------------------------
+const FABRICATION_PATTERNS = [
+  /\bI (tested|timed|measured|tracked|compared|trialled|trialed)\b/i,
+  /\bI (spent|ran) [^.]{0,40}\b(testing|trials?|test|comparing|measuring|tracking)\b/i,
+  /\bin my (testing|tests|trial|trials|experiment|experiments)\b/i,
+  /\bside[ -]by[ -]side (test|tests|testing|trial|trials)\b/i,
+  /\bafter \d+ (trials?|tests?|rounds? of testing)\b/i,
+  /\b(we|our team) (tested|timed|measured|verified by testing)\b/i,
+  /\bmy (test|testing|trial|experiment)\b/i,
+  /\btest runs?\b/i,
+  /\bhands[ -]on (tested|testing)\b/i,
+];
+
+export const findFabricatedEvidence = (post) => {
+  const hits = [];
+  const walk = (val, path) => {
+    if (typeof val === "string") {
+      for (const re of FABRICATION_PATTERNS) {
+        const m = val.match(re);
+        if (m) hits.push({ path, phrase: m[0] });
+      }
+      return;
+    }
+    if (Array.isArray(val)) return val.forEach((v, i) => walk(v, `${path}[${i}]`));
+    if (val && typeof val === "object") {
+      for (const [k, v] of Object.entries(val)) walk(v, path ? `${path}.${k}` : k);
+    }
+  };
+  walk(post, "");
+  return hits;
+};
+
+export const assertNoFabricatedEvidence = (post) => {
+  const hits = findFabricatedEvidence(post);
+  if (hits.length === 0) return;
+  const detail = hits.map((h) => `  ${h.path}: "${h.phrase}"`).join("\n");
+  throw new Error(
+    `Draft claims testing that did not happen, refusing to publish.\n${detail}\n\n` +
+      `Rewrite these as instruction or mechanism ("give it 12 hours", "the acid ` +
+      `dissolves the oxide") rather than as findings from a trial. See the ` +
+      `"How We Use AI" section of the editorial policy for why this matters.`
+  );
 };
 
 // ---------------------------------------------------------------------------

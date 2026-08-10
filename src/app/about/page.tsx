@@ -8,7 +8,7 @@ import { categories } from "@/data/categories";
 export const metadata: Metadata = buildMeta({
   title: "About",
   description:
-    "TryCleaningHacks is a small site run by Fredler Pierre-Louis sharing practical, tested cleaning methods for everyday homes.",
+    "TryCleaningHacks is a small site run by Fredler Pierre-Louis sharing practical, practical cleaning methods for everyday homes.",
   path: "/about",
   keywords: ["about TryCleaningHacks", "Fredler Pierre-Louis", "cleaning blog"],
 });
@@ -93,6 +93,13 @@ export default function AboutPage() {
                 drafting pass, and a final review for accuracy, safety, and clarity before it
                 goes live. Methods are checked against multiple sources, and surface-safety
                 warnings are written specifically rather than as generic disclaimers.
+              </p>
+              <p className="mt-3">
+                To be upfront about it: drafts are written with AI assistance and then edited by
+                me before publishing, and most cover images are AI-generated illustrations,
+                labeled as such. What I do not do is claim to have run a lab test I never ran.
+                Where a guide states a quantity or a dwell time, that comes from documented
+                cleaning chemistry and manufacturer guidance.
               </p>
               <p className="mt-3">
                 If a method on the site ever causes a problem on your surface or product, I
