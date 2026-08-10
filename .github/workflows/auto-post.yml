@@ -1,9 +1,15 @@
 name: Auto-Post Agent
 
+# NOTE: the unattended schedule is intentionally removed.
+#
+# Publishing AI-drafted articles on a fixed cadence with no human in the loop is
+# exactly the pattern Google's spam policy calls "scaled content abuse", and it
+# is the primary reason this site was failing AdSense review. This workflow is
+# now manual-only: a human triggers it, reviews the resulting PR, verifies the
+# method, and merges. Draft volume is no longer automatic.
+#
+# Do NOT re-add a `schedule:` trigger here.
 on:
-  schedule:
-    # Mon / Wed / Fri at 14:00 UTC (~09:00 ET)
-    - cron: "0 14 * * 1,3,5"
   workflow_dispatch:
     inputs:
       topic:

@@ -90,9 +90,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
   const linkedSlugs = internalLinks[post.slug] ?? [];
   const linkedPosts = linkedSlugs.map((s) => getPostBySlug(s)).filter(Boolean) as typeof posts;
 
-  // Build a per-post sentence for the "How we tested" trust block so it is not
-  // byte-for-byte identical across every article (which reads as boilerplate /
-  // duplicate content sitewide). Uses this post's own supplies + step count.
+  // Build a per-post sentence for the "How this guide was made" block so it is
+  // not byte-for-byte identical across every article (which reads as boilerplate
+  // / duplicate content sitewide). Uses this post's own supplies + step count.
   const testedSupplies = post.supplies.slice(0, 3);
   const suppliesPhrase =
     testedSupplies.length === 0
@@ -360,7 +360,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 </ul>
               </section>
 
-              {/* How we tested this guide, global E-E-A-T trust block */}
+              {/* How this guide was made: provenance + AI disclosure block */}
               <section
                 id="how-we-tested"
                 className="rounded-xl p-6"
@@ -384,25 +384,26 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
                     />
                   </svg>
-                  How we tested this guide
+                  How this guide was made
                 </h2>
                 <p
                   className="mt-3 text-[15px] leading-7"
                   style={{ color: "var(--text-secondary)" }}
                 >
-                  Every method in this {categoryLabel} guide was hands on tested by{" "}
+                  This {categoryLabel} guide was researched, drafted with AI assistance, then
+                  edited and published by{" "}
                   <Link
                     href="/author/fredler-pierre-louis"
                     className="underline"
                     style={{ color: "var(--accent)" }}
                   >
                     {post.author ?? "Fredler Pierre-Louis"}
-                  </Link>{" "}
-                  using {suppliesPhrase}, on the actual surface or material described and not on a
-                  staged photo set. We timed each of the {post.steps.length} steps, recorded the
-                  dwell intervals, and noted where each one worked or fell short, then refined this{" "}
-                  {post.readTime} guide based on what we observed across multiple test runs in real
-                  homes.
+                  </Link>
+                  . The {post.steps.length} steps below are built around {suppliesPhrase}, and the
+                  quantities and dwell times come from published cleaning-chemistry and
+                  manufacturer guidance for those materials, not from a controlled trial we ran
+                  ourselves. Where a popular version of this hack does not work, or is risky on a
+                  particular surface, this {post.readTime} guide says so.
                 </p>
                 <ul
                   className="mt-4 grid gap-3 sm:grid-cols-2 text-sm leading-relaxed"
@@ -413,28 +414,28 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Methods verified on the relevant surface or material before publication.
+                    Checked against manufacturer and materials guidance for the surfaces named.
                   </li>
                   <li className="flex items-start gap-2">
                     <span
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Reviewed for chemical safety and surface compatibility before publication.
+                    Reviewed by a person for chemical safety and surface compatibility before publication.
                   </li>
                   <li className="flex items-start gap-2">
                     <span
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Dwell times and proportions across all {post.steps.length} steps match what actually works, not generic averages.
+                    Drafted with AI assistance and edited by a human before going live.
                   </li>
                   <li className="flex items-start gap-2">
                     <span
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Updated whenever a reader reports an edge case we missed.
+                    Corrected whenever a reader reports an error or an edge case we missed.
                   </li>
                 </ul>
                 <p
@@ -447,7 +448,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                     className="underline"
                     style={{ color: "var(--accent)" }}
                   >
-                    editorial and testing policy
+                    editorial and AI-use policy
                   </Link>{" "}
                   or learn more about{" "}
                   <Link

@@ -8,7 +8,7 @@ import { posts } from "@/data/posts";
 export const metadata: Metadata = buildMeta({
   title: "Cleaning Categories, Browse by Ingredient, Room, or Method",
   description:
-    "Explore every cleaning category on TryCleaningHacks, from Dawn dish soap and white vinegar to baking soda, hydrogen peroxide, deep clean routines, bathroom care, pest control, and DIY cleaners. Each category is grounded in real testing and clear, surface-safe instructions.",
+    "Explore every cleaning category on TryCleaningHacks, from Dawn dish soap and white vinegar to baking soda, hydrogen peroxide, deep clean routines, bathroom care, pest control, and DIY cleaners. Each category is grounded in cleaning chemistry and clear, surface-safe instructions.",
   path: "/categories",
   keywords: [
     "cleaning categories",
@@ -29,7 +29,7 @@ const editorialSections: { id: string; heading: string; body: string[] }[] = [
     heading: "Ingredient based categories",
     body: [
       "We organize the largest part of our library by the active cleaning ingredient because the ingredient determines almost everything that matters in a cleaning method, including which surfaces are safe, what residue gets left behind, how long the dwell time should be, and which other products you must never combine it with. Picking a guide by the ingredient you already own at home is the fastest way to get started, and it is also the safest because every guide in the same ingredient category follows the same compatibility rules.",
-      "Vinegar Hacks covers acidic cleaning. White distilled vinegar at five percent acetic acid dissolves mineral deposits, soap scum, and limescale on glass, chrome, and ceramic surfaces. We never recommend vinegar on natural stone, on unsealed grout, or on hardwood floors because the acid etches calcium based surfaces and dulls finishes over time. Every vinegar guide on the site lists the surfaces it has been tested on and the ones to avoid.",
+      "Vinegar Hacks covers acidic cleaning. White distilled vinegar at five percent acetic acid dissolves mineral deposits, soap scum, and limescale on glass, chrome, and ceramic surfaces. We never recommend vinegar on natural stone, on unsealed grout, or on hardwood floors because the acid etches calcium based surfaces and dulls finishes over time. Every vinegar guide on the site lists the surfaces it is safe on and the ones to avoid.",
       "Baking Soda guides cover the gentle abrasive and odor neutralizing side of cleaning. Sodium bicarbonate at the right grit lifts cooked on grease, neutralizes acidic odors in carpets and refrigerators, and works as a non scratching scrub on stainless steel, enameled cast iron, and ceramic cookware. Baking soda is the most beginner friendly cleaner in the kitchen because it cannot damage almost any surface even at full strength.",
       "Dawn Dish Soap Hacks focus on the surfactant chemistry that makes Dawn the standard for cutting kitchen grease. The same surfactant action that lifts oil from a frying pan also lifts soap scum from a bathtub, removes greasy fingerprints from cabinets, and forms the base of safe outdoor cleaners for patio furniture. We use original blue Dawn in all our recipes because the ratio of surfactants is consistent across batches.",
       "Hydrogen Peroxide guides cover oxidizing cleaning. Three percent food grade peroxide brightens grout, lifts organic stains from upholstery, and kills mildew on tile and shower walls without the harshness of chlorine bleach. Peroxide breaks down into water and oxygen after it does its work, which makes it one of the safest disinfectants for households with kids and pets when used correctly.",
@@ -41,10 +41,10 @@ const editorialSections: { id: string; heading: string; body: string[] }[] = [
     heading: "Method based categories",
     body: [
       "The method based categories help you find guides when you know the situation but not the ingredient. If your bathroom needs a top to bottom reset before guests arrive, the Bathroom Cleaning category gives you a full sequence rather than a single hack. If you have inherited a moldy basement or a kitchen that has been ignored for months, the Deep Clean category gives you the multi step routines that small daily fixes cannot match.",
-      "Deep Clean guides are written for the situations where a five minute wipe down is not enough. Each guide includes the order of operations, the wait times between steps, and the safety overlap rules so you can run a full deep clean in a single afternoon without doubling back. We test these routines on real homes, not on staged photo sets, which is why our timing estimates match what actually happens when soap needs to dwell or when grout needs a second pass.",
+      "Deep Clean guides are written for the situations where a five minute wipe down is not enough. Each guide includes the order of operations, the wait times between steps, and the safety overlap rules so you can run a full deep clean in a single afternoon without doubling back. The timing estimates come from documented dwell requirements for each cleaner, so they reflect how long a product actually needs to work rather than an arbitrary round number.",
       "Bathroom Cleaning is the most search heavy category we publish because bathrooms develop unique problems that no other room shares. Hard water mineral buildup, soap scum, mildew on grout and caulk, pink Serratia bacteria, hard to reach toilet scaling, and shower curtain liner staining all show up in this category. We separate the methods by surface type because what works on chrome will damage the chrome plating on adjacent fixtures if applied in the wrong concentration.",
       "Laundry and Kitchen covers the two highest traffic rooms where stains and grease are the dominant problems. The category includes guides for stain treatment timing on different fabric types, oven and range hood degreasing, dishwasher self cleaning, garbage disposal odor control, and refrigerator interior care. These are the routines that determine how clean your home actually feels day to day.",
-      "Home Fragrance and DIY Cleaners give you the foundation for replacing commercial cleaners and air fresheners with safer mixes you make yourself. We do not publish a recipe in either category until it has been tested across multiple humidity levels, surface types, and storage conditions to make sure it actually works in normal homes and not just in a single test kitchen.",
+      "Home Fragrance and DIY Cleaners give you the foundation for replacing commercial cleaners and air fresheners with safer mixes you make yourself. Each recipe notes how stable the mix is, how long it keeps, and which surfaces it should stay away from, because a homemade cleaner that separates in a week or etches a countertop is not a saving.",
     ],
   },
   {
@@ -52,8 +52,8 @@ const editorialSections: { id: string; heading: string; body: string[] }[] = [
     heading: "Specialty categories",
     body: [
       "The specialty categories cover problems that do not fit neatly into the ingredient or method buckets but that matter enough to need their own dedicated section. Pest Control is one of the most read specialty categories because pest problems require a different kind of attention. We do not write about pesticides or extermination services. The guides in Pest Control focus on prevention, sanitation, exclusion, and the everyday cleaning routines that remove the food sources and harborage that attract pests in the first place.",
-      "Paint Colors covers a question most cleaning sites ignore but that comes up constantly in our reader emails: which colors and finishes hide dust and fingerprints between cleanings. The guides in this category explain why certain paint sheens, floor colors, and cabinet finishes mask everyday residue and which to avoid if you do not want to dust three times a week. This category is the one most directly informed by the years our team spent inside other peoples homes as professional cleaners.",
-      "Dollar Store covers the budget tools and organizers that we have personally bought, used, and tested. We include the specific items that hold up to weekly use and clearly note which ones fail within a month so readers can avoid wasting money on tools that look the part but do not last.",
+      "Paint Colors covers a question most cleaning sites ignore but that comes up constantly in our reader emails: which colors and finishes hide dust and fingerprints between cleanings. The guides in this category explain why certain paint sheens, floor colors, and cabinet finishes mask everyday residue and which to avoid if you do not want to dust three times a week. It is the category that leans hardest on finish and material science rather than on cleaning products.",
+      "Dollar Store covers the budget tools and organizers worth buying and the ones that are not. The guides explain what to look for in the materials themselves, such as bristle density, plastic thickness, and seam construction, so you can tell which cheap items hold up to weekly use and which fail within a month.",
     ],
   },
   {
@@ -86,7 +86,7 @@ export default function CategoriesPage() {
             className="mt-3 max-w-3xl text-base leading-relaxed"
             style={{ color: "var(--text-secondary)" }}
           >
-            {totalGuides}+ tested guides organized into {totalCategories} categories. Each category groups
+            {totalGuides}+ step-by-step guides organized into {totalCategories} categories. Each category groups
             cleaning methods by the active ingredient or by the room and routine they are designed for, so
             you can find a safe, surface specific solution in a few seconds rather than reading through
             every article on the site.

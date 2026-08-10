@@ -126,7 +126,7 @@ export function GET() {
                 maxWidth: "500px",
               }}
             >
-              40+ tested cleaning hacks with everyday ingredients, professional results for every room.
+              practical cleaning hacks with everyday ingredients, clear steps for every room.
             </span>
           </div>
 

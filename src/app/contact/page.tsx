@@ -67,7 +67,7 @@ export default function ContactPage() {
             <span className="mr-2">✉️</span>Get in Touch
           </h1>
           <p className="mt-3 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-            Have a question about a cleaning hack, need personalized advice for a tough stain, or want to collaborate with our team? We&apos;re here to help. The TryCleaningHacks editorial team reads every message and typically responds within 24 to 48 hours.
+            Have a question about a cleaning hack, need advice for a tough stain, or want to work together? TryCleaningHacks is run by one person, Fredler Pierre-Louis, and he reads every message personally. Expect a reply within 24 to 48 hours.
           </p>
           <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
             Or email us directly at{" "}
@@ -120,10 +120,10 @@ export default function ContactPage() {
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              { icon: "🧹", title: "Cleaning Advice", desc: "Stuck on a stubborn stain or odor? Describe the surface, material, and what you\u2019ve tried, our editors will suggest a tested hack tailored to your situation." },
+              { icon: "🧹", title: "Cleaning Advice", desc: "Stuck on a stubborn stain or odor? Describe the surface, material, and what you\u2019ve tried, and we’ll point you to the method best suited to your situation." },
               { icon: "💡", title: "Suggest a Hack", desc: "Discovered a brilliant cleaning shortcut? Share your hack and it may be featured in an upcoming article, complete with credit to you." },
               { icon: "🤝", title: "Brand Collaborations", desc: "We partner with eco-friendly cleaning brands, home-care companies, and lifestyle publishers for sponsored content, product reviews, and roundups." },
-              { icon: "📝", title: "Content Licensing", desc: "Interested in republishing or licensing our tested cleaning guides for your platform, newsletter, or print publication? Let\u2019s discuss terms." },
+              { icon: "📝", title: "Content Licensing", desc: "Interested in republishing or licensing our practical cleaning guides for your platform, newsletter, or print publication? Let\u2019s discuss terms." },
             ].map((item) => (
               <div
                 key={item.title}
@@ -146,7 +146,7 @@ export default function ContactPage() {
           <div className="grid gap-4">
             {[
               { q: "How quickly will I hear back?", a: "Most inquiries receive a reply within 24 to 48 hours on business days. For urgent cleaning emergencies, try searching our 80+ guides, the answer is often already published." },
-              { q: "Can I submit a guest post or hack?", a: "Absolutely! We welcome reader-submitted hacks. Include the cleaning problem, ingredients used, step-by-step instructions, and a photo if possible. Our editors will test and verify before publishing." },
+              { q: "Can I submit a guest post or hack?", a: "Absolutely! We welcome reader-submitted hacks. Include the cleaning problem, ingredients used, step-by-step instructions, and a photo if possible. Submissions are reviewed for safety and surface compatibility before anything is published." },
               { q: "Do you offer sponsored content?", a: "Yes. We work with cleaning brands, home-improvement companies, and eco-friendly product makers on sponsored articles, product features, and social media campaigns. Reach out with your proposal and budget." },
               { q: "I found an error in a guide. How do I report it?", a: "We take accuracy seriously. Use the form above to describe the issue, include the article title and what needs correcting. We\u2019ll review and update the guide promptly." },
               { q: "Is my information kept private?", a: "Yes. We never sell or share your personal data. Your name and email are used only to respond to your inquiry. See our Privacy Policy for full details." },

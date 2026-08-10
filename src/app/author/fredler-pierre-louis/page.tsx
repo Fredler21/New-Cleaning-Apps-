@@ -10,7 +10,7 @@ import { posts } from "@/data/posts";
 export const metadata: Metadata = buildMeta({
   title: "Fredler Pierre-Louis",
   description:
-    "Fredler Pierre-Louis is the writer and editor behind TryCleaningHacks, a library of practical, tested cleaning guides for everyday homes.",
+    "Fredler Pierre-Louis is the writer and editor behind TryCleaningHacks, a library of practical, practical cleaning guides for everyday homes.",
   path: "/author/fredler-pierre-louis",
   keywords: [
     "Fredler Pierre-Louis",
