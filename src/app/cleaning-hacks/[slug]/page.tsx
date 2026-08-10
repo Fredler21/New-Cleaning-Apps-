@@ -360,7 +360,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 </ul>
               </section>
 
-              {/* How this guide was made: provenance + AI disclosure block */}
+              {/* How this guide was made: provenance block */}
               <section
                 id="how-we-tested"
                 className="rounded-xl p-6"
@@ -390,8 +390,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   className="mt-3 text-[15px] leading-7"
                   style={{ color: "var(--text-secondary)" }}
                 >
-                  This {categoryLabel} guide was researched, drafted with AI assistance, then
-                  edited and published by{" "}
+                  This {categoryLabel} guide was researched, written, edited, and published by{" "}
                   <Link
                     href="/author/fredler-pierre-louis"
                     className="underline"
@@ -428,7 +427,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Drafted with AI assistance and edited by a human before going live.
+                    Written to explain why a method works, not just to list steps.
                   </li>
                   <li className="flex items-start gap-2">
                     <span
@@ -448,7 +447,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                     className="underline"
                     style={{ color: "var(--accent)" }}
                   >
-                    editorial and AI-use policy
+                    editorial policy
                   </Link>{" "}
                   or learn more about{" "}
                   <Link

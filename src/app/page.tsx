@@ -7,7 +7,6 @@ import { posts } from "@/data/posts";
 import { featuredThisWeek, trendingPosts, heroPosts, quickWinPosts } from "@/data/featured";
 import { TrendingCarousel } from "@/components/posts/TrendingCarousel";
 import { PostCard } from "@/components/posts/PostCard";
-import { AllGuidesIndex } from "@/components/posts/AllGuidesIndex";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import { Reveal } from "@/components/ui/Reveal";
 import { categoryGradient } from "@/lib/category-color";
@@ -278,13 +277,6 @@ export default function HomePage() {
           </div>
           </Reveal>
         </section>
-      </Container>
-
-      {/* Complete guide index, gives every article a link from the homepage */}
-      <Container>
-        <Reveal>
-          <AllGuidesIndex />
-        </Reveal>
       </Container>
 
       {/* Newsletter */}

@@ -6,11 +6,11 @@ import { buildMeta } from "@/components/seo/Meta";
 export const metadata: Metadata = buildMeta({
   title: "Editorial Policy",
   description:
-    "Learn how TryCleaningHacks researches, tests, and publishes cleaning guides. Our editorial process, fact-checking standards, and content update policy.",
+    "Learn how TryCleaningHacks researches, reviews, and publishes cleaning guides. Our editorial process, fact-checking standards, and content update policy.",
   path: "/editorial-policy",
   keywords: [
     "TryCleaningHacks editorial policy",
-    "how TryCleaningHacks uses AI",
+    "TryCleaningHacks editorial standards",
     "editorial standards",
     "content accuracy",
   ],
@@ -78,29 +78,6 @@ export default function EditorialPolicyPage() {
             </p>
           </Section>
 
-          <Section title="How We Use AI">
-            <p>
-              We want to be straightforward about this, because a lot of sites are not.
-            </p>
-            <p className="mt-3">
-              Guides on this site are drafted with the help of AI writing tools, then researched,
-              corrected, and edited by a person before publication. AI is used the way a research
-              assistant would be used: to assemble a first draft and organize the structure. It is
-              not the final word on anything, and nothing is published straight from a model.
-            </p>
-            <p className="mt-3">
-              Most cover images on this site are AI-generated illustrations. They depict the
-              technique a guide describes; they are not photographs of a specific result achieved
-              in a specific home. Every AI-generated image carries a visible label saying so.
-            </p>
-            <p className="mt-3">
-              Where a guide describes what a method does, that description reflects documented
-              cleaning chemistry and manufacturer guidance, not a claim that a staff member
-              personally ran a controlled trial. When we do not know something, we say we do not
-              know it.
-            </p>
-          </Section>
-
           <Section title="How a Guide Gets Made">
             <p>
               Before a cleaning guide is published, it goes through this process:
@@ -117,8 +94,8 @@ export default function EditorialPolicyPage() {
                 something works rather than just asserting that it does.
               </li>
               <li>
-                <strong>Drafting</strong>, a first draft is assembled with AI assistance against
-                that research, then rewritten where it is vague, padded, or wrong.
+                <strong>Drafting</strong>, a first draft is written against that research, then
+                rewritten where it is vague, padded, or wrong.
               </li>
               <li>
                 <strong>Surface compatibility check</strong>, we verify against manufacturer and
