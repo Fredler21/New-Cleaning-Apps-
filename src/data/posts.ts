@@ -538,6 +538,8 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "weekend"],
     excerpt: "A bathroom can pass a white glove test and still not feel like a hotel bathroom, because shine is only half of it. The other half is odor control and a handful of edges nobody thinks to wipe, including the toilet base, the door handle, and the underside of the seat hinges. Here are the 15 steps that close that gap, including the one that fixes most bathroom smell.",
     coverImage: "/uploads/15-bathroom-deep-clean-hacks-for-hotel-level-shine.jpg",
+    // See the note on the toilet post: photos go above the method, not below it.
+    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
     photos: [
       {
         src: "/photos/15-bathroom-deep-clean-hacks-for-hotel-level-shine/tub-cleaning.jpg",
@@ -653,6 +655,24 @@ export const posts: Post[] = [
   // PHOTO worth taking: one shot of the entryway drop zone from item 16. It is
   // the only item here with a visible before and after, and nobody else
   // illustrates this topic with anything but stock kitchens.
+  // TODO(original-content) 18-quick-wins-for-busy-mornings
+  //
+  // Removed on rewrite, do not reinstate without a source:
+  //   - "Studies have shown that people who make their beds report feeling
+  //     more productive" and "report lower stress". No study was cited and
+  //     none was checked. If you want a productivity or stress claim here,
+  //     find the actual paper and link it.
+  //   - "makes the bedroom look 80% cleaner". Invented figure.
+  //   - "I spent a month tracking which habits made the biggest difference"
+  //     and the ranking built on it. No such log exists.
+  //
+  // The airing-the-bed point in item 1 is the honest version of the trade-off
+  // (overnight moisture in bedding). If you want to state the dust mite case
+  // outright, that needs a source. Do not assert it from memory.
+  //
+  // PHOTO worth taking: the entryway drop zone in item 16, before and after.
+  // It is the only item here with a visible transformation, and every
+  // competing article on this topic illustrates it with stock kitchens.
   {
     title: "18 Quick Cleaning Tasks You Can Do in 5 Minutes or Less",
     slug: "18-quick-wins-for-busy-mornings",
@@ -660,106 +680,122 @@ export const posts: Post[] = [
     datePublished: "2026-02-16",
     dateUpdated: "2026-08-18",
     category: "deep-clean",
-    readTime: "6 min",
+    readTime: "14 min",
     tags: ["quick wins", "routine", "kitchen"],
     excerpt:
-      "You are already late, the coffee is going cold, and there is a version of you that would love to deal with the counter right now. That version does not have eleven minutes. What follows are tasks that genuinely fit in the gaps of a normal morning, sorted by one rule most morning routines get backwards: do the things you will walk past at six in the evening, not the things that are technically dirtiest.",
+      "You are already late, the coffee is going cold, and there is a version of you that would happily deal with the counter right now. That version does not have eleven minutes. What follows are tasks that genuinely fit in the gaps of a normal morning, each with the reason it works and the mistake that turns it into a longer job. They are sorted by one rule most morning routines get backwards: do the things you will walk past at six in the evening, not the things that are technically dirtiest.",
     coverImage: "/uploads/18-quick-wins-for-busy-mornings.jpg",
     supplies: [
       "Microfiber cloths, one kept in each room you clean",
       "All purpose spray",
       "A small dustpan brush",
-      "Spare bin liners",
+      "Spare bin liners stored next to the bin",
       "A rubber shower squeegee",
       "Your phone timer"
     ],
     steps: [
       {
         title: "Throw the covers back, make the bed on your way out",
-        body: "A bed carries a surprising amount of moisture by morning, and pulling a duvet flat over it traps the damp in the sheets all day. Fold the covers back to the foot of the bed while you shower and dress, then make it in ten seconds on your way out. You get the tidy room either way, and the bedding gets an hour to dry out first."
+        body: "A bed carries a surprising amount of moisture by morning, most of it from you, and pulling a duvet flat over it traps that damp in the sheets for the day. Fold the covers back to the foot of the bed while you shower and dress, then make it in ten seconds on your way out of the room. You get the tidy bedroom either way and the bedding gets an hour of air first. The bed is worth doing because it occupies most of the visual field in a bedroom, so it sets how the whole room reads regardless of what else is out. Where people go wrong is treating it as the first job of the day and then rushing it, which produces a lumpy duvet and a job that feels pointless. Straighten the bottom sheet first, then the duvet, then the pillows, in that order. Fixing the layer underneath after the top layer is down means doing it twice."
       },
       {
         title: "Wipe the bathroom sink while your toothbrush is still in your mouth",
-        body: "Keep a dry microfiber cloth in the vanity. Toothpaste and soap film wipe off with nothing but cloth while they are still soft; once dry, they need spray and pressure. Hit the faucet base and the ring under the soap dispenser, which is where the buildup shows first. Twenty seconds, and it removes the reason you would otherwise scrub this sink fortnightly."
+        body: "Keep a dry microfiber cloth in the vanity where you can reach it without opening anything. Toothpaste spatter and soap film come off with cloth alone while they are still soft, and need spray and real pressure once they have dried and hardened. That is the whole reason this belongs in the morning rather than on a weekend list. Two spots matter more than the basin itself: the base of the faucet, where limescale starts, and the ring under the soap dispenser, which is the first thing a visitor notices. Twenty seconds covers both. The mistake is using the same cloth for a fortnight, which stops lifting anything and starts spreading it around. Fold the cloth in quarters and turn to a fresh face each day, then send it to the wash after four or five uses. If the sink has gone past the dry wipe stage, a spray bottle of diluted white vinegar under the sink handles limescale without scrubbing, but on most mornings the cloth is enough."
       },
       {
         title: "Squeegee the shower walls before you step out",
-        body: "Hard water leaves minerals behind when droplets evaporate, and those deposits are what turn glass and tile cloudy. Dragging a squeegee down the walls and door takes about forty seconds and removes the water before it can dry. This is the single highest-return habit in the bathroom, because the alternative is dissolving scale later with acid and effort."
+        body: "Hard water leaves minerals behind when droplets evaporate, and those deposits are what turn glass cloudy and tile dull. A squeegee removes the water before it can dry, which means there is nothing left to deposit. Drag it top to bottom down the glass and the tiled walls in overlapping passes, roughly forty seconds for a normal enclosure, and finish along the top edge of the tub or tray where water pools. This is the highest return habit in the bathroom because it prevents damage rather than tidying appearances. Everything else on this list makes a room look better; this one stops you needing an acid descaler and half an hour of effort in three months. Keep the squeegee inside the shower on a suction hook, not under the sink. A tool you have to fetch is a tool you will use twice and then abandon."
       },
       {
-        title: "Run the shower fan for fifteen minutes after you finish",
-        body: "The fan matters more when you leave than while you are in there. Humid air needs somewhere to go, and the grout and ceiling are what pay for it if it stays. If your fan has no timer switch, set one on your phone, or just leave the fan on and the door ajar as you head out."
+        title: "Run the extractor fan for fifteen minutes after you finish",
+        body: "The fan does more work after you leave than while you are in there, because that is when the room is at its most humid and nobody is adding steam. Humid air has to go somewhere, and if it does not go outside it goes into the grout, the ceiling paint, and the underside of the window frame, which is where mould starts. If your fan has a timer switch, set it and forget it. If it does not, leave the fan running and the door ajar as you head out, then turn it off when you pass by later. A fan choked with dust moves a fraction of the air it should, so it is worth checking once a season: kill the power at the switch, pinch or unscrew the cover, and vacuum the blades and housing. A quiet fan is usually a clean fan, and a noisy one is often just dust."
       },
       {
         title: "Load the dishwasher instead of stacking the sink",
-        body: "Same number of trips, same handful of seconds, entirely different evening. A stacked sink means every dish gets handled twice and the counter beside it becomes unusable. Breakfast dishes go straight in, dirty, unrinsed. Modern detergent needs food residue to work against, so rinsing first is wasted time."
+        body: "Same number of trips, same handful of seconds, completely different evening. A stacked sink means every dish gets handled twice, and the counter beside it becomes unusable for anything else, which is how one bowl turns into a kitchen you avoid. Breakfast dishes go straight in, dirty. Do not rinse them first. Modern dishwasher detergent contains enzymes that need food residue to work against, so a pre rinsed load can actually come out worse, and it wastes hot water on top. Scrape solids off, leave the rest. The one thing worth doing properly is loading direction: bowls and cups angled down toward the centre spray, nothing shielding anything else, and no tall item blocking the detergent door. A badly stacked load is the reason people conclude their dishwasher is failing when it is really just being asked to spray around a baking tray."
       },
       {
         title: "Wipe the counter in the direction of the sink",
-        body: "One pass with a damp cloth, always pushing crumbs toward the sink rather than in circles. Circling redistributes; a single directional pass collects. Do it while the kettle boils or the toast is down, so it costs no dedicated time at all."
+        body: "One pass with a damp cloth, always pushing crumbs toward the sink rather than working in circles. Circling redistributes crumbs and smears whatever is wet across a wider area; a single directional pass collects and carries. It takes about thirty seconds and it costs no dedicated time at all if you do it while the kettle boils or the toast is down. Start at the back edge where the counter meets the wall or the splashback, because that seam collects more than the open middle and is the bit people wipe last, if at all. Crumbs that end up in the sink go down with the next rinse. Crumbs pushed onto the floor become the gritty patch that item fifteen deals with, so pick a direction and commit to it."
       },
       {
         title: "Deal with the coffee maker while it is still warm",
-        body: "Coffee oils turn sticky and then bitter as they cool and oxidise. A rinse of the basket and carafe while they are warm takes seconds; the same job cold needs soap and scrubbing, and stale oils affect how tomorrow's cup tastes."
+        body: "Coffee oils turn sticky as they cool and go rancid over a few days, which is why a machine that has never been cleaned makes bitter coffee no matter how good the beans are. A rinse of the basket and carafe while they are warm takes seconds and needs nothing but hot water. The same job cold needs soap, a brush, and actual attention. Pay particular attention to the basket and the underside of the lid, where grounds and oil collect out of sight. A weekly extra worth adding: pull the filter holder right out and rinse the seat it sits in. If you use a pod machine, run one cycle of plain water after the last coffee of the morning to clear the needle and the outlet, which is the part that clogs and the reason a pod machine starts producing half cups."
       },
       {
         title: "Wipe one appliance handle a day",
-        body: "Fridge, microwave, oven, dishwasher. Handles collect the greasiest fingerprints in the kitchen and almost never get cleaned on purpose, because they are not surfaces in anyone's mental map. One handle per morning means all four stay clean on a rolling basis and no single day costs you anything."
+        body: "Fridge, microwave, oven, dishwasher. Handles collect the greasiest fingerprints in the kitchen and almost never get cleaned deliberately, because they are not surfaces in anyone's mental map of a room. One handle per morning means all four stay clean on a rolling basis and no single day costs you more than fifteen seconds. On stainless steel, wipe along the grain rather than across it, and follow with a dry corner of the cloth, because water left on steel dries as spots and you will have made it look worse. The fridge handle is the one to prioritise if you only do one, since it gets touched more often than any other surface in the kitchen and usually with hands that have just been holding food."
       },
       {
         title: "Toss what has expired while you are already in the fridge",
-        body: "You open it for milk anyway. Take the one thing you already know is past it and bin it. Fridge clearing is unbearable as a dedicated job and trivial as a by-product of a trip you were making regardless. Wipe the shelf ring underneath while the gap is there."
+        body: "You open it for milk anyway. Take the one thing you already know is past it and bin it, then wipe the ring it left on the shelf while the gap is there. Clearing a fridge is unbearable as a dedicated job and trivial as a by product of a trip you were making regardless, which is the entire trick. The door shelves are worth a specific look, because that is where half used sauces go to be forgotten and where the dates are printed on the back of the bottle. If something has separated, smells sharper than it should, or has a lid that has gone tacky, it has answered the question. One caution: do not pour dairy or oily liquids down the sink as a shortcut, because they contribute to the fat build up that causes slow drains and smells later. Bin them sealed."
       },
       {
-        title: "Take the kitchen bin out when the liner is three-quarters full",
-        body: "Not full. Three-quarters. A crammed bag tears, leaks, and needs the bin washing out, which is a ten minute job instead of a one minute one. Keep spare liners near the bin, not in a cupboard across the room, or you will not swap it."
+        title: "Take the kitchen bin out at three quarters full",
+        body: "Not full. Three quarters. A crammed bag stretches, tears at the seam, and leaks down the inside of the bin, which turns a one minute job into ten with a bucket and a brush. Bags also become impossible to lift out cleanly once they have moulded to the shape of the bin. Keep spare liners in the bottom of the bin itself, underneath the current bag, or taped inside the lid. Liners stored in a cupboard across the room are the single most common reason a bin gets overfilled instead of changed. While the bin is empty, a spray and a wipe of the inside rim takes another twenty seconds and prevents the smell that survives every bag change."
       },
       {
-        title: "Empty the small bins, not the obvious one",
-        body: "Bathroom and bedroom bins get overlooked because they never look urgent, and they are the ones producing the faint smell you have stopped noticing in your own home. Gather them on your way past the kitchen bin so it is one trip rather than three."
+        title: "Empty the small bins, not just the obvious one",
+        body: "Bathroom and bedroom bins get overlooked because they never look urgent, and they are usually the source of the faint smell you have stopped noticing in your own home. Nose blindness is real and it works fastest on the rooms you spend most time in. Gather the small ones on your way past the kitchen bin so it is one trip out rather than three, and do it on the same morning each week so it stops being a decision. Bathroom bins in particular benefit from a liner even when they came without one, since they collect damp waste that soaks into the plastic and stays."
       },
       {
         title: "Start a load of laundry, but only if you will be home to move it",
-        body: "A machine finishing while you are out means damp clothes sitting for nine hours, and that is how a whole load starts smelling musty and needs rewashing. If your day is long, load the drum and leave it ready to start when you get in. A useless win is worse than no win."
+        body: "A machine that finishes while you are out leaves damp clothes sitting in a warm drum for nine hours, which is exactly how a whole load ends up smelling musty and needing rewashing. That is a negative win. If your day is long, load the drum, add the detergent, and leave it ready to start when you walk back in, so the useful part happens at a moment you are actually there. If your machine has a delay timer, set it to finish near your return instead. Two habits stop the machine itself becoming the smell: leave the door and the detergent drawer open after the final load of the day so the seal can dry, and wipe the rubber gasket occasionally, since that fold is where the black marks and the smell live."
       },
       {
-        title: "Hang the towels properly rather than folding them",
-        body: "A folded damp towel dries from the outside in, staying wet in the middle for hours, and that is where the sour smell comes from. Spread it flat over the rail with air on both sides. Same three seconds, and you get several more uses before it needs washing."
+        title: "Hang towels flat instead of folding them",
+        body: "A folded damp towel dries from the outside in and stays wet in the middle for hours, and that trapped damp is where the sour smell comes from. Spread it over the rail with air reaching both faces and it dries in a fraction of the time. Same three seconds, and you get several more uses before it needs washing. If your rail is short, hang the towel so it drapes rather than doubling it over twice. Towels also stop absorbing if fabric softener has built up on the fibres, which is worth knowing before you conclude a towel has worn out. A wash with no softener usually brings it back."
       },
       {
         title: "Straighten the sofa on your way past",
-        body: "Cushions upright, throw folded once, remotes in one spot. This is the surface that decides whether the living room reads as tidy from the doorway, and it takes about fifteen seconds. Nothing here is cleaning, which is exactly why it is efficient."
+        body: "Cushions upright, throw folded once over the arm, remotes in one spot. Fifteen seconds. This is the surface that decides whether the living room reads as tidy from the doorway, and none of it is cleaning, which is exactly why it is so efficient. Pick one home for the remotes and phone chargers and use it every time, because the reason living rooms drift is not dirt but small objects with no assigned place. If you have floor cushions or a pet bed, square those up in the same pass. The eye reads alignment as order, and alignment is free."
       },
       {
         title: "Sweep the two square feet in front of the sink",
-        body: "Skip the room. Crumbs and dropped food concentrate in the strip where you stand to prep and wash, and that patch is what makes a floor feel gritty underfoot. A dustpan brush over that one area does most of what a full sweep does in a tenth of the time."
+        body: "Skip the rest of the room. Crumbs and dropped food concentrate in the strip where you stand to prep and wash up, and that patch is what makes a floor feel gritty underfoot even when it looks clean. A dustpan brush over that one area gets most of the benefit of a full sweep in a tenth of the time. The other spot worth thirty seconds is the toe kick under the cabinets, where crumbs collect out of sight and where a brush reaches easily but a vacuum head usually does not. Keep the dustpan brush in the cabinet under the sink so it is a reach away rather than a trip to a cupboard."
       },
       {
         title: "Reset the entryway drop zone",
-        body: "Shoes lined up, one hook per bag, post in a single tray. The entryway is the first thing you see when you come home tired, and it sets your read on the whole house before you have taken your coat off. It also stops the pile that eventually spreads down the hall."
+        body: "Shoes lined up, one hook per bag, post in a single tray. The entryway is the first thing you see when you come home tired, and it sets your read on the whole house before your coat is off, which is why it earns a place in a five minute routine ahead of rooms that are objectively dirtier. It is also the pile that spreads: an entryway with nowhere to put things starts colonising the hallway, then the stairs. The fix is having a designated spot for the three things that actually accumulate, which for most households is shoes, bags, and paper. A tray for post matters more than it sounds, because loose paper is the item most likely to migrate to the kitchen counter and become a permanent stack."
       },
       {
-        title: "Do one two-minute timed tidy in whichever room bothers you most",
-        body: "Set the timer, pick the room you have been avoiding, and put things away until it goes off. The timer is the whole mechanism: it stops a tidy becoming a reorganisation, which is what usually derails these. Stop when it rings, even mid-shelf."
+        title: "Do one two minute timed tidy in whichever room bothers you most",
+        body: "Set the timer, pick the room you have been avoiding, and put things away until it goes off. The timer is the entire mechanism here. Without it, a tidy becomes a reorganisation, which is how a two minute intention eats forty minutes and makes you late. Stop when it rings even if you are mid shelf. Carry a basket while you do it and collect anything belonging to another room rather than making a trip per object, then distribute on your way out. Working to a timer also tells you something useful over a week: the room that keeps needing the two minutes is the room that is missing a piece of storage, not the room where you are failing to try."
       },
       {
         title: "Wipe the light switches and door handles on your route out",
-        body: "The things hands touch most are the things nobody cleans, and they are invisible until light hits them at an angle. Front door handle, bathroom switch, kitchen door. Three seconds each with whatever cloth is already in your hand."
+        body: "The things hands touch most are the things nobody thinks to clean, and they stay invisible until light hits them at an angle. Front door handle, bathroom switch, kitchen door, fridge handle if you did not get it earlier. Three seconds each with whatever cloth is already in your hand. Use a barely damp cloth rather than a wet one, because water running into a switch plate is a genuine hazard, and never spray cleaner directly at a switch. If you want one target that matters more than the others, make it the handle on the door you use to leave, because it is the last thing touched on the way out and the first on the way in."
+      },
+      {
+        title: "How to pick your three instead of trying all eighteen",
+        body: "Eighteen habits adopted at once is a routine that lasts about four days. The realistic version is three, and the way to choose them is not by what is dirtiest but by what sits on the path from your front door to wherever you collapse in the evening. For most people that means the entryway, the sink, and one surface in the living room. Coming home to those three clear changes how the house feels far more than a clean oven you cannot see. Do only those until they stop feeling like decisions, which usually takes a couple of weeks, then add a fourth. The one exception worth making on principle is the shower squeegee, because it is the only task here that prevents a problem instead of tidying a symptom, and skipping it has a cost that compounds."
+      },
+      {
+        title: "The evening version, which works better for most of this",
+        body: "Almost every task here is easier at night, for two reasons: you are not against a clock, and nothing you do gets undone by breakfast an hour later. The tasks genuinely worth keeping in the morning are the ones welded to something you are already doing, like wiping the sink while brushing or squeegeeing as you leave the shower, because those cost no extra decision. Everything with its own dedicated slot is the first thing to go on a bad week. A useful split is to do the bathroom items in the morning, since you are in there anyway, and the kitchen and living room items after dinner, when the mess of the day has already happened and you can clear it once rather than twice."
+      },
+      {
+        title: "What to skip, and the mistake that runs through all of it",
+        body: "Skip anything that needs equipment fetched from another room, anything that cannot be finished in the time you have, and anything you will not be present to complete, like a wash you cannot hang. Those are not quick wins, they are half started jobs that make the house feel worse. The mistake running through all of these is the same one: treating a five minute task as an invitation to start a bigger one. You wipe the counter, notice the cabinet fronts, and forty minutes later you are late and the kitchen is half dismantled. The rule that fixes it is boring and works. Decide the task before you start, do exactly that, and write anything you notice on a list for the weekend instead of acting on it now."
       }
     ],
     proTips: [
-      "The ordering rule that makes this stick: pick tasks on the path from your front door to wherever you collapse in the evening. Coming home to a clear entryway, a straight sofa and an empty sink changes how the house feels far more than a clean oven you cannot see.",
-      "Keep a cloth in every room you want cleaned. Almost every abandoned morning routine dies at the point where the task requires walking somewhere to fetch something.",
-      "If you only ever manage one of these, make it the squeegee. It is the only item on the list that prevents damage rather than tidying appearances, since dried mineral deposits get harder to remove the longer they sit."
+      "Keep a cloth in every room you want cleaned. Nearly every abandoned routine dies at the point where the task requires walking somewhere to fetch something first.",
+      "Weld each habit to something you already do rather than to a time of day. Wiping the sink while brushing your teeth survives a bad week; a task with its own slot in the morning does not.",
+      "If you only ever manage one of these, make it the squeegee. It is the only item on the list that prevents damage rather than tidying appearances, since dried mineral deposits get harder to remove the longer they sit.",
+      "Write down anything you notice mid task instead of doing it. Noticing the cabinet fronts while wiping the counter is how a two minute job becomes a lost hour and a late start."
     ],
     safetyNotes: [
-      "Keep one cloth for the bathroom and a different one for the kitchen, and do not let them mix in the wash basket. Cross-contaminating those two rooms is the one genuine hygiene risk in a routine this small.",
-      "Squeegee from outside the shower or once you are dry and standing on a mat. A wet tub floor and a rushed morning is how people fall."
+      "Keep one cloth for the bathroom and a different one for the kitchen, and do not let them share a wash basket. Cross-contaminating those two rooms is the one real hygiene risk in a routine this small.",
+      "Squeegee from outside the shower, or once you are dry and standing on a mat. A wet tub floor and a rushed morning is how people fall.",
+      "Use a barely damp cloth on light switches and never spray cleaner at one. Liquid running into a switch plate is a genuine electrical hazard.",
+      "Do not pour dairy, cooking oil, or fat down the kitchen sink when clearing the fridge. It contributes directly to the blockages and drain smells you will be dealing with later."
     ],
     faqs: [
-      { question: "Is it better to clean in the morning or at night?", answer: "Night wins on most tasks, because you are not against a clock and nothing you do gets undone by breakfast. The morning items worth keeping are the ones tied to something you are already doing: wiping the sink while brushing, squeegeeing as you leave the shower, loading the dishwasher during breakfast. Anything that needs its own dedicated slot in the morning tends to be the first thing dropped on a bad week." },
-      { question: "How many of these should I actually try to do?", answer: "Three, chosen for where you will see them later. Eighteen habits adopted at once is a routine that lasts about four days. The realistic version is picking the three tasks on your path from the front door to the sofa, doing only those until they stop feeling like decisions, then adding one more. A short routine you keep beats a complete one you abandon." },
-      { question: "Does making the bed really make that much difference?", answer: "To how the room looks, yes, because the bed is most of the visual field. Whether it changes anything about your day is a claim you see everywhere without much behind it. The practical case for waiting is simpler: bedding holds overnight moisture, and pulling a duvet flat over it traps that in for the day. Air the bed while you shower and make it on the way out, and you get the tidy room without sealing the damp in." }
+      { question: "Is it better to clean in the morning or at night?", answer: "Night wins on most tasks, because you are not against a clock and nothing you do gets undone by breakfast. The morning items worth keeping are the ones tied to something you are already doing: wiping the sink while brushing, squeegeeing as you leave the shower, loading the dishwasher during breakfast. Anything that needs its own dedicated slot in the morning tends to be the first thing dropped on a busy week. A practical split is bathroom tasks in the morning, since you are in there anyway, and kitchen and living room tasks after dinner." },
+      { question: "How many of these should I actually try to do?", answer: "Three, chosen for where you will see them later rather than for what is dirtiest. Eighteen habits adopted at once is a routine that lasts about four days. Pick the three tasks on your path from the front door to the sofa, do only those until they stop feeling like decisions, then add a fourth. A short routine you keep beats a complete one you abandon in a fortnight." },
+      { question: "Does making the bed really make that much difference?", answer: "To how the room looks, yes, because the bed is most of the visual field. Whether it changes anything about your day is a claim you see repeated everywhere without much behind it. The practical case for waiting is simpler: bedding holds overnight moisture, and pulling a duvet flat over it traps that in for the day. Air the bed while you shower and make it on the way out, and you get the tidy room without sealing the damp in." },
+      { question: "Why does my bathroom still smell even though it looks clean?", answer: "Usually one of three things, none of them the surfaces you can see. A small bin holding damp waste, a towel that has been drying folded, or a drain. Nose blindness makes all three easy to miss in your own home, so the useful test is to ask someone who does not live there. Emptying the bin, hanging towels flat with air on both sides, and running the extractor fan for fifteen minutes after showers deals with the large majority of it." }
     ]
   },
   {
@@ -1374,6 +1410,10 @@ export const posts: Post[] = [
     excerpt:
       "My apartment toilet had a rust-brown mineral ring nearly half an inch thick and no prior cleaning had touched it. Here's what actually worked on severe established buildup and the cheap weekly habit that prevents any ring from forming in the first place.",
     coverImage: "/uploads/remove-hard-water-stains-from-toilet.jpg",
+    // Photos sit straight after the supplies list rather than below the steps.
+    // The before shot is the reason someone is reading this, so it belongs
+    // above the method rather than arriving as a reward at the bottom.
+    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
     photos: [
       {
         src: "/photos/remove-hard-water-stains-from-toilet/toilet-cleaning.jpg",
@@ -3704,6 +3744,32 @@ export const posts: Post[] = [
   // allows first-person claims, so a real session logged there (how long the
   // sort took, how many bags left the house, which zone ate the most time, one
   // item that was genuinely hard to call) is what earns the "I" back.
+  // TODO(original-content) how-to-declutter-your-room
+  //
+  // Removed on rewrite, do not reinstate: "I have decluttered the same bedroom
+  // four times over the last eight years", "the room stayed visibly clear for
+  // fourteen months", "in my own home", plus the invented figures "about
+  // ninety percent of items in the Decide Later box never get opened" and
+  // "thirty to fifty percent of a typical bedroom". None of it was recorded
+  // anywhere. The whole "what worked best across multiple declutter attempts"
+  // section went with them, since it existed only to assert the testing.
+  //
+  // PHOTOS worth taking: doorway shot before anything moves, then the same
+  // doorway, same spot on the floor, same time of day, after. Matching the
+  // angle and the light is the point. A brighter "after" shot at noon proves
+  // nothing except that it was noon. Then:
+  //   node scripts/import-photos.mjs --slug=how-to-declutter-your-room \
+  //     --pair <before.jpg> <after.jpg>
+  //
+  // FIELD NOTES are the other half: fieldNotes[] is the only place this site
+  // allows first-person claims, so a real session logged there (how long the
+  // sort took, how many bags left the house, which zone ate the most time, one
+  // item that was genuinely hard to call) is what earns the "I" back.
+  //
+  // Two claims in here would be stronger with a source, and neither is stated
+  // as research on purpose. Check before upgrading the language:
+  //   1. Bedding holding overnight moisture (item 1 of the airing argument).
+  //   2. Charity shops binning textiles that arrive damp or stained.
   {
     title: "How to Declutter Your Room in One Afternoon (Without Burning Out)",
     slug: "how-to-declutter-your-room",
@@ -3711,75 +3777,126 @@ export const posts: Post[] = [
     datePublished: "2026-05-11",
     dateUpdated: "2026-08-18",
     category: "deep-clean",
-    readTime: "6 min",
+    readTime: "14 min",
     tags: ["declutter", "deep clean", "organization", "routine"],
     excerpt:
-      "There is a chair in the room, and it has not been a chair in months. It is where clean laundry goes to wait. The nightstand has three water glasses on it, the closet holds clothes in two sizes you no longer wear, and every time you think about fixing it the job feels too big to start on a Saturday. It is not too big. A bedroom is mostly one afternoon of sorting plus one habit afterward. Here is the order to work in and the step most people skip, which is the one that decides whether the room stays clear.",
+      "There is a chair in the room, and it has not been a chair in months. It is where clean laundry goes to wait. The nightstand has three water glasses on it, the closet holds clothes in two sizes you no longer wear, and every time you think about fixing it the job feels too big to start on a Saturday. It is not too big. A bedroom is mostly one afternoon of sorting plus one habit afterward. What follows is the order to work in, the decision rules that stop you stalling on individual objects, the four categories that eat the most time, and the step most people skip, which is the one that decides whether the room stays clear.",
     coverImage: "/uploads/how-to-declutter-your-room.jpg",
     supplies: [
       "Four laundry baskets or cardboard boxes",
       "A few 13 gallon trash bags",
       "One box you can seal and label",
+      "A marker and sticky notes",
       "Damp microfiber cloth and all purpose cleaner",
       "Vacuum or broom",
-      "Marker and sticky notes"
+      "A shredder or scissors for paper with account numbers on it",
+      "Two shoeboxes, if you have drawers that need dividing"
     ],
     steps: [
       {
         title: "Photograph the room from the doorway, then judge the photo instead of the room",
-        body: "Before you move anything, stand in the doorway and take one wide phone photo. Not just for the comparison later, though that helps. It is a diagnostic. Your eyes stop registering mess you walk past daily, so a room you live in reads as normal even when it is not. A photo flattens the space to two dimensions and strips out that familiarity, and the piles jump out in a way they do not in person. Look at the photo and you will spot the three or four spots doing most of the damage. Usually they are horizontal surfaces: the chair, the nightstand, the dresser top, the floor along one wall. Those are your priorities, and they are often not the ones you would have picked."
+        body: "Before you move anything, stand in the doorway and take one wide phone photo. Not just for the comparison later, though that helps. It works as a diagnostic. Your eyes stop registering mess you walk past every day, so a room you live in reads as normal even when it is not. A photo flattens the space to two dimensions and strips out that familiarity, and the piles jump out in a way they do not in person. Look at the photo and you will spot the three or four spots doing most of the damage. Usually they are horizontal surfaces: the chair, the nightstand, the dresser top, the floor along one wall. Those are your priorities, and they are often not the ones you would have picked standing in the room. Take a second photo from the opposite corner if the room is long or L shaped, because one angle tends to hide whatever is behind the door."
       },
       {
         title: "Four baskets, no Maybe pile, and one box you can seal",
-        body: "Label four containers Keep, Donate, Trash, and Relocate. Relocate is for things that belong in the house but not in this room, which is most of what collects in a bedroom. The fifth container is different: seal it, write the date on the side, and use it only for items you truly cannot call. If you have not gone looking for anything in it after a month, donate it unopened. The important part is that there is no Maybe basket in the room. A Maybe pile is your original clutter with a label on it, and it tends to end up back on the dresser. If the floor has no clear space, strip the bed and sort on the mattress. You have to remake it anyway."
+        body: "Label four containers Keep, Donate, Trash, and Relocate. Relocate is for things that belong in the house but not in this room, which is most of what collects in a bedroom: mugs, tools, mail, a phone charger that lives in the kitchen. The fifth container is different. Seal it, write the date on the side, and use it only for items you genuinely cannot call. If you have not gone looking for anything in it after a month, donate it unopened. The important part is that there is no Maybe basket sitting in the room. A Maybe pile is your original clutter with a label on it, and it tends to end up back on the dresser by the weekend. Baskets beat bags for this because you can see into them, and seeing the Donate basket fill up is a large part of what keeps the session moving. If the floor has no clear space, strip the bed and sort on the mattress. You have to remake it anyway."
       },
       {
         title: "Set a 90 minute timer and stop when it rings",
-        body: "Sorting is a long run of small decisions, and decision-making gets sloppy before your body gets tired. Past the hour-and-a-half mark most people start doing one of two things: keeping everything because deciding is exhausting, or dumping things they will miss. Both turn a declutter into a regret. The timer also makes it easier to begin, since you are agreeing to 90 minutes rather than an open-ended afternoon. If the room has been ignored for years, plan two sessions on back-to-back days instead of one long push. Stopping with the closet untouched is a normal outcome, not a failure. Put on a podcast while you work, too. Quiet makes every decision feel heavier."
+        body: "Sorting is a long run of small decisions, and decision making gets sloppy well before your body gets tired. Somewhere past the hour and a half mark most people start doing one of two things: keeping everything because deciding has become exhausting, or dumping things they will later miss. Both turn a declutter into a regret. The timer also makes it much easier to begin, because you are agreeing to 90 minutes rather than to an open ended afternoon that might swallow the whole day. If the room has been accumulating for years, plan two sessions on back to back days instead of one long push. Stopping at the timer with the closet untouched is a normal outcome, not a failure. Put on a podcast or an album while you work. Quiet makes every decision feel heavier than it is, and an audio anchor keeps your hands moving through the stretch where objects start triggering memories."
       },
       {
         title: "Work surfaces first, drawers second, closet last",
-        body: "Order does a lot of the work. Flat surfaces are what make a room read as cluttered, so clearing them buys the biggest visible change for the least effort, and that visible change is what keeps you moving. Clear the nightstand, dresser top, desk, and chair, dropping every item straight into a basket. Do not walk anything to its home yet. Then drawers, one at a time, dumped out completely so you are sorting a pile instead of picking through a full drawer. Closet last, always. Clothing carries more second-guessing per item than anything else in the room, so opening it in the first 20 minutes spends your sharpest decisions on the hardest category. An hour of sorting first makes you noticeably faster at it."
+        body: "Order does a lot of the work here. Flat surfaces are what make a room read as cluttered, so clearing them buys the biggest visible change for the least effort, and that visible change is what keeps you going when the interesting part is over. Clear the nightstand, the dresser top, the desk, and the chair, dropping every item straight into a basket. Do not walk anything to its home yet. Then drawers, one at a time, dumped out completely so you are sorting a pile rather than picking through a full drawer. Emptying the drawer matters more than it sounds: things at the back of a full drawer are invisible, and invisible items never get decided on. Closet last, always. Clothing carries more second guessing per item than anything else in the room, so opening it in the first 20 minutes spends your sharpest decisions on the hardest category. An hour of sorting first makes you noticeably faster at it."
       },
       {
         title: "Decide in about three seconds",
-        body: "Pick something up, name a basket, move on. Three seconds is not a magic number. The point is that your first read on an object is usually right, and the time after that mostly goes into building a case for keeping something you do not want. Most of what sits in a cluttered bedroom is not a hard call: dead pens, cords for devices you no longer own, a shirt you stopped liking two years ago. The genuinely hard items are a small share of the total, and those go in the sealed box so they stop blocking the other two hundred decisions. Never set an undecided item back down where it was. Out of your hand and undecided means it goes in the box."
+        body: "Pick something up, name a basket, move on. Three seconds is not a magic number. The point is that your first read on an object is usually right, and the time after that mostly goes into building a case for keeping something you do not actually want. Most of what sits in a cluttered bedroom is not a hard call: dead pens, cords for devices you no longer own, a shirt you stopped liking two years ago, a water glass from last week. The genuinely difficult items are a small share of the total, and those go in the sealed box so they stop blocking the other two hundred decisions. Never set an undecided item back down where it was. Out of your hand and undecided means it goes in the box. If you notice yourself narrating a justification out loud, that is the tell that the item is going in the box rather than back on the shelf."
       },
       {
-        title: "The twelve-month rule for clothes, the duplicate count for everything else",
-        body: "Start with anything unworn in the last twelve months. Seasonal pieces are exempt, but only if you truly wear them every winter or summer. A dress worn once for a wedding five years ago is not seasonal, it is a keepsake, and it should be stored with keepsakes instead of taking prime hanging space. Unsure what you actually wear? Turn every hanger backward today and rehang forward after each wear. Whatever is still backward in six months has answered the question. For non-clothing, count duplicates: three opened lip balms, five phone chargers, a drawer of hotel pens. Keep the best one or two. Duplicates are the easiest volume you will ever remove, because nobody is sentimental about the fourth one."
+        title: "Clothes: the twelve month rule and the backward hanger",
+        body: "Start with anything unworn in the last twelve months. Seasonal pieces are exempt, but only if you truly wear them every winter or summer. A dress worn once for a wedding five years ago is not seasonal, it is a keepsake, and it belongs stored with keepsakes instead of taking prime hanging space. Two categories deserve their own decision. Aspirational sizes, in either direction, are the single biggest source of closet volume in most rooms, and keeping them is a bet that costs you space every day until it pays off. Store them somewhere other than the daily closet if you cannot let them go yet. Then there are the items that are fine but never chosen, which usually means something specific is wrong: it itches, it needs ironing, the neckline sits oddly. Name the reason and the decision gets easy. If you are unsure what you actually wear, turn every hanger backward today and rehang forward after each wear. Whatever is still backward in six months has answered the question."
+      },
+      {
+        title: "Count duplicates, then keep the best one",
+        body: "For everything that is not clothing, count duplicates. Three opened lip balms, five phone chargers, a drawer of hotel pens, four pairs of nail scissors that all live in different rooms. Keep the best one or two and clear the rest. Duplicates are the easiest volume you will ever remove, because nobody is sentimental about the fourth one, and the count itself does the arguing for you. The exception worth making is anything where having a spare in a second location genuinely saves you time, like a phone charger by the bed and another at the desk. That is a system, not a duplicate. What is not a system is six chargers in a drawer for two devices."
+      },
+      {
+        title: "Paper is where the afternoon usually dies",
+        body: "Paper deserves its own pass because it is the one category that cannot be sorted at three seconds an item, and trying to do it inside the main sweep is what turns a 90 minute session into a whole weekend. Do not read anything during the sort. Every piece of paper goes into one box, unsorted, and that box gets its own separate half hour on a different day. When you do sit down with it, three piles: shred, file, act. Anything with an account number, a full date of birth, or a signature goes to shred rather than the recycling. Keep tax paperwork and anything supporting a tax return for as long as your country requires, which is longer than most people assume, so check rather than guess. Receipts for anything under warranty stay until the warranty expires. Almost everything else, and this is the large majority of a paper pile, is a statement or a notice that exists online already and can go. Manuals for appliances you still own are the classic thing people keep and the classic thing that is a PDF search away."
+      },
+      {
+        title: "Sentimental items: photograph, then decide",
+        body: "Sentimental objects are not a decluttering problem, they are a grief and memory problem wearing a decluttering costume, which is why the three second rule does not apply to them and why forcing it makes people either keep everything or throw out something they mourn. Give them a different rule. Photograph the object, then decide. A photo keeps the memory available without the object taking up shelf space for the next decade, and for a surprising number of things that is genuinely enough. What the photo does not solve is the item you can still smell or hold, which is a different kind of keeping, and those deserve to stay. The practical move is to cap the volume rather than judge each piece: one box, a real box with a lid, and the rule is that the box has to close. Sorting inside a fixed container turns an impossible emotional decision into a comparison between two specific things, which is a decision people can actually make."
+      },
+      {
+        title: "Gifts you do not like, and the guilt attached to them",
+        body: "Separate the object from the gesture. A gift did its job at the moment it was given, and keeping it in a drawer adds nothing to that transaction. Nobody who gave you something wanted it to become a low grade obligation sitting in your room for years. If guilt is the only reason it is still there, photograph it and donate it. If the giver visits often and would notice its absence, either box it with the keepsakes or accept the small awkwardness once rather than the storage cost forever. Items inherited after a death are a genuinely different case. Do not sort those in the same session as the dead pens and the hotel pens, and do not sort them under a timer. That work is tiring in a way unrelated to the lifting, and fatigue pushes people toward both keeping too much and letting go of things they later want back."
+      },
+      {
+        title: "The two dead zones: under the bed and the top shelf",
+        body: "Every bedroom has two places where things go to be forgotten, and both need pulling out rather than glancing at. Under the bed is where seasonal items, luggage, and whatever got shoved out of sight before guests arrived all end up, and because you never see it, you have no memory of what is down there. Pull all of it out onto the floor at once. Anything you cannot name before you look at it is a strong donate candidate. The top shelf of the closet is the same problem at eye level plus a step stool: it holds the boxes that came with electronics, gift bags saved for reuse, and at least one thing that belongs to someone who moved out. Both zones are worth doing precisely because clearing them adds usable storage back to the room, which is what makes the remaining keep pile fit without buying anything."
+      },
+      {
+        title: "Cables, chargers, and the electronics drawer",
+        body: "Cables are their own species of clutter because they are individually plausible and collectively absurd. Lay them all out on the bed and match each one to a device you currently own and use. Anything you cannot match goes, and that will be most of them. Old phones are worth separating out rather than binning: they hold accounts and photos, so wipe them before they leave the house, and take them to electronics recycling rather than the kerbside bin, since batteries do not belong in household waste. The genuinely useful keeps are one spare charging cable per connector type you actually own, and that is it. For the ones you keep, a cut down shoebox in the drawer stops them knitting themselves back into a ball within a fortnight."
+      },
+      {
+        title: "Cosmetics and toiletries have expiry dates you have never looked at",
+        body: "This category clears faster than any other once you know what to look for, because a lot of it is simply past it. Mascara is the shortest lived thing in most bedrooms and is worth replacing on schedule for eye safety rather than performance. Sunscreen has a printed expiry and stops protecting properly past it, which matters more than the shelf space. Anything that has separated, changed colour, gone gritty, or smells different from when you bought it is finished regardless of the date on the box. Most products carry a small open jar symbol with a number in it, which is the months of use after opening, and it is the number people never read. Half used bottles of something you did not like are the other easy win here. You are not going to start liking it.",
       },
       {
         title: "Do not buy storage bins yet, and maybe not at all",
-        body: "The instinct afterward is to order drawer organizers and matching bins. Buy them now and you will size them to the volume you currently own, which quietly commits you to keeping all of it. Containers do not reduce clutter; they make the same amount of stuff look deliberate, which is why an organized closet can still be a completely full one. Sort first, live with what remains for a week or two, then buy for that volume, if anything. For drawers, cardboard usually does the job free. Cut shoeboxes down to about half an inch shorter than the drawer is deep and set them in as dividers for socks, cables, or cosmetics. Not pretty, but they are inside a closed drawer, and they cost nothing while you find out whether the layout works."
+        body: "The instinct afterward is to order drawer organizers and matching bins. Buy them now and you will size them to the volume you currently own, which quietly commits you to keeping all of it. Containers do not reduce clutter. They make the same amount of stuff look deliberate, which is why an organized closet can still be a completely full one, and why buying storage before sorting is the most common way a declutter turns into a shopping trip that changes nothing. Sort first, live with what remains for a week or two, then buy for that volume if anything is still needed. For drawers, cardboard usually does the job free. Cut shoeboxes down to roughly half an inch shorter than the drawer is deep and set them in as dividers for socks, cables, or cosmetics. Not pretty, but they sit inside a closed drawer, and they cost nothing while you find out whether the layout actually works."
+      },
+      {
+        title: "Where the donate pile actually goes",
+        body: "Assuming a charity shop will take everything is how a donate bag becomes landfill with extra steps. Textiles that arrive damp, stained, or torn generally cannot be sold and cost the shop money to dispose of, so wash what you are donating and be honest about anything damaged. Most shops cannot take opened toiletries, used pillows and duvets, car seats, or old electrical goods without testing, and rules vary by area, so a two minute look at their website saves a wasted trip. Things that genuinely are worn out have better routes: textile recycling banks take fabric that is past wearing, and many larger clothing retailers run take back bins. Selling is worth it for a small number of categories, mainly current electronics, brand name items in good condition, and furniture, and it is not worth it for ordinary clothes, where the listing time exceeds the return. If you do not have a car, the local collection services that pick up bagged donations from your door solve the biggest single reason donate bags never leave the house."
       },
       {
         title: "Get the boxes out of the house the same day",
-        body: "This is the step that decides whether the afternoon holds. Trash goes to the outdoor bin before dinner. Donations go in the car trunk, not the garage and not beside the front door, with a phone reminder to drop them within three days. A bag that sleeps indoors tends to get opened, and things drift back within a day or two. Walk the Relocate basket through the house instead of parking it in the hallway. Keep is the only basket that returns to the room, and only after the surfaces are clean. That sequence matters: choosing a spot for each thing turns a fair number of Keep items into donations, because keeping something in the abstract is easy and finding it a home is not."
+        body: "This is the step that decides whether the afternoon holds. Trash goes to the outdoor bin before dinner. Donations go in the car trunk, not the garage and not beside the front door, with a phone reminder to drop them within three days. A bag that sleeps indoors tends to get opened, and things drift back within a day or two. Walk the Relocate basket through the house instead of parking it in the hallway, and resist the temptation to start tidying the rooms you pass through, which is a well worn way to lose an hour and finish neither room. Keep is the only basket that returns to the room, and only after the surfaces are clean. That sequence matters: choosing a spot for each thing turns a fair number of Keep items into donations, because keeping something in the abstract is easy and finding it a home is not."
       },
       {
-        title: "Clean the bare surfaces, then put back three things or fewer",
-        body: "An empty room is the only time you can clean one properly. Wipe the dresser top and nightstand, run a damp cloth through the empty drawers, pull the bed out and vacuum under it, and get the baseboards that have been behind a pile since spring. Door handles, light switches, and the top edge of the door frame hold more dust than people expect. Twenty minutes covers an average bedroom. Then put things back sparingly, three items or fewer per surface. A nightstand with a lamp, a book, and a glass reads as calm; the same nightstand with eight tidy items reads as cluttered even though nothing is out of place. Everything else goes in a drawer."
+        title: "Clean the bare surfaces while you have the chance",
+        body: "An empty room is the only time you can clean one properly. Wipe the dresser top and nightstand, run a damp cloth through the empty drawers, pull the bed out and vacuum under it, and get the baseboards that have been behind a pile since spring. Door handles, light switches, and the top edge of the door frame hold more dust than people expect. Twenty minutes covers an average bedroom. If the mattress has not been touched in six months, this is the moment for it, since it is already stripped and pulled away from the wall. The reason this step is worth the extra twenty minutes is motivational rather than hygienic: a cleared room that is still dingy does not feel new, and a room that does not feel new is a room you stop maintaining within the month."
+      },
+      {
+        title: "Put back three things or fewer per surface",
+        body: "When things go back, go sparingly: three items or fewer per surface. A nightstand with a lamp, a book, and a glass reads as calm. The same nightstand with eight tidy items reads as cluttered even though nothing is out of place, because the eye counts objects rather than assessing tidiness. Everything else goes in a drawer. Give the things you use daily the easiest spot to reach, and put anything used weekly or less somewhere slightly inconvenient, because convenience is a finite resource and spending it on rarely used objects is how surfaces refill. This styling pass is the cheapest visual upgrade in the room and it takes about five minutes."
       },
       {
         title: "One in, one out, plus five minutes a night",
-        body: "A room refills gradually, a few purchases at a time, which is exactly why it sneaks up on you. One rule covers it: for every new item that comes in, one leaves. New shirt, old shirt goes. This is not about owning less on principle, it is about holding the total steady so you never need another 90 minute session. Then a five minute reset before bed. Set a timer, put back whatever landed on a flat surface that day, throw out the trash, stop when it rings. Anything bigger goes on a weekend list rather than turning the nightly reset into a chore you start skipping."
+        body: "A room refills gradually, a few purchases at a time, which is exactly why it sneaks up on you. One rule covers it: for every new item that comes in, one leaves. New shirt, old shirt goes. This is not about owning less on principle, it is about holding the total steady so you never need another 90 minute session. Then a five minute reset before bed. Set a timer, put back whatever landed on a flat surface that day, throw out the trash, stop when it rings. Anything bigger goes on a weekend list rather than turning the nightly reset into a chore you start skipping. The reset works because it runs daily, not because it is thorough, so protect the five minute limit even on the nights when the room could use twenty."
+      },
+      {
+        title: "When the room is not only yours",
+        body: "Sorting someone else's belongings is the fastest way to turn a good afternoon into an argument, and it does not matter how obvious you find it that the item should go. If the room is shared, sort only what is yours and put their things in a basket for them to handle. The same applies to a child's room: doing it for them while they are out produces a tidy room and a child who trusts you slightly less with their possessions. Sorting alongside them takes longer and holds better, and giving them a fixed container to fill rather than asking them to name things to lose turns it into a game with an achievable end. For a partner, the honest version is to declutter your own share first. A visibly clearer half of the room does more to prompt someone than any conversation about it will."
+      },
+      {
+        title: "If you keep stalling, shrink the unit of work",
+        body: "Some rooms do not respond to the 90 minute plan, and that is usually a sign the unit of work is too big rather than a sign of a character flaw. Shrink it. One drawer. One shelf. The top of the nightstand and nothing else. A single ten minute session that finishes is worth more than a planned afternoon that never starts, and it gives you a real sense of your own sorting pace, which makes the bigger session much less daunting to schedule. Two adjustments help when starting is the hard part: work with someone else in the room, even if they are doing their own task, and start with the trash bag only. Walking the room and binning nothing but actual rubbish is a decision free pass that visibly changes the space and gets you moving. If a specific pile has defeated you more than twice, it is usually not the pile. It is that the pile has no destination, so decide where those things go before touching them again."
       }
     ],
     proTips: [
-      "Write the date on the sealed box and set a calendar reminder for 30 days out. Without the reminder it quietly becomes permanent storage, which defeats the point.",
-      "If the room is shared, sort only what belongs to you and leave the rest in a basket for the other person. Deciding on someone else's things is the fastest way to turn a good afternoon into an argument.",
-      "If 90 minutes feels impossible, do one drawer as a test run. It gives you a real sense of your own sorting pace, which makes scheduling the full session much less daunting."
+      "Write the date on the sealed box and set a calendar reminder for 30 days out. Without the reminder it quietly becomes permanent storage, which defeats the point of having it.",
+      "Sort paper on a different day from everything else. It is the one category that cannot be done at speed, and mixing it into the main sweep is the most common reason a single afternoon turns into a lost weekend.",
+      "Check what your local charity shop actually accepts before you load the car. Opened toiletries, used bedding and untested electricals are refused almost everywhere, and a rejected bag usually ends up back in the house.",
+      "If 90 minutes feels impossible, do one drawer as a test run. It tells you your real sorting pace, and a finished small session beats a planned large one every time."
     ],
     safetyNotes: [
       "Wear closed shoes rather than slippers or bare feet. The back of a closet and the space under a bed tend to hold broken glass, pins, and staples that have been out of sight for months.",
       "Lift storage bins with bent knees and a straight back. Boxes that have sat for years are often heavier than they look, especially anything holding books or paper.",
-      "If you are sorting a relative's belongings, take breaks on a schedule rather than when you feel you need one. That work is tiring in a way unrelated to the lifting, and fatigue pushes people toward both keeping too much and letting go of things they later want back."
+      "Wipe or shred anything carrying an account number, a full date of birth, or a signature rather than putting it in the recycling. Kerbside recycling is not a secure disposal route.",
+      "Wipe old phones and tablets before they leave the house, and take them to electronics recycling rather than the household bin. Lithium batteries are a fire risk in waste trucks.",
+      "If you are sorting a relative's belongings after a death, take breaks on a schedule rather than when you feel you need one, and do it on a separate day from the ordinary clutter."
     ],
     faqs: [
-      { question: "How long does decluttering a bedroom actually take?", answer: "One 90 minute session handles a typical bedroom if you sort surfaces and drawers and leave the closet for a second sitting. A room that has been accumulating for years is realistically two sessions plus about 20 minutes of cleaning once the surfaces are bare. The sorting itself is faster than most people expect. What eats the time is walking items to their homes mid-session, which is exactly what the four basket system prevents." },
+      { question: "How long does decluttering a bedroom actually take?", answer: "One 90 minute session handles a typical bedroom if you sort surfaces and drawers and leave the closet for a second sitting. A room that has been accumulating for years is realistically two sessions plus about 20 minutes of cleaning once the surfaces are bare, and paper needs its own separate half hour on another day. The sorting itself is faster than most people expect. What eats the time is walking items to their homes mid session, reading paper as you find it, and starting on the rooms you pass through while carrying the Relocate basket." },
       { question: "What do I do with gifts I do not like but feel guilty throwing out?", answer: "Separate the object from the gesture. The gift did its job when it was given, and keeping it in a drawer adds nothing to that. If guilt is the only reason it is still in the room, photograph it and donate it. If the giver visits often and would notice, box it with keepsakes instead of letting it take up daily space. Guilt items are the clearest case for the sealed box, since a month of not missing something settles the question better than standing there arguing with yourself." },
-      { question: "Should I declutter or clean first?", answer: "Declutter first, every time. Cleaning around piles mostly relocates dust and leaves the room looking about the same, which is discouraging enough that people quit. Sort and remove, wipe the surfaces while they are empty, then put back what you are keeping. It is also the only realistic way to reach the spots that matter, like the floor under the bed and the baseboards behind whatever has been leaning against the wall." }
+      { question: "Should I declutter or clean first?", answer: "Declutter first, every time. Cleaning around piles mostly relocates dust and leaves the room looking about the same, which is discouraging enough that people quit. Sort and remove, wipe the surfaces while they are empty, then put back what you are keeping. It is also the only realistic way to reach the spots that matter, like the floor under the bed and the baseboards behind whatever has been leaning against the wall." },
+      { question: "How do I declutter when the room feels too overwhelming to start?", answer: "Shrink the unit of work until it is boring. One drawer, one shelf, or a single pass with a bin bag collecting nothing but actual rubbish, which requires no decisions at all and still visibly changes the room. Having someone else in the room helps even if they are doing something unrelated. If one particular pile has defeated you repeatedly, the problem is usually that those things have no agreed destination, so decide where they go before you touch the pile again." },
+      { question: "Is it worth selling things instead of donating them?", answer: "For a few categories, yes: current electronics, brand name items in good condition, and furniture are usually worth listing. For ordinary clothes and household bits it rarely is, because the photographing, listing, messaging and posting time is worth more than the return, and the unsold items sit in the room for months waiting. A useful compromise is to give yourself a fixed window, list only the genuinely valuable items, and donate everything still unsold when the window closes." }
     ]
   },
   {
