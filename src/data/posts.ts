@@ -540,19 +540,10 @@ export const posts: Post[] = [
     coverImage: "/uploads/15-bathroom-deep-clean-hacks-for-hotel-level-shine.jpg",
     photos: [
       {
-        src: "/photos/15-bathroom-deep-clean-hacks-for-hotel-level-shine/before.jpg",
-        alt: "Bathtub with a dull grey film of soap scum and hard-water residue across the base and sloping sides.",
+        src: "/photos/15-bathroom-deep-clean-hacks-for-hotel-level-shine/tub-cleaning.jpg",
+        alt: "Side-by-side before and after of the same bathtub: a dull grey film of soap scum across the base on the left, bright white acrylic on the right.",
         caption:
-          "Soap scum and hard-water film across a tub floor. The tell is that it reads as a surface gone dull rather than as something sitting on top of the acrylic, which is why so many people write the tub off as worn out.",
-        pair: "before",
-        takenOn: "2026-08-18",
-      },
-      {
-        src: "/photos/15-bathroom-deep-clean-hacks-for-hotel-level-shine/after.jpg",
-        alt: "The same bathtub after cleaning, bright white with the soap-scum film removed.",
-        caption:
-          "Same tub, same corner shelf, nothing moved between the two shots. The dullness was a layer, not damage to the acrylic.",
-        pair: "after",
+          "Same tub, same corner shelf, nothing moved between the two shots. That dull film was a layer sitting on the acrylic, not a surface worn out.",
         takenOn: "2026-08-18",
       },
     ],
@@ -1385,19 +1376,10 @@ export const posts: Post[] = [
     coverImage: "/uploads/remove-hard-water-stains-from-toilet.jpg",
     photos: [
       {
-        src: "/photos/remove-hard-water-stains-from-toilet/before.jpg",
-        alt: "Toilet bowl with heavy orange-brown mineral staining, darkest in a ring at the waterline with streaks running down toward the drain.",
+        src: "/photos/remove-hard-water-stains-from-toilet/toilet-cleaning.jpg",
+        alt: "Side-by-side before and after of the same toilet bowl: heavy orange-brown mineral staining ringing the waterline on the left, clean white porcelain and clear water on the right.",
         caption:
-          "The staining runs in bands, and the bands show where the water sat: a dense ring at the waterline, streaking below it, and a lighter wash over the dry porcelain above.",
-        pair: "before",
-        takenOn: "2026-08-18",
-      },
-      {
-        src: "/photos/remove-hard-water-stains-from-toilet/after.jpg",
-        alt: "The same toilet bowl after cleaning, showing clean white porcelain and clear blue water.",
-        caption:
-          "Same bowl, same angle. What this actually shows is that the porcelain underneath was never damaged — staining that dark reads as permanent, which is why most people stop trying.",
-        pair: "after",
+          "Before and after on the same bowl, same angle. The staining sat heaviest in a ring at the waterline, and it came off — which means the porcelain under it was never damaged.",
         takenOn: "2026-08-18",
       },
     ],
