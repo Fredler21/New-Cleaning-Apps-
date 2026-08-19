@@ -538,6 +538,21 @@ export const posts: Post[] = [
     tags: ["bathroom", "deep clean", "weekend"],
     excerpt: "I spent a few months trying to figure out why my bathroom could pass a white glove test and still not feel like a hotel bathroom. It turned out the shine is only half of it. The other half is odor control and a handful of edges nobody thinks to wipe. Here are the 15 things that actually got me there, including the one step that fixes most bathroom smell.",
     coverImage: "/uploads/15-bathroom-deep-clean-hacks-for-hotel-level-shine.jpg",
+    photos: [
+      {
+        src: "/uploads/bathtub-soap-scum-before.jpg",
+        caption:
+          "Soap scum and hard-water film across a tub floor. The tell is that it reads as a surface that has gone dull rather than as something sitting on top of the acrylic, which is why so many people write the tub off as worn out.",
+        alt: "Bathtub with a dull grey film of soap scum and hard-water residue across the base and sloping sides.",
+        placement: "intro",
+      },
+      {
+        src: "/uploads/bathtub-soap-scum-after.jpg",
+        caption:
+          "Same tub, same corner shelf, nothing moved between shots. The dullness was a layer, not damage to the acrylic.",
+        alt: "The same bathtub after cleaning, bright white with the soap-scum film removed.",
+      },
+    ],
     supplies: ["All purpose bathroom cleaner (a non bleach spray)", "Separate acidic descaler or plain white vinegar for hard water", "Baking soda", "Dish soap (Dawn or similar)", "Stiff grout brush and an old toothbrush", "Non scratch sponge and several microfiber cloths", "Rubber squeegee", "Glass cleaner", "Rubber gloves", "A flat head screwdriver for the fan cover and drain", "Old towel for kneeling and for staging items"],
     steps: [
       { title: "Clear every surface completely before you spray anything", body: "The first time I timed myself, I lost almost ten minutes just moving bottles around mid clean, and the counter still looked busy when I finished. Now I clear the whole room first. Every bottle, the toothbrush holder, the soap dish, the little tray of things by the sink, the shampoo lineup on the shower ledge, all of it comes out and lands on a folded towel in the hallway. This does two things. You expose the rings and stains that have been hiding under those objects, and you stop yourself from cleaning around clutter, which is really just cleaning half the surface. While everything is out in the light, wipe the bottoms of the bottles. Shampoo and lotion bottles grow a sticky brown ring on the base, and setting that ring back down on a counter you just scrubbed undoes the work. This is also the moment to toss expired products and the near empty bottles you keep meaning to use up. Expect to find that a third of what lives on your counter does not need to be there. When I did this honestly the first time, I put six items back instead of fourteen, and the room felt calmer before I had cleaned a single surface. Do not skip the shower ledge. Those bottles hide the exact corner where mildew starts, and you cannot treat it if you cannot see it." },
@@ -1239,6 +1254,21 @@ export const posts: Post[] = [
     excerpt:
       "My apartment toilet had a rust-brown mineral ring nearly half an inch thick and no prior cleaning had touched it. Here's what actually worked on severe established buildup and the cheap weekly habit that prevents any ring from forming in the first place.",
     coverImage: "/uploads/remove-hard-water-stains-from-toilet.jpg",
+    photos: [
+      {
+        src: "/uploads/toilet-hard-water-before.jpg",
+        caption:
+          "The staining runs in bands, and the bands tell you where the water sat. The heaviest colour is the ring at the waterline and the streaking below it, with a lighter wash across the dry porcelain above.",
+        alt: "Toilet bowl with heavy orange-brown mineral staining, darkest in a ring at the waterline with streaks running down toward the drain.",
+        placement: "intro",
+      },
+      {
+        src: "/uploads/toilet-hard-water-after.jpg",
+        caption:
+          "The same bowl, same angle. Worth noting what this shows: the porcelain underneath was never damaged. Staining that dark reads as permanent, which is why most people stop trying and start shopping for a new toilet.",
+        alt: "The same toilet bowl after cleaning, showing clean white porcelain and clear blue water.",
+      },
+    ],
     supplies: [
       "White vinegar",
       "Baking soda",
@@ -3491,27 +3521,20 @@ export const posts: Post[] = [
   },
   // TODO(original-content) how-to-declutter-your-room
   //
-  // PHOTOS — two shots, then uncomment the photos block below.
+  // PHOTOS — two shots:
   //   1. Stand in the doorway BEFORE moving anything. One wide shot.
   //   2. Same doorway, same spot on the floor, same time of day, after.
   //      Matching the angle and the light is the whole point; a brighter
   //      "after" taken at noon proves nothing except that it was noon.
-  //   Save as (roughly 1200x900, 4:3 crops the cleanest in the grid):
-  //      public/uploads/declutter-before.jpg
-  //      public/uploads/declutter-after.jpg
   //
-  //   photos: [
-  //     {
-  //       src: "/uploads/declutter-before.jpg",
-  //       caption: "TODO: what the room looked like before.",
-  //       alt: "TODO: describe the cluttered room for screen readers.",
-  //     },
-  //     {
-  //       src: "/uploads/declutter-after.jpg",
-  //       caption: "TODO: what changed and roughly how long it took.",
-  //       alt: "TODO: describe the same room cleared.",
-  //     },
-  //   ],
+  // Then run, from the repo root:
+  //   node scripts/add-real-photo.mjs how-to-declutter-your-room <path> \
+  //     --name declutter-before        (and again for the after shot)
+  //
+  // and add a photos array to this post, copying the shape used by
+  // remove-hard-water-stains-from-toilet above: before shot takes
+  // placement "intro", after shot takes the default. The script prints the
+  // exact src path to paste in.
   //
   // DETAIL still worth adding from a real session: how long the sort actually
   // took, how many bags left the house, which zone ate the most time, and one
