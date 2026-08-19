@@ -12,17 +12,11 @@ export const posts: Post[] = [
     tags: ["quick wins", "odor control", "bathroom"],
     excerpt: "Listerine turns up in a lot of cleaning advice, and some of it is genuinely good while some of it will stain a countertop. The thymol and eucalyptol that make the amber original an antiseptic are doing real work on odor-causing bacteria; the blue and whitening versions add dyes you do not want near light surfaces. Here is which uses hold up, where the internet oversells it, and the exact amounts and dwell times that separate a hack that works from one that disappoints.",
     coverImage: "/uploads/13-mind-blowing-listerine-hacks.jpg",
-    // Photo above the method, same as the other posts carrying real photos.
-    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
-    photos: [
-      {
-        src: "/photos/13-mind-blowing-listerine-hacks/listerine.jpg",
-        alt: "Side-by-side before and after of the same bathroom sink: the basin yellowed and spotted with rust-brown marks on the left, clean white porcelain on the right, with a bottle of amber Listerine held in frame.",
-        caption:
-          "The same basin before and after, with everything on the counter left where it was. Glazed ceramic like this is on the safe list for the diluted spray below, but note the bottle in shot is the Ultraclean mint formula rather than the original amber. On a light coloured surface the amber is the one to reach for, because the dyed versions can leave a faint tint.",
-        takenOn: "2026-08-18",
-      },
-    ],
+    // No photo on this post. The basin shot that was here moved to
+    // how-to-remove-hard-water-stains-from-glass-faucets-and-tiles, because
+    // none of the ten methods below is cleaning a basin, and mineral staining
+    // that heavy does not come off with alcohol and essential oils. Leaving it
+    // here would have implied a result this product cannot produce.
     supplies: ["Original amber Listerine (not the blue or whitening kinds)", "Empty 16 ounce spray bottle", "Two or three microfiber cloths", "A soft bristle brush or old toothbrush", "Warm water", "Rubber gloves", "A small bowl for soaking", "A permanent marker for labeling", "Paper towels for spot testing"],
     steps: [
       { title: "Mix an even all purpose spray", body: "Pour equal parts original amber Listerine and warm water into a clean spray bottle. I use roughly one cup of each, which fills a standard 16 ounce bottle with a little room to shake. The thymol and eucalyptol in the original formula are mild antiseptics, and the alcohol (around 22 percent in the original amber) helps everything dry fast without streaking. Label the bottle in permanent marker so nobody in your house grabs it thinking it is a drink, and note the date so you know when the batch is getting old. I only ever use the amber version. The first time I tried the blue kind on a white laminate counter it left a faint bluish tint near the seam that took real scrubbing to lift. The colored and whitening formulas carry dyes and different concentrations, so keep them for your mouth and keep the amber for surfaces. This spray is safe on sealed laminate, glazed ceramic tile, glass, stainless steel, and painted trim that you have spot tested first. Keep it off unsealed stone and raw wood. Shake before every use, since the oils separate and float to the top as the bottle sits. If your spray ever smells weak, it has usually gone flat from evaporation, so mix a fresh batch rather than doubling the dose. One filled bottle lasts me about two weeks of everyday wiping, and that is roughly the window where it still dries streak free." },
@@ -1291,6 +1285,17 @@ export const posts: Post[] = [
     excerpt:
       "I moved into a home with twelve years of untreated hard water stains on shower glass, faucets, and tiles. After testing every popular method on the same heavily mineralized surfaces over six weeks, the ten approaches in this guide are ranked by what actually worked on real long term buildup, not just fresh deposits. The vinegar wrap method removed mineral crust that fifteen minute sprays could not touch, the warm vinegar trick dissolved stains roughly twice as fast as cold vinegar on the same surfaces, and one simple prevention habit reduced new staining by approximately eighty percent in the first month. Here is the exact step by step that restores foggy shower glass, calcified faucets, and stained bathroom tiles to a like new finish, plus the surfaces where vinegar will permanently etch and damage the material instead of cleaning it.",
     coverImage: "/uploads/how-to-remove-hard-water-stains-from-glass-faucets-and-tiles.jpg",
+    // Photo above the method, same as the other posts carrying real photos.
+    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
+    photos: [
+      {
+        src: "/photos/how-to-remove-hard-water-stains-from-glass-faucets-and-tiles/basin.jpg",
+        alt: "Side-by-side before and after of the same bathroom basin and chrome faucet: the bowl yellowed with rust-brown mineral staining on the left, clean white porcelain on the right.",
+        caption:
+          "The same basin and faucet, with everything on the counter left where it was. This is the older buildup the guide separates out further down, the kind that has had months to bond rather than a fresh spray of water spots, and it is why a soak or a paste with real dwell time does what wiping cannot. Note the staining spreads across the whole bowl instead of sitting in a line, which is what happens where water pools and evaporates rather than runs.",
+        takenOn: "2026-08-18",
+      },
+    ],
     supplies: ["White vinegar", "Baking soda", "Spray bottle", "Microfiber cloths", "Lemon", "Dish soap", "Old toothbrush", "Plastic wrap", "Rubber gloves"],
     steps: [
       { title: "Make a vinegar soak for shower doors", body: "Fill a spray bottle with equal parts white vinegar and hot water. Spray generously onto glass shower doors, covering every inch of the surface. The acetic acid in vinegar dissolves the calcium and magnesium deposits that form those cloudy white streaks. Let it sit for at least 15 minutes for heavy buildup, soak paper towels in vinegar and press them flat against the glass so the solution doesn't drip away. Remove the towels, scrub with a non-scratch sponge in circular motions, and rinse with warm water. Dry immediately with a clean microfiber cloth to prevent new water spots from forming as the glass dries. For shower glass that hasn't been cleaned in several months or longer, the 15-minute contact time is not enough. Apply the vinegar-soaked paper towels and leave them undisturbed for 45 to 60 minutes. Spray additional vinegar onto the towels halfway through if they appear to have dried out so the ongoing acidity keeps dissolving the mineral layer until the full contact time is complete." },
