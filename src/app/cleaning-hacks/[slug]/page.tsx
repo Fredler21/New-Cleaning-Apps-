@@ -190,7 +190,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
             <div className="relative aspect-[16/9] w-full">
               <Image
                 src={post.coverImage}
-                alt={post.title}
+                alt={post.coverAlt ?? post.title}
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
@@ -205,7 +205,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 borderTop: "1px solid var(--border)",
               }}
             >
-              {post.title} — illustrated for {SITE_NAME}
+              {post.coverCaption ?? `${post.title} — illustrated for ${SITE_NAME}`}
             </figcaption>
           </figure>
 

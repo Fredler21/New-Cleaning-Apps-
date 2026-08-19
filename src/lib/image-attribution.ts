@@ -2,7 +2,12 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 
 export type ImageAttribution = {
-  source: "unsplash" | "gemini" | "gemini-candid" | "unknown";
+  /**
+   * "original" means a real photo we shot ourselves. Do not use it for
+   * anything generated or licensed — it is the one value here that makes a
+   * provenance claim we would have to be able to defend.
+   */
+  source: "original" | "unsplash" | "gemini" | "gemini-candid" | "unknown";
   photographer?: string;
   photographerUrl?: string;
   photoUrl?: string;

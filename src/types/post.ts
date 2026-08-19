@@ -47,6 +47,14 @@ export type Post = {
   tags: string[];
   excerpt: string;
   coverImage: string;
+  /**
+   * Caption for the hero image. Set this when coverImage is a real photo, so
+   * the figure says what the reader is actually looking at instead of falling
+   * back to the generic "illustrated for TryCleaningHacks" line.
+   */
+  coverCaption?: string;
+  /** Alt text for the hero image. Falls back to the post title. */
+  coverAlt?: string;
   /** Real photo pair, if one exists for this post. See PostBeforeAfter. */
   beforeAfter?: PostBeforeAfter;
   supplies: string[];
