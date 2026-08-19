@@ -3491,7 +3491,7 @@ export const posts: Post[] = [
   },
   // TODO(original-content) how-to-declutter-your-room
   //
-  // PHOTOS — two shots, then uncomment the beforeAfter block below.
+  // PHOTOS — two shots, then uncomment the photos block below.
   //   1. Stand in the doorway BEFORE moving anything. One wide shot.
   //   2. Same doorway, same spot on the floor, same time of day, after.
   //      Matching the angle and the light is the whole point; a brighter
@@ -3500,13 +3500,18 @@ export const posts: Post[] = [
   //      public/uploads/declutter-before.jpg
   //      public/uploads/declutter-after.jpg
   //
-  //   beforeAfter: {
-  //     before: "/uploads/declutter-before.jpg",
-  //     after: "/uploads/declutter-after.jpg",
-  //     caption: "TODO: what changed and roughly how long it took.",
-  //     beforeAlt: "TODO: describe the cluttered room for screen readers.",
-  //     afterAlt: "TODO: describe the same room cleared.",
-  //   },
+  //   photos: [
+  //     {
+  //       src: "/uploads/declutter-before.jpg",
+  //       caption: "TODO: what the room looked like before.",
+  //       alt: "TODO: describe the cluttered room for screen readers.",
+  //     },
+  //     {
+  //       src: "/uploads/declutter-after.jpg",
+  //       caption: "TODO: what changed and roughly how long it took.",
+  //       alt: "TODO: describe the same room cleared.",
+  //     },
+  //   ],
   //
   // DETAIL still worth adding from a real session: how long the sort actually
   // took, how many bags left the house, which zone ate the most time, and one

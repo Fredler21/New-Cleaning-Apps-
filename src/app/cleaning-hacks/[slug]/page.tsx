@@ -342,46 +342,37 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 ))}
               </section>
 
-              {/* Real before/after pair. Renders only when a post actually has
-                  one, so posts without photos are unaffected. */}
-              {post.beforeAfter && (
-                <section id="before-after" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+              {/* Real photos shot for this post. Additional to the cover image,
+                  never a replacement for it. Renders nothing when a post has no
+                  photos, so the other posts are unaffected. */}
+              {post.photos && post.photos.length > 0 && (
+                <section id="photos" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
                   <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
                     <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    Before and after
+                    What this looked like
                   </h2>
-                  <figure className="mt-4">
-                    <div className="grid gap-3 sm:grid-cols-2">
-                      {([
-                        { src: post.beforeAfter.before, alt: post.beforeAfter.beforeAlt, label: "Before" },
-                        { src: post.beforeAfter.after, alt: post.beforeAfter.afterAlt, label: "After" },
-                      ] as const).map((shot) => (
-                        <div key={shot.label} className="overflow-hidden rounded-xl" style={{ border: "1px solid var(--border)" }}>
-                          <div className="relative aspect-[4/3] w-full">
-                            <Image
-                              src={shot.src}
-                              alt={shot.alt ?? `${shot.label}: ${post.title}`}
-                              fill
-                              sizes="(max-width: 640px) 100vw, 50vw"
-                              className="object-cover"
-                            />
-                          </div>
-                          <p
-                            className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wide"
-                            style={{ background: "var(--card-bg)", color: "var(--muted)", borderTop: "1px solid var(--border)" }}
-                          >
-                            {shot.label}
-                          </p>
+                  <div className="mt-4 space-y-5">
+                    {post.photos.map((photo) => (
+                      <figure key={photo.src}>
+                        <div className="overflow-hidden rounded-xl" style={{ border: "1px solid var(--border)" }}>
+                          <Image
+                            src={photo.src}
+                            alt={photo.alt}
+                            width={1600}
+                            height={1200}
+                            sizes="(max-width: 1024px) 100vw, 720px"
+                            className="h-auto w-full"
+                          />
                         </div>
-                      ))}
-                    </div>
-                    <figcaption className="mt-3 text-sm leading-6" style={{ color: "var(--text-secondary)" }}>
-                      {post.beforeAfter.caption}
-                    </figcaption>
-                  </figure>
+                        <figcaption className="mt-2 text-sm leading-6" style={{ color: "var(--text-secondary)" }}>
+                          {photo.caption}
+                        </figcaption>
+                      </figure>
+                    ))}
+                  </div>
                 </section>
               )}
 

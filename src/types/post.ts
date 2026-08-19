@@ -9,19 +9,19 @@ export type PostFAQ = {
 };
 
 /**
- * A real before/after photo pair for a post. Only set this when both photos are
- * genuine shots of the same spot from the same angle — that pairing is the whole
- * value, and it is the one thing on the page a competitor cannot copy. Leave it
- * undefined rather than filling it with generated or stock imagery; the section
- * does not render at all when it is absent.
+ * A real photo shot for this post, shown in the body — additional to the cover
+ * image, never a replacement for it. Before/after pairs belong here too,
+ * whether as one composite image or as two entries.
+ *
+ * Only ever point this at genuine photography. A real before/after is the one
+ * thing on the page a competitor cannot copy off us, and it is worth nothing
+ * the moment it is padded out with generated or stock imagery.
  */
-export type PostBeforeAfter = {
-  before: string;
-  after: string;
-  /** Shown under the pair. Say what changed and roughly how long it took. */
+export type PostPhoto = {
+  src: string;
+  /** Shown under the photo. Say what the reader is looking at, specifically. */
   caption: string;
-  beforeAlt?: string;
-  afterAlt?: string;
+  alt: string;
 };
 
 export type Post = {
@@ -55,8 +55,11 @@ export type Post = {
   coverCaption?: string;
   /** Alt text for the hero image. Falls back to the post title. */
   coverAlt?: string;
-  /** Real photo pair, if one exists for this post. See PostBeforeAfter. */
-  beforeAfter?: PostBeforeAfter;
+  /**
+   * Real photos shot for this post, rendered in the body after the steps.
+   * Additional to coverImage — setting this never replaces the cover.
+   */
+  photos?: PostPhoto[];
   supplies: string[];
   steps: PostStep[];
   proTips: string[];
