@@ -28,6 +28,15 @@ export type PostPhoto = {
   pair?: "before" | "after";
   /** ISO date the photo was taken. Used for the "photographed on" line. */
   takenOn?: string;
+  /**
+   * Real pixel dimensions of the file. Set these on full-width photos so the
+   * browser reserves the correct space and the page does not jump as the image
+   * loads. Portrait shots in particular need it, since the fallback assumes a
+   * landscape 4:3. Print them with:
+   *   node -e "require('sharp')('public/<path>').metadata().then(m=>console.log(m.width,m.height))"
+   */
+  width?: number;
+  height?: number;
 };
 
 /**

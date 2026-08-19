@@ -43,7 +43,15 @@ export function PostPhotos({ photos }: { photos: PostPhoto[] }) {
           src={photo.src}
           alt={photo.alt}
           {...(full
-            ? { width: 1600, height: 1200, className: "h-auto w-full" }
+            ? {
+                // Real dimensions when the entry supplies them, so the space
+                // reserved before load matches the image and the page does not
+                // jump. The 4:3 fallback is only a guess and is wrong for any
+                // portrait shot.
+                width: photo.width ?? 1600,
+                height: photo.height ?? 1200,
+                className: "h-auto w-full",
+              }
             : { fill: true as const, className: "object-cover" })}
           sizes={full ? "(min-width: 1024px) 720px, 100vw" : "(min-width: 640px) 50vw, 100vw"}
         />
