@@ -639,12 +639,12 @@ export const posts: Post[] = [
   //
   // Removed on rewrite, do not reinstate without a source:
   //   - "Studies have shown that people who make their beds report feeling
-  //     more productive" and "report lower stress" — no study was cited and
+  //     more productive" and "report lower stress". No study was cited and
   //     none was checked. If you want a productivity or stress claim here,
   //     find the actual paper and link it.
-  //   - "makes the bedroom look 80% cleaner" — invented figure.
+  //   - "makes the bedroom look 80% cleaner". Invented figure.
   //   - "I spent a month tracking which habits made the biggest difference"
-  //     and the ranking built on it — no such log exists.
+  //     and the ranking built on it. No such log exists.
   //
   // The airing-the-bed point in item 1 is the honest version of the trade-off
   // (overnight moisture in bedding), but if you want to state the dust mite
@@ -1379,7 +1379,7 @@ export const posts: Post[] = [
         src: "/photos/remove-hard-water-stains-from-toilet/toilet-cleaning.jpg",
         alt: "Side-by-side before and after of the same toilet bowl: heavy orange-brown mineral staining ringing the waterline on the left, clean white porcelain and clear water on the right.",
         caption:
-          "Before and after on the same bowl, same angle. The staining sat heaviest in a ring at the waterline, and it came off — which means the porcelain under it was never damaged.",
+          "Before and after on the same bowl, same angle. The staining sat heaviest in a ring at the waterline, and it came off, which means the porcelain under it was never damaged.",
         takenOn: "2026-08-18",
       },
     ],
@@ -3695,7 +3695,7 @@ export const posts: Post[] = [
   //
   // PHOTOS worth taking: doorway shot before anything moves, then the same
   // doorway, same spot on the floor, same time of day, after. Matching the
-  // angle and the light is the point — a brighter "after" shot at noon proves
+  // angle and the light is the point. A brighter "after" shot at noon proves
   // nothing except that it was noon. Then:
   //   node scripts/import-photos.mjs --slug=how-to-declutter-your-room \
   //     --pair <before.jpg> <after.jpg>

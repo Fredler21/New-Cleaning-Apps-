@@ -22,14 +22,23 @@ export function PostPhotos({ photos }: { photos: PostPhoto[] }) {
   const pairedSrcs = new Set(paired.flat().map((p) => p.src));
   const singles = photos.filter((p) => !pairedSrcs.has(p.src));
 
-  const Figure = ({ photo, badge }: { photo: PostPhoto; badge?: string }) => (
+  const Figure = ({
+    photo,
+    badge,
+    full,
+  }: {
+    photo: PostPhoto;
+    badge?: string;
+    /** Photo occupies the whole content column rather than half of a pair. */
+    full?: boolean;
+  }) => (
     <figure>
       <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
         <Image
           src={photo.src}
           alt={photo.alt}
           fill
-          sizes="(min-width: 640px) 50vw, 100vw"
+          sizes={full ? "(min-width: 1024px) 720px, 100vw" : "(min-width: 640px) 50vw, 100vw"}
           className="object-cover"
         />
         {badge && (
@@ -38,7 +47,7 @@ export function PostPhotos({ photos }: { photos: PostPhoto[] }) {
           </span>
         )}
       </div>
-      <figcaption className="mt-1.5 text-xs leading-5" style={{ color: "var(--text-secondary)" }}>
+      <figcaption className="mt-2 text-[15px] leading-7" style={{ color: "var(--text-secondary)" }}>
         {photo.caption}
       </figcaption>
     </figure>
@@ -66,9 +75,12 @@ export function PostPhotos({ photos }: { photos: PostPhoto[] }) {
       )}
 
       {singles.length > 0 && (
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        // A lone photo gets the full content column. Half-width only makes
+        // sense when there is a second photo to sit beside it, and a composite
+        // that already contains its own before and after reads as one image.
+        <div className={singles.length > 1 ? "mt-6 grid gap-4 sm:grid-cols-2" : "mt-4"}>
           {singles.map((photo) => (
-            <Figure key={photo.src} photo={photo} />
+            <Figure key={photo.src} photo={photo} full={singles.length === 1} />
           ))}
         </div>
       )}
