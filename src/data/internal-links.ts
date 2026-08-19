@@ -11,7 +11,6 @@ export const internalLinks: Record<string, string[]> = {
   "how-to-clean-ceiling-fan-blades": [
     "how-to-clean-an-ac-vent",
     "how-to-clean-baseboards",
-    "baseboard-cleaning-hacks-that-save-time",
     "best-paint-colors-to-hide-dust",
     "18-quick-wins-for-busy-mornings",
   ],
@@ -37,7 +36,7 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-deep-clean-a-plunger",
   ],
   "7-game-changing-ultra-cleaning-hacks": [
-    "baseboard-cleaning-hacks-that-save-time",
+    "how-to-clean-baseboards",
     "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
     "18-quick-wins-for-busy-mornings",
     "20-declutter-clean-pairing-hacks",
@@ -288,7 +287,7 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-clean-a-coffee-maker",
   ],
   "10-borax-cleaning-hacks-that-actually-work": [
-    "baseboard-cleaning-hacks-that-save-time",
+    "how-to-clean-baseboards",
     "how-to-clean-grout-without-scrubbing",
     "16-hydrogen-peroxide-cleaning-hacks",
     "14-ways-to-use-baking-soda-in-your-house",
@@ -430,7 +429,7 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-clean-hardwood-floors",
     "7-game-changing-ultra-cleaning-hacks",
     "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
-    "baseboard-cleaning-hacks-that-save-time",
+    "how-to-clean-baseboards",
     "how-to-clean-a-humidifier",
     "how-to-clean-ceiling-fan-blades",
   ],
@@ -495,14 +494,6 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-stop-losing-socks-in-the-washing-machine",
     "how-to-clean-a-coffee-maker",
     "how-to-clean-a-reusable-water-bottle",
-  ],
-  "baseboard-cleaning-hacks-that-save-time": [
-    "7-game-changing-ultra-cleaning-hacks",
-    "10-borax-cleaning-hacks-that-actually-work",
-    "how-to-clean-a-dishwasher",
-    "10-fascinating-vacuum-hacks-you-need-to-know",
-    "best-floor-colors-to-hide-dust-and-dirt",
-    "how-to-clean-baseboards",
   ],
   "how-to-get-onions-smell-out-of-the-house": [
     "how-to-get-garlic-smell-out-of-the-house",

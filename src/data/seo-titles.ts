@@ -56,10 +56,7 @@ export const seoTitles: Record<string, string> = {
   "12-oven-cleaning-hacks-baked-on-grease": "12 Oven Hacks for Baked-On Grease",
   "10-borax-cleaning-hacks-that-actually-work": "10 Borax Cleaning Hacks That Work",
   "diy-all-natural-cleaning-sprays": "10 DIY All-Natural Cleaning Sprays",
-  "diy-bathroom-cleaning-recipes": "8 DIY Bathroom Cleaning Recipes",
-  "baseboard-cleaning-hacks-that-save-time": "10 Time-Saving Baseboard Hacks",
-
-  /* ── How-to guides ──────────────────────────────────────── */
+  "diy-bathroom-cleaning-recipes": "8 DIY Bathroom Cleaning Recipes",  /* ── How-to guides ──────────────────────────────────────── */
   "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles": "Remove Hard Water Stains (Glass & Chrome)",
   "how-to-clean-grout-without-scrubbing": "Clean Grout Without Scrubbing (7 Ways)",
   "how-to-clean-an-oven-without-harsh-chemicals": "Clean an Oven Without Harsh Chemicals",
