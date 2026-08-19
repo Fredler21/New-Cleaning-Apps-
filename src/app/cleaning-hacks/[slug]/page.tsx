@@ -24,6 +24,7 @@ import { internalLinks } from "@/data/internal-links";
 import { seoDescriptions } from "@/data/seo-descriptions";
 import { seoTitles } from "@/data/seo-titles";
 import { ImageAttribution } from "@/components/posts/ImageAttribution";
+import { PostPhotos } from "@/components/posts/PostPhotos";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -101,6 +102,12 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
         ? namedSupplies[0]
         : `${namedSupplies.slice(0, -1).join(", ")} and ${namedSupplies[namedSupplies.length - 1]}`;
   const categoryLabel = post.category.replace(/-/g, " ");
+
+  // Real photos split by where they belong in the article: the problem up top,
+  // the result below the steps. Defaults to the result so a photo added without
+  // a placement never lands above the copy that explains it.
+  const introPhotos = (post.photos ?? []).filter((photo) => photo.placement === "intro");
+  const resultPhotos = (post.photos ?? []).filter((photo) => photo.placement !== "intro");
 
   return (
     <>
@@ -212,6 +219,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
           <div className="mt-2">
             <ImageAttribution slug={post.slug} />
           </div>
+
+          {/* The problem, shown before the reader is told how to fix it. */}
+          <PostPhotos photos={introPhotos} />
 
           {/* Article + HowTo structured data */}
           <JsonLd
@@ -342,39 +352,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 ))}
               </section>
 
-              {/* Real photos shot for this post. Additional to the cover image,
-                  never a replacement for it. Renders nothing when a post has no
+              {/* The result, below the steps. Renders nothing when a post has no
                   photos, so the other posts are unaffected. */}
-              {post.photos && post.photos.length > 0 && (
-                <section id="photos" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
-                  <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-                    <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    What this looked like
-                  </h2>
-                  <div className="mt-4 space-y-5">
-                    {post.photos.map((photo) => (
-                      <figure key={photo.src}>
-                        <div className="overflow-hidden rounded-xl" style={{ border: "1px solid var(--border)" }}>
-                          <Image
-                            src={photo.src}
-                            alt={photo.alt}
-                            width={1600}
-                            height={1200}
-                            sizes="(max-width: 1024px) 100vw, 720px"
-                            className="h-auto w-full"
-                          />
-                        </div>
-                        <figcaption className="mt-2 text-sm leading-6" style={{ color: "var(--text-secondary)" }}>
-                          {photo.caption}
-                        </figcaption>
-                      </figure>
-                    ))}
-                  </div>
-                </section>
-              )}
+              <PostPhotos photos={resultPhotos} heading="What it looked like after" />
 
               {/* Pro tips */}
               <section id="pro-tips" className="rounded-xl border border-teal-200 bg-teal-50 p-6 dark:border-teal-400/20 dark:bg-teal-500/5">

@@ -22,6 +22,15 @@ export type PostPhoto = {
   /** Shown under the photo. Say what the reader is looking at, specifically. */
   caption: string;
   alt: string;
+  /**
+   * Where the photo sits in the article.
+   *   "intro"       — under the opening, showing the problem the post solves.
+   *   "after-steps" — below the steps, showing the result. The default.
+   * A before/after pair reads better split across the two than stacked
+   * together, because the reader meets the mess first and the result after
+   * they have read how it was done.
+   */
+  placement?: "intro" | "after-steps";
 };
 
 export type Post = {
