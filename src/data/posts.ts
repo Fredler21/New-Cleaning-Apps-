@@ -19,7 +19,7 @@ export const posts: Post[] = [
         src: "/photos/13-mind-blowing-listerine-hacks/listerine.jpg",
         alt: "Side-by-side before and after of the same bathroom sink: the basin yellowed and spotted with rust-brown marks on the left, clean white porcelain on the right, with a bottle of amber Listerine held in frame.",
         caption:
-          "The same sink, same angle, with everything on the counter left where it was. Note that the staining covers the whole basin rather than sitting in one ring, which is what soap film and hard water do together over time.",
+          "The same basin before and after, with everything on the counter left where it was. Glazed ceramic like this is on the safe list for the diluted spray below, but note the bottle in shot is the Ultraclean mint formula rather than the original amber. On a light coloured surface the amber is the one to reach for, because the dyed versions can leave a faint tint.",
         takenOn: "2026-08-18",
       },
     ],
@@ -554,9 +554,9 @@ export const posts: Post[] = [
     photos: [
       {
         src: "/photos/15-bathroom-deep-clean-hacks-for-hotel-level-shine/tub-cleaning.jpg",
-        alt: "Side-by-side before and after of the same bathtub: a dull grey film of soap scum across the base on the left, bright white acrylic on the right.",
+        alt: "Side-by-side before and after of the same bathtub: a dull grey film across the base and sloping sides on the left, bright white on the right.",
         caption:
-          "Same tub, same corner shelf, nothing moved between the two shots. That dull film was a layer sitting on the acrylic, not a surface worn out.",
+          "The tub, before and after, with the corner shelf left exactly where it was. The dullness on the left is the soap film and hard water this guide keeps coming back to, and it is the reason a bathroom can be genuinely clean and still not read as clean.",
         takenOn: "2026-08-18",
       },
     ],
@@ -1430,7 +1430,7 @@ export const posts: Post[] = [
         src: "/photos/remove-hard-water-stains-from-toilet/toilet-cleaning.jpg",
         alt: "Side-by-side before and after of the same toilet bowl: heavy orange-brown mineral staining ringing the waterline on the left, clean white porcelain and clear water on the right.",
         caption:
-          "Before and after on the same bowl, same angle. The staining sat heaviest in a ring at the waterline, and it came off, which means the porcelain under it was never damaged.",
+          "The same bowl, same angle. Everything staining the left side is mineral deposit rather than dirt, which is exactly why the acids and the pumice below shift it and an ordinary bowl cleaner and a quick scrub do not. It sat heaviest in the ring at the waterline and under the rim, the two places water sits longest.",
         takenOn: "2026-08-18",
       },
     ],
@@ -2597,7 +2597,7 @@ export const posts: Post[] = [
         src: "/photos/how-to-clean-a-glass-stovetop-without-scratching/stove.jpg",
         alt: "Side-by-side before and after of the same glass stovetop: burnt-on brown residue with a gloved hand working a soapy sponge over it on the left, clean black glass on the right.",
         caption:
-          "The same cooktop with the pans left in place. Worth noting what the left side shows: a soapy sponge and dwell time, not a scouring pad. That residue looks like it needs scraping and does not.",
+          "The same cooktop with the pans left where they were. Look at what is doing the work on the left: a soft soapy sponge and dwell time, not a scouring pad. That is the whole method here, lifting residue with moisture and chemistry rather than scraping it off with friction, and it is why the glass comes up clean without the fine scratching that abrasive pads leave behind.",
         takenOn: "2026-08-18",
       },
     ],
