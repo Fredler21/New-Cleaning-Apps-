@@ -19,6 +19,15 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(url, { status: 301 });
   }
 
+  // /cleaning-hacks/cleaning-hacks was being submitted for indexing but 404s,
+  // because there is no post with that slug. It is the category index the URL
+  // was reaching for, so send it there rather than leaving a dead end.
+  if (req.nextUrl.pathname === "/cleaning-hacks/cleaning-hacks") {
+    const url = req.nextUrl.clone();
+    url.pathname = "/cleaning-hacks";
+    return NextResponse.redirect(url, { status: 301 });
+  }
+
   return NextResponse.next();
 }
 

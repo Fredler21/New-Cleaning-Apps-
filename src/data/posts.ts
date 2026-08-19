@@ -695,6 +695,11 @@ export const posts: Post[] = [
   {
     title: "18 Quick Cleaning Tasks You Can Do in 5 Minutes or Less",
     slug: "18-quick-wins-for-busy-mornings",
+    // /cleaning-hacks/how-to-race-clean was being submitted for indexing but
+    // returned 404, so it could never be indexed no matter what was written.
+    // Speed cleaning is what this post covers, so the dead URL now 308s here
+    // instead of dead-ending.
+    previousSlugs: ["how-to-race-clean"],
     author: "Fredler Pierre-Louis",
     datePublished: "2026-02-16",
     dateUpdated: "2026-08-18",
