@@ -501,7 +501,20 @@ export const posts: Post[] = [
     excerpt:
       "My kitchen sink smelled no matter how often I cleaned it until I figured out what I was actually missing. The fix wasn't a new product; it was addressing three different sources at once. Here's what finally worked and the one mistake that kept the smell coming back.",
     coverImage: "/uploads/10-kitchen-sink-detox-hacks-for-odor-free-results.jpg",
-    supplies: ["Baking soda", "Dish soap", "Brush", "Hot water", "Microfiber", "Gloves"],
+    // Photo above the method, same as the other posts carrying real photos.
+    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
+    photos: [
+      {
+        src: "/photos/10-kitchen-sink-detox-hacks-for-odor-free-results/sink.jpg",
+        alt: "Side-by-side before and after of the same stainless steel kitchen sink with white vinegar being poured into the drain: the basin dull and clouded with a grey film on the left, bright and reflective on the right.",
+        caption:
+          "The same sink with the vinegar flush going in, which is step four below. Two things are happening at once here. The pour is treating the drain, where the smell actually comes from, and the basin itself has come back from that dull grey film, which is mineral deposit left by water drying in place rather than anything greasy.",
+        takenOn: "2026-08-18",
+      },
+    ],
+    // Vinegar, lemon and salt were missing from this list even though steps 4
+    // and 8 call for them.
+    supplies: ["Baking soda", "White vinegar", "Dish soap", "Lemon", "Coarse salt", "Brush", "Hot water", "Microfiber", "Gloves"],
     steps: [
       { title: "Clear and rinse the sink completely", body: "Remove all dishes, sponges, and soap dispensers from the sink. Rinse the entire basin with hot water to flush loose food particles. Starting clean lets you see stains, discoloration, and buildup you'd miss with dishes piled up. This only takes a minute and makes every following step more effective. Take this opportunity to toss out any cracked sponges or expired cleaning products sitting by the sink. A clear workspace makes the whole process faster and more thorough." },
       { title: "Scrub the basin with baking soda", body: "Sprinkle baking soda generously across the wet sink basin. Scrub with a non-scratch sponge in circular motions, focusing on corners and around the drain. Baking soda is mildly abrasive and deodorizing, so it lifts stains and neutralizes odors without scratching stainless steel or porcelain. For stubborn tea or coffee stains, make a paste with baking soda and a few drops of hydrogen peroxide and let it sit for five minutes before scrubbing. This combination brightens even dingy white porcelain sinks. After scrubbing, rinse with hot water and inspect the surface in direct light direct light reveals remaining discoloration around the drain rim that indirect lighting hides. Stainless steel sinks often have a dull mineral film around the drain that looks like a stain but is actually dissolved mineral residue. A second baking soda scrub pass specifically targeting the drain perimeter, followed by a thorough hot water rinse from the faucet at full pressure, removes it completely." },
@@ -1532,6 +1545,17 @@ export const posts: Post[] = [
     excerpt:
       "Stainless steel appliances streak for one reason that almost every cleaning attempt gets wrong, and it has nothing to do with which product you buy. Stainless has a directional grain, and wiping across it drags residue into the grooves instead of out of them. Here are nine methods ranked for built-up fingerprints and kitchen grease, and the technique that decides whether any of them work.",
     coverImage: "/uploads/how-to-clean-stainless-steel-appliances-without-streaks.jpg",
+    // Photo above the method, same as the other posts carrying real photos.
+    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
+    photos: [
+      {
+        src: "/photos/how-to-clean-stainless-steel-appliances-without-streaks/fridge.jpg",
+        alt: "Side-by-side before and after of the same stainless steel fridge door being wiped with a green cloth: hazy with fingerprints and smeared patches on the left, even and clean with the grain visible on the right.",
+        caption:
+          "The same fridge door, magnets and towel left where they were. The left side is the state a stainless door usually reaches, which is not dirt so much as a smeared film of oil from hands, and the reason it looks patchy rather than dirty. On the right the grain is visible again, which is the sign you have wiped along it rather than across it.",
+        takenOn: "2026-08-18",
+      },
+    ],
     supplies: [
       "Microfiber cloths",
       "Olive oil or mineral oil",
