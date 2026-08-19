@@ -3489,15 +3489,29 @@ export const posts: Post[] = [
       { question: "How often should you clean a bathroom drain?", answer: "Run a quick maintenance flush of half a cup of boiling water followed by a quarter cup of white vinegar once a week. Do the full baking soda, salt, vinegar, and boiling water deep clean once every two to three months for sinks and once a month for shower drains, which collect more hair and product residue. Pull visible hair out of the strainer after every shower as a thirty second habit that prevents the majority of clogs and odors before they form." }
     ]
   },
-  // TODO(original-content) how-to-declutter-your-room — the only things
-  // standing between this post and genuine first-hand authority. Nothing here
-  // is invented on the author's behalf; fill these in from a real session.
-  //   [ADD ORIGINAL PHOTO] Doorway shot before anything is moved.
-  //   [ADD BEFORE/AFTER PAIR] Same doorway angle, same time of day, after.
-  //   [ADD TEST RESULT] How long the sort took, how many bags left the house,
-  //     and which zone ate the most time.
-  //   [ADD PERSONAL EXPERIENCE] One item that was genuinely hard to decide on
-  //     and what tipped it. Specific beats general.
+  // TODO(original-content) how-to-declutter-your-room
+  //
+  // PHOTOS — two shots, then uncomment the beforeAfter block below.
+  //   1. Stand in the doorway BEFORE moving anything. One wide shot.
+  //   2. Same doorway, same spot on the floor, same time of day, after.
+  //      Matching the angle and the light is the whole point; a brighter
+  //      "after" taken at noon proves nothing except that it was noon.
+  //   Save as (roughly 1200x900, 4:3 crops the cleanest in the grid):
+  //      public/uploads/declutter-before.jpg
+  //      public/uploads/declutter-after.jpg
+  //
+  //   beforeAfter: {
+  //     before: "/uploads/declutter-before.jpg",
+  //     after: "/uploads/declutter-after.jpg",
+  //     caption: "TODO: what changed and roughly how long it took.",
+  //     beforeAlt: "TODO: describe the cluttered room for screen readers.",
+  //     afterAlt: "TODO: describe the same room cleared.",
+  //   },
+  //
+  // DETAIL still worth adding from a real session: how long the sort actually
+  // took, how many bags left the house, which zone ate the most time, and one
+  // item that was genuinely hard to call and what tipped it. Specific beats
+  // general. Nothing here is invented on the author's behalf.
   {
     title: "How to Declutter Your Room in One Afternoon (Without Burning Out)",
     slug: "how-to-declutter-your-room",

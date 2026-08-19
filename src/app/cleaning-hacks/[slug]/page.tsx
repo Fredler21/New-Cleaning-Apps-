@@ -90,16 +90,16 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
   const linkedSlugs = internalLinks[post.slug] ?? [];
   const linkedPosts = linkedSlugs.map((s) => getPostBySlug(s)).filter(Boolean) as typeof posts;
 
-  // Build a per-post sentence for the "How we tested" trust block so it is not
+  // Build a per-post sentence for the editorial standards block so it is not
   // byte-for-byte identical across every article (which reads as boilerplate /
   // duplicate content sitewide). Uses this post's own supplies + step count.
-  const testedSupplies = post.supplies.slice(0, 3);
+  const namedSupplies = post.supplies.slice(0, 3);
   const suppliesPhrase =
-    testedSupplies.length === 0
+    namedSupplies.length === 0
       ? "everyday household supplies"
-      : testedSupplies.length === 1
-        ? testedSupplies[0]
-        : `${testedSupplies.slice(0, -1).join(", ")} and ${testedSupplies[testedSupplies.length - 1]}`;
+      : namedSupplies.length === 1
+        ? namedSupplies[0]
+        : `${namedSupplies.slice(0, -1).join(", ")} and ${namedSupplies[namedSupplies.length - 1]}`;
   const categoryLabel = post.category.replace(/-/g, " ");
 
   return (
@@ -342,6 +342,49 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 ))}
               </section>
 
+              {/* Real before/after pair. Renders only when a post actually has
+                  one, so posts without photos are unaffected. */}
+              {post.beforeAfter && (
+                <section id="before-after" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                  <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
+                    <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Before and after
+                  </h2>
+                  <figure className="mt-4">
+                    <div className="grid gap-3 sm:grid-cols-2">
+                      {([
+                        { src: post.beforeAfter.before, alt: post.beforeAfter.beforeAlt, label: "Before" },
+                        { src: post.beforeAfter.after, alt: post.beforeAfter.afterAlt, label: "After" },
+                      ] as const).map((shot) => (
+                        <div key={shot.label} className="overflow-hidden rounded-xl" style={{ border: "1px solid var(--border)" }}>
+                          <div className="relative aspect-[4/3] w-full">
+                            <Image
+                              src={shot.src}
+                              alt={shot.alt ?? `${shot.label}: ${post.title}`}
+                              fill
+                              sizes="(max-width: 640px) 100vw, 50vw"
+                              className="object-cover"
+                            />
+                          </div>
+                          <p
+                            className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wide"
+                            style={{ background: "var(--card-bg)", color: "var(--muted)", borderTop: "1px solid var(--border)" }}
+                          >
+                            {shot.label}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    <figcaption className="mt-3 text-sm leading-6" style={{ color: "var(--text-secondary)" }}>
+                      {post.beforeAfter.caption}
+                    </figcaption>
+                  </figure>
+                </section>
+              )}
+
               {/* Pro tips */}
               <section id="pro-tips" className="rounded-xl border border-teal-200 bg-teal-50 p-6 dark:border-teal-400/20 dark:bg-teal-500/5">
                 <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
@@ -360,9 +403,14 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 </ul>
               </section>
 
-              {/* How we tested this guide, global E-E-A-T trust block */}
+              {/* Editorial standards block. This used to assert hands-on testing,
+                  timed dwell intervals and "multiple test runs in real homes" on
+                  every post, which was not something we could stand behind. It now
+                  describes only what is verifiably true of the guide in front of
+                  the reader. Do not reintroduce testing claims here unless the
+                  testing actually happened and can be shown. */}
               <section
-                id="how-we-tested"
+                id="editorial-standards"
                 className="rounded-xl p-6"
                 style={{ background: "var(--card-bg)", border: "1px solid var(--border)" }}
               >
@@ -384,25 +432,27 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
                     />
                   </svg>
-                  How we tested this guide
+                  What this guide claims, and what it doesn&apos;t
                 </h2>
                 <p
                   className="mt-3 text-[15px] leading-7"
                   style={{ color: "var(--text-secondary)" }}
                 >
-                  Every method in this {categoryLabel} guide was hands on tested by{" "}
+                  Nobody should take {categoryLabel} advice on faith, so here is where this one
+                  stands. It was written by{" "}
                   <Link
                     href="/author/fredler-pierre-louis"
                     className="underline"
                     style={{ color: "var(--accent)" }}
                   >
                     {post.author ?? "Fredler Pierre-Louis"}
-                  </Link>{" "}
-                  using {suppliesPhrase}, on the actual surface or material described and not on a
-                  staged photo set. We timed each of the {post.steps.length} steps, recorded the
-                  dwell intervals, and noted where each one worked or fell short, then refined this{" "}
-                  {post.readTime} guide based on what we observed across multiple test runs in real
-                  homes.
+                  </Link>
+                  . It names {suppliesPhrase} rather than telling you to grab &ldquo;a
+                  cleaner&rdquo;, and the {post.steps.length} steps give amounts and timings you can
+                  weigh up before trying anything on a surface you care about. Where a mixture or a
+                  material needs a warning, the warning is in the guide instead of the comments. If a
+                  step does not hold up in your home, tell us what happened — that is how these
+                  pages get corrected.
                 </p>
                 <ul
                   className="mt-4 grid gap-3 sm:grid-cols-2 text-sm leading-relaxed"
@@ -413,28 +463,28 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Methods verified on the relevant surface or material before publication.
+                    Published under a byline with an author page, not an anonymous content account.
                   </li>
                   <li className="flex items-start gap-2">
                     <span
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Reviewed for chemical safety and surface compatibility before publication.
+                    Safety notes name the mixtures and surfaces where this method can go wrong.
                   </li>
                   <li className="flex items-start gap-2">
                     <span
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Dwell times and proportions across all {post.steps.length} steps match what actually works, not generic averages.
+                    Every step gives a real amount or a real timing, so you can judge it yourself.
                   </li>
                   <li className="flex items-start gap-2">
                     <span
                       className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
                       style={{ background: "var(--accent)" }}
                     />
-                    Updated whenever a reader reports an edge case we missed.
+                    The updated date only moves when the guide changes, never on a redeploy.
                   </li>
                 </ul>
                 <p
@@ -447,7 +497,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                     className="underline"
                     style={{ color: "var(--accent)" }}
                   >
-                    editorial and testing policy
+                    editorial policy
                   </Link>{" "}
                   or learn more about{" "}
                   <Link

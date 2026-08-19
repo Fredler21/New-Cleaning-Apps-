@@ -8,6 +8,22 @@ export type PostFAQ = {
   answer: string;
 };
 
+/**
+ * A real before/after photo pair for a post. Only set this when both photos are
+ * genuine shots of the same spot from the same angle — that pairing is the whole
+ * value, and it is the one thing on the page a competitor cannot copy. Leave it
+ * undefined rather than filling it with generated or stock imagery; the section
+ * does not render at all when it is absent.
+ */
+export type PostBeforeAfter = {
+  before: string;
+  after: string;
+  /** Shown under the pair. Say what changed and roughly how long it took. */
+  caption: string;
+  beforeAlt?: string;
+  afterAlt?: string;
+};
+
 export type Post = {
   title: string;
   slug: string;
@@ -31,6 +47,8 @@ export type Post = {
   tags: string[];
   excerpt: string;
   coverImage: string;
+  /** Real photo pair, if one exists for this post. See PostBeforeAfter. */
+  beforeAfter?: PostBeforeAfter;
   supplies: string[];
   steps: PostStep[];
   proTips: string[];
