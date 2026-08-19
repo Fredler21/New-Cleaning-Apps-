@@ -33,13 +33,19 @@ export function PostPhotos({ photos }: { photos: PostPhoto[] }) {
     full?: boolean;
   }) => (
     <figure>
-      <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+      {/* A full-width photo keeps its own proportions instead of being forced
+          into a fixed box. Composites arrive at whatever ratio the phone shot,
+          and object-cover on a mismatched frame quietly crops the edges, which
+          on a before/after pair means clipping the labels. Paired thumbnails
+          still use the fixed frame so two shots line up beside each other. */}
+      <div className={full ? "overflow-hidden rounded-lg" : "relative aspect-[4/3] overflow-hidden rounded-lg"}>
         <Image
           src={photo.src}
           alt={photo.alt}
-          fill
+          {...(full
+            ? { width: 1600, height: 1200, className: "h-auto w-full" }
+            : { fill: true as const, className: "object-cover" })}
           sizes={full ? "(min-width: 1024px) 720px, 100vw" : "(min-width: 640px) 50vw, 100vw"}
-          className="object-cover"
         />
         {badge && (
           <span className="absolute left-2 top-2 rounded bg-black/70 px-2 py-0.5 text-xs font-medium uppercase tracking-wide text-white">

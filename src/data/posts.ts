@@ -12,6 +12,17 @@ export const posts: Post[] = [
     tags: ["quick wins", "odor control", "bathroom"],
     excerpt: "Listerine turns up in a lot of cleaning advice, and some of it is genuinely good while some of it will stain a countertop. The thymol and eucalyptol that make the amber original an antiseptic are doing real work on odor-causing bacteria; the blue and whitening versions add dyes you do not want near light surfaces. Here is which uses hold up, where the internet oversells it, and the exact amounts and dwell times that separate a hack that works from one that disappoints.",
     coverImage: "/uploads/13-mind-blowing-listerine-hacks.jpg",
+    // Photo above the method, same as the other posts carrying real photos.
+    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
+    photos: [
+      {
+        src: "/photos/13-mind-blowing-listerine-hacks/listerine.jpg",
+        alt: "Side-by-side before and after of the same bathroom sink: the basin yellowed and spotted with rust-brown marks on the left, clean white porcelain on the right, with a bottle of amber Listerine held in frame.",
+        caption:
+          "The same sink, same angle, with everything on the counter left where it was. Note that the staining covers the whole basin rather than sitting in one ring, which is what soap film and hard water do together over time.",
+        takenOn: "2026-08-18",
+      },
+    ],
     supplies: ["Original amber Listerine (not the blue or whitening kinds)", "Empty 16 ounce spray bottle", "Two or three microfiber cloths", "A soft bristle brush or old toothbrush", "Warm water", "Rubber gloves", "A small bowl for soaking", "A permanent marker for labeling", "Paper towels for spot testing"],
     steps: [
       { title: "Mix an even all purpose spray", body: "Pour equal parts original amber Listerine and warm water into a clean spray bottle. I use roughly one cup of each, which fills a standard 16 ounce bottle with a little room to shake. The thymol and eucalyptol in the original formula are mild antiseptics, and the alcohol (around 22 percent in the original amber) helps everything dry fast without streaking. Label the bottle in permanent marker so nobody in your house grabs it thinking it is a drink, and note the date so you know when the batch is getting old. I only ever use the amber version. The first time I tried the blue kind on a white laminate counter it left a faint bluish tint near the seam that took real scrubbing to lift. The colored and whitening formulas carry dyes and different concentrations, so keep them for your mouth and keep the amber for surfaces. This spray is safe on sealed laminate, glazed ceramic tile, glass, stainless steel, and painted trim that you have spot tested first. Keep it off unsealed stone and raw wood. Shake before every use, since the oils separate and float to the top as the bottle sits. If your spray ever smells weak, it has usually gone flat from evaporation, so mix a fresh batch rather than doubling the dose. One filled bottle lasts me about two weeks of everyday wiping, and that is roughly the window where it still dries streak free." },
@@ -2579,6 +2590,17 @@ export const posts: Post[] = [
     excerpt:
       "I burned something onto my glass stovetop badly enough that I genuinely considered just leaving it there forever. After going through every method I could find, one of them worked so well I actually texted my sister about it. Here's what removed the worst baked-on black carbon without a single scratch, why most advice about this gets it wrong, and the one tool almost nobody uses that makes the biggest difference.",
     coverImage: "/uploads/how-to-clean-a-glass-stovetop-without-scratching.jpg",
+    // Photo above the method, same as the other posts carrying real photos.
+    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
+    photos: [
+      {
+        src: "/photos/how-to-clean-a-glass-stovetop-without-scratching/stove.jpg",
+        alt: "Side-by-side before and after of the same glass stovetop: burnt-on brown residue with a gloved hand working a soapy sponge over it on the left, clean black glass on the right.",
+        caption:
+          "The same cooktop with the pans left in place. Worth noting what the left side shows: a soapy sponge and dwell time, not a scouring pad. That residue looks like it needs scraping and does not.",
+        takenOn: "2026-08-18",
+      },
+    ],
     supplies: ["Baking soda", "White vinegar", "Dish soap", "Razor blade scraper (single edge)", "Microfiber cloths", "Spray bottle", "Warm water"],
     steps: [
       { title: "Why I kept scratching mine and what I was doing wrong", body: "I scratched my first glass stovetop with a scouring pad the first week I owned it. The second one I scratched with a rough sponge. By the third stovetop I finally understood the problem. Glass-ceramic (sold under brand names like Ceran, Schott, and Vitroceramic) is made from a tempered composite that looks smooth but is microscopically porous. The scratches people blame on cleaning products are almost always caused by abrasive tools steel wool, rough sponge backs, and even grains of baking soda dragged dry across the surface without lubrication. The glass itself is hard enough to resist most cleaning chemicals, but softer than most particles dragged across it under pressure. Understanding this changes everything about technique: the goal is always to lift residue off the surface using chemistry and moisture, never to scrape it off using friction. Every method in this guide applies cleaner, waits for it to work, and wipes gently rather than scrubbing. The one exception is a single-edge razor blade scraper held at the correct angle, which is the only mechanical tool safe for glass stovetop use and the correct solution for genuinely baked-on carbon residue." },
