@@ -5154,170 +5154,6 @@ export const posts: Post[] = [
       { question: "How do I know if I am dealing with bed bugs or another insect?", answer: "Adult bed bugs are flat, oval, reddish brown, and roughly the size of an apple seed at five to seven millimeters across. The most useful confirmation is not the bug itself but the dark fecal spotting along the piping seam of the mattress, which looks like small dots of dried ink and smears red brown when rubbed with a wet cotton swab. Carpet beetles are smaller, rounder, and often patterned in black and white or yellow. Bat bugs look almost identical to bed bugs and are distinguished only by longer hair under a microscope. Capture two suspected bugs in a clear glass jar with a lid and bring them to a local pest control company or county extension office for free identification before starting any treatment, because acting on a misidentification wastes a week of effort while the real problem grows." }
     ]
   },
-  // TODO(original-content) how-to-get-rid-of-rats-in-your-house
-  //
-  // Written from research only. Nothing in this post claims anyone tested
-  // anything, and it must stay that way until real notes exist. Original work
-  // that would genuinely strengthen it, in rough order of value:
-  //
-  //   [ADD ORIGINAL PHOTO: a real entry point, ideally a pipe gap under a sink
-  //    or a curled garage door seal, with something for scale]
-  //   [ADD ORIGINAL PHOTO: rub marks along a baseboard under raking flashlight
-  //    light, which is the detail readers say they cannot picture]
-  //   [ADD BEFORE/AFTER PHOTO: a pipe gap before sealing and after, packed with
-  //    copper mesh and sealed over]
-  //   [ADD TEST RESULT: how many nights of pre baiting before bait was taken
-  //    cleanly, how many traps were set, and the catch count per night]
-  //   [ADD PERSONAL EXPERIENCE: what the flour patch test actually showed, and
-  //    whether the clean patch stayed clean]
-  //
-  // Facts stated as rules of thumb rather than as sourced claims, because no
-  // source was available at writing time. Verify or add a citation before
-  // treating any of them as established:
-  //
-  //   - Rats fitting through a hole roughly the size of a quarter, mice a
-  //     pencil. Written as a rough guide, not a specification.
-  //   - Rat wariness toward new objects on familiar runways, which is the whole
-  //     basis of the pre baiting step. Well established in pest control
-  //     practice; a university extension source would be the right citation.
-  //   - Diseases carried in rodent droppings and urine, and the do not sweep or
-  //     vacuum rule. The safety note deliberately does not name diseases or
-  //     cite figures. A link to the relevant public health guidance should be
-  //     added rather than a list written from memory.
-  //   - Ultrasonic repeller effectiveness, described as not well supported.
-  //     Fair as written, but a source would make it stronger.
-  {
-    title: "How to Get Rid of Rats in Your House",
-    slug: "how-to-get-rid-of-rats-in-your-house",
-    author: "Fredler Pierre-Louis",
-    datePublished: "2026-08-29",
-    category: "pest-control",
-    readTime: "18 min",
-    tags: ["pest control", "safety", "deep clean", "kitchen"],
-    excerpt:
-      "Rats are a building problem wearing a pest costume. They are inside because something is letting them in and something is feeding them, and until both of those change, killing the ones currently in the house just makes room for the next ones. That is why traps on their own tend to work for about two weeks. This covers telling rats from mice, reading the house for the routes they already use, why the first two or three nights of trapping should not involve a set trap at all, what poison actually costs you indoors, and how to clean up droppings without turning a rodent problem into a health one.",
-    coverImage: "/uploads/how-to-get-rid-of-rats-in-your-house.jpg",
-    supplies: [
-      "Rat size snap traps, more than you think you need",
-      "Disposable nitrile gloves",
-      "Quarter inch galvanized hardware cloth",
-      "Copper mesh or stainless steel wool",
-      "Exterior sealant or mortar",
-      "A good flashlight",
-      "Household bleach or a disinfectant spray",
-      "Heavy duty trash bags",
-      "Airtight glass or metal food containers",
-    ],
-    steps: [
-      {
-        title: "Rats or mice? The answer changes what you buy",
-        body: "The droppings tell you first. Mouse droppings are about the size of a grain of rice with pointed ends, and you tend to find dozens of them scattered around. Rat droppings are several times bigger, closer to a large raisin or an olive pit, and you find fewer of them concentrated in a smaller number of spots. Sound is the second clue. Mice scratch and skitter, light and quick. Rats are heavy enough that you hear thumping and dragging through a ceiling, and their gnawing is loud enough to wake people up. Look for dark greasy streaks along baseboards and joists too, which rats leave far more heavily than mice do. This distinction matters more than it sounds. A mouse trap will not reliably kill a rat. It catches a foot or a snout, the rat pulls free, and now you have an animal that connects that object with pain and will not go near one for weeks. Buying the right size on day one is often the difference between a two week job and a two month one."
-      },
-      {
-        title: "What they are actually in the house for",
-        body: "Three things, and food is not always the strongest pull. Rats need water daily, so a slow leak under a sink or a condensation drip behind a fridge draws them harder than most people expect, especially somewhere dry. They need a nest site that is dark, undisturbed and close to both, which is why wall voids, the space under a dishwasher, the back of a cluttered garage and attic insulation come up again and again. Food is the third, and the quantity needed is small. Crumbs behind a stove, a torn bag of pet food, a bird feeder dropping seed onto a deck, fallen fruit, an open compost pile, a bin with no lid. Working out which of the three is the strongest draw in your particular house is what separates clearing the problem from repeating it every autumn. It also tells you where traps go, because rats move between nest, water and food along the same few routes, and they do it mostly at night. Remove one of the three and the territory is less worth holding. Remove all three and the next rat that finds your gap keeps walking."
-      },
-      {
-        title: "Read the house before you buy a single trap",
-        body: "Take a flashlight and hold it low, almost parallel to the floor, instead of pointing it straight down. Raking light like that throws shadows off droppings, rub marks and gnaw damage that disappear completely under a ceiling light. Work the perimeter of each room, then behind and underneath things: the fridge, the stove, the dishwasher, the water heater, the back corners of base cabinets, under the sink where the pipes come through the wall, the laundry area, the garage, the attic hatch. You are looking for four things. Droppings. Dark greasy rub marks. Gnawed edges on wood, plastic or packaging. And shredded paper, fabric or insulation gathered into a nest. Mark whatever you find with a piece of painter's tape so you can find it again in the dark. If you are not sure a route is still being used, dust a thin patch of flour or talc across it, roughly the size of a sheet of paper, and look at it in the morning for footprints and tail drag. That one test saves a lot of guessing, because a pile of droppings tells you a rat was there at some point and a fresh track tells you one was there last night."
-      },
-      {
-        title: "Why rats hug the wall, and why that decides everything about placement",
-        body: "Rats travel with one side of the body touching something. It is less a preference than how they navigate, since their eyesight is poor and their whiskers and flank do most of the work. So they run baseboards, the base of a wall, the top of a joist, the edge of a beam, the gap behind a cabinet kickboard, rather than crossing open floor. Those dark streaks along the route are body oil mixed with dust, laid down over repeated trips, and a fresh looking shiny one means the route is current rather than abandoned. Everything about trapping follows from this one habit. A trap set in the middle of a room is set somewhere a rat has no reason to go. A trap set tight against a wall, on a spot where you found a rub mark or fresh droppings, is set on a road the animal is already using every night. If you take one idea from all of this, take that one."
-      },
-      {
-        title: "Find the way in, and assume the gap is smaller than you think",
-        body: "The usual entries are unglamorous. Gaps where pipes pass through a wall under a sink or behind a washing machine. The bottom corners of a garage door where the rubber seal has curled away. A dryer vent with a broken flap. Roofline and soffit gaps, particularly where a tree branch or a utility line reaches the roof. Foundation cracks, weep holes, crawlspace vents with rusted screen, the gap under an exterior door, and the point where air conditioning lines enter the wall. The rule of thumb people repeat is that a rat needs a hole about the size of a quarter and a mouse one about the size of a pencil. Treat that as a rough guide rather than a specification: if you can push a pen through it, seal it. A useful trick for an attic is to go up in daylight, turn every light off, sit still for a couple of minutes until your eyes adjust, and look along the roofline for pinpricks of daylight. Whatever is letting light in is letting something else in."
-      },
-      {
-        title: "Sealing that holds, and sealing that wastes a weekend",
-        body: "Expanding foam on its own is not a repair. Rats chew back through it, and the same goes for plastic sheeting, thin wood and ordinary fiberglass insect screen. What holds is material they cannot get their teeth around. Quarter inch galvanized hardware cloth cut oversize and fixed over a vent or a hole. Sheet metal over a chewed door corner. Copper mesh or stainless steel wool packed hard into a pipe gap and then sealed over with mortar or exterior sealant, so the metal takes the chewing and the sealant only keeps weather out. Metal edged sweeps on exterior doors. The order matters though, and this is where a lot of well meant weekends go wrong. If you seal every entry while rats are still inside, you have not solved the problem, you have locked animals into wall voids to die somewhere you cannot reach. The usual approach is to seal the exterior while trapping the interior at the same time, and to leave the one or two most heavily used entries until last, once the catches have stopped."
-      },
-      {
-        title: "Snap traps, and why they are still the main tool",
-        body: "They kill quickly when they are sized and placed properly, you can see the result instead of wondering, there is no poison in a house with children or pets, and nothing dies inside a wall. Buy rat traps, not mouse traps. The plastic jaw style with a wide pedal is easier to set without catching your fingers and grips better than the old wooden design, though both do the job. The number matters more than the brand. Most people buy two, catch one rat and decide it is over. A more realistic starting point for a house with signs in more than one room is a dozen, spread along every runway you marked with tape. Volume matters because you effectively get one good night. Once a rat sees another one caught, or a trap fires and misses, the rest of the group treats that object as dangerous and your catch rate falls off sharply. Setting a lot of traps on the same night is how you take a real bite out of the population before that happens."
-      },
-      {
-        title: "Do not set the traps for the first two or three nights",
-        body: "This is the step that separates people who clear rats in a fortnight from people who fight them for two months. Rats are wary of new objects in territory they know well, which is close to the opposite of how mice behave. Put a strange metal thing on a runway and a rat will route around it for days rather than investigate it. So take the wariness away before you need the trap to work. Set the traps out baited, with the trigger left unset, and leave them two or three nights. The rats feed from them, nothing bad happens, and the object stops being new. Once bait is being taken cleanly from most of the traps, rebait and set every one of them on the same night. The difference in catch rate is usually obvious, and it costs you nothing except patience at the point where patience is hardest to find."
-      },
-      {
-        title: "Where the traps go",
-        body: "Flat against the wall, not near it. The body of the trap should touch the baseboard, with the trigger end toward the wall so a rat running the wall passes over the pedal rather than around it. On a heavy runway, set two traps back to back with the triggers facing opposite directions, since an animal that shies off one often backs into the other. Good spots are behind and beneath appliances, along the back wall of a base cabinet, on either side of an entry hole, and in an attic along the tops of joists and beside rafter runs. Keep them out of open floor and out of reach of pets and small children, which in practice means behind an appliance rather than in the middle of a room. In an attic or crawlspace, fasten each trap to the joist with a screw or a zip tie. A caught rat can drag an unsecured trap into a void where you will never find it, and that is a problem you would rather not create while solving another one."
-      },
-      {
-        title: "Bait, and why a big blob of peanut butter fails",
-        body: "The trigger has to move, so the bait has to resist being taken. A thick blob of peanut butter gets licked off the top with no real weight going onto the pedal, which is why so many traps are found empty and unsprung in the morning. Use a pea sized amount and press it into the texture of the pedal so it has to be worked at. Better still, use something you can tie on: a small piece of bacon, a piece of dried fruit, a nut, or a cotton ball or short length of dental floss, which rats take for nesting material and have to tug at. Thread or wire it through the pedal so it cannot be lifted off cleanly. Change the bait if nothing is being taken after a couple of nights, because a group feeding on a split bag of dog food is not going to get excited about peanut butter. Handle traps and bait with gloves, less for scent reasons than because you will be handling those same traps again after they have caught something."
-      },
-      {
-        title: "Checking, resetting and disposing",
-        body: "Check morning and evening. A caught rat left all day draws flies, and blowfly larvae in an attic is a second problem you do not want on top of the first, which is covered in [how to get rid of maggots in a trash can](/cleaning-hacks/how-to-get-rid-of-maggots-in-trash-can). Wear disposable gloves. Lift the trap by the far end and either drop the whole thing into a bag if you are discarding it, or release into a bag and reset if you are keeping it. Double bag, tie both bags, and put it in an outdoor bin. Wash your hands properly afterwards even though you wore gloves. Reset immediately in the same place if you caught there, because a productive spot is usually productive again. Move a trap that has produced nothing in three or four nights, and move it somewhere with fresh evidence rather than to another guess. Traps do not need to be scent free between catches, and a used one often performs better, but wipe them down with disinfectant."
-      },
-      {
-        title: "Glue boards and live traps",
-        body: "Glue boards deserve an honest description. A rat caught on one is not killed by it. It struggles for hours, frequently tears itself free leaving skin and fur behind, and the animal that escapes is trap wise permanently. They are restricted or banned in some places, and the ones that do hold produce a scene in the morning that most people are not prepared for. Live traps have a different problem. Releasing a rat somewhere else is illegal in many jurisdictions, relocated rats generally do not survive in territory they do not know, and the space they leave behind in your house gets filled from outside within days. Neither approach touches the reason rats are there in the first place. If snap traps feel unpleasant, the more useful alternative is an electric trap, which kills quickly and keeps the whole thing contained."
-      },
-      {
-        title: "Rodenticide, and the costs nobody mentions in the aisle",
-        body: "Poison has a place, mostly outdoors, mostly in tamper resistant bait stations that are anchored down, and mostly for populations too large or too inaccessible to trap. Inside a living space it creates a problem worse than the one it solves. Anticoagulant baits take days to work, and the rat dies wherever it happens to be when it does, which is usually a wall cavity or under a floor. The smell that follows lasts for weeks and there is often no way to reach the body without opening the wall. Then there is everything else that eats a poisoned rat. A cat, a dog, an owl, a hawk. Several second generation products are restricted for exactly that reason, and the rules differ by country and by state. If you use bait at all, use it outside, in a locked station, and check what is actually legal where you live rather than assuming that whatever is on the shelf is fine to use anywhere."
-      },
-      {
-        title: "Electric traps, ultrasonic gadgets and the rest of the aisle",
-        body: "Electric traps deliver a high voltage shock inside an enclosed tunnel. They work, they are fast, and they suit a garage or basement where you can check them regularly. They cost a lot more per unit than snap traps and they go through batteries, so they make sense for a few high traffic spots rather than for a whole house. Ultrasonic repellers are the most heavily marketed rodent product and the least convincing. The claims made for them are not well supported and animals tend to get used to a constant signal, so treat one as an unproven extra rather than as your control method. Peppermint oil, mothballs and similar deterrents run into the same wall on a larger scale. They might make one spot briefly less pleasant, and none of them will move an established group that has food, water and a nest. A cat is not rodent control either. Plenty of cats will chase a mouse and leave a full grown rat completely alone."
-      },
-      {
-        title: "Cleaning up droppings and nests without making it worse",
-        body: "Do not sweep and do not vacuum. Dry droppings, urine and nesting material break into fine particles when they are disturbed, and that is the route by which rodent borne illness reaches people. Open the windows and leave the area for half an hour before you start. Wear disposable gloves, and use a properly fitted respirator rather than a paper dust mask if the space is enclosed, such as an attic or crawlspace. Spray the droppings and the surface around them with disinfectant, or with a bleach solution of roughly one part bleach to ten parts water, and leave it visibly wet for five minutes before you touch anything. Then lift everything with paper towels, straight into a bag, double bag it and put it in an outdoor bin. Wipe the whole area down again afterwards. Soft furnishings and insulation that have been nested in are usually better removed than cleaned. Anyone who is pregnant or has a weakened immune system should not be doing this part at all."
-      },
-      {
-        title: "The kitchen changes that decide whether they come back",
-        body: "Rats chew through thin plastic tubs and cardboard without much effort, so moving rice, flour, cereal and pet food into glass or metal with a real seal removes most of what is worth returning for. Pet food is the one that gets forgotten, particularly a bag left open in a garage or a bowl left down overnight. Bins need lids that actually stay shut, and the kitchen bin should not be sitting full of food waste all night. Pull the stove and the fridge out once and clean what is behind and underneath them, because that is where crumbs collect and where nobody looks from one year to the next. Fix the slow leaks while you are at it, since water is a bigger draw than most people credit. Keeping the sink and drain clean belongs to the same job, and there is more on that in [how to deep clean and deodorize a kitchen sink](/cleaning-hacks/10-kitchen-sink-detox-hacks-for-odor-free-results)."
-      },
-      {
-        title: "Outside, which is usually where it started",
-        body: "A bird feeder is the most commonly missed rat attractant on a residential property. Seed dropped on the ground under a feeder is a reliable nightly meal, and taking the feeder down for the length of the campaign is worth more than another six traps. The same goes for fallen fruit, a compost heap taking food scraps, dog waste left on the lawn, and bins parked hard against the house wall. Move stacked wood, pavers and stored material off the ground and away from the walls, because a woodpile against a foundation is a nest site with a roof on it. Cut back dense ground cover and ivy along the foundation. Trim branches that overhang or touch the roof, since that is how roof rats reach a soffit gap in the first place. None of this is dramatic, and all of it reduces the pressure on your exterior, which is what stops the next one finding the gap you missed."
-      },
-      {
-        title: "Attic, garage and crawlspace",
-        body: "In an attic, look along the tops of joists and for insulation that has been pushed into tunnels or flattened into a latrine area, and check every point where cables and pipes pass through the roofline. Gnawed electrical wiring is the reason a rat problem is sometimes an electrical problem, and any chewed cable needs an electrician rather than a wrap of tape. A garage has its own version: stored dog food, cardboard, and vehicles that sit unused for weeks, since an engine bay is warm and some wiring insulation gets chewed. Crawlspaces are where exclusion most often fails, because vents rust out and access hatches never seal properly. Screen every vent with hardware cloth rather than insect mesh and fit a hatch that closes. These three spaces are also where traps need fastening down to a joist, and where a respirator during cleanup is genuinely worth the money rather than a precaution on paper."
-      },
-      {
-        title: "How long this takes, and how you know it is finished",
-        body: "For a house with signs in one or two rooms and one clear entry, expect a day to survey and seal, two or three nights of pre baiting, then one to two weeks of trapping. A longer running problem with animals breeding inside can take a month or more, and the catch rate typically drops, flattens, and then produces one more after several quiet nights. The clean patch test is the most reliable check you have. Clean a surface where droppings kept appearing, wipe it completely, and look again after three nights. Nothing new means nothing is walking there. Do the same with the flour patches on the old runways. Traps untouched for seven to ten nights, no fresh gnawing and no sounds at night is about as close to confirmation as this gets. Leave a few traps out unset for another couple of weeks anyway, and check the exterior again at the start of autumn, which is when the pressure to get indoors goes up."
-      },
-      {
-        title: "The mistakes that keep this going",
-        body: "Setting the traps on the first night, which teaches the group to avoid them. Buying two traps for a problem that needs twelve. Placing traps in open floor rather than tight to a wall. Using mouse traps on rats, which injures instead of killing and creates a trap shy animal. Sealing every hole before the inside population is gone, which puts dead rats in your walls. Moving traps every morning so no location ever gets the two or three nights it needs to produce. Leaving the bird feeder up through the whole thing. Using poison in a living space. And the most common one, stopping after the first catch. One rat is almost never one rat, and the moment the signs disappear is not the moment the entries have been closed."
-      },
-      {
-        title: "When to call somebody",
-        body: "A professional earns their money when the population is bigger than your access to it. The signs that point that way are burrows in the soil against the foundation, sounds coming from more than one part of the structure, droppings in several rooms rather than one, catches still happening after three weeks of consistent trapping, chewed wiring, and any attic or crawlspace you cannot get into safely. It is also the right call if anyone in the house is pregnant, immunocompromised or has a respiratory condition, because the cleanup is the part that carries the health risk. When you call, ask what the plan is for exclusion, not just for baiting. A treatment that kills the rats currently inside and leaves the gaps open is a subscription rather than a fix."
-      },
-    ],
-    proTips: [
-      "Pre bait the traps unset for two or three nights before you set a single one. It is the cheapest thing on this list and it changes the catch rate more than any other decision.",
-      "Trigger end toward the wall, trap body touching the baseboard. A trap parallel to the wall with the trigger facing out gets walked around.",
-      "Tie or wire the bait to the pedal. Anything that can be licked or lifted off will be taken without springing the trap.",
-      "Take the bird feeder down for the duration. It is the attractant people are most reluctant to give up and the one that most often keeps a property populated.",
-      "Use the clean patch test rather than your memory. Wipe a surface completely, wait three nights, and let fresh droppings or the absence of them tell you where you are.",
-    ],
-    safetyNotes: [
-      "Never sweep or vacuum dry droppings, urine or nesting material. Ventilate the area for half an hour, wet everything with disinfectant or a one to ten bleach solution, leave it five minutes, then lift it with paper towels.",
-      "Wear disposable gloves for traps, droppings and nests, and a properly fitted respirator rather than a paper mask in an attic, crawlspace or any enclosed space. Wash your hands afterwards regardless.",
-      "Anyone pregnant, immunocompromised or with a respiratory condition should not do the cleanup. Rodent droppings and urine carry illnesses that are worth reading up on before you start rather than after.",
-      "Rodent gnawed electrical wiring is a fire risk. Have chewed cable inspected by an electrician instead of taping over it.",
-      "Rodenticide used indoors leaves a dead animal inside a wall cavity you cannot reach, and a poisoned rat can kill the cat, dog, owl or hawk that eats it. Several products are legally restricted and the rules vary by country and state.",
-      "Do not handle a live or injured rat. A bite or scratch needs medical advice, not a wait and see.",
-      "Keep traps, bait stations and any rodenticide out of reach of children and pets, which usually means behind an appliance or inside a locked station rather than in an open room.",
-    ],
-    faqs: [
-      { question: "What actually gets rid of rats the fastest?", answer: "A lot of well placed snap traps, pre baited unset for two or three nights and then all set on the same night, combined with sealing the outside of the building. The pre baiting is the part people skip and it is the part that makes the difference, because rats avoid unfamiliar objects on routes they know. Traps alone clear the animals currently inside. Sealing is what stops the next ones replacing them, and without it the problem comes back on a schedule." },
-      { question: "Does one rat mean there are more?", answer: "Usually, though not always. A single rat can wander in through an open garage door and get stuck, and that does happen. But rats are social and a rat that has found food, water and a nest site is rarely alone for long. The practical answer is to treat the first sighting as a survey trigger rather than a conclusion. Look for droppings in more than one location, rub marks along walls, gnaw damage and nesting material. If you find signs in two separate areas of the house, plan for a population rather than for one animal." },
-      { question: "Should I use rat poison in my house?", answer: "Inside a living space, generally no. Anticoagulant baits take days to work and the rat dies wherever it happens to be, which is usually a wall cavity or under a floor, and the smell that follows can last weeks with no practical way to reach the body. There is also secondary poisoning to think about, since a poisoned rat that gets eaten by a pet or a bird of prey passes the poison on. Where bait is used, it belongs outdoors in a tamper resistant station that is anchored down, and you should check what is legal where you live before buying anything." },
-      { question: "What smells keep rats away?", answer: "Peppermint oil, ammonia and mothballs all get recommended and none of them will move an established group. A rat with a nest, a water source and a nightly meal will tolerate an unpleasant smell, and the smell fades while the food does not. Scent deterrents can make a specific spot slightly less attractive for a short while, which is a marginal effect at best. Removing the food and water and closing the entries does the work that scent is being asked to do." },
-      { question: "How do I know when they are gone?", answer: "Stop relying on memory and set up a test. Clean a surface where droppings kept appearing until it is completely clear, then look at it again after three nights. Dust flour or talc across the old runways and check for tracks in the morning. Ten nights with no fresh droppings, no new gnawing, no tracks, no sounds and no trap activity is a reasonable point to call it. Leave a few unset traps out for another couple of weeks anyway, and walk the exterior again in early autumn." },
-    ]
-  },
   {
     title: "How to Get Onion Smell Out of the House",
     slug: "how-to-get-onions-smell-out-of-the-house",
@@ -6999,6 +6835,170 @@ export const posts: Post[] = [
         "question": "How do I get rid of odors in a microfiber couch?",
         "answer": "Once the couch is clean and fully dry, sprinkle a light, even layer of baking soda over the cushions and seat deck, let it sit at least fifteen minutes or a few hours for strong odors, then vacuum it up thoroughly. Baking soda absorbs smells rather than masking them. Make sure the fabric is dry first so the powder does not clump. If the odor is deep in the foam rather than on the surface, air the cushions out separately, since surface deodorizing cannot fully reach smells trapped inside the foam."
       }
+    ]
+  },
+  // TODO(original-content) how-to-get-rid-of-rats-in-your-house
+  //
+  // Written from research only. Nothing in this post claims anyone tested
+  // anything, and it must stay that way until real notes exist. Original work
+  // that would genuinely strengthen it, in rough order of value:
+  //
+  //   [ADD ORIGINAL PHOTO: a real entry point, ideally a pipe gap under a sink
+  //    or a curled garage door seal, with something for scale]
+  //   [ADD ORIGINAL PHOTO: rub marks along a baseboard under raking flashlight
+  //    light, which is the detail readers say they cannot picture]
+  //   [ADD BEFORE/AFTER PHOTO: a pipe gap before sealing and after, packed with
+  //    copper mesh and sealed over]
+  //   [ADD TEST RESULT: how many nights of pre baiting before bait was taken
+  //    cleanly, how many traps were set, and the catch count per night]
+  //   [ADD PERSONAL EXPERIENCE: what the flour patch test actually showed, and
+  //    whether the clean patch stayed clean]
+  //
+  // Facts stated as rules of thumb rather than as sourced claims, because no
+  // source was available at writing time. Verify or add a citation before
+  // treating any of them as established:
+  //
+  //   - Rats fitting through a hole roughly the size of a quarter, mice a
+  //     pencil. Written as a rough guide, not a specification.
+  //   - Rat wariness toward new objects on familiar runways, which is the whole
+  //     basis of the pre baiting step. Well established in pest control
+  //     practice; a university extension source would be the right citation.
+  //   - Diseases carried in rodent droppings and urine, and the do not sweep or
+  //     vacuum rule. The safety note deliberately does not name diseases or
+  //     cite figures. A link to the relevant public health guidance should be
+  //     added rather than a list written from memory.
+  //   - Ultrasonic repeller effectiveness, described as not well supported.
+  //     Fair as written, but a source would make it stronger.
+  {
+    title: "How to Get Rid of Rats in Your House",
+    slug: "how-to-get-rid-of-rats-in-your-house",
+    author: "Fredler Pierre-Louis",
+    datePublished: "2026-08-29",
+    category: "pest-control",
+    readTime: "18 min",
+    tags: ["pest control", "safety", "deep clean", "kitchen"],
+    excerpt:
+      "Rats are a building problem wearing a pest costume. They are inside because something is letting them in and something is feeding them, and until both of those change, killing the ones currently in the house just makes room for the next ones. That is why traps on their own tend to work for about two weeks. This covers telling rats from mice, reading the house for the routes they already use, why the first two or three nights of trapping should not involve a set trap at all, what poison actually costs you indoors, and how to clean up droppings without turning a rodent problem into a health one.",
+    coverImage: "/uploads/how-to-get-rid-of-rats-in-your-house.jpg",
+    supplies: [
+      "Rat size snap traps, more than you think you need",
+      "Disposable nitrile gloves",
+      "Quarter inch galvanized hardware cloth",
+      "Copper mesh or stainless steel wool",
+      "Exterior sealant or mortar",
+      "A good flashlight",
+      "Household bleach or a disinfectant spray",
+      "Heavy duty trash bags",
+      "Airtight glass or metal food containers",
+    ],
+    steps: [
+      {
+        title: "Rats or mice? The answer changes what you buy",
+        body: "The droppings tell you first. Mouse droppings are about the size of a grain of rice with pointed ends, and you tend to find dozens of them scattered around. Rat droppings are several times bigger, closer to a large raisin or an olive pit, and you find fewer of them concentrated in a smaller number of spots. Sound is the second clue. Mice scratch and skitter, light and quick. Rats are heavy enough that you hear thumping and dragging through a ceiling, and their gnawing is loud enough to wake people up. Look for dark greasy streaks along baseboards and joists too, which rats leave far more heavily than mice do. This distinction matters more than it sounds. A mouse trap will not reliably kill a rat. It catches a foot or a snout, the rat pulls free, and now you have an animal that connects that object with pain and will not go near one for weeks. Buying the right size on day one is often the difference between a two week job and a two month one."
+      },
+      {
+        title: "What they are actually in the house for",
+        body: "Three things, and food is not always the strongest pull. Rats need water daily, so a slow leak under a sink or a condensation drip behind a fridge draws them harder than most people expect, especially somewhere dry. They need a nest site that is dark, undisturbed and close to both, which is why wall voids, the space under a dishwasher, the back of a cluttered garage and attic insulation come up again and again. Food is the third, and the quantity needed is small. Crumbs behind a stove, a torn bag of pet food, a bird feeder dropping seed onto a deck, fallen fruit, an open compost pile, a bin with no lid. Working out which of the three is the strongest draw in your particular house is what separates clearing the problem from repeating it every autumn. It also tells you where traps go, because rats move between nest, water and food along the same few routes, and they do it mostly at night. Remove one of the three and the territory is less worth holding. Remove all three and the next rat that finds your gap keeps walking."
+      },
+      {
+        title: "Read the house before you buy a single trap",
+        body: "Take a flashlight and hold it low, almost parallel to the floor, instead of pointing it straight down. Raking light like that throws shadows off droppings, rub marks and gnaw damage that disappear completely under a ceiling light. Work the perimeter of each room, then behind and underneath things: the fridge, the stove, the dishwasher, the water heater, the back corners of base cabinets, under the sink where the pipes come through the wall, the laundry area, the garage, the attic hatch. You are looking for four things. Droppings. Dark greasy rub marks. Gnawed edges on wood, plastic or packaging. And shredded paper, fabric or insulation gathered into a nest. Mark whatever you find with a piece of painter's tape so you can find it again in the dark. If you are not sure a route is still being used, dust a thin patch of flour or talc across it, roughly the size of a sheet of paper, and look at it in the morning for footprints and tail drag. That one test saves a lot of guessing, because a pile of droppings tells you a rat was there at some point and a fresh track tells you one was there last night."
+      },
+      {
+        title: "Why rats hug the wall, and why that decides everything about placement",
+        body: "Rats travel with one side of the body touching something. It is less a preference than how they navigate, since their eyesight is poor and their whiskers and flank do most of the work. So they run baseboards, the base of a wall, the top of a joist, the edge of a beam, the gap behind a cabinet kickboard, rather than crossing open floor. Those dark streaks along the route are body oil mixed with dust, laid down over repeated trips, and a fresh looking shiny one means the route is current rather than abandoned. Everything about trapping follows from this one habit. A trap set in the middle of a room is set somewhere a rat has no reason to go. A trap set tight against a wall, on a spot where you found a rub mark or fresh droppings, is set on a road the animal is already using every night. If you take one idea from all of this, take that one."
+      },
+      {
+        title: "Find the way in, and assume the gap is smaller than you think",
+        body: "The usual entries are unglamorous. Gaps where pipes pass through a wall under a sink or behind a washing machine. The bottom corners of a garage door where the rubber seal has curled away. A dryer vent with a broken flap. Roofline and soffit gaps, particularly where a tree branch or a utility line reaches the roof. Foundation cracks, weep holes, crawlspace vents with rusted screen, the gap under an exterior door, and the point where air conditioning lines enter the wall. The rule of thumb people repeat is that a rat needs a hole about the size of a quarter and a mouse one about the size of a pencil. Treat that as a rough guide rather than a specification: if you can push a pen through it, seal it. A useful trick for an attic is to go up in daylight, turn every light off, sit still for a couple of minutes until your eyes adjust, and look along the roofline for pinpricks of daylight. Whatever is letting light in is letting something else in."
+      },
+      {
+        title: "Sealing that holds, and sealing that wastes a weekend",
+        body: "Expanding foam on its own is not a repair. Rats chew back through it, and the same goes for plastic sheeting, thin wood and ordinary fiberglass insect screen. What holds is material they cannot get their teeth around. Quarter inch galvanized hardware cloth cut oversize and fixed over a vent or a hole. Sheet metal over a chewed door corner. Copper mesh or stainless steel wool packed hard into a pipe gap and then sealed over with mortar or exterior sealant, so the metal takes the chewing and the sealant only keeps weather out. Metal edged sweeps on exterior doors. The order matters though, and this is where a lot of well meant weekends go wrong. If you seal every entry while rats are still inside, you have not solved the problem, you have locked animals into wall voids to die somewhere you cannot reach. The usual approach is to seal the exterior while trapping the interior at the same time, and to leave the one or two most heavily used entries until last, once the catches have stopped."
+      },
+      {
+        title: "Snap traps, and why they are still the main tool",
+        body: "They kill quickly when they are sized and placed properly, you can see the result instead of wondering, there is no poison in a house with children or pets, and nothing dies inside a wall. Buy rat traps, not mouse traps. The plastic jaw style with a wide pedal is easier to set without catching your fingers and grips better than the old wooden design, though both do the job. The number matters more than the brand. Most people buy two, catch one rat and decide it is over. A more realistic starting point for a house with signs in more than one room is a dozen, spread along every runway you marked with tape. Volume matters because you effectively get one good night. Once a rat sees another one caught, or a trap fires and misses, the rest of the group treats that object as dangerous and your catch rate falls off sharply. Setting a lot of traps on the same night is how you take a real bite out of the population before that happens."
+      },
+      {
+        title: "Do not set the traps for the first two or three nights",
+        body: "This is the step that separates people who clear rats in a fortnight from people who fight them for two months. Rats are wary of new objects in territory they know well, which is close to the opposite of how mice behave. Put a strange metal thing on a runway and a rat will route around it for days rather than investigate it. So take the wariness away before you need the trap to work. Set the traps out baited, with the trigger left unset, and leave them two or three nights. The rats feed from them, nothing bad happens, and the object stops being new. Once bait is being taken cleanly from most of the traps, rebait and set every one of them on the same night. The difference in catch rate is usually obvious, and it costs you nothing except patience at the point where patience is hardest to find."
+      },
+      {
+        title: "Where the traps go",
+        body: "Flat against the wall, not near it. The body of the trap should touch the baseboard, with the trigger end toward the wall so a rat running the wall passes over the pedal rather than around it. On a heavy runway, set two traps back to back with the triggers facing opposite directions, since an animal that shies off one often backs into the other. Good spots are behind and beneath appliances, along the back wall of a base cabinet, on either side of an entry hole, and in an attic along the tops of joists and beside rafter runs. Keep them out of open floor and out of reach of pets and small children, which in practice means behind an appliance rather than in the middle of a room. In an attic or crawlspace, fasten each trap to the joist with a screw or a zip tie. A caught rat can drag an unsecured trap into a void where you will never find it, and that is a problem you would rather not create while solving another one."
+      },
+      {
+        title: "Bait, and why a big blob of peanut butter fails",
+        body: "The trigger has to move, so the bait has to resist being taken. A thick blob of peanut butter gets licked off the top with no real weight going onto the pedal, which is why so many traps are found empty and unsprung in the morning. Use a pea sized amount and press it into the texture of the pedal so it has to be worked at. Better still, use something you can tie on: a small piece of bacon, a piece of dried fruit, a nut, or a cotton ball or short length of dental floss, which rats take for nesting material and have to tug at. Thread or wire it through the pedal so it cannot be lifted off cleanly. Change the bait if nothing is being taken after a couple of nights, because a group feeding on a split bag of dog food is not going to get excited about peanut butter. Handle traps and bait with gloves, less for scent reasons than because you will be handling those same traps again after they have caught something."
+      },
+      {
+        title: "Checking, resetting and disposing",
+        body: "Check morning and evening. A caught rat left all day draws flies, and blowfly larvae in an attic is a second problem you do not want on top of the first, which is covered in [how to get rid of maggots in a trash can](/cleaning-hacks/how-to-get-rid-of-maggots-in-trash-can). Wear disposable gloves. Lift the trap by the far end and either drop the whole thing into a bag if you are discarding it, or release into a bag and reset if you are keeping it. Double bag, tie both bags, and put it in an outdoor bin. Wash your hands properly afterwards even though you wore gloves. Reset immediately in the same place if you caught there, because a productive spot is usually productive again. Move a trap that has produced nothing in three or four nights, and move it somewhere with fresh evidence rather than to another guess. Traps do not need to be scent free between catches, and a used one often performs better, but wipe them down with disinfectant."
+      },
+      {
+        title: "Glue boards and live traps",
+        body: "Glue boards deserve an honest description. A rat caught on one is not killed by it. It struggles for hours, frequently tears itself free leaving skin and fur behind, and the animal that escapes is trap wise permanently. They are restricted or banned in some places, and the ones that do hold produce a scene in the morning that most people are not prepared for. Live traps have a different problem. Releasing a rat somewhere else is illegal in many jurisdictions, relocated rats generally do not survive in territory they do not know, and the space they leave behind in your house gets filled from outside within days. Neither approach touches the reason rats are there in the first place. If snap traps feel unpleasant, the more useful alternative is an electric trap, which kills quickly and keeps the whole thing contained."
+      },
+      {
+        title: "Rodenticide, and the costs nobody mentions in the aisle",
+        body: "Poison has a place, mostly outdoors, mostly in tamper resistant bait stations that are anchored down, and mostly for populations too large or too inaccessible to trap. Inside a living space it creates a problem worse than the one it solves. Anticoagulant baits take days to work, and the rat dies wherever it happens to be when it does, which is usually a wall cavity or under a floor. The smell that follows lasts for weeks and there is often no way to reach the body without opening the wall. Then there is everything else that eats a poisoned rat. A cat, a dog, an owl, a hawk. Several second generation products are restricted for exactly that reason, and the rules differ by country and by state. If you use bait at all, use it outside, in a locked station, and check what is actually legal where you live rather than assuming that whatever is on the shelf is fine to use anywhere."
+      },
+      {
+        title: "Electric traps, ultrasonic gadgets and the rest of the aisle",
+        body: "Electric traps deliver a high voltage shock inside an enclosed tunnel. They work, they are fast, and they suit a garage or basement where you can check them regularly. They cost a lot more per unit than snap traps and they go through batteries, so they make sense for a few high traffic spots rather than for a whole house. Ultrasonic repellers are the most heavily marketed rodent product and the least convincing. The claims made for them are not well supported and animals tend to get used to a constant signal, so treat one as an unproven extra rather than as your control method. Peppermint oil, mothballs and similar deterrents run into the same wall on a larger scale. They might make one spot briefly less pleasant, and none of them will move an established group that has food, water and a nest. A cat is not rodent control either. Plenty of cats will chase a mouse and leave a full grown rat completely alone."
+      },
+      {
+        title: "Cleaning up droppings and nests without making it worse",
+        body: "Do not sweep and do not vacuum. Dry droppings, urine and nesting material break into fine particles when they are disturbed, and that is the route by which rodent borne illness reaches people. Open the windows and leave the area for half an hour before you start. Wear disposable gloves, and use a properly fitted respirator rather than a paper dust mask if the space is enclosed, such as an attic or crawlspace. Spray the droppings and the surface around them with disinfectant, or with a bleach solution of roughly one part bleach to ten parts water, and leave it visibly wet for five minutes before you touch anything. Then lift everything with paper towels, straight into a bag, double bag it and put it in an outdoor bin. Wipe the whole area down again afterwards. Soft furnishings and insulation that have been nested in are usually better removed than cleaned. Anyone who is pregnant or has a weakened immune system should not be doing this part at all."
+      },
+      {
+        title: "The kitchen changes that decide whether they come back",
+        body: "Rats chew through thin plastic tubs and cardboard without much effort, so moving rice, flour, cereal and pet food into glass or metal with a real seal removes most of what is worth returning for. Pet food is the one that gets forgotten, particularly a bag left open in a garage or a bowl left down overnight. Bins need lids that actually stay shut, and the kitchen bin should not be sitting full of food waste all night. Pull the stove and the fridge out once and clean what is behind and underneath them, because that is where crumbs collect and where nobody looks from one year to the next. Fix the slow leaks while you are at it, since water is a bigger draw than most people credit. Keeping the sink and drain clean belongs to the same job, and there is more on that in [how to deep clean and deodorize a kitchen sink](/cleaning-hacks/10-kitchen-sink-detox-hacks-for-odor-free-results)."
+      },
+      {
+        title: "Outside, which is usually where it started",
+        body: "A bird feeder is the most commonly missed rat attractant on a residential property. Seed dropped on the ground under a feeder is a reliable nightly meal, and taking the feeder down for the length of the campaign is worth more than another six traps. The same goes for fallen fruit, a compost heap taking food scraps, dog waste left on the lawn, and bins parked hard against the house wall. Move stacked wood, pavers and stored material off the ground and away from the walls, because a woodpile against a foundation is a nest site with a roof on it. Cut back dense ground cover and ivy along the foundation. Trim branches that overhang or touch the roof, since that is how roof rats reach a soffit gap in the first place. None of this is dramatic, and all of it reduces the pressure on your exterior, which is what stops the next one finding the gap you missed."
+      },
+      {
+        title: "Attic, garage and crawlspace",
+        body: "In an attic, look along the tops of joists and for insulation that has been pushed into tunnels or flattened into a latrine area, and check every point where cables and pipes pass through the roofline. Gnawed electrical wiring is the reason a rat problem is sometimes an electrical problem, and any chewed cable needs an electrician rather than a wrap of tape. A garage has its own version: stored dog food, cardboard, and vehicles that sit unused for weeks, since an engine bay is warm and some wiring insulation gets chewed. Crawlspaces are where exclusion most often fails, because vents rust out and access hatches never seal properly. Screen every vent with hardware cloth rather than insect mesh and fit a hatch that closes. These three spaces are also where traps need fastening down to a joist, and where a respirator during cleanup is genuinely worth the money rather than a precaution on paper."
+      },
+      {
+        title: "How long this takes, and how you know it is finished",
+        body: "For a house with signs in one or two rooms and one clear entry, expect a day to survey and seal, two or three nights of pre baiting, then one to two weeks of trapping. A longer running problem with animals breeding inside can take a month or more, and the catch rate typically drops, flattens, and then produces one more after several quiet nights. The clean patch test is the most reliable check you have. Clean a surface where droppings kept appearing, wipe it completely, and look again after three nights. Nothing new means nothing is walking there. Do the same with the flour patches on the old runways. Traps untouched for seven to ten nights, no fresh gnawing and no sounds at night is about as close to confirmation as this gets. Leave a few traps out unset for another couple of weeks anyway, and check the exterior again at the start of autumn, which is when the pressure to get indoors goes up."
+      },
+      {
+        title: "The mistakes that keep this going",
+        body: "Setting the traps on the first night, which teaches the group to avoid them. Buying two traps for a problem that needs twelve. Placing traps in open floor rather than tight to a wall. Using mouse traps on rats, which injures instead of killing and creates a trap shy animal. Sealing every hole before the inside population is gone, which puts dead rats in your walls. Moving traps every morning so no location ever gets the two or three nights it needs to produce. Leaving the bird feeder up through the whole thing. Using poison in a living space. And the most common one, stopping after the first catch. One rat is almost never one rat, and the moment the signs disappear is not the moment the entries have been closed."
+      },
+      {
+        title: "When to call somebody",
+        body: "A professional earns their money when the population is bigger than your access to it. The signs that point that way are burrows in the soil against the foundation, sounds coming from more than one part of the structure, droppings in several rooms rather than one, catches still happening after three weeks of consistent trapping, chewed wiring, and any attic or crawlspace you cannot get into safely. It is also the right call if anyone in the house is pregnant, immunocompromised or has a respiratory condition, because the cleanup is the part that carries the health risk. When you call, ask what the plan is for exclusion, not just for baiting. A treatment that kills the rats currently inside and leaves the gaps open is a subscription rather than a fix."
+      },
+    ],
+    proTips: [
+      "Pre bait the traps unset for two or three nights before you set a single one. It is the cheapest thing on this list and it changes the catch rate more than any other decision.",
+      "Trigger end toward the wall, trap body touching the baseboard. A trap parallel to the wall with the trigger facing out gets walked around.",
+      "Tie or wire the bait to the pedal. Anything that can be licked or lifted off will be taken without springing the trap.",
+      "Take the bird feeder down for the duration. It is the attractant people are most reluctant to give up and the one that most often keeps a property populated.",
+      "Use the clean patch test rather than your memory. Wipe a surface completely, wait three nights, and let fresh droppings or the absence of them tell you where you are.",
+    ],
+    safetyNotes: [
+      "Never sweep or vacuum dry droppings, urine or nesting material. Ventilate the area for half an hour, wet everything with disinfectant or a one to ten bleach solution, leave it five minutes, then lift it with paper towels.",
+      "Wear disposable gloves for traps, droppings and nests, and a properly fitted respirator rather than a paper mask in an attic, crawlspace or any enclosed space. Wash your hands afterwards regardless.",
+      "Anyone pregnant, immunocompromised or with a respiratory condition should not do the cleanup. Rodent droppings and urine carry illnesses that are worth reading up on before you start rather than after.",
+      "Rodent gnawed electrical wiring is a fire risk. Have chewed cable inspected by an electrician instead of taping over it.",
+      "Rodenticide used indoors leaves a dead animal inside a wall cavity you cannot reach, and a poisoned rat can kill the cat, dog, owl or hawk that eats it. Several products are legally restricted and the rules vary by country and state.",
+      "Do not handle a live or injured rat. A bite or scratch needs medical advice, not a wait and see.",
+      "Keep traps, bait stations and any rodenticide out of reach of children and pets, which usually means behind an appliance or inside a locked station rather than in an open room.",
+    ],
+    faqs: [
+      { question: "What actually gets rid of rats the fastest?", answer: "A lot of well placed snap traps, pre baited unset for two or three nights and then all set on the same night, combined with sealing the outside of the building. The pre baiting is the part people skip and it is the part that makes the difference, because rats avoid unfamiliar objects on routes they know. Traps alone clear the animals currently inside. Sealing is what stops the next ones replacing them, and without it the problem comes back on a schedule." },
+      { question: "Does one rat mean there are more?", answer: "Usually, though not always. A single rat can wander in through an open garage door and get stuck, and that does happen. But rats are social and a rat that has found food, water and a nest site is rarely alone for long. The practical answer is to treat the first sighting as a survey trigger rather than a conclusion. Look for droppings in more than one location, rub marks along walls, gnaw damage and nesting material. If you find signs in two separate areas of the house, plan for a population rather than for one animal." },
+      { question: "Should I use rat poison in my house?", answer: "Inside a living space, generally no. Anticoagulant baits take days to work and the rat dies wherever it happens to be, which is usually a wall cavity or under a floor, and the smell that follows can last weeks with no practical way to reach the body. There is also secondary poisoning to think about, since a poisoned rat that gets eaten by a pet or a bird of prey passes the poison on. Where bait is used, it belongs outdoors in a tamper resistant station that is anchored down, and you should check what is legal where you live before buying anything." },
+      { question: "What smells keep rats away?", answer: "Peppermint oil, ammonia and mothballs all get recommended and none of them will move an established group. A rat with a nest, a water source and a nightly meal will tolerate an unpleasant smell, and the smell fades while the food does not. Scent deterrents can make a specific spot slightly less attractive for a short while, which is a marginal effect at best. Removing the food and water and closing the entries does the work that scent is being asked to do." },
+      { question: "How do I know when they are gone?", answer: "Stop relying on memory and set up a test. Clean a surface where droppings kept appearing until it is completely clear, then look at it again after three nights. Dust flour or talc across the old runways and check for tracks in the morning. Ten nights with no fresh droppings, no new gnawing, no tracks, no sounds and no trap activity is a reasonable point to call it. Leave a few unset traps out for another couple of weeks anyway, and walk the exterior again in early autumn." },
     ]
   },
 ];
