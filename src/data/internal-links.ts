@@ -148,12 +148,20 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-clean-with-ketchup",
     "how-to-deep-clean-a-plunger",
   ],
+  "how-to-get-rid-of-rats-in-your-house": [
+    "10-best-ways-to-combat-cockroaches",
+    "how-to-get-rid-of-maggots-in-trash-can",
+    "how-to-get-rid-of-bed-bugs-fast",
+    "10-kitchen-sink-detox-hacks-for-odor-free-results",
+    "how-to-keep-flies-away-outdoors",
+  ],
   "10-best-ways-to-combat-cockroaches": [
     "how-to-get-rid-of-maggots-in-trash-can",
     "10-kitchen-sink-detox-hacks-for-odor-free-results",
     "7-game-changing-ultra-cleaning-hacks",
     "14-ways-to-use-baking-soda-in-your-house",
     "how-to-get-rid-of-bed-bugs-fast",
+    "how-to-get-rid-of-rats-in-your-house",
   ],
   "10-genius-ways-to-make-your-house-smell-great": [
     "13-mind-blowing-listerine-hacks",
@@ -351,6 +359,7 @@ export const internalLinks: Record<string, string[]> = {
     "10-kitchen-sink-detox-hacks-for-odor-free-results",
     "how-to-get-rid-of-bed-bugs-fast",
     "how-to-get-rid-of-fruit-flies-fast",
+    "how-to-get-rid-of-rats-in-your-house",
   ],
   "how-to-clean-a-dishwasher": [
     "how-to-clean-an-air-fryer",
@@ -486,6 +495,7 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-get-rid-of-maggots-in-trash-can",
     "how-to-keep-flies-away-outdoors",
     "how-to-get-rid-of-fruit-flies-fast",
+    "how-to-get-rid-of-rats-in-your-house",
   ],
   "how-to-clean-a-washing-machine": [
     "how-to-whiten-yellow-pillows-washing-machine",
