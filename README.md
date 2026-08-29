@@ -78,6 +78,26 @@ Palette, sampled from the logo:
 
 ---
 
+## 🖼️ Before-and-after illustrations
+
+Each of these is one composite carrying both halves of a comparison. The
+BEFORE and AFTER labels are burned into the file rather than drawn by the
+component, so they survive the image being lifted onto Pinterest or into a
+search result. Drop a new composite into `assets/before-after/`, add it to the
+`IMAGES` list in the script with how its halves are split, and run:
+
+```bash
+npm run build:before-after
+```
+
+A post opts in through the `beforeAfter` field. That field is deliberately
+separate from `photos`: **`photos` is evidence** and must only ever hold real
+photographs taken by the owner, while `beforeAfter` is a rendered illustration
+in the same class as `coverImage`. The component captions it as one, and posts
+that have both show the real photos first.
+
+---
+
 ## 📄 License
 
 This project is proprietary. All rights reserved © 2025 Fredler Gracia Pierre-Louis.

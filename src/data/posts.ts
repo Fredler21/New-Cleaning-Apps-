@@ -357,12 +357,21 @@ export const posts: Post[] = [
     slug: "12-shower-cleaning-hacks",
     author: "Fredler Pierre-Louis",
     datePublished: "2025-11-17",
+    dateUpdated: "2026-08-29",
     category: "deep-clean",
     readTime: "11 min",
     tags: ["bathroom", "deep clean", "shower cleaning", "soap scum removal"],
     excerpt:
       "I deep cleaned the same shower twice in one week once with my old routine and once with these ten methods applied in the right sequence. The difference wasn't even close. Here's what changed and the daily habit that eliminated most of my scrubbing for good.",
     coverImage: "/uploads/12-shower-cleaning-hacks.jpg",
+    beforeAfter: {
+      src: "/before-after/shower-stall.jpg",
+      alt: "A shower cubicle stained with rust and soap scum beside the same cubicle cleaned white",
+      caption:
+        "Rust runs, soap scum, and stained grout in a neglected enclosure, and the same cubicle once the walls, the tray, and the fittings have all been worked through.",
+      width: 714,
+      height: 1280,
+    },
     supplies: ["White vinegar", "Baking soda", "Dawn dish soap", "Squeegee", "Stiff brush", "Old toothbrush", "Microfiber cloths", "Spray bottle", "Gloves"],
     steps: [
       { title: "Squeegee glass doors after every shower", body: "The easiest way to prevent soap scum and hard-water spots is to squeegee the glass door and tile walls right after you turn off the water. This takes about 30 seconds and removes roughly 90 percent of the moisture that causes buildup. Start from the top and pull downward in overlapping strokes. A basic squeegee costs under ten dollars and saves you from scrubbing hardened mineral deposits every weekend. Hang it inside the shower so it is always within reach. If other household members are resistant to squeegeeing, put the squeegee directly in the path of exiting the shower hang it at eye level on the inside of the shower door or on the wall immediately opposite the exit. Physical placement makes using it the path of least resistance. After two weeks of habitually squeegeeing, the reduction in soap scum on glass doors versus not squeegeeing is dramatic enough that it becomes self-reinforcing. The visual evidence glass that stays clear between deep cleans is a more compelling motivator than any argument for why squeegeeing matters. Once you see it work, the habit maintains itself." },
@@ -577,13 +586,21 @@ export const posts: Post[] = [
     slug: "9-laundry-room-cleaning-hacks-that-actually-save-time",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-01-19",
-    dateUpdated: "2026-08-19",
+    dateUpdated: "2026-08-29",
     category: "deep-clean",
     readTime: "15 min",
     tags: ["laundry", "routine", "deep clean", "appliances"],
     excerpt:
       "The machines that clean everything else in the house are usually the last things in it to get cleaned, and a washer is the one appliance that can develop a smell while doing its job perfectly. Most laundry room problems come down to three things: residue building up where water sits, lint collecting where air is supposed to move, and a filter almost nobody knows exists. Here is a 30 minute routine that covers the weekly reality, the two jobs that need doing a few times a year instead, and the reason a front loader starts smelling in the first place.",
     coverImage: "/uploads/9-laundry-room-cleaning-hacks-that-actually-save-time.jpg",
+    beforeAfter: {
+      src: "/before-after/laundry-room.jpg",
+      alt: "A cluttered laundry room with washing across the floor beside the same room tidy",
+      caption:
+        "A laundry room doing double duty as a floor drop, and the same space once the sorting happens where the clothes come off instead of where they get washed.",
+      width: 768,
+      height: 686,
+    },
     supplies: [
       "White vinegar or a washing machine tub cleaner",
       "Baking soda",
@@ -744,14 +761,22 @@ export const posts: Post[] = [
     slug: "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-02-09",
-    dateUpdated: "2026-08-18",
+    dateUpdated: "2026-08-29",
     category: "deep-clean",
     readTime: "16 min",
     tags: ["bathroom", "deep clean", "weekend"],
     excerpt: "A bathroom can pass a white glove test and still not feel like a hotel bathroom, because shine is only half of it. The other half is odor control and a handful of edges nobody thinks to wipe, including the toilet base, the door handle, and the underside of the seat hinges. Here are the 15 steps that close that gap, including the one that fixes most bathroom smell.",
     coverImage: "/uploads/15-bathroom-deep-clean-hacks-for-hotel-level-shine.jpg",
+    beforeAfter: {
+      src: "/before-after/bathroom-sink.jpg",
+      alt: "A rust-stained bathroom basin and toilet beside the same fixtures cleaned white",
+      caption:
+        "Iron staining across the basin, the toilet, and the tile in a bathroom left to itself, and what the same room looks like once every surface has been worked through in order.",
+      width: 714,
+      height: 1280,
+    },
     // See the note on the toilet post: photos go above the method, not below it.
-    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
+    sectionOrder: ["supplies", "photos", "beforeAfter", "steps", "proTips", "faq"],
     photos: [
       {
         src: "/photos/15-bathroom-deep-clean-hacks-for-hotel-level-shine/tub-cleaning.jpg",
@@ -1667,15 +1692,23 @@ export const posts: Post[] = [
     slug: "how-to-remove-hard-water-stains-from-glass-faucets-and-tiles",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-03-02",
-    dateUpdated: "2026-08-18",
+    dateUpdated: "2026-08-29",
     category: "vinegar-hacks",
     readTime: "14 min",
     tags: ["bathroom", "kitchen", "quick wins", "deep clean"],
     excerpt:
       "I moved into a home with twelve years of untreated hard water stains on shower glass, faucets, and tiles. After testing every popular method on the same heavily mineralized surfaces over six weeks, the ten approaches in this guide are ranked by what actually worked on real long term buildup, not just fresh deposits. The vinegar wrap method removed mineral crust that fifteen minute sprays could not touch, the warm vinegar trick dissolved stains roughly twice as fast as cold vinegar on the same surfaces, and one simple prevention habit reduced new staining by approximately eighty percent in the first month. Here is the exact step by step that restores foggy shower glass, calcified faucets, and stained bathroom tiles to a like new finish, plus the surfaces where vinegar will permanently etch and damage the material instead of cleaning it.",
     coverImage: "/uploads/how-to-remove-hard-water-stains-from-glass-faucets-and-tiles.jpg",
+    beforeAfter: {
+      src: "/before-after/faucet.jpg",
+      alt: "A bathroom tap dulled by limescale beside the same tap polished back to bright chrome",
+      caption:
+        "Limescale and water spotting flattening the chrome on a basin tap, and the same fitting once the deposits have been dissolved off rather than polished over.",
+      width: 714,
+      height: 1280,
+    },
     // Photo above the method, same as the other posts carrying real photos.
-    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
+    sectionOrder: ["supplies", "photos", "beforeAfter", "steps", "proTips", "faq"],
     photos: [
       {
         src: "/photos/how-to-remove-hard-water-stains-from-glass-faucets-and-tiles/basin.jpg",
@@ -1729,12 +1762,21 @@ export const posts: Post[] = [
     slug: "how-to-clean-grout-without-scrubbing",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-03-02",
+    dateUpdated: "2026-08-29",
     category: "deep-clean",
     readTime: "11 min",
     tags: ["bathroom", "kitchen", "deep clean", "quick wins"],
     excerpt:
       "I stopped scrubbing grout and started using dwell time instead. The baking soda and peroxide paste removed more buildup with zero brushing than 20 minutes of manual scrubbing had. Here's the method that actually works and the single step that makes the results permanent.",
     coverImage: "/uploads/how-to-clean-grout-without-scrubbing.jpg",
+    beforeAfter: {
+      src: "/before-after/tile-grout.jpg",
+      alt: "Mold-darkened grout lines on white subway tile beside the same wall with the grout back to white",
+      caption:
+        "Grout darkened by soap film and mold, and the same wall once the paste has done the work. The brush is there to lift residue, not to scour the joint open.",
+      width: 714,
+      height: 1280,
+    },
     supplies: ["Baking soda", "Hydrogen peroxide", "White vinegar", "Spray bottle", "Oxygen bleach powder", "Old toothbrush", "Microfiber cloths", "Warm water"],
     steps: [
       { title: "Apply a baking soda and peroxide paste", body: "Mix half a cup of baking soda with a quarter cup of hydrogen peroxide to form a thick paste. Spread it directly onto grout lines using your fingers or an old toothbrush. Let the paste sit for at least 30 minutes the peroxide bubbles into the porous grout surface and lifts out embedded dirt, mildew, and stains without aggressive scrubbing. After soaking, wipe the paste away with a damp cloth and rinse with warm water. Most grout lines will look noticeably whiter after a single application. For severely stained grout, leave the paste on for up to two hours before wiping clean. This method works best on white or light-colored grout. Always test a small hidden section first because hydrogen peroxide can slightly lighten already-colored grout if left on for extended periods. The paste is most effective at room temperature so don't apply it to tiles that are still warm from a recent shower, as heat can accelerate the peroxide reaction and reduce efficient contact time with the stained areas." },
@@ -1809,17 +1851,25 @@ export const posts: Post[] = [
     slug: "remove-hard-water-stains-from-toilet",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-03-08",
-    dateUpdated: "2026-08-18",
+    dateUpdated: "2026-08-29",
     category: "bathroom-cleaning",
     readTime: "12 min",
     tags: ["bathroom", "deep clean", "quick wins", "routine"],
     excerpt:
       "My apartment toilet had a rust-brown mineral ring nearly half an inch thick and no prior cleaning had touched it. Here's what actually worked on severe established buildup and the cheap weekly habit that prevents any ring from forming in the first place.",
     coverImage: "/uploads/remove-hard-water-stains-from-toilet.jpg",
+    beforeAfter: {
+      src: "/before-after/bathroom-sink.jpg",
+      alt: "A rust-stained bathroom basin and toilet beside the same fixtures cleaned white",
+      caption:
+        "The orange-brown staining hard water leaves on a toilet and the basin next to it, and the same fixtures after the deposits have been dissolved rather than scrubbed.",
+      width: 714,
+      height: 1280,
+    },
     // Photos sit straight after the supplies list rather than below the steps.
     // The before shot is the reason someone is reading this, so it belongs
     // above the method rather than arriving as a reward at the bottom.
-    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
+    sectionOrder: ["supplies", "photos", "beforeAfter", "steps", "proTips", "faq"],
     photos: [
       {
         src: "/photos/remove-hard-water-stains-from-toilet/toilet-cleaning.jpg",
@@ -2019,12 +2069,21 @@ export const posts: Post[] = [
     slug: "how-to-remove-mold-from-bathroom-caulk",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-03-08",
+    dateUpdated: "2026-08-29",
     category: "bathroom-cleaning",
     readTime: "13 min",
     tags: ["bathroom", "deep clean", "safety"],
     excerpt:
       "Black mold in bathroom caulk is a different problem from surface mildew, because the growth has rooted into the porous silicone rather than sitting on top of it. That is why wiping it off works for a week and then it is back. Here is what genuinely clears established caulk mold, what only cosmetically bleaches it, and the step most people skip afterward that lets it return within weeks.",
     coverImage: "/uploads/how-to-remove-mold-from-bathroom-caulk.jpg",
+    beforeAfter: {
+      src: "/before-after/bathroom-caulk.jpg",
+      alt: "Black mold along the caulk line where tile meets a bathtub, beside the same seam cleaned white",
+      caption:
+        "Mold in the caulk seam at the tub edge, and the same seam after treatment. Where the black sits inside the caulk rather than on it, the seam has to be cut out and replaced instead.",
+      width: 714,
+      height: 1280,
+    },
     supplies: [
       "Bleach (sodium hypochlorite)",
       "Hydrogen peroxide (3%)",
@@ -4171,13 +4230,21 @@ export const posts: Post[] = [
     previousSlugs: ["baseboard-cleaning-hacks-that-save-time"],
     author: "Fredler Pierre-Louis",
     datePublished: "2026-05-05",
-    dateUpdated: "2026-08-18",
+    dateUpdated: "2026-08-29",
     category: "deep-clean",
     readTime: "14 min",
     tags: ["baseboards", "deep clean", "dust", "trim"],
     excerpt:
       "Baseboards are the thing you notice in someone else's house and stop seeing in your own. Then a low sun comes through the window at four in the afternoon and there is a gray line running the length of the room. The job itself is not hard, but it is easy to do in a way that costs an hour, wrecks your knees, and leaves the trim looking patchier than before you started. Here is what actually gets them clean, which finish you have and why that changes the method, and the two popular tricks that quietly damage paint.",
     coverImage: "/uploads/how-to-clean-baseboards.jpg",
+    beforeAfter: {
+      src: "/before-after/baseboards.jpg",
+      alt: "A dusty scuffed baseboard beside the same baseboard cleaned white",
+      caption:
+        "The gray line of dust and scuff marks a baseboard collects along its top edge, and the same run after a wipe-down. Most of what reads as damaged paint comes off.",
+      width: 714,
+      height: 1280,
+    },
     supplies: [
       "Vacuum with a soft brush attachment",
       "Two microfiber cloths",
@@ -4425,13 +4492,21 @@ export const posts: Post[] = [
     slug: "how-to-declutter-your-room",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-05-11",
-    dateUpdated: "2026-08-18",
+    dateUpdated: "2026-08-29",
     category: "deep-clean",
     readTime: "14 min",
     tags: ["declutter", "deep clean", "organization", "routine"],
     excerpt:
       "There is a chair in the room, and it has not been a chair in months. It is where clean laundry goes to wait. The nightstand has three water glasses on it, the closet holds clothes in two sizes you no longer wear, and every time you think about fixing it the job feels too big to start on a Saturday. It is not too big. A bedroom is mostly one afternoon of sorting plus one habit afterward. What follows is the order to work in, the decision rules that stop you stalling on individual objects, the four categories that eat the most time, and the step most people skip, which is the one that decides whether the room stays clear.",
     coverImage: "/uploads/how-to-declutter-your-room.jpg",
+    beforeAfter: {
+      src: "/before-after/living-room.jpg",
+      alt: "A living room buried in clutter beside the same room cleared and tidy",
+      caption:
+        "What clearing the floor and every surface does to a room before a single item has been sorted into keep, donate, or bin.",
+      width: 768,
+      height: 688,
+    },
     supplies: [
       "Four laundry baskets or cardboard boxes",
       "A few 13 gallon trash bags",
@@ -4735,12 +4810,21 @@ export const posts: Post[] = [
     slug: "how-to-rage-clean",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-05-13",
+    dateUpdated: "2026-08-29",
     category: "deep-clean",
     readTime: "11 min",
     tags: ["deep clean", "routine", "quick wins"],
     excerpt:
       "Rage cleaning is the unofficial productivity hack therapists quietly love, and there is a repeatable structure underneath it that turns adrenaline into a finished kitchen, a stripped bed, and a vacuumed living room in under ninety minutes. The structure works because of a hard time box, a sequence that front-loads visible progress, and a rule that stops you deliberating over individual objects. Here is the playbook, and the mistakes that turn a rage clean into a bigger mess.",
     coverImage: "/uploads/how-to-rage-clean.jpg",
+    beforeAfter: {
+      src: "/before-after/living-room.jpg",
+      alt: "A living room buried in clutter beside the same room cleared and tidy",
+      caption:
+        "The whole point of a rage clean: one room, one pass, every flat surface clear again. Nothing here was sorted or organized, only cleared and put back.",
+      width: 768,
+      height: 688,
+    },
     supplies: ["Loud playlist", "Trash bags", "Laundry basket", "All purpose spray", "Microfiber cloths", "Vacuum"],
     steps: [
       { title: "Set a single ninety minute timer before you touch anything", body: "The defining feature of a productive rage clean versus a chaotic one is a hard time box. Open the timer on your phone, set it for ninety minutes, and start it before you pick up the first item. The boundary protects you from the two failure modes of emotional cleaning: stopping after ten minutes when the adrenaline fades, and going for four hours and burning out so badly you cannot function the next day. Ninety minutes is the sweet spot. It is long enough to make a visible dent in three rooms but short enough that the adrenaline carries you through to the timer alarm without crashing. Put the phone face down so you do not check the count. The timer is the contract you make with yourself when the feelings are loudest." },
@@ -4920,12 +5004,21 @@ export const posts: Post[] = [
     slug: "how-to-clean-a-showerhead",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-05-13",
+    dateUpdated: "2026-08-29",
     category: "bathroom-cleaning",
     readTime: "10 min",
     tags: ["bathroom", "deep clean", "quick wins"],
     excerpt:
       "A showerhead that has not been descaled in a couple of years can lose a large share of its flow to limescale, and the fix is an overnight vinegar soak rather than a replacement. Here is the method, the surface specific variations for chrome, brushed nickel, and oil rubbed bronze, and the mistakes that ruin a finish.",
     coverImage: "/uploads/how-to-clean-a-showerhead.jpg",
+    beforeAfter: {
+      src: "/before-after/showerhead.jpg",
+      alt: "A showerhead crusted with limescale above the same showerhead running clear",
+      caption:
+        "Limescale closing the nozzles on a showerhead that has not been descaled in years, and the spray pattern it returns to after an overnight vinegar soak.",
+      width: 714,
+      height: 1280,
+    },
     supplies: ["White vinegar", "Plastic bag", "Rubber band or zip tie", "Old toothbrush", "Microfiber cloth", "Pin or sewing needle"],
     steps: [
       { title: "Identify your showerhead finish before choosing a cleaning method", body: "The cleaning method that works perfectly on chrome can permanently damage oil rubbed bronze or brushed nickel. Look at your showerhead in good light. Chrome is a bright reflective silver finish that shows fingerprints easily. Brushed nickel is a softer matte silver with visible directional grain in the metal. Oil rubbed bronze is a dark brown to near black finish with copper or amber undertones. Polished brass is a warm yellow gold that may look similar to the original showerhead at the hardware store. Each finish has different chemical sensitivities. Chrome and stainless steel tolerate full strength white vinegar safely. Brushed nickel and polished brass need vinegar diluted to a one to one ratio with water. Oil rubbed bronze and any colored or coated finish should never come into contact with vinegar at any concentration because the acid strips the finish layer permanently." },
@@ -4968,12 +5061,21 @@ export const posts: Post[] = [
     slug: "how-to-clean-a-washing-machine",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-05-18",
+    dateUpdated: "2026-08-29",
     category: "laundry-kitchen",
     readTime: "11 min",
     tags: ["laundry", "deep clean", "odor control", "appliance care"],
     excerpt:
       "My front-loader had a musty smell I'd been masking with scented detergent for almost a year. One Saturday morning I finally pulled back the rubber gasket and was genuinely horrified by what I found. Here's the exact two-cycle method that eliminated the smell in a single afternoon, the parts most people never clean, and how the steps differ between top-loaders and front-loaders.",
     coverImage: "/uploads/how-to-clean-a-washing-machine.jpg",
+    beforeAfter: {
+      src: "/before-after/washing-machine.jpg",
+      alt: "A washing machine streaked with rust and mold above the same machine cleaned white",
+      caption:
+        "Detergent residue, door seal mold, and rust marks on a neglected front loader, and the same machine after the drum, the seal, and the dispenser drawer have each been cleaned out.",
+      width: 714,
+      height: 1280,
+    },
     supplies: [
       "White distilled vinegar (2 cups)",
       "Baking soda (1 cup)",
@@ -5178,12 +5280,21 @@ export const posts: Post[] = [
     slug: "how-to-deep-clean-a-plunger",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-06-02",
+    dateUpdated: "2026-08-29",
     category: "bathroom-cleaning",
     readTime: "8 min",
     tags: ["bathroom", "deep clean", "sanitizing"],
     excerpt:
       "A plunger is the one tool in the bathroom that handles the dirtiest job in the house and almost never gets cleaned itself. After timing this routine on a real plunger that had been used four times since the last cleaning, here is the order that actually sanitizes both the cup and the handle without splashing and the mistakes that just move bacteria around.",
     coverImage: "/uploads/how-to-deep-clean-a-plunger.jpg",
+    beforeAfter: {
+      src: "/before-after/plunger.jpg",
+      alt: "A plunger caked in dried waste beside the same plunger cleaned back to bare rubber and wood",
+      caption:
+        "Left: what a plunger collects when it goes back in the corner still wet. Right: the same tool after a disinfecting soak and a scrub of the cup rim and the handle.",
+      width: 714,
+      height: 1280,
+    },
     supplies: [
       "Bleach",
       "Hot water",
@@ -5796,12 +5907,21 @@ export const posts: Post[] = [
     slug: "how-to-clean-a-humidifier",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-06-11",
+    dateUpdated: "2026-08-29",
     category: "deep-clean",
     readTime: "10 min",
     tags: ["deep clean", "odor control", "routine"],
     excerpt:
       "My humidifier was leaving a fine white film on the nightstand, the tank had developed a pink slimy ring at the waterline, and the mist had picked up a faint musty smell that filled the bedroom overnight. Each of those is a different problem with a different fix. Here is how to clean a humidifier properly, descale it, and stop all three from coming back.",
     coverImage: "/uploads/how-to-clean-a-humidifier.jpg",
+    beforeAfter: {
+      src: "/before-after/humidifier.jpg",
+      alt: "A humidifier tank and base coated in white mineral scale beside the same parts cleaned clear",
+      caption:
+        "Scale and biofilm in the tank and base of a humidifier run on tap water, and the same parts after a descale. This is the build-up that otherwise gets carried into the room.",
+      width: 714,
+      height: 1280,
+    },
     supplies: [
       "White vinegar",
       "3% hydrogen peroxide",

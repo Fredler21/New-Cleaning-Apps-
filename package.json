@@ -9,6 +9,7 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "build:brand": "node scripts/build-brand-assets.mjs",
+    "build:before-after": "node scripts/build-before-after.mjs",
     "generate:images": "node scripts/generate-gemini-images.mjs",
     "generate:images:candid": "node scripts/generate-gemini-images.mjs --candid",
     "fetch:unsplash": "node scripts/fetch-unsplash-images.mjs",

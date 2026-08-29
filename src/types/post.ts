@@ -40,6 +40,37 @@ export type PostPhoto = {
 };
 
 /**
+ * An illustrated before-and-after of the surface a post is about.
+ *
+ * Deliberately NOT a `PostPhoto`. A photo on this site is evidence: it says a
+ * real person cleaned a real thing and here is the proof. A `BeforeAfter` is a
+ * rendered illustration of the problem and the result, the same class of asset
+ * as `coverImage`, and `BeforeAfterFigure` captions it as one. Keeping the two
+ * fields apart is what stops an illustration from quietly reading as a claim
+ * that somebody photographed their own bathroom.
+ *
+ * The BEFORE and AFTER labels are burned into the file by
+ * scripts/build-before-after.mjs rather than drawn by the component, so they
+ * survive the image being lifted onto Pinterest or into a search result.
+ */
+export type BeforeAfter = {
+  /** Path under /public, e.g. "/before-after/showerhead.jpg" */
+  src: string;
+  /** Describes what is visibly in each half, for screen readers and SEO. */
+  alt: string;
+  /** Shown under the image. Describe the change; never claim it was tested. */
+  caption: string;
+  /**
+   * Real pixel dimensions of the file, so the browser reserves the right space.
+   * These composites are mostly tall portraits and the usual landscape guess is
+   * badly wrong for them. Print them with:
+   *   node -e "require('sharp')('public/<path>').metadata().then(m=>console.log(m.width,m.height))"
+   */
+  width: number;
+  height: number;
+};
+
+/**
  * A record of actually running the method described in the post.
  *
  * This is the ONLY place the site is allowed to make first-person claims about
@@ -97,6 +128,7 @@ export type ComparisonRow = {
 export type SectionKey =
   | "supplies"
   | "steps"
+  | "beforeAfter"
   | "comparison"
   | "cost"
   | "fieldNotes"
@@ -140,6 +172,8 @@ export type Post = {
 
   /** Original photographs for this post. Real photos only, never generated. */
   photos?: PostPhoto[];
+  /** Illustrated before-and-after for this post. An illustration, not a photo. */
+  beforeAfter?: BeforeAfter;
   /** Records of actually performing the method. Gates all first-person claims. */
   fieldNotes?: FieldNote[];
   /** What the DIY approach costs against the commercial product. */

@@ -27,6 +27,7 @@ import { seoTitles } from "@/data/seo-titles";
 import { ImageAttribution } from "@/components/posts/ImageAttribution";
 import { FieldNotes } from "@/components/posts/FieldNotes";
 import { PostPhotos } from "@/components/posts/PostPhotos";
+import { BeforeAfterFigure } from "@/components/posts/BeforeAfterFigure";
 import { MethodComparison } from "@/components/posts/MethodComparison";
 import { CostBreakdown } from "@/components/posts/CostBreakdown";
 import type { SectionKey } from "@/types/post";
@@ -162,6 +163,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
 
       </>
     ),
+    beforeAfter: post.beforeAfter ? <BeforeAfterFigure image={post.beforeAfter} /> : null,
     fieldNotes: post.fieldNotes?.length ? <FieldNotes notes={post.fieldNotes} /> : null,
     photos: post.photos?.length ? <PostPhotos photos={post.photos} /> : null,
     comparison: post.comparison?.length ? <MethodComparison rows={post.comparison} /> : null,
@@ -219,6 +221,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
   const DEFAULT_SECTION_ORDER: SectionKey[] = [
     "supplies",
     "steps",
+    // The payoff shot sits after the method, so it reads as the result of the
+    // steps rather than as a promise made before them.
+    "beforeAfter",
     "fieldNotes",
     "photos",
     "comparison",
