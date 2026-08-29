@@ -761,22 +761,14 @@ export const posts: Post[] = [
     slug: "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-02-09",
-    dateUpdated: "2026-08-29",
+    dateUpdated: "2026-08-18",
     category: "deep-clean",
     readTime: "16 min",
     tags: ["bathroom", "deep clean", "weekend"],
     excerpt: "A bathroom can pass a white glove test and still not feel like a hotel bathroom, because shine is only half of it. The other half is odor control and a handful of edges nobody thinks to wipe, including the toilet base, the door handle, and the underside of the seat hinges. Here are the 15 steps that close that gap, including the one that fixes most bathroom smell.",
     coverImage: "/uploads/15-bathroom-deep-clean-hacks-for-hotel-level-shine.jpg",
-    beforeAfter: {
-      src: "/before-after/bathroom-sink.jpg",
-      alt: "A rust-stained bathroom basin and toilet beside the same fixtures cleaned white",
-      caption:
-        "Iron staining across the basin, the toilet, and the tile in a bathroom left to itself, and what the same room looks like once every surface has been worked through in order.",
-      width: 714,
-      height: 1280,
-    },
     // See the note on the toilet post: photos go above the method, not below it.
-    sectionOrder: ["supplies", "photos", "beforeAfter", "steps", "proTips", "faq"],
+    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
     photos: [
       {
         src: "/photos/15-bathroom-deep-clean-hacks-for-hotel-level-shine/tub-cleaning.jpg",
@@ -1708,16 +1700,7 @@ export const posts: Post[] = [
       height: 1280,
     },
     // Photo above the method, same as the other posts carrying real photos.
-    sectionOrder: ["supplies", "photos", "beforeAfter", "steps", "proTips", "faq"],
-    photos: [
-      {
-        src: "/photos/how-to-remove-hard-water-stains-from-glass-faucets-and-tiles/basin.jpg",
-        alt: "Side-by-side before and after of the same bathroom basin and chrome faucet: the bowl yellowed with rust-brown mineral staining on the left, clean white porcelain on the right.",
-        caption:
-          "The same basin and faucet, with everything on the counter left where it was. This is the older buildup the guide separates out further down, the kind that has had months to bond rather than a fresh spray of water spots, and it is why a soak or a paste with real dwell time does what wiping cannot. Note the staining spreads across the whole bowl instead of sitting in a line, which is what happens where water pools and evaporates rather than runs.",
-        takenOn: "2026-08-18",
-      },
-    ],
+    sectionOrder: ["supplies", "beforeAfter", "steps", "proTips", "faq"],
     supplies: ["White vinegar", "Baking soda", "Spray bottle", "Microfiber cloths", "Lemon", "Dish soap", "Old toothbrush", "Plastic wrap", "Rubber gloves"],
     steps: [
       { title: "Make a vinegar soak for shower doors", body: "Fill a spray bottle with equal parts white vinegar and hot water. Spray generously onto glass shower doors, covering every inch of the surface. The acetic acid in vinegar dissolves the calcium and magnesium deposits that form those cloudy white streaks. Let it sit for at least 15 minutes for heavy buildup, soak paper towels in vinegar and press them flat against the glass so the solution doesn't drip away. Remove the towels, scrub with a non-scratch sponge in circular motions, and rinse with warm water. Dry immediately with a clean microfiber cloth to prevent new water spots from forming as the glass dries. For shower glass that hasn't been cleaned in several months or longer, the 15-minute contact time is not enough. Apply the vinegar-soaked paper towels and leave them undisturbed for 45 to 60 minutes. Spray additional vinegar onto the towels halfway through if they appear to have dried out so the ongoing acidity keeps dissolving the mineral layer until the full contact time is complete." },
@@ -1851,25 +1834,17 @@ export const posts: Post[] = [
     slug: "remove-hard-water-stains-from-toilet",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-03-08",
-    dateUpdated: "2026-08-29",
+    dateUpdated: "2026-08-18",
     category: "bathroom-cleaning",
     readTime: "12 min",
     tags: ["bathroom", "deep clean", "quick wins", "routine"],
     excerpt:
       "My apartment toilet had a rust-brown mineral ring nearly half an inch thick and no prior cleaning had touched it. Here's what actually worked on severe established buildup and the cheap weekly habit that prevents any ring from forming in the first place.",
     coverImage: "/uploads/remove-hard-water-stains-from-toilet.jpg",
-    beforeAfter: {
-      src: "/before-after/bathroom-sink.jpg",
-      alt: "A rust-stained bathroom basin and toilet beside the same fixtures cleaned white",
-      caption:
-        "The orange-brown staining hard water leaves on a toilet and the basin next to it, and the same fixtures after the deposits have been dissolved rather than scrubbed.",
-      width: 714,
-      height: 1280,
-    },
     // Photos sit straight after the supplies list rather than below the steps.
     // The before shot is the reason someone is reading this, so it belongs
     // above the method rather than arriving as a reward at the bottom.
-    sectionOrder: ["supplies", "photos", "beforeAfter", "steps", "proTips", "faq"],
+    sectionOrder: ["supplies", "photos", "steps", "proTips", "faq"],
     photos: [
       {
         src: "/photos/remove-hard-water-stains-from-toilet/toilet-cleaning.jpg",
@@ -2725,12 +2700,20 @@ export const posts: Post[] = [
     slug: "diy-bathroom-cleaning-recipes",
     author: "Fredler Pierre-Louis",
     datePublished: "2026-03-15",
-    dateUpdated: "2026-07-01",
+    dateUpdated: "2026-08-29",
     category: "diy-cleaners",
     readTime: "9 min",
     tags: ["diy", "bathroom", "eco-friendly", "deep clean"],
     excerpt: "A bathroom can be cleaned entirely with homemade recipes, but only if you match each one to the right problem, because bathroom grime is three different things: mineral scale, soap scum, and mildew. Each needs different chemistry, which is why one all purpose spray disappoints everywhere. Here are eight recipes with exact ratios, where each one shines, and which jobs still deserve a commercial product.",
     coverImage: "/uploads/diy-bathroom-cleaning-recipes.jpg",
+    beforeAfter: {
+      src: "/before-after/bathroom-sink.jpg",
+      alt: "A rust-stained bathroom basin and toilet beside the same fixtures cleaned white",
+      caption:
+        "Iron staining across the basin, the toilet, and the tile in a bathroom left to itself, and the same room once every surface has been worked through with the recipes below.",
+      width: 714,
+      height: 1280,
+    },
     supplies: ["Glass spray bottles (a few, with fine mist nozzles)", "One dark amber glass bottle for the oil blend", "White vinegar (a large jug)", "Baking soda", "3 percent hydrogen peroxide", "Dawn dish soap (the blue original)", "Unscented liquid castile soap", "Tea tree essential oil", "Lemon and lavender essential oils", "70 percent rubbing alcohol", "Distilled water (not tap)", "Microfiber cloths and a lint free glass cloth", "An old toothbrush and a non scratch sponge", "Painter's tape and a marker for labeling"],
     steps: [
       { title: "Daily shower spray that ends the weekend scrubbing session", body: "This is the recipe that changed my whole routine, so I am putting it first. In a glass spray bottle combine one cup distilled water, half a cup white vinegar, one teaspoon rubbing alcohol, and 10 drops tea tree oil. Shake it, hang it inside the shower on a suction hook, and after every shower mist the walls, glass, and fixtures top to bottom. It takes about 15 seconds and you do not rinse or wipe. You just leave. The vinegar keeps hard water minerals from hardening onto the glass, the tea tree oil discourages mold spores from settling into the caulk, and the rubbing alcohol helps everything flash dry so you do not trade one film for another. The first week I was skeptical because nothing looks like it is happening. Then I realized three weeks had gone by and I had not scrubbed once. The honest catch: this only works if the surface is already clean when you start. It prevents buildup, it does not remove buildup, so deep clean first, then start misting. Do not use distilled water only as a shortcut and skip the vinegar, the alcohol alone will not stop mineral spotting. One batch runs about two weeks and costs a few cents. I keep a second bottle premixed so I am never tempted to skip a refill. Expect visibly clear glass for weeks and grout that stays pale instead of going gray." },

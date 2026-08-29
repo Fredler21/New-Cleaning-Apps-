@@ -28,19 +28,20 @@ export function BeforeAfterFigure({ image }: { image: BeforeAfter }) {
         What the difference looks like
       </h2>
 
-      {/* Capped by viewport height, not by column width. Most of these are tall
-          portrait composites, and at the full 700px column one would run past
-          1200px and swallow a whole screen of scroll on its own. Landscape ones
-          never reach the cap and are unaffected. */}
+      {/* Fills the content column, the same as PostPhotos and the cover image.
+          Capping the height instead leaves a portrait composite floating as a
+          narrow strip with dead margin either side of it, which reads as a
+          picture dropped in at whatever size it happened to be rather than one
+          laid out with the article. */}
       <figure className="mt-4">
-        <div className="flex justify-center">
+        <div className="overflow-hidden rounded-lg">
           <Image
             src={image.src}
             alt={image.alt}
             width={image.width}
             height={image.height}
             sizes="(min-width: 1024px) 720px, 100vw"
-            className="h-auto max-h-[75vh] w-auto max-w-full rounded-lg"
+            className="h-auto w-full"
           />
         </div>
         <figcaption className="mt-3 text-[15px] leading-7" style={{ color: "var(--text-secondary)" }}>
