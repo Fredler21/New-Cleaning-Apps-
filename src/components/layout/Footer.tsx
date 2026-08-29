@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 
 const footerLinks = {
@@ -27,14 +28,26 @@ export function Footer() {
         <div className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2.5">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-teal-500 to-emerald-500">
-                <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                </svg>
-              </div>
-              <span className="text-base font-semibold" style={{ color: "var(--text)" }}>TryCleaningHacks</span>
-            </div>
+            <Link
+              href="/"
+              className="inline-flex transition-opacity duration-200 hover:opacity-85"
+              aria-label="TryCleaningHacks home"
+            >
+              <Image
+                src="/brand/logo-horizontal.png"
+                alt="TryCleaningHacks"
+                width={245}
+                height={60}
+                className="h-10 w-auto dark:hidden"
+              />
+              <Image
+                src="/brand/logo-night-horizontal.png"
+                alt="TryCleaningHacks Night Shift"
+                width={439}
+                height={120}
+                className="hidden h-10 w-auto dark:block"
+              />
+            </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
               The best place on the internet for tested, reliable cleaning solutions. Professional results using everyday ingredients.
             </p>

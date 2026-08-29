@@ -25,12 +25,25 @@ export function Navbar() {
         <div className="flex h-[68px] items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="group shrink-0 transition-opacity duration-200 hover:opacity-85" aria-label="TryCleaningHacks home">
+            {/* Two lockups, swapped by the theme class rather than by state, so
+                the right one is painted before hydration. The width/height pairs
+                are each master scaled down on its exact aspect ratio, which keeps
+                next/image from generating a srcset that climbs to 3840w for a
+                logo rendered at ~160px. */}
             <Image
-              src="/graphics/icons/logo-gemini.png"
+              src="/brand/logo-horizontal.png"
               alt="TryCleaningHacks"
-              width={200}
-              height={52}
-              className="h-[36px] w-auto"
+              width={245}
+              height={60}
+              className="h-8 w-auto sm:h-10 dark:hidden"
+              priority
+            />
+            <Image
+              src="/brand/logo-night-horizontal.png"
+              alt="TryCleaningHacks Night Shift"
+              width={439}
+              height={120}
+              className="hidden h-8 w-auto sm:h-10 dark:block"
               priority
             />
           </Link>

@@ -16,13 +16,22 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.trycleaninghacks.com"),
+  // Every icon below is the TryCleaningHacks emblem, generated from
+  // assets/brand/logo-source.png by scripts/build-brand-assets.mjs. Google
+  // picks one of these for the favicon shown beside the search result and asks
+  // for a square at a multiple of 48px, so 48/192/512 are all offered and all
+  // carry the same artwork.
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
+      { url: "/brand/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/brand/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/brand/icon-512.png", sizes: "512x512", type: "image/png" },
     ],
-    apple: "/favicon.svg",
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/brand/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
+  manifest: "/site.webmanifest",
   title: {
     default: "TryCleaningHacks, Practical Cleaning Hacks for Every Home",
     template: "%s | TryCleaningHacks",
@@ -169,7 +178,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "@type": "Organization",
                 name: "TryCleaningHacks",
                 url: "https://www.trycleaninghacks.com",
-                logo: "https://www.trycleaninghacks.com/og/og-home.png",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://www.trycleaninghacks.com/brand/logo.png",
+                  width: 1000,
+                  height: 1004,
+                },
                 contactPoint: {
                   "@type": "ContactPoint",
                   email: "support@trycleaninghacks.com",

@@ -359,7 +359,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               publisher: {
                 "@type": "Organization",
                 name: SITE_NAME,
-                logo: { "@type": "ImageObject", url: `${SITE_URL}/og/og-home.png` },
+                logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/logo.png`, width: 1000, height: 1004 },
               },
               mainEntityOfPage: {
                 "@type": "WebPage",
