@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/layout/Container";
+import { BRAND_LOCKUP } from "@/data/brand";
 
 const footerLinks = {
   explore: [
@@ -33,20 +34,8 @@ export function Footer() {
               className="inline-flex transition-opacity duration-200 hover:opacity-85"
               aria-label="TryCleaningHacks home"
             >
-              <Image
-                src="/brand/logo-horizontal.png"
-                alt="TryCleaningHacks"
-                width={245}
-                height={60}
-                className="h-10 w-auto dark:hidden"
-              />
-              <Image
-                src="/brand/logo-night-horizontal.png"
-                alt="TryCleaningHacks Night Shift"
-                width={439}
-                height={120}
-                className="hidden h-10 w-auto dark:block"
-              />
+              <Image {...BRAND_LOCKUP.day} alt="TryCleaningHacks" className="h-10 w-auto dark:hidden" />
+              <Image {...BRAND_LOCKUP.night} alt="TryCleaningHacks" className="hidden h-10 w-auto dark:block" />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
               The best place on the internet for tested, reliable cleaning solutions. Professional results using everyday ingredients.

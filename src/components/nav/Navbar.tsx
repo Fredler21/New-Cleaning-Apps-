@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Container } from "@/components/layout/Container";
 import { MobileNav } from "@/components/nav/MobileNav";
 import { useTheme } from "@/context/ThemeContext";
+import { BRAND_LOCKUP } from "@/data/brand";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -25,24 +26,18 @@ export function Navbar() {
         <div className="flex h-[68px] items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="group shrink-0 transition-opacity duration-200 hover:opacity-85" aria-label="TryCleaningHacks home">
-            {/* Two lockups, swapped by the theme class rather than by state, so
-                the right one is painted before hydration. The width/height pairs
-                are each master scaled down on its exact aspect ratio, which keeps
-                next/image from generating a srcset that climbs to 3840w for a
-                logo rendered at ~160px. */}
+            {/* Two cuts of the one logo, swapped by the theme class rather than
+                by state, so the right one is painted before hydration. Sizes come
+                from the generator so they cannot drift from the artwork. */}
             <Image
-              src="/brand/logo-horizontal.png"
+              {...BRAND_LOCKUP.day}
               alt="TryCleaningHacks"
-              width={245}
-              height={60}
               className="h-8 w-auto sm:h-10 dark:hidden"
               priority
             />
             <Image
-              src="/brand/logo-night-horizontal.png"
-              alt="TryCleaningHacks Night Shift"
-              width={439}
-              height={120}
+              {...BRAND_LOCKUP.night}
+              alt="TryCleaningHacks"
               className="hidden h-8 w-auto sm:h-10 dark:block"
               priority
             />

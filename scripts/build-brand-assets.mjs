@@ -25,6 +25,11 @@ const SRC_DAY = path.join(ROOT, "assets", "brand", "logo-source.png");
 const SRC_NIGHT = path.join(ROOT, "assets", "brand", "logo-source-night.png");
 const BRAND_DIR = path.join(ROOT, "public", "brand");
 const PUBLIC_DIR = path.join(ROOT, "public");
+const DIMS_MODULE = path.join(ROOT, "src", "data", "brand.ts");
+// Height the components declare for a lockup. next/image builds its srcset from
+// the declared size, so quoting the 240px export would ship a 1080w source for a
+// logo painted at ~160px. The ratio is what matters; CSS sets the real height.
+const DECLARED_H = 60;
 
 // ── Background removal, day logo ──────────────────────────────────────────────
 // The art sits on a flat ~#fdfdfd field, and the only near-white shapes that
@@ -196,8 +201,13 @@ function findStackSplit(rows, top, bottom) {
   return y;
 }
 
-/** Contiguous bands of ink, split on runs of near-empty rows. */
-function inkBands(rows, top, bottom) {
+/**
+ * Contiguous bands of ink, split on runs of near-empty rows. Bands only a few
+ * rows tall are discarded: on the Night Shift master a sparkle sitting just
+ * above the sub-line reads as its own two-row band, and would otherwise be
+ * counted as a line of type.
+ */
+function inkBands(rows, top, bottom, minHeight = 6) {
   let peak = 0;
   for (let y = top; y <= bottom; y++) peak = Math.max(peak, rows[y]);
   const quiet = Math.max(2, Math.round(peak * 0.02));
@@ -213,7 +223,7 @@ function inkBands(rows, top, bottom) {
     }
   }
   if (band) bands.push(band);
-  return bands;
+  return bands.filter((b) => b.bottom - b.top + 1 >= minHeight);
 }
 
 const PNG = { compressionLevel: 9, effort: 10, palette: true, quality: 100, dither: 1 };
@@ -237,7 +247,7 @@ async function write(file, pipeline) {
  * @param {string} prefix file prefix, "logo" or "logo-night"
  * @returns the emblem art tight to its own ink, for the caller to build icons from
  */
-async function buildLockups(master, prefix) {
+async function buildLockups(master, prefix, { dropSubline = false } = {}) {
   const { W } = master;
   const create = () => sharp(master.raw, { raw: { width: master.W, height: master.H, channels: 4 } });
   const { rows, cols } = inkProfile(master);
@@ -248,11 +258,10 @@ async function buildLockups(master, prefix) {
   const emblem = { top: rowB.lo, bottom: split };
   const wordmark = { top: split + 1, bottom: rowB.hi };
 
-  // The tagline ("cleaner home smarter life") is a separate, much smaller band
-  // under the name. It is unreadable in a 68px navbar, so the horizontal lockup
-  // stops above it while the stacked exports keep everything. On the Night
-  // Shift master the same rule keeps the "NIGHT SHIFT" line, which is set at
-  // name size, and drops only the tagline under it.
+  // The wordmark is a stack of type bands. The tagline ("cleaner home smarter
+  // life") is the last of them, set much smaller and set off by a wide gap: it
+  // is unreadable in a 68px navbar, so the horizontal lockup stops above it
+  // while the stacked exports keep it.
   const bands = inkBands(rows, wordmark.top, wordmark.bottom);
   const last = bands[bands.length - 1];
   const prior = bands[bands.length - 2];
@@ -260,19 +269,64 @@ async function buildLockups(master, prefix) {
     bands.length > 1 &&
     last.top - prior.bottom >= 12 &&
     last.bottom - last.top <= (prior.bottom - bands[0].top) * 0.4;
-  const nameOnly = { top: wordmark.top, bottom: isTagline ? prior.bottom : wordmark.bottom };
+  const tagline = isTagline ? last : null;
+
+  // The Night Shift master carries one extra line of type between the name and
+  // the tagline. The site uses that artwork purely as the dark-mode cut of the
+  // one logo, so the sub-line comes out and the tagline closes back up under
+  // the name, at the spacing the artwork already puts above it.
+  const nameBands = tagline ? bands.slice(0, -1) : bands.slice();
+  const subline = dropSubline && nameBands.length >= 3 ? nameBands.pop() : null;
+  const nameEnd = nameBands[nameBands.length - 1].bottom;
+  const nameOnly = { top: wordmark.top, bottom: nameEnd };
+  const taglineGap = tagline
+    ? tagline.top - (subline ?? nameBands[nameBands.length - 1]).bottom - 1
+    : 0;
 
   console.log(`\n${prefix}`);
   console.log(`  content rows  ${rowB.lo}..${rowB.hi}   cols ${colB.lo}..${colB.hi}`);
   console.log(`  emblem rows   ${emblem.top}..${emblem.bottom}`);
   console.log(`  wordmark      ${wordmark.top}..${wordmark.bottom}  bands ${bands.map((b) => `${b.top}..${b.bottom}`).join(", ")}`);
-  console.log(`  name only     ${nameOnly.top}..${nameOnly.bottom}${isTagline ? " (tagline dropped from the horizontal lockup)" : ""}`);
+  console.log(`  name only     ${nameOnly.top}..${nameOnly.bottom}${tagline ? " (tagline dropped from the horizontal lockup)" : ""}`);
+  if (subline) {
+    console.log(`  sub-line      ${subline.top}..${subline.bottom} removed, tagline reflowed ${taglineGap}px under the name`);
+  }
+
+  /**
+   * The rows that survive into an export, as one sharp pipeline. With nothing
+   * removed they are still contiguous and come straight off the master. With a
+   * band taken out, the remaining pieces are stacked back up with the gap the
+   * artwork put above the tagline; cropping every piece at the same columns is
+   * what keeps each line centered where it was drawn.
+   */
+  const keptRows = async (top, bottom, left, width) => {
+    const cut = (t, b) =>
+      create().extract({ left, top: t, width, height: b - t + 1 }).png(PNG_TRUE).toBuffer();
+    if (!subline) return create().extract({ left, top, width, height: bottom - top + 1 });
+
+    const head = await cut(top, nameEnd);
+    const tail = await cut(tagline.top, tagline.bottom);
+    const headH = nameEnd - top + 1;
+    const tailH = tagline.bottom - tagline.top + 1;
+    // Materialised before returning: sharp runs resize ahead of composite
+    // whatever order the caller chains them in, and resizing the canvas first
+    // would leave the pieces too big to land on it.
+    const stacked = await sharp({
+      create: { width, height: headH + taglineGap + tailH, channels: 4, background: CLEAR },
+    })
+      .composite([
+        { input: head, left: 0, top: 0 },
+        { input: tail, left: 0, top: headH + taglineGap },
+      ])
+      .png(PNG_TRUE)
+      .toBuffer();
+    return sharp(stacked);
+  };
 
   // 1. Full stacked lockup, trimmed to its ink.
   await write(
     `${prefix}.png`,
-    create()
-      .extract({ left: colB.lo, top: rowB.lo, width: colB.hi - colB.lo + 1, height: rowB.hi - rowB.lo + 1 })
+    (await keptRows(rowB.lo, rowB.hi, colB.lo, colB.hi - colB.lo + 1))
       .resize({ width: 1000, fit: "inside", kernel: "lanczos3" })
       .png(PNG)
   );
@@ -309,9 +363,17 @@ async function buildLockups(master, prefix) {
   await write(`${prefix}-mark.png`, sharp(embSquare).resize(512, 512, { kernel: "lanczos3" }).png(PNG));
 
   // 3. Wordmark on its own, name plus tagline.
+  const wordCols = new Int32Array(W);
+  for (let y = wordmark.top; y <= wordmark.bottom; y++) {
+    if (subline && y >= subline.top && y <= subline.bottom) continue;
+    for (let x = 0; x < W; x++) if (master.raw[(y * W + x) * 4 + 3] > 24) wordCols[x]++;
+  }
+  const wordB = bounds(wordCols, 2);
   await write(
     `${prefix}-wordmark.png`,
-    sharp(await cropBand(wordmark)).resize({ width: 800, fit: "inside", kernel: "lanczos3" }).png(PNG)
+    (await keptRows(wordmark.top, wordmark.bottom, wordB.lo, wordB.hi - wordB.lo + 1))
+      .resize({ width: 800, fit: "inside", kernel: "lanczos3" })
+      .png(PNG)
   );
 
   // 4. Horizontal lockup for the 68px navbar. The delivered logo is a square
@@ -327,9 +389,10 @@ async function buildLockups(master, prefix) {
   const em = await sharp(embScaled).metadata();
   const nm = await sharp(nameScaled).metadata();
   const GAP = Math.round(LOCK_H * 0.08);
+  const lockW = em.width + GAP + nm.width;
   await write(
     `${prefix}-horizontal.png`,
-    sharp({ create: { width: em.width + GAP + nm.width, height: LOCK_H, channels: 4, background: CLEAR } })
+    sharp({ create: { width: lockW, height: LOCK_H, channels: 4, background: CLEAR } })
       .composite([
         { input: embScaled, left: 0, top: 0 },
         { input: nameScaled, left: em.width + GAP, top: Math.round((LOCK_H - nm.height) / 2) },
@@ -337,7 +400,15 @@ async function buildLockups(master, prefix) {
       .png(PNG)
   );
 
-  return { embArt, embMeta };
+  return {
+    embArt,
+    embMeta,
+    lockup: {
+      src: `/brand/${prefix}-horizontal.png`,
+      width: Math.round((lockW * DECLARED_H) / LOCK_H),
+      height: DECLARED_H,
+    },
+  };
 }
 
 /**
@@ -404,23 +475,54 @@ async function buildIcons(embArt, embMeta) {
   written.push(`  public/favicon.ico  16/32/48  ${(ico.length / 1024).toFixed(1)} KB`);
 }
 
+/**
+ * The navbar and the footer need each lockup's aspect ratio, and the two
+ * masters do not share one. Emitting it beside the images means a redrawn logo
+ * cannot leave a stale hard-coded size behind in a component.
+ */
+async function writeDimsModule(day, night) {
+  const line = (name, l) =>
+    `  ${name}: { src: "${l.src}", width: ${l.width}, height: ${l.height} },`;
+  const body = [
+    "// Generated by scripts/build-brand-assets.mjs. Do not edit by hand.",
+    "//",
+    "// The site paints these at a fixed height with w-auto, so the numbers below",
+    "// are each lockup scaled to a common declared height: what next/image reads",
+    "// off them is the aspect ratio and a sane srcset width, not the final size.",
+    "",
+    "export type BrandLockup = { src: string; width: number; height: number };",
+    "",
+    "export const BRAND_LOCKUP: Record<\"day\" | \"night\", BrandLockup> = {",
+    line("day", day),
+    line("night", night),
+    "};",
+    "",
+  ].join("\n");
+  await fs.mkdir(path.dirname(DIMS_MODULE), { recursive: true });
+  await fs.writeFile(DIMS_MODULE, body);
+  written.push(`  ${path.relative(ROOT, DIMS_MODULE).replace(/\\/g, "/")}  day ${day.width}x${day.height}, night ${night.width}x${night.height}`);
+}
+
 async function main() {
   await fs.mkdir(BRAND_DIR, { recursive: true });
 
   const day = await liftOffWhite(SRC_DAY);
   console.log(`day master    ${day.W}x${day.H}`);
-  const { embArt, embMeta } = await buildLockups(day, "logo");
+  const { embArt, embMeta, lockup: dayLockup } = await buildLockups(day, "logo");
   await buildIcons(embArt, embMeta);
+  let nightLockup = null;
 
   // The Night Shift master is optional, so the day assets still build without it.
   const hasNight = await fs.access(SRC_NIGHT).then(() => true, () => false);
   if (hasNight) {
     const night = await liftOffBlack(SRC_NIGHT);
     console.log(`\nnight master  ${night.W}x${night.H}`);
-    await buildLockups(night, "logo-night");
+    ({ lockup: nightLockup } = await buildLockups(night, "logo-night", { dropSubline: true }));
   } else {
     console.log("\nno Night Shift master, skipping logo-night-*");
   }
+
+  await writeDimsModule(dayLockup, nightLockup ?? dayLockup);
 
   console.log("\nwrote:");
   console.log(written.join("\n"));

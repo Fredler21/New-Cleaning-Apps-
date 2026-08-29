@@ -52,16 +52,21 @@ wordmark, and writes:
 | `public/brand/logo-horizontal.png` | Emblem + name side by side, for the navbar and footer |
 | `public/brand/logo-mark.png` | Emblem on its own, square |
 | `public/brand/logo-wordmark.png` | Name + tagline on its own |
-| `public/brand/logo-night*.png` | The same four cuts of the Night Shift logo, shown in dark mode |
+| `public/brand/logo-night*.png` | The same four cuts of the dark master, shown in dark mode |
 | `public/brand/icon-{16,32,48,96,192,512}.png` | Favicons, including the icon Google shows beside the search result |
 | `public/brand/apple-touch-icon.png` | iOS home screen |
 | `public/brand/icon-maskable-512.png` | Android adaptive icon |
 | `public/favicon.ico` | 16/32/48 browser tab icon |
 
-Two masters go in: `logo-source.png` (day) and `logo-source-night.png` (Night
-Shift). The night one is optional; without it the day assets still build. Icons
-and the favicon always come from the day logo, so the tab and the search result
-stay the same whatever theme the reader is using.
+Two masters go in: `logo-source.png` (day) and `logo-source-night.png` (the
+dark cut). The night one is optional; without it the day assets still build. It
+ships with a "NIGHT SHIFT" sub-line under the name, which the generator removes
+so both themes show the one brand, closing the tagline back up underneath.
+
+Icons and the favicon always come from the day logo, so the tab and the search
+result stay the same whatever theme the reader is using. The generator also
+writes `src/data/brand.ts`, so the navbar and footer never hold a hard-coded
+size that could drift from the artwork.
 
 Palette, sampled from the logo:
 
