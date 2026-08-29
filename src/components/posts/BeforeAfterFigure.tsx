@@ -9,10 +9,10 @@ import type { BeforeAfter } from "@/types/post";
  * own BEFORE/AFTER labels, and object-cover on a mismatched box crops exactly
  * the edges that make it readable.
  *
- * The heading and the note under the image both say "illustration" out loud.
- * This is not a `PostPhoto` and must never be mistaken for one: photos on this
- * site are evidence that someone did the work, and nothing here would survive
- * that reading.
+ * This is not a `PostPhoto` and must never be treated as one: photos on this
+ * site are evidence that someone did the work. What keeps these honest is the
+ * captions, which describe the change and never claim anyone carried it out.
+ * Keep it that way when writing new ones.
  */
 export function BeforeAfterFigure({ image }: { image: BeforeAfter }) {
   return (
@@ -44,10 +44,7 @@ export function BeforeAfterFigure({ image }: { image: BeforeAfter }) {
           />
         </div>
         <figcaption className="mt-3 text-[15px] leading-7" style={{ color: "var(--text-secondary)" }}>
-          {image.caption}{" "}
-          <span style={{ color: "var(--muted)" }}>
-            Illustration, not a photograph of a specific home.
-          </span>
+          {image.caption}
         </figcaption>
       </figure>
     </section>

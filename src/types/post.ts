@@ -45,9 +45,8 @@ export type PostPhoto = {
  * Deliberately NOT a `PostPhoto`. A photo on this site is evidence: it says a
  * real person cleaned a real thing and here is the proof. A `BeforeAfter` is a
  * rendered illustration of the problem and the result, the same class of asset
- * as `coverImage`, and `BeforeAfterFigure` captions it as one. Keeping the two
- * fields apart is what stops an illustration from quietly reading as a claim
- * that somebody photographed their own bathroom.
+ * as `coverImage`. Keeping the two fields apart is what stops an illustration
+ * from ending up somewhere the site is making a claim about firsthand work.
  *
  * The BEFORE and AFTER labels are burned into the file by
  * scripts/build-before-after.mjs rather than drawn by the component, so they

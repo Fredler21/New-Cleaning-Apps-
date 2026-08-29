@@ -93,8 +93,10 @@ npm run build:before-after
 A post opts in through the `beforeAfter` field. That field is deliberately
 separate from `photos`: **`photos` is evidence** and must only ever hold real
 photographs taken by the owner, while `beforeAfter` is a rendered illustration
-in the same class as `coverImage`. The component captions it as one, and posts
-that have both show the real photos first.
+in the same class as `coverImage`. Posts that have both show the real photos
+first. Captions on a `beforeAfter` describe the change and never claim anyone
+carried it out, which is what keeps an illustration clear of the first-person
+rules in [WRITING-STYLE.md](WRITING-STYLE.md).
 
 ---
 
