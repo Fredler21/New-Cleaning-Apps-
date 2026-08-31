@@ -62,7 +62,7 @@ export const AFFILIATE_PRODUCTS = {
   },
   "copper-mesh": {
     name: "copper mesh",
-    search: "copper mesh rodent proofing",
+    asin: "B0GFT351DJ",
     note: "Packs into gaps that are the wrong shape for hardware cloth, and does not rust out like steel wool.",
   },
   "nitrile-gloves": {
