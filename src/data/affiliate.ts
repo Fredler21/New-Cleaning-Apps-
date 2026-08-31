@@ -81,6 +81,13 @@ export const AFFILIATE_PRODUCTS = {
     note: "Traps anything already in the mattress and stops it being reinfested.",
   },
 
+  /* ── Named products a post already tells the reader to look for. ─────── */
+  borax: {
+    name: "20 Mule Team borax",
+    asin: "B018HUUK40",
+    note: "Unlike baking soda or vinegar, borax is not stocked in every grocery store, so the reader may genuinely need to order it.",
+  },
+
   /* ── Descaling and drains. Consumables, so these repeat. ──────────────── */
   "appliance-descaler": {
     name: "an appliance descaler",
