@@ -36,6 +36,8 @@ const IMAGES = [
   { file: "laundry-room.jpg", split: "side-by-side" },
   { file: "living-room.jpg", split: "side-by-side" },
   { file: "plunger.jpg", split: "side-by-side" },
+  // Arrives with its own Before/After type already set into the artwork.
+  { file: "rats-room.jpg", split: "side-by-side", preLabelled: true },
   { file: "shower-stall.jpg", split: "side-by-side" },
   // Ships with its own BEFORE/AFTER set into the artwork. Labelling it again
   // would put two sets of type on one image.
