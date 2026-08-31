@@ -77,7 +77,7 @@ export const AFFILIATE_PRODUCTS = {
   },
   "mattress-encasement": {
     name: "a zippered mattress encasement",
-    search: "zippered mattress encasement bed bug proof",
+    asin: "B01413355S",
     note: "Traps anything already in the mattress and stops it being reinfested.",
   },
 
