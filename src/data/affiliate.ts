@@ -81,6 +81,53 @@ export const AFFILIATE_PRODUCTS = {
     note: "Traps anything already in the mattress and stops it being reinfested.",
   },
 
+  /* ── Tools a post already tells the reader to get hold of. ───────────── */
+  "sneaker-cleaning-kit": {
+    name: "a sneaker cleaning kit",
+    asin: "B0G7G6R1MH",
+    note: "Covers the stiff brush, the soft brush and the solution the post calls for in one purchase.",
+  },
+  "cedar-blocks": {
+    name: "cedar blocks",
+    asin: "B0BT487XG2",
+    note: "Blocks rather than spray, which is what the closet post specifies.",
+  },
+  "bottle-brush-set": {
+    name: "a bottle brush set",
+    asin: "B08HMZZLZT",
+    note: "Includes the straw brush, which is the piece most people do not already own.",
+  },
+  "drawer-organizer": {
+    name: "a drawer organizer set",
+    asin: "B0GKV2SQT4",
+    note: "Multiple sizes, so it fits more desks than a single fixed tray.",
+  },
+  "cable-ties": {
+    name: "reusable velcro cable ties",
+    asin: "B081HH5X61",
+    note: "Reusable, so cables can be unbundled without cutting anything.",
+  },
+  "dryer-vent-brush": {
+    name: "a long flexible dryer vent brush",
+    asin: "B0FSXWBYSG",
+    note: "The laundry post lists this by name. Vacuuming at the wall does not reach along the duct.",
+  },
+
+  /* Sourced but not placed yet. The fruit fly post teaches a DIY trap and does
+     not recommend buying one, and no post on the site mentions a spin scrubber
+     at all. Linking either would mean inserting a recommendation the article
+     never makes, so they wait for an editorial decision rather than a link. */
+  "fruit-fly-trap": {
+    name: "a ready made fruit fly trap",
+    asin: "B01MRHXM0I",
+    note: "Liquid lure trap. Only for a reader who will not make the vinegar trap themselves.",
+  },
+  "spin-scrubber": {
+    name: "an electric spin scrubber",
+    asin: "B0GWQ7249P",
+    note: "Unplaced. Would suit tub, tile and grout work if a post ever recommends one.",
+  },
+
   /* ── Named products a post already tells the reader to look for. ─────── */
   borax: {
     name: "20 Mule Team borax",
