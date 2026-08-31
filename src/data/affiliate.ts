@@ -72,7 +72,7 @@ export const AFFILIATE_PRODUCTS = {
   },
   "roach-bait-station": {
     name: "roach bait stations",
-    search: "roach bait stations",
+    asin: "B08HWHD58L",
     note: "Bait carried back to the nest reaches the roaches a spray never touches.",
   },
   "mattress-encasement": {
@@ -81,7 +81,36 @@ export const AFFILIATE_PRODUCTS = {
     note: "Traps anything already in the mattress and stops it being reinfested.",
   },
 
+  /* ── The bigger ticket items. A steamer is the one genuinely expensive
+        thing this site recommends, and on the bed bug post it is the
+        treatment rather than an accessory. ────────────────────────────────── */
+  "steam-cleaner": {
+    name: "a handheld steam cleaner",
+    asin: "B0HFHVQXVZ",
+    note: "Heat kills bed bugs and lifts grout soil without chemicals. The one product here worth real money.",
+  },
+
   /* ── Tools a post already tells the reader to get hold of. ───────────── */
+  squeegee: {
+    name: "a shower squeegee",
+    asin: "B0BXWMVL4J",
+    note: "The most recommended item on the site. Ten posts call daily squeegeeing the best prevention there is.",
+  },
+  "oxygen-bleach": {
+    name: "oxygen bleach powder",
+    asin: "B0FH6XXRW5",
+    note: "Sodium percarbonate. Safe on colors where chlorine bleach is not, which is why the posts keep reaching for it.",
+  },
+  "n95-respirator": {
+    name: "an N95 respirator",
+    asin: "B08YS6WJZ3",
+    note: "A paper dust mask does not filter mold spores or dried rodent droppings. This is safety equipment, not a convenience.",
+  },
+  "melamine-sponge": {
+    name: "melamine sponges",
+    asin: "B0GY8G6481",
+    note: "Sold in bulk because they crumble as they work. Buying singles is the expensive way.",
+  },
   "sneaker-cleaning-kit": {
     name: "a sneaker cleaning kit",
     asin: "B0G7G6R1MH",
@@ -143,17 +172,17 @@ export const AFFILIATE_PRODUCTS = {
   },
   "toilet-pumice-stick": {
     name: "a pumice stick made for toilet bowls",
-    search: "pumice stick toilet bowl cleaner",
+    asin: "B0D9R2B9C3",
     note: "The only thing that reliably takes off a hardened mineral ring without scratching porcelain.",
   },
   "drain-snake": {
     name: "a drain snake",
-    search: "drain snake hair clog remover",
+    asin: "B01NB0729G",
     note: "Pulls the hair clog out whole. Chemical drain cleaner just tunnels through it.",
   },
   "enzyme-cleaner": {
     name: "an enzyme cleaner",
-    search: "enzyme cleaner pet urine",
+    asin: "B083FBGDJM",
     note: "Digests the proteins that cause the smell. Ordinary detergent only masks them.",
   },
 } satisfies Record<string, AffiliateProduct>;
