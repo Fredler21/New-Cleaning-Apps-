@@ -57,7 +57,7 @@ export const AFFILIATE_PRODUCTS = {
   },
   "hardware-cloth": {
     name: "quarter inch galvanized hardware cloth",
-    search: "1/4 inch galvanized hardware cloth",
+    asin: "B09W8XZDVS",
     note: "The mesh size matters. Anything wider than a quarter inch lets young rats through.",
   },
   "copper-mesh": {
@@ -67,7 +67,7 @@ export const AFFILIATE_PRODUCTS = {
   },
   "nitrile-gloves": {
     name: "disposable nitrile gloves",
-    search: "disposable nitrile gloves",
+    asin: "B00GS8W3T4",
     note: "Rodent droppings and urine carry disease. Bare hands are not an option for cleanup.",
   },
   "roach-bait-station": {
@@ -91,7 +91,7 @@ export const AFFILIATE_PRODUCTS = {
   /* ── Descaling and drains. Consumables, so these repeat. ──────────────── */
   "appliance-descaler": {
     name: "an appliance descaler",
-    search: "appliance descaler kettle coffee maker",
+    asin: "B0G5YX8HXS",
     note: "For scale that vinegar has stopped shifting, or appliances whose makers void warranties over vinegar.",
   },
   "toilet-pumice-stick": {
