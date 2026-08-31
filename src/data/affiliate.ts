@@ -52,7 +52,7 @@ export const AFFILIATE_PRODUCTS = {
         these is usually trying to solve the problem the same day. ───────── */
   "rat-snap-trap": {
     name: "rat size snap traps",
-    search: "rat snap traps",
+    asin: "B0746NGR9M",
     note: "Mouse traps are too small to kill a rat cleanly. Rat size is a separate product.",
   },
   "hardware-cloth": {
