@@ -28,6 +28,8 @@ import { ImageAttribution } from "@/components/posts/ImageAttribution";
 import { FieldNotes } from "@/components/posts/FieldNotes";
 import { PostPhotos } from "@/components/posts/PostPhotos";
 import { BeforeAfterFigure } from "@/components/posts/BeforeAfterFigure";
+import { AffiliateDisclosure } from "@/components/posts/AffiliateDisclosure";
+import { hasAffiliateLinks } from "@/data/affiliate";
 import { MethodComparison } from "@/components/posts/MethodComparison";
 import { CostBreakdown } from "@/components/posts/CostBreakdown";
 import type { SectionKey } from "@/types/post";
@@ -346,6 +348,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
           <div className="mt-2">
             <ImageAttribution slug={post.slug} />
           </div>
+
+          {hasAffiliateLinks(post) && <AffiliateDisclosure />}
 
           {/* Article + HowTo structured data */}
           <JsonLd

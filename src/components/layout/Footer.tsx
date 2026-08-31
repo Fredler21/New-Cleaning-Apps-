@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 import { BRAND_LOCKUP } from "@/data/brand";
+import { AMAZON_REQUIRED_STATEMENT } from "@/data/affiliate";
 
 const footerLinks = {
   explore: [
@@ -89,7 +90,13 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-3 border-t py-6 sm:flex-row" style={{ borderColor: "var(--border)" }}>
-          <p className="text-xs" style={{ color: "var(--muted)" }}>© {new Date().getFullYear()} TryCleaningHacks. Smart cleaning, real results.</p>
+          <div>
+            <p className="text-xs" style={{ color: "var(--muted)" }}>© {new Date().getFullYear()} TryCleaningHacks. Smart cleaning, real results.</p>
+            {/* Required verbatim by the Associates operating agreement, which
+                wants it present on the site rather than only on the posts that
+                carry links. */}
+            <p className="mt-1 text-xs" style={{ color: "var(--muted)" }}>{AMAZON_REQUIRED_STATEMENT}</p>
+          </div>
           <div className="flex items-center gap-3">
             <a
               href="https://pin.it/5TQpWRWSn"
