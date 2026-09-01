@@ -157,6 +157,31 @@ export const AFFILIATE_PRODUCTS = {
     note: "Unplaced. Would suit tub, tile and grout work if a post ever recommends one.",
   },
 
+  /* ── Equipment for the DIY recipe posts. The ingredients in those guides
+        are pantry staples nobody orders online, so linking vinegar or baking
+        soda would earn nothing and read as greed. The bottles and the oils are
+        the parts a reader genuinely does not already own. ─────────────────── */
+  "glass-spray-bottles": {
+    name: "amber glass spray bottles",
+    asin: "B01G98Y1BA",
+    note: "Glass rather than plastic, because essential oils degrade plastic over time. Amber keeps light off the mix.",
+  },
+  "amber-dropper-bottle": {
+    name: "an amber glass dropper bottle",
+    asin: "B095S2H99F",
+    note: "For the oil blend specifically. The recipe post explains why the bottle has to be dark.",
+  },
+  "tea-tree-oil": {
+    name: "tea tree essential oil",
+    asin: "B09PRCVD17",
+    note: "Used in two of the bathroom recipes, and unlike vinegar it is not in most grocery stores.",
+  },
+  "castile-soap": {
+    name: "unscented liquid castile soap",
+    asin: "B0DN7MVRRL",
+    note: "The unscented version matters, since a scented one fights the essential oils the recipes add on purpose.",
+  },
+
   /* ── Named products a post already tells the reader to look for. ─────── */
   borax: {
     name: "20 Mule Team borax",
