@@ -23,11 +23,12 @@ export function AffiliateDisclosure() {
       }}
     >
       <span className="font-medium" style={{ color: "var(--text)" }}>
-        Some links in this guide are affiliate links.
+        A quick heads up:
       </span>{" "}
-      If you buy through one, this site earns a commission at no extra cost to
-      you. {AMAZON_REQUIRED_STATEMENT} Products are recommended because the
-      method calls for them, never because of what they pay.
+      a few links in this guide go to Amazon. If you buy through one we earn a
+      small commission, and you pay exactly the same price either way. We only
+      link things a method actually calls for, never because of what they pay.{" "}
+      {AMAZON_REQUIRED_STATEMENT}
     </aside>
   );
 }

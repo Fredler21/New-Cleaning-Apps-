@@ -125,8 +125,26 @@ export default function EditorialPolicyPage() {
             </p>
             <p className="mt-3">
               We do not accept payment in exchange for positive coverage of commercial cleaning
-              products. If we ever include affiliate links, they will be clearly disclosed within
-              the relevant guide.
+              products, and no brand has any say in what appears here.
+            </p>
+          </Section>
+
+          <Section title="Affiliate Links">
+            <p>
+              Some of our guides link to products on Amazon. If you buy something through one of
+              those links we earn a small commission, and you pay exactly the same price you would
+              have paid anyway. As an Amazon Associate I earn from qualifying purchases.
+            </p>
+            <p className="mt-3">
+              Those links never change what we recommend. A product only gets a link when the guide
+              already tells you to use it, and we leave the link out when the product we could link
+              does not match what the guide actually calls for. A guide about quarter inch hardware
+              cloth does not get a link to half inch mesh just because one is available.
+            </p>
+            <p className="mt-3">
+              Any guide containing affiliate links says so in a short note at the top, so you never
+              have to go looking for it. Most of our guides use pantry staples like vinegar and
+              baking soda and contain no affiliate links at all.
             </p>
           </Section>
 
