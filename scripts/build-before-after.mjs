@@ -31,6 +31,8 @@ const IMAGES = [
   { file: "baseboards.jpg", split: "side-by-side" },
   { file: "bathroom-caulk.jpg", split: "side-by-side" },
   { file: "bathroom-sink.jpg", split: "side-by-side" },
+  // Arrives with BEFORE/AFTER already set into the artwork.
+  { file: "dryer-vent.jpg", split: "side-by-side", preLabelled: true },
   { file: "faucet.jpg", split: "side-by-side" },
   { file: "humidifier.jpg", split: "side-by-side" },
   { file: "laundry-room.jpg", split: "side-by-side" },
