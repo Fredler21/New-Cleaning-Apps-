@@ -189,6 +189,30 @@ export const AFFILIATE_PRODUCTS = {
     note: "Unlike baking soda or vinegar, borax is not stocked in every grocery store, so the reader may genuinely need to order it.",
   },
 
+  /* ── Dryer duct parts. The vent guide tells the reader to buy each of
+        these by name, and every one of them is a thing people genuinely do
+        not have in a drawer already. ─────────────────────────────────────── */
+  "foil-tape": {
+    name: "metal backed foil tape",
+    asin: "B0BNKK95YC",
+    note: "Rated for the heat of a dryer duct. Cloth duct tape dries out and the joint comes apart, often within a year.",
+  },
+  "semi-rigid-duct": {
+    name: "semi rigid metal dryer duct",
+    asin: "B0CNVTQTYY",
+    note: "The replacement for white vinyl duct, which most residential codes no longer permit because it traps lint and burns.",
+  },
+  "periscope-duct": {
+    name: "a periscope dryer vent",
+    asin: "B001AAEG6S",
+    note: "A flattened rigid fitting that lets the dryer sit near the wall without the duct being crushed behind it.",
+  },
+  "dryer-vent-hood": {
+    name: "a dryer vent hood",
+    asin: "B00R1X7S5Y",
+    note: "Louvered gravity damper, deliberately not the mesh screen version: the guide explains that a screen over a dryer vent bridges with lint and blocks within weeks.",
+  },
+
   /* ── Descaling and drains. Consumables, so these repeat. ──────────────── */
   "appliance-descaler": {
     name: "an appliance descaler",
