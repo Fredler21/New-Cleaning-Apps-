@@ -29,7 +29,7 @@ export function MobileTOC({ steps }: MobileTOCProps) {
     >
       <summary className="flex cursor-pointer select-none items-center justify-between gap-2 px-4 py-3.5 text-sm font-semibold">
         <span className="flex items-center gap-2" style={{ color: "var(--text)" }}>
-          <svg className="h-4 w-4 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <svg className="h-4 w-4 text-teal-700 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h7" />
           </svg>
           Jump to a section
@@ -50,7 +50,7 @@ export function MobileTOC({ steps }: MobileTOCProps) {
           <li key={l.href}>
             <a
               href={l.href}
-              className="block rounded-lg px-3 py-2 transition-colors hover:text-teal-600"
+              className="block rounded-lg px-3 py-2 transition-colors hover:text-teal-700 dark:hover:text-teal-400"
               style={{ color: "var(--text-secondary)" }}
             >
               {l.label}

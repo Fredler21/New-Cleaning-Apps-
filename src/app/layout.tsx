@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/nav/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -12,7 +12,40 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });
+
+const SITE_TITLE = "TryCleaningHacks | Practical Cleaning Hacks for Every Home";
+const SITE_DESCRIPTION =
+  "Discover practical cleaning hacks using everyday ingredients. Clear steps for kitchen, bathroom, laundry, and whole-home deep cleans.";
+
+/**
+ * Consent Mode bootstrap. Runs before Tag Manager so GA4, AdSense and the
+ * Pinterest tag (all fired from the GTM container) honor the visitor's
+ * choice. The site serves a US audience, so the default is granted; choosing
+ * "Decline" in the cookie banner stores that choice and flips every signal
+ * to denied, here on the next page load and in CookieConsent for the current
+ * one.
+ */
+const CONSENT_BOOTSTRAP = `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var choice = null;
+  try { choice = localStorage.getItem('cookie_consent'); } catch (e) {}
+  var state = choice === 'declined' ? 'denied' : 'granted';
+  gtag('consent', 'default', {
+    ad_storage: state,
+    ad_user_data: state,
+    ad_personalization: state,
+    analytics_storage: state
+  });
+})();
+`;
+
+const GTM_SNIPPET = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5PRLLC75');`;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.trycleaninghacks.com"),
@@ -33,10 +66,10 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   title: {
-    default: "TryCleaningHacks, Practical Cleaning Hacks for Every Home",
+    default: SITE_TITLE,
     template: "%s | TryCleaningHacks",
   },
-  description: "Discover practical cleaning hacks using everyday ingredients. clear steps for kitchen, bathroom, laundry, and whole-home deep cleans.",
+  description: SITE_DESCRIPTION,
   keywords: [
     "cleaning hacks", "house cleaning tips", "cleaning tricks", "DIY cleaning",
     "baking soda cleaning", "vinegar cleaning", "kitchen cleaning", "bathroom cleaning",
@@ -67,8 +100,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "TryCleaningHacks, Practical Cleaning Hacks for Every Home",
-    description: "Discover practical cleaning hacks using everyday ingredients. clear steps for kitchen, bathroom, laundry, and whole-home deep cleans.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     url: "https://www.trycleaninghacks.com",
     siteName: "TryCleaningHacks",
     images: [{ url: "/api/og", width: 1200, height: 630, alt: "TryCleaningHacks" }],
@@ -77,8 +110,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TryCleaningHacks, Practical Cleaning Hacks for Every Home",
-    description: "Discover practical cleaning hacks using everyday ingredients. clear steps you can follow in minutes.",
+    title: SITE_TITLE,
+    description: "Discover practical cleaning hacks using everyday ingredients. Clear steps you can follow in minutes.",
     images: ["/api/og"],
   },
 };
@@ -98,7 +131,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`light ${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`light ${inter.variable}`} suppressHydrationWarning>
       <head>
         {/* Flag JS availability before first paint so scroll-reveal only hides
             content when it can actually be revealed (keeps it visible for
@@ -108,6 +141,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: "document.documentElement.classList.add('js')",
           }}
         />
+        {/* Consent defaults must be in place before any Google tag loads. */}
+        <script id="consent-bootstrap" dangerouslySetInnerHTML={{ __html: CONSENT_BOOTSTRAP }} />
+        <link rel="alternate" type="application/rss+xml" title="TryCleaningHacks" href="/feed.xml" />
         {/* AdSense ownership verification + ad serving. */}
         <Script
           id="adsense-verification"
@@ -117,44 +153,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
 
-      <Script id="gtm" strategy="afterInteractive">
-        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5PRLLC75');`}
-      </Script>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-R97SKNX12S"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-R97SKNX12S');
-        `}
-      </Script>
-      <Script id="pinterest-tag" strategy="lazyOnload">
-        {`
-          !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-          pintrk('load', '2613182917179');
-          pintrk('page');
-        `}
-      </Script>
       <body className="font-sans antialiased">
+        {/* Tag Manager is the single loader for GA4 (G-R97SKNX12S) and the
+            Pinterest tag. They used to be loaded here as well, so every page
+            downloaded gtag.js twice and fired the Pinterest base code twice. */}
+        <Script id="gtm" strategy="afterInteractive">
+          {GTM_SNIPPET}
+        </Script>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5PRLLC75"
             height="0"
             width="0"
-            style={{display:'none',visibility:'hidden'}}
+            style={{ display: "none", visibility: "hidden" }}
           />
-        </noscript>
-        <noscript>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img height="1" width="1" style={{display:'none'}} alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2613182917179&noscript=1" />
         </noscript>
         <ThemeProvider>
           <SavedHacksProvider>

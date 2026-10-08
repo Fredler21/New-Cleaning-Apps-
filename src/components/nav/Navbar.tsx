@@ -39,7 +39,6 @@ export function Navbar() {
               {...BRAND_LOCKUP.night}
               alt="TryCleaningHacks"
               className="hidden h-8 w-auto sm:h-10 dark:block"
-              priority
             />
           </Link>
 
@@ -49,10 +48,7 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-lg px-3.5 py-2 text-sm font-medium transition-colors duration-200"
-                style={{ color: "var(--text-secondary)" }}
-                onMouseEnter={(e) => { e.currentTarget.style.color = "var(--text)"; e.currentTarget.style.background = "var(--surface)"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.color = "var(--text-secondary)"; e.currentTarget.style.background = "transparent"; }}
+                className="rounded-lg px-3.5 py-2 text-sm font-medium text-th-text-secondary transition-colors duration-200 hover:bg-th-surface hover:text-th-text"
               >
                 {item.label}
               </Link>
@@ -80,7 +76,7 @@ export function Navbar() {
             </button>
             <Link
               href="/cleaning-hacks"
-              className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:shadow-md hover:brightness-105 active:scale-[0.98]"
+              className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-teal-700 to-emerald-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:shadow-md hover:brightness-110 active:scale-[0.98]"
             >
               Browse Hacks
             </Link>

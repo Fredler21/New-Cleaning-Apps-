@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { FlaskConical } from "lucide-react";
 import type { FieldNote } from "@/types/post";
 
 const fmt = (iso: string) =>
-  new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 
 /**
  * Renders genuine firsthand testing.
@@ -26,7 +27,7 @@ export function FieldNotes({ notes }: { notes: FieldNote[] }) {
       className="rounded-xl border border-amber-200 bg-amber-50 p-6 dark:border-amber-400/20 dark:bg-amber-500/5"
     >
       <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-        <span aria-hidden>🧪</span>
+        <FlaskConical className="h-5 w-5 text-amber-700 dark:text-amber-400" aria-hidden="true" />
         {notes.length > 1 ? "What happened when I ran these" : "What happened when I ran this"}
       </h2>
       <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>

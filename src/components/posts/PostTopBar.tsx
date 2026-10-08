@@ -10,7 +10,7 @@ export function PostTopBar() {
   const handleSearch = (e: FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
-      router.push(`/posts?q=${encodeURIComponent(query.trim())}`);
+      router.push(`/cleaning-hacks?q=${encodeURIComponent(query.trim())}`);
     }
   };
 
@@ -23,6 +23,7 @@ export function PostTopBar() {
         {/* Back button */}
         <button
           onClick={() => router.back()}
+          aria-label="Go back"
           className="inline-flex shrink-0 items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium transition-all duration-200 hover:opacity-80 active:scale-[0.97]"
           style={{
             background: "var(--surface)",

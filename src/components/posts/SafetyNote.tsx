@@ -1,3 +1,5 @@
+import { TriangleAlert } from "lucide-react";
+
 type SafetyNoteProps = {
   notes: string[];
 };
@@ -14,7 +16,7 @@ export function SafetyNote({ notes }: SafetyNoteProps) {
       <ul className="mt-4 space-y-3">
         {notes.map((note) => (
           <li key={note} className="flex items-start gap-3 text-sm leading-relaxed text-red-700 dark:text-red-200/80">
-            <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-red-100 text-xs text-red-500 dark:bg-red-500/10 dark:text-red-400">⚠</span>
+            <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-red-100 text-xs text-red-500 dark:bg-red-500/10 dark:text-red-400"><TriangleAlert className="h-3 w-3" aria-hidden="true" /></span>
             {note}
           </li>
         ))}

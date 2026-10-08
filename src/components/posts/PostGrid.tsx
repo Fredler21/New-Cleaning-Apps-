@@ -1,5 +1,5 @@
 import type { Post } from "@/types/post";
-import { PostCard } from "@/components/posts/PostCard";
+import { PostCard, toCardData } from "@/components/posts/PostCard";
 
 type PostGridProps = {
   posts: Post[];
@@ -27,7 +27,7 @@ export function PostGrid({ posts, featured }: PostGridProps) {
   return (
     <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {posts.map((post, i) => (
-        <PostCard key={post.slug} post={post} featured={featured && i === 0} />
+        <PostCard key={post.slug} post={toCardData(post)} featured={featured && i === 0} />
       ))}
     </div>
   );

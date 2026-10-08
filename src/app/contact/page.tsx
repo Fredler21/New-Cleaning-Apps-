@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import { Container } from "@/components/layout/Container";
 import { Input } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
+import { Brush, FileText, Handshake, Lightbulb, Mail } from "lucide-react";
 
 export default function ContactPage() {
   const [status, setStatus] = useState<string>("");
@@ -64,7 +65,7 @@ export default function ContactPage() {
         {/* Page header */}
         <div className="mx-auto max-w-xl text-center mb-10">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text)" }}>
-            <span className="mr-2">✉️</span>Get in Touch
+            <Mail className="mr-2 inline-block h-7 w-7 align-[-4px] text-teal-700 dark:text-teal-400" aria-hidden="true" />Get in Touch
           </h1>
           <p className="mt-3 text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
             Have a question about a cleaning hack, need advice for a tough stain, or want to work together? TryCleaningHacks is run by one person, Fredler Pierre-Louis, and he reads every message personally. Expect a reply within 24 to 48 hours.
@@ -120,17 +121,17 @@ export default function ContactPage() {
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              { icon: "🧹", title: "Cleaning Advice", desc: "Stuck on a stubborn stain or odor? Describe the surface, material, and what you\u2019ve tried, and we’ll point you to the method best suited to your situation." },
-              { icon: "💡", title: "Suggest a Hack", desc: "Discovered a brilliant cleaning shortcut? Share your hack and it may be featured in an upcoming article, complete with credit to you." },
-              { icon: "🤝", title: "Brand Collaborations", desc: "We partner with eco-friendly cleaning brands, home-care companies, and lifestyle publishers for sponsored content, product reviews, and roundups." },
-              { icon: "📝", title: "Content Licensing", desc: "Interested in republishing or licensing our practical cleaning guides for your platform, newsletter, or print publication? Let\u2019s discuss terms." },
+              { Icon: Brush, title: "Cleaning Advice", desc: "Stuck on a stubborn stain or odor? Describe the surface, material, and what you\u2019ve tried, and we’ll point you to the method best suited to your situation." },
+              { Icon: Lightbulb, title: "Suggest a Hack", desc: "Discovered a brilliant cleaning shortcut? Share your hack and it may be featured in an upcoming article, complete with credit to you." },
+              { Icon: Handshake, title: "Brand Collaborations", desc: "We partner with eco-friendly cleaning brands, home-care companies, and lifestyle publishers for sponsored content, product reviews, and roundups." },
+              { Icon: FileText, title: "Content Licensing", desc: "Interested in republishing or licensing our practical cleaning guides for your platform, newsletter, or print publication? Let\u2019s discuss terms." },
             ].map((item) => (
               <div
                 key={item.title}
                 className="rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5"
                 style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
               >
-                <span className="text-2xl mb-2 block">{item.icon}</span>
+                <span className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg" style={{ background: "var(--accent-light)", color: "var(--accent)" }}><item.Icon className="h-[18px] w-[18px]" strokeWidth={1.75} aria-hidden="true" /></span>
                 <h3 className="font-semibold mb-1" style={{ color: "var(--text)" }}>{item.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>{item.desc}</p>
               </div>

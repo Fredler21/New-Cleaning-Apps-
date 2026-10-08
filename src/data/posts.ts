@@ -235,7 +235,7 @@ export const posts: Post[] = [
     author: "Fredler Pierre-Louis",
     datePublished: "2025-10-14",
     dateUpdated: "2026-08-19",
-    category: "hydrogen-peroxide-hacks",
+    category: "peroxide-hacks",
     readTime: "16 min",
     tags: ["disinfecting", "bathroom", "kitchen", "laundry"],
     excerpt:
@@ -1450,7 +1450,7 @@ export const posts: Post[] = [
     author: "Fredler Pierre-Louis",
     datePublished: "2026-02-02",
     dateUpdated: "2026-08-19",
-    category: "kitchen-cleaning",
+    category: "laundry-kitchen",
     readTime: "15 min",
     tags: ["kitchen", "appliances", "grease", "odor control"],
     excerpt:
@@ -4008,7 +4008,7 @@ export const posts: Post[] = [
     author: "Fredler Pierre-Louis",
     datePublished: "2026-04-06",
     dateUpdated: "2026-08-19",
-    category: "kitchen-cleaning",
+    category: "laundry-kitchen",
     readTime: "15 min",
     tags: ["kitchen", "hygiene", "food safety", "routine"],
     excerpt:
@@ -5036,7 +5036,7 @@ export const posts: Post[] = [
     author: "Fredler Pierre-Louis",
     datePublished: "2026-03-22",
     dateUpdated: "2026-08-19",
-    category: "laundry",
+    category: "laundry-kitchen",
     readTime: "15 min",
     tags: ["laundry", "organization", "routine"],
     excerpt:

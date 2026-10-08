@@ -1,11 +1,14 @@
-/* ── Accent (shared) ── */
+/* ── Accent (shared) ──
+   Text-on-light accent is teal-700 so links and labels clear WCAG AA (4.5:1)
+   on white and on --surface. Dark mode lifts it to teal-400 for the same
+   reason (see the .dark block). */
 :root {
-  --accent: #0d9488;
-  --accent-hover: #0f766e;
-  --accent-light: #99f6e4;
-  --accent-surface: rgba(13, 148, 136, 0.08);
-  --premium-teal: #0d9488;
-  --premium-emerald: #10b981;
+  --accent: #0f766e;
+  --accent-hover: #115e59;
+  --accent-light: #ccfbf1;
+  --accent-surface: rgba(15, 118, 110, 0.1);
+  --premium-teal: #0f766e;
+  --premium-emerald: #047857;
   --premium-gold: #c9a56a;
   --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-spring: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -20,7 +23,8 @@
   --surface-hover: #e2e8f0;
   --text: #0f172a;
   --text-secondary: #475569;
-  --muted: #94a3b8;
+  /* 5.7:1 on white, 5.2:1 on --surface. The old #94a3b8 was 2.6:1. */
+  --muted: #5b6778;
   --border: #e2e8f0;
   --border-hover: #cbd5e1;
   --card-bg: #ffffff;
@@ -45,7 +49,8 @@
   --surface-hover: #232b42;
   --text: #e2e8f0;
   --text-secondary: #94a3b8;
-  --muted: #64748b;
+  /* 5.9:1 on --bg, 5.0:1 on --surface. */
+  --muted: #8290a5;
   --border: rgba(255,255,255,0.08);
   --border-hover: rgba(255,255,255,0.15);
   --card-bg: rgba(255,255,255,0.04);
@@ -60,6 +65,8 @@
   --input-bg: rgba(255,255,255,0.04);
   --input-border: rgba(255,255,255,0.1);
   --select-bg: rgba(255,255,255,0.04);
-  --accent-light: rgba(13, 148, 136, 0.12);
-  --accent-surface: rgba(13, 148, 136, 0.15);
+  --accent: #2dd4bf;
+  --accent-hover: #5eead4;
+  --accent-light: rgba(45, 212, 191, 0.12);
+  --accent-surface: rgba(45, 212, 191, 0.18);
 }

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { posts } from "@/data/posts";
+import { populatedCategories, postsInCategory } from "@/lib/categories";
 
 const SITE_URL = "https://www.trycleaninghacks.com";
 
@@ -7,7 +8,7 @@ const SITE_URL = "https://www.trycleaninghacks.com";
  * Use the most recent post.datePublished as a deterministic "site freshness"
  * timestamp, rather than `new Date()`. Sending a different lastModified on
  * every build (when nothing changed) trains Google to ignore our freshness
- * signals — and recent updates penalize sites that fake freshness.
+ * signals, and recent updates penalize sites that fake freshness.
  */
 function latestPostDate(): string {
   const latest = posts
@@ -84,6 +85,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  /* ── Category pages ───────────────────────────────────── */
+  const categoryPages: MetadataRoute.Sitemap = populatedCategories().map((category) => {
+    const newest = postsInCategory(category.slug)
+      .map((post) => post.dateUpdated ?? post.datePublished)
+      .sort()
+      .reverse()[0];
+    return {
+      url: `${SITE_URL}/categories/${category.slug}`,
+      lastModified: newest ?? siteFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    };
+  });
+
   /* ── Post pages ───────────────────────────────────────── */
   const postPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${SITE_URL}/cleaning-hacks/${post.slug}`,
@@ -92,5 +107,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...postPages];
+  return [...staticPages, ...categoryPages, ...postPages];
 }

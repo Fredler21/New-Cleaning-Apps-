@@ -8,7 +8,7 @@ type ButtonProps = PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>> & 
 export function Button({ children, className = "", variant = "primary", size = "md", ...props }: ButtonProps) {
   const variants = {
     primary:
-      "bg-gradient-to-r from-teal-500 to-emerald-500 text-white shadow-sm hover:shadow-md hover:brightness-105 active:scale-[0.97]",
+      "bg-gradient-to-r from-teal-700 to-emerald-700 text-white shadow-sm hover:shadow-md hover:brightness-110 active:scale-[0.97]",
     secondary:
       "border active:scale-[0.97]",
     ghost:

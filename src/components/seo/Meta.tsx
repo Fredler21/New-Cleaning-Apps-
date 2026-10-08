@@ -26,7 +26,10 @@ export const buildMeta = ({
   const url = `${SITE_URL}${path}`;
 
   return {
-    title: fullTitle,
+    // `absolute` opts out of the root layout's "%s | TryCleaningHacks"
+    // template. Without it the suffix was appended twice on every page that
+    // used this helper ("About | TryCleaningHacks | TryCleaningHacks").
+    title: { absolute: fullTitle },
     description,
     ...(keywords && { keywords }),
     alternates: { canonical: url },

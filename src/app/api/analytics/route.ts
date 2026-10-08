@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const DEPLOY_VERSION = "2026-02-26-v2";
+const DEPLOY_VERSION = "2026-10-08-v3";
 
 /**
  * POST /api/analytics , Track a page view
@@ -34,25 +34,25 @@ export async function POST(request: Request) {
 }
 
 /**
- * GET /api/analytics          , Get all post analytics
- * GET /api/analytics?slug=xxx , Get analytics for one post
+ * GET /api/analytics?slug=xxx , Get the view count for one post
+ *
+ * The unfiltered form used to dump every post's counters and timestamps to
+ * anyone who asked. Nothing on the site reads that, so it is gone.
  */
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const slug = searchParams.get("slug");
+  const slug = searchParams.get("slug")?.trim();
+
+  if (!slug) {
+    return NextResponse.json({ error: "A slug query parameter is required.", v: DEPLOY_VERSION }, { status: 400 });
+  }
 
   try {
-    const { getPostAnalytics, getPostAnalyticsBySlug } = await import("@/lib/firebase/collections");
-    if (slug) {
-      const data = await getPostAnalyticsBySlug(slug);
-      return NextResponse.json({ ...(data ?? { slug, views: 0 }), v: DEPLOY_VERSION });
-    }
-
-    const data = await getPostAnalytics();
-    return NextResponse.json({ data, v: DEPLOY_VERSION });
+    const { getPostAnalyticsBySlug } = await import("@/lib/firebase/collections");
+    const data = await getPostAnalyticsBySlug(slug);
+    return NextResponse.json({ ...(data ?? { slug, views: 0 }), v: DEPLOY_VERSION });
   } catch (err) {
-    const message = err instanceof Error ? err.message : String(err);
-    console.error("Analytics fetch error:", err);
-    return NextResponse.json({ error: "Failed to fetch analytics.", detail: message, v: DEPLOY_VERSION }, { status: 500 });
+    console.error("Analytics fetch error:", err instanceof Error ? err.message : err);
+    return NextResponse.json({ error: "Failed to fetch analytics.", v: DEPLOY_VERSION }, { status: 500 });
   }
 }

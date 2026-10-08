@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { posts } from "@/data/posts";
 import { categories } from "@/data/categories";
+import { categoryHref } from "@/lib/categories";
 
 /**
  * A complete, text-only index of every published guide, grouped by category.
@@ -74,7 +75,8 @@ export function AllGuidesIndex() {
             <div key={categorySlug}>
               <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide" style={{ color: "var(--accent)" }}>
                 <Link
-                  href={`/cleaning-hacks?category=${categorySlug}`}
+                  href={categoryHref(categorySlug)}
+                  prefetch={false}
                   className="hover:underline capitalize"
                 >
                   {categoryName}
@@ -85,6 +87,7 @@ export function AllGuidesIndex() {
                   <li key={post.slug}>
                     <Link
                       href={`/cleaning-hacks/${post.slug}`}
+                      prefetch={false}
                       className="text-sm leading-snug hover:underline"
                       style={{ color: "var(--text-secondary)" }}
                     >

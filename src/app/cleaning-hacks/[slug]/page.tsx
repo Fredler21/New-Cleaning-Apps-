@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Check, Clock } from "lucide-react";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { PostTOC } from "@/components/posts/PostTOC";
@@ -22,6 +23,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/components/seo/Meta";
 import { posts, getPostBySlug, getPostByPreviousSlug } from "@/data/posts";
 import { internalLinks } from "@/data/internal-links";
+import { categoryHref, categoryName } from "@/lib/categories";
 import { seoDescriptions } from "@/data/seo-descriptions";
 import { seoTitles } from "@/data/seo-titles";
 import { ImageAttribution } from "@/components/posts/ImageAttribution";
@@ -60,7 +62,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     // does not double-append the brand suffix to a title that already includes it.
     title: { absolute: fullTitle },
     description,
-    keywords: [post.category.replace(/-/g, " "), ...post.tags, "cleaning hacks", "home cleaning"],
+    keywords: [categoryName(post.category), ...post.tags, "cleaning hacks", "home cleaning"],
     alternates: { canonical: url },
     openGraph: {
       title: fullTitle,
@@ -109,7 +111,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
       : testedSupplies.length === 1
         ? testedSupplies[0]
         : `${testedSupplies.slice(0, -1).join(", ")} and ${testedSupplies[testedSupplies.length - 1]}`;
-  const categoryLabel = post.category.replace(/-/g, " ");
+  const categoryLabel = categoryName(post.category);
 
   /* ── Section assembly ──────────────────────────────────────────────────
      Every article rendering the identical supplies -> steps -> tips -> FAQ
@@ -123,7 +125,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   {/* Supplies / Ingredients */}
                   <section id="supplies" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
                     <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-                      <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg className="h-5 w-5 text-teal-700 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                       </svg>
                       What You&apos;ll Need
@@ -131,7 +133,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                     <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
                       {post.supplies.map((supply) => (
                         <div key={supply} className="flex items-center gap-2.5 rounded-lg px-3 py-2.5" style={{ background: "var(--surface-hover)", border: "1px solid var(--border)" }}>
-                          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-teal-50 text-xs text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">✓</span>
+                          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-teal-50 text-xs text-teal-700 dark:text-teal-400 dark:bg-teal-500/10"><Check className="h-3.5 w-3.5" aria-hidden="true" /></span>
                           <span className="text-sm" style={{ color: "var(--text-secondary)" }}>{supply}</span>
                         </div>
                       ))}
@@ -145,7 +147,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   {/* Steps */}
                   <section id="steps" className="space-y-5">
                     <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-                      <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg className="h-5 w-5 text-teal-700 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       Step-by-Step Instructions
@@ -153,7 +155,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                     {post.steps.map((step, index) => (
                       <section key={step.title} id={titleToId(step.title)} className="rounded-xl p-6 transition-all duration-200" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
                         <div className="flex items-start gap-4">
-                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-sm font-bold text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">{index + 1}</span>
+                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-sm font-bold text-teal-700 dark:text-teal-400 dark:bg-teal-500/10">{index + 1}</span>
                           <div>
                             <h3 className="text-lg font-semibold" style={{ color: "var(--text)" }}>{step.title}</h3>
                             <p className="mt-3 text-[15px] leading-7" style={{ color: "var(--text-secondary)" }}>{renderInlineLinks(step.body)}</p>
@@ -175,7 +177,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   {/* Pro tips */}
                   <section id="pro-tips" className="rounded-xl border border-teal-200 bg-teal-50 p-6 dark:border-teal-400/20 dark:bg-teal-500/5">
                     <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-                      <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg className="h-5 w-5 text-teal-700 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                       </svg>
                       Pro Tips
@@ -183,7 +185,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                     <ul className="mt-4 space-y-3">
                       {post.proTips.map((tip) => (
                         <li key={tip} className="flex items-start gap-3 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                          <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-teal-100 text-xs text-teal-600 dark:bg-teal-500/10 dark:text-teal-400">✓</span>
+                          <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-teal-100 text-xs text-teal-700 dark:text-teal-400 dark:bg-teal-500/10"><Check className="h-3.5 w-3.5" aria-hidden="true" /></span>
                           <span>{renderInlineLinks(tip)}</span>
                         </li>
                       ))}
@@ -197,7 +199,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   {post.faqs && post.faqs.length > 0 && (
                     <section id="faq" className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
                       <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-                        <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <svg className="h-5 w-5 text-teal-700 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         Frequently Asked Questions
@@ -259,16 +261,16 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
             <Link href="/cleaning-hacks" className="hover:underline">Cleaning Hacks</Link>
             <span aria-hidden>›</span>
             <Link
-              href={`/categories/${post.category}`}
-              className="hover:underline capitalize"
+              href={categoryHref(post.category)}
+              className="hover:underline"
             >
-              {post.category.replace(/-/g, " ")}
+              {categoryName(post.category)}
             </Link>
           </nav>
 
           <div className="mb-3 flex flex-wrap items-center gap-2">
-            <Badge variant="teal">{post.category.replace(/-/g, " ")}</Badge>
-            <Badge>⏱ {post.readTime}</Badge>
+            <Badge variant="teal">{categoryName(post.category)}</Badge>
+            <Badge><Clock className="h-3.5 w-3.5" aria-hidden="true" />{post.readTime}</Badge>
           </div>
 
           <h1
@@ -298,6 +300,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 year: "numeric",
                 month: "long",
                 day: "numeric",
+                timeZone: "UTC",
               })}
             </time>
             {post.dateUpdated && post.dateUpdated !== post.datePublished && (
@@ -309,6 +312,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                     year: "numeric",
                     month: "long",
                     day: "numeric",
+                    timeZone: "UTC",
                   })}
                 </span>
               </>
@@ -341,7 +345,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 borderTop: "1px solid var(--border)",
               }}
             >
-              {post.title} — illustrated for {SITE_NAME}
+              {post.title}, illustrated for {SITE_NAME}
             </figcaption>
           </figure>
 
@@ -406,7 +410,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
                 { "@type": "ListItem", position: 2, name: "Cleaning Hacks", item: `${SITE_URL}/cleaning-hacks` },
-                { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/cleaning-hacks/${post.slug}` },
+                { "@type": "ListItem", position: 3, name: categoryName(post.category), item: `${SITE_URL}${categoryHref(post.category)}` },
+                { "@type": "ListItem", position: 4, name: post.title, item: `${SITE_URL}/cleaning-hacks/${post.slug}` },
               ],
             }}
           />

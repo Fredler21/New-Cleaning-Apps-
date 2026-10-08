@@ -22,7 +22,7 @@ export function BeforeAfterFigure({ image }: { image: BeforeAfter }) {
       style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
     >
       <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
-        <svg className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <svg className="h-5 w-5 text-teal-700 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
         </svg>
         What the difference looks like

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CategoryCard } from "@/components/categories/CategoryCard";
 import { Container } from "@/components/layout/Container";
 import { buildMeta } from "@/components/seo/Meta";
-import { categories } from "@/data/categories";
+import { populatedCategories } from "@/lib/categories";
 import { posts } from "@/data/posts";
 
 export const metadata: Metadata = buildMeta({
@@ -69,7 +69,8 @@ const editorialSections: { id: string; heading: string; body: string[] }[] = [
 
 export default function CategoriesPage() {
   const totalGuides = posts.length;
-  const totalCategories = categories.length;
+  const visibleCategories = populatedCategories();
+  const totalCategories = visibleCategories.length;
 
   return (
     <Container>
@@ -95,8 +96,8 @@ export default function CategoriesPage() {
 
         {/* Category grid (existing) */}
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((category) => (
-            <CategoryCard key={category.id} category={category} />
+          {visibleCategories.map((category) => (
+            <CategoryCard key={category.id} category={category} count={category.count} />
           ))}
         </div>
 

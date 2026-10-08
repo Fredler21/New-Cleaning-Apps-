@@ -1,8 +1,27 @@
 /** @type {import('next').NextConfig} */
+const securityHeaders = [
+  // Stop browsers from sniffing a response into a different content type.
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  // Only this site may frame its own pages.
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
+  // Send the origin only on cross-site requests, full URL on same-site.
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  // The site never needs these device APIs.
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+];
+
 const nextConfig = {
   trailingSlash: false,
   images: {
     formats: ["image/avif", "image/webp"]
+  },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: securityHeaders,
+      },
+    ];
   },
   async redirects() {
     return [

@@ -5,11 +5,33 @@ import Link from "next/link";
 
 const CONSENT_KEY = "cookie_consent";
 
+type Choice = "accepted" | "declined";
+
+/**
+ * Tell Google Consent Mode about the choice for the current page. The root
+ * layout's consent bootstrap reads the same localStorage key on later loads,
+ * so GTM, GA4, AdSense and the Pinterest tag all honor it from then on.
+ */
+function applyConsent(choice: Choice) {
+  const state = choice === "accepted" ? "granted" : "denied";
+  window.gtag?.("consent", "update", {
+    ad_storage: state,
+    ad_user_data: state,
+    ad_personalization: state,
+    analytics_storage: state,
+  });
+}
+
 export function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem(CONSENT_KEY);
+    let consent: string | null = null;
+    try {
+      consent = localStorage.getItem(CONSENT_KEY);
+    } catch {
+      // Storage blocked (private mode, strict settings): show the banner, never crash.
+    }
     if (!consent) {
       // Small delay so it doesn't flash on first paint
       const timer = setTimeout(() => setVisible(true), 1200);
@@ -17,13 +39,13 @@ export function CookieConsent() {
     }
   }, []);
 
-  function accept() {
-    localStorage.setItem(CONSENT_KEY, "accepted");
-    setVisible(false);
-  }
-
-  function decline() {
-    localStorage.setItem(CONSENT_KEY, "declined");
+  function choose(choice: Choice) {
+    try {
+      localStorage.setItem(CONSENT_KEY, choice);
+    } catch {
+      // Storage blocked: the choice still applies to this page.
+    }
+    applyConsent(choice);
     setVisible(false);
   }
 
@@ -31,7 +53,7 @@ export function CookieConsent() {
 
   return (
     <div
-      className="fixed bottom-0 inset-x-0 z-[100] p-4 sm:p-6"
+      className="fixed inset-x-0 bottom-0 z-[100] p-4 sm:p-6"
       role="dialog"
       aria-label="Cookie consent"
     >
@@ -44,8 +66,8 @@ export function CookieConsent() {
       >
         {/* Icon + Text */}
         <div className="flex-1">
-          <div className="flex items-center gap-2 mb-2">
-            <svg className="h-5 w-5 flex-shrink-0 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <div className="mb-2 flex items-center gap-2">
+            <svg className="h-5 w-5 flex-shrink-0 text-teal-700 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <h3 className="text-sm font-semibold" style={{ color: "var(--text)" }}>
@@ -56,7 +78,7 @@ export function CookieConsent() {
             We use cookies to improve your experience, analyze traffic, and serve personalized ads
             via Google AdSense. By clicking &ldquo;Accept All,&rdquo; you consent to our use of cookies.
             Read our{" "}
-            <Link href="/privacy" className="underline font-medium" style={{ color: "var(--accent)" }}>
+            <Link href="/privacy" className="font-medium underline" style={{ color: "var(--accent)" }}>
               Privacy Policy
             </Link>{" "}
             for details.
@@ -66,7 +88,8 @@ export function CookieConsent() {
         {/* Buttons */}
         <div className="mt-4 flex items-center gap-3 sm:mt-0 sm:flex-shrink-0">
           <button
-            onClick={decline}
+            type="button"
+            onClick={() => choose("declined")}
             className="rounded-xl px-4 py-2.5 text-sm font-medium transition-colors duration-200"
             style={{
               background: "var(--surface)",
@@ -77,8 +100,9 @@ export function CookieConsent() {
             Decline
           </button>
           <button
-            onClick={accept}
-            className="rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:shadow-md hover:brightness-105 active:scale-[0.98]"
+            type="button"
+            onClick={() => choose("accepted")}
+            className="rounded-xl bg-gradient-to-r from-teal-700 to-emerald-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:shadow-md hover:brightness-110 active:scale-[0.98]"
           >
             Accept All
           </button>

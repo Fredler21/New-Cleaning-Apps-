@@ -18,7 +18,7 @@ export function ImageAttribution({ slug }: { slug: string }) {
         href={meta.photographerUrl}
         target="_blank"
         rel="noopener noreferrer nofollow"
-        className="underline hover:text-teal-600"
+        className="underline hover:text-teal-700 dark:hover:text-teal-400"
       >
         {meta.photographer}
       </a>{" "}
@@ -27,7 +27,7 @@ export function ImageAttribution({ slug }: { slug: string }) {
         href={meta.photoUrl}
         target="_blank"
         rel="noopener noreferrer nofollow"
-        className="underline hover:text-teal-600"
+        className="underline hover:text-teal-700 dark:hover:text-teal-400"
       >
         Unsplash
       </a>
