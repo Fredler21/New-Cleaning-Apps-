@@ -176,6 +176,15 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       </Fragment>
                     ))}
                   </section>
+                  {post.printable?.afterSteps && (
+                    <FreePrintable
+                      pdf={post.printable.id}
+                      title={post.printable.title}
+                      blurb={post.printable.blurb}
+                      buttonLabel={post.printable.buttonLabel}
+                      postUrl={`/cleaning-hacks/${post.slug}`}
+                    />
+                  )}
 
       </>
     ),

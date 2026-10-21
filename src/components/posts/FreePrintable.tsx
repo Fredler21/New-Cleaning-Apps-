@@ -125,7 +125,7 @@ export function FreePrintable({ pdf, title, blurb, buttonLabel = "Send me the pr
               <p className="text-sm" style={{ color: "var(--text-secondary)" }} role="status">
                 {unlocked.repeat
                   ? "You already have this one. Here it is again."
-                  : "Thanks! Your checklist is ready."}
+                  : "Thanks! Your download is ready."}
               </p>
               {unlocked.token ? (
                 <a

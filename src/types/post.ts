@@ -174,6 +174,8 @@ export type Post = {
     blurb?: string;
     buttonLabel?: string;
     beforeStep?: string;
+    /** Render the second copy right after the steps section instead. */
+    afterSteps?: boolean;
   };
 
   /* ── Originality fields ───────────────────────────────────────────────

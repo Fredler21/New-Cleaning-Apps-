@@ -7315,6 +7315,13 @@ export const posts: Post[] = [
     excerpt:
       "The uncomfortable truth about hosting is that you stop seeing your own house. You walk past the same light switch five times a day and never notice it has gone grey around the edges. Your guests are seeing everything for the first time, and they are sitting still, at eye level, with nothing to do but look around. None of these forgotten spots take long to clean. Most are under five minutes. Work through the list once and your clean house becomes an actually clean house, just in time for everyone you know to show up for the holidays.",
     coverImage: "/uploads/things-youre-forgetting-to-clean.jpg",
+    printable: {
+      id: "things-youre-forgetting-to-clean",
+      title: "Free Printable: The 25 Forgotten Spots Walkthrough",
+      blurb: "Get the print-ready room by room card, every spot with its fastest fix.",
+      buttonLabel: "Send me the walkthrough",
+      afterSteps: true,
+    },
     supplies: ["Microfiber cloths, a stack of them, since the dirty ones get swapped out fast", "Rubbing alcohol in a small spray bottle for switches, handles, and remotes", "White vinegar in a spray bottle for hard water and trash cans", "Dish soap for anything greasy", "Cotton swabs and a bottle of hydrogen peroxide for the toilet hinges", "A lint roller for lampshades and fabric", "A vacuum with a crevice tool and a soft brush attachment", "A sturdy step stool"],
     steps: [
       { title: "Entryway: the doorbell and the front door", body: "If you are hosting this season, pair this list with [the complete Thanksgiving cleaning checklist](/cleaning-hacks/thanksgiving-cleaning-checklist), which tells you when to clean what. This list catches what a room by room pass tends to miss, and it starts before anyone is inside. The doorbell is the very first thing a guest touches and the door is the very first thing they stare at while they wait for you to answer. Wipe the doorbell button and its plate, the handle, and the door itself, paying attention to the stretch around the handle where hands land every day. A damp microfiber cloth with a drop of dish soap handles a painted or fiberglass door, and a dry cloth afterward stops streaks on a glossy finish. If the door is natural wood, keep the cloth barely damp. While you are out there, look at the door from the walkway the way a guest would. Cobwebs in the top corners of the frame and a dusty porch light are part of the same first impression, and both come off with the brush attachment on the vacuum in under a minute." },

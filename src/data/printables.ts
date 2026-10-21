@@ -25,6 +25,11 @@ export const PRINTABLES: Record<string, Printable> = {
     file: "thanksgiving-cleaning-checklist-printable.pdf",
     title: "Thanksgiving Cleaning Checklist",
   },
+  "things-youre-forgetting-to-clean": {
+    id: "things-youre-forgetting-to-clean",
+    file: "things-youre-forgetting-to-clean-printable.pdf",
+    title: "25 Forgotten Spots Walkthrough",
+  },
 };
 
 export function getPrintable(id: string | undefined | null): Printable | undefined {
