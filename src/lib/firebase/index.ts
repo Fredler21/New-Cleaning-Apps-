@@ -14,7 +14,8 @@ export {
   getPostAnalyticsBySlug,
   markPostNotified,
   getNotifiedSlugs,
+  recordPrintableSignup,
   COLLECTIONS,
 } from "./collections";
 
-export type { Subscriber, SubscriberStatus, Contact, PostAnalytics } from "./collections";
+export type { Subscriber, SubscriberStatus, Contact, PostAnalytics, PrintableSignup, PrintableDownload } from "./collections";

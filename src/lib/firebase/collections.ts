@@ -10,6 +10,7 @@ export const COLLECTIONS = {
   CONTACTS: "contacts",
   ANALYTICS: "analytics",
   NOTIFIED_POSTS: "notifiedPosts",
+  PRINTABLE_SIGNUPS: "printableSignups",
 } as const;
 
 /* ------------------------------------------------------------------ */
@@ -204,6 +205,71 @@ export async function markPostNotified(slug: string) {
   await adminDb.collection(COLLECTIONS.NOTIFIED_POSTS).doc(slug).set({
     slug,
     notifiedAt: FieldValue.serverTimestamp(),
+  });
+}
+
+/* ------------------------------------------------------------------ */
+/*  Printable signups (email-gated PDF downloads)                       */
+/* ------------------------------------------------------------------ */
+
+export interface PrintableDownload {
+  /** Printable ID from src/data/printables.ts */
+  pdf: string;
+  /** Path of the post the signup came from */
+  postUrl: string;
+  /** ISO timestamp of this request */
+  at: string;
+}
+
+/**
+ * One document per email (the normalized email is the document ID), so a
+ * person who downloads several printables has a single record with the full
+ * history. `pdfs` holds the unique IDs for filtering in the console;
+ * `downloads` holds every request, including repeats of the same PDF.
+ */
+export interface PrintableSignup {
+  email: string;
+  firstSeenAt: FirebaseFirestore.Timestamp;
+  lastSeenAt: FirebaseFirestore.Timestamp;
+  pdfs: string[];
+  downloads: PrintableDownload[];
+}
+
+/**
+ * Record a printable signup. Returns `repeat: true` when this email already
+ * had this PDF, so the caller can show the download again rather than an error.
+ */
+export async function recordPrintableSignup(
+  rawEmail: string,
+  pdf: string,
+  postUrl: string,
+): Promise<{ repeat: boolean; invalid: boolean }> {
+  const email = sanitiseEmail(rawEmail);
+  if (!isValidEmail(email)) return { repeat: false, invalid: true };
+
+  const ref = adminDb.collection(COLLECTIONS.PRINTABLE_SIGNUPS).doc(email);
+  const entry: PrintableDownload = { pdf, postUrl, at: new Date().toISOString() };
+
+  return adminDb.runTransaction(async (tx) => {
+    const snap = await tx.get(ref);
+    if (!snap.exists) {
+      tx.set(ref, {
+        email,
+        firstSeenAt: FieldValue.serverTimestamp(),
+        lastSeenAt: FieldValue.serverTimestamp(),
+        pdfs: [pdf],
+        downloads: [entry],
+      });
+      return { repeat: false, invalid: false };
+    }
+    const existing = snap.data() as Partial<PrintableSignup>;
+    const repeat = Array.isArray(existing.pdfs) && existing.pdfs.includes(pdf);
+    tx.update(ref, {
+      lastSeenAt: FieldValue.serverTimestamp(),
+      pdfs: FieldValue.arrayUnion(pdf),
+      downloads: FieldValue.arrayUnion(entry),
+    });
+    return { repeat, invalid: false };
   });
 }
 

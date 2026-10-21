@@ -31,6 +31,7 @@ import { FieldNotes } from "@/components/posts/FieldNotes";
 import { PostPhotos } from "@/components/posts/PostPhotos";
 import { BeforeAfterFigure } from "@/components/posts/BeforeAfterFigure";
 import { AffiliateDisclosure } from "@/components/posts/AffiliateDisclosure";
+import { FreePrintable } from "@/components/posts/FreePrintable";
 import { hasAffiliateLinks } from "@/data/affiliate";
 import { MethodComparison } from "@/components/posts/MethodComparison";
 import { CostBreakdown } from "@/components/posts/CostBreakdown";
@@ -153,7 +154,17 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       Step-by-Step Instructions
                     </h2>
                     {post.steps.map((step, index) => (
-                      <section key={step.title} id={titleToId(step.title)} className="rounded-xl p-6 transition-all duration-200" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                      <Fragment key={step.title}>
+                      {post.printable?.beforeStep === step.title && (
+                        <FreePrintable
+                          pdf={post.printable.id}
+                          title={post.printable.title}
+                          blurb={post.printable.blurb}
+                          buttonLabel={post.printable.buttonLabel}
+                          postUrl={`/cleaning-hacks/${post.slug}`}
+                        />
+                      )}
+                      <section id={titleToId(step.title)} className="rounded-xl p-6 transition-all duration-200" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
                         <div className="flex items-start gap-4">
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-sm font-bold text-teal-700 dark:text-teal-400 dark:bg-teal-500/10">{index + 1}</span>
                           <div>
@@ -162,6 +173,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                           </div>
                         </div>
                       </section>
+                      </Fragment>
                     ))}
                   </section>
 
@@ -354,6 +366,16 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
           </div>
 
           {hasAffiliateLinks(post) && <AffiliateDisclosure />}
+
+          {post.printable && (
+            <FreePrintable
+              pdf={post.printable.id}
+              title={post.printable.title}
+              blurb={post.printable.blurb}
+              buttonLabel={post.printable.buttonLabel}
+              postUrl={`/cleaning-hacks/${post.slug}`}
+            />
+          )}
 
           {/* Article + HowTo structured data */}
           <JsonLd

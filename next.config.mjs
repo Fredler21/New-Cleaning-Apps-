@@ -12,6 +12,13 @@ const securityHeaders = [
 
 const nextConfig = {
   trailingSlash: false,
+  experimental: {
+    // The printables live outside /public and are read from disk by the
+    // download route, so the serverless bundle has to carry them.
+    outputFileTracingIncludes: {
+      "/api/printables/download": ["./private/printables/**/*"],
+    },
+  },
   images: {
     formats: ["image/avif", "image/webp"]
   },

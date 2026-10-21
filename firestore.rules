@@ -1,0 +1,16 @@
+rules_version = '2';
+
+// Every read and write on this project goes through the site's own server
+// (Firebase Admin SDK in the Next.js API routes), which bypasses these rules.
+// Nothing in the browser talks to Firestore directly, so the client gets no
+// access at all: nobody can read the subscriber, contact, or printable signup
+// collections from a browser, and nobody can write to them except the site.
+//
+// Deploy with: firebase deploy --only firestore:rules --project cleaninghacks-ebc22
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

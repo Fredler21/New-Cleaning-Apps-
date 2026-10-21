@@ -163,6 +163,18 @@ export type Post = {
   proTips: string[];
   safetyNotes: string[];
   faqs?: PostFAQ[];
+  /**
+   * Email-gated printable offered on this post. `id` must exist in
+   * src/data/printables.ts. The box renders after the intro, and again right
+   * before the step whose title equals `beforeStep`, if set.
+   */
+  printable?: {
+    id: string;
+    title: string;
+    blurb?: string;
+    buttonLabel?: string;
+    beforeStep?: string;
+  };
 
   /* ── Originality fields ───────────────────────────────────────────────
      Everything below is optional and absent from most posts today. They
