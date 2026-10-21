@@ -12,6 +12,13 @@ export const posts: Post[] = [
     tags: ["quick wins", "odor control", "bathroom"],
     excerpt: "Listerine turns up in a lot of cleaning advice, and some of it is genuinely good while some of it will stain a countertop. The thymol and eucalyptol that make the amber original an antiseptic are doing real work on odor-causing bacteria; the blue and whitening versions add dyes you do not want near light surfaces. Here is which uses hold up, where the internet oversells it, and the exact amounts and dwell times that separate a hack that works from one that disappoints.",
     coverImage: "/uploads/13-mind-blowing-listerine-hacks.jpg",
+    printable: {
+      id: "what-cleans-what-card",
+      title: "Free Printable: The What Cleans What Card",
+      blurb: "Vinegar, peroxide and Listerine on one card: every job, the dilution, the timing, and what never to mix.",
+      buttonLabel: "Send me the card",
+      afterSteps: true,
+    },
     // No photo on this post. The basin shot that was here moved to
     // how-to-remove-hard-water-stains-from-glass-faucets-and-tiles, because
     // none of the ten methods below is cleaning a basin, and mineral staining
@@ -165,6 +172,13 @@ export const posts: Post[] = [
     tags: ["quick wins", "glass", "bathroom"],
     excerpt: "I have cleaned with a single jug of white vinegar for about nine years now, and along the way I ruined a marble windowsill and pitted a cheap chrome faucet learning where it actually belongs. Here are the eight jobs it genuinely does better than the pricey sprays under my sink, with the exact soak times and quantities that made the difference. I am not going to pretend it is magic. It is a weak acid, roughly 5 percent acetic acid and 95 percent water, and once you understand that one fact you can predict where it will shine and where it will let you down. It dissolves mineral scale and cuts light grease beautifully, and it does almost nothing for disinfecting or for baked on carbon. I have organized these from the single best use to the honest warning at the end, and I am blunt about the two places it flat out failed me so you do not repeat my mistakes.",
     coverImage: "/uploads/8-incredible-vinegar-hacks.jpg",
+    printable: {
+      id: "what-cleans-what-card",
+      title: "Free Printable: The What Cleans What Card",
+      blurb: "Vinegar, peroxide and Listerine on one card: every job, the dilution, the timing, and what never to mix.",
+      buttonLabel: "Send me the card",
+      afterSteps: true,
+    },
     supplies: ["Plain white distilled vinegar (5 percent acidity)", "A clean spray bottle, ideally 16 ounces or larger", "Warm water", "Two or three microfiber cloths", "An old soft toothbrush", "A gallon sized zip bag and a sturdy rubber band", "Dish gloves", "Baking soda for the paste and drain jobs", "A microwave safe bowl"],
     steps: [
       { title: "Descale the showerhead overnight in a bag", body: "This is the one job where nothing under my sink beats vinegar, so I lead with it. Pour enough undiluted white vinegar into a gallon zip bag to cover the showerhead face, usually about one to one and a half cups, slip the bag up over the head, and hold it in place with a sturdy rubber band around the neck. Leave it overnight, at least eight hours. My hard water had cut my morning pressure to a sad dribble, and after one overnight soak the flow came back to full. In the morning, pull the bag, scrub the nozzle holes with an old toothbrush, then run hot water for one full minute to flush the loosened grit out of the internal passages. I learned the hard way that a soak of only 15 minutes barely touches heavy scale, because contact time is the whole trick here. Two cautions from experience. If your showerhead is finished in oil rubbed bronze, brushed nickel, or has a plated or lacquered coating, do not do the full overnight soak, since prolonged acid contact can cloud or strip that finish. For those, cap the soak at 30 minutes and repeat on another night if needed. If the flow is still uneven after one soak, a few nozzle jets are usually still plugged, so press and rub each rubber nozzle tip with your thumb while running the water, which pops most of the remaining scale free. Expect the loosened deposits to look like fine white or tan sand in the tub. Rinse it down so it does not settle back into the finish." },
@@ -241,6 +255,13 @@ export const posts: Post[] = [
     excerpt:
       "The brown bottle in the bathroom cabinet is one of the cheapest cleaners you can buy, and most of it gets used on scraped knees and then forgotten for two years. Hydrogen peroxide is genuinely good at a specific set of jobs: whitening grout, lifting protein stains like blood and sweat, killing mildew on a shower liner, and disinfecting a counter without leaving a film. It is also useless at a few things people insist it does, and it quietly stops working long before the bottle is empty. Here are 16 uses that hold up, with quantities and dwell times, the surfaces to keep it away from, and the ten second test that tells you whether your bottle is still alive.",
     coverImage: "/uploads/16-hydrogen-peroxide-cleaning-hacks.jpg",
+    printable: {
+      id: "what-cleans-what-card",
+      title: "Free Printable: The What Cleans What Card",
+      blurb: "Vinegar, peroxide and Listerine on one card: every job, the dilution, the timing, and what never to mix.",
+      buttonLabel: "Send me the card",
+      afterSteps: true,
+    },
     supplies: [
       "3% hydrogen peroxide, the standard brown drugstore bottle",
       "An opaque or dark spray bottle, never a clear one",
@@ -1287,6 +1308,13 @@ export const posts: Post[] = [
     tags: ["odor control", "quick wins", "routine"],
     excerpt: "I threw out every plug in and aerosol can in my house two years ago and switched to these ten methods instead. The simmer pot gets more genuine \"what is that smell, it's incredible\" comments than any candle I ever burned, and it costs almost nothing. Here is what actually holds up day after day, which tricks are overhyped, and the one habit that matters more than any fragrance you add on top.",
     coverImage: "/uploads/10-genius-ways-to-make-your-house-smell-great.jpg",
+    printable: {
+      id: "10-genius-ways-to-make-your-house-smell-great",
+      title: "Free Printable: House Scent Recipe Cards",
+      blurb: "All ten methods with the exact recipes on two print-ready pages.",
+      buttonLabel: "Send me the recipe cards",
+      afterSteps: true,
+    },
     supplies: ["Pure essential oils (lavender, orange, eucalyptus, and one or two others you like)", "A glass spray bottle", "Vodka or 91 percent rubbing alcohol", "Baking soda", "Pure vanilla extract", "Cinnamon sticks, whole cloves, and fresh rosemary", "Oranges, lemons, and limes", "A small saucepan you do not mind dedicating to this", "Small mason jars or ramekins", "A narrow necked glass bottle and rattan reed sticks", "Unscented dryer sheets", "A fresh eucalyptus bundle", "Used coffee grounds, dried out"],
     steps: [
       { title: "Mix a linen and room spray that actually clings to fabric", body: "This is the first thing I make when I want a quick reset, and the recipe took me a few tries to get right. Into a glass spray bottle goes one cup of distilled water, two tablespoons of vodka or 91 percent rubbing alcohol, and about 18 to 20 drops of essential oil. Lavender and orange together is my house standard. The alcohol is the part people skip, and skipping it is why homemade sprays disappoint. Water and oil separate no matter how hard you shake, so without the alcohol you spray a mist of plain water followed by a few oily beads that leave dots on your throw pillows. The first bottle I made did exactly that and I nearly gave up on the whole idea. Alcohol dissolves the oil into the water and helps it flash off cleanly, so the scent lands and the fabric dries in a minute. Shake hard before every use, mist curtains, bedding, and upholstery from about a foot away, and stay off silk or anything dry clean only because even the alcohol version can water spot delicate weaves. Do a hidden test patch on new furniture first. Expect a soft scent that reads within about an inch of the fabric, not a cloud that fills the room. Cap it at 20 drops per cup. I went to 35 once thinking more was better and gave myself a headache in a closed bedroom." },
@@ -1618,6 +1646,13 @@ export const posts: Post[] = [
     excerpt:
       "I've tried three weekly cleaning schedules and abandoned two within a month. The version that actually held had two specific design principles the others lacked. Here's what made it sustainable and the most common reason cleaning schedules collapse within two weeks.",
     coverImage: "/uploads/the-ultimate-weekly-cleaning-schedule-for-a-spotless-home.jpg",
+    printable: {
+      id: "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+      title: "Free Printable: The Weekly Cleaning Schedule",
+      blurb: "The seven day plan with tick boxes, the monthly add-ons and the seasonal reset on two pages.",
+      buttonLabel: "Send me the schedule",
+      afterSteps: true,
+    },
     supplies: ["All-purpose cleaner", "Microfiber cloths", "Vacuum", "Mop", "Toilet cleaner", "Glass cleaner", "Laundry detergent", "Trash bags", "Duster", "Rubber gloves"],
     steps: [
       { title: "Monday Kitchen deep reset", body: "Start the week by tackling the room that gets the most daily use. Wipe down all countertops, the stovetop, and appliance fronts with an all-purpose cleaner. Clean the microwave inside and out using the steam method heat a bowl of lemon water for three minutes, then wipe down the softened splatters. Empty the fridge of expired items, wipe shelves with a baking soda solution, and replace the liner if you use one. Take out kitchen trash and recycling, then sweep and mop the floor. This 30-to-40-minute session means your kitchen is guest-ready for the entire week and prevents grease and food residue from building up into a much bigger job." },
@@ -2628,6 +2663,13 @@ export const posts: Post[] = [
     tags: ["diy", "eco-friendly", "budget", "quick wins"],
     excerpt: "Homemade cleaning sprays range from genuinely better than the commercial equivalent to actively counterproductive, and the difference comes down to chemistry rather than effort. Here are the recipes worth making from pantry staples, the exact ratios, which ones out-perform the bottle they replace, and the popular formula that cancels itself out in the mixing bowl.",
     coverImage: "/uploads/diy-all-natural-cleaning-sprays.jpg",
+    printable: {
+      id: "diy-all-natural-cleaning-sprays",
+      title: "Free Printable: DIY Cleaning Spray Recipe Cards",
+      blurb: "All ten recipes with exact amounts on two print-ready pages for the cabinet door.",
+      buttonLabel: "Send me the recipe cards",
+      afterSteps: true,
+    },
     supplies: ["Glass spray bottles (16 ounce, at least four)", "White vinegar", "Distilled water", "Liquid castile soap", "Baking soda", "Rubbing alcohol (70 percent isopropyl)", "Tea tree essential oil", "Lemon and orange essential oil", "Lavender and peppermint essential oil", "Fresh lemons", "Coarse kosher or sea salt", "Olive oil", "Small funnel and a fine tip permanent marker"],
     steps: [
       { title: "All purpose vinegar and lemon spray for everyday surfaces", body: "This is the bottle I reach for most, so it earns the first spot. Combine one cup of distilled water, one cup of white vinegar, and 15 drops of lemon essential oil in a 16 ounce glass bottle, then give it a gentle shake before every use because the oil floats to the top. I use it on sealed countertops, appliance fronts, the stovetop, bathroom sinks, and tile backsplashes. The acetic acid in vinegar dissolves light grease and the hard water film that dulls chrome, while the lemon oil covers the pickle smell that puts people off vinegar in the first place. A batch costs me under fifty cents. The first time I tried it I made the classic mistake of using straight vinegar with no dilution, which left everything smelling like a salad for an hour and did nothing extra for cleaning. Half and half with water is the sweet spot. The one hard rule: keep this away from natural stone. Vinegar etches marble, granite, travertine, and any polished limestone, and the damage is permanent and dull looking. On stone, swap the vinegar for one teaspoon of castile soap in the same water base. Spray, wait about thirty seconds on dried on spots, then wipe with a damp microfiber cloth. Expect a streak free surface with no sticky residue. If you see faint white haze on dark counters, you used too much and a plain water wipe clears it." },
@@ -4861,6 +4903,13 @@ export const posts: Post[] = [
     excerpt:
       "Most household food waste is not a shopping problem, it is a visibility and temperature problem. Food gets pushed to the back of a shelf that runs at the wrong temperature for it, and you find it a week after it turned. The fix is not better Tupperware, it is a deliberate zone system that puts every food where it keeps longest and where you will actually see it before it expires. Here is the zone by zone method, the temperature science behind why standard refrigerator advice ruins half your produce, and the weekly fifteen minute routine that keeps the system running on its own.",
     coverImage: "/uploads/how-to-organize-your-refrigerator.jpg",
+    printable: {
+      id: "how-to-organize-your-refrigerator",
+      title: "Free Printable: The Refrigerator Zone Map",
+      blurb: "A drawn map of every shelf and the door, with the weekly reset and the temperature check, on two pages.",
+      buttonLabel: "Send me the zone map",
+      afterSteps: true,
+    },
     supplies: [
       "Clear stackable storage bins or baskets",
       "Adjustable shelf liners",

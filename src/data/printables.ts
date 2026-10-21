@@ -20,6 +20,31 @@ export type Printable = {
 };
 
 export const PRINTABLES: Record<string, Printable> = {
+  "diy-all-natural-cleaning-sprays": {
+    id: "diy-all-natural-cleaning-sprays",
+    file: "diy-cleaning-spray-recipe-cards-printable.pdf",
+    title: "DIY Cleaning Spray Recipe Cards",
+  },
+  "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home": {
+    id: "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+    file: "weekly-cleaning-schedule-printable.pdf",
+    title: "Weekly Cleaning Schedule",
+  },
+  "10-genius-ways-to-make-your-house-smell-great": {
+    id: "10-genius-ways-to-make-your-house-smell-great",
+    file: "make-your-house-smell-amazing-printable.pdf",
+    title: "House Scent Recipe Cards",
+  },
+  "what-cleans-what-card": {
+    id: "what-cleans-what-card",
+    file: "what-cleans-what-card-printable.pdf",
+    title: "What Cleans What: Vinegar, Peroxide, Listerine",
+  },
+  "how-to-organize-your-refrigerator": {
+    id: "how-to-organize-your-refrigerator",
+    file: "refrigerator-zone-map-printable.pdf",
+    title: "Refrigerator Zone Map",
+  },
   "thanksgiving-cleaning-checklist": {
     id: "thanksgiving-cleaning-checklist",
     file: "thanksgiving-cleaning-checklist-printable.pdf",
