@@ -14,6 +14,8 @@
  * Keep every value under ~160 characters and lead with the primary keyword.
  */
 export const seoDescriptions: Record<string, string> = {
+  "things-youre-forgetting-to-clean":
+    "Your house looks clean until a guest sits at eye level with your ceiling fan. 25 spots everyone forgets to clean, and the fastest way to handle each one.",
   "thanksgiving-cleaning-checklist":
     "Get your home guest-ready without the panic. This two-week Thanksgiving cleaning checklist tells you exactly what to clean and when, room by room, day by day.",
   "13-mind-blowing-listerine-hacks":

@@ -15,6 +15,7 @@
  * guard lives in scripts/audit-seo-titles is not required — keep values tight.
  */
 export const seoTitles: Record<string, string> = {
+  "things-youre-forgetting-to-clean": "25 Things You're Forgetting to Clean",
   "thanksgiving-cleaning-checklist": "Thanksgiving Cleaning Checklist (Day by Day)",
   /* ── Existing overrides ─────────────────────────────────── */
   "how-to-deep-clean-your-mattress": "How to Deep Clean Your Mattress at Home",
