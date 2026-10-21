@@ -13,3 +13,4 @@ tsconfig.tsbuildinfo
 # Paste-snippets emitted by scripts/import-photos.mjs. Scaffolding, not assets —
 # they live under public/ so they would otherwise be served publicly.
 public/photos/**/_snippet.txt
+.env*
