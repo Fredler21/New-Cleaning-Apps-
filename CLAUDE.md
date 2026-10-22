@@ -57,3 +57,16 @@ node scripts/check-broken-images.mjs
   override the CDN cache.
 - Record anything removed for being fabricated in a `TODO(original-content)`
   comment above the post so it cannot quietly return.
+
+## Affiliate product boxes
+
+- `src/data/affiliate.ts` is the only product list. A post never carries an Amazon URL;
+  it references a registry id, inline as `[text](product:id)` or as a box token inside a
+  step body: `{{box:id|Top Pick|optional context}}`. The box goes right after the
+  sentence that mentions the product, never at the top of the post.
+- A product whose `asin` is still `LINK_PLACEHOLDER` renders nothing (box hidden, inline
+  link shown as plain text) and the disclosure only appears once a real link resolves.
+  Paste the ASIN and the box appears; no post edit needed.
+- No prices anywhere in a box or a post. Paid links carry `rel="sponsored nofollow"`
+  automatically. If a post does not mention a product yet, add one plain sentence in the
+  site voice (no first person, no dashes) and put the token after it.

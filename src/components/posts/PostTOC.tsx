@@ -2,7 +2,7 @@ import { titleToId } from "@/lib/format";
 import type { PostStep } from "@/types/post";
 
 type PostTOCProps = {
-  steps: PostStep[];
+  steps: Pick<PostStep, "title">[];
 };
 
 export function PostTOC({ steps }: PostTOCProps) {

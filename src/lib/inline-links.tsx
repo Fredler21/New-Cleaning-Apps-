@@ -1,6 +1,7 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import { Fragment, type CSSProperties, type ReactNode } from "react";
 import { affiliateUrl, isAffiliateHref } from "@/data/affiliate";
+import { ProductBox } from "@/components/posts/ProductBox";
 
 /**
  * Render text that may contain inline markdown links: [text](url).
@@ -85,4 +86,53 @@ export function renderInlineLinks(text: string): ReactNode[] {
   }
 
   return nodes.length > 0 ? nodes : [text];
+}
+
+/**
+ * Product box token inside a step body: {{box:<id>|<label>|<context>}}.
+ * Label and context are optional. See ProductBox for what each part does.
+ */
+export const BOX_TOKEN_SOURCE = "\\{\\{box:([a-z0-9-]+)(?:\\|([^|}]*))?(?:\\|([^}]*))?\\}\\}";
+
+/** The step text with every box token removed, for structured data and word counts. */
+export function stripBoxTokens(text: string): string {
+  return text.replace(new RegExp(BOX_TOKEN_SOURCE, "g"), "").replace(/\s{2,}/g, " ").trim();
+}
+
+/**
+ * Render a step body: paragraphs of linked text, with a product box wherever
+ * the author placed a token. A box always lands right after the sentence
+ * that mentions the product, which is why it lives inside the text rather
+ * than at the top of the article.
+ */
+export function renderStepBody(body: string, paragraphClass: string, paragraphStyle: CSSProperties): ReactNode[] {
+  const nodes: ReactNode[] = [];
+  const pattern = new RegExp(BOX_TOKEN_SOURCE, "g");
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+
+  const pushText = (text: string) => {
+    const trimmed = text.trim();
+    if (!trimmed) return;
+    nodes.push(
+      <p key={`p-${key++}`} className={paragraphClass} style={paragraphStyle}>
+        {renderInlineLinks(trimmed)}
+      </p>
+    );
+  };
+
+  while ((match = pattern.exec(body)) !== null) {
+    pushText(body.slice(lastIndex, match.index));
+    const [, id, label, context] = match;
+    nodes.push(
+      <Fragment key={`box-${key++}`}>
+        <ProductBox id={id} label={label?.trim() || undefined} context={context?.trim() || undefined} />
+      </Fragment>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  pushText(body.slice(lastIndex));
+
+  return nodes;
 }

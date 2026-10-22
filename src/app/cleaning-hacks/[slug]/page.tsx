@@ -11,7 +11,7 @@ import { ReadingProgress } from "@/components/posts/ReadingProgress";
 import { MobileTOC } from "@/components/posts/MobileTOC";
 import { MobileActionBar } from "@/components/posts/MobileActionBar";
 import { titleToId } from "@/lib/format";
-import { renderInlineLinks } from "@/lib/inline-links";
+import { renderInlineLinks, renderStepBody, stripBoxTokens } from "@/lib/inline-links";
 import { SafetyNote } from "@/components/posts/SafetyNote";
 import { ShareBar } from "@/components/posts/ShareBar";
 import { SaveHackButton } from "@/components/posts/SaveHackButton";
@@ -106,6 +106,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
   // not byte-for-byte identical across every article (which reads as boilerplate
   // / duplicate content sitewide). Uses this post's own supplies + step count.
   const testedSupplies = post.supplies.slice(0, 3);
+  // Titles only. MobileTOC is a client component, so whole steps would ship every body in the page payload.
+  const tocSteps = post.steps.map(({ title }) => ({ title }));
   const suppliesPhrase =
     testedSupplies.length === 0
       ? "everyday household supplies"
@@ -169,7 +171,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-sm font-bold text-teal-700 dark:text-teal-400 dark:bg-teal-500/10">{index + 1}</span>
                           <div>
                             <h3 className="text-lg font-semibold" style={{ color: "var(--text)" }}>{step.title}</h3>
-                            <p className="mt-3 text-[15px] leading-7" style={{ color: "var(--text-secondary)" }}>{renderInlineLinks(step.body)}</p>
+                            <div className="mt-3 space-y-3">{renderStepBody(step.body, "text-[15px] leading-7", { color: "var(--text-secondary)" })}</div>
                           </div>
                         </div>
                       </section>
@@ -429,7 +431,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                 "@type": "HowToStep",
                 position: i + 1,
                 name: step.title,
-                text: step.body,
+                text: stripBoxTokens(step.body),
                 url: `${SITE_URL}/cleaning-hacks/${post.slug}#${titleToId(step.title)}`,
               })),
             }}
@@ -475,7 +477,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
           <div className="grid gap-10 lg:grid-cols-[1fr_300px]">
             <div className="space-y-8">
               {/* Quick navigation for phones (desktop uses the sticky sidebar) */}
-              <MobileTOC steps={post.steps} />
+              <MobileTOC steps={tocSteps} />
 
               {orderedSections}
 
@@ -589,7 +591,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
 
             {/* Sidebar */}
             <div className="space-y-5 lg:sticky lg:top-[88px] lg:self-start">
-              <PostTOC steps={post.steps} />
+              <PostTOC steps={tocSteps} />
 
               {/* Back nav */}
               <Link

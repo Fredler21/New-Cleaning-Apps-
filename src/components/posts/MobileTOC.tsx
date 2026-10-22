@@ -4,7 +4,7 @@ import { titleToId } from "@/lib/format";
 import type { PostStep } from "@/types/post";
 
 type MobileTOCProps = {
-  steps: PostStep[];
+  steps: Pick<PostStep, "title">[];
 };
 
 /**
