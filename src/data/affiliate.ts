@@ -59,18 +59,18 @@ export const AFFILIATE_PRODUCTS = {
   /* Pet stains */
   "bissell-proheat-pet": {
     name: "Bissell ProHeat 2X Revolution Pet Pro Carpet Cleaner",
-    asin: LINK_PLACEHOLDER,
+    asin: "B06VSJ9D1H",
     note: "A full size upright extractor. It injects solution into the padding and pulls it back out, which is the only way to reach urine that has soaked below the carpet.",
   },
   "bissell-little-green": {
     name: "Bissell Little Green Portable Carpet Cleaner",
-    asin: LINK_PLACEHOLDER,
+    asin: "B0016HF5GK",
     note: "A small spray and extract cleaner for single spots, stairs and upholstery. Does the inject and pull back job without renting a machine.",
   },
   "rocco-roxie": {
     name: "Rocco & Roxie Stain & Odor Eliminator",
     // The retired "enzyme-cleaner" entry used ASIN B083FBGDJM. Reuse it here if that listing is Rocco & Roxie.
-    asin: LINK_PLACEHOLDER,
+    asin: "B00CKFL93K",
     note: "An enzyme cleaner. The enzymes digest the uric acid crystals that keep producing the smell, which ordinary carpet shampoo only masks.",
   },
 
@@ -78,62 +78,63 @@ export const AFFILIATE_PRODUCTS = {
   "dupray-neat": {
     name: "Dupray Neat Steam Cleaner",
     // The retired "steam-cleaner" entry used ASIN B0HFHVQXVZ. Reuse it here if that listing is the Dupray Neat.
-    asin: LINK_PLACEHOLDER,
+    asin: "B0FBNDCXJW",
     note: "A canister steam cleaner with a hose and nozzle attachments. Heat does the work, so there is no chemical residue, and the nozzle reaches seams and hinges a cloth cannot.",
   },
   "shark-handheld-vacuum": {
     name: "Shark handheld vacuum with upholstery tool",
-    asin: LINK_PLACEHOLDER,
+    asin: "B07FX5K4D6",
     note: "Cordless, with the upholstery attachment the mattress and couch steps call for. Light enough to work seams in slow overlapping rows.",
   },
   "saferest-protector": {
     name: "SafeRest Waterproof Mattress Protector",
-    asin: LINK_PLACEHOLDER,
+    asin: "B0FBH7P8XB",
     note: "A fitted waterproof layer that goes on before the sheets. The next spill stays on the protector and goes through the wash instead of into the mattress.",
   },
   "mattress-vacuum": {
     name: "Mattress vacuum",
     asin: LINK_PLACEHOLDER,
+    search: "mattress vacuum cleaner UV handheld",
     note: "A handheld vacuum built for mattresses and bedding, with a wide head and a crevice tool for the seams and the bed frame joints.",
   },
   "sureguard-encasement": {
     name: "SureGuard Zippered Mattress Encasement",
     // The retired "mattress-encasement" entry used ASIN B01413355S. Reuse it here if that listing is the SureGuard.
-    asin: LINK_PLACEHOLDER,
+    asin: "B00WI0DCUU",
     note: "A fully zippered, bed bug certified encasement for the mattress and box spring. Traps anything already inside where it cannot bite you.",
   },
 
   /* Robot vacuum */
   "roomba-self-emptying": {
     name: "iRobot Roomba self-emptying model",
-    asin: LINK_PLACEHOLDER,
+    asin: "B0CWVTTJL7",
     note: "A Roomba with a base that empties the bin on its own after each run, so the dustbin wash in this guide becomes an occasional job instead of a weekly one.",
   },
   "shark-ai-robot": {
     name: "Shark AI Robot Vacuum with Self-Empty Base",
-    asin: LINK_PLACEHOLDER,
+    asin: "B09T4YZGQR",
     note: "Self emptying base and a bagless bin, so the robot dumps its own dust and the base only needs emptying every few weeks.",
   },
   "roomba-replenishment-kit": {
     name: "iRobot Roomba Replenishment Kit",
-    asin: LINK_PLACEHOLDER,
+    asin: "B09CV3QGF2",
     note: "Replacement filters, side brushes and a brush roll in one pack. The filter is the part that grays out and costs suction, and this keeps a spare on hand.",
   },
 
   /* Hardwood floors */
   "bissell-crosswave": {
     name: "Bissell CrossWave HydroSteam",
-    asin: LINK_PLACEHOLDER,
+    asin: "B0BP8D331P",
     note: "A wet dry floor washer that vacuums and mops in one pass. On its lowest water setting it keeps the floor as dry as sealed hardwood needs.",
   },
   "shark-steam-scrub": {
     name: "Shark Steam & Scrub Mop",
-    asin: LINK_PLACEHOLDER,
+    asin: "B08QZTSHFX",
     note: "A steam mop with rotating pads for tile and stone floors. Keep it off hardwood, where the steam swells the plank edges.",
   },
   "bona-spray": {
     name: "Bona Hardwood Floor Cleaner Spray",
-    asin: LINK_PLACEHOLDER,
+    asin: "B015FXRTH8",
     note: "A pH neutral cleaner made for sealed wood. It leaves no film and needs no rinse, which is what the rules in this guide come down to.",
   },
 
@@ -141,100 +142,101 @@ export const AFFILIATE_PRODUCTS = {
   linteater: {
     name: "LintEater Rotary Dryer Vent Cleaning System",
     // The retired "dryer-vent-brush" entry used ASIN B0FSXWBYSG. Reuse it here if that listing is the LintEater kit.
-    asin: LINK_PLACEHOLDER,
+    asin: "B06XTP3XD2",
     note: "A brush head on flexible rods that screw together and spin with a drill, so the whole length of the duct gets mechanical contact rather than just the end you can reach.",
   },
   "sealegend-vent-vacuum": {
     name: "Sealegend Dryer Vent Vacuum Hose Attachment",
-    asin: LINK_PLACEHOLDER,
+    asin: "B08LGB4Z5C",
     note: "A long flexible hose that fits a household vacuum and goes down the lint trap slot and into the duct, where a crevice tool stops short.",
   },
 
   /* Air fryer */
   "ninja-dualzone": {
     name: "Ninja Foodi DualZone Air Fryer",
-    asin: LINK_PLACEHOLDER,
+    asin: "B089TQWJKK",
     note: "Two independent baskets, each smaller and lighter than a single large one, which makes the after every use wash in this guide quicker.",
   },
   "katbite-liners": {
     name: "Katbite Disposable Air Fryer Liners",
-    asin: LINK_PLACEHOLDER,
+    asin: "B09QC38GD2",
     note: "Perforated parchment liners cut to fit the basket. They catch the grease from bacon and wings before it bakes onto the basket floor.",
   },
 
   /* Coffee maker */
   "breville-barista": {
     name: "Breville Barista Express",
-    asin: LINK_PLACEHOLDER,
+    asin: "B00CH9QWOU",
     note: "A home espresso machine with a built in grinder. Its boiler is exactly the kind the guide says to protect with a proper descaler rather than vinegar.",
   },
   "keurig-k-elite": {
     name: "Keurig K-Elite",
-    asin: LINK_PLACEHOLDER,
+    asin: "B078NN17K3",
     note: "A pod brewer with a removable reservoir and a descale mode, so the acid step in this guide runs from a menu rather than by hand.",
   },
   "impresa-descaler": {
     name: "Impresa Descaling Solution 2-pack",
     // The retired "appliance-descaler" entry used ASIN B0G5YX8HXS. Reuse it here if that listing is the Impresa 2-pack.
-    asin: LINK_PLACEHOLDER,
+    asin: "B01M7WZFAS",
     note: "A citric acid descaler made for coffee machines. Rinses clean in fewer cycles than vinegar and is safe on the aluminum boilers vinegar can damage.",
   },
 
   /* Fruit flies */
   "katchy-trap": {
     name: "Katchy Indoor Insect Trap",
-    asin: LINK_PLACEHOLDER,
+    asin: "B07B6RZP4H",
     note: "A plug in trap that draws adults in with UV light and a fan, onto a sticky board. Catches around the clock without an open cup of vinegar on the counter.",
   },
   "terro-fruit-fly-traps": {
     name: "TERRO Fruit Fly Traps 2-pack",
-    // Carried over from the retired "fruit-fly-trap" entry. Confirm this ASIN is the TERRO 2-pack before relying on it.
-    asin: "B01MRHXM0I",
+    // T2502, the 2 pack. The retired fruit-fly-trap entry (B01MRHXM0I) was the 4 pack.
+    asin: "B01JIRNEQW",
     note: "A liquid lure trap in a small apple shaped cup. The soapy cider vinegar trap from this guide, in a tidier package.",
   },
 
   /* Humidifier */
   "levoit-lv600s": {
     name: "Levoit LV600S Smart Hybrid Humidifier",
-    asin: LINK_PLACEHOLDER,
+    asin: "B095KGXPW5",
     note: "A warm and cool mist humidifier with a wide mouth tank you can get a hand into, which is what makes the weekly clean in this guide quick.",
   },
   "levoit-filters": {
     name: "Levoit Replacement Filters",
-    asin: LINK_PLACEHOLDER,
+    asin: "B09X9PLMYC",
     note: "Spare cartridges for Levoit units. A filter cannot be scrubbed back to life, so a spare on the shelf is what ends the musty smell for good.",
   },
 
   /* Oven */
   "easy-off": {
     name: "Easy-Off Heavy Duty Oven Cleaner",
-    asin: LINK_PLACEHOLDER,
+    asin: "B09DDJ9PQ9",
     note: "The commercial spray for the nights you cannot wait twelve hours for a baking soda paste. Window open, gloves on, and rinse twice before the oven is heated.",
   },
 
   /* Washing machine */
   "affresh-tablets": {
     name: "Affresh Washing Machine Cleaner Tablets 6-pack",
-    asin: LINK_PLACEHOLDER,
+    asin: "B00C91Q86I",
     note: "A tablet dropped in the empty drum once a month. It dissolves slowly through a hot cycle and does the job of the vinegar and baking soda runs in one step.",
   },
 
   /* Cast iron */
   "lodge-set": {
     name: "Lodge 5-Piece Cast Iron Set",
-    asin: LINK_PLACEHOLDER,
+    asin: "B004QM8SLG",
     note: "Pre seasoned skillet, griddle and Dutch oven. The replacement for a pan that is cracked, warped or pitted through, which no amount of scrubbing restores.",
   },
   "ringer-chainmail": {
     name: "The Ringer Chainmail Scrubber",
     asin: LINK_PLACEHOLDER,
+    search: "The Ringer cast iron cleaner chainmail",
     note: "Stainless chainmail that lifts stuck food without stripping the seasoning. The scrubber the maintenance step in this guide reaches for.",
   },
 
   /* Grout */
   "bissell-spinwave": {
     name: "Bissell SpinWave Plus",
-    asin: LINK_PLACEHOLDER,
+    asin: "B079HQ2H6C",
     note: "A powered spin mop with rotating pads. Does the morning rinse after an overnight soak faster than a string mop, without leaving solution pooled in the lines.",
   },
   "spin-scrubber": {
@@ -247,19 +249,19 @@ export const AFFILIATE_PRODUCTS = {
   "pink-miracle-kit": {
     name: "Pink Miracle Shoe Cleaner Kit",
     // The retired "sneaker-cleaning-kit" entry used ASIN B0G7G6R1MH. Reuse it here if that listing is the Pink Miracle kit.
-    asin: LINK_PLACEHOLDER,
+    asin: "B00A7NDT3A",
     note: "Cleaning solution and a brush in one kit. Covers canvas, leather and mesh, which is every material this guide walks through.",
   },
 
   /* Showerhead */
   "aquabliss-showerhead": {
     name: "AquaBliss High-Output Filtered Showerhead",
-    asin: LINK_PLACEHOLDER,
+    asin: "B08KDKBZ3P",
     note: "A showerhead with a filter cartridge in the connection. Catches sediment and scale before the nozzles, and the cartridge is the part you swap instead of soaking.",
   },
   "clr-remover": {
     name: "CLR Calcium, Lime & Rust Remover",
-    asin: LINK_PLACEHOLDER,
+    asin: "B07G9JMTS2",
     note: "The commercial descaler for a head that one overnight vinegar soak did not clear. Gloves on and the bathroom ventilated.",
   },
 
@@ -267,13 +269,14 @@ export const AFFILIATE_PRODUCTS = {
   "upholstery-brush-set": {
     name: "Upholstery brush set",
     asin: LINK_PLACEHOLDER,
+    search: "upholstery cleaning brush set soft bristle",
     note: "Soft bristle brushes in a few sizes for lifting the nap back up once a section dries. The step that makes an alcohol cleaned couch look restored.",
   },
 
   /* Baseboards */
   "baseboard-buddy": {
     name: "Baseboard Buddy with Extension Handle",
-    asin: LINK_PLACEHOLDER,
+    asin: "B01C6X37Q2",
     note: "A pad shaped to the molding on an extending handle, so the whole run gets wiped standing up.",
   },
 } satisfies Record<string, AffiliateProduct>;
