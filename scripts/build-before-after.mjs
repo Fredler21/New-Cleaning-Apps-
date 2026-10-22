@@ -46,6 +46,8 @@ const IMAGES = [
   // Ships with its own BEFORE/AFTER set into the artwork. Labelling it again
   // would put two sets of type on one image.
   { file: "showerhead.jpg", split: "stacked", preLabelled: true },
+  // Arrives with its own title set into the artwork.
+  { file: "thanksgiving-kitchen.jpg", split: "side-by-side", preLabelled: true },
   { file: "tile-grout.jpg", split: "side-by-side" },
   { file: "washing-machine.jpg", split: "stacked" },
 ];

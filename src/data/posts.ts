@@ -7301,6 +7301,14 @@ export const posts: Post[] = [
     excerpt:
       "Hosting Thanksgiving is really two jobs. There is the cooking, and then there is getting your house ready for a dozen people who will use your bathroom, open your fridge, and absolutely notice your baseboards. The mistake most people make is trying to clean everything in the two days before, right when the kitchen needs them most. The fix is simple: spread the work across two weeks, do the deep cleaning early because it stays clean longer than you think, and save only the quick refresh jobs for the final 48 hours. Here is the exact plan, room by room and day by day, with the whole thing condensed into a checklist at the end.",
     coverImage: "/uploads/thanksgiving-cleaning-checklist.jpg",
+    beforeAfter: {
+      src: "/before-after/thanksgiving-kitchen.jpg",
+      alt: "Split illustration of the same kitchen and dining room, cluttered with dishes, a streaked fridge and a bare table on the left, and wiped counters, a shining fridge and a table set for Thanksgiving on the right",
+      caption:
+        "The same kitchen and dining room before and after the two week plan. On the left, the counters are covered, the dishwasher is open and half loaded, the fridge front is streaked and the table is bare. On the right, the counters are clear, the stainless is wiped with the grain, the rug has been vacuumed and the table is set, which is what the day before refresh and the morning speed run leave behind.",
+      width: 1672,
+      height: 941,
+    },
     printable: {
       id: "thanksgiving-cleaning-checklist",
       title: "Free Printable: Thanksgiving Cleaning Checklist",
