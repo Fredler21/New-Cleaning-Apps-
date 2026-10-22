@@ -7364,6 +7364,14 @@ export const posts: Post[] = [
     excerpt:
       "The uncomfortable truth about hosting is that you stop seeing your own house. You walk past the same light switch five times a day and never notice it has gone grey around the edges. Your guests are seeing everything for the first time, and they are sitting still, at eye level, with nothing to do but look around. None of these forgotten spots take long to clean. Most are under five minutes. Work through the list once and your clean house becomes an actually clean house, just in time for everyone you know to show up for the holidays.",
     coverImage: "/uploads/things-youre-forgetting-to-clean.jpg",
+    beforeAfter: {
+      src: "/before-after/forgotten-spots.jpg",
+      alt: "Split illustration of the same entryway and living room, dusty and scuffed on the left and clean on the right, with close ups of a light switch plate, a fan blade, a baseboard, a remote control and a doormat",
+      caption:
+        "The same entryway and living room before and after a pass through the list, with close ups of five of the spots guests notice first: the light switch plate inside the door, the top of a fan blade, the baseboard, the remote control and the doormat. On the left is how they look after a few months of being walked past. On the right is what the five minute fixes in the walkthrough leave behind.",
+      width: 1672,
+      height: 941,
+    },
     printable: {
       id: "things-youre-forgetting-to-clean",
       title: "Free Printable: The 25 Forgotten Spots Walkthrough",

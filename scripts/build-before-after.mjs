@@ -34,6 +34,8 @@ const IMAGES = [
   // Arrives with BEFORE/AFTER already set into the artwork.
   { file: "dryer-vent.jpg", split: "side-by-side", preLabelled: true },
   { file: "faucet.jpg", split: "side-by-side" },
+  // Arrives with its own Before and After title set into the artwork.
+  { file: "forgotten-spots.jpg", split: "side-by-side", preLabelled: true },
   { file: "humidifier.jpg", split: "side-by-side" },
   { file: "laundry-room.jpg", split: "side-by-side" },
   { file: "living-room.jpg", split: "side-by-side" },
