@@ -84,7 +84,7 @@ export const AFFILIATE_PRODUCTS = {
   "shark-handheld-vacuum": {
     name: "Shark handheld vacuum with upholstery tool",
     asin: "B07FX5K4D6",
-    note: "Cordless, with the upholstery attachment the mattress and couch steps call for. Light enough to work seams in slow overlapping rows.",
+    note: "Cordless, with a crevice tool and an upholstery tool, so it handles seams, cushions, tracks and vent covers without dragging the big vacuum over.",
   },
   "saferest-protector": {
     name: "SafeRest Waterproof Mattress Protector",

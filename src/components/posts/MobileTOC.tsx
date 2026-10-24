@@ -1,6 +1,6 @@
 "use client";
 
-import { titleToId } from "@/lib/format";
+import { stepTocEntries } from "@/lib/toc";
 import type { PostStep } from "@/types/post";
 
 type MobileTOCProps = {
@@ -17,7 +17,7 @@ export function MobileTOC({ steps }: MobileTOCProps) {
   const links = [
     { href: "#supplies", label: "What you'll need" },
     { href: "#steps", label: "Step-by-step" },
-    ...steps.slice(0, 6).map((s) => ({ href: `#${titleToId(s.title)}`, label: s.title })),
+    ...stepTocEntries(steps),
     { href: "#pro-tips", label: "Pro tips" },
     { href: "#faq", label: "FAQ" },
   ];

@@ -36,26 +36,33 @@ export function ProductBox({ id, label, context }: ProductBoxProps) {
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
         <div className="min-w-0">
+          {/* Explicit spaces and a separator between the badge, the context and
+              the name, so the text reads correctly when styling is stripped
+              (reader mode, copy and paste, screen readers): "Top Pick · context". */}
           {(label || context) && (
-            <div className="mb-1.5 flex flex-wrap items-center gap-2">
+            <p className="mb-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs">
               {label && (
                 <span
-                  className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold"
+                  className="inline-flex items-center rounded-full px-2.5 py-0.5 font-semibold"
                   style={{ background: "var(--accent-light)", color: "var(--accent)" }}
                 >
                   {label}
                 </span>
               )}
-              {context && (
-                <span className="text-xs" style={{ color: "var(--muted)" }}>
-                  {context}
-                </span>
+              {label && context && (
+                <>
+                  {" "}
+                  <span aria-hidden="true" style={{ color: "var(--muted)" }}>
+                    ·
+                  </span>{" "}
+                </>
               )}
-            </div>
-          )}
+              {context && <span style={{ color: "var(--muted)" }}>{context}</span>}
+            </p>
+          )}{" "}
           <p className="text-[15px] font-semibold leading-snug" style={{ color: "var(--text)" }}>
             {product.name}
-          </p>
+          </p>{" "}
           <p className="mt-1 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
             {product.note}
           </p>

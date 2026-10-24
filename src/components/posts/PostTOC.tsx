@@ -1,4 +1,4 @@
-import { titleToId } from "@/lib/format";
+import { stepTocEntries } from "@/lib/toc";
 import type { PostStep } from "@/types/post";
 
 type PostTOCProps = {
@@ -6,10 +6,11 @@ type PostTOCProps = {
 };
 
 export function PostTOC({ steps }: PostTOCProps) {
+  const entries = stepTocEntries(steps);
   return (
     <nav
       aria-label="Table of contents"
-      className="rounded-xl p-5"
+      className="rounded-xl p-5 lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto"
       style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
     >
       <h2 className="mb-4 flex items-center gap-2 text-sm font-semibold uppercase tracking-wider" style={{ color: "var(--text-secondary)" }}>
@@ -39,10 +40,10 @@ export function PostTOC({ steps }: PostTOCProps) {
             Safety notes
           </a>
         </li>
-        {steps.slice(0, 6).map((step) => (
-          <li key={step.title}>
-            <a href={`#${titleToId(step.title)}`} className="flex rounded-lg px-2.5 py-1.5 transition-colors hover:text-teal-700 dark:hover:text-teal-400" style={{ color: "var(--text-secondary)" }}>
-              {step.title}
+        {entries.map((entry) => (
+          <li key={entry.href}>
+            <a href={entry.href} className="flex rounded-lg px-2.5 py-1.5 transition-colors hover:text-teal-700 dark:hover:text-teal-400" style={{ color: "var(--text-secondary)" }}>
+              {entry.label}
             </a>
           </li>
         ))}

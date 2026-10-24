@@ -102,18 +102,8 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
   const linkedSlugs = internalLinks[post.slug] ?? [];
   const linkedPosts = linkedSlugs.map((s) => getPostBySlug(s)).filter(Boolean) as typeof posts;
 
-  // Build a per-post sentence for the "How this guide was made" block so it is
-  // not byte-for-byte identical across every article (which reads as boilerplate
-  // / duplicate content sitewide). Uses this post's own supplies + step count.
-  const testedSupplies = post.supplies.slice(0, 3);
   // Titles only. MobileTOC is a client component, so whole steps would ship every body in the page payload.
   const tocSteps = post.steps.map(({ title }) => ({ title }));
-  const suppliesPhrase =
-    testedSupplies.length === 0
-      ? "everyday household supplies"
-      : testedSupplies.length === 1
-        ? testedSupplies[0]
-        : `${testedSupplies.slice(0, -1).join(", ")} and ${testedSupplies[testedSupplies.length - 1]}`;
   const categoryLabel = categoryName(post.category);
 
   /* ── Section assembly ──────────────────────────────────────────────────
@@ -511,19 +501,18 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                   className="mt-3 text-[15px] leading-7"
                   style={{ color: "var(--text-secondary)" }}
                 >
-                  This {categoryLabel} guide was researched, written, edited, and published by{" "}
                   <Link
                     href="/author/fredler-pierre-louis"
                     className="underline"
                     style={{ color: "var(--accent)" }}
                   >
                     {post.author ?? "Fredler Pierre-Louis"}
-                  </Link>
-                  . The {post.steps.length} steps below are built around {suppliesPhrase}, and the
-                  quantities and dwell times come from published cleaning-chemistry and
-                  manufacturer guidance for those materials, not from a controlled trial we ran
-                  ourselves. Where a popular version of this hack does not work, or is risky on a
-                  particular surface, this {post.readTime} guide says so.
+                  </Link>{" "}
+                  researched, wrote and edited this {categoryLabel.toLowerCase()} guide. The amounts and
+                  waiting times in its {post.steps.length} steps come from published cleaning chemistry
+                  and from the guidance of the companies that make the products and surfaces involved,
+                  not from a test we ran ourselves. Where a popular version of a method does not work,
+                  or could damage a surface, the guide says so.
                 </p>
                 <ul
                   className="mt-4 grid gap-3 sm:grid-cols-2 text-sm leading-relaxed"
