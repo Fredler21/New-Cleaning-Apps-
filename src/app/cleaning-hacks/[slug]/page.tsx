@@ -70,7 +70,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       description,
       url,
       siteName: SITE_NAME,
-      images: [{ url: post.coverImage, width: 1200, height: 630, alt: post.title }],
+      images: [{ url: post.coverImage, width: 1200, height: 630, alt: post.coverAlt ?? post.title }],
       locale: "en_US",
       type: "article",
       publishedTime: `${post.datePublished}T00:00:00Z`,
@@ -343,7 +343,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
             <div className="relative aspect-[16/9] w-full">
               <Image
                 src={post.coverImage}
-                alt={post.title}
+                alt={post.coverAlt ?? post.title}
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"

@@ -8,7 +8,17 @@
  * 3-6 entries per post and prefer same-category / same-ingredient relevance.
  */
 export const internalLinks: Record<string, string[]> = {
+  "12-day-christmas-cleaning-countdown": [
+    "thanksgiving-cleaning-checklist",
+    "things-youre-forgetting-to-clean",
+    "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
+    "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
+    "how-to-organize-your-refrigerator",
+    "12-oven-cleaning-hacks-baked-on-grease",
+    "10-genius-ways-to-make-your-house-smell-great",
+  ],
   "things-youre-forgetting-to-clean": [
+    "12-day-christmas-cleaning-countdown",
     "thanksgiving-cleaning-checklist",
     "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
     "how-to-clean-ceiling-fan-blades",
@@ -17,6 +27,7 @@ export const internalLinks: Record<string, string[]> = {
     "18-quick-wins-for-busy-mornings",
   ],
   "thanksgiving-cleaning-checklist": [
+    "12-day-christmas-cleaning-countdown",
     "things-youre-forgetting-to-clean",
     "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home",
     "15-bathroom-deep-clean-hacks-for-hotel-level-shine",
@@ -129,6 +140,7 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-organize-your-refrigerator",
   ],
   "15-bathroom-deep-clean-hacks-for-hotel-level-shine": [
+    "12-day-christmas-cleaning-countdown",
     "thanksgiving-cleaning-checklist",
     "12-shower-cleaning-hacks",
     "remove-hard-water-stains-from-toilet",
@@ -216,6 +228,7 @@ export const internalLinks: Record<string, string[]> = {
     "how-to-clean-with-ketchup",
   ],
   "the-ultimate-weekly-cleaning-schedule-for-a-spotless-home": [
+    "12-day-christmas-cleaning-countdown",
     "things-youre-forgetting-to-clean",
     "thanksgiving-cleaning-checklist",
     "7-game-changing-ultra-cleaning-hacks",

@@ -158,6 +158,12 @@ export type Post = {
   tags: string[];
   excerpt: string;
   coverImage: string;
+  /**
+   * Alt text for the cover, describing what is actually in the picture. Used
+   * for the hero image and the Open Graph image. Falls back to the title, which
+   * is what older posts rely on.
+   */
+  coverAlt?: string;
   supplies: string[];
   steps: PostStep[];
   proTips: string[];

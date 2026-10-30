@@ -15,6 +15,7 @@
  * guard lives in scripts/audit-seo-titles is not required — keep values tight.
  */
 export const seoTitles: Record<string, string> = {
+  "12-day-christmas-cleaning-countdown": "12-Day Christmas Cleaning Countdown (Free Printable)",
   "things-youre-forgetting-to-clean": "25 Things You're Forgetting to Clean",
   "thanksgiving-cleaning-checklist": "Thanksgiving Cleaning Checklist (Day by Day)",
   /* ── Existing overrides ─────────────────────────────────── */

@@ -50,6 +50,11 @@ export const PRINTABLES: Record<string, Printable> = {
     file: "thanksgiving-cleaning-checklist-printable.pdf",
     title: "Thanksgiving Cleaning Checklist",
   },
+  "12-day-christmas-cleaning-countdown": {
+    id: "12-day-christmas-cleaning-countdown",
+    file: "12-day-christmas-cleaning-countdown-printable.pdf",
+    title: "12-Day Christmas Cleaning Countdown",
+  },
   "things-youre-forgetting-to-clean": {
     id: "things-youre-forgetting-to-clean",
     file: "things-youre-forgetting-to-clean-printable.pdf",

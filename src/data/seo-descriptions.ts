@@ -14,6 +14,8 @@
  * Keep every value under ~160 characters and lead with the primary keyword.
  */
 export const seoDescriptions: Record<string, string> = {
+  "12-day-christmas-cleaning-countdown":
+    "One 20 to 30 minute cleaning task a day for the 12 days before Christmas, ending with a light touch-up on Christmas Eve. Free printable included.",
   "things-youre-forgetting-to-clean":
     "Your house looks clean until a guest sits at eye level with your ceiling fan. 25 spots everyone forgets to clean, and the fastest way to handle each one.",
   "thanksgiving-cleaning-checklist":
