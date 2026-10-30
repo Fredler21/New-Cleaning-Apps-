@@ -108,7 +108,7 @@ export const AFFILIATE_PRODUCTS = {
   "roomba-self-emptying": {
     name: "iRobot Roomba self-emptying model",
     asin: "B0CWVTTJL7",
-    note: "A Roomba with a base that empties the bin on its own after each run, so the dustbin wash in this guide becomes an occasional job instead of a weekly one.",
+    note: "A Roomba with a base that empties the bin on its own after each run, so the daily floor pass happens without anyone touching the dustbin for weeks.",
   },
   "shark-ai-robot": {
     name: "Shark AI Robot Vacuum with Self-Empty Base",
@@ -135,7 +135,7 @@ export const AFFILIATE_PRODUCTS = {
   "bona-spray": {
     name: "Bona Hardwood Floor Cleaner Spray",
     asin: "B015FXRTH8",
-    note: "A pH neutral cleaner made for sealed wood. It leaves no film and needs no rinse, which is what the rules in this guide come down to.",
+    note: "A pH neutral cleaner made for sealed wood. It leaves no film and needs no rinse, which keeps a hardwood finish from dulling.",
   },
 
   /* Dryer vent */
@@ -155,7 +155,7 @@ export const AFFILIATE_PRODUCTS = {
   "ninja-dualzone": {
     name: "Ninja Foodi DualZone Air Fryer",
     asin: "B089TQWJKK",
-    note: "Two independent baskets, each smaller and lighter than a single large one, which makes the after every use wash in this guide quicker.",
+    note: "Two independent baskets, each smaller and lighter than a single large one, so washing them after every use is quicker.",
   },
   "katbite-liners": {
     name: "Katbite Disposable Air Fryer Liners",
@@ -167,12 +167,12 @@ export const AFFILIATE_PRODUCTS = {
   "breville-barista": {
     name: "Breville Barista Express",
     asin: "B00CH9QWOU",
-    note: "A home espresso machine with a built in grinder. Its boiler is exactly the kind the guide says to protect with a proper descaler rather than vinegar.",
+    note: "A home espresso machine with a built in grinder. Its boiler is the kind worth protecting with a proper descaler rather than vinegar.",
   },
   "keurig-k-elite": {
     name: "Keurig K-Elite",
     asin: "B078NN17K3",
-    note: "A pod brewer with a removable reservoir and a descale mode, so the acid step in this guide runs from a menu rather than by hand.",
+    note: "A pod brewer with a removable reservoir and a descale alert, so the machine tells you when the acid rinse is due.",
   },
   "impresa-descaler": {
     name: "Impresa Descaling Solution 2-pack",
@@ -191,14 +191,14 @@ export const AFFILIATE_PRODUCTS = {
     name: "TERRO Fruit Fly Traps 2-pack",
     // T2502, the 2 pack. The retired fruit-fly-trap entry (B01MRHXM0I) was the 4 pack.
     asin: "B01JIRNEQW",
-    note: "A liquid lure trap in a small apple shaped cup. The soapy cider vinegar trap from this guide, in a tidier package.",
+    note: "A liquid lure trap in a small apple shaped cup. The classic cider vinegar trap, in a tidier package.",
   },
 
   /* Humidifier */
   "levoit-lv600s": {
     name: "Levoit LV600S Smart Hybrid Humidifier",
     asin: "B095KGXPW5",
-    note: "A warm and cool mist humidifier with a wide mouth tank you can get a hand into, which is what makes the weekly clean in this guide quick.",
+    note: "A warm and cool mist humidifier with a wide mouth tank you can get a hand into, which makes the weekly clean quick.",
   },
   "levoit-filters": {
     name: "Levoit Replacement Filters",
@@ -217,7 +217,7 @@ export const AFFILIATE_PRODUCTS = {
   "affresh-tablets": {
     name: "Affresh Washing Machine Cleaner Tablets 6-pack",
     asin: "B00C91Q86I",
-    note: "A tablet dropped in the empty drum once a month. It dissolves slowly through a hot cycle and does the job of the vinegar and baking soda runs in one step.",
+    note: "A tablet dropped in the empty drum once a month. It dissolves through a hot cycle and clears the residue that makes a washer smell.",
   },
 
   /* Cast iron */
@@ -230,14 +230,14 @@ export const AFFILIATE_PRODUCTS = {
     name: "The Ringer Chainmail Scrubber",
     asin: LINK_PLACEHOLDER,
     search: "The Ringer cast iron cleaner chainmail",
-    note: "Stainless chainmail that lifts stuck food without stripping the seasoning. The scrubber the maintenance step in this guide reaches for.",
+    note: "Stainless chainmail that lifts stuck food off cast iron without stripping the seasoning.",
   },
 
   /* Grout */
   "bissell-spinwave": {
     name: "Bissell SpinWave Plus",
     asin: "B079HQ2H6C",
-    note: "A powered spin mop with rotating pads. Does the morning rinse after an overnight soak faster than a string mop, without leaving solution pooled in the lines.",
+    note: "A powered spin mop with rotating pads. It scrubs as it mops and leaves less water behind than a string mop, so hard floors dry faster.",
   },
   "spin-scrubber": {
     name: "Cordless Electric Spin Scrubber",
@@ -250,7 +250,7 @@ export const AFFILIATE_PRODUCTS = {
     name: "Pink Miracle Shoe Cleaner Kit",
     // The retired "sneaker-cleaning-kit" entry used ASIN B0G7G6R1MH. Reuse it here if that listing is the Pink Miracle kit.
     asin: "B00A7NDT3A",
-    note: "Cleaning solution and a brush in one kit. Covers canvas, leather and mesh, which is every material this guide walks through.",
+    note: "Cleaning solution and a brush in one kit, for canvas, leather and mesh sneakers.",
   },
 
   /* Showerhead */
@@ -262,7 +262,7 @@ export const AFFILIATE_PRODUCTS = {
   "clr-remover": {
     name: "CLR Calcium, Lime & Rust Remover",
     asin: "B07G9JMTS2",
-    note: "The commercial descaler for a head that one overnight vinegar soak did not clear. Gloves on and the bathroom ventilated.",
+    note: "The commercial descaler for scale that a vinegar soak did not clear, on fixtures, glass and tile. Gloves on, the room ventilated, and the label checked for your surface.",
   },
 
   /* Microfiber couch (shares the Little Green above) */

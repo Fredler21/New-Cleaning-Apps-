@@ -169,6 +169,15 @@ export type Post = {
   proTips: string[];
   safetyNotes: string[];
   faqs?: PostFAQ[];
+  /** Optional heading for the steps section, in place of "Step-by-Step Instructions". */
+  stepsHeading?: string;
+  /** Optional heading for the FAQ section, in place of "Frequently Asked Questions". */
+  faqTitle?: string;
+  /**
+   * Optional skim list rendered near the top of the article, before the
+   * supplies. An item may start with "Label: " and the label renders in bold.
+   */
+  quickChecklist?: { title: string; items: string[] };
   /**
    * Email-gated printable offered on this post. `id` must exist in
    * src/data/printables.ts. The box renders after the intro, and again right

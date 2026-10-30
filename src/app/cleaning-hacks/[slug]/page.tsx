@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Check, Clock } from "lucide-react";
+import { Check, Clock, ListChecks } from "lucide-react";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { PostTOC } from "@/components/posts/PostTOC";
@@ -143,7 +143,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                       <svg className="h-5 w-5 text-teal-700 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
-                      Step-by-Step Instructions
+                      {post.stepsHeading ?? "Step-by-Step Instructions"}
                     </h2>
                     {post.steps.map((step, index) => (
                       <Fragment key={step.title}>
@@ -215,7 +215,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
                         <svg className="h-5 w-5 text-teal-700 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        Frequently Asked Questions
+                        {post.faqTitle ?? "Frequently Asked Questions"}
                       </h2>
                       <div className="mt-4 space-y-4">
                         {post.faqs.map((faq) => (
@@ -445,7 +445,7 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
               data={{
                 "@context": "https://schema.org",
                 "@type": "FAQPage",
-                name: `${post.title}, Frequently Asked Questions`,
+                name: post.faqTitle ?? `${post.title}, Frequently Asked Questions`,
                 mainEntity: post.faqs.map((faq) => ({
                   "@type": "Question",
                   name: faq.question,
@@ -468,6 +468,46 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
             <div className="space-y-8">
               {/* Quick navigation for phones (desktop uses the sticky sidebar) */}
               <MobileTOC steps={tocSteps} />
+
+              {/* Optional skim list for readers who want the whole plan at a glance */}
+              {post.quickChecklist && (
+                <section
+                  id="at-a-glance"
+                  className="rounded-xl p-6"
+                  style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
+                >
+                  <h2 className="flex items-center gap-2 text-xl font-semibold" style={{ color: "var(--text)" }}>
+                    <ListChecks className="h-5 w-5 text-teal-700 dark:text-teal-400" aria-hidden="true" />
+                    {post.quickChecklist.title}
+                  </h2>
+                  <ul className="mt-4 space-y-2.5">
+                    {post.quickChecklist.items.map((item) => {
+                      const split = item.indexOf(": ");
+                      return (
+                        <li
+                          key={item}
+                          className="flex items-start gap-2.5 text-[15px] leading-7"
+                          style={{ color: "var(--text-secondary)" }}
+                        >
+                          <Check className="mt-1.5 h-4 w-4 shrink-0 text-teal-700 dark:text-teal-400" aria-hidden="true" />
+                          <span>
+                            {split > 0 ? (
+                              <>
+                                <strong className="font-semibold" style={{ color: "var(--text)" }}>
+                                  {item.slice(0, split + 1)}
+                                </strong>{" "}
+                                {item.slice(split + 2)}
+                              </>
+                            ) : (
+                              item
+                            )}
+                          </span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </section>
+              )}
 
               {orderedSections}
 

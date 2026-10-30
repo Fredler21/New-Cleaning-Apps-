@@ -47,6 +47,8 @@ const IMAGES = [
   // would put two sets of type on one image.
   // Arrives with BEFORE and AFTER set into the artwork.
   { file: "christmas-living-room.jpg", split: "side-by-side", preLabelled: true },
+  // Arrives with BEFORE and AFTER set into the artwork.
+  { file: "new-year-living-room.jpg", split: "side-by-side", preLabelled: true },
   { file: "showerhead.jpg", split: "stacked", preLabelled: true },
   // Arrives with its own title set into the artwork.
   { file: "thanksgiving-kitchen.jpg", split: "side-by-side", preLabelled: true },
