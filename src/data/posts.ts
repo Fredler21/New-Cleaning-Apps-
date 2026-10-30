@@ -7456,6 +7456,14 @@ export const posts: Post[] = [
       "Christmas cleaning has a way of eating the whole week before. One minute you are wiping a shelf and the next it is eleven at night, the tree lights are still in the box, and you are scrubbing a bathtub nobody will see. The countdown fixes that with one rule: one task a day, 20 to 30 minutes, for the 12 days before Christmas, and then you stop. Day 12 starts at the front door, the days in between work through the rooms guests actually use, and Day 1, Christmas Eve, is a 30 minute touch-up and a cup of something warm. Nothing on the list takes over an evening, nothing needs a product you do not already own, and the printable version fits on one page so it can live on the fridge and collect ticks. Here is each day, what to do, and why it sits where it does.",
     coverImage: "/uploads/12-day-christmas-cleaning-countdown.jpg",
     coverAlt: "A living room tidied for Christmas, with a lit tree beside the couch and, on the kitchen counter, a basket of folded guest towels, a spray bottle, a microfiber cloth, pine sprigs and an orange with cinnamon sticks, with a vacuum waiting by the door, ready for the 12 day Christmas cleaning countdown",
+    beforeAfter: {
+      src: "/before-after/christmas-living-room.jpg",
+      alt: "Split illustration of the same living room at Christmas, with laundry on the couch, mugs and papers on the coffee table and toys on the rug on the left, and a cleared couch with folded throw, a candle centerpiece and a bare rug on the right",
+      caption:
+        "The same living room before and after the countdown. On the left, laundry is piled on the couch, the coffee table is covered in mugs, papers and snacks, and toys are spread across the rug. On the right, the cushions are straightened, the throw is folded, the table holds only a centerpiece and the rug is clear, which is what the Day 3 living room reset and the Christmas Eve touch-up leave behind.",
+      width: 1536,
+      height: 1024,
+    },
     printable: {
       id: "12-day-christmas-cleaning-countdown",
       title: "Free Printable: The 12-Day Christmas Cleaning Countdown",
