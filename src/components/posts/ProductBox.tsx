@@ -30,7 +30,7 @@ export function ProductBox({ id, label, context }: ProductBoxProps) {
 
   return (
     <aside
-      className="my-5 rounded-xl p-4 sm:p-5"
+      className="mt-4 rounded-xl p-4 sm:p-5"
       style={{ background: "var(--card-bg)", border: "1px solid var(--border)", boxShadow: "var(--card-shadow)" }}
       aria-label={`Recommended product: ${product.name}`}
     >

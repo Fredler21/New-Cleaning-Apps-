@@ -100,39 +100,34 @@ export function stripBoxTokens(text: string): string {
 }
 
 /**
- * Render a step body: paragraphs of linked text, with a product box wherever
- * the author placed a token. A box always lands right after the sentence
- * that mentions the product, which is why it lives inside the text rather
- * than at the top of the article.
+ * Render a step body: the step's text as one paragraph, then its product
+ * boxes underneath, in the order they appear in the text. The token stays
+ * next to the sentence that names the product (so the data records why the
+ * box is there), but the box renders at the bottom of the paragraph rather
+ * than splitting it, which the owner prefers for the look of the page.
  */
 export function renderStepBody(body: string, paragraphClass: string, paragraphStyle: CSSProperties): ReactNode[] {
   const nodes: ReactNode[] = [];
   const pattern = new RegExp(BOX_TOKEN_SOURCE, "g");
-  let lastIndex = 0;
-  let match: RegExpExecArray | null;
-  let key = 0;
-
-  const pushText = (text: string) => {
-    const trimmed = text.trim();
-    if (!trimmed) return;
+  const text = stripBoxTokens(body);
+  if (text) {
     nodes.push(
-      <p key={`p-${key++}`} className={paragraphClass} style={paragraphStyle}>
-        {renderInlineLinks(trimmed)}
+      <p key="p" className={paragraphClass} style={paragraphStyle}>
+        {renderInlineLinks(text)}
       </p>
     );
-  };
+  }
 
+  let match: RegExpExecArray | null;
+  let key = 0;
   while ((match = pattern.exec(body)) !== null) {
-    pushText(body.slice(lastIndex, match.index));
     const [, id, label, context] = match;
     nodes.push(
       <Fragment key={`box-${key++}`}>
         <ProductBox id={id} label={label?.trim() || undefined} context={context?.trim() || undefined} />
       </Fragment>
     );
-    lastIndex = match.index + match[0].length;
   }
-  pushText(body.slice(lastIndex));
 
   return nodes;
 }
